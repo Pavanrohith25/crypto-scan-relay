@@ -1,0 +1,49 @@
+name: Publish latest scan
+
+on:
+  schedule:
+    - cron: "*/5 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Fetch latest scanner data
+        run: |
+          curl --fail --silent --show-error \
+            --retry 3 \
+            --retry-delay 5 \
+            "https://web-production-3431ab.up.railway.app/scan?limit=5" \
+            -o latest_scan.json
+
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          p = Path("latest_scan.json")
+          data = json.loads(p.read_text())
+          p.write_text(json.dumps(data, indent=2, sort_keys=True) + "\n")
+          PY
+
+      - name: Commit updated scan
+        run: |
+          git config user.name "scan-bot"
+          git config user.email "scan-bot@users.noreply.github.com"
+
+          git add latest_scan.json
+
+          if git diff --cached --quiet; then
+            echo "No changes"
+            exit 0
+          fi
+
+          git commit -m "Update latest market scan"
+          git push
