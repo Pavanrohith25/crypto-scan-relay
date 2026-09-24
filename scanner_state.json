@@ -1,16 +1,17 @@
 {
-  "last_processed_at_ms": 1790281261034,
-  "last_processed_generated_at_ms": 1790281260922,
+  "last_processed_at_ms": 1790281510044,
+  "last_processed_generated_at_ms": 1790281509880,
   "minimum_candidate_score": 78.0,
   "pairs": {
     "CVCUSDT": {
       "gate_reasons": [
-        "score 70.0 below required 82.0"
+        "score 70.0 below required 82.0",
+        "15m OI is not expanding"
       ],
       "last_bias": "LONG",
-      "last_price": 0.02993,
+      "last_price": 0.0299,
       "last_score": 70.0,
-      "last_seen_at_ms": 1790281261034,
+      "last_seen_at_ms": 1790281510044,
       "qualifying_streak": 0,
       "required_score": 82.0
     },
@@ -20,21 +21,22 @@
         "long spot confirmation weak (B/S 0.615, flow -105,367)"
       ],
       "last_bias": "LONG",
-      "last_price": 0.002139,
+      "last_price": 0.0021263,
       "last_score": 60.0,
-      "last_seen_at_ms": 1790281261034,
+      "last_seen_at_ms": 1790281510044,
       "qualifying_streak": 0,
       "required_score": 78.0
     },
     "STEEMUSDT": {
       "gate_reasons": [
-        "score 50.0 below required 82.0",
-        "long spot confirmation weak (B/S 0.556, flow -3,326)"
+        "score 45.0 below required 82.0",
+        "long spot confirmation weak (B/S 0.556, flow -3,326)",
+        "15m OI is not expanding"
       ],
       "last_bias": "LONG",
-      "last_price": 0.06212,
-      "last_score": 50.0,
-      "last_seen_at_ms": 1790281261034,
+      "last_price": 0.062,
+      "last_score": 45.0,
+      "last_seen_at_ms": 1790281510044,
       "qualifying_streak": 0,
       "required_score": 82.0
     },
@@ -45,22 +47,22 @@
         "15m OI is not expanding"
       ],
       "last_bias": "LONG",
-      "last_price": 0.010655,
+      "last_price": 0.010651,
       "last_score": 14.0,
-      "last_seen_at_ms": 1790281261034,
+      "last_seen_at_ms": 1790281510044,
       "qualifying_streak": 0,
       "required_score": 82.0
     },
     "\u9f99\u867eUSDT": {
       "gate_reasons": [
-        "score 26.0 below required 78.0",
+        "score 32.0 below required 78.0",
         "missing Binance spot confirmation",
         "15m OI is not expanding"
       ],
       "last_bias": "SHORT",
-      "last_price": 0.11701,
-      "last_score": 26.0,
-      "last_seen_at_ms": 1790281261034,
+      "last_price": 0.11609,
+      "last_score": 32.0,
+      "last_seen_at_ms": 1790281510044,
       "qualifying_streak": 0,
       "required_score": 78.0
     }
