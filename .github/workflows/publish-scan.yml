@@ -6,6 +6,10 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: publish-latest-scan
+  cancel-in-progress: false
+
 jobs:
   publish:
     runs-on: ubuntu-latest
@@ -20,16 +24,125 @@ jobs:
             --retry 3 \
             --retry-delay 5 \
             "https://web-production-3431ab.up.railway.app/scan?limit=5" \
-            -o latest_scan.json
+            -o new_scan.json
 
           python - <<'PY'
           import json
           from pathlib import Path
 
-          p = Path("latest_scan.json")
+          p = Path("new_scan.json")
           data = json.loads(p.read_text())
           p.write_text(json.dumps(data, indent=2, sort_keys=True) + "\n")
           PY
+
+      - name: Send Telegram alert for new 78+ candidate
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          python - <<'PY'
+          import json
+          import os
+          import urllib.parse
+          import urllib.request
+          from pathlib import Path
+
+          new = json.loads(Path("new_scan.json").read_text())
+
+          old_path = Path("latest_scan.json")
+          old = json.loads(old_path.read_text()) if old_path.exists() else {}
+
+          new_threshold = float(
+              new.get("thresholds", {}).get("minimum_candidate_score", 78)
+          )
+          old_threshold = float(
+              old.get("thresholds", {}).get("minimum_candidate_score", 78)
+          )
+
+          current = [
+              c for c in new.get("trade_candidates", [])
+              if float(c.get("score", 0)) >= new_threshold
+          ]
+
+          previous = [
+              c for c in old.get("trade_candidates", [])
+              if float(c.get("score", 0)) >= old_threshold
+          ]
+
+          previous_by_pair = {
+              c.get("pair"): c for c in previous if c.get("pair")
+          }
+
+          alerts = []
+
+          for candidate in current:
+              pair = candidate.get("pair")
+              prev = previous_by_pair.get(pair)
+
+              is_new_or_changed = (
+                  prev is None
+                  or prev.get("bias") != candidate.get("bias")
+                  or prev.get("invalidation") != candidate.get("invalidation")
+              )
+
+              if is_new_or_changed:
+                  alerts.append(candidate)
+
+          if not alerts:
+              print("No new qualifying 78+ candidate.")
+              raise SystemExit(0)
+
+          token = os.environ["TELEGRAM_BOT_TOKEN"]
+          chat_id = os.environ["TELEGRAM_CHAT_ID"]
+
+          for c in alerts:
+              reasons = c.get("reasons") or []
+              warnings = c.get("warnings") or []
+
+              reason_text = "\n".join(
+                  f"• {x}" for x in reasons[:5]
+              ) or "• None listed"
+
+              warning_text = "\n".join(
+                  f"• {x}" for x in warnings[:5]
+              ) or "• None"
+
+              text = (
+                  "🚨 CRYPTO SCANNER 78+ ALERT\n\n"
+                  f"Pair: {c.get('pair')}\n"
+                  f"Bias: {c.get('bias')}\n"
+                  f"Score: {c.get('score')}/100\n"
+                  f"Current price: {c.get('current_price')}\n\n"
+                  f"Why it qualified:\n{reason_text}\n\n"
+                  f"Invalidation:\n"
+                  f"{c.get('invalidation', 'Not provided')}\n\n"
+                  f"Warnings:\n{warning_text}\n\n"
+                  "Manual review required — this is not an automatic entry."
+              )
+
+              payload = urllib.parse.urlencode({
+                  "chat_id": chat_id,
+                  "text": text,
+              }).encode()
+
+              req = urllib.request.Request(
+                  f"https://api.telegram.org/bot{token}/sendMessage",
+                  data=payload,
+                  method="POST",
+              )
+
+              with urllib.request.urlopen(req, timeout=20) as response:
+                  if response.status != 200:
+                      raise RuntimeError(
+                          f"Telegram returned HTTP {response.status}"
+                      )
+
+              print(f"Telegram alert sent for {c.get('pair')}.")
+
+          PY
+
+      - name: Promote new scan
+        run: mv new_scan.json latest_scan.json
 
       - name: Commit updated scan
         run: |
