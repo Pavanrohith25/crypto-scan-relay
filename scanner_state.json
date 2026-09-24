@@ -1,0 +1,69 @@
+{
+  "last_processed_at_ms": 1790280566365,
+  "last_processed_generated_at_ms": 1790280566238,
+  "minimum_candidate_score": 78.0,
+  "pairs": {
+    "CVCUSDT": {
+      "gate_reasons": [
+        "score 75.0 below required 82.0"
+      ],
+      "last_bias": "LONG",
+      "last_price": 0.03,
+      "last_score": 75.0,
+      "last_seen_at_ms": 1790280566365,
+      "qualifying_streak": 0,
+      "required_score": 82.0
+    },
+    "ONEUSDT": {
+      "gate_reasons": [
+        "score 66.0 below required 78.0",
+        "long spot confirmation weak (B/S 0.615, flow -105,367)"
+      ],
+      "last_bias": "LONG",
+      "last_price": 0.0021428,
+      "last_score": 66.0,
+      "last_seen_at_ms": 1790280566365,
+      "qualifying_streak": 0,
+      "required_score": 78.0
+    },
+    "STEEMUSDT": {
+      "gate_reasons": [
+        "score 45.0 below required 82.0",
+        "long spot confirmation weak (B/S 0.340, flow -10,725)",
+        "15m OI is not expanding"
+      ],
+      "last_bias": "LONG",
+      "last_price": 0.06209,
+      "last_score": 45.0,
+      "last_seen_at_ms": 1790280566365,
+      "qualifying_streak": 0,
+      "required_score": 82.0
+    },
+    "XAIUSDT": {
+      "gate_reasons": [
+        "score 35.0 below required 82.0",
+        "long spot confirmation weak (B/S 0.955, flow -26,979)"
+      ],
+      "last_bias": "LONG",
+      "last_price": 0.010917,
+      "last_score": 35.0,
+      "last_seen_at_ms": 1790280566365,
+      "qualifying_streak": 0,
+      "required_score": 82.0
+    },
+    "\u9f99\u867eUSDT": {
+      "gate_reasons": [
+        "score 32.0 below required 78.0",
+        "missing Binance spot confirmation",
+        "15m OI is not expanding"
+      ],
+      "last_bias": "SHORT",
+      "last_price": 0.12012,
+      "last_score": 32.0,
+      "last_seen_at_ms": 1790280566365,
+      "qualifying_streak": 0,
+      "required_score": 78.0
+    }
+  },
+  "version": 2
+}
