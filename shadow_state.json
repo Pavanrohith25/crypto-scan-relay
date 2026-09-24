@@ -1,0 +1,55 @@
+{
+  "last_processed_at_ms": 1790292686883,
+  "last_processed_generated_at_ms": 1790292686691,
+  "pairs": {
+    "CVCUSDT": {
+      "gate_reasons": [
+        "score 54.0 below required 82.0",
+        "long spot weak (B/S 0.613, flow -17,394)",
+        "spot volume 72,501 below required 100,000"
+      ],
+      "last_bias": "LONG",
+      "last_decision": "WAIT",
+      "last_price": 0.0301,
+      "last_regime": "TREND_CONTINUATION",
+      "last_score": 54.0,
+      "last_seen_at_ms": 1790292686883
+    },
+    "ONEUSDT": {
+      "gate_reasons": [
+        "deep countertrend: 24h structure/OI conflicts with the setup"
+      ],
+      "last_bias": "LONG",
+      "last_decision": "BLOCKED_DEEP_COUNTERTREND",
+      "last_price": 0.0020921,
+      "last_regime": "COUNTERTREND_DEEP",
+      "last_score": 79.0,
+      "last_seen_at_ms": 1790292686883
+    },
+    "STEEMUSDT": {
+      "gate_reasons": [
+        "score 74.0 below required 82.0",
+        "15m OI not expanding",
+        "spot volume 16,624 below required 100,000"
+      ],
+      "last_bias": "LONG",
+      "last_decision": "WAIT",
+      "last_price": 0.06174,
+      "last_regime": "TREND_CONTINUATION",
+      "last_score": 74.0,
+      "last_seen_at_ms": 1790292686883
+    },
+    "XAIUSDT": {
+      "gate_reasons": [
+        "score 54.0 below required 82.0"
+      ],
+      "last_bias": "LONG",
+      "last_decision": "WAIT",
+      "last_price": 0.010079,
+      "last_regime": "COUNTERTREND",
+      "last_score": 54.0,
+      "last_seen_at_ms": 1790292686883
+    }
+  },
+  "version": "3.2-shadow"
+}
