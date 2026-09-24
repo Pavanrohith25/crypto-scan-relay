@@ -41,6 +41,7 @@ jobs:
         run: python process_scan.py
 
       - name: Commit scanner state
+        if: github.ref == 'refs/heads/main'
         run: |
           git config user.name "scan-bot"
           git config user.email "scan-bot@users.noreply.github.com"
