@@ -171,11 +171,11 @@ def send_telegram(text):
 def candidate_alert(c, streak, immediate):
     reasons = c.get("reasons") or []
     warnings = c.get("warnings") or []
-    reason_text = "\n".join(f"â¢ {x}" for x in reasons[:5]) or "â¢ None listed"
-    warning_text = "\n".join(f"â¢ {x}" for x in warnings[:5]) or "â¢ None"
+    reason_text = "\n".join(f"- {x}" for x in reasons[:5]) or "- None listed"
+    warning_text = "\n".join(f"- {x}" for x in warnings[:5]) or "- None"
     confirmation = "90+ immediate confirmation" if immediate else f"{streak}-scan confirmation"
     return (
-        "ð¨ CONFIRMED CRYPTO SETUP\n\n"
+        "[ALERT] CONFIRMED CRYPTO SETUP\n\n"
         f"Pair: {c.get('pair')}\n"
         f"Bias: {c.get('bias')}\n"
         f"Score: {c.get('score')}/100\n"
@@ -184,14 +184,14 @@ def candidate_alert(c, streak, immediate):
         f"Why it qualified:\n{reason_text}\n\n"
         f"Invalidation:\n{c.get('invalidation', 'Not provided')}\n\n"
         f"Warnings:\n{warning_text}\n\n"
-        "Manual review required â this is not an automatic entry."
+        "Manual review required - this is not an automatic entry."
     )
 
 
 def deterioration_alert(c, st, flags):
     current_score = f(c.get("score"), 0.0)
     return (
-        "â ï¸ SIGNAL DETERIORATION\n\n"
+        "[WARNING] SIGNAL DETERIORATION\n\n"
         f"Pair: {c.get('pair')}\n"
         f"Original bias: {st.get('confirmed_bias')}\n"
         f"Current bias: {c.get('bias')}\n"
@@ -200,7 +200,7 @@ def deterioration_alert(c, st, flags):
         f"Current price: {c.get('current_price')}\n"
         f"MFE since confirmation: {f(st.get('mfe_pct'), 0.0):.2f}%\n"
         f"MAE since confirmation: {f(st.get('mae_pct'), 0.0):.2f}%\n\n"
-        "Material changes:\n" + "\n".join(f"â¢ {x}" for x in flags) + "\n\n"
+        "Material changes:\n" + "\n".join(f"- {x}" for x in flags) + "\n\n"
         f"Current invalidation:\n{c.get('invalidation', 'Not provided')}\n\n"
         "Protect the position / review the thesis. This is not an automatic exit order."
     )
@@ -248,7 +248,7 @@ def main():
             flags = []
 
             if bias and confirmed_bias and bias != confirmed_bias:
-                flags.append(f"bias flipped {confirmed_bias} â {bias}")
+                flags.append(f"bias flipped {confirmed_bias} -> {bias}")
             if formal_invalidation(c, confirmed_bias):
                 flags.append("formal OI + spot invalidation is now true")
             if spot_reversal(c, confirmed_bias):
