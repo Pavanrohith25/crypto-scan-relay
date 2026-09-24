@@ -36,6 +36,9 @@ jobs:
           PY
 
       - name: Process v3.1 confirmation and deterioration
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ github.ref == 'refs/heads/main' && secrets.TELEGRAM_BOT_TOKEN || '' }}
+          TELEGRAM_CHAT_ID: ${{ github.ref == 'refs/heads/main' && secrets.TELEGRAM_CHAT_ID || '' }}
         run: python process_scan.py
 
       - name: Process v3.2 shadow engine
