@@ -1,6 +1,6 @@
 {
-  "last_processed_at_ms": 1790292686826,
-  "last_processed_generated_at_ms": 1790292686691,
+  "last_processed_at_ms": 1790292753859,
+  "last_processed_generated_at_ms": 1790292753566,
   "minimum_candidate_score": 78.0,
   "pairs": {
     "BTWUSDT": {
@@ -21,19 +21,63 @@
         "long spot confirmation weak (B/S 0.613, flow -17,394)"
       ],
       "last_bias": "LONG",
-      "last_price": 0.0301,
+      "last_price": 0.03008,
       "last_score": 54.0,
-      "last_seen_at_ms": 1790292686826,
+      "last_seen_at_ms": 1790292753859,
       "qualifying_streak": 0,
       "required_score": 82.0
     },
     "ONEUSDT": {
+      "active": true,
+      "confirmed_at_ms": 1790292753859,
+      "confirmed_bias": "LONG",
+      "confirmed_generated_at_ms": 1790292753566,
+      "confirmed_price": 0.0020895,
+      "confirmed_score": 84.0,
+      "cooldown_until_ms": 0,
+      "entry_snapshot": {
+        "action": "LONG_CANDIDATE",
+        "basis_pct": -7.3002,
+        "bias": "LONG",
+        "binance_funding_minus_median_pct": -0.2,
+        "blockers": [],
+        "cross_exchange_median_funding_pct": -1.8,
+        "current_price": 0.0020895,
+        "funding_rate_pct": -2.0,
+        "futures_volume_change_24h_pct": -12.61,
+        "invalidation": "Do not take/keep the long thesis if 15m OI turns materially negative while Binance spot 1h net flow is negative and buy/sell ratio stays below 0.95.",
+        "oi_change_15m_pct": 0.29,
+        "oi_change_1h_pct": 2.98,
+        "oi_change_24h_pct": -13.55,
+        "oi_change_4h_pct": -10.78,
+        "oi_change_5m_pct": 0.11,
+        "open_interest_usd": 10019712.5531076,
+        "pair": "ONEUSDT",
+        "price_change_1h_spot_pct": 0.16,
+        "price_change_24h_futures_pct": -22.45,
+        "price_change_4h_spot_pct": -0.61,
+        "reasons": [
+          "extreme Binance funding -2.0000%",
+          "negative funding is broad across exchanges",
+          "spot buyers lead: B/S 1.17, net 14,106 USD",
+          "perp trades below index: basis -7.300%"
+        ],
+        "score": 84.0,
+        "spot_buy_sell_ratio_1h": 1.165,
+        "spot_net_flow_1h_usd": 14105.9026,
+        "spot_volume_1h_usd": 184790.6754,
+        "strength": "STRONG",
+        "warnings": []
+      },
       "gate_reasons": [],
       "last_bias": "LONG",
-      "last_price": 0.0020921,
-      "last_score": 79.0,
-      "last_seen_at_ms": 1790292686826,
-      "qualifying_streak": 1,
+      "last_price": 0.0020895,
+      "last_score": 84.0,
+      "last_seen_at_ms": 1790292753859,
+      "mae_pct": 0.0,
+      "mfe_pct": 0.0,
+      "previous_score": 84.0,
+      "qualifying_streak": 2,
       "required_score": 78.0
     },
     "STEEMUSDT": {
@@ -42,9 +86,9 @@
         "15m OI is not expanding"
       ],
       "last_bias": "LONG",
-      "last_price": 0.06174,
+      "last_price": 0.0617,
       "last_score": 74.0,
-      "last_seen_at_ms": 1790292686826,
+      "last_seen_at_ms": 1790292753859,
       "qualifying_streak": 0,
       "required_score": 82.0
     },
@@ -53,9 +97,9 @@
         "score 54.0 below required 82.0"
       ],
       "last_bias": "LONG",
-      "last_price": 0.010079,
+      "last_price": 0.010066,
       "last_score": 54.0,
-      "last_seen_at_ms": 1790292686826,
+      "last_seen_at_ms": 1790292753859,
       "qualifying_streak": 0,
       "required_score": 82.0
     },
