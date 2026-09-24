@@ -29,16 +29,23 @@ jobs:
           python - <<'PY'
           import json
           from pathlib import Path
+
           p = Path("new_scan.json")
           data = json.loads(p.read_text())
           p.write_text(json.dumps(data, indent=2, sort_keys=True) + "\n")
           PY
 
-      - name: Process confirmation, deterioration, and learning state
+      - name: Process v3.1 confirmation and deterioration
         env:
-          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
-          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          TELEGRAM_BOT_TOKEN: ${{ github.ref == 'refs/heads/main' && secrets.TELEGRAM_BOT_TOKEN || '' }}
+          TELEGRAM_CHAT_ID: ${{ github.ref == 'refs/heads/main' && secrets.TELEGRAM_CHAT_ID || '' }}
         run: python process_scan.py
+
+      - name: Process v3.2 shadow engine
+        run: python shadow_scan.py
+
+      - name: Run v3.2 shadow tests
+        run: python -m unittest discover -s tests -p "test_shadow_scan.py"
 
       - name: Commit scanner state
         if: github.ref == 'refs/heads/main'
@@ -49,6 +56,8 @@ jobs:
           git add latest_scan.json
           [ -f scanner_state.json ] && git add scanner_state.json
           [ -f signal_events.jsonl ] && git add signal_events.jsonl
+          [ -f shadow_state.json ] && git add shadow_state.json
+          [ -f shadow_events.jsonl ] && git add shadow_events.jsonl
 
           if git diff --cached --quiet; then
             echo "No changes"
@@ -61,6 +70,7 @@ jobs:
             if git push; then
               exit 0
             fi
+
             echo "git push failed (attempt $attempt/4); retrying..."
             sleep $((attempt * 5))
           done
