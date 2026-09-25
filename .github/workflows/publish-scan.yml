@@ -35,8 +35,8 @@ jobs:
           p.write_text(json.dumps(data, indent=2, sort_keys=True) + "\n")
           PY
 
-       - name: Fetch v3.4 swing discovery
-         run: |
+      - name: Fetch v3.4 swing discovery
+        run: |
           curl --fail --silent --show-error \
             --retry 3 \
             --retry-delay 5 \
@@ -50,7 +50,7 @@ jobs:
           p = Path("new_swing.json")
           data = json.loads(p.read_text())
           p.write_text(json.dumps(data, indent=2, sort_keys=True) + "\n")
-          PY  
+          PY 
 
       - name: Process v3.1 confirmation and deterioration
         env:
