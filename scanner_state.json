@@ -1,6 +1,6 @@
 {
-  "last_processed_at_ms": 1790346618130,
-  "last_processed_generated_at_ms": 1790346615603,
+  "last_processed_at_ms": 1790346943001,
+  "last_processed_generated_at_ms": 1790346940527,
   "minimum_candidate_score": 78.0,
   "pairs": {
     "AGPUUSDT": {
@@ -211,12 +211,13 @@
     },
     "LSKUSDT": {
       "gate_reasons": [
-        "long spot confirmation weak (B/S 0.951, flow -9,357)"
+        "score 59.0 below required 78.0",
+        "long spot confirmation weak (B/S 0.789, flow -42,860)"
       ],
       "last_bias": "LONG",
-      "last_price": 0.34946,
-      "last_score": 78.0,
-      "last_seen_at_ms": 1790346618130,
+      "last_price": 0.34793,
+      "last_score": 59.0,
+      "last_seen_at_ms": 1790346943001,
       "qualifying_streak": 0,
       "required_score": 78.0
     },
@@ -235,14 +236,14 @@
     },
     "NAORISUSDT": {
       "gate_reasons": [
-        "score 48.0 below required 82.0",
+        "score 50.0 below required 82.0",
         "candidate has blocker(s)",
         "missing Binance spot confirmation"
       ],
       "last_bias": "SHORT",
-      "last_price": 0.03483,
-      "last_score": 48.0,
-      "last_seen_at_ms": 1790346618130,
+      "last_price": 0.03505,
+      "last_score": 50.0,
+      "last_seen_at_ms": 1790346943001,
       "qualifying_streak": 0,
       "required_score": 82.0
     },
@@ -294,10 +295,10 @@
         "pair cooldown active after deterioration"
       ],
       "last_bias": "LONG",
-      "last_price": 0.0022195,
+      "last_price": 0.0022185,
       "last_return_pct": -1.31209,
       "last_score": 69.0,
-      "last_seen_at_ms": 1790346618130,
+      "last_seen_at_ms": 1790346943001,
       "mae_pct": -1.31209,
       "mfe_pct": 0.696211,
       "previous_score": 69.0,
@@ -320,13 +321,12 @@
     },
     "PHAUSDT": {
       "gate_reasons": [
-        "score 45.0 below required 78.0",
-        "long spot confirmation weak (B/S 0.970, flow -44,101)"
+        "score 36.0 below required 78.0"
       ],
       "last_bias": "LONG",
-      "last_price": 0.07419,
-      "last_score": 45.0,
-      "last_seen_at_ms": 1790344834699,
+      "last_price": 0.07797,
+      "last_score": 36.0,
+      "last_seen_at_ms": 1790346943001,
       "qualifying_streak": 0,
       "required_score": 78.0
     },
@@ -422,14 +422,14 @@
     },
     "WAXPUSDT": {
       "gate_reasons": [
-        "score 41.0 below required 78.0",
+        "score 47.0 below required 78.0",
         "candidate has blocker(s)",
         "long spot confirmation weak (B/S 0.761, flow -4,977)"
       ],
       "last_bias": "LONG",
-      "last_price": 0.006194,
-      "last_score": 41.0,
-      "last_seen_at_ms": 1790346618130,
+      "last_price": 0.006225,
+      "last_score": 47.0,
+      "last_seen_at_ms": 1790346943001,
       "qualifying_streak": 0,
       "required_score": 78.0
     },
