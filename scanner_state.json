@@ -1,6 +1,6 @@
 {
-  "last_processed_at_ms": 1790299830227,
-  "last_processed_generated_at_ms": 1790299830098,
+  "last_processed_at_ms": 1790300134450,
+  "last_processed_generated_at_ms": 1790300134326,
   "minimum_candidate_score": 78.0,
   "pairs": {
     "BTWUSDT": {
@@ -22,9 +22,9 @@
         "15m OI is not expanding"
       ],
       "last_bias": "LONG",
-      "last_price": 0.03025,
+      "last_price": 0.03016,
       "last_score": 49.0,
-      "last_seen_at_ms": 1790299830227,
+      "last_seen_at_ms": 1790300134450,
       "qualifying_streak": 0,
       "required_score": 82.0
     },
@@ -35,9 +35,9 @@
         "15m OI is not expanding"
       ],
       "last_bias": "LONG",
-      "last_price": 0.07089,
+      "last_price": 0.07038,
       "last_score": 57.0,
-      "last_seen_at_ms": 1790299830227,
+      "last_seen_at_ms": 1790300134450,
       "qualifying_streak": 0,
       "required_score": 82.0
     },
@@ -85,14 +85,14 @@
         "warnings": []
       },
       "gate_reasons": [
-        "score 62.0 below required 78.0",
+        "score 72.0 below required 78.0",
         "15m OI is not expanding"
       ],
       "last_bias": "LONG",
-      "last_price": 0.0023266,
+      "last_price": 0.0023107,
       "last_return_pct": -1.789902,
-      "last_score": 62.0,
-      "last_seen_at_ms": 1790299830227,
+      "last_score": 72.0,
+      "last_seen_at_ms": 1790300134450,
       "mae_pct": -1.789902,
       "mfe_pct": 1.981335,
       "previous_score": 57.0,
@@ -147,12 +147,14 @@
           "low open interest"
         ]
       },
-      "gate_reasons": [],
+      "gate_reasons": [
+        "pair cooldown active after deterioration"
+      ],
       "last_bias": "LONG",
-      "last_price": 0.06246,
+      "last_price": 0.06236,
       "last_return_pct": -1.575796,
       "last_score": 64.0,
-      "last_seen_at_ms": 1790299830227,
+      "last_seen_at_ms": 1790300134450,
       "mae_pct": -1.591554,
       "mfe_pct": 0.0,
       "previous_score": 64.0,
@@ -163,14 +165,13 @@
     },
     "WAXPUSDT": {
       "gate_reasons": [
-        "score 53.0 below required 78.0",
-        "candidate has blocker(s)",
-        "15m OI is not expanding"
+        "score 64.0 below required 78.0",
+        "candidate has blocker(s)"
       ],
       "last_bias": "LONG",
-      "last_price": 0.006014,
-      "last_score": 53.0,
-      "last_seen_at_ms": 1790299830227,
+      "last_price": 0.006063,
+      "last_score": 64.0,
+      "last_seen_at_ms": 1790300134450,
       "qualifying_streak": 0,
       "required_score": 78.0
     },
