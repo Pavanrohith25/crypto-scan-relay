@@ -1,6 +1,6 @@
 {
-  "last_processed_at_ms": 1790347523591,
-  "last_processed_generated_at_ms": 1790347521001,
+  "last_processed_at_ms": 1790347814644,
+  "last_processed_generated_at_ms": 1790347812127,
   "pairs": {
     "AGPUUSDT": {
       "gate_reasons": [
@@ -167,10 +167,10 @@
       ],
       "last_bias": "LONG",
       "last_decision": "BLOCKED_DEEP_COUNTERTREND",
-      "last_price": 0.34636,
+      "last_price": 0.34572,
       "last_regime": "COUNTERTREND_DEEP",
       "last_score": 54.0,
-      "last_seen_at_ms": 1790347523591
+      "last_seen_at_ms": 1790347814644
     },
     "MYXUSDT": {
       "gate_reasons": [
@@ -188,17 +188,18 @@
     },
     "NAORISUSDT": {
       "gate_reasons": [
-        "score 44.0 below required 82.0",
+        "score 39.0 below required 82.0",
         "candidate has blocker(s)",
         "missing spot confirmation",
+        "15m OI not expanding",
         "missing spot volume"
       ],
       "last_bias": "SHORT",
       "last_decision": "WAIT",
-      "last_price": 0.03491,
+      "last_price": 0.03504,
       "last_regime": "COUNTERTREND",
-      "last_score": 44.0,
-      "last_seen_at_ms": 1790347523591
+      "last_score": 39.0,
+      "last_seen_at_ms": 1790347814644
     },
     "ONEUSDT": {
       "active": false,
@@ -217,10 +218,10 @@
       "last_bias": "LONG",
       "last_decision": "BLOCKED_DEEP_COUNTERTREND",
       "last_position_check_ms": 1790320208844,
-      "last_price": 0.0022074,
+      "last_price": 0.0022024,
       "last_regime": "COUNTERTREND_DEEP",
       "last_score": 72.0,
-      "last_seen_at_ms": 1790347523591,
+      "last_seen_at_ms": 1790347814644,
       "position_state": "EXIT_THESIS_BROKEN"
     },
     "PHAROSUSDT": {
@@ -240,14 +241,15 @@
     },
     "PHAUSDT": {
       "gate_reasons": [
-        "score 30.0 below required 78.0"
+        "score 25.0 below required 78.0",
+        "15m OI not expanding"
       ],
       "last_bias": "LONG",
       "last_decision": "WAIT",
-      "last_price": 0.07638,
+      "last_price": 0.07493,
       "last_regime": "TREND_CONTINUATION",
-      "last_score": 30.0,
-      "last_seen_at_ms": 1790347242370
+      "last_score": 25.0,
+      "last_seen_at_ms": 1790347814644
     },
     "RAVEUSDT": {
       "gate_reasons": [
@@ -301,10 +303,10 @@
       ],
       "last_bias": "LONG",
       "last_decision": "WAIT",
-      "last_price": 0.006178,
+      "last_price": 0.006184,
       "last_regime": "TREND_CONTINUATION",
       "last_score": 51.0,
-      "last_seen_at_ms": 1790347523591
+      "last_seen_at_ms": 1790347814644
     },
     "XAIUSDT": {
       "gate_reasons": [
