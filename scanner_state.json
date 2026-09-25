@@ -1,6 +1,6 @@
 {
-  "last_processed_at_ms": 1790294730698,
-  "last_processed_generated_at_ms": 1790294730563,
+  "last_processed_at_ms": 1790295013602,
+  "last_processed_generated_at_ms": 1790295013464,
   "minimum_candidate_score": 78.0,
   "pairs": {
     "BTWUSDT": {
@@ -17,13 +17,13 @@
     },
     "CVCUSDT": {
       "gate_reasons": [
-        "score 54.0 below required 82.0",
+        "score 49.0 below required 82.0",
         "long spot confirmation weak (B/S 0.881, flow -3,207)"
       ],
       "last_bias": "LONG",
-      "last_price": 0.03018,
-      "last_score": 54.0,
-      "last_seen_at_ms": 1790294730698,
+      "last_price": 0.03005,
+      "last_score": 49.0,
+      "last_seen_at_ms": 1790295013602,
       "qualifying_streak": 0,
       "required_score": 82.0
     },
@@ -74,10 +74,10 @@
         "pair cooldown active after deterioration"
       ],
       "last_bias": "LONG",
-      "last_price": 0.0021152,
+      "last_price": 0.0021633,
       "last_return_pct": -1.789902,
       "last_score": 78.0,
-      "last_seen_at_ms": 1790294730698,
+      "last_seen_at_ms": 1790295013602,
       "mae_pct": -1.789902,
       "mfe_pct": 1.981335,
       "previous_score": 57.0,
@@ -132,12 +132,14 @@
           "low open interest"
         ]
       },
-      "gate_reasons": [],
+      "gate_reasons": [
+        "pair cooldown active after deterioration"
+      ],
       "last_bias": "LONG",
-      "last_price": 0.06182,
+      "last_price": 0.06257,
       "last_return_pct": -0.96123,
       "last_score": 50.0,
-      "last_seen_at_ms": 1790294730698,
+      "last_seen_at_ms": 1790295013602,
       "mae_pct": -0.96123,
       "mfe_pct": 0.0,
       "previous_score": 50.0,
@@ -146,14 +148,14 @@
     },
     "XAIUSDT": {
       "gate_reasons": [
-        "score 48.0 below required 82.0",
+        "score 42.0 below required 82.0",
         "long spot confirmation weak (B/S 0.995, flow -1,232)",
         "15m OI is not expanding"
       ],
       "last_bias": "LONG",
-      "last_price": 0.00969,
-      "last_score": 48.0,
-      "last_seen_at_ms": 1790294730698,
+      "last_price": 0.009669,
+      "last_score": 42.0,
+      "last_seen_at_ms": 1790295013602,
       "qualifying_streak": 0,
       "required_score": 82.0
     },
