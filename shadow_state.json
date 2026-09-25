@@ -1,6 +1,6 @@
 {
-  "last_processed_at_ms": 1790304618050,
-  "last_processed_generated_at_ms": 1790304617873,
+  "last_processed_at_ms": 1790304942988,
+  "last_processed_generated_at_ms": 1790304942816,
   "pairs": {
     "CVCUSDT": {
       "gate_reasons": [
@@ -11,10 +11,10 @@
       ],
       "last_bias": "LONG",
       "last_decision": "WAIT",
-      "last_price": 0.03009,
+      "last_price": 0.02999,
       "last_regime": "TREND_CONTINUATION",
       "last_score": 49.0,
-      "last_seen_at_ms": 1790304618050
+      "last_seen_at_ms": 1790304942988
     },
     "FLOCKUSDT": {
       "gate_reasons": [
@@ -37,24 +37,40 @@
       ],
       "last_bias": "LONG",
       "last_decision": "WAIT",
-      "last_price": 0.0022953,
+      "last_price": 0.0022936,
       "last_regime": "TREND_CONTINUATION",
       "last_score": 69.0,
-      "last_seen_at_ms": 1790304618050
+      "last_seen_at_ms": 1790304942988
+    },
+    "SNXXUSDT": {
+      "gate_reasons": [
+        "deep countertrend: 24h structure/OI conflicts with the setup",
+        "score 42.0 below required 78.0",
+        "candidate has blocker(s)",
+        "missing spot confirmation",
+        "15m OI not expanding",
+        "missing spot volume"
+      ],
+      "last_bias": "SHORT",
+      "last_decision": "BLOCKED_DEEP_COUNTERTREND",
+      "last_price": 17.46,
+      "last_regime": "COUNTERTREND_DEEP",
+      "last_score": 42.0,
+      "last_seen_at_ms": 1790304942988
     },
     "STEEMUSDT": {
       "gate_reasons": [
-        "score 39.0 below required 82.0",
+        "score 49.0 below required 82.0",
         "long spot weak (B/S 0.852, flow -5,097)",
         "15m OI not expanding",
         "spot volume 63,561 below required 100,000"
       ],
       "last_bias": "LONG",
       "last_decision": "WAIT",
-      "last_price": 0.06129,
+      "last_price": 0.06135,
       "last_regime": "COUNTERTREND",
-      "last_score": 39.0,
-      "last_seen_at_ms": 1790304618050
+      "last_score": 49.0,
+      "last_seen_at_ms": 1790304942988
     },
     "WAXPUSDT": {
       "gate_reasons": [
@@ -65,10 +81,10 @@
       ],
       "last_bias": "LONG",
       "last_decision": "WAIT",
-      "last_price": 0.005963,
+      "last_price": 0.005945,
       "last_regime": "TREND_CONTINUATION",
       "last_score": 26.0,
-      "last_seen_at_ms": 1790304618050
+      "last_seen_at_ms": 1790304942988
     },
     "XAIUSDT": {
       "gate_reasons": [
