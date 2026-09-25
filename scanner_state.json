@@ -1,18 +1,19 @@
 {
-  "last_processed_at_ms": 1790350854021,
-  "last_processed_generated_at_ms": 1790350850724,
+  "last_processed_at_ms": 1790351178955,
+  "last_processed_generated_at_ms": 1790351176268,
   "minimum_candidate_score": 78.0,
   "pairs": {
     "AGPUUSDT": {
       "gate_reasons": [
         "score 24.0 below required 78.0",
         "candidate has blocker(s)",
-        "missing Binance spot confirmation"
+        "missing Binance spot confirmation",
+        "15m OI is not expanding"
       ],
       "last_bias": "SHORT",
-      "last_price": 11.63,
+      "last_price": 11.62,
       "last_score": 24.0,
-      "last_seen_at_ms": 1790350854021,
+      "last_seen_at_ms": 1790351178955,
       "qualifying_streak": 0,
       "required_score": 78.0
     },
@@ -229,9 +230,9 @@
         "15m OI is not expanding"
       ],
       "last_bias": "LONG",
-      "last_price": 0.33845,
+      "last_price": 0.3387,
       "last_score": 44.0,
-      "last_seen_at_ms": 1790350854021,
+      "last_seen_at_ms": 1790351178955,
       "qualifying_streak": 0,
       "required_score": 78.0
     },
@@ -307,14 +308,14 @@
       },
       "gate_reasons": [
         "score 44.0 below required 78.0",
-        "long spot confirmation weak (B/S 0.808, flow -31,794)",
+        "long spot confirmation weak (B/S 0.820, flow -38,887)",
         "15m OI is not expanding"
       ],
       "last_bias": "LONG",
-      "last_price": 0.0022245,
+      "last_price": 0.0022092,
       "last_return_pct": -1.31209,
       "last_score": 44.0,
-      "last_seen_at_ms": 1790350854021,
+      "last_seen_at_ms": 1790351178955,
       "mae_pct": -1.31209,
       "mfe_pct": 0.696211,
       "previous_score": 69.0,
@@ -330,22 +331,22 @@
         "15m OI is not expanding"
       ],
       "last_bias": "SHORT",
-      "last_price": 0.662,
+      "last_price": 0.6637,
       "last_score": 47.0,
-      "last_seen_at_ms": 1790350854021,
+      "last_seen_at_ms": 1790351178955,
       "qualifying_streak": 0,
       "required_score": 82.0
     },
     "PHAUSDT": {
       "gate_reasons": [
-        "score 31.0 below required 78.0",
+        "score 21.0 below required 78.0",
         "long spot confirmation weak (B/S 1.044, flow 58,247)",
         "15m OI is not expanding"
       ],
       "last_bias": "LONG",
-      "last_price": 0.07683,
-      "last_score": 31.0,
-      "last_seen_at_ms": 1790350242067,
+      "last_price": 0.0738,
+      "last_score": 21.0,
+      "last_seen_at_ms": 1790351178955,
       "qualifying_streak": 0,
       "required_score": 78.0
     },
