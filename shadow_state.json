@@ -1,44 +1,43 @@
 {
-  "last_processed_at_ms": 1790294546169,
-  "last_processed_generated_at_ms": 1790294544640,
+  "last_processed_at_ms": 1790294731513,
+  "last_processed_generated_at_ms": 1790294730563,
   "pairs": {
     "CVCUSDT": {
       "gate_reasons": [
-        "score 60.0 below required 82.0",
+        "score 54.0 below required 82.0",
         "long spot weak (B/S 0.881, flow -3,207)",
         "spot volume 50,849 below required 100,000"
       ],
       "last_bias": "LONG",
       "last_decision": "WAIT",
-      "last_price": 0.03029,
+      "last_price": 0.03018,
       "last_regime": "TREND_CONTINUATION",
-      "last_score": 60.0,
-      "last_seen_at_ms": 1790294546169
+      "last_score": 54.0,
+      "last_seen_at_ms": 1790294731513
     },
     "ONEUSDT": {
       "gate_reasons": [
         "deep countertrend: 24h structure/OI conflicts with the setup",
-        "score 57.0 below required 78.0",
-        "long spot weak (B/S 1.020, flow 1,881)",
-        "15m OI not expanding"
+        "long spot weak (B/S 1.020, flow 1,881)"
       ],
       "last_bias": "LONG",
       "last_decision": "BLOCKED_DEEP_COUNTERTREND",
-      "last_price": 0.0020521,
+      "last_price": 0.0021152,
       "last_regime": "COUNTERTREND_DEEP",
-      "last_score": 57.0,
-      "last_seen_at_ms": 1790294546169
+      "last_score": 78.0,
+      "last_seen_at_ms": 1790294731513
     },
     "STEEMUSDT": {
       "gate_reasons": [
-        "spot volume 15,699 below required 100,000"
+        "score 50.0 below required 82.0",
+        "long spot weak (B/S 0.690, flow -29,059)"
       ],
       "last_bias": "LONG",
       "last_decision": "WAIT",
-      "last_price": 0.06242,
+      "last_price": 0.06182,
       "last_regime": "TREND_CONTINUATION",
-      "last_score": 85.0,
-      "last_seen_at_ms": 1790294546169
+      "last_score": 50.0,
+      "last_seen_at_ms": 1790294731513
     },
     "XAIUSDT": {
       "gate_reasons": [
@@ -48,10 +47,10 @@
       ],
       "last_bias": "LONG",
       "last_decision": "WAIT",
-      "last_price": 0.009764,
+      "last_price": 0.00969,
       "last_regime": "COUNTERTREND",
       "last_score": 48.0,
-      "last_seen_at_ms": 1790294546169
+      "last_seen_at_ms": 1790294731513
     }
   },
   "version": "3.2-shadow"
