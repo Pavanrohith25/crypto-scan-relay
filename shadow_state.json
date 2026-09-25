@@ -1,6 +1,6 @@
 {
-  "last_processed_at_ms": 1790298340541,
-  "last_processed_generated_at_ms": 1790298340274,
+  "last_processed_at_ms": 1790298621684,
+  "last_processed_generated_at_ms": 1790298621494,
   "pairs": {
     "CVCUSDT": {
       "gate_reasons": [
@@ -9,10 +9,10 @@
       ],
       "last_bias": "LONG",
       "last_decision": "WAIT",
-      "last_price": 0.03017,
+      "last_price": 0.03018,
       "last_regime": "TREND_CONTINUATION",
       "last_score": 67.0,
-      "last_seen_at_ms": 1790298340541
+      "last_seen_at_ms": 1790298621684
     },
     "FLOCKUSDT": {
       "gate_reasons": [
@@ -22,32 +22,52 @@
       ],
       "last_bias": "LONG",
       "last_decision": "WAIT",
-      "last_price": 0.07096,
+      "last_price": 0.07099,
       "last_regime": "COUNTERTREND",
       "last_score": 58.0,
-      "last_seen_at_ms": 1790298340541
+      "last_seen_at_ms": 1790298621684
     },
     "ONEUSDT": {
       "gate_reasons": [
-        "score 77.0 below required 78.0"
+        "score 71.0 below required 78.0"
       ],
       "last_bias": "LONG",
       "last_decision": "WAIT",
-      "last_price": 0.0023503,
+      "last_price": 0.0023502,
       "last_regime": "TREND_CONTINUATION",
-      "last_score": 77.0,
-      "last_seen_at_ms": 1790298340541
+      "last_score": 71.0,
+      "last_seen_at_ms": 1790298621684
     },
     "STEEMUSDT": {
+      "anchor_price": 0.06327,
+      "anchor_regime": "TREND_CONTINUATION",
+      "anchor_score": 85.0,
+      "armed": true,
+      "armed_at_ms": 1790298621684,
+      "evidence_count": 1,
+      "gate_reasons": [],
+      "high_priority": false,
+      "last_bias": "LONG",
+      "last_decision": "ARMED",
+      "last_fingerprint": "0.06327|1.198|47197.6208|524190.8452|2.25|10.56|-0.71",
+      "last_price": 0.06327,
+      "last_regime": "TREND_CONTINUATION",
+      "last_score": 85.0,
+      "last_seen_at_ms": 1790298621684,
+      "required_score": 82.0
+    },
+    "WAXPUSDT": {
       "gate_reasons": [
-        "score 79.0 below required 82.0"
+        "score 15.0 below required 78.0",
+        "candidate has blocker(s)",
+        "15m OI not expanding"
       ],
       "last_bias": "LONG",
       "last_decision": "WAIT",
-      "last_price": 0.06318,
+      "last_price": 0.006054,
       "last_regime": "TREND_CONTINUATION",
-      "last_score": 79.0,
-      "last_seen_at_ms": 1790298340541
+      "last_score": 15.0,
+      "last_seen_at_ms": 1790298621684
     },
     "XAIUSDT": {
       "gate_reasons": [
