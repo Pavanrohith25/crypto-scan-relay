@@ -1,6 +1,6 @@
 {
-  "last_processed_at_ms": 1790301354464,
-  "last_processed_generated_at_ms": 1790301354248,
+  "last_processed_at_ms": 1790301646644,
+  "last_processed_generated_at_ms": 1790301646483,
   "pairs": {
     "CVCUSDT": {
       "gate_reasons": [
@@ -10,10 +10,10 @@
       ],
       "last_bias": "LONG",
       "last_decision": "WAIT",
-      "last_price": 0.03028,
+      "last_price": 0.03029,
       "last_regime": "TREND_CONTINUATION",
       "last_score": 60.0,
-      "last_seen_at_ms": 1790301354464
+      "last_seen_at_ms": 1790301646644
     },
     "FLOCKUSDT": {
       "gate_reasons": [
@@ -36,28 +36,23 @@
       ],
       "last_bias": "LONG",
       "last_decision": "WAIT",
-      "last_price": 0.00229,
+      "last_price": 0.002306,
       "last_regime": "COUNTERTREND",
       "last_score": 77.0,
-      "last_seen_at_ms": 1790301354464
+      "last_seen_at_ms": 1790301646644
     },
     "STEEMUSDT": {
-      "anchor_price": 0.0625,
-      "anchor_regime": "TREND_CONTINUATION",
-      "anchor_score": 85.0,
-      "armed": true,
-      "armed_at_ms": 1790301354464,
-      "evidence_count": 1,
-      "gate_reasons": [],
-      "high_priority": false,
+      "gate_reasons": [
+        "score 54.0 below persistence floor 76.0",
+        "long spot weak (B/S 0.547, flow -18,318)",
+        "spot volume 62,644 below required 100,000"
+      ],
       "last_bias": "LONG",
-      "last_decision": "ARMED",
-      "last_fingerprint": "0.0625|1.18|22490.8418|272954.153|1.51|1.03|-1.86",
-      "last_price": 0.0625,
+      "last_decision": "FALSE_START",
+      "last_price": 0.06245,
       "last_regime": "TREND_CONTINUATION",
-      "last_score": 85.0,
-      "last_seen_at_ms": 1790301354464,
-      "required_score": 82.0
+      "last_score": 54.0,
+      "last_seen_at_ms": 1790301646644
     },
     "WAXPUSDT": {
       "gate_reasons": [
@@ -66,10 +61,10 @@
       ],
       "last_bias": "LONG",
       "last_decision": "WAIT",
-      "last_price": 0.005991,
+      "last_price": 0.006005,
       "last_regime": "TREND_CONTINUATION",
       "last_score": 51.0,
-      "last_seen_at_ms": 1790301354464
+      "last_seen_at_ms": 1790301646644
     },
     "XAIUSDT": {
       "gate_reasons": [
