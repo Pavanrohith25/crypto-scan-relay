@@ -3,7 +3,7 @@ name: Publish latest scan
 on:
   workflow_dispatch:
   
-  permissions:
+permissions:
   contents: write
 
 concurrency:
