@@ -83,6 +83,8 @@ jobs:
           [ -f shadow_events.jsonl ] && git add shadow_events.jsonl
           [ -f swing_state.json ] && git add swing_state.json
           [ -f swing_events.jsonl ] && git add swing_events.jsonl
+          [ -f swing_outcomes.json ] && git add swing_outcomes.json
+          [ -f swing_outcome_events.jsonl ] && git add swing_outcome_events.jsonl
 
           if git diff --cached --quiet; then
             echo "No changes"
