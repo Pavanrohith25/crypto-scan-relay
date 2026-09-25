@@ -64,6 +64,9 @@ jobs:
       - name: Process v3.4 swing shadow logger
         run: python swing_shadow.py
 
+      - name: Process v3.4 swing outcomes
+        run: python swing_outcomes.py
+
       - name: Run v3.2 shadow tests
         run: python -m unittest discover -s tests -p "test_shadow_scan.py"
 
