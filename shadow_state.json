@@ -1,6 +1,6 @@
 {
-  "last_processed_at_ms": 1790368538044,
-  "last_processed_generated_at_ms": 1790368535182,
+  "last_processed_at_ms": 1790368855427,
+  "last_processed_generated_at_ms": 1790368852865,
   "pairs": {
     "AGPUUSDT": {
       "gate_reasons": [
@@ -21,15 +21,14 @@
         "score 41.0 below required 82.0",
         "candidate has blocker(s)",
         "missing spot confirmation",
-        "15m OI not expanding",
         "missing spot volume"
       ],
       "last_bias": "SHORT",
       "last_decision": "WAIT",
-      "last_price": 0.06883,
+      "last_price": 0.06894,
       "last_regime": "TREND_CONTINUATION",
       "last_score": 41.0,
-      "last_seen_at_ms": 1790368538044
+      "last_seen_at_ms": 1790368855427
     },
     "BLESSUSDT": {
       "gate_reasons": [
@@ -63,7 +62,7 @@
     "BRUSDT": {
       "gate_reasons": [
         "deep countertrend: 24h structure/OI conflicts with the setup",
-        "score 52.0 below required 78.0",
+        "score 62.0 below required 78.0",
         "candidate has blocker(s)",
         "missing spot confirmation",
         "15m OI not expanding",
@@ -71,10 +70,10 @@
       ],
       "last_bias": "SHORT",
       "last_decision": "BLOCKED_DEEP_COUNTERTREND",
-      "last_price": 0.91613,
+      "last_price": 0.92041,
       "last_regime": "COUNTERTREND_DEEP",
-      "last_score": 52.0,
-      "last_seen_at_ms": 1790368538044
+      "last_score": 62.0,
+      "last_seen_at_ms": 1790368855427
     },
     "COLLECTUSDT": {
       "gate_reasons": [
@@ -203,7 +202,7 @@
     },
     "JCTUSDT": {
       "gate_reasons": [
-        "score 29.0 below required 82.0",
+        "score 39.0 below required 82.0",
         "candidate has blocker(s)",
         "missing spot confirmation",
         "15m OI not expanding",
@@ -211,10 +210,10 @@
       ],
       "last_bias": "SHORT",
       "last_decision": "WAIT",
-      "last_price": 0.001754,
+      "last_price": 0.001753,
       "last_regime": "COUNTERTREND",
-      "last_score": 29.0,
-      "last_seen_at_ms": 1790368538044
+      "last_score": 39.0,
+      "last_seen_at_ms": 1790368855427
     },
     "KSTRUSDT": {
       "gate_reasons": [
@@ -241,10 +240,10 @@
       ],
       "last_bias": "LONG",
       "last_decision": "BLOCKED_DEEP_COUNTERTREND",
-      "last_price": 0.34165,
+      "last_price": 0.34148,
       "last_regime": "COUNTERTREND_DEEP",
       "last_score": 62.0,
-      "last_seen_at_ms": 1790368538044
+      "last_seen_at_ms": 1790368855427
     },
     "MYXUSDT": {
       "gate_reasons": [
@@ -338,24 +337,16 @@
       "last_seen_at_ms": 1790353815561
     },
     "RAREUSDT": {
-      "anchor_price": 0.01603,
-      "anchor_regime": "COUNTERTREND",
-      "anchor_score": 85.0,
-      "armed": true,
-      "armed_at_ms": 1790368286866,
-      "evidence_count": 2,
       "gate_reasons": [
-        "price follow-through 0.18714909544605973 below 0.50%"
+        "score 64.0 below persistence floor 76.0",
+        "15m OI materially negative"
       ],
-      "high_priority": false,
       "last_bias": "LONG",
-      "last_decision": "ARMED_WAITING_TRIGGER",
-      "last_fingerprint": "0.01606|1.128|24754.0934|412652.7706|0.58|0.48|-2.05",
-      "last_price": 0.01606,
+      "last_decision": "FALSE_START",
+      "last_price": 0.0159,
       "last_regime": "TREND_CONTINUATION",
-      "last_score": 85.0,
-      "last_seen_at_ms": 1790368538044,
-      "required_score": 82.0
+      "last_score": 64.0,
+      "last_seen_at_ms": 1790368855427
     },
     "RAVEUSDT": {
       "gate_reasons": [
@@ -417,15 +408,14 @@
     "XAIUSDT": {
       "gate_reasons": [
         "deep countertrend: 24h structure/OI conflicts with the setup",
-        "score 70.0 below required 82.0",
-        "15m OI not expanding"
+        "score 81.0 below required 82.0"
       ],
       "last_bias": "LONG",
       "last_decision": "BLOCKED_DEEP_COUNTERTREND",
-      "last_price": 0.009322,
+      "last_price": 0.009445,
       "last_regime": "COUNTERTREND_DEEP",
-      "last_score": 70.0,
-      "last_seen_at_ms": 1790368538044
+      "last_score": 81.0,
+      "last_seen_at_ms": 1790368855427
     },
     "\u9f99\u867eUSDT": {
       "gate_reasons": [
