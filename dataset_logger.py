@@ -22,6 +22,9 @@ STATE_PATH = Path("dataset_v1_state.json")
 DATA_DIR = Path("dataset_v1")
 BUCKET_MINUTES = 15
 BUCKET_MS = BUCKET_MINUTES * 60 * 1000
+OBJECTIVE_VERSION = "swing-objective-v1"
+CANONICAL_HOLDING_WINDOW = "24-72h"
+CANONICAL_TARGET_MOVES_PCT = [3, 5, 10]
 
 
 def load_json(path: Path, default):
@@ -110,13 +113,17 @@ def main() -> None:
         market_context = {}
 
     snapshot = {
-        "dataset_version": "1.0",
+        "dataset_version": "1.1",
+        "objective_version": OBJECTIVE_VERSION,
         "generated_at_ms": generated_at_ms,
         "bucket_start_ms": bucket_start_ms,
         "scanner_version": payload.get("version"),
         "strategy": payload.get("strategy"),
-        "target_horizon": payload.get("target_horizon"),
-        "target_move": payload.get("target_move"),
+        "target_horizon": CANONICAL_HOLDING_WINDOW,
+        "target_move": "3-10%",
+        "target_moves_pct": CANONICAL_TARGET_MOVES_PCT,
+        "source_target_horizon": payload.get("target_horizon"),
+        "source_target_move": payload.get("target_move"),
         "universe_size": payload.get("universe_size"),
         "deep_checked": payload.get("deep_checked"),
         "analysis_pool_count": len(rows),
