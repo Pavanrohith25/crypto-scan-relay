@@ -1,18 +1,18 @@
 {
-  "last_processed_at_ms": 1790414718878,
-  "last_processed_generated_at_ms": 1790414716165,
+  "last_processed_at_ms": 1790415044581,
+  "last_processed_generated_at_ms": 1790415042002,
   "minimum_candidate_score": 78.0,
   "pairs": {
     "2ZUSDT": {
       "gate_reasons": [
-        "score 59.0 below required 82.0"
+        "score 64.0 below required 78.0"
       ],
       "last_bias": "LONG",
-      "last_price": 0.07827,
-      "last_score": 59.0,
-      "last_seen_at_ms": 1790414718878,
+      "last_price": 0.07755,
+      "last_score": 64.0,
+      "last_seen_at_ms": 1790415044581,
       "qualifying_streak": 0,
-      "required_score": 82.0
+      "required_score": 78.0
     },
     "AGPUUSDT": {
       "gate_reasons": [
@@ -372,13 +372,15 @@
         "warnings": []
       },
       "gate_reasons": [
-        "pair cooldown active after deterioration"
+        "score 54.0 below required 78.0",
+        "long spot confirmation weak (B/S 0.829, flow -11,554)",
+        "15m OI is not expanding"
       ],
       "last_bias": "LONG",
-      "last_price": 0.33768,
+      "last_price": 0.33783,
       "last_return_pct": -0.454866,
       "last_score": 54.0,
-      "last_seen_at_ms": 1790414718878,
+      "last_seen_at_ms": 1790415044581,
       "mae_pct": -0.454866,
       "mfe_pct": 0.070431,
       "previous_score": 67.0,
@@ -513,9 +515,9 @@
         "15m OI is not expanding"
       ],
       "last_bias": "SHORT",
-      "last_price": 0.030532,
+      "last_price": 0.029832,
       "last_score": 50.0,
-      "last_seen_at_ms": 1790414718878,
+      "last_seen_at_ms": 1790415044581,
       "qualifying_streak": 0,
       "required_score": 78.0
     },
@@ -566,13 +568,13 @@
         ]
       },
       "gate_reasons": [
-        "score 48.0 below required 78.0"
+        "score 43.0 below required 78.0"
       ],
       "last_bias": "LONG",
-      "last_price": 0.02121,
+      "last_price": 0.02133,
       "last_return_pct": -0.982962,
-      "last_score": 48.0,
-      "last_seen_at_ms": 1790414718878,
+      "last_score": 43.0,
+      "last_seen_at_ms": 1790415044581,
       "mae_pct": -0.982962,
       "mfe_pct": 0.0,
       "previous_score": 64.0,
@@ -657,10 +659,10 @@
         "15m OI is not expanding"
       ],
       "last_bias": "LONG",
-      "last_price": 0.06701,
+      "last_price": 0.06692,
       "last_return_pct": -1.575796,
       "last_score": 54.0,
-      "last_seen_at_ms": 1790414718878,
+      "last_seen_at_ms": 1790415044581,
       "mae_pct": -1.591554,
       "mfe_pct": 0.0,
       "previous_score": 64.0,
