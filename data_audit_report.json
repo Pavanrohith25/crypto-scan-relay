@@ -12,28 +12,12 @@
   "checks": {
     "analysis_pool_count": 20,
     "errors": 0,
-    "ranked_count": 7,
-    "warnings": 1
+    "ranked_count": 8,
+    "warnings": 0
   },
-  "generated_at_ms": 1790430943034,
-  "generated_at_utc": "2026-09-26T13:55:43.034000+00:00",
-  "issues": [
-    {
-      "code": "LEGACY_OBJECTIVE_METADATA",
-      "details": {
-        "canonical_holding_window": "24-72h",
-        "canonical_targets": [
-          3,
-          5,
-          10
-        ],
-        "stored_target_horizon": "24-48h",
-        "stored_target_move": "3-5%"
-      },
-      "level": "WARNING",
-      "message": "Dataset v1 contains legacy target metadata. Raw market features remain usable; historical/backfill labels must use the locked canonical objective instead."
-    }
-  ],
-  "status": "PASS_WITH_WARNINGS",
+  "generated_at_ms": 1790431255858,
+  "generated_at_utc": "2026-09-26T14:00:55.858000+00:00",
+  "issues": [],
+  "status": "PASS",
   "version": "data-audit-v1"
 }
