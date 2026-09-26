@@ -1,17 +1,18 @@
 {
-  "last_processed_at_ms": 1790416216536,
-  "last_processed_generated_at_ms": 1790416213949,
+  "last_processed_at_ms": 1790416529692,
+  "last_processed_generated_at_ms": 1790416527022,
   "pairs": {
     "2ZUSDT": {
       "gate_reasons": [
-        "score 41.0 below required 78.0"
+        "score 21.0 below required 82.0",
+        "15m OI not expanding"
       ],
       "last_bias": "LONG",
       "last_decision": "WAIT",
-      "last_price": 0.07632,
+      "last_price": 0.07502,
       "last_regime": "TREND_CONTINUATION",
-      "last_score": 41.0,
-      "last_seen_at_ms": 1790416216536
+      "last_score": 21.0,
+      "last_seen_at_ms": 1790416529692
     },
     "AGPUUSDT": {
       "gate_reasons": [
@@ -296,11 +297,11 @@
       ],
       "last_bias": "LONG",
       "last_decision": "SHADOW_CONFIRMED",
-      "last_position_check_ms": 1790416216536,
-      "last_price": 0.33738,
+      "last_position_check_ms": 1790416529692,
+      "last_price": 0.33776,
       "last_regime": "COUNTERTREND",
       "last_score": 54.0,
-      "last_seen_at_ms": 1790416216536,
+      "last_seen_at_ms": 1790416529692,
       "position_state": "REDUCE"
     },
     "MYXUSDT": {
@@ -345,17 +346,20 @@
       "confirmed_price": 0.0023717,
       "confirmed_regime": "TREND_CONTINUATION",
       "confirmed_score": 90.0,
-      "evidence_count": 1,
-      "gate_reasons": [],
+      "evidence_count": 2,
+      "gate_reasons": [
+        "price follow-through 0.25904498747948423 below 0.75%",
+        "countertrend reclaim not strong enough"
+      ],
       "high_priority": false,
       "last_bias": "LONG",
-      "last_decision": "ARMED",
-      "last_fingerprint": "0.0023162|1.202|14921.5167|162392.5631|0.98|0.0|-0.08",
+      "last_decision": "ARMED_WAITING_TRIGGER",
+      "last_fingerprint": "0.0023222|1.175|16140.0745|200965.5991|0.82|0.56|0.76",
       "last_position_check_ms": 1790320208844,
-      "last_price": 0.0023162,
+      "last_price": 0.0023222,
       "last_regime": "COUNTERTREND",
-      "last_score": 80.0,
-      "last_seen_at_ms": 1790416216536,
+      "last_score": 86.0,
+      "last_seen_at_ms": 1790416529692,
       "position_state": "EXIT_THESIS_BROKEN",
       "required_score": 78.0
     },
@@ -403,29 +407,29 @@
     },
     "QUSDT": {
       "gate_reasons": [
-        "score 50.0 below required 78.0",
+        "deep countertrend: 24h structure/OI conflicts with the setup",
+        "score 71.0 below required 78.0",
         "candidate has blocker(s)",
         "missing spot confirmation",
-        "15m OI not expanding",
         "missing spot volume"
       ],
       "last_bias": "SHORT",
-      "last_decision": "WAIT",
-      "last_price": 0.027684,
-      "last_regime": "COUNTERTREND",
-      "last_score": 50.0,
-      "last_seen_at_ms": 1790416216536
+      "last_decision": "BLOCKED_DEEP_COUNTERTREND",
+      "last_price": 0.029897,
+      "last_regime": "COUNTERTREND_DEEP",
+      "last_score": 71.0,
+      "last_seen_at_ms": 1790416529692
     },
     "RAREUSDT": {
       "gate_reasons": [
-        "score 57.0 below required 78.0"
+        "score 48.0 below required 78.0"
       ],
       "last_bias": "LONG",
       "last_decision": "WAIT",
-      "last_price": 0.02208,
+      "last_price": 0.02288,
       "last_regime": "TREND_CONTINUATION",
-      "last_score": 57.0,
-      "last_seen_at_ms": 1790416216536
+      "last_score": 48.0,
+      "last_seen_at_ms": 1790416529692
     },
     "RAVEUSDT": {
       "gate_reasons": [
@@ -472,17 +476,17 @@
     },
     "WAXPUSDT": {
       "gate_reasons": [
-        "score 42.0 below required 78.0",
+        "score 32.0 below required 78.0",
         "candidate has blocker(s)",
         "long spot weak (B/S 0.388, flow -36,600)",
         "15m OI not expanding"
       ],
       "last_bias": "LONG",
       "last_decision": "WAIT",
-      "last_price": 0.006794,
+      "last_price": 0.006775,
       "last_regime": "COUNTERTREND",
-      "last_score": 42.0,
-      "last_seen_at_ms": 1790416216536
+      "last_score": 32.0,
+      "last_seen_at_ms": 1790416529692
     },
     "XAIUSDT": {
       "gate_reasons": [
