@@ -76,6 +76,9 @@ jobs:
       - name: Process v3.4 swing outcomes
         run: python swing_outcomes.py
 
+      - name: Audit swing data integrity
+        run: python data_audit.py
+
       - name: Run v3.2 shadow tests
         run: python -m unittest discover -s tests -p "test_shadow_scan.py"
 
@@ -95,6 +98,7 @@ jobs:
           [ -f swing_outcomes.json ] && git add swing_outcomes.json
           [ -f swing_outcome_events.jsonl ] && git add swing_outcome_events.jsonl
           [ -f swing_rankings.json ] && git add swing_rankings.json
+          [ -f data_audit_report.json ] && git add data_audit_report.json
           [ -f swing_rank_history_state.json ] && git add swing_rank_history_state.json
           [ -d swing_rank_history ] && git add swing_rank_history
           [ -f dataset_v1_state.json ] && git add dataset_v1_state.json
