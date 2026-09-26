@@ -70,6 +70,9 @@ jobs:
       - name: Rank swing setups v1
         run: python swing_ranker.py
 
+      - name: Log swing rank history
+        run: python swing_rank_history.py
+
       - name: Process v3.4 swing outcomes
         run: python swing_outcomes.py
 
@@ -92,6 +95,8 @@ jobs:
           [ -f swing_outcomes.json ] && git add swing_outcomes.json
           [ -f swing_outcome_events.jsonl ] && git add swing_outcome_events.jsonl
           [ -f swing_rankings.json ] && git add swing_rankings.json
+          [ -f swing_rank_history_state.json ] && git add swing_rank_history_state.json
+          [ -d swing_rank_history ] && git add swing_rank_history
           [ -f dataset_v1_state.json ] && git add dataset_v1_state.json
           [ -d dataset_v1 ] && git add dataset_v1
 
