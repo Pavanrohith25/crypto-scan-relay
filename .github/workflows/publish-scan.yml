@@ -67,6 +67,9 @@ jobs:
       - name: Log Dataset v1 snapshot
         run: python dataset_logger.py
 
+      - name: Rank swing setups v1
+        run: python swing_ranker.py
+
       - name: Process v3.4 swing outcomes
         run: python swing_outcomes.py
 
@@ -88,6 +91,7 @@ jobs:
           [ -f swing_events.jsonl ] && git add swing_events.jsonl
           [ -f swing_outcomes.json ] && git add swing_outcomes.json
           [ -f swing_outcome_events.jsonl ] && git add swing_outcome_events.jsonl
+          [ -f swing_rankings.json ] && git add swing_rankings.json
           [ -f dataset_v1_state.json ] && git add dataset_v1_state.json
           [ -d dataset_v1 ] && git add dataset_v1
 
