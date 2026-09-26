@@ -1,6 +1,6 @@
 {
-  "last_processed_at_ms": 1790393747012,
-  "last_processed_generated_at_ms": 1790393744453,
+  "last_processed_at_ms": 1790394037987,
+  "last_processed_generated_at_ms": 1790394034634,
   "pairs": {
     "AGPUUSDT": {
       "gate_reasons": [
@@ -125,14 +125,15 @@
       "gate_reasons": [
         "score 56.0 below required 82.0",
         "long spot weak (B/S 1.001, flow 20)",
+        "15m OI not expanding",
         "spot volume 44,220 below required 100,000"
       ],
       "last_bias": "LONG",
       "last_decision": "WAIT",
-      "last_price": 0.03103,
+      "last_price": 0.03102,
       "last_regime": "TREND_CONTINUATION",
       "last_score": 56.0,
-      "last_seen_at_ms": 1790393747012
+      "last_seen_at_ms": 1790394037987
     },
     "ESPUSDT": {
       "gate_reasons": [
@@ -142,10 +143,10 @@
       ],
       "last_bias": "LONG",
       "last_decision": "WAIT",
-      "last_price": 0.10212,
+      "last_price": 0.10173,
       "last_regime": "TREND_CONTINUATION",
       "last_score": 31.0,
-      "last_seen_at_ms": 1790393747012
+      "last_seen_at_ms": 1790394037987
     },
     "ETHUSDT": {
       "gate_reasons": [
@@ -285,11 +286,11 @@
       ],
       "last_bias": "LONG",
       "last_decision": "SHADOW_CONFIRMED",
-      "last_position_check_ms": 1790393747012,
-      "last_price": 0.3433,
+      "last_position_check_ms": 1790394037987,
+      "last_price": 0.34338,
       "last_regime": "TREND_CONTINUATION",
       "last_score": 54.0,
-      "last_seen_at_ms": 1790393747012,
+      "last_seen_at_ms": 1790394037987,
       "position_state": "HOLD_PROTECT"
     },
     "MYXUSDT": {
@@ -392,14 +393,15 @@
     },
     "RAREUSDT": {
       "gate_reasons": [
-        "score 74.0 below persistence floor 76.0"
+        "score 64.0 below required 82.0",
+        "15m OI not expanding"
       ],
       "last_bias": "LONG",
-      "last_decision": "FALSE_START",
-      "last_price": 0.01507,
+      "last_decision": "WAIT",
+      "last_price": 0.01499,
       "last_regime": "COUNTERTREND",
-      "last_score": 74.0,
-      "last_seen_at_ms": 1790393747012
+      "last_score": 64.0,
+      "last_seen_at_ms": 1790394037987
     },
     "RAVEUSDT": {
       "gate_reasons": [
@@ -433,16 +435,16 @@
     },
     "STEEMUSDT": {
       "gate_reasons": [
-        "score 54.0 below required 82.0",
+        "score 48.0 below required 82.0",
         "long spot weak (B/S 0.496, flow -3,787)",
         "spot volume 11,244 below required 100,000"
       ],
       "last_bias": "LONG",
       "last_decision": "WAIT",
-      "last_price": 0.06746,
+      "last_price": 0.0675,
       "last_regime": "TREND_CONTINUATION",
-      "last_score": 54.0,
-      "last_seen_at_ms": 1790393747012
+      "last_score": 48.0,
+      "last_seen_at_ms": 1790394037987
     },
     "WAXPUSDT": {
       "gate_reasons": [
