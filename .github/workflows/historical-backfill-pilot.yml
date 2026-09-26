@@ -1,0 +1,57 @@
+name: Historical Backfill Pilot
+
+on:
+  workflow_dispatch:
+    inputs:
+      days:
+        description: "Days of historical data"
+        required: true
+        default: "30"
+        type: string
+
+permissions:
+  contents: read
+
+concurrency:
+  group: historical-backfill-pilot
+  cancel-in-progress: false
+
+jobs:
+  backfill:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Verify backfill script syntax
+        run: python -m py_compile historical_backfill_raw_v1.py
+
+      - name: Run historical raw-data pilot
+        env:
+          BACKFILL_DAYS: ${{ inputs.days }}
+          BACKFILL_SYMBOLS: BTCUSDT,ETHUSDT,SOLUSDT,XRPUSDT,BNBUSDT
+        run: python historical_backfill_raw_v1.py
+
+      - name: Show artifact size
+        if: always()
+        run: |
+          if [ -d "_backfill_artifact" ]; then
+            du -sh _backfill_artifact
+            cat _backfill_artifact/manifest.json || true
+          fi
+
+      - name: Upload historical pilot artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: historical-backfill-pilot
+          path: _backfill_artifact/
+          if-no-files-found: warn
+          retention-days: 7
