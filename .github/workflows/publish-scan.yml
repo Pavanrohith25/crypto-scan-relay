@@ -82,8 +82,8 @@ jobs:
       - name: Audit 5pct objective integrity
         run: python data_audit_v2.py
 
-      - name: Run v3.2 shadow tests
-        run: python -m unittest discover -s tests -p "test_shadow_scan.py"
+      - name: Run scanner tests
+        run: python -m unittest discover -s tests -p "test_*.py"
 
       - name: Commit scanner state
         if: github.ref == 'refs/heads/main'
@@ -98,6 +98,7 @@ jobs:
           [ -f shadow_events.jsonl ] && git add shadow_events.jsonl
           [ -f swing_state.json ] && git add swing_state.json
           [ -f swing_telegram_state.json ] && git add swing_telegram_state.json
+          [ -f swing_telegram_filter_events.jsonl ] && git add swing_telegram_filter_events.jsonl
           [ -f swing_events.jsonl ] && git add swing_events.jsonl
           [ -f swing_outcomes.json ] && git add swing_outcomes.json
           [ -f swing_outcome_events.jsonl ] && git add swing_outcome_events.jsonl
