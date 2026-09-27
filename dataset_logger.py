@@ -1,13 +1,8 @@
 #!/usr/bin/env python3
-"""Dataset v1 logger for the crypto scanner.
+"""Dataset logger for the V3.4 swing scanner.
 
-Reads new_swing.json produced by the workflow and stores one compact market
-snapshot per 15-minute bucket. The Railway trigger may run every 5 minutes;
-this logger intentionally de-duplicates those runs so the training dataset
-stays useful without growing the repository unnecessarily.
-
-Shadow/data collection only: this file does not change live signal logic,
-Telegram alerts, or trading decisions.
+Stores one compact market snapshot per 15-minute bucket. This is shadow/data
+collection only and does not place trades or send Telegram alerts.
 """
 
 from __future__ import annotations
@@ -22,9 +17,10 @@ STATE_PATH = Path("dataset_v1_state.json")
 DATA_DIR = Path("dataset_v1")
 BUCKET_MINUTES = 15
 BUCKET_MS = BUCKET_MINUTES * 60 * 1000
-OBJECTIVE_VERSION = "swing-objective-v1"
-CANONICAL_HOLDING_WINDOW = "24-72h"
-CANONICAL_TARGET_MOVES_PCT = [3, 5, 10]
+OBJECTIVE_VERSION = "swing-objective-v2-five-percent"
+CANONICAL_HOLDING_WINDOW = "24-48h"
+CANONICAL_TARGET_MOVES_PCT = [5]
+DIAGNOSTIC_HORIZONS_HOURS = [4, 12]
 
 
 def load_json(path: Path, default):
@@ -37,7 +33,6 @@ def load_json(path: Path, default):
 
 
 def clean_candidate(row: dict) -> dict:
-    """Keep compact, model-relevant fields from each analyzed symbol."""
     return {
         "symbol": row.get("symbol"),
         "bias": row.get("bias"),
@@ -62,66 +57,52 @@ def clean_candidate(row: dict) -> dict:
 
 def main() -> None:
     if not INPUT_PATH.exists():
-        print("[Dataset v1] new_swing.json not found; nothing to log.")
+        print("[Dataset] new_swing.json not found; nothing to log.")
         return
 
     payload = load_json(INPUT_PATH, {})
     if not isinstance(payload, dict):
-        print("[Dataset v1] invalid new_swing.json payload; skipping.")
+        print("[Dataset] invalid new_swing.json payload; skipping.")
         return
 
     pool = payload.get("analysis_pool")
     if not isinstance(pool, list):
-        print(
-            "[Dataset v1] analysis_pool missing. "
-            "Backend Dataset v1 upgrade may not be deployed yet; skipping."
-        )
+        print("[Dataset] analysis_pool missing; skipping.")
         return
 
-    generated_at_ms = payload.get("generated_at_ms")
     try:
-        generated_at_ms = int(generated_at_ms)
+        generated_at_ms = int(payload.get("generated_at_ms"))
     except (TypeError, ValueError):
         generated_at_ms = int(time.time() * 1000)
 
     bucket_start_ms = (generated_at_ms // BUCKET_MS) * BUCKET_MS
-
     state = load_json(
         STATE_PATH,
-        {
-            "version": "dataset-v1",
-            "bucket_minutes": BUCKET_MINUTES,
-            "last_bucket_start_ms": 0,
-            "snapshots_written": 0,
-        },
+        {"version": "dataset-v1", "bucket_minutes": BUCKET_MINUTES, "last_bucket_start_ms": 0, "snapshots_written": 0},
     )
 
     try:
         last_bucket = int(state.get("last_bucket_start_ms") or 0)
     except (TypeError, ValueError):
         last_bucket = 0
-
     if bucket_start_ms <= last_bucket:
-        print(
-            f"[Dataset v1] bucket {bucket_start_ms} already recorded; skipping duplicate."
-        )
+        print(f"[Dataset] bucket {bucket_start_ms} already recorded; skipping duplicate.")
         return
 
     rows = [clean_candidate(row) for row in pool if isinstance(row, dict)]
-    market_context = payload.get("market_context")
-    if not isinstance(market_context, dict):
-        market_context = {}
+    market_context = payload.get("market_context") if isinstance(payload.get("market_context"), dict) else {}
 
     snapshot = {
-        "dataset_version": "1.1",
+        "dataset_version": "1.2",
         "objective_version": OBJECTIVE_VERSION,
         "generated_at_ms": generated_at_ms,
         "bucket_start_ms": bucket_start_ms,
         "scanner_version": payload.get("version"),
         "strategy": payload.get("strategy"),
         "target_horizon": CANONICAL_HOLDING_WINDOW,
-        "target_move": "3-10%",
+        "target_move": "+5%",
         "target_moves_pct": CANONICAL_TARGET_MOVES_PCT,
+        "diagnostic_horizons_hours": DIAGNOSTIC_HORIZONS_HOURS,
         "source_target_horizon": payload.get("target_horizon"),
         "source_target_move": payload.get("target_move"),
         "universe_size": payload.get("universe_size"),
@@ -131,37 +112,27 @@ def main() -> None:
         "analysis_pool": rows,
     }
 
-    day = datetime.fromtimestamp(
-        bucket_start_ms / 1000,
-        tz=timezone.utc,
-    ).strftime("%Y-%m-%d")
-
+    day = datetime.fromtimestamp(bucket_start_ms / 1000, tz=timezone.utc).strftime("%Y-%m-%d")
     DATA_DIR.mkdir(parents=True, exist_ok=True)
     out_path = DATA_DIR / f"{day}.jsonl"
     with out_path.open("a", encoding="utf-8") as handle:
-        handle.write(json.dumps(snapshot, separators=(",", ":"), sort_keys=True))
-        handle.write("\n")
+        handle.write(json.dumps(snapshot, separators=(",", ":"), sort_keys=True) + "\n")
 
-    state.update(
-        {
-            "version": "dataset-v1",
-            "bucket_minutes": BUCKET_MINUTES,
-            "last_bucket_start_ms": bucket_start_ms,
-            "last_generated_at_ms": generated_at_ms,
-            "last_file": str(out_path),
-            "last_analysis_pool_count": len(rows),
-            "snapshots_written": int(state.get("snapshots_written") or 0) + 1,
-        }
-    )
-
+    state.update({
+        "version": "dataset-v1",
+        "objective_version": OBJECTIVE_VERSION,
+        "bucket_minutes": BUCKET_MINUTES,
+        "last_bucket_start_ms": bucket_start_ms,
+        "last_generated_at_ms": generated_at_ms,
+        "last_file": str(out_path),
+        "last_analysis_pool_count": len(rows),
+        "snapshots_written": int(state.get("snapshots_written") or 0) + 1,
+    })
     tmp = STATE_PATH.with_suffix(".tmp")
     tmp.write_text(json.dumps(state, indent=2, sort_keys=True) + "\n")
     tmp.replace(STATE_PATH)
 
-    print(
-        f"[Dataset v1] wrote {len(rows)} analyzed symbols to {out_path} "
-        f"for 15m bucket {bucket_start_ms}."
-    )
+    print(f"[Dataset] wrote {len(rows)} analyzed symbols to {out_path} for bucket {bucket_start_ms}.")
 
 
 if __name__ == "__main__":
