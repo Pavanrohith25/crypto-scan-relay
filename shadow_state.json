@@ -1,18 +1,18 @@
 {
-  "last_processed_at_ms": 1790472345674,
-  "last_processed_generated_at_ms": 1790472343147,
+  "last_processed_at_ms": 1790472632977,
+  "last_processed_generated_at_ms": 1790472630547,
   "pairs": {
     "2ZUSDT": {
       "gate_reasons": [
-        "score 52.0 below required 82.0",
-        "long spot weak (B/S 0.953, flow -9,106)"
+        "score 60.0 below required 82.0",
+        "long spot weak (B/S 0.745, flow -42,971)"
       ],
       "last_bias": "LONG",
       "last_decision": "WAIT",
-      "last_price": 0.06836,
+      "last_price": 0.06898,
       "last_regime": "TREND_CONTINUATION",
-      "last_score": 52.0,
-      "last_seen_at_ms": 1790472345674
+      "last_score": 60.0,
+      "last_seen_at_ms": 1790472632977
     },
     "AGPUUSDT": {
       "gate_reasons": [
@@ -160,15 +160,15 @@
     },
     "COWUSDT": {
       "gate_reasons": [
-        "score 35.0 below required 82.0",
+        "score 60.0 below required 82.0",
         "15m OI not expanding"
       ],
       "last_bias": "LONG",
       "last_decision": "WAIT",
-      "last_price": 0.1695,
+      "last_price": 0.1678,
       "last_regime": "TREND_CONTINUATION",
-      "last_score": 35.0,
-      "last_seen_at_ms": 1790472345674
+      "last_score": 60.0,
+      "last_seen_at_ms": 1790472632977
     },
     "CVCUSDT": {
       "gate_reasons": [
@@ -201,15 +201,15 @@
     },
     "ESPUSDT": {
       "gate_reasons": [
-        "score 48.0 below required 82.0",
+        "score 54.0 below required 82.0",
         "15m OI not expanding"
       ],
       "last_bias": "LONG",
       "last_decision": "WAIT",
-      "last_price": 0.10052,
+      "last_price": 0.10168,
       "last_regime": "TREND_CONTINUATION",
-      "last_score": 48.0,
-      "last_seen_at_ms": 1790472345674
+      "last_score": 54.0,
+      "last_seen_at_ms": 1790472632977
     },
     "ETHUSDT": {
       "gate_reasons": [
@@ -534,29 +534,30 @@
     },
     "STEEMUSDT": {
       "gate_reasons": [
-        "score 51.0 below required 82.0",
-        "long spot weak (B/S 1.031, flow 3,097)",
+        "deep countertrend: 24h structure/OI conflicts with the setup",
+        "score 33.0 below required 82.0",
+        "long spot weak (B/S 0.614, flow -40,721)",
         "15m OI not expanding"
       ],
       "last_bias": "LONG",
-      "last_decision": "WAIT",
-      "last_price": 0.06599,
-      "last_regime": "COUNTERTREND",
-      "last_score": 51.0,
-      "last_seen_at_ms": 1790471735420
+      "last_decision": "BLOCKED_DEEP_COUNTERTREND",
+      "last_price": 0.06588,
+      "last_regime": "COUNTERTREND_DEEP",
+      "last_score": 33.0,
+      "last_seen_at_ms": 1790472632977
     },
     "TUSDT": {
       "gate_reasons": [
-        "score 69.0 below required 82.0",
+        "score 63.0 below required 82.0",
         "long spot weak (B/S 0.935, flow -3,165)",
         "spot volume 93,957 below required 100,000"
       ],
       "last_bias": "LONG",
       "last_decision": "WAIT",
-      "last_price": 0.005882,
+      "last_price": 0.005886,
       "last_regime": "TREND_CONTINUATION",
-      "last_score": 69.0,
-      "last_seen_at_ms": 1790472345674
+      "last_score": 63.0,
+      "last_seen_at_ms": 1790472632977
     },
     "USUSDT": {
       "gate_reasons": [
