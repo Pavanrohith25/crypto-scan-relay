@@ -1,6 +1,6 @@
 {
-  "last_processed_at_ms": 1790529030811,
-  "last_processed_generated_at_ms": 1790529028356,
+  "last_processed_at_ms": 1790529343905,
+  "last_processed_generated_at_ms": 1790529341431,
   "pairs": {
     "1000RATSUSDT": {
       "gate_reasons": [
@@ -340,17 +340,18 @@
     "INXUSDT": {
       "gate_reasons": [
         "deep countertrend: 24h structure/OI conflicts with the setup",
-        "score 60.0 below required 82.0",
+        "score 45.0 below required 82.0",
         "candidate has blocker(s)",
         "missing spot confirmation",
+        "15m OI not expanding",
         "missing spot volume"
       ],
       "last_bias": "SHORT",
       "last_decision": "BLOCKED_DEEP_COUNTERTREND",
-      "last_price": 0.007314,
+      "last_price": 0.007254,
       "last_regime": "COUNTERTREND_DEEP",
-      "last_score": 60.0,
-      "last_seen_at_ms": 1790529030811
+      "last_score": 45.0,
+      "last_seen_at_ms": 1790529343905
     },
     "JASMYUSDT": {
       "gate_reasons": [
@@ -404,16 +405,16 @@
       "confirmed_score": 90.0,
       "gate_reasons": [
         "deep countertrend: 24h structure/OI conflicts with the setup",
-        "score 59.0 below required 78.0",
+        "score 50.0 below required 78.0",
         "long spot weak (B/S 0.543, flow -40,529)"
       ],
       "last_bias": "LONG",
       "last_decision": "BLOCKED_DEEP_COUNTERTREND",
       "last_position_check_ms": 1790481934127,
-      "last_price": 0.32729,
+      "last_price": 0.32622,
       "last_regime": "COUNTERTREND_DEEP",
-      "last_score": 59.0,
-      "last_seen_at_ms": 1790529030811,
+      "last_score": 50.0,
+      "last_seen_at_ms": 1790529343905,
       "position_state": "EXIT_THESIS_BROKEN"
     },
     "LYNUSDT": {
@@ -439,10 +440,10 @@
       ],
       "last_bias": "LONG",
       "last_decision": "WAIT",
-      "last_price": 0.05418,
+      "last_price": 0.05426,
       "last_regime": "TREND_CONTINUATION",
       "last_score": 39.0,
-      "last_seen_at_ms": 1790529030811
+      "last_seen_at_ms": 1790529343905
     },
     "MYXUSDT": {
       "gate_reasons": [
@@ -489,10 +490,10 @@
       "last_bias": "LONG",
       "last_decision": "WAIT",
       "last_position_check_ms": 1790320208844,
-      "last_price": 0.0022017,
+      "last_price": 0.0022013,
       "last_regime": "TREND_CONTINUATION",
       "last_score": 53.0,
-      "last_seen_at_ms": 1790529030811,
+      "last_seen_at_ms": 1790529343905,
       "position_state": "EXIT_THESIS_BROKEN"
     },
     "PDDUSDT": {
@@ -599,10 +600,10 @@
       ],
       "last_bias": "LONG",
       "last_decision": "BLOCKED_DEEP_COUNTERTREND",
-      "last_price": 0.02684,
+      "last_price": 0.02687,
       "last_regime": "COUNTERTREND_DEEP",
       "last_score": 59.0,
-      "last_seen_at_ms": 1790529030811
+      "last_seen_at_ms": 1790529343905
     },
     "SNXXUSDT": {
       "gate_reasons": [
