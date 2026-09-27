@@ -52,10 +52,7 @@ jobs:
           p.write_text(json.dumps(data, indent=2, sort_keys=True) + "\n")
           PY
 
-      - name: Process v3.1 confirmation and deterioration
-        env:
-          TELEGRAM_BOT_TOKEN: ${{ github.ref == 'refs/heads/main' && secrets.TELEGRAM_BOT_TOKEN || '' }}
-          TELEGRAM_CHAT_ID: ${{ github.ref == 'refs/heads/main' && secrets.TELEGRAM_CHAT_ID || '' }}
+      - name: Process v3.1 confirmation and deterioration (logging only)
         run: python process_scan.py
 
       - name: Process v3.2 shadow engine
@@ -63,6 +60,12 @@ jobs:
 
       - name: Process v3.4 swing shadow logger
         run: python swing_shadow.py
+
+      - name: Send v3.4 swing candidates to Telegram
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ github.ref == 'refs/heads/main' && secrets.TELEGRAM_BOT_TOKEN || '' }}
+          TELEGRAM_CHAT_ID: ${{ github.ref == 'refs/heads/main' && secrets.TELEGRAM_CHAT_ID || '' }}
+        run: python swing_telegram.py
 
       - name: Log Dataset v1 snapshot
         run: python dataset_logger.py
@@ -94,6 +97,7 @@ jobs:
           [ -f shadow_state.json ] && git add shadow_state.json
           [ -f shadow_events.jsonl ] && git add shadow_events.jsonl
           [ -f swing_state.json ] && git add swing_state.json
+          [ -f swing_telegram_state.json ] && git add swing_telegram_state.json
           [ -f swing_events.jsonl ] && git add swing_events.jsonl
           [ -f swing_outcomes.json ] && git add swing_outcomes.json
           [ -f swing_outcome_events.jsonl ] && git add swing_outcome_events.jsonl
