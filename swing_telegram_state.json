@@ -1,4 +1,10 @@
 {
+  "daily_anti_chase_enabled": true,
+  "daily_anti_chase_policy": {
+    "block_rule": "risk_points>=4 with material daily extension, or hard RSI+EMA20 exhaustion",
+    "daily_candles": 80,
+    "fail_closed_when_daily_context_unavailable": true
+  },
   "historical_gate_enabled": false,
   "last_blocked": [],
   "processed_trigger_ids": [
