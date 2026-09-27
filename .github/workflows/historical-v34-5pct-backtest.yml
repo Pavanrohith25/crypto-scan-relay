@@ -11,6 +11,7 @@ on:
   push:
     branches: [main]
     paths:
+      - "historical_backfill_raw_v1.py"
       - "historical_v34_backtest.py"
       - "historical_gate_finalize.py"
       - ".github/workflows/historical-v34-5pct-backtest.yml"
@@ -20,7 +21,7 @@ permissions:
 
 concurrency:
   group: historical-v34-5pct-backtest
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
   backtest:
@@ -46,9 +47,10 @@ jobs:
           python -m py_compile historical_gate_finalize.py
           python -m py_compile swing_ranker.py
 
-      - name: Build broad historical candle set
+      - name: Build quality-checked broad historical candle set
         env:
           BACKFILL_DAYS: ${{ github.event.inputs.days || '90' }}
+          BACKFILL_MIN_COMPLETE_SYMBOLS: "45"
           BACKFILL_SYMBOLS: >-
             BTCUSDT,ETHUSDT,BNBUSDT,SOLUSDT,XRPUSDT,DOGEUSDT,ADAUSDT,TRXUSDT,
             AVAXUSDT,LINKUSDT,DOTUSDT,LTCUSDT,BCHUSDT,XLMUSDT,HBARUSDT,SUIUSDT,
