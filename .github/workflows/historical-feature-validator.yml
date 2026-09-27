@@ -1,0 +1,67 @@
+name: Historical Feature Validator
+
+on:
+  workflow_dispatch:
+    inputs:
+      days:
+        description: "Days of historical data for validation"
+        required: true
+        default: "30"
+        type: string
+
+permissions:
+  contents: read
+
+concurrency:
+  group: historical-feature-validator
+  cancel-in-progress: false
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Syntax-check validation scripts
+        run: |
+          python -m py_compile historical_backfill_raw_v1.py
+          python -m py_compile historical_feature_validator_v1.py
+
+      - name: Build fresh raw historical pilot
+        env:
+          BACKFILL_DAYS: ${{ inputs.days }}
+          BACKFILL_SYMBOLS: BTCUSDT,ETHUSDT,SOLUSDT,XRPUSDT,BNBUSDT
+        run: python historical_backfill_raw_v1.py
+
+      - name: Validate historical features and live parity
+        env:
+          BACKFILL_ARTIFACT_DIR: _backfill_artifact
+          FEATURE_CHECKPOINTS_PER_SYMBOL: "24"
+          SWING_DISCOVERY_URL: https://web-production-3431ab.up.railway.app/swing-discovery
+        run: python historical_feature_validator_v1.py
+
+      - name: Show validation report
+        if: always()
+        run: |
+          echo "=== RAW MANIFEST ==="
+          cat _backfill_artifact/manifest.json || true
+          echo
+          echo "=== FEATURE VALIDATION ==="
+          cat _backfill_artifact/feature_validation_report.json || true
+
+      - name: Upload validation artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: historical-feature-validation
+          path: _backfill_artifact/
+          if-no-files-found: warn
+          retention-days: 7
