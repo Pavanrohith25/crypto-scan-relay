@@ -17,6 +17,8 @@ jobs:
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Fetch latest scanner data
         run: |
@@ -114,12 +116,22 @@ jobs:
           git commit -m "Update market scan and signal state"
 
           for attempt in 1 2 3 4; do
-            if git push; then
+            # Another workflow or repo edit may have moved main while this scan
+            # was running. Rebase our state commit onto the newest main before
+            # each push attempt instead of retrying the same stale commit.
+            if ! git pull --rebase origin main; then
+              echo "rebase failed; aborting to avoid overwriting remote changes"
+              git rebase --abort || true
+              exit 1
+            fi
+
+            if git push origin main; then
               exit 0
             fi
-            echo "git push failed (attempt $attempt/4); retrying..."
-            sleep $((attempt * 5))
+
+            echo "git push raced with another writer (attempt $attempt/4); refreshing..."
+            sleep $((attempt * 3))
           done
 
-          echo "git push failed after 4 attempts"
+          echo "git push failed after 4 synchronized attempts"
           exit 1
