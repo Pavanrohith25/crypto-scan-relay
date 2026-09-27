@@ -34,6 +34,7 @@ jobs:
         run: |
           python -m py_compile historical_backfill_raw_v1.py
           python -m py_compile historical_feature_validator_v1.py
+          python -m py_compile historical_feature_validator_v1_1.py
 
       - name: Build fresh raw historical pilot
         env:
@@ -46,7 +47,7 @@ jobs:
           BACKFILL_ARTIFACT_DIR: _backfill_artifact
           FEATURE_CHECKPOINTS_PER_SYMBOL: "24"
           SWING_DISCOVERY_URL: https://web-production-3431ab.up.railway.app/swing-discovery
-        run: python historical_feature_validator_v1.py
+        run: python historical_feature_validator_v1_1.py
 
       - name: Show validation report
         if: always()
