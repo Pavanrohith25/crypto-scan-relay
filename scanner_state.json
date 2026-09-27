@@ -1,6 +1,6 @@
 {
-  "last_processed_at_ms": 1790513119160,
-  "last_processed_generated_at_ms": 1790513116513,
+  "last_processed_at_ms": 1790513457316,
+  "last_processed_generated_at_ms": 1790513454952,
   "minimum_candidate_score": 78.0,
   "pairs": {
     "1000RATSUSDT": {
@@ -67,10 +67,10 @@
         "15m OI is not expanding"
       ],
       "last_bias": "LONG",
-      "last_price": 0.06706,
+      "last_price": 0.0668,
       "last_return_pct": -0.14497,
       "last_score": 60.0,
-      "last_seen_at_ms": 1790513119160,
+      "last_seen_at_ms": 1790513457316,
       "mae_pct": -0.652363,
       "mfe_pct": 0.434909,
       "previous_score": 62.0,
@@ -464,15 +464,15 @@
     },
     "INTWUSDT": {
       "gate_reasons": [
-        "score 39.0 below required 82.0",
+        "score 45.0 below required 82.0",
         "candidate has blocker(s)",
         "missing Binance spot confirmation",
         "15m OI is not expanding"
       ],
       "last_bias": "SHORT",
-      "last_price": 34.45,
-      "last_score": 39.0,
-      "last_seen_at_ms": 1790513119160,
+      "last_price": 34.48,
+      "last_score": 45.0,
+      "last_seen_at_ms": 1790513457316,
       "qualifying_streak": 0,
       "required_score": 82.0
     },
@@ -548,14 +548,15 @@
         "warnings": []
       },
       "gate_reasons": [
-        "score 59.0 below required 78.0",
-        "long spot confirmation weak (B/S 0.467, flow -31,340)"
+        "score 54.0 below required 78.0",
+        "long spot confirmation weak (B/S 0.467, flow -31,340)",
+        "15m OI is not expanding"
       ],
       "last_bias": "LONG",
-      "last_price": 0.3295,
+      "last_price": 0.32891,
       "last_return_pct": -1.630952,
-      "last_score": 59.0,
-      "last_seen_at_ms": 1790513119160,
+      "last_score": 54.0,
+      "last_seen_at_ms": 1790513457316,
       "mae_pct": -1.630952,
       "mfe_pct": 0.142857,
       "previous_score": 50.0,
@@ -714,14 +715,15 @@
     },
     "QUSDT": {
       "gate_reasons": [
-        "score 65.0 below required 78.0",
+        "score 54.0 below required 78.0",
         "candidate has blocker(s)",
-        "missing Binance spot confirmation"
+        "missing Binance spot confirmation",
+        "15m OI is not expanding"
       ],
       "last_bias": "SHORT",
-      "last_price": 0.049868,
-      "last_score": 65.0,
-      "last_seen_at_ms": 1790513119160,
+      "last_price": 0.049371,
+      "last_score": 54.0,
+      "last_seen_at_ms": 1790513457316,
       "qualifying_streak": 0,
       "required_score": 78.0
     },
@@ -772,14 +774,15 @@
         ]
       },
       "gate_reasons": [
-        "score 60.0 below required 82.0",
+        "score 48.0 below required 82.0",
+        "long spot confirmation weak (B/S 0.976, flow -3,859)",
         "15m OI is not expanding"
       ],
       "last_bias": "LONG",
-      "last_price": 0.01988,
+      "last_price": 0.01974,
       "last_return_pct": -1.460222,
-      "last_score": 60.0,
-      "last_seen_at_ms": 1790513119160,
+      "last_score": 48.0,
+      "last_seen_at_ms": 1790513457316,
       "mae_pct": -1.460222,
       "mfe_pct": 0.0,
       "previous_score": 64.0,
@@ -844,15 +847,16 @@
       },
       "gate_reasons": [],
       "last_bias": "LONG",
-      "last_price": 0.02637,
-      "last_return_pct": -0.939144,
-      "last_score": 85.0,
-      "last_seen_at_ms": 1790513119160,
-      "mae_pct": -0.939144,
+      "last_price": 0.02631,
+      "last_return_pct": -1.164538,
+      "last_score": 79.0,
+      "last_seen_at_ms": 1790513457316,
+      "mae_pct": -1.164538,
       "mfe_pct": 0.225394,
-      "previous_score": 85.0,
+      "previous_score": 79.0,
       "qualifying_streak": 2,
-      "required_score": 78.0
+      "required_score": 78.0,
+      "sl1_hit_at_ms": 1790513457316
     },
     "SNXXUSDT": {
       "gate_reasons": [
