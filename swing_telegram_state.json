@@ -5,8 +5,24 @@
     "daily_candles": 80,
     "fail_closed_when_daily_context_unavailable": true
   },
+  "entry_drift_monitor_enabled": true,
+  "entry_drift_policy": {
+    "block_if_stop_already_reached": true,
+    "block_if_target_already_reached": true,
+    "empirical_late_entry_cutoff_enabled": false,
+    "mode": "research_with_objective_stale_guard",
+    "research_buckets_pct": [
+      0.0,
+      0.5,
+      1.0,
+      2.0,
+      3.0,
+      5.0
+    ]
+  },
   "historical_gate_enabled": false,
   "last_blocked": [],
+  "last_entry_drift_checks": [],
   "processed_trigger_ids": [
     "AAVEUSDT-1790420485978",
     "APTUSDT-1790361323278",
