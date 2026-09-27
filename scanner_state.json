@@ -1,17 +1,15 @@
 {
-  "last_processed_at_ms": 1790475643290,
-  "last_processed_generated_at_ms": 1790475640851,
+  "last_processed_at_ms": 1790475914508,
+  "last_processed_generated_at_ms": 1790475911989,
   "minimum_candidate_score": 78.0,
   "pairs": {
     "2ZUSDT": {
-      "gate_reasons": [
-        "score 79.0 below required 82.0"
-      ],
+      "gate_reasons": [],
       "last_bias": "LONG",
-      "last_price": 0.06997,
-      "last_score": 79.0,
-      "last_seen_at_ms": 1790475643290,
-      "qualifying_streak": 0,
+      "last_price": 0.07043,
+      "last_score": 85.0,
+      "last_seen_at_ms": 1790475914508,
+      "qualifying_streak": 1,
       "required_score": 82.0
     },
     "AGPUUSDT": {
@@ -162,12 +160,13 @@
     },
     "COWUSDT": {
       "gate_reasons": [
-        "score 65.0 below required 82.0"
+        "score 50.0 below required 82.0",
+        "15m OI is not expanding"
       ],
       "last_bias": "LONG",
-      "last_price": 0.1712,
-      "last_score": 65.0,
-      "last_seen_at_ms": 1790475643290,
+      "last_price": 0.1676,
+      "last_score": 50.0,
+      "last_seen_at_ms": 1790475914508,
       "qualifying_streak": 0,
       "required_score": 82.0
     },
@@ -249,12 +248,13 @@
     },
     "ESPUSDT": {
       "gate_reasons": [
-        "score 50.0 below required 82.0"
+        "score 50.0 below required 82.0",
+        "15m OI is not expanding"
       ],
       "last_bias": "LONG",
-      "last_price": 0.10423,
+      "last_price": 0.10428,
       "last_score": 50.0,
-      "last_seen_at_ms": 1790475643290,
+      "last_seen_at_ms": 1790475914508,
       "qualifying_streak": 0,
       "required_score": 82.0
     },
@@ -571,13 +571,14 @@
     },
     "QNTUSDT": {
       "gate_reasons": [
-        "score 16.0 below required 78.0",
-        "long spot confirmation weak (B/S 1.008, flow 58,692)"
+        "score 4.0 below required 78.0",
+        "long spot confirmation weak (B/S 1.008, flow 58,692)",
+        "15m OI is not expanding"
       ],
       "last_bias": "LONG",
-      "last_price": 177.16,
-      "last_score": 16.0,
-      "last_seen_at_ms": 1790475643290,
+      "last_price": 176.5,
+      "last_score": 4.0,
+      "last_seen_at_ms": 1790475914508,
       "qualifying_streak": 0,
       "required_score": 78.0
     },
@@ -642,15 +643,14 @@
         ]
       },
       "gate_reasons": [
-        "score 29.0 below required 82.0",
-        "long spot confirmation weak (B/S 0.892, flow -27,930)",
+        "score 57.0 below required 82.0",
         "15m OI is not expanding"
       ],
       "last_bias": "LONG",
-      "last_price": 0.01991,
+      "last_price": 0.01999,
       "last_return_pct": -0.982962,
-      "last_score": 29.0,
-      "last_seen_at_ms": 1790475643290,
+      "last_score": 57.0,
+      "last_seen_at_ms": 1790475914508,
       "mae_pct": -0.982962,
       "mfe_pct": 0.0,
       "previous_score": 64.0,
@@ -762,13 +762,13 @@
     },
     "TUSDT": {
       "gate_reasons": [
-        "score 68.0 below required 82.0",
+        "score 58.0 below required 82.0",
         "15m OI is not expanding"
       ],
       "last_bias": "LONG",
-      "last_price": 0.005941,
-      "last_score": 68.0,
-      "last_seen_at_ms": 1790475643290,
+      "last_price": 0.005891,
+      "last_score": 58.0,
+      "last_seen_at_ms": 1790475914508,
       "qualifying_streak": 0,
       "required_score": 82.0
     },
