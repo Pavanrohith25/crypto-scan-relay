@@ -1,6 +1,6 @@
 {
-  "last_processed_at_ms": 1790535321267,
-  "last_processed_generated_at_ms": 1790535318594,
+  "last_processed_at_ms": 1790535621232,
+  "last_processed_generated_at_ms": 1790535618599,
   "pairs": {
     "1000RATSUSDT": {
       "gate_reasons": [
@@ -81,10 +81,10 @@
       ],
       "last_bias": "SHORT",
       "last_decision": "WAIT",
-      "last_price": 0.5128,
+      "last_price": 0.5135,
       "last_regime": "COUNTERTREND",
       "last_score": 49.0,
-      "last_seen_at_ms": 1790535321267
+      "last_seen_at_ms": 1790535621232
     },
     "BLESSUSDT": {
       "gate_reasons": [
@@ -423,10 +423,10 @@
       "last_bias": "LONG",
       "last_decision": "BLOCKED_DEEP_COUNTERTREND",
       "last_position_check_ms": 1790481934127,
-      "last_price": 0.3233,
+      "last_price": 0.32282,
       "last_regime": "COUNTERTREND_DEEP",
       "last_score": 73.0,
-      "last_seen_at_ms": 1790535321267,
+      "last_seen_at_ms": 1790535621232,
       "position_state": "EXIT_THESIS_BROKEN"
     },
     "LYNUSDT": {
@@ -450,18 +450,18 @@
       "anchor_score": 85.0,
       "armed": true,
       "armed_at_ms": 1790534754801,
-      "evidence_count": 3,
+      "evidence_count": 4,
       "gate_reasons": [
-        "price follow-through -0.363901018922852 below 0.50%"
+        "price follow-through -0.05458515283842669 below 0.50%"
       ],
       "high_priority": false,
       "last_bias": "LONG",
       "last_decision": "ARMED_WAITING_TRIGGER",
-      "last_fingerprint": "0.05476|1.486|34112.9136|174392.9562|0.2|1.75|2.6",
-      "last_price": 0.05476,
+      "last_fingerprint": "0.05493|1.486|34112.9136|174392.9562|0.34|2.06|2.6",
+      "last_price": 0.05493,
       "last_regime": "TREND_CONTINUATION",
       "last_score": 79.0,
-      "last_seen_at_ms": 1790535321267,
+      "last_seen_at_ms": 1790535621232,
       "required_score": 82.0
     },
     "MYXUSDT": {
@@ -508,10 +508,10 @@
       "last_bias": "LONG",
       "last_decision": "WAIT",
       "last_position_check_ms": 1790320208844,
-      "last_price": 0.0021854,
+      "last_price": 0.0021779,
       "last_regime": "COUNTERTREND",
       "last_score": 75.0,
-      "last_seen_at_ms": 1790535321267,
+      "last_seen_at_ms": 1790535621232,
       "position_state": "EXIT_THESIS_BROKEN"
     },
     "PDDUSDT": {
@@ -613,15 +613,16 @@
     "SAGAUSDT": {
       "gate_reasons": [
         "deep countertrend: 24h structure/OI conflicts with the setup",
-        "score 49.0 below required 78.0",
-        "long spot weak (B/S 0.705, flow -127,264)"
+        "score 44.0 below required 78.0",
+        "long spot weak (B/S 0.705, flow -127,264)",
+        "15m OI not expanding"
       ],
       "last_bias": "LONG",
       "last_decision": "BLOCKED_DEEP_COUNTERTREND",
-      "last_price": 0.02662,
+      "last_price": 0.02646,
       "last_regime": "COUNTERTREND_DEEP",
-      "last_score": 49.0,
-      "last_seen_at_ms": 1790535321267
+      "last_score": 44.0,
+      "last_seen_at_ms": 1790535621232
     },
     "SNXXUSDT": {
       "gate_reasons": [
@@ -661,10 +662,10 @@
       ],
       "last_bias": "SHORT",
       "last_decision": "BLOCKED_DEEP_COUNTERTREND",
-      "last_price": 0.3286,
+      "last_price": 0.3273,
       "last_regime": "COUNTERTREND_DEEP",
       "last_score": 41.0,
-      "last_seen_at_ms": 1790535321267
+      "last_seen_at_ms": 1790535621232
     },
     "SPELLUSDT": {
       "gate_reasons": [
