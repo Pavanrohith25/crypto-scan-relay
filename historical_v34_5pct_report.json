@@ -1,0 +1,271 @@
+{
+  "by_market_regime": {
+    "MIXED": {
+      "24h": {
+        "samples": 198,
+        "target_5_hit_rate": 0.1616,
+        "target_5_hits": 32
+      },
+      "48h": {
+        "samples": 198,
+        "target_5_hit_rate": 0.2879,
+        "target_5_hits": 57
+      }
+    },
+    "RISK_OFF": {
+      "24h": {
+        "samples": 438,
+        "target_5_hit_rate": 0.1256,
+        "target_5_hits": 55
+      },
+      "48h": {
+        "samples": 438,
+        "target_5_hit_rate": 0.21,
+        "target_5_hits": 92
+      }
+    },
+    "RISK_ON": {
+      "24h": {
+        "samples": 472,
+        "target_5_hit_rate": 0.3263,
+        "target_5_hits": 154
+      },
+      "48h": {
+        "samples": 472,
+        "target_5_hit_rate": 0.4492,
+        "target_5_hits": 212
+      }
+    }
+  },
+  "by_quality_bucket": {
+    "0-49": {
+      "24h": {
+        "samples": 81,
+        "target_5_hit_rate": 0.2222,
+        "target_5_hits": 18
+      },
+      "48h": {
+        "samples": 81,
+        "target_5_hit_rate": 0.3457,
+        "target_5_hits": 28
+      }
+    },
+    "50-59": {
+      "24h": {
+        "samples": 180,
+        "target_5_hit_rate": 0.2278,
+        "target_5_hits": 41
+      },
+      "48h": {
+        "samples": 180,
+        "target_5_hit_rate": 0.35,
+        "target_5_hits": 63
+      }
+    },
+    "60-69": {
+      "24h": {
+        "samples": 318,
+        "target_5_hit_rate": 0.1918,
+        "target_5_hits": 61
+      },
+      "48h": {
+        "samples": 318,
+        "target_5_hit_rate": 0.2799,
+        "target_5_hits": 89
+      }
+    },
+    "70-79": {
+      "24h": {
+        "samples": 345,
+        "target_5_hit_rate": 0.2145,
+        "target_5_hits": 74
+      },
+      "48h": {
+        "samples": 345,
+        "target_5_hit_rate": 0.3188,
+        "target_5_hits": 110
+      }
+    },
+    "80-100": {
+      "24h": {
+        "samples": 184,
+        "target_5_hit_rate": 0.2554,
+        "target_5_hits": 47
+      },
+      "48h": {
+        "samples": 184,
+        "target_5_hit_rate": 0.3859,
+        "target_5_hits": 71
+      }
+    }
+  },
+  "generated_at_ms": 1790487668873,
+  "objective": {
+    "diagnostic_horizons_hours": [
+      4,
+      12
+    ],
+    "primary_horizon_hours": 24,
+    "secondary_horizon_hours": 48,
+    "stop_grid_pct": [
+      3.0,
+      4.0,
+      5.0,
+      6.0,
+      8.0
+    ],
+    "target_pct": 5.0
+  },
+  "overall": {
+    "12h": {
+      "samples": 1108,
+      "target_5_hit_rate": 0.1209,
+      "target_5_hits": 134
+    },
+    "24h": {
+      "samples": 1108,
+      "target_5_hit_rate": 0.2175,
+      "target_5_hits": 241
+    },
+    "48h": {
+      "samples": 1108,
+      "target_5_hit_rate": 0.3258,
+      "target_5_hits": 361
+    },
+    "4h": {
+      "samples": 1108,
+      "target_5_hit_rate": 0.0262,
+      "target_5_hits": 29
+    }
+  },
+  "research_best_stop_pct_by_average_simulated_return": 3.0,
+  "source": {
+    "days": 90,
+    "historical_price_change_note": "Uses completed 1h closes for historical 24h price change.",
+    "historical_quote_volume_note": "Uses sum of completed 1h quote-volume candles as a historical proxy for rolling 24h quote volume.",
+    "market": "spot",
+    "symbols_requested": [
+      "BTCUSDT",
+      "ETHUSDT",
+      "BNBUSDT",
+      "SOLUSDT",
+      "XRPUSDT",
+      "DOGEUSDT",
+      "ADAUSDT",
+      "TRXUSDT",
+      "AVAXUSDT",
+      "LINKUSDT",
+      "DOTUSDT",
+      "LTCUSDT",
+      "BCHUSDT",
+      "XLMUSDT",
+      "HBARUSDT",
+      "SUIUSDT",
+      "APTUSDT",
+      "ARBUSDT",
+      "OPUSDT",
+      "INJUSDT",
+      "NEARUSDT",
+      "UNIUSDT",
+      "AAVEUSDT",
+      "ETCUSDT",
+      "FILUSDT",
+      "ATOMUSDT",
+      "ICPUSDT",
+      "VETUSDT",
+      "ALGOUSDT",
+      "RUNEUSDT",
+      "SANDUSDT",
+      "MANAUSDT",
+      "GALAUSDT",
+      "SHIBUSDT",
+      "PEPEUSDT",
+      "BONKUSDT",
+      "WIFUSDT",
+      "FETUSDT",
+      "RENDERUSDT",
+      "ENAUSDT",
+      "PENDLEUSDT",
+      "ZECUSDT",
+      "DASHUSDT",
+      "POLUSDT",
+      "ZROUSDT",
+      "VIRTUALUSDT",
+      "SEIUSDT",
+      "TIAUSDT",
+      "JUPUSDT",
+      "TONUSDT"
+    ]
+  },
+  "stop_grid_48h": {
+    "3.0": {
+      "ambiguous": 0,
+      "average_simulated_return_pct": -0.1546,
+      "median_simulated_return_pct": -3.0,
+      "open_at_48h": 222,
+      "samples": 1108,
+      "stop_first": 586,
+      "target_first": 300,
+      "target_first_rate": 0.2708
+    },
+    "4.0": {
+      "ambiguous": 0,
+      "average_simulated_return_pct": -0.2043,
+      "median_simulated_return_pct": -1.0865,
+      "open_at_48h": 340,
+      "samples": 1108,
+      "stop_first": 447,
+      "target_first": 321,
+      "target_first_rate": 0.2897
+    },
+    "5.0": {
+      "ambiguous": 0,
+      "average_simulated_return_pct": -0.2015,
+      "median_simulated_return_pct": -0.5941,
+      "open_at_48h": 433,
+      "samples": 1108,
+      "stop_first": 339,
+      "target_first": 336,
+      "target_first_rate": 0.3032
+    },
+    "6.0": {
+      "ambiguous": 0,
+      "average_simulated_return_pct": -0.1962,
+      "median_simulated_return_pct": -0.41,
+      "open_at_48h": 504,
+      "samples": 1108,
+      "stop_first": 258,
+      "target_first": 346,
+      "target_first_rate": 0.3123
+    },
+    "8.0": {
+      "ambiguous": 0,
+      "average_simulated_return_pct": -0.1981,
+      "median_simulated_return_pct": -0.1643,
+      "open_at_48h": 601,
+      "samples": 1108,
+      "stop_first": 154,
+      "target_first": 353,
+      "target_first_rate": 0.3186
+    }
+  },
+  "total_triggers": 1108,
+  "version": "v34-five-percent-backtest-v1",
+  "warnings": [
+    "Historical backtests can overfit and do not guarantee future results.",
+    "The historical macro/volume reconstruction uses completed-candle proxies rather than exchange rolling-ticker snapshots."
+  ],
+  "winner_48h_drawdown_before_5pct": {
+    "median_abs_mae_pct": 1.1818,
+    "p75_abs_mae_pct": 2.2342,
+    "p90_abs_mae_pct": 4.4268,
+    "p95_abs_mae_pct": 5.5118,
+    "samples": 361
+  },
+  "winner_48h_time_to_5pct_minutes": {
+    "median": 975.0,
+    "p75": 1710.0,
+    "p90": 2400.0,
+    "samples": 361
+  }
+}
