@@ -1,5 +1,5 @@
 {
-  "last_processed_at_ms": 1790534117290,
+  "last_processed_at_ms": 1790534426762,
   "objective": {
     "diagnostic_horizons_hours": [
       4,
@@ -336,6 +336,7 @@
       "bias": "LONG",
       "evaluated_12h_at_ms": 1790483755638,
       "evaluated_24h_at_ms": 1790483755638,
+      "evaluated_48h_at_ms": 1790534426762,
       "evaluated_4h_at_ms": 1790483755638,
       "outcome_12h": {
         "bars_used": 144,
@@ -523,7 +524,99 @@
         "window_end_ms": 1790447723278,
         "window_start_ms": 1790361600000
       },
-      "outcome_48h": null,
+      "outcome_48h": {
+        "bars_used": 576,
+        "close_return_pct": 1.8488,
+        "first_5pct_bar_ms": 1790367300000,
+        "horizon_hours": 48,
+        "mae_before_5pct_pct": 0.0,
+        "mae_pct": -2.0157,
+        "mfe_pct": 6.1188,
+        "objective": "+5pct",
+        "sampling_interval": "5m",
+        "sampling_note": "Uses 5m candles beginning with the first full bar at/after the trigger. If TP and SL are both touched inside the same 5m candle before either resolves, the stop-path result is AMBIGUOUS.",
+        "stop_grid": {
+          "stop_3_0pct": {
+            "ambiguous": false,
+            "first_stop_bar_ms": null,
+            "first_target_bar_ms": 1790367300000,
+            "resolution_bar_ms": 1790367300000,
+            "result": "TARGET_FIRST",
+            "stop_first": false,
+            "stop_pct": 3.0,
+            "stop_reached": false,
+            "target_first": true,
+            "target_pct": 5.0,
+            "target_reached": true,
+            "time_to_stop_minutes": null,
+            "time_to_target_minutes": 99.61
+          },
+          "stop_4_0pct": {
+            "ambiguous": false,
+            "first_stop_bar_ms": null,
+            "first_target_bar_ms": 1790367300000,
+            "resolution_bar_ms": 1790367300000,
+            "result": "TARGET_FIRST",
+            "stop_first": false,
+            "stop_pct": 4.0,
+            "stop_reached": false,
+            "target_first": true,
+            "target_pct": 5.0,
+            "target_reached": true,
+            "time_to_stop_minutes": null,
+            "time_to_target_minutes": 99.61
+          },
+          "stop_5_0pct": {
+            "ambiguous": false,
+            "first_stop_bar_ms": null,
+            "first_target_bar_ms": 1790367300000,
+            "resolution_bar_ms": 1790367300000,
+            "result": "TARGET_FIRST",
+            "stop_first": false,
+            "stop_pct": 5.0,
+            "stop_reached": false,
+            "target_first": true,
+            "target_pct": 5.0,
+            "target_reached": true,
+            "time_to_stop_minutes": null,
+            "time_to_target_minutes": 99.61
+          },
+          "stop_6_0pct": {
+            "ambiguous": false,
+            "first_stop_bar_ms": null,
+            "first_target_bar_ms": 1790367300000,
+            "resolution_bar_ms": 1790367300000,
+            "result": "TARGET_FIRST",
+            "stop_first": false,
+            "stop_pct": 6.0,
+            "stop_reached": false,
+            "target_first": true,
+            "target_pct": 5.0,
+            "target_reached": true,
+            "time_to_stop_minutes": null,
+            "time_to_target_minutes": 99.61
+          },
+          "stop_8_0pct": {
+            "ambiguous": false,
+            "first_stop_bar_ms": null,
+            "first_target_bar_ms": 1790367300000,
+            "resolution_bar_ms": 1790367300000,
+            "result": "TARGET_FIRST",
+            "stop_first": false,
+            "stop_pct": 8.0,
+            "stop_reached": false,
+            "target_first": true,
+            "target_pct": 5.0,
+            "target_reached": true,
+            "time_to_stop_minutes": null,
+            "time_to_target_minutes": 99.61
+          }
+        },
+        "target_5_reached": true,
+        "time_to_5pct_minutes": 99.61,
+        "window_end_ms": 1790534123278,
+        "window_start_ms": 1790361600000
+      },
       "outcome_4h": {
         "bars_used": 48,
         "close_return_pct": 4.0673,
