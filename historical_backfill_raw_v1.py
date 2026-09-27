@@ -18,10 +18,9 @@ SYMBOLS = [
     if s.strip()
 ]
 
-DAYS = max(
-    1,
-    min(int(os.getenv("BACKFILL_DAYS", "30")), 365)
-)
+DAYS = max(1, min(int(os.getenv("BACKFILL_DAYS", "30")), 365))
+MIN_COMPLETE_SYMBOLS = max(1, int(os.getenv("BACKFILL_MIN_COMPLETE_SYMBOLS", "45")))
+CRITICAL_SYMBOLS = {"BTCUSDT", "ETHUSDT"}
 
 INTERVALS = {
     "5m": 300_000,
@@ -33,10 +32,7 @@ LIMIT = 1000
 
 
 def iso(ms):
-    return datetime.fromtimestamp(
-        ms / 1000,
-        tz=timezone.utc
-    ).isoformat()
+    return datetime.fromtimestamp(ms / 1000, tz=timezone.utc).isoformat()
 
 
 def get_page(symbol, interval, start_ms, end_ms):
@@ -47,67 +43,36 @@ def get_page(symbol, interval, start_ms, end_ms):
         "endTime": end_ms,
         "limit": LIMIT,
     })
-
     req = Request(
         f"{BASE}/api/v3/klines?{q}",
         headers={
-            "User-Agent": "crypto-scan-backfill/1.0",
+            "User-Agent": "crypto-scan-backfill/1.1",
             "Accept": "application/json",
         },
     )
-
     with urlopen(req, timeout=30) as r:
         data = json.loads(r.read().decode())
-
     if not isinstance(data, list):
-        raise RuntimeError(
-            f"Unexpected response: {data}"
-        )
-
+        raise RuntimeError(f"Unexpected response: {data}")
     return data
 
 
-def fetch_all(
-    symbol,
-    interval,
-    step,
-    start_ms,
-    end_exclusive,
-):
+def fetch_all(symbol, interval, step, start_ms, end_exclusive):
     rows = []
     cur = start_ms
     end_inclusive = end_exclusive - 1
-
     while cur <= end_inclusive:
-        page = get_page(
-            symbol,
-            interval,
-            cur,
-            end_inclusive,
-        )
-
+        page = get_page(symbol, interval, cur, end_inclusive)
         if not page:
             break
-
-        rows.extend(
-            x for x in page
-            if start_ms <= int(x[0]) < end_exclusive
-        )
-
+        rows.extend(x for x in page if start_ms <= int(x[0]) < end_exclusive)
         nxt = int(page[-1][0]) + step
-
         if nxt <= cur:
-            raise RuntimeError(
-                "pagination did not advance"
-            )
-
+            raise RuntimeError("pagination did not advance")
         cur = nxt
-
         if len(page) < LIMIT:
             break
-
         time.sleep(0.08)
-
     return rows
 
 
@@ -131,19 +96,11 @@ def audit(rows, step, expected):
     errors = []
     seen = set()
     prev = None
-
     for i, r in enumerate(rows):
         t = r["open_time_ms"]
-
         if t in seen:
-            errors.append({
-                "code": "DUPLICATE",
-                "index": i,
-                "open_time_ms": t,
-            })
-
+            errors.append({"code": "DUPLICATE", "index": i, "open_time_ms": t})
         seen.add(t)
-
         if prev is not None and t - prev != step:
             errors.append({
                 "code": "GAP_OR_BAD_STEP",
@@ -152,42 +109,16 @@ def audit(rows, step, expected):
                 "current": t,
                 "delta": t - prev,
             })
-
         prev = t
 
-        o = r["open"]
-        h = r["high"]
-        l = r["low"]
-        c = r["close"]
-
-        if (
-            min(o, h, l, c) <= 0
-            or h < max(o, c)
-            or l > min(o, c)
-            or h < l
-        ):
-            errors.append({
-                "code": "BAD_OHLC",
-                "index": i,
-                "open_time_ms": t,
-            })
-
-        if (
-            r["volume"] < 0
-            or r["quote_volume"] < 0
-        ):
-            errors.append({
-                "code": "NEGATIVE_VOLUME",
-                "index": i,
-                "open_time_ms": t,
-            })
+        o, h, l, c = r["open"], r["high"], r["low"], r["close"]
+        if min(o, h, l, c) <= 0 or h < max(o, c) or l > min(o, c) or h < l:
+            errors.append({"code": "BAD_OHLC", "index": i, "open_time_ms": t})
+        if r["volume"] < 0 or r["quote_volume"] < 0:
+            errors.append({"code": "NEGATIVE_VOLUME", "index": i, "open_time_ms": t})
 
     if len(rows) != expected:
-        errors.append({
-            "code": "ROW_COUNT",
-            "expected": expected,
-            "actual": len(rows),
-        })
+        errors.append({"code": "ROW_COUNT", "expected": expected, "actual": len(rows)})
 
     return {
         "status": "PASS" if not errors else "FAIL",
@@ -198,61 +129,34 @@ def audit(rows, step, expected):
 
 
 def write_gz(path, rows):
-    path.parent.mkdir(
-        parents=True,
-        exist_ok=True,
-    )
-
-    with gzip.open(
-        path,
-        "wt",
-        encoding="utf-8",
-    ) as f:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    with gzip.open(path, "wt", encoding="utf-8") as f:
         for r in rows:
-            f.write(
-                json.dumps(
-                    r,
-                    separators=(",", ":"),
-                    sort_keys=True,
-                )
-                + "\n"
-            )
+            f.write(json.dumps(r, separators=(",", ":"), sort_keys=True) + "\n")
 
     h = hashlib.sha256()
-
     with open(path, "rb") as f:
-        for chunk in iter(
-            lambda: f.read(1_048_576),
-            b"",
-        ):
+        for chunk in iter(lambda: f.read(1_048_576), b""):
             h.update(chunk)
-
     return h.hexdigest()
 
 
 def main():
     OUT.mkdir(exist_ok=True)
-
     now_ms = int(time.time() * 1000)
-
-    end_override = os.getenv(
-        "BACKFILL_END_MS",
-        "",
-    ).strip()
-
-    requested_end = (
-        int(end_override)
-        if end_override
-        else now_ms
-    )
+    end_override = os.getenv("BACKFILL_END_MS", "").strip()
+    requested_end = int(end_override) if end_override else now_ms
 
     report = {
-        "version": "historical-raw-pilot-v1",
+        "version": "historical-raw-pilot-v1.1",
         "source": BASE,
         "market": "spot",
         "generated_at_ms": now_ms,
         "generated_at_utc": iso(now_ms),
         "symbols": SYMBOLS,
+        "eligible_symbols": [],
+        "excluded_symbols": [],
+        "minimum_complete_symbols": MIN_COMPLETE_SYMBOLS,
         "days": DAYS,
         "files": [],
         "status": "PASS",
@@ -261,64 +165,45 @@ def main():
     total_errors = 0
 
     for symbol in SYMBOLS:
+        symbol_ok = True
+        symbol_errors = []
+
         for interval, step in INTERVALS.items():
+            end_excl = (requested_end // step) * step
+            start = end_excl - DAYS * 86_400_000
+            expected = (end_excl - start) // step
+            path = OUT / symbol / f"{interval}_{DAYS}d.jsonl.gz"
 
-            end_excl = (
-                requested_end // step
-            ) * step
-
-            start = (
-                end_excl
-                - DAYS * 86_400_000
-            )
-
-            expected = (
-                end_excl - start
-            ) // step
-
-            print(
-                f"Fetching {symbol} {interval}: "
-                f"{iso(start)} -> "
-                f"{iso(end_excl)}"
-            )
+            print(f"Fetching {symbol} {interval}: {iso(start)} -> {iso(end_excl)}", flush=True)
 
             try:
-                raw = fetch_all(
-                    symbol,
-                    interval,
-                    step,
-                    start,
-                    end_excl,
-                )
+                raw = fetch_all(symbol, interval, step, start, end_excl)
+                rows = sorted((compact(x) for x in raw), key=lambda r: r["open_time_ms"])
+                check = audit(rows, step, expected)
 
-                rows = sorted(
-                    (compact(x) for x in raw),
-                    key=lambda r: r[
-                        "open_time_ms"
-                    ],
-                )
+                if check["status"] != "PASS":
+                    symbol_ok = False
+                    total_errors += check["error_count"]
+                    symbol_errors.extend({"interval": interval, **e} for e in check["errors"])
+                    if path.exists():
+                        path.unlink()
+                    print(
+                        f"[Backfill] EXCLUDE {symbol} {interval}: audit failed "
+                        f"errors={check['errors'][:5]}",
+                        flush=True,
+                    )
+                    report["files"].append({
+                        "symbol": symbol,
+                        "interval": interval,
+                        "start_ms": start,
+                        "end_exclusive_ms": end_excl,
+                        "expected_rows": expected,
+                        "actual_rows": len(rows),
+                        "audit": check,
+                    })
+                    continue
 
-                check = audit(
-                    rows,
-                    step,
-                    expected,
-                )
-
-                path = (
-                    OUT
-                    / symbol
-                    / f"{interval}_{DAYS}d.jsonl.gz"
-                )
-
-                sha = write_gz(
-                    path,
-                    rows,
-                )
-
-                total_errors += (
-                    check["error_count"]
-                )
-
+                sha = write_gz(path, rows)
                 report["files"].append({
                     "symbol": symbol,
                     "interval": interval,
@@ -332,47 +217,63 @@ def main():
                 })
 
             except Exception as e:
+                symbol_ok = False
                 total_errors += 1
-
+                err = {"interval": interval, "code": "FETCH_FAILED", "message": str(e)}
+                symbol_errors.append(err)
+                if path.exists():
+                    path.unlink()
+                print(f"[Backfill] EXCLUDE {symbol} {interval}: {e}", flush=True)
                 report["files"].append({
                     "symbol": symbol,
                     "interval": interval,
                     "audit": {
                         "status": "FAIL",
                         "error_count": 1,
-                        "errors": [{
-                            "code": "FETCH_FAILED",
-                            "message": str(e),
-                        }],
+                        "errors": [{"code": "FETCH_FAILED", "message": str(e)}],
                     },
                 })
 
-    report["total_errors"] = (
-        total_errors
-    )
+        if symbol_ok:
+            report["eligible_symbols"].append(symbol)
+        else:
+            # Never allow a partly-valid symbol into the backtest. Remove any
+            # interval files that may have succeeded before another interval failed.
+            symbol_dir = OUT / symbol
+            if symbol_dir.exists():
+                for p in symbol_dir.glob(f"*_{DAYS}d.jsonl.gz"):
+                    p.unlink()
+            report["excluded_symbols"].append({"symbol": symbol, "errors": symbol_errors[:20]})
 
-    report["status"] = (
-        "PASS"
-        if total_errors == 0
-        else "FAIL"
-    )
+    report["total_errors"] = total_errors
+    complete = len(report["eligible_symbols"])
+    critical_missing = sorted(CRITICAL_SYMBOLS.intersection(SYMBOLS) - set(report["eligible_symbols"]))
+    enough_symbols = complete >= min(MIN_COMPLETE_SYMBOLS, len(SYMBOLS))
+    quality_ok = enough_symbols and not critical_missing
 
-    MANIFEST.write_text(
-        json.dumps(
-            report,
-            indent=2,
-            sort_keys=True,
-        )
-        + "\n"
-    )
+    report["complete_symbol_count"] = complete
+    report["critical_missing"] = critical_missing
+    report["status"] = "PASS" if quality_ok else "FAIL"
+
+    MANIFEST.write_text(json.dumps(report, indent=2, sort_keys=True) + "\n")
 
     print(
-        f"Pilot {report['status']} | "
-        f"files={len(report['files'])} | "
-        f"errors={total_errors}"
+        f"Pilot {report['status']} | requested={len(SYMBOLS)} | complete={complete} | "
+        f"excluded={len(report['excluded_symbols'])} | raw_errors={total_errors}",
+        flush=True,
     )
+    if report["excluded_symbols"]:
+        print("Excluded symbols:", json.dumps(report["excluded_symbols"], indent=2), flush=True)
 
-    if total_errors:
+    if not quality_ok:
+        if critical_missing:
+            print(f"Critical market-context symbols missing: {critical_missing}", flush=True)
+        if not enough_symbols:
+            print(
+                f"Only {complete} complete symbols; require at least "
+                f"{min(MIN_COMPLETE_SYMBOLS, len(SYMBOLS))}.",
+                flush=True,
+            )
         raise SystemExit(1)
 
 
