@@ -1,0 +1,108 @@
+name: Historical V3.4 5pct Backtest
+
+on:
+  workflow_dispatch:
+    inputs:
+      days:
+        description: "Days of historical data"
+        required: true
+        default: "90"
+        type: string
+  push:
+    branches: [main]
+    paths:
+      - "historical_v34_backtest.py"
+      - ".github/workflows/historical-v34-5pct-backtest.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: historical-v34-5pct-backtest
+  cancel-in-progress: false
+
+jobs:
+  backtest:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Syntax check
+        run: |
+          python -m py_compile historical_backfill_raw_v1.py
+          python -m py_compile historical_feature_validator_v1.py
+          python -m py_compile historical_v34_backtest.py
+          python -m py_compile swing_ranker.py
+
+      - name: Build broad historical candle set
+        env:
+          BACKFILL_DAYS: ${{ github.event.inputs.days || '90' }}
+          BACKFILL_SYMBOLS: >-
+            BTCUSDT,ETHUSDT,BNBUSDT,SOLUSDT,XRPUSDT,DOGEUSDT,ADAUSDT,TRXUSDT,
+            AVAXUSDT,LINKUSDT,DOTUSDT,LTCUSDT,BCHUSDT,XLMUSDT,HBARUSDT,SUIUSDT,
+            APTUSDT,ARBUSDT,OPUSDT,INJUSDT,NEARUSDT,UNIUSDT,AAVEUSDT,ETCUSDT,
+            FILUSDT,ATOMUSDT,ICPUSDT,VETUSDT,ALGOUSDT,RUNEUSDT,SANDUSDT,MANAUSDT,
+            GALAUSDT,SHIBUSDT,PEPEUSDT,BONKUSDT,WIFUSDT,FETUSDT,RENDERUSDT,
+            ENAUSDT,PENDLEUSDT,ZECUSDT,DASHUSDT,POLUSDT,ZROUSDT,VIRTUALUSDT,
+            SEIUSDT,TIAUSDT,JUPUSDT,TONUSDT
+        run: python historical_backfill_raw_v1.py
+
+      - name: Replay V3.4 and score 5pct outcomes
+        env:
+          BACKFILL_ARTIFACT_DIR: _backfill_artifact
+          V34_BACKTEST_REPORT: historical_v34_5pct_report.json
+          V34_BACKTEST_TRIGGERS: historical_v34_5pct_triggers.jsonl
+          V34_GATE_CONFIG: historical_gate_config.json
+          V34_MIN_GATE_SAMPLE: "20"
+          V34_MIN_TOTAL_SAMPLE: "100"
+          V34_MIN_GATE_HIT_RATE: "0.55"
+        run: python historical_v34_backtest.py
+
+      - name: Show compact results
+        run: |
+          python - <<'PY'
+          import json
+          r=json.load(open('historical_v34_5pct_report.json'))
+          print('triggers:', r['total_triggers'])
+          print('24h:', r['overall']['24h'])
+          print('48h:', r['overall']['48h'])
+          print('winner drawdown:', r['winner_48h_drawdown_before_5pct'])
+          print('stop grid:', r['stop_grid_48h'])
+          print('research best stop:', r['research_best_stop_pct_by_average_simulated_return'])
+          PY
+
+      - name: Upload research artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: historical-v34-5pct-backtest
+          path: |
+            historical_v34_5pct_report.json
+            historical_gate_config.json
+            historical_v34_5pct_triggers.jsonl
+            _backfill_artifact/manifest.json
+          if-no-files-found: error
+          retention-days: 14
+
+      - name: Commit compact backtest results
+        if: github.ref == 'refs/heads/main'
+        run: |
+          git config user.name "backtest-bot"
+          git config user.email "backtest-bot@users.noreply.github.com"
+          git add historical_v34_5pct_report.json historical_gate_config.json
+          if git diff --cached --quiet; then
+            echo "No report changes"
+            exit 0
+          fi
+          git commit -m "Update V3.4 historical 5pct backtest"
+          git pull --rebase origin main
+          git push origin main
