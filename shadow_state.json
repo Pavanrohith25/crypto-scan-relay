@@ -1,6 +1,6 @@
 {
-  "last_processed_at_ms": 1790492750948,
-  "last_processed_generated_at_ms": 1790492748375,
+  "last_processed_at_ms": 1790493013837,
+  "last_processed_generated_at_ms": 1790493011372,
   "pairs": {
     "1000RATSUSDT": {
       "gate_reasons": [
@@ -22,19 +22,19 @@
       "anchor_score": 85.0,
       "armed": true,
       "armed_at_ms": 1790492493327,
-      "evidence_count": 2,
+      "evidence_count": 3,
       "gate_reasons": [
-        "price follow-through -0.05795421616922036 below 0.75%",
+        "price follow-through 0.3767024050999712 below 0.75%",
         "countertrend reclaim not strong enough"
       ],
       "high_priority": false,
       "last_bias": "LONG",
       "last_decision": "ARMED_WAITING_TRIGGER",
-      "last_fingerprint": "0.06898|1.285|18879.34|151153.7268|0.79|0.45|1.08",
-      "last_price": 0.06898,
+      "last_fingerprint": "0.06928|1.169|10784.9347|138714.0835|1.12|1.43|0.46",
+      "last_price": 0.06928,
       "last_regime": "COUNTERTREND",
       "last_score": 85.0,
-      "last_seen_at_ms": 1790492750948,
+      "last_seen_at_ms": 1790493013837,
       "required_score": 82.0
     },
     "AGPUUSDT": {
@@ -332,17 +332,18 @@
     },
     "INTWUSDT": {
       "gate_reasons": [
-        "score 43.0 below required 82.0",
+        "score 38.0 below required 82.0",
         "candidate has blocker(s)",
         "missing spot confirmation",
+        "15m OI not expanding",
         "missing spot volume"
       ],
       "last_bias": "SHORT",
       "last_decision": "WAIT",
-      "last_price": 33.74,
+      "last_price": 33.81,
       "last_regime": "COUNTERTREND",
-      "last_score": 43.0,
-      "last_seen_at_ms": 1790492493327
+      "last_score": 38.0,
+      "last_seen_at_ms": 1790493013837
     },
     "JCTUSDT": {
       "gate_reasons": [
@@ -528,30 +529,30 @@
     "QUSDT": {
       "gate_reasons": [
         "deep countertrend: 24h structure/OI conflicts with the setup",
-        "score 59.0 below required 78.0",
+        "score 26.0 below required 78.0",
         "candidate has blocker(s)",
         "missing spot confirmation",
+        "15m OI not expanding",
         "missing spot volume"
       ],
       "last_bias": "SHORT",
       "last_decision": "BLOCKED_DEEP_COUNTERTREND",
-      "last_price": 0.043053,
+      "last_price": 0.042255,
       "last_regime": "COUNTERTREND_DEEP",
-      "last_score": 59.0,
-      "last_seen_at_ms": 1790492750948
+      "last_score": 26.0,
+      "last_seen_at_ms": 1790493013837
     },
     "RAREUSDT": {
       "gate_reasons": [
-        "score 49.0 below required 82.0",
-        "long spot weak (B/S 0.826, flow -107,472)",
-        "15m OI not expanding"
+        "score 60.0 below required 82.0",
+        "long spot weak (B/S 0.877, flow -35,928)"
       ],
       "last_bias": "LONG",
       "last_decision": "WAIT",
-      "last_price": 0.0207,
+      "last_price": 0.02086,
       "last_regime": "TREND_CONTINUATION",
-      "last_score": 49.0,
-      "last_seen_at_ms": 1790492750948
+      "last_score": 60.0,
+      "last_seen_at_ms": 1790493013837
     },
     "RAVEUSDT": {
       "gate_reasons": [
@@ -570,16 +571,16 @@
     "SAGAUSDT": {
       "gate_reasons": [
         "deep countertrend: 24h structure/OI conflicts with the setup",
-        "score 26.0 below required 78.0",
+        "score 36.0 below required 78.0",
         "candidate has blocker(s)",
         "long spot weak (B/S 0.702, flow -805,343)"
       ],
       "last_bias": "LONG",
       "last_decision": "BLOCKED_DEEP_COUNTERTREND",
-      "last_price": 0.02684,
+      "last_price": 0.02701,
       "last_regime": "COUNTERTREND_DEEP",
-      "last_score": 26.0,
-      "last_seen_at_ms": 1790492750948
+      "last_score": 36.0,
+      "last_seen_at_ms": 1790493013837
     },
     "SNXXUSDT": {
       "gate_reasons": [
@@ -607,10 +608,10 @@
       ],
       "last_bias": "SHORT",
       "last_decision": "BLOCKED_DEEP_COUNTERTREND",
-      "last_price": 0.302,
+      "last_price": 0.3043,
       "last_regime": "COUNTERTREND_DEEP",
       "last_score": 49.0,
-      "last_seen_at_ms": 1790492750948
+      "last_seen_at_ms": 1790493013837
     },
     "SPELLUSDT": {
       "gate_reasons": [
