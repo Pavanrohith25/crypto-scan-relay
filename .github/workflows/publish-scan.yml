@@ -29,7 +29,6 @@ jobs:
           python - <<'PY'
           import json
           from pathlib import Path
-
           p = Path("new_scan.json")
           data = json.loads(p.read_text())
           p.write_text(json.dumps(data, indent=2, sort_keys=True) + "\n")
@@ -46,7 +45,6 @@ jobs:
           python - <<'PY'
           import json
           from pathlib import Path
-
           p = Path("new_swing.json")
           data = json.loads(p.read_text())
           p.write_text(json.dumps(data, indent=2, sort_keys=True) + "\n")
@@ -61,26 +59,26 @@ jobs:
       - name: Process v3.4 swing shadow logger
         run: python swing_shadow.py
 
-      - name: Send v3.4 swing candidates to Telegram
+      - name: Send eligible V3.4 swing setups to Telegram
         env:
           TELEGRAM_BOT_TOKEN: ${{ github.ref == 'refs/heads/main' && secrets.TELEGRAM_BOT_TOKEN || '' }}
           TELEGRAM_CHAT_ID: ${{ github.ref == 'refs/heads/main' && secrets.TELEGRAM_CHAT_ID || '' }}
         run: python swing_telegram.py
 
-      - name: Log Dataset v1 snapshot
+      - name: Log Dataset snapshot
         run: python dataset_logger.py
 
-      - name: Rank swing setups v1
+      - name: Rank swing setups internally
         run: python swing_ranker.py
 
       - name: Log swing rank history
         run: python swing_rank_history.py
 
-      - name: Process v3.4 swing outcomes
+      - name: Process 5pct swing outcomes
         run: python swing_outcomes.py
 
-      - name: Audit swing data integrity
-        run: python data_audit.py
+      - name: Audit 5pct objective integrity
+        run: python data_audit_v2.py
 
       - name: Run v3.2 shadow tests
         run: python -m unittest discover -s tests -p "test_shadow_scan.py"
@@ -102,7 +100,7 @@ jobs:
           [ -f swing_outcomes.json ] && git add swing_outcomes.json
           [ -f swing_outcome_events.jsonl ] && git add swing_outcome_events.jsonl
           [ -f swing_rankings.json ] && git add swing_rankings.json
-          [ -f data_audit_report.json ] && git add data_audit_report.json
+          [ -f data_audit_report_v2.json ] && git add data_audit_report_v2.json
           [ -f swing_rank_history_state.json ] && git add swing_rank_history_state.json
           [ -d swing_rank_history ] && git add swing_rank_history
           [ -f dataset_v1_state.json ] && git add dataset_v1_state.json
@@ -119,7 +117,6 @@ jobs:
             if git push; then
               exit 0
             fi
-
             echo "git push failed (attempt $attempt/4); retrying..."
             sleep $((attempt * 5))
           done
