@@ -12,6 +12,7 @@ on:
     branches: [main]
     paths:
       - "historical_v34_backtest.py"
+      - "historical_gate_finalize.py"
       - ".github/workflows/historical-v34-5pct-backtest.yml"
 
 permissions:
@@ -42,6 +43,7 @@ jobs:
           python -m py_compile historical_backfill_raw_v1.py
           python -m py_compile historical_feature_validator_v1.py
           python -m py_compile historical_v34_backtest.py
+          python -m py_compile historical_gate_finalize.py
           python -m py_compile swing_ranker.py
 
       - name: Build broad historical candle set
@@ -65,20 +67,33 @@ jobs:
           V34_GATE_CONFIG: historical_gate_config.json
           V34_MIN_GATE_SAMPLE: "20"
           V34_MIN_TOTAL_SAMPLE: "100"
-          V34_MIN_GATE_HIT_RATE: "0.55"
+          V34_MIN_GATE_HIT_RATE: "0.60"
         run: python historical_v34_backtest.py
+
+      - name: Build historical Telegram eligibility gate
+        env:
+          V34_BACKTEST_REPORT: historical_v34_5pct_report.json
+          V34_BACKTEST_TRIGGERS: historical_v34_5pct_triggers.jsonl
+          V34_GATE_CONFIG: historical_gate_config.json
+          V34_MIN_GATE_SAMPLE: "20"
+          V34_MIN_TOTAL_SAMPLE: "100"
+          V34_MIN_GATE_HIT_RATE: "0.60"
+        run: python historical_gate_finalize.py
 
       - name: Show compact results
         run: |
           python - <<'PY'
           import json
           r=json.load(open('historical_v34_5pct_report.json'))
+          g=json.load(open('historical_gate_config.json'))
           print('triggers:', r['total_triggers'])
           print('24h:', r['overall']['24h'])
           print('48h:', r['overall']['48h'])
           print('winner drawdown:', r['winner_48h_drawdown_before_5pct'])
           print('stop grid:', r['stop_grid_48h'])
           print('research best stop:', r['research_best_stop_pct_by_average_simulated_return'])
+          print('gate enabled:', g['enabled'])
+          print('allowed combinations:', g['allowed_combinations'])
           PY
 
       - name: Upload research artifact
