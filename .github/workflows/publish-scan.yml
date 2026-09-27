@@ -61,6 +61,9 @@ jobs:
       - name: Process v3.4 swing shadow logger
         run: python swing_shadow.py
 
+      - name: Measure V3.4 entry drift before Telegram
+        run: python swing_entry_drift.py
+
       - name: Send eligible V3.4 swing setups to Telegram
         env:
           TELEGRAM_BOT_TOKEN: ${{ github.ref == 'refs/heads/main' && secrets.TELEGRAM_BOT_TOKEN || '' }}
@@ -99,6 +102,7 @@ jobs:
           [ -f swing_state.json ] && git add swing_state.json
           [ -f swing_telegram_state.json ] && git add swing_telegram_state.json
           [ -f swing_telegram_filter_events.jsonl ] && git add swing_telegram_filter_events.jsonl
+          [ -f swing_entry_drift_events.jsonl ] && git add swing_entry_drift_events.jsonl
           [ -f swing_events.jsonl ] && git add swing_events.jsonl
           [ -f swing_outcomes.json ] && git add swing_outcomes.json
           [ -f swing_outcome_events.jsonl ] && git add swing_outcome_events.jsonl
