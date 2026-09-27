@@ -5,7 +5,7 @@ from urllib.parse import urlencode
 from urllib.request import Request, urlopen
 
 # v3.5 PATH-DEPENDENT OUTCOME TRACKER - SHADOW ONLY
-# Evaluates continuation triggers after 24h / 48h / 72h.
+# Evaluates continuation triggers after 4h / 12h / 24h / 48h / 72h / 7d.
 # Primary labels:
 #   +3% before -1%
 #   +5% before -1.5%
@@ -288,16 +288,22 @@ def main():
     outcomes.setdefault("triggers", {})
 
     horizons = (
+        (4, "outcome_4h", "SWING_OUTCOME_4H"),
+        (12, "outcome_12h", "SWING_OUTCOME_12H"),
         (24, "outcome_24h", "SWING_OUTCOME_24H"),
         (48, "outcome_48h", "SWING_OUTCOME_48H"),
         (72, "outcome_72h", "SWING_OUTCOME_72H"),
+        (168, "outcome_7d", "SWING_OUTCOME_7D"),
     )
 
     for trigger_id, trigger in triggers.items():
         record = outcomes["triggers"].setdefault(trigger_id, {**trigger})
+        record.setdefault("outcome_4h", None)
+        record.setdefault("outcome_12h", None)
         record.setdefault("outcome_24h", None)
         record.setdefault("outcome_48h", None)
         record.setdefault("outcome_72h", None)
+        record.setdefault("outcome_7d", None)
         record.update({
             "symbol": trigger["symbol"],
             "bias": trigger["bias"],
@@ -338,7 +344,7 @@ def main():
     if not OUTCOME_EVENTS_FILE.exists():
         OUTCOME_EVENTS_FILE.write_text("")
 
-    pending = {24: 0, 48: 0, 72: 0}
+    pending = {4: 0, 12: 0, 24: 0, 48: 0, 72: 0, 168: 0}
     for record in outcomes["triggers"].values():
         age_ms = now_ms - int(record["trigger_at_ms"])
         for horizon, key, _ in horizons:
@@ -347,8 +353,8 @@ def main():
 
     print(
         f"Tracked {len(outcomes['triggers'])} trigger(s). "
-        f"Pending matured evaluations: 24h={pending[24]}, "
-        f"48h={pending[48]}, 72h={pending[72]}."
+        f"Pending matured evaluations: 4h={pending[4]}, 12h={pending[12]}, "
+        f"24h={pending[24]}, 48h={pending[48]}, 72h={pending[72]}, 7d={pending[168]}."
     )
 
 
