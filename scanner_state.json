@@ -1,6 +1,6 @@
 {
-  "last_processed_at_ms": 1790611821620,
-  "last_processed_generated_at_ms": 1790611819215,
+  "last_processed_at_ms": 1790612126508,
+  "last_processed_generated_at_ms": 1790612123925,
   "minimum_candidate_score": 78.0,
   "pairs": {
     "1000RATSUSDT": {
@@ -339,27 +339,28 @@
     },
     "CSOPSAMSUNG2LUSDT": {
       "gate_reasons": [
-        "score 25.0 below required 78.0",
+        "score 26.0 below required 78.0",
         "candidate has blocker(s)",
-        "missing Binance spot confirmation"
+        "missing Binance spot confirmation",
+        "15m OI is not expanding"
       ],
       "last_bias": "LONG",
-      "last_price": 9.55,
-      "last_score": 25.0,
-      "last_seen_at_ms": 1790611821620,
+      "last_price": 9.53,
+      "last_score": 26.0,
+      "last_seen_at_ms": 1790612126508,
       "qualifying_streak": 0,
       "required_score": 78.0
     },
     "CSOPSKHYNIX2LUSDT": {
       "gate_reasons": [
-        "score 37.0 below required 78.0",
+        "score 31.0 below required 78.0",
         "candidate has blocker(s)",
         "missing Binance spot confirmation"
       ],
       "last_bias": "LONG",
-      "last_price": 4.905,
-      "last_score": 37.0,
-      "last_seen_at_ms": 1790611821620,
+      "last_price": 4.901,
+      "last_score": 31.0,
+      "last_seen_at_ms": 1790612126508,
       "qualifying_streak": 0,
       "required_score": 78.0
     },
@@ -797,13 +798,13 @@
     },
     "NMRUSDT": {
       "gate_reasons": [
-        "score 59.0 below required 82.0",
+        "score 65.0 below required 82.0",
         "long spot confirmation weak (B/S 0.930, flow -32,342)"
       ],
       "last_bias": "LONG",
-      "last_price": 10.929,
-      "last_score": 59.0,
-      "last_seen_at_ms": 1790611821620,
+      "last_price": 10.965,
+      "last_score": 65.0,
+      "last_seen_at_ms": 1790612126508,
       "qualifying_streak": 0,
       "required_score": 82.0
     },
@@ -865,13 +866,14 @@
         "warnings": []
       },
       "gate_reasons": [
-        "pair cooldown active after deterioration"
+        "score 58.0 below required 78.0",
+        "15m OI is not expanding"
       ],
       "last_bias": "LONG",
-      "last_price": 0.0023994,
+      "last_price": 0.00239,
       "last_return_pct": -0.380937,
       "last_score": 58.0,
-      "last_seen_at_ms": 1790611821620,
+      "last_seen_at_ms": 1790612126508,
       "mae_pct": -0.380937,
       "mfe_pct": 0.890232,
       "previous_score": 69.0,
@@ -1079,10 +1081,10 @@
         "long spot confirmation weak (B/S 0.861, flow -30,235)"
       ],
       "last_bias": "LONG",
-      "last_price": 0.02691,
+      "last_price": 0.027,
       "last_return_pct": -1.248164,
       "last_score": 61.0,
-      "last_seen_at_ms": 1790611821620,
+      "last_seen_at_ms": 1790612126508,
       "mae_pct": -1.248164,
       "mfe_pct": 1.138032,
       "previous_score": 69.0,
