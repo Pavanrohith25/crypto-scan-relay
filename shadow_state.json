@@ -1,6 +1,6 @@
 {
-  "last_processed_at_ms": 1790602227331,
-  "last_processed_generated_at_ms": 1790602224603,
+  "last_processed_at_ms": 1790602515510,
+  "last_processed_generated_at_ms": 1790602512863,
   "pairs": {
     "1000RATSUSDT": {
       "gate_reasons": [
@@ -599,11 +599,11 @@
       ],
       "last_bias": "LONG",
       "last_decision": "SHADOW_CONFIRMED",
-      "last_position_check_ms": 1790602227331,
-      "last_price": 0.05281,
+      "last_position_check_ms": 1790602515510,
+      "last_price": 0.05294,
       "last_regime": "TREND_CONTINUATION",
-      "last_score": 49.0,
-      "last_seen_at_ms": 1790602227331,
+      "last_score": 54.0,
+      "last_seen_at_ms": 1790602515510,
       "position_state": "HOLD_PROTECT"
     },
     "MDBUSDT": {
@@ -673,16 +673,16 @@
       "confirmed_regime": "TREND_CONTINUATION",
       "confirmed_score": 90.0,
       "gate_reasons": [
-        "score 77.0 below required 78.0",
-        "long spot weak (B/S 1.028, flow 10,579)"
+        "score 69.0 below required 78.0",
+        "15m OI not expanding"
       ],
       "last_bias": "LONG",
       "last_decision": "WAIT",
       "last_position_check_ms": 1790320208844,
-      "last_price": 0.0024498,
+      "last_price": 0.002436,
       "last_regime": "TREND_CONTINUATION",
-      "last_score": 77.0,
-      "last_seen_at_ms": 1790602227331,
+      "last_score": 69.0,
+      "last_seen_at_ms": 1790602515510,
       "position_state": "EXIT_THESIS_BROKEN"
     },
     "PDDUSDT": {
@@ -812,10 +812,10 @@
       "last_bias": "LONG",
       "last_decision": "WAIT",
       "last_position_check_ms": 1790585743428,
-      "last_price": 0.02683,
-      "last_regime": "COUNTERTREND",
+      "last_price": 0.02682,
+      "last_regime": "TREND_CONTINUATION",
       "last_score": 54.0,
-      "last_seen_at_ms": 1790602227331,
+      "last_seen_at_ms": 1790602515510,
       "position_state": "EXIT_THESIS_BROKEN"
     },
     "SAMSUNGUSDT": {
@@ -834,18 +834,17 @@
     },
     "SNXXUSDT": {
       "gate_reasons": [
-        "deep countertrend: 24h structure/OI conflicts with the setup",
-        "score 58.0 below required 78.0",
+        "score 67.0 below required 78.0",
         "candidate has blocker(s)",
         "missing spot confirmation",
         "missing spot volume"
       ],
-      "last_bias": "LONG",
-      "last_decision": "BLOCKED_DEEP_COUNTERTREND",
-      "last_price": 16.5,
-      "last_regime": "COUNTERTREND_DEEP",
-      "last_score": 58.0,
-      "last_seen_at_ms": 1790579132749
+      "last_bias": "SHORT",
+      "last_decision": "WAIT",
+      "last_price": 16.35,
+      "last_regime": "COUNTERTREND",
+      "last_score": 67.0,
+      "last_seen_at_ms": 1790602515510
     },
     "SOLUSDT": {
       "gate_reasons": [
@@ -938,10 +937,10 @@
       ],
       "last_bias": "LONG",
       "last_decision": "WAIT",
-      "last_price": 180.98,
+      "last_price": 177.16,
       "last_regime": "COUNTERTREND",
       "last_score": 43.0,
-      "last_seen_at_ms": 1790602227331
+      "last_seen_at_ms": 1790602515510
     },
     "TRXUSDT": {
       "gate_reasons": [
