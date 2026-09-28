@@ -1,6 +1,6 @@
 {
-  "last_processed_at_ms": 1790614526559,
-  "last_processed_generated_at_ms": 1790614524002,
+  "last_processed_at_ms": 1790614821605,
+  "last_processed_generated_at_ms": 1790614819098,
   "pairs": {
     "1000RATSUSDT": {
       "gate_reasons": [
@@ -153,10 +153,10 @@
       ],
       "last_bias": "SHORT",
       "last_decision": "WAIT",
-      "last_price": 83682.6,
+      "last_price": 83655.6,
       "last_regime": "COUNTERTREND",
       "last_score": 38.0,
-      "last_seen_at_ms": 1790614526559
+      "last_seen_at_ms": 1790614821605
     },
     "BZUSDT": {
       "gate_reasons": [
@@ -349,14 +349,15 @@
     },
     "ETHUSDT": {
       "gate_reasons": [
-        "score 68.0 below required 78.0"
+        "score 38.0 below required 78.0",
+        "short spot weak (B/S 1.357, flow 6,645,084)"
       ],
       "last_bias": "SHORT",
       "last_decision": "WAIT",
-      "last_price": 2687.28,
+      "last_price": 2685.38,
       "last_regime": "COUNTERTREND",
-      "last_score": 68.0,
-      "last_seen_at_ms": 1790600433012
+      "last_score": 38.0,
+      "last_seen_at_ms": 1790614821605
     },
     "FHEUSDT": {
       "gate_reasons": [
@@ -656,14 +657,15 @@
     },
     "NMRUSDT": {
       "gate_reasons": [
-        "score 75.0 below required 82.0"
+        "score 70.0 below required 82.0",
+        "15m OI not expanding"
       ],
       "last_bias": "LONG",
       "last_decision": "WAIT",
-      "last_price": 11.128,
+      "last_price": 11.135,
       "last_regime": "TREND_CONTINUATION",
-      "last_score": 75.0,
-      "last_seen_at_ms": 1790614526559
+      "last_score": 70.0,
+      "last_seen_at_ms": 1790614821605
     },
     "OKLOUSDT": {
       "gate_reasons": [
@@ -692,11 +694,11 @@
       ],
       "last_bias": "LONG",
       "last_decision": "SHADOW_CONFIRMED",
-      "last_position_check_ms": 1790614526559,
-      "last_price": 0.0024204,
+      "last_position_check_ms": 1790614821605,
+      "last_price": 0.002417,
       "last_regime": "TREND_CONTINUATION",
       "last_score": 65.0,
-      "last_seen_at_ms": 1790614526559,
+      "last_seen_at_ms": 1790614821605,
       "position_state": "HOLD_PROTECT"
     },
     "PDDUSDT": {
@@ -1005,10 +1007,10 @@
       ],
       "last_bias": "SHORT",
       "last_decision": "WAIT",
-      "last_price": 0.029092,
-      "last_regime": "TREND_CONTINUATION",
+      "last_price": 0.030392,
+      "last_regime": "COUNTERTREND",
       "last_score": 50.0,
-      "last_seen_at_ms": 1790614526559
+      "last_seen_at_ms": 1790614821605
     },
     "WAXPUSDT": {
       "gate_reasons": [
