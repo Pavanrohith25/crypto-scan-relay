@@ -1,6 +1,6 @@
 {
-  "last_processed_at_ms": 1790603433789,
-  "last_processed_generated_at_ms": 1790603431307,
+  "last_processed_at_ms": 1790603723692,
+  "last_processed_generated_at_ms": 1790603721205,
   "pairs": {
     "1000RATSUSDT": {
       "gate_reasons": [
@@ -599,11 +599,11 @@
       ],
       "last_bias": "LONG",
       "last_decision": "SHADOW_CONFIRMED",
-      "last_position_check_ms": 1790603433789,
-      "last_price": 0.05315,
+      "last_position_check_ms": 1790603723692,
+      "last_price": 0.05326,
       "last_regime": "TREND_CONTINUATION",
       "last_score": 54.0,
-      "last_seen_at_ms": 1790603433789,
+      "last_seen_at_ms": 1790603723692,
       "position_state": "HOLD_PROTECT"
     },
     "MDBUSDT": {
@@ -653,16 +653,15 @@
     },
     "NMRUSDT": {
       "gate_reasons": [
-        "score 50.0 below required 82.0",
-        "long spot weak (B/S 0.989, flow -4,321)",
-        "15m OI not expanding"
+        "score 61.0 below required 82.0",
+        "long spot weak (B/S 0.989, flow -4,321)"
       ],
       "last_bias": "LONG",
       "last_decision": "WAIT",
-      "last_price": 11.094,
+      "last_price": 11.103,
       "last_regime": "TREND_CONTINUATION",
-      "last_score": 50.0,
-      "last_seen_at_ms": 1790603433789
+      "last_score": 61.0,
+      "last_seen_at_ms": 1790603723692
     },
     "OKLOUSDT": {
       "gate_reasons": [
@@ -680,32 +679,24 @@
     },
     "ONEUSDT": {
       "active": false,
-      "anchor_price": 0.0024487,
-      "anchor_regime": "TREND_CONTINUATION",
-      "anchor_score": 90.0,
-      "armed": true,
-      "armed_at_ms": 1790603164063,
       "closed_at_ms": 1790320208844,
       "confirmed_at_ms": 1790305552427,
       "confirmed_bias": "LONG",
       "confirmed_price": 0.0023717,
       "confirmed_regime": "TREND_CONTINUATION",
       "confirmed_score": 90.0,
-      "evidence_count": 2,
       "gate_reasons": [
-        "price follow-through -0.677910728141462 below 0.50%"
+        "score 69.0 below persistence floor 72.0",
+        "15m OI materially negative"
       ],
-      "high_priority": true,
       "last_bias": "LONG",
-      "last_decision": "ARMED_WAITING_TRIGGER",
-      "last_fingerprint": "0.0024321|1.112|53997.0216|1021827.4856|0.14|0.03|2.17",
+      "last_decision": "FALSE_START",
       "last_position_check_ms": 1790320208844,
-      "last_price": 0.0024321,
+      "last_price": 0.0024227,
       "last_regime": "TREND_CONTINUATION",
-      "last_score": 79.0,
-      "last_seen_at_ms": 1790603433789,
-      "position_state": "EXIT_THESIS_BROKEN",
-      "required_score": 78.0
+      "last_score": 69.0,
+      "last_seen_at_ms": 1790603723692,
+      "position_state": "EXIT_THESIS_BROKEN"
     },
     "PDDUSDT": {
       "gate_reasons": [
@@ -827,16 +818,17 @@
       "confirmed_regime": "TREND_CONTINUATION",
       "confirmed_score": 90.0,
       "gate_reasons": [
-        "score 65.0 below required 78.0",
-        "long spot weak (B/S 0.688, flow -66,728)"
+        "score 54.0 below required 78.0",
+        "long spot weak (B/S 0.688, flow -66,728)",
+        "15m OI not expanding"
       ],
       "last_bias": "LONG",
       "last_decision": "WAIT",
       "last_position_check_ms": 1790585743428,
-      "last_price": 0.0269,
+      "last_price": 0.02681,
       "last_regime": "TREND_CONTINUATION",
-      "last_score": 65.0,
-      "last_seen_at_ms": 1790603433789,
+      "last_score": 54.0,
+      "last_seen_at_ms": 1790603723692,
       "position_state": "EXIT_THESIS_BROKEN"
     },
     "SAMSUNGUSDT": {
@@ -855,17 +847,17 @@
     },
     "SNXXUSDT": {
       "gate_reasons": [
-        "score 61.0 below required 78.0",
+        "score 55.0 below required 78.0",
         "candidate has blocker(s)",
         "missing spot confirmation",
         "missing spot volume"
       ],
       "last_bias": "SHORT",
       "last_decision": "WAIT",
-      "last_price": 16.31,
+      "last_price": 16.42,
       "last_regime": "COUNTERTREND",
-      "last_score": 61.0,
-      "last_seen_at_ms": 1790603433789
+      "last_score": 55.0,
+      "last_seen_at_ms": 1790603723692
     },
     "SOLUSDT": {
       "gate_reasons": [
