@@ -21,8 +21,69 @@
     ]
   },
   "historical_gate_enabled": false,
-  "last_blocked": [],
-  "last_entry_drift_checks": [],
+  "last_blocked": [
+    {
+      "bias": "LONG",
+      "daily_context": {
+        "daily_candles_used": 79,
+        "daily_change_7d_pct": 40.85,
+        "daily_close": 1.264,
+        "daily_ema20": 0.942636988,
+        "daily_ema50": 0.8342960792,
+        "daily_rsi14": 76.98,
+        "daily_stoch_rsi14": 99.9,
+        "distance_from_daily_ema20_pct": 34.09,
+        "distance_from_daily_ema50_pct": 51.5
+      },
+      "decision": "BLOCKED",
+      "hidden_context": {
+        "market_regime": "MIXED",
+        "momentum_24h_pct": 8.666,
+        "quality_bucket": "80-100",
+        "quality_score": 80.0,
+        "relative_strength_vs_btc_pct": 9.029,
+        "relative_strength_vs_market_pct": 8.504,
+        "swing_score": 65.0,
+        "volume_expansion_1h": 1.37
+      },
+      "historical_gate_reason": "historical gate not enabled",
+      "late_entry_assessment": {
+        "blocked": true,
+        "reasons": [
+          "daily RSI 77.0 >= 72",
+          "daily StochRSI 99.9 >= 90",
+          "7d expansion +40.9%",
+          "34.1% above daily EMA20",
+          "51.5% above daily EMA50"
+        ],
+        "risk_points": 8
+      },
+      "reason": "daily late-entry/exhaustion risk: daily RSI 77.0 >= 72; daily StochRSI 99.9 >= 90; 7d expansion +40.9%; 34.1% above daily EMA20; 51.5% above daily EMA50",
+      "stage": "daily_anti_chase",
+      "symbol": "SUIUSDT",
+      "timestamp_ms": 1790557245911,
+      "trigger_id": "SUIUSDT-1790557244650",
+      "trigger_price": 1.2682
+    }
+  ],
+  "last_entry_drift_checks": [
+    {
+      "alert_check_age_seconds": 0.05,
+      "bias": "LONG",
+      "blocked": false,
+      "directional_drift_pct": -0.205,
+      "drift_bucket": "against_trigger",
+      "live_price": 1.2656,
+      "reason": "entry drift recorded for research; no empirical late-entry cutoff promoted yet",
+      "stop_pct": 6.0,
+      "symbol": "SUIUSDT",
+      "target_pct": 5.0,
+      "timestamp_ms": 1790557244703,
+      "trigger_at_ms": 1790557244650,
+      "trigger_id": "SUIUSDT-1790557244650",
+      "trigger_price": 1.2682
+    }
+  ],
   "processed_trigger_ids": [
     "AAVEUSDT-1790420485978",
     "APTUSDT-1790361323278",
@@ -32,6 +93,7 @@
     "POLUSDT-1790409704193",
     "POLUSDT-1790420485978",
     "PUMPUSDT-1790420485978",
+    "SUIUSDT-1790557244650",
     "VIRTUALUSDT-1790348497566",
     "VTHOUSDT-1790442043615",
     "ZROUSDT-1790359215235"
