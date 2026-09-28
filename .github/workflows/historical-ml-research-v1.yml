@@ -1,0 +1,112 @@
+name: Historical ML Research v1
+
+on:
+  workflow_dispatch:
+    inputs:
+      days:
+        description: "Historical days for the first ML research run"
+        required: true
+        default: "180"
+        type: string
+
+permissions:
+  contents: read
+
+concurrency:
+  group: historical-ml-research-v1
+  cancel-in-progress: true
+
+jobs:
+  research:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install research dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install numpy pandas scikit-learn
+
+      - name: Syntax-check research scripts
+        run: |
+          python -m py_compile historical_backfill_raw_v1.py
+          python -m py_compile historical_ml_dataset_v1.py
+          python -m py_compile train_swing_model_v1.py
+
+      - name: Build broad historical candle set
+        env:
+          BACKFILL_DAYS: ${{ inputs.days }}
+          BACKFILL_MIN_COMPLETE_SYMBOLS: "45"
+          BACKFILL_SYMBOLS: >-
+            BTCUSDT,ETHUSDT,BNBUSDT,SOLUSDT,XRPUSDT,DOGEUSDT,ADAUSDT,TRXUSDT,
+            AVAXUSDT,LINKUSDT,DOTUSDT,LTCUSDT,BCHUSDT,XLMUSDT,HBARUSDT,SUIUSDT,
+            APTUSDT,ARBUSDT,OPUSDT,INJUSDT,NEARUSDT,UNIUSDT,AAVEUSDT,ETCUSDT,
+            FILUSDT,ATOMUSDT,ICPUSDT,VETUSDT,ALGOUSDT,RUNEUSDT,SANDUSDT,MANAUSDT,
+            GALAUSDT,SHIBUSDT,PEPEUSDT,BONKUSDT,WIFUSDT,FETUSDT,RENDERUSDT,
+            ENAUSDT,PENDLEUSDT,ZECUSDT,DASHUSDT,POLUSDT,ZROUSDT,VIRTUALUSDT,
+            SEIUSDT,TIAUSDT,JUPUSDT,TONUSDT
+        run: python historical_backfill_raw_v1.py
+
+      - name: Build no-lookahead ML dataset
+        env:
+          BACKFILL_ARTIFACT_DIR: _backfill_artifact
+          ML_ARTIFACT_DIR: _ml_artifact
+          ML_SAMPLE_MINUTES: "15"
+          ML_TOP_N: "20"
+          ML_MIN_24H_QUOTE_VOLUME: "10000000"
+          ML_TARGET_PCT: "5"
+          ML_MAX_HORIZON_H: "72"
+        run: python historical_ml_dataset_v1.py
+
+      - name: Train chronological swing model
+        env:
+          ML_ARTIFACT_DIR: _ml_artifact
+          ML_TRAIN_FRAC: "0.60"
+          ML_VAL_FRAC: "0.20"
+          ML_MIN_VAL_ALERTS: "20"
+          ML_MIN_TEST_ALERTS: "20"
+          ML_MIN_TEST_PRECISION: "0.50"
+          ML_MIN_TEST_AVG_RETURN: "0.20"
+          ML_ROUND_TRIP_COST_PCT: "0.12"
+        run: python train_swing_model_v1.py
+
+      - name: Show compact research result
+        if: always()
+        run: |
+          echo "=== DATASET ==="
+          cat _ml_artifact/historical_ml_dataset_v1_meta.json || true
+          echo
+          echo "=== MODEL ==="
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          p=Path('_ml_artifact/swing_model_v1_report.json')
+          if not p.exists():
+              print('model report missing')
+              raise SystemExit(0)
+          r=json.loads(p.read_text())
+          print('promotable_to_live_shadow:', r['promotable_to_live_shadow'])
+          print('selected_threshold:', r['selected_probability_threshold_from_validation_only'])
+          print('validation:', r['validation']['selected_threshold'])
+          print('test:', r['test']['selected_threshold'])
+          print('test_auc:', r['test']['roc_auc'])
+          print('test_average_precision:', r['test']['average_precision'])
+          print('top_features:', r['top_features_by_validation_permutation_importance'][:10])
+          PY
+
+      - name: Upload ML research artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: historical-ml-research-v1
+          path: _ml_artifact/
+          if-no-files-found: warn
+          retention-days: 7
