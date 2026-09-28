@@ -1,6 +1,6 @@
 {
-  "last_processed_at_ms": 1790633741715,
-  "last_processed_generated_at_ms": 1790633739213,
+  "last_processed_at_ms": 1790634042983,
+  "last_processed_generated_at_ms": 1790634040476,
   "minimum_candidate_score": 78.0,
   "pairs": {
     "1000RATSUSDT": {
@@ -930,13 +930,14 @@
       },
       "gate_reasons": [
         "score 50.0 below required 78.0",
-        "long spot confirmation weak (B/S 0.857, flow -22,578)"
+        "long spot confirmation weak (B/S 0.857, flow -22,578)",
+        "15m OI is not expanding"
       ],
       "last_bias": "LONG",
-      "last_price": 0.0024185,
+      "last_price": 0.0024217,
       "last_return_pct": 3.214286,
       "last_score": 50.0,
-      "last_seen_at_ms": 1790633741715,
+      "last_seen_at_ms": 1790634042983,
       "mae_pct": -0.137987,
       "mfe_pct": 3.214286,
       "previous_score": 76.0,
@@ -1154,15 +1155,14 @@
         "warnings": []
       },
       "gate_reasons": [
-        "score 68.0 below required 78.0",
-        "long spot confirmation weak (B/S 1.038, flow 7,521)",
-        "15m OI is not expanding"
+        "score 50.0 below required 78.0",
+        "long spot confirmation weak (B/S 0.753, flow -39,572)"
       ],
       "last_bias": "LONG",
-      "last_price": 0.02677,
+      "last_price": 0.02681,
       "last_return_pct": -1.248164,
-      "last_score": 68.0,
-      "last_seen_at_ms": 1790633741715,
+      "last_score": 50.0,
+      "last_seen_at_ms": 1790634042983,
       "mae_pct": -1.248164,
       "mfe_pct": 1.138032,
       "previous_score": 69.0,
@@ -1264,14 +1264,15 @@
     },
     "SPCXUSDT": {
       "gate_reasons": [
-        "score 50.0 below required 78.0",
+        "score 44.0 below required 78.0",
         "candidate has blocker(s)",
-        "missing Binance spot confirmation"
+        "missing Binance spot confirmation",
+        "15m OI is not expanding"
       ],
       "last_bias": "SHORT",
-      "last_price": 146.14,
-      "last_score": 50.0,
-      "last_seen_at_ms": 1790633741715,
+      "last_price": 146.1,
+      "last_score": 44.0,
+      "last_seen_at_ms": 1790634042983,
       "qualifying_streak": 0,
       "required_score": 78.0
     },
@@ -1419,9 +1420,9 @@
         "15m OI is not expanding"
       ],
       "last_bias": "SHORT",
-      "last_price": 8.637,
+      "last_price": 8.655,
       "last_score": 54.0,
-      "last_seen_at_ms": 1790633741715,
+      "last_seen_at_ms": 1790634042983,
       "qualifying_streak": 0,
       "required_score": 78.0
     },
@@ -1558,9 +1559,9 @@
         "15m OI is not expanding"
       ],
       "last_bias": "SHORT",
-      "last_price": 0.07083,
+      "last_price": 0.07128,
       "last_score": 46.0,
-      "last_seen_at_ms": 1790633741715,
+      "last_seen_at_ms": 1790634042983,
       "qualifying_streak": 0,
       "required_score": 78.0
     }
