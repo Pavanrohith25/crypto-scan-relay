@@ -22,10 +22,28 @@
   },
   "historical_gate_enabled": false,
   "last_blocked": [],
-  "last_entry_drift_checks": [],
+  "last_entry_drift_checks": [
+    {
+      "alert_check_age_seconds": 0.07,
+      "bias": "SHORT",
+      "blocked": false,
+      "directional_drift_pct": -0.1616,
+      "drift_bucket": "against_trigger",
+      "live_price": 309.5,
+      "reason": "entry drift recorded for research; no empirical late-entry cutoff promoted yet",
+      "stop_pct": 6.0,
+      "symbol": "BCHUSDT",
+      "target_pct": 5.0,
+      "timestamp_ms": 1790607632849,
+      "trigger_at_ms": 1790607632774,
+      "trigger_id": "BCHUSDT-1790607632774",
+      "trigger_price": 309.0
+    }
+  ],
   "processed_trigger_ids": [
     "AAVEUSDT-1790420485978",
     "APTUSDT-1790361323278",
+    "BCHUSDT-1790607632774",
     "DASHUSDT-1790337650265",
     "ENAUSDT-1790519151637",
     "LINKUSDT-1790443873203",
@@ -40,6 +58,7 @@
   "sent_trigger_ids": [
     "AAVEUSDT-1790420485978",
     "APTUSDT-1790361323278",
+    "BCHUSDT-1790607632774",
     "DASHUSDT-1790337650265",
     "ENAUSDT-1790519151637",
     "LINKUSDT-1790443873203",
