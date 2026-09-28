@@ -1,6 +1,6 @@
 {
-  "last_processed_at_ms": 1790620292759,
-  "last_processed_generated_at_ms": 1790620290255,
+  "last_processed_at_ms": 1790620517447,
+  "last_processed_generated_at_ms": 1790620514897,
   "pairs": {
     "1000RATSUSDT": {
       "gate_reasons": [
@@ -348,16 +348,16 @@
     },
     "ETHUSDT": {
       "gate_reasons": [
-        "score 45.0 below required 78.0",
-        "short spot weak (B/S 1.812, flow 18,123,529)",
+        "score 49.0 below required 78.0",
+        "short spot weak (B/S 1.069, flow 809,672)",
         "15m OI not expanding"
       ],
       "last_bias": "SHORT",
       "last_decision": "WAIT",
-      "last_price": 2697.55,
+      "last_price": 2691.03,
       "last_regime": "COUNTERTREND",
-      "last_score": 45.0,
-      "last_seen_at_ms": 1790619320327
+      "last_score": 49.0,
+      "last_seen_at_ms": 1790620517447
     },
     "FHEUSDT": {
       "gate_reasons": [
@@ -708,11 +708,11 @@
       ],
       "last_bias": "LONG",
       "last_decision": "SHADOW_CONFIRMED",
-      "last_position_check_ms": 1790620292759,
-      "last_price": 0.0024803,
+      "last_position_check_ms": 1790620517447,
+      "last_price": 0.0024891,
       "last_regime": "TREND_CONTINUATION",
       "last_score": 80.0,
-      "last_seen_at_ms": 1790620292759,
+      "last_seen_at_ms": 1790620517447,
       "position_state": "HOLD_STRONG"
     },
     "PDDUSDT": {
@@ -757,18 +757,30 @@
       "last_score": 36.0,
       "last_seen_at_ms": 1790353815561
     },
+    "PUMPUSDT": {
+      "gate_reasons": [
+        "score 11.0 below required 78.0",
+        "short spot weak (B/S 1.290, flow 467,673)",
+        "15m OI not expanding"
+      ],
+      "last_bias": "SHORT",
+      "last_decision": "WAIT",
+      "last_price": 0.005216,
+      "last_regime": "COUNTERTREND",
+      "last_score": 11.0,
+      "last_seen_at_ms": 1790620517447
+    },
     "QNTUSDT": {
       "gate_reasons": [
-        "score 18.0 below required 78.0",
-        "long spot weak (B/S 0.766, flow -1,260,152)",
-        "15m OI not expanding"
+        "score 27.0 below required 78.0",
+        "long spot weak (B/S 0.766, flow -1,260,152)"
       ],
       "last_bias": "LONG",
       "last_decision": "WAIT",
-      "last_price": 237.62,
+      "last_price": 237.25,
       "last_regime": "COUNTERTREND",
-      "last_score": 18.0,
-      "last_seen_at_ms": 1790620292759
+      "last_score": 27.0,
+      "last_seen_at_ms": 1790620517447
     },
     "QUSDT": {
       "gate_reasons": [
@@ -844,10 +856,10 @@
       "last_bias": "LONG",
       "last_decision": "BLOCKED_DEEP_COUNTERTREND",
       "last_position_check_ms": 1790585743428,
-      "last_price": 0.02675,
+      "last_price": 0.02663,
       "last_regime": "COUNTERTREND_DEEP",
       "last_score": 50.0,
-      "last_seen_at_ms": 1790620292759,
+      "last_seen_at_ms": 1790620517447,
       "position_state": "EXIT_THESIS_BROKEN"
     },
     "SAMSUNGUSDT": {
@@ -972,10 +984,10 @@
       ],
       "last_bias": "SHORT",
       "last_decision": "WAIT",
-      "last_price": 0.03669,
+      "last_price": 0.03664,
       "last_regime": "COUNTERTREND",
       "last_score": 41.0,
-      "last_seen_at_ms": 1790620292759
+      "last_seen_at_ms": 1790620517447
     },
     "STEEMUSDT": {
       "gate_reasons": [
