@@ -1,6 +1,6 @@
 {
-  "last_processed_at_ms": 1790585743428,
-  "last_processed_generated_at_ms": 1790585740826,
+  "last_processed_at_ms": 1790586042961,
+  "last_processed_generated_at_ms": 1790586040341,
   "pairs": {
     "1000RATSUSDT": {
       "gate_reasons": [
@@ -527,24 +527,30 @@
     },
     "LSKUSDT": {
       "active": false,
+      "anchor_price": 0.31449,
+      "anchor_regime": "COUNTERTREND",
+      "anchor_score": 80.0,
+      "armed": true,
+      "armed_at_ms": 1790586042961,
       "closed_at_ms": 1790481934127,
       "confirmed_at_ms": 1790389217491,
       "confirmed_bias": "LONG",
       "confirmed_price": 0.34392,
       "confirmed_regime": "COUNTERTREND",
       "confirmed_score": 90.0,
-      "gate_reasons": [
-        "score 71.0 below required 78.0",
-        "15m OI not expanding"
-      ],
+      "evidence_count": 1,
+      "gate_reasons": [],
+      "high_priority": false,
       "last_bias": "LONG",
-      "last_decision": "WAIT",
+      "last_decision": "ARMED",
+      "last_fingerprint": "0.31449|1.217|44621.8987|456402.7629|0.23|-1.57|-0.09",
       "last_position_check_ms": 1790481934127,
-      "last_price": 0.31295,
+      "last_price": 0.31449,
       "last_regime": "COUNTERTREND",
-      "last_score": 71.0,
-      "last_seen_at_ms": 1790585743428,
-      "position_state": "EXIT_THESIS_BROKEN"
+      "last_score": 80.0,
+      "last_seen_at_ms": 1790586042961,
+      "position_state": "EXIT_THESIS_BROKEN",
+      "required_score": 78.0
     },
     "LYNUSDT": {
       "gate_reasons": [
@@ -624,10 +630,10 @@
       "last_bias": "LONG",
       "last_decision": "WAIT",
       "last_position_check_ms": 1790320208844,
-      "last_price": 0.0025015,
+      "last_price": 0.002496,
       "last_regime": "COUNTERTREND",
       "last_score": 44.0,
-      "last_seen_at_ms": 1790585743428,
+      "last_seen_at_ms": 1790586042961,
       "position_state": "EXIT_THESIS_BROKEN"
     },
     "PDDUSDT": {
@@ -687,32 +693,33 @@
     "QUSDT": {
       "gate_reasons": [
         "deep countertrend: 24h structure/OI conflicts with the setup",
-        "score 49.0 below required 78.0",
+        "score 43.0 below required 78.0",
         "candidate has blocker(s)",
         "missing spot confirmation",
         "missing spot volume"
       ],
       "last_bias": "LONG",
       "last_decision": "BLOCKED_DEEP_COUNTERTREND",
-      "last_price": 0.024167,
+      "last_price": 0.024001,
       "last_regime": "COUNTERTREND_DEEP",
-      "last_score": 49.0,
-      "last_seen_at_ms": 1790585743428
+      "last_score": 43.0,
+      "last_seen_at_ms": 1790586042961
     },
     "RAMUSDT": {
       "gate_reasons": [
         "deep countertrend: 24h structure/OI conflicts with the setup",
-        "score 37.0 below required 78.0",
+        "score 32.0 below required 78.0",
         "candidate has blocker(s)",
         "missing spot confirmation",
+        "15m OI not expanding",
         "missing spot volume"
       ],
       "last_bias": "LONG",
       "last_decision": "BLOCKED_DEEP_COUNTERTREND",
-      "last_price": 13.52,
+      "last_price": 13.48,
       "last_regime": "COUNTERTREND_DEEP",
-      "last_score": 37.0,
-      "last_seen_at_ms": 1790585451825
+      "last_score": 32.0,
+      "last_seen_at_ms": 1790586042961
     },
     "RAREUSDT": {
       "gate_reasons": [
@@ -750,15 +757,17 @@
       "confirmed_regime": "TREND_CONTINUATION",
       "confirmed_score": 90.0,
       "gate_reasons": [
-        "price follow-through 0.44676098287417254 below 0.50%"
+        "deep countertrend: 24h structure/OI conflicts with the setup",
+        "score 59.0 below required 78.0",
+        "long spot weak (B/S 0.847, flow -37,008)"
       ],
       "last_bias": "LONG",
-      "last_decision": "SHADOW_CONFIRMED",
+      "last_decision": "BLOCKED_DEEP_COUNTERTREND",
       "last_position_check_ms": 1790585743428,
-      "last_price": 0.02658,
+      "last_price": 0.02675,
       "last_regime": "COUNTERTREND_DEEP",
-      "last_score": 44.0,
-      "last_seen_at_ms": 1790585743428,
+      "last_score": 59.0,
+      "last_seen_at_ms": 1790586042961,
       "position_state": "EXIT_THESIS_BROKEN"
     },
     "SAMSUNGUSDT": {
@@ -949,10 +958,10 @@
       ],
       "last_bias": "SHORT",
       "last_decision": "WAIT",
-      "last_price": 4151.8,
+      "last_price": 4150.87,
       "last_regime": "TREND_CONTINUATION",
       "last_score": 47.0,
-      "last_seen_at_ms": 1790585743428
+      "last_seen_at_ms": 1790586042961
     },
     "\u9f99\u867eUSDT": {
       "gate_reasons": [
