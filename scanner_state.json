@@ -1,6 +1,6 @@
 {
-  "last_processed_at_ms": 1790698238587,
-  "last_processed_generated_at_ms": 1790698236032,
+  "last_processed_at_ms": 1790698587518,
+  "last_processed_generated_at_ms": 1790698584911,
   "minimum_candidate_score": 78.0,
   "pairs": {
     "1000RATSUSDT": {
@@ -213,12 +213,12 @@
     },
     "BTCUSDT": {
       "gate_reasons": [
-        "score 57.0 below required 78.0"
+        "score 52.0 below required 78.0"
       ],
       "last_bias": "SHORT",
-      "last_price": 83038.9,
-      "last_score": 57.0,
-      "last_seen_at_ms": 1790698238587,
+      "last_price": 82980.1,
+      "last_score": 52.0,
+      "last_seen_at_ms": 1790698587518,
       "qualifying_streak": 0,
       "required_score": 78.0
     },
@@ -282,9 +282,9 @@
         "15m OI is not expanding"
       ],
       "last_bias": "LONG",
-      "last_price": 0.10431,
+      "last_price": 0.10389,
       "last_score": 45.0,
-      "last_seen_at_ms": 1790697918827,
+      "last_seen_at_ms": 1790698587518,
       "qualifying_streak": 0,
       "required_score": 82.0
     },
@@ -317,13 +317,13 @@
     },
     "COTIUSDT": {
       "gate_reasons": [
-        "score 56.0 below required 82.0",
+        "score 50.0 below required 82.0",
         "long spot confirmation weak (B/S 0.708, flow -44,804)"
       ],
       "last_bias": "LONG",
-      "last_price": 0.013185,
-      "last_score": 56.0,
-      "last_seen_at_ms": 1790698238587,
+      "last_price": 0.013221,
+      "last_score": 50.0,
+      "last_seen_at_ms": 1790698587518,
       "qualifying_streak": 0,
       "required_score": 82.0
     },
@@ -561,9 +561,9 @@
         "score 52.0 below required 78.0"
       ],
       "last_bias": "SHORT",
-      "last_price": 2675.49,
+      "last_price": 2674.34,
       "last_score": 52.0,
-      "last_seen_at_ms": 1790698238587,
+      "last_seen_at_ms": 1790698587518,
       "qualifying_streak": 0,
       "required_score": 78.0
     },
@@ -1038,14 +1038,15 @@
         "warnings": []
       },
       "gate_reasons": [
-        "score 69.0 below required 78.0",
-        "long spot confirmation weak (B/S 1.002, flow 530)"
+        "score 63.0 below required 78.0",
+        "long spot confirmation weak (B/S 1.002, flow 530)",
+        "15m OI is not expanding"
       ],
       "last_bias": "LONG",
-      "last_price": 12.291,
+      "last_price": 12.253,
       "last_return_pct": 0.175229,
-      "last_score": 69.0,
-      "last_seen_at_ms": 1790698238587,
+      "last_score": 63.0,
+      "last_seen_at_ms": 1790698587518,
       "mae_pct": 0.0,
       "mfe_pct": 0.390283,
       "previous_score": 54.0,
@@ -1110,19 +1111,16 @@
         "strength": "STRONG",
         "warnings": []
       },
-      "gate_reasons": [
-        "score 75.0 below required 78.0",
-        "15m OI is not expanding"
-      ],
+      "gate_reasons": [],
       "last_bias": "LONG",
-      "last_price": 0.0024137,
+      "last_price": 0.0024058,
       "last_return_pct": 3.714971,
-      "last_score": 75.0,
-      "last_seen_at_ms": 1790698238587,
+      "last_score": 80.0,
+      "last_seen_at_ms": 1790698587518,
       "mae_pct": 0.0,
       "mfe_pct": 3.714971,
       "previous_score": 43.0,
-      "qualifying_streak": 0,
+      "qualifying_streak": 1,
       "required_score": 78.0,
       "tp2_hit_at_ms": 1790674549849,
       "tp3_hit_at_ms": 1790674841178
