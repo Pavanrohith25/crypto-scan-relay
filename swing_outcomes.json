@@ -1,5 +1,5 @@
 {
-  "last_processed_at_ms": 1790672129298,
+  "last_processed_at_ms": 1790672461965,
   "objective": {
     "diagnostic_horizons_hours": [
       4,
@@ -2022,10 +2022,103 @@
     },
     "FILUSDT-1790658030470": {
       "bias": "SHORT",
+      "evaluated_4h_at_ms": 1790672461965,
       "outcome_12h": null,
       "outcome_24h": null,
       "outcome_48h": null,
-      "outcome_4h": null,
+      "outcome_4h": {
+        "bars_used": 48,
+        "close_return_pct": -3.3987,
+        "first_5pct_bar_ms": null,
+        "horizon_hours": 4,
+        "mae_before_5pct_pct": null,
+        "mae_pct": -3.9619,
+        "mfe_pct": 0.3399,
+        "objective": "+5pct",
+        "sampling_interval": "5m",
+        "sampling_note": "Uses 5m candles beginning with the first full bar at/after the trigger. If TP and SL are both touched inside the same 5m candle before either resolves, the stop-path result is AMBIGUOUS.",
+        "stop_grid": {
+          "stop_3_0pct": {
+            "ambiguous": false,
+            "first_stop_bar_ms": 1790667900000,
+            "first_target_bar_ms": null,
+            "resolution_bar_ms": 1790667900000,
+            "result": "STOP_FIRST",
+            "stop_first": true,
+            "stop_pct": 3.0,
+            "stop_reached": true,
+            "target_first": false,
+            "target_pct": 5.0,
+            "target_reached": false,
+            "time_to_stop_minutes": 164.49,
+            "time_to_target_minutes": null
+          },
+          "stop_4_0pct": {
+            "ambiguous": false,
+            "first_stop_bar_ms": null,
+            "first_target_bar_ms": null,
+            "resolution_bar_ms": null,
+            "result": "OPEN",
+            "stop_first": false,
+            "stop_pct": 4.0,
+            "stop_reached": false,
+            "target_first": false,
+            "target_pct": 5.0,
+            "target_reached": false,
+            "time_to_stop_minutes": null,
+            "time_to_target_minutes": null
+          },
+          "stop_5_0pct": {
+            "ambiguous": false,
+            "first_stop_bar_ms": null,
+            "first_target_bar_ms": null,
+            "resolution_bar_ms": null,
+            "result": "OPEN",
+            "stop_first": false,
+            "stop_pct": 5.0,
+            "stop_reached": false,
+            "target_first": false,
+            "target_pct": 5.0,
+            "target_reached": false,
+            "time_to_stop_minutes": null,
+            "time_to_target_minutes": null
+          },
+          "stop_6_0pct": {
+            "ambiguous": false,
+            "first_stop_bar_ms": null,
+            "first_target_bar_ms": null,
+            "resolution_bar_ms": null,
+            "result": "OPEN",
+            "stop_first": false,
+            "stop_pct": 6.0,
+            "stop_reached": false,
+            "target_first": false,
+            "target_pct": 5.0,
+            "target_reached": false,
+            "time_to_stop_minutes": null,
+            "time_to_target_minutes": null
+          },
+          "stop_8_0pct": {
+            "ambiguous": false,
+            "first_stop_bar_ms": null,
+            "first_target_bar_ms": null,
+            "resolution_bar_ms": null,
+            "result": "OPEN",
+            "stop_first": false,
+            "stop_pct": 8.0,
+            "stop_reached": false,
+            "target_first": false,
+            "target_pct": 5.0,
+            "target_reached": false,
+            "time_to_stop_minutes": null,
+            "time_to_target_minutes": null
+          }
+        },
+        "target_5_reached": false,
+        "time_to_5pct_minutes": null,
+        "window_end_ms": 1790672430470,
+        "window_start_ms": 1790658300000
+      },
       "snapshot": {
         "bias": "SHORT",
         "bounce_from_12h_low_pct": 2.082,
@@ -4809,6 +4902,39 @@
       "trigger_at_ms": 1790442043615,
       "trigger_id": "VTHOUSDT-1790442043615",
       "trigger_price": 0.000823
+    },
+    "VTHOUSDT-1790672459941": {
+      "bias": "SHORT",
+      "outcome_12h": null,
+      "outcome_24h": null,
+      "outcome_48h": null,
+      "outcome_4h": null,
+      "snapshot": {
+        "bias": "SHORT",
+        "bounce_from_12h_low_pct": 1.926,
+        "distance_from_1h_sma10_pct": -0.189,
+        "momentum_12h_pct": -2.962,
+        "momentum_24h_pct": -4.288,
+        "momentum_3h_pct": 1.028,
+        "price": 0.000688,
+        "pullback_from_12h_high_pct": -4.577,
+        "quote_volume_24h": 13733809.07,
+        "reasons": [
+          "1h and 4h trend structure aligned",
+          "1h spot volume expansion 3.59x"
+        ],
+        "retest_reason": "short bounce reached trend area and selling resumed",
+        "setup_state": "CONTINUATION_TRIGGER",
+        "swing_score": 71.0,
+        "symbol": "VTHOUSDT",
+        "volume_expansion_1h": 3.59,
+        "warnings": []
+      },
+      "swing_score": 71.0,
+      "symbol": "VTHOUSDT",
+      "trigger_at_ms": 1790672459941,
+      "trigger_id": "VTHOUSDT-1790672459941",
+      "trigger_price": 0.000688
     },
     "ZROUSDT-1790359215235": {
       "bias": "LONG",
