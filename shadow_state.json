@@ -1,6 +1,6 @@
 {
-  "last_processed_at_ms": 1790652313907,
-  "last_processed_generated_at_ms": 1790652311339,
+  "last_processed_at_ms": 1790652623630,
+  "last_processed_generated_at_ms": 1790652620938,
   "pairs": {
     "1000RATSUSDT": {
       "gate_reasons": [
@@ -133,18 +133,17 @@
     "BNCUSDT": {
       "gate_reasons": [
         "deep countertrend: 24h structure/OI conflicts with the setup",
-        "score 54.0 below required 78.0",
+        "score 53.0 below required 78.0",
         "candidate has blocker(s)",
         "missing spot confirmation",
-        "15m OI not expanding",
         "missing spot volume"
       ],
       "last_bias": "LONG",
       "last_decision": "BLOCKED_DEEP_COUNTERTREND",
-      "last_price": 5.621,
+      "last_price": 5.625,
       "last_regime": "COUNTERTREND_DEEP",
-      "last_score": 54.0,
-      "last_seen_at_ms": 1790652313907
+      "last_score": 53.0,
+      "last_seen_at_ms": 1790652623630
     },
     "BOTUSDT": {
       "gate_reasons": [
@@ -339,10 +338,10 @@
       ],
       "last_bias": "SHORT",
       "last_decision": "WAIT",
-      "last_price": 3.279,
+      "last_price": 3.257,
       "last_regime": "TREND_CONTINUATION",
       "last_score": 45.0,
-      "last_seen_at_ms": 1790652313907
+      "last_seen_at_ms": 1790652623630
     },
     "EBAYUSDT": {
       "gate_reasons": [
@@ -476,17 +475,17 @@
     "GPROUSDT": {
       "gate_reasons": [
         "deep countertrend: 24h structure/OI conflicts with the setup",
-        "score 33.0 below required 78.0",
+        "score 27.0 below required 78.0",
         "candidate has blocker(s)",
         "missing spot confirmation",
         "missing spot volume"
       ],
       "last_bias": "LONG",
       "last_decision": "BLOCKED_DEEP_COUNTERTREND",
-      "last_price": 1.295,
+      "last_price": 1.296,
       "last_regime": "COUNTERTREND_DEEP",
-      "last_score": 33.0,
-      "last_seen_at_ms": 1790652313907
+      "last_score": 27.0,
+      "last_seen_at_ms": 1790652623630
     },
     "GUSDT": {
       "gate_reasons": [
@@ -509,10 +508,10 @@
       ],
       "last_bias": "LONG",
       "last_decision": "WAIT",
-      "last_price": 182.8,
+      "last_price": 182.97,
       "last_regime": "COUNTERTREND",
       "last_score": 49.0,
-      "last_seen_at_ms": 1790652313907
+      "last_seen_at_ms": 1790652623630
     },
     "HBARUSDT": {
       "gate_reasons": [
@@ -671,18 +670,17 @@
     },
     "KSTRUSDT": {
       "gate_reasons": [
-        "score 29.0 below required 78.0",
+        "score 34.0 below required 78.0",
         "candidate has blocker(s)",
         "missing spot confirmation",
-        "15m OI not expanding",
         "missing spot volume"
       ],
       "last_bias": "SHORT",
       "last_decision": "WAIT",
-      "last_price": 22.81,
+      "last_price": 22.9,
       "last_regime": "COUNTERTREND",
-      "last_score": 29.0,
-      "last_seen_at_ms": 1790652313907
+      "last_score": 34.0,
+      "last_seen_at_ms": 1790652623630
     },
     "LSKUSDT": {
       "active": false,
@@ -983,17 +981,20 @@
       "confirmed_price": 0.02751,
       "confirmed_regime": "TREND_CONTINUATION",
       "confirmed_score": 86.0,
-      "evidence_count": 1,
-      "gate_reasons": [],
+      "evidence_count": 2,
+      "gate_reasons": [
+        "price follow-through -0.18382352941175295 below 0.75%",
+        "countertrend reclaim not strong enough"
+      ],
       "high_priority": false,
       "last_bias": "LONG",
-      "last_decision": "ARMED",
-      "last_fingerprint": "0.0272|1.149|15217.3116|219601.5008|0.2|1.82|2.47",
+      "last_decision": "ARMED_WAITING_TRIGGER",
+      "last_fingerprint": "0.02715|1.149|15217.3116|219601.5008|0.54|1.5|2.47",
       "last_position_check_ms": 1790644855550,
-      "last_price": 0.0272,
+      "last_price": 0.02715,
       "last_regime": "COUNTERTREND",
       "last_score": 80.0,
-      "last_seen_at_ms": 1790652313907,
+      "last_seen_at_ms": 1790652623630,
       "position_state": "EXIT_THESIS_BROKEN",
       "required_score": 78.0
     },
