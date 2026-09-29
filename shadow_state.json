@@ -1,6 +1,6 @@
 {
-  "last_processed_at_ms": 1790701547728,
-  "last_processed_generated_at_ms": 1790701545071,
+  "last_processed_at_ms": 1790701831186,
+  "last_processed_generated_at_ms": 1790701828708,
   "pairs": {
     "1000RATSUSDT": {
       "gate_reasons": [
@@ -231,16 +231,29 @@
     },
     "CELOUSDT": {
       "gate_reasons": [
-        "score 43.0 below required 82.0",
-        "long spot weak (B/S 0.933, flow -11,142)",
-        "15m OI not expanding"
+        "score 49.0 below required 82.0",
+        "long spot weak (B/S 0.933, flow -11,142)"
       ],
       "last_bias": "LONG",
       "last_decision": "WAIT",
-      "last_price": 0.10296,
+      "last_price": 0.10287,
       "last_regime": "COUNTERTREND",
-      "last_score": 43.0,
-      "last_seen_at_ms": 1790701547728
+      "last_score": 49.0,
+      "last_seen_at_ms": 1790701831186
+    },
+    "CELRUSDT": {
+      "gate_reasons": [
+        "score 44.0 below required 82.0",
+        "candidate has blocker(s)",
+        "long spot weak (B/S 0.609, flow -11,898)",
+        "spot volume 49,019 below required 100,000"
+      ],
+      "last_bias": "LONG",
+      "last_decision": "WAIT",
+      "last_price": 0.003088,
+      "last_regime": "COUNTERTREND",
+      "last_score": 44.0,
+      "last_seen_at_ms": 1790701831186
     },
     "CLUSDT": {
       "gate_reasons": [
@@ -280,10 +293,10 @@
       ],
       "last_bias": "LONG",
       "last_decision": "WAIT",
-      "last_price": 0.01301,
+      "last_price": 0.013015,
       "last_regime": "TREND_CONTINUATION",
       "last_score": 45.0,
-      "last_seen_at_ms": 1790701547728
+      "last_seen_at_ms": 1790701831186
     },
     "COWUSDT": {
       "gate_reasons": [
@@ -571,16 +584,16 @@
     },
     "HBARUSDT": {
       "gate_reasons": [
-        "score 52.0 below required 78.0",
-        "short spot weak (B/S 0.957, flow -100,319)",
+        "score 32.0 below required 78.0",
+        "short spot weak (B/S 0.976, flow -159,117)",
         "15m OI not expanding"
       ],
       "last_bias": "SHORT",
       "last_decision": "WAIT",
-      "last_price": 0.10684,
+      "last_price": 0.10616,
       "last_regime": "COUNTERTREND",
-      "last_score": 52.0,
-      "last_seen_at_ms": 1790701547728
+      "last_score": 32.0,
+      "last_seen_at_ms": 1790701831186
     },
     "HK0625USDT": {
       "gate_reasons": [
@@ -875,11 +888,11 @@
       "gate_reasons": [],
       "last_bias": "LONG",
       "last_decision": "SHADOW_CONFIRMED",
-      "last_position_check_ms": 1790701547728,
-      "last_price": 12.431,
+      "last_position_check_ms": 1790701831186,
+      "last_price": 12.398,
       "last_regime": "COUNTERTREND",
-      "last_score": 75.0,
-      "last_seen_at_ms": 1790701547728,
+      "last_score": 80.0,
+      "last_seen_at_ms": 1790701831186,
       "position_state": "HOLD_PROTECT"
     },
     "OKLOUSDT": {
@@ -1423,10 +1436,10 @@
       ],
       "last_bias": "SHORT",
       "last_decision": "WAIT",
-      "last_price": 1.4879,
+      "last_price": 1.4886,
       "last_regime": "TREND_CONTINUATION",
       "last_score": 54.0,
-      "last_seen_at_ms": 1790701547728
+      "last_seen_at_ms": 1790701831186
     },
     "ZECUSDT": {
       "gate_reasons": [
