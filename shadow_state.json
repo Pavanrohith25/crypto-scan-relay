@@ -1,6 +1,6 @@
 {
-  "last_processed_at_ms": 1790708531689,
-  "last_processed_generated_at_ms": 1790708529174,
+  "last_processed_at_ms": 1790708720064,
+  "last_processed_generated_at_ms": 1790708717570,
   "pairs": {
     "1000RATSUSDT": {
       "gate_reasons": [
@@ -177,15 +177,14 @@
     "BTCUSDT": {
       "gate_reasons": [
         "score 36.0 below required 78.0",
-        "short spot weak (B/S 1.552, flow 7,397,912)",
-        "15m OI not expanding"
+        "short spot weak (B/S 1.552, flow 7,397,912)"
       ],
       "last_bias": "SHORT",
       "last_decision": "WAIT",
-      "last_price": 83580.0,
-      "last_regime": "COUNTERTREND",
+      "last_price": 83623.9,
+      "last_regime": "TREND_CONTINUATION",
       "last_score": 36.0,
-      "last_seen_at_ms": 1790708531689
+      "last_seen_at_ms": 1790708720064
     },
     "BWETUSDT": {
       "gate_reasons": [
@@ -294,10 +293,10 @@
       ],
       "last_bias": "LONG",
       "last_decision": "WAIT",
-      "last_price": 0.013314,
+      "last_price": 0.013372,
       "last_regime": "TREND_CONTINUATION",
       "last_score": 75.0,
-      "last_seen_at_ms": 1790708531689
+      "last_seen_at_ms": 1790708720064
     },
     "COWUSDT": {
       "gate_reasons": [
@@ -447,10 +446,10 @@
       ],
       "last_bias": "SHORT",
       "last_decision": "BLOCKED_DEEP_COUNTERTREND",
-      "last_price": 0.0126,
+      "last_price": 0.01262,
       "last_regime": "COUNTERTREND_DEEP",
       "last_score": 51.0,
-      "last_seen_at_ms": 1790708531689
+      "last_seen_at_ms": 1790708720064
     },
     "ESPUSDT": {
       "gate_reasons": [
@@ -760,17 +759,17 @@
     },
     "KGENUSDT": {
       "gate_reasons": [
-        "score 48.0 below required 82.0",
+        "score 37.0 below required 82.0",
         "candidate has blocker(s)",
         "missing spot confirmation",
         "missing spot volume"
       ],
       "last_bias": "SHORT",
       "last_decision": "WAIT",
-      "last_price": 0.1662,
+      "last_price": 0.1656,
       "last_regime": "COUNTERTREND",
-      "last_score": 48.0,
-      "last_seen_at_ms": 1790708531689
+      "last_score": 37.0,
+      "last_seen_at_ms": 1790708720064
     },
     "KSTRUSDT": {
       "gate_reasons": [
@@ -925,11 +924,11 @@
       "gate_reasons": [],
       "last_bias": "LONG",
       "last_decision": "SHADOW_CONFIRMED",
-      "last_position_check_ms": 1790708531689,
-      "last_price": 12.804,
+      "last_position_check_ms": 1790708720064,
+      "last_price": 12.786,
       "last_regime": "TREND_CONTINUATION",
-      "last_score": 54.0,
-      "last_seen_at_ms": 1790708531689,
+      "last_score": 49.0,
+      "last_seen_at_ms": 1790708720064,
       "position_state": "HOLD_PROTECT"
     },
     "OKLOUSDT": {
