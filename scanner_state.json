@@ -1,6 +1,6 @@
 {
-  "last_processed_at_ms": 1790696746992,
-  "last_processed_generated_at_ms": 1790696744518,
+  "last_processed_at_ms": 1790697073594,
+  "last_processed_generated_at_ms": 1790697070018,
   "minimum_candidate_score": 78.0,
   "pairs": {
     "1000RATSUSDT": {
@@ -278,14 +278,13 @@
     },
     "CELOUSDT": {
       "gate_reasons": [
-        "score 36.0 below required 82.0",
-        "long spot confirmation weak (B/S 0.769, flow -155,005)",
-        "15m OI is not expanding"
+        "score 59.0 below required 82.0",
+        "long spot confirmation weak (B/S 0.990, flow -2,877)"
       ],
       "last_bias": "LONG",
-      "last_price": 0.10745,
-      "last_score": 36.0,
-      "last_seen_at_ms": 1790694974872,
+      "last_price": 0.10654,
+      "last_score": 59.0,
+      "last_seen_at_ms": 1790697073594,
       "qualifying_streak": 0,
       "required_score": 82.0
     },
@@ -322,9 +321,9 @@
         "long spot confirmation weak (B/S 1.046, flow 4,164)"
       ],
       "last_bias": "LONG",
-      "last_price": 0.013048,
+      "last_price": 0.013133,
       "last_score": 68.0,
-      "last_seen_at_ms": 1790696746992,
+      "last_seen_at_ms": 1790697073594,
       "qualifying_streak": 0,
       "required_score": 82.0
     },
@@ -559,12 +558,13 @@
     },
     "ETHUSDT": {
       "gate_reasons": [
-        "score 57.0 below required 78.0"
+        "score 52.0 below required 78.0",
+        "15m OI is not expanding"
       ],
       "last_bias": "SHORT",
-      "last_price": 2682.29,
-      "last_score": 57.0,
-      "last_seen_at_ms": 1790696746992,
+      "last_price": 2678.92,
+      "last_score": 52.0,
+      "last_seen_at_ms": 1790697073594,
       "qualifying_streak": 0,
       "required_score": 78.0
     },
@@ -588,9 +588,9 @@
         "long spot confirmation weak (B/S 0.810, flow -291,227)"
       ],
       "last_bias": "LONG",
-      "last_price": 0.2251,
+      "last_price": 0.2243,
       "last_score": 57.0,
-      "last_seen_at_ms": 1790696746992,
+      "last_seen_at_ms": 1790697073594,
       "qualifying_streak": 0,
       "required_score": 78.0
     },
@@ -1038,13 +1038,14 @@
         "warnings": []
       },
       "gate_reasons": [
-        "pair cooldown active after deterioration"
+        "score 74.0 below required 78.0",
+        "long spot confirmation weak (B/S 1.027, flow 5,987)"
       ],
       "last_bias": "LONG",
-      "last_price": 12.175,
+      "last_price": 12.271,
       "last_return_pct": 0.175229,
-      "last_score": 63.0,
-      "last_seen_at_ms": 1790696746992,
+      "last_score": 74.0,
+      "last_seen_at_ms": 1790697073594,
       "mae_pct": 0.0,
       "mfe_pct": 0.390283,
       "previous_score": 54.0,
