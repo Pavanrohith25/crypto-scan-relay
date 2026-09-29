@@ -1,6 +1,6 @@
 {
-  "last_processed_at_ms": 1790707217612,
-  "last_processed_generated_at_ms": 1790707215197,
+  "last_processed_at_ms": 1790707523337,
+  "last_processed_generated_at_ms": 1790707520960,
   "minimum_candidate_score": 78.0,
   "pairs": {
     "1000RATSUSDT": {
@@ -213,12 +213,13 @@
     },
     "BTCUSDT": {
       "gate_reasons": [
-        "score 52.0 below required 78.0"
+        "score 36.0 below required 78.0",
+        "short spot confirmation weak (B/S 1.552, flow 7,397,912)"
       ],
       "last_bias": "SHORT",
-      "last_price": 83090.5,
-      "last_score": 52.0,
-      "last_seen_at_ms": 1790698849721,
+      "last_price": 83601.5,
+      "last_score": 36.0,
+      "last_seen_at_ms": 1790707523337,
       "qualifying_streak": 0,
       "required_score": 78.0
     },
@@ -329,13 +330,13 @@
     },
     "COTIUSDT": {
       "gate_reasons": [
-        "score 61.0 below required 78.0",
+        "score 55.0 below required 78.0",
         "long spot confirmation weak (B/S 0.917, flow -17,289)"
       ],
       "last_bias": "LONG",
-      "last_price": 0.013439,
-      "last_score": 61.0,
-      "last_seen_at_ms": 1790707217612,
+      "last_price": 0.013385,
+      "last_score": 55.0,
+      "last_seen_at_ms": 1790707523337,
       "qualifying_streak": 0,
       "required_score": 78.0
     },
@@ -1031,12 +1032,12 @@
     },
     "NEARUSDT": {
       "gate_reasons": [
-        "score 72.0 below required 78.0"
+        "score 75.0 below required 78.0"
       ],
       "last_bias": "SHORT",
-      "last_price": 5.035,
-      "last_score": 72.0,
-      "last_seen_at_ms": 1790707217612,
+      "last_price": 5.102,
+      "last_score": 75.0,
+      "last_seen_at_ms": 1790707523337,
       "qualifying_streak": 0,
       "required_score": 78.0
     },
@@ -1245,9 +1246,9 @@
         "short spot confirmation weak (B/S 1.473, flow 1,014,124)"
       ],
       "last_bias": "SHORT",
-      "last_price": 271.16,
+      "last_price": 273.88,
       "last_score": 36.0,
-      "last_seen_at_ms": 1790707217612,
+      "last_seen_at_ms": 1790707523337,
       "qualifying_streak": 0,
       "required_score": 78.0
     },
@@ -1811,14 +1812,15 @@
     },
     "XAUUSDT": {
       "gate_reasons": [
-        "score 48.0 below required 78.0",
+        "score 46.0 below required 78.0",
         "candidate has blocker(s)",
-        "missing Binance spot confirmation"
+        "missing Binance spot confirmation",
+        "15m OI is not expanding"
       ],
       "last_bias": "SHORT",
-      "last_price": 4125.81,
-      "last_score": 48.0,
-      "last_seen_at_ms": 1790631317913,
+      "last_price": 4174.87,
+      "last_score": 46.0,
+      "last_seen_at_ms": 1790707523337,
       "qualifying_streak": 0,
       "required_score": 78.0
     },
