@@ -1,6 +1,6 @@
 {
-  "last_processed_at_ms": 1790760956670,
-  "last_processed_generated_at_ms": 1790760954123,
+  "last_processed_at_ms": 1790761220501,
+  "last_processed_generated_at_ms": 1790761217944,
   "minimum_candidate_score": 78.0,
   "pairs": {
     "1000RATSUSDT": {
@@ -84,9 +84,9 @@
         "missing Binance spot confirmation"
       ],
       "last_bias": "SHORT",
-      "last_price": 234.54,
+      "last_price": 234.23,
       "last_score": 46.0,
-      "last_seen_at_ms": 1790760956670,
+      "last_seen_at_ms": 1790761220501,
       "qualifying_streak": 0,
       "required_score": 82.0
     },
@@ -172,13 +172,14 @@
     },
     "BERAUSDT": {
       "gate_reasons": [
-        "score 61.0 below required 78.0",
-        "long spot confirmation weak (B/S 0.851, flow -39,087)"
+        "score 50.0 below required 78.0",
+        "long spot confirmation weak (B/S 0.851, flow -39,087)",
+        "15m OI is not expanding"
       ],
       "last_bias": "LONG",
-      "last_price": 0.2547,
-      "last_score": 61.0,
-      "last_seen_at_ms": 1790760956670,
+      "last_price": 0.2528,
+      "last_score": 50.0,
+      "last_seen_at_ms": 1790761220501,
       "qualifying_streak": 0,
       "required_score": 78.0
     },
@@ -656,15 +657,15 @@
     },
     "ESPORTSUSDT": {
       "gate_reasons": [
-        "score 60.0 below required 78.0",
+        "score 48.0 below required 78.0",
         "candidate has blocker(s)",
         "missing Binance spot confirmation",
         "15m OI is not expanding"
       ],
       "last_bias": "SHORT",
-      "last_price": 0.01128,
-      "last_score": 60.0,
-      "last_seen_at_ms": 1790760956670,
+      "last_price": 0.01127,
+      "last_score": 48.0,
+      "last_seen_at_ms": 1790761220501,
       "qualifying_streak": 0,
       "required_score": 78.0
     },
@@ -687,9 +688,9 @@
         "15m OI is not expanding"
       ],
       "last_bias": "SHORT",
-      "last_price": 2691.44,
+      "last_price": 2688.31,
       "last_score": 56.0,
-      "last_seen_at_ms": 1790760956670,
+      "last_seen_at_ms": 1790761220501,
       "qualifying_streak": 0,
       "required_score": 78.0
     },
@@ -1120,12 +1121,13 @@
       "gate_reasons": [
         "score 52.0 below required 82.0",
         "candidate has blocker(s)",
-        "missing Binance spot confirmation"
+        "missing Binance spot confirmation",
+        "15m OI is not expanding"
       ],
       "last_bias": "LONG",
-      "last_price": 0.0005358,
+      "last_price": 0.0005337,
       "last_score": 52.0,
-      "last_seen_at_ms": 1790760956670,
+      "last_seen_at_ms": 1790761220501,
       "qualifying_streak": 0,
       "required_score": 82.0
     },
