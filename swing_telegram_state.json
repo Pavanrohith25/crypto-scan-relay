@@ -22,8 +22,35 @@
   },
   "historical_gate_enabled": false,
   "historical_gate_fail_closed": true,
-  "last_blocked": [],
-  "last_entry_drift_checks": [],
+  "last_blocked": [
+    {
+      "bias": "LONG",
+      "decision": "BLOCKED",
+      "reason": "historical gate disabled: no historically approved edge",
+      "stage": "historical_gate",
+      "symbol": "PEPEUSDT",
+      "timestamp_ms": 1790787630456,
+      "trigger_id": "PEPEUSDT-1790787629409"
+    }
+  ],
+  "last_entry_drift_checks": [
+    {
+      "alert_check_age_seconds": 0.08,
+      "bias": "LONG",
+      "blocked": false,
+      "directional_drift_pct": 0.0,
+      "drift_bucket": "0_to_0.5",
+      "live_price": 4.37e-06,
+      "reason": "entry drift recorded for research; no empirical late-entry cutoff promoted yet",
+      "stop_pct": 6.0,
+      "symbol": "PEPEUSDT",
+      "target_pct": 5.0,
+      "timestamp_ms": 1790787629491,
+      "trigger_at_ms": 1790787629409,
+      "trigger_id": "PEPEUSDT-1790787629409",
+      "trigger_price": 4.37e-06
+    }
+  ],
   "processed_trigger_ids": [
     "AAVEUSDT-1790420485978",
     "APTUSDT-1790361323278",
@@ -36,6 +63,7 @@
     "FILUSDT-1790658030470",
     "ICPUSDT-1790786430034",
     "LINKUSDT-1790443873203",
+    "PEPEUSDT-1790787629409",
     "POLUSDT-1790409704193",
     "POLUSDT-1790420485978",
     "PUMPUSDT-1790420485978",
