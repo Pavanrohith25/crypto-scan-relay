@@ -78,14 +78,19 @@ def current_hidden_context(symbol):
 
 def historical_gate_allows(symbol):
     gate = load_json(HISTORICAL_GATE_FILE, {})
-    if not isinstance(gate, dict) or not gate.get("enabled"):
-        return True, "historical gate not enabled"
+    if not isinstance(gate, dict):
+        return False, "historical gate config unavailable or invalid"
+    if not gate.get("enabled"):
+        return False, "historical gate disabled: no historically approved edge"
+
+    allowed = gate.get("allowed_combinations")
+    if not isinstance(allowed, list) or not allowed:
+        return False, "historical gate has no approved regime/quality combinations"
 
     hidden = current_hidden_context(symbol)
     if hidden is None:
         return False, "historical gate enabled but live macro/quality context is unavailable"
 
-    allowed = gate.get("allowed_combinations") or []
     for item in allowed:
         if (
             item.get("market_regime") == hidden["market_regime"]
@@ -497,6 +502,7 @@ def main():
     state["sl_pct"] = sl_pct
     state["target_window"] = HOLD_WINDOW
     state["historical_gate_enabled"] = bool(load_json(HISTORICAL_GATE_FILE, {}).get("enabled"))
+    state["historical_gate_fail_closed"] = True
     state["daily_anti_chase_enabled"] = True
     state["daily_anti_chase_policy"] = {
         "daily_candles": DAILY_LOOKBACK,
