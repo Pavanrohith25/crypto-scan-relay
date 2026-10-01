@@ -1,6 +1,6 @@
 {
-  "last_processed_at_ms": 1790823963256,
-  "last_processed_generated_at_ms": 1790823960716,
+  "last_processed_at_ms": 1790824241722,
+  "last_processed_generated_at_ms": 1790824239129,
   "pairs": {
     "1000RATSUSDT": {
       "gate_reasons": [
@@ -135,17 +135,17 @@
     },
     "ARKUSDT": {
       "gate_reasons": [
-        "score 29.0 below required 82.0",
+        "score 35.0 below required 82.0",
         "candidate has blocker(s)",
         "long spot weak (B/S 0.943, flow -16,263)",
         "15m OI not expanding"
       ],
       "last_bias": "LONG",
       "last_decision": "WAIT",
-      "last_price": 0.2452,
+      "last_price": 0.2336,
       "last_regime": "COUNTERTREND",
-      "last_score": 29.0,
-      "last_seen_at_ms": 1790823963256
+      "last_score": 35.0,
+      "last_seen_at_ms": 1790824241722
     },
     "ARMUSDT": {
       "gate_reasons": [
@@ -241,10 +241,10 @@
       ],
       "last_bias": "SHORT",
       "last_decision": "WAIT",
-      "last_price": 499.87,
+      "last_price": 499.91,
       "last_regime": "TREND_CONTINUATION",
       "last_score": 46.0,
-      "last_seen_at_ms": 1790823963256
+      "last_seen_at_ms": 1790824241722
     },
     "BRUSDT": {
       "gate_reasons": [
@@ -760,7 +760,7 @@
     },
     "HANMIUSDT": {
       "gate_reasons": [
-        "score 49.0 below required 78.0",
+        "score 43.0 below required 78.0",
         "candidate has blocker(s)",
         "missing spot confirmation",
         "missing spot volume"
@@ -769,8 +769,8 @@
       "last_decision": "WAIT",
       "last_price": 192.06,
       "last_regime": "TREND_CONTINUATION",
-      "last_score": 49.0,
-      "last_seen_at_ms": 1790823963256
+      "last_score": 43.0,
+      "last_seen_at_ms": 1790824241722
     },
     "HBARUSDT": {
       "gate_reasons": [
@@ -1171,16 +1171,18 @@
       "confirmed_score": 82.0,
       "gate_reasons": [
         "deep countertrend: 24h structure/OI conflicts with the setup",
-        "score 45.0 below required 82.0",
-        "long spot weak (B/S 0.671, flow -22,714)"
+        "score 31.0 below required 82.0",
+        "long spot weak (B/S 0.739, flow -9,581)",
+        "15m OI not expanding",
+        "spot volume 63,837 below required 100,000"
       ],
       "last_bias": "LONG",
       "last_decision": "BLOCKED_DEEP_COUNTERTREND",
       "last_position_check_ms": 1790718646352,
-      "last_price": 10.987,
+      "last_price": 11.102,
       "last_regime": "COUNTERTREND_DEEP",
-      "last_score": 45.0,
-      "last_seen_at_ms": 1790805340932,
+      "last_score": 31.0,
+      "last_seen_at_ms": 1790824241722,
       "position_state": "EXIT_THESIS_BROKEN"
     },
     "OKLOUSDT": {
@@ -1193,10 +1195,10 @@
       ],
       "last_bias": "SHORT",
       "last_decision": "WAIT",
-      "last_price": 37.59,
+      "last_price": 37.65,
       "last_regime": "TREND_CONTINUATION",
       "last_score": 34.0,
-      "last_seen_at_ms": 1790823963256
+      "last_seen_at_ms": 1790824241722
     },
     "ONEUSDT": {
       "active": false,
