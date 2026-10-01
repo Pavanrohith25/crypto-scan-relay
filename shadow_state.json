@@ -1,7 +1,21 @@
 {
-  "last_processed_at_ms": 1790828134979,
-  "last_processed_generated_at_ms": 1790828132453,
+  "last_processed_at_ms": 1790828466734,
+  "last_processed_generated_at_ms": 1790828464105,
   "pairs": {
+    "1000000BOBUSDT": {
+      "gate_reasons": [
+        "score 53.0 below required 78.0",
+        "candidate has blocker(s)",
+        "missing spot confirmation",
+        "missing spot volume"
+      ],
+      "last_bias": "SHORT",
+      "last_decision": "WAIT",
+      "last_price": 0.01503,
+      "last_regime": "COUNTERTREND",
+      "last_score": 53.0,
+      "last_seen_at_ms": 1790828466734
+    },
     "1000RATSUSDT": {
       "gate_reasons": [
         "score 51.0 below required 78.0",
@@ -141,10 +155,10 @@
       ],
       "last_bias": "LONG",
       "last_decision": "BLOCKED_DEEP_COUNTERTREND",
-      "last_price": 0.2582,
+      "last_price": 0.2549,
       "last_regime": "COUNTERTREND_DEEP",
       "last_score": 54.0,
-      "last_seen_at_ms": 1790828134979
+      "last_seen_at_ms": 1790828466734
     },
     "ARMUSDT": {
       "gate_reasons": [
@@ -320,17 +334,17 @@
     },
     "CATUSDT": {
       "gate_reasons": [
-        "score 39.0 below required 78.0",
+        "score 34.0 below required 78.0",
         "candidate has blocker(s)",
         "missing spot confirmation",
         "missing spot volume"
       ],
       "last_bias": "SHORT",
       "last_decision": "WAIT",
-      "last_price": 818.94,
+      "last_price": 819.3,
       "last_regime": "TREND_CONTINUATION",
-      "last_score": 39.0,
-      "last_seen_at_ms": 1790828134979
+      "last_score": 34.0,
+      "last_seen_at_ms": 1790828466734
     },
     "CELOUSDT": {
       "gate_reasons": [
@@ -766,10 +780,10 @@
       ],
       "last_bias": "LONG",
       "last_decision": "WAIT",
-      "last_price": 192.68,
+      "last_price": 192.62,
       "last_regime": "TREND_CONTINUATION",
       "last_score": 28.0,
-      "last_seen_at_ms": 1790828134979
+      "last_seen_at_ms": 1790828466734
     },
     "HBARUSDT": {
       "gate_reasons": [
@@ -1488,17 +1502,18 @@
     },
     "SNXXUSDT": {
       "gate_reasons": [
-        "score 67.0 below required 78.0",
+        "score 62.0 below required 78.0",
         "candidate has blocker(s)",
         "missing spot confirmation",
+        "15m OI not expanding",
         "missing spot volume"
       ],
       "last_bias": "SHORT",
       "last_decision": "WAIT",
-      "last_price": 17.31,
+      "last_price": 17.25,
       "last_regime": "COUNTERTREND",
-      "last_score": 67.0,
-      "last_seen_at_ms": 1790828134979
+      "last_score": 62.0,
+      "last_seen_at_ms": 1790828466734
     },
     "SOFIUSDT": {
       "gate_reasons": [
