@@ -1,11 +1,11 @@
 {
-  "last_processed_at_ms": 1790875238242,
-  "last_processed_generated_at_ms": 1790875235569,
+  "last_processed_at_ms": 1790875574265,
+  "last_processed_generated_at_ms": 1790875571754,
   "pairs": {
     "1000000BOBUSDT": {
       "gate_reasons": [
         "deep countertrend: 24h structure/OI conflicts with the setup",
-        "score 32.0 below required 78.0",
+        "score 42.0 below required 78.0",
         "candidate has blocker(s)",
         "missing spot confirmation",
         "15m OI not expanding",
@@ -13,10 +13,10 @@
       ],
       "last_bias": "SHORT",
       "last_decision": "BLOCKED_DEEP_COUNTERTREND",
-      "last_price": 0.0135,
+      "last_price": 0.01352,
       "last_regime": "COUNTERTREND_DEEP",
-      "last_score": 32.0,
-      "last_seen_at_ms": 1790875238242
+      "last_score": 42.0,
+      "last_seen_at_ms": 1790875574265
     },
     "1000RATSUSDT": {
       "gate_reasons": [
@@ -55,10 +55,10 @@
       ],
       "last_bias": "LONG",
       "last_decision": "WAIT",
-      "last_price": 215.35,
+      "last_price": 216.0,
       "last_regime": "TREND_CONTINUATION",
       "last_score": 32.0,
-      "last_seen_at_ms": 1790875238242
+      "last_seen_at_ms": 1790875574265
     },
     "ADBEUSDT": {
       "gate_reasons": [
@@ -170,16 +170,18 @@
       "anchor_score": 85.0,
       "armed": true,
       "armed_at_ms": 1790875238242,
-      "evidence_count": 1,
-      "gate_reasons": [],
+      "evidence_count": 2,
+      "gate_reasons": [
+        "price follow-through -0.9852216748768572 below 0.50%"
+      ],
       "high_priority": false,
       "last_bias": "LONG",
-      "last_decision": "ARMED",
-      "last_fingerprint": "0.2436|1.431|50211.0391|283000.1209|3.98|3.55|0.71",
-      "last_price": 0.2436,
+      "last_decision": "ARMED_WAITING_TRIGGER",
+      "last_fingerprint": "0.2412|1.431|50211.0391|283000.1209|6.27|4.77|0.71",
+      "last_price": 0.2412,
       "last_regime": "TREND_CONTINUATION",
       "last_score": 85.0,
-      "last_seen_at_ms": 1790875238242,
+      "last_seen_at_ms": 1790875574265,
       "required_score": 82.0
     },
     "ARMUSDT": {
@@ -335,10 +337,10 @@
       ],
       "last_bias": "LONG",
       "last_decision": "WAIT",
-      "last_price": 797.8,
+      "last_price": 796.3,
       "last_regime": "COUNTERTREND",
       "last_score": 28.0,
-      "last_seen_at_ms": 1790875238242
+      "last_seen_at_ms": 1790875574265
     },
     "BZUSDT": {
       "gate_reasons": [
@@ -1888,10 +1890,10 @@
       ],
       "last_bias": "SHORT",
       "last_decision": "BLOCKED_DEEP_COUNTERTREND",
-      "last_price": 0.035174,
+      "last_price": 0.035427,
       "last_regime": "COUNTERTREND_DEEP",
       "last_score": 53.0,
-      "last_seen_at_ms": 1790875238242
+      "last_seen_at_ms": 1790875574265
     },
     "VTHOUSDT": {
       "gate_reasons": [
@@ -2039,10 +2041,10 @@
       ],
       "last_bias": "SHORT",
       "last_decision": "BLOCKED_DEEP_COUNTERTREND",
-      "last_price": 0.09694,
+      "last_price": 0.09971,
       "last_regime": "COUNTERTREND_DEEP",
       "last_score": 47.0,
-      "last_seen_at_ms": 1790874965136
+      "last_seen_at_ms": 1790875574265
     }
   },
   "version": "3.2-shadow"
