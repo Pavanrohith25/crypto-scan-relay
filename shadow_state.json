@@ -1,21 +1,22 @@
 {
-  "last_processed_at_ms": 1790847037860,
-  "last_processed_generated_at_ms": 1790847035292,
+  "last_processed_at_ms": 1790847347740,
+  "last_processed_generated_at_ms": 1790847345193,
   "pairs": {
     "1000000BOBUSDT": {
       "gate_reasons": [
         "deep countertrend: 24h structure/OI conflicts with the setup",
-        "score 51.0 below required 78.0",
+        "score 46.0 below required 78.0",
         "candidate has blocker(s)",
         "missing spot confirmation",
+        "15m OI not expanding",
         "missing spot volume"
       ],
       "last_bias": "SHORT",
       "last_decision": "BLOCKED_DEEP_COUNTERTREND",
-      "last_price": 0.01469,
+      "last_price": 0.01454,
       "last_regime": "COUNTERTREND_DEEP",
-      "last_score": 51.0,
-      "last_seen_at_ms": 1790847037860
+      "last_score": 46.0,
+      "last_seen_at_ms": 1790847347740
     },
     "1000RATSUSDT": {
       "gate_reasons": [
@@ -151,15 +152,14 @@
     "ARKUSDT": {
       "gate_reasons": [
         "deep countertrend: 24h structure/OI conflicts with the setup",
-        "score 74.0 below required 82.0",
-        "15m OI not expanding"
+        "score 74.0 below required 82.0"
       ],
       "last_bias": "LONG",
       "last_decision": "BLOCKED_DEEP_COUNTERTREND",
-      "last_price": 0.2431,
+      "last_price": 0.2429,
       "last_regime": "COUNTERTREND_DEEP",
       "last_score": 74.0,
-      "last_seen_at_ms": 1790847037860
+      "last_seen_at_ms": 1790847347740
     },
     "ARMUSDT": {
       "gate_reasons": [
@@ -377,7 +377,6 @@
         "score 39.0 below required 82.0",
         "candidate has blocker(s)",
         "missing spot confirmation",
-        "15m OI not expanding",
         "missing spot volume"
       ],
       "last_bias": "SHORT",
@@ -385,7 +384,7 @@
       "last_price": 14.18,
       "last_regime": "COUNTERTREND",
       "last_score": 39.0,
-      "last_seen_at_ms": 1790846724801
+      "last_seen_at_ms": 1790847347740
     },
     "CLUSDT": {
       "gate_reasons": [
@@ -738,10 +737,10 @@
       ],
       "last_bias": "LONG",
       "last_decision": "WAIT",
-      "last_price": 7.733,
+      "last_price": 7.777,
       "last_regime": "COUNTERTREND",
       "last_score": 36.0,
-      "last_seen_at_ms": 1790847037860
+      "last_seen_at_ms": 1790847347740
     },
     "GIGADEVUSDT": {
       "gate_reasons": [
@@ -1995,17 +1994,17 @@
     },
     "\u9f99\u867eUSDT": {
       "gate_reasons": [
-        "score 73.0 below required 78.0",
+        "score 67.0 below required 78.0",
         "candidate has blocker(s)",
         "missing spot confirmation",
         "missing spot volume"
       ],
       "last_bias": "SHORT",
       "last_decision": "WAIT",
-      "last_price": 0.05361,
+      "last_price": 0.05293,
       "last_regime": "TREND_CONTINUATION",
-      "last_score": 73.0,
-      "last_seen_at_ms": 1790847037860
+      "last_score": 67.0,
+      "last_seen_at_ms": 1790847347740
     }
   },
   "version": "3.2-shadow"
