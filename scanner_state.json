@@ -1,6 +1,6 @@
 {
-  "last_processed_at_ms": 1790829645952,
-  "last_processed_generated_at_ms": 1790829643478,
+  "last_processed_at_ms": 1790829952761,
+  "last_processed_generated_at_ms": 1790829950419,
   "minimum_candidate_score": 78.0,
   "pairs": {
     "1000000BOBUSDT": {
@@ -11,9 +11,9 @@
         "15m OI is not expanding"
       ],
       "last_bias": "SHORT",
-      "last_price": 0.01452,
+      "last_price": 0.01462,
       "last_score": 32.0,
-      "last_seen_at_ms": 1790829645952,
+      "last_seen_at_ms": 1790829952761,
       "qualifying_streak": 0,
       "required_score": 78.0
     },
@@ -189,12 +189,14 @@
     },
     "ARKUSDT": {
       "gate_reasons": [
-        "score 59.0 below required 82.0"
+        "score 52.0 below required 82.0",
+        "long spot confirmation weak (B/S 0.991, flow -2,128)",
+        "15m OI is not expanding"
       ],
       "last_bias": "LONG",
-      "last_price": 0.253,
-      "last_score": 59.0,
-      "last_seen_at_ms": 1790829645952,
+      "last_price": 0.2529,
+      "last_score": 52.0,
+      "last_seen_at_ms": 1790829952761,
       "qualifying_streak": 0,
       "required_score": 82.0
     },
@@ -370,7 +372,7 @@
       "last_bias": "SHORT",
       "last_price": 818.76,
       "last_score": 34.0,
-      "last_seen_at_ms": 1790829645952,
+      "last_seen_at_ms": 1790829952761,
       "qualifying_streak": 0,
       "required_score": 78.0
     },
@@ -914,9 +916,9 @@
         "15m OI is not expanding"
       ],
       "last_bias": "LONG",
-      "last_price": 191.82,
+      "last_price": 191.11,
       "last_score": 23.0,
-      "last_seen_at_ms": 1790829021987,
+      "last_seen_at_ms": 1790829952761,
       "qualifying_streak": 0,
       "required_score": 78.0
     },
@@ -1830,12 +1832,13 @@
       "gate_reasons": [
         "score 56.0 below required 78.0",
         "candidate has blocker(s)",
-        "missing Binance spot confirmation"
+        "missing Binance spot confirmation",
+        "15m OI is not expanding"
       ],
       "last_bias": "SHORT",
-      "last_price": 17.24,
+      "last_price": 17.22,
       "last_score": 56.0,
-      "last_seen_at_ms": 1790829645952,
+      "last_seen_at_ms": 1790829952761,
       "qualifying_streak": 0,
       "required_score": 78.0
     },
