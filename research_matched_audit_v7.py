@@ -81,8 +81,9 @@ def main():
     btc=data['BTCUSDT'];bt=btc['close_time_ms'];candidates={'v34_candle_proxy':[],'r6_4h_breakout':[]}
     for symbol,a in data.items():
         h4=four_hour(a);times=h4['close_time_ms'];prev=None
-        one=[{k:float(r[k]) for k in ('close','high','low','quote_volume')} for r in a]
-        four=[{'close':float(r['close'])} for r in h4]
+        one=[{**{k:float(r[k]) for k in ('close','high','low','quote_volume')},
+              'close_time_ms':int(r['close_time_ms'])} for r in a]
+        four=[{'close':float(r['close']),'close_time_ms':int(r['close_time_ms'])} for r in h4]
         for i in range(240,len(a)):
             ts=int(a[i]['open_time_ms']);h=int(np.searchsorted(times,ts));hist=a[i-30:i]
             if h<55 or ts-int(hist[-1]['close_time_ms'])!=1 or ts-int(times[h-1])>4*HOUR:
