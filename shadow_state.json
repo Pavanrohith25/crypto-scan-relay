@@ -1,6 +1,6 @@
 {
-  "last_processed_at_ms": 1790943925817,
-  "last_processed_generated_at_ms": 1790943923200,
+  "last_processed_at_ms": 1790944225950,
+  "last_processed_generated_at_ms": 1790944223500,
   "pairs": {
     "1000000BOBUSDT": {
       "gate_reasons": [
@@ -335,17 +335,18 @@
     },
     "BWETUSDT": {
       "gate_reasons": [
-        "score 41.0 below required 78.0",
+        "score 36.0 below required 78.0",
         "candidate has blocker(s)",
         "missing spot confirmation",
+        "15m OI not expanding",
         "missing spot volume"
       ],
       "last_bias": "LONG",
       "last_decision": "WAIT",
-      "last_price": 818.34,
+      "last_price": 816.96,
       "last_regime": "COUNTERTREND",
-      "last_score": 41.0,
-      "last_seen_at_ms": 1790943925817
+      "last_score": 36.0,
+      "last_seen_at_ms": 1790944225950
     },
     "BZUSDT": {
       "gate_reasons": [
@@ -840,10 +841,10 @@
       ],
       "last_bias": "LONG",
       "last_decision": "WAIT",
-      "last_price": 0.11987,
+      "last_price": 0.12024,
       "last_regime": "COUNTERTREND",
       "last_score": 30.0,
-      "last_seen_at_ms": 1790943925817
+      "last_seen_at_ms": 1790944225950
     },
     "GUSDT": {
       "gate_reasons": [
@@ -1152,14 +1153,15 @@
     },
     "MANAUSDT": {
       "gate_reasons": [
+        "score 72.0 below required 78.0",
         "long spot weak (B/S 0.969, flow -32,839)"
       ],
       "last_bias": "LONG",
       "last_decision": "WAIT",
-      "last_price": 0.10536,
+      "last_price": 0.10411,
       "last_regime": "TREND_CONTINUATION",
-      "last_score": 78.0,
-      "last_seen_at_ms": 1790943925817
+      "last_score": 72.0,
+      "last_seen_at_ms": 1790944225950
     },
     "MDBUSDT": {
       "gate_reasons": [
@@ -1632,10 +1634,10 @@
       ],
       "last_bias": "LONG",
       "last_decision": "WAIT",
-      "last_price": 0.06912,
+      "last_price": 0.06893,
       "last_regime": "TREND_CONTINUATION",
       "last_score": 38.0,
-      "last_seen_at_ms": 1790943925817
+      "last_seen_at_ms": 1790944225950
     },
     "SCRUSDT": {
       "gate_reasons": [
@@ -1868,18 +1870,17 @@
     },
     "STXXUSDT": {
       "gate_reasons": [
-        "score 40.0 below required 82.0",
+        "score 54.0 below required 82.0",
         "candidate has blocker(s)",
         "missing spot confirmation",
-        "15m OI not expanding",
         "missing spot volume"
       ],
       "last_bias": "SHORT",
       "last_decision": "WAIT",
-      "last_price": 848.8,
+      "last_price": 843.11,
       "last_regime": "TREND_CONTINUATION",
-      "last_score": 40.0,
-      "last_seen_at_ms": 1790943048863
+      "last_score": 54.0,
+      "last_seen_at_ms": 1790944225950
     },
     "TAKEUSDT": {
       "gate_reasons": [
