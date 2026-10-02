@@ -1,6 +1,6 @@
 {
-  "last_processed_at_ms": 1790942164515,
-  "last_processed_generated_at_ms": 1790942161995,
+  "last_processed_at_ms": 1790942439837,
+  "last_processed_generated_at_ms": 1790942437350,
   "pairs": {
     "1000000BOBUSDT": {
       "gate_reasons": [
@@ -840,10 +840,10 @@
       ],
       "last_bias": "LONG",
       "last_decision": "WAIT",
-      "last_price": 0.12435,
+      "last_price": 0.1242,
       "last_regime": "COUNTERTREND",
       "last_score": 30.0,
-      "last_seen_at_ms": 1790942164515
+      "last_seen_at_ms": 1790942439837
     },
     "GUSDT": {
       "gate_reasons": [
@@ -1152,15 +1152,15 @@
     },
     "MANAUSDT": {
       "gate_reasons": [
-        "score 73.0 below required 82.0",
+        "score 75.0 below required 78.0",
         "long spot weak (B/S 1.014, flow 6,962)"
       ],
       "last_bias": "LONG",
       "last_decision": "WAIT",
-      "last_price": 0.10655,
+      "last_price": 0.10801,
       "last_regime": "TREND_CONTINUATION",
-      "last_score": 73.0,
-      "last_seen_at_ms": 1790942164515
+      "last_score": 75.0,
+      "last_seen_at_ms": 1790942439837
     },
     "MDBUSDT": {
       "gate_reasons": [
@@ -1635,10 +1635,10 @@
       ],
       "last_bias": "LONG",
       "last_decision": "WAIT",
-      "last_price": 0.06958,
+      "last_price": 0.07083,
       "last_regime": "TREND_CONTINUATION",
       "last_score": 33.0,
-      "last_seen_at_ms": 1790942164515
+      "last_seen_at_ms": 1790942439837
     },
     "SCRUSDT": {
       "gate_reasons": [
@@ -1648,10 +1648,10 @@
       ],
       "last_bias": "LONG",
       "last_decision": "WAIT",
-      "last_price": 0.02872,
+      "last_price": 0.02816,
       "last_regime": "COUNTERTREND",
       "last_score": 30.0,
-      "last_seen_at_ms": 1790942164515
+      "last_seen_at_ms": 1790942439837
     },
     "SHAZUSDT": {
       "gate_reasons": [
@@ -1868,6 +1868,20 @@
       "last_regime": "TREND_CONTINUATION",
       "last_score": 43.0,
       "last_seen_at_ms": 1790726447940
+    },
+    "STXXUSDT": {
+      "gate_reasons": [
+        "score 51.0 below required 82.0",
+        "candidate has blocker(s)",
+        "missing spot confirmation",
+        "missing spot volume"
+      ],
+      "last_bias": "SHORT",
+      "last_decision": "WAIT",
+      "last_price": 844.69,
+      "last_regime": "TREND_CONTINUATION",
+      "last_score": 51.0,
+      "last_seen_at_ms": 1790942439837
     },
     "TAKEUSDT": {
       "gate_reasons": [
