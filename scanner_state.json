@@ -1,6 +1,6 @@
 {
-  "last_processed_at_ms": 1790949025932,
-  "last_processed_generated_at_ms": 1790949023334,
+  "last_processed_at_ms": 1790949361682,
+  "last_processed_generated_at_ms": 1790949359178,
   "minimum_candidate_score": 78.0,
   "pairs": {
     "1000000BOBUSDT": {
@@ -247,14 +247,14 @@
         ]
       },
       "gate_reasons": [
-        "score 49.0 below required 82.0",
-        "long spot confirmation weak (B/S 0.834, flow -11,685)"
+        "score 50.0 below required 82.0",
+        "long spot confirmation weak (B/S 0.769, flow -21,975)"
       ],
       "last_bias": "LONG",
-      "last_price": 0.2161,
+      "last_price": 0.218,
       "last_return_pct": -1.396396,
-      "last_score": 49.0,
-      "last_seen_at_ms": 1790942164471,
+      "last_score": 50.0,
+      "last_seen_at_ms": 1790949361682,
       "mae_pct": -1.396396,
       "mfe_pct": 0.0,
       "previous_score": 64.0,
@@ -1016,9 +1016,9 @@
         "long spot confirmation weak (B/S 0.938, flow -9,713)"
       ],
       "last_bias": "LONG",
-      "last_price": 0.12427,
+      "last_price": 0.12451,
       "last_score": 73.0,
-      "last_seen_at_ms": 1790949025932,
+      "last_seen_at_ms": 1790949361682,
       "qualifying_streak": 0,
       "required_score": 82.0
     },
@@ -1383,12 +1383,14 @@
         "strength": "VERY_STRONG",
         "warnings": []
       },
-      "gate_reasons": [],
+      "gate_reasons": [
+        "pair cooldown active after deterioration"
+      ],
       "last_bias": "LONG",
       "last_price": 0.10314,
       "last_return_pct": 1.068104,
       "last_score": 69.0,
-      "last_seen_at_ms": 1790949025932,
+      "last_seen_at_ms": 1790949361682,
       "mae_pct": 0.0,
       "mfe_pct": 1.793239,
       "previous_score": 69.0,
@@ -2038,13 +2040,12 @@
     },
     "SANDUSDT": {
       "gate_reasons": [
-        "score 41.0 below required 78.0",
-        "15m OI is not expanding"
+        "score 62.0 below required 78.0"
       ],
       "last_bias": "LONG",
-      "last_price": 0.06812,
-      "last_score": 41.0,
-      "last_seen_at_ms": 1790949025932,
+      "last_price": 0.06885,
+      "last_score": 62.0,
+      "last_seen_at_ms": 1790949361682,
       "qualifying_streak": 0,
       "required_score": 78.0
     },
@@ -2314,14 +2315,15 @@
     },
     "STXXUSDT": {
       "gate_reasons": [
-        "score 60.0 below required 82.0",
+        "score 45.0 below required 82.0",
         "candidate has blocker(s)",
-        "missing Binance spot confirmation"
+        "missing Binance spot confirmation",
+        "15m OI is not expanding"
       ],
       "last_bias": "SHORT",
-      "last_price": 836.09,
-      "last_score": 60.0,
-      "last_seen_at_ms": 1790949025932,
+      "last_price": 829.29,
+      "last_score": 45.0,
+      "last_seen_at_ms": 1790949361682,
       "qualifying_streak": 0,
       "required_score": 82.0
     },
