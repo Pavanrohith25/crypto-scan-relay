@@ -1,6 +1,6 @@
 {
-  "last_processed_at_ms": 1790911870594,
-  "last_processed_generated_at_ms": 1790911867952,
+  "last_processed_at_ms": 1790912125851,
+  "last_processed_generated_at_ms": 1790912123224,
   "pairs": {
     "1000000BOBUSDT": {
       "gate_reasons": [
@@ -79,15 +79,14 @@
         "score 38.0 below required 78.0",
         "candidate has blocker(s)",
         "missing spot confirmation",
-        "15m OI not expanding",
         "missing spot volume"
       ],
       "last_bias": "SHORT",
       "last_decision": "WAIT",
-      "last_price": 11.69,
+      "last_price": 11.7,
       "last_regime": "COUNTERTREND",
       "last_score": 38.0,
-      "last_seen_at_ms": 1790911870594
+      "last_seen_at_ms": 1790912125851
     },
     "AGTUSDT": {
       "gate_reasons": [
@@ -165,15 +164,16 @@
     },
     "ARKUSDT": {
       "gate_reasons": [
+        "deep countertrend: 24h structure/OI conflicts with the setup",
         "score 60.0 below required 82.0",
         "long spot weak (B/S 0.873, flow -8,156)"
       ],
       "last_bias": "LONG",
-      "last_decision": "WAIT",
-      "last_price": 0.2262,
-      "last_regime": "COUNTERTREND",
+      "last_decision": "BLOCKED_DEEP_COUNTERTREND",
+      "last_price": 0.2268,
+      "last_regime": "COUNTERTREND_DEEP",
       "last_score": 60.0,
-      "last_seen_at_ms": 1790911870594
+      "last_seen_at_ms": 1790912125851
     },
     "ARMUSDT": {
       "gate_reasons": [
@@ -327,10 +327,10 @@
       ],
       "last_bias": "LONG",
       "last_decision": "WAIT",
-      "last_price": 824.75,
+      "last_price": 824.84,
       "last_regime": "COUNTERTREND",
       "last_score": 38.0,
-      "last_seen_at_ms": 1790911870594
+      "last_seen_at_ms": 1790912125851
     },
     "BZUSDT": {
       "gate_reasons": [
@@ -838,10 +838,10 @@
       ],
       "last_bias": "LONG",
       "last_decision": "WAIT",
-      "last_price": 199.95,
+      "last_price": 199.93,
       "last_regime": "TREND_CONTINUATION",
       "last_score": 38.0,
-      "last_seen_at_ms": 1790911870594
+      "last_seen_at_ms": 1790912125851
     },
     "HBARUSDT": {
       "gate_reasons": [
@@ -1256,7 +1256,7 @@
       "last_price": 32.29,
       "last_regime": "TREND_CONTINUATION",
       "last_score": 54.0,
-      "last_seen_at_ms": 1790911870594
+      "last_seen_at_ms": 1790912125851
     },
     "NMRUSDT": {
       "active": false,
