@@ -1,6 +1,6 @@
 {
-  "last_processed_at_ms": 1790958371720,
-  "last_processed_generated_at_ms": 1790958369170,
+  "last_processed_at_ms": 1790958624507,
+  "last_processed_generated_at_ms": 1790958621979,
   "pairs": {
     "1000000BOBUSDT": {
       "gate_reasons": [
@@ -341,10 +341,10 @@
       ],
       "last_bias": "LONG",
       "last_decision": "WAIT",
-      "last_price": 847.17,
+      "last_price": 851.17,
       "last_regime": "TREND_CONTINUATION",
       "last_score": 49.0,
-      "last_seen_at_ms": 1790958371720
+      "last_seen_at_ms": 1790958624507
     },
     "BZUSDT": {
       "gate_reasons": [
@@ -840,11 +840,11 @@
       "gate_reasons": [],
       "last_bias": "LONG",
       "last_decision": "SHADOW_CONFIRMED",
-      "last_position_check_ms": 1790958036058,
-      "last_price": 0.13077,
+      "last_position_check_ms": 1790958624507,
+      "last_price": 0.13164,
       "last_regime": "TREND_CONTINUATION",
-      "last_score": 72.0,
-      "last_seen_at_ms": 1790958036058,
+      "last_score": 40.0,
+      "last_seen_at_ms": 1790958624507,
       "position_state": "HOLD_STRONG"
     },
     "GUSDT": {
@@ -1164,11 +1164,11 @@
       ],
       "last_bias": "LONG",
       "last_decision": "SHADOW_CONFIRMED",
-      "last_position_check_ms": 1790958371720,
+      "last_position_check_ms": 1790958624507,
       "last_price": 0.10132,
       "last_regime": "COUNTERTREND",
       "last_score": 60.0,
-      "last_seen_at_ms": 1790958371720,
+      "last_seen_at_ms": 1790958624507,
       "position_state": "REDUCE"
     },
     "MDBUSDT": {
@@ -1453,17 +1453,18 @@
     },
     "PUMPBTCUSDT": {
       "gate_reasons": [
-        "score 49.0 below required 78.0",
+        "score 44.0 below required 78.0",
         "candidate has blocker(s)",
         "missing spot confirmation",
+        "15m OI not expanding",
         "missing spot volume"
       ],
       "last_bias": "SHORT",
       "last_decision": "WAIT",
-      "last_price": 0.0083,
+      "last_price": 0.00827,
       "last_regime": "COUNTERTREND",
-      "last_score": 49.0,
-      "last_seen_at_ms": 1790958371720
+      "last_score": 44.0,
+      "last_seen_at_ms": 1790958624507
     },
     "PUMPUSDT": {
       "gate_reasons": [
@@ -1639,15 +1640,15 @@
     },
     "SANDUSDT": {
       "gate_reasons": [
-        "score 52.0 below required 78.0",
-        "long spot weak (B/S 0.973, flow -54,169)"
+        "score 62.0 below required 78.0",
+        "long spot weak (B/S 0.924, flow -137,799)"
       ],
       "last_bias": "LONG",
       "last_decision": "WAIT",
-      "last_price": 0.06312,
+      "last_price": 0.06305,
       "last_regime": "COUNTERTREND",
-      "last_score": 52.0,
-      "last_seen_at_ms": 1790958371720
+      "last_score": 62.0,
+      "last_seen_at_ms": 1790958624507
     },
     "SCRUSDT": {
       "gate_reasons": [
