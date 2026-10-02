@@ -22,35 +22,8 @@
   },
   "historical_gate_enabled": false,
   "historical_gate_fail_closed": true,
-  "last_blocked": [
-    {
-      "bias": "LONG",
-      "decision": "BLOCKED",
-      "reason": "historical gate disabled: no historically approved edge",
-      "stage": "historical_gate",
-      "symbol": "ETHUSDT",
-      "timestamp_ms": 1790942440467,
-      "trigger_id": "ETHUSDT-1790942439875"
-    }
-  ],
-  "last_entry_drift_checks": [
-    {
-      "alert_check_age_seconds": 0.06,
-      "bias": "LONG",
-      "blocked": false,
-      "directional_drift_pct": -0.0382,
-      "drift_bucket": "against_trigger",
-      "live_price": 2745.58,
-      "reason": "entry drift recorded for research; no empirical late-entry cutoff promoted yet",
-      "stop_pct": 6.0,
-      "symbol": "ETHUSDT",
-      "target_pct": 5.0,
-      "timestamp_ms": 1790942439934,
-      "trigger_at_ms": 1790942439875,
-      "trigger_id": "ETHUSDT-1790942439875",
-      "trigger_price": 2746.63
-    }
-  ],
+  "last_blocked": [],
+  "last_entry_drift_checks": [],
   "processed_trigger_ids": [
     "AAVEUSDT-1790420485978",
     "AAVEUSDT-1790845239741",
