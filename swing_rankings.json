@@ -1,18 +1,18 @@
 {
   "analysis_pool_count": 20,
-  "directional_ranked_count": 2,
-  "generated_at_ms": 1790994062920,
+  "directional_ranked_count": 3,
+  "generated_at_ms": 1790994327264,
   "market_context": {
-    "advancers_24h": 23,
-    "breadth_positive_pct": 33.82,
-    "btc_24h_change_pct": -0.309,
-    "decliners_24h": 44,
-    "eth_24h_change_pct": -1.264,
+    "advancers_24h": 26,
+    "breadth_positive_pct": 38.24,
+    "btc_24h_change_pct": -0.288,
+    "decliners_24h": 42,
+    "eth_24h_change_pct": -1.16,
     "liquid_universe_count": 68,
-    "median_24h_change_pct": -0.509,
-    "unchanged_24h": 1
+    "median_24h_change_pct": -0.341,
+    "unchanged_24h": 0
   },
-  "market_regime_score_v1": -4,
+  "market_regime_score_v1": -3,
   "market_regime_v1": "RISK_OFF",
   "rankings": [
     {
@@ -22,7 +22,7 @@
       "momentum_24h_pct": -5.554,
       "momentum_3h_pct": 1.354,
       "price": 0.00898,
-      "price_change_24h_pct": -5.379,
+      "price_change_24h_pct": -4.998,
       "quality_components": {
         "anti_chase": -12.0,
         "directional_structure": 18.0,
@@ -35,9 +35,9 @@
         "volume_expansion": -2,
         "warnings": -10.0
       },
-      "quote_volume_24h": 28553270.68,
-      "relative_strength_vs_btc_pct": 5.07,
-      "relative_strength_vs_market_pct": 4.87,
+      "quote_volume_24h": 28514507.42,
+      "relative_strength_vs_btc_pct": 4.71,
+      "relative_strength_vs_market_pct": 4.657,
       "setup_state": "RETEST_READY",
       "swing_quality_rank_v1": 1,
       "swing_quality_score_v1": 55.0,
@@ -46,13 +46,13 @@
       "volume_expansion_1h": 0.62
     },
     {
-      "activity_rank": 7,
+      "activity_rank": 5,
       "bias": "LONG",
       "momentum_12h_pct": 1.781,
       "momentum_24h_pct": 6.808,
       "momentum_3h_pct": -0.063,
       "price": 158.84,
-      "price_change_24h_pct": 6.638,
+      "price_change_24h_pct": 6.707,
       "quality_components": {
         "anti_chase": 0.0,
         "directional_structure": 18.0,
@@ -65,15 +65,45 @@
         "volume_expansion": -6,
         "warnings": -5.0
       },
-      "quote_volume_24h": 25530069.68,
-      "relative_strength_vs_btc_pct": 6.947,
-      "relative_strength_vs_market_pct": 7.147,
+      "quote_volume_24h": 25534151.64,
+      "relative_strength_vs_btc_pct": 6.995,
+      "relative_strength_vs_market_pct": 7.048,
       "setup_state": "TREND_ONLY",
       "swing_quality_rank_v1": 2,
       "swing_quality_score_v1": 42.0,
       "swing_score": 43.0,
       "symbol": "SPCXBUSDT",
       "volume_expansion_1h": 0.1
+    },
+    {
+      "activity_rank": 8,
+      "bias": "SHORT",
+      "momentum_12h_pct": -13.046,
+      "momentum_24h_pct": -11.689,
+      "momentum_3h_pct": 2.028,
+      "price": 0.08705,
+      "price_change_24h_pct": -11.911,
+      "quality_components": {
+        "anti_chase": -12.0,
+        "directional_structure": 18.0,
+        "distance_from_1h_trend": 3,
+        "liquidity": 0,
+        "market_regime": 7,
+        "relative_strength": 12.0,
+        "setup_state": 4,
+        "trend_momentum": 20.0,
+        "volume_expansion": -2,
+        "warnings": -10.0
+      },
+      "quote_volume_24h": 14010347.4,
+      "relative_strength_vs_btc_pct": 11.623,
+      "relative_strength_vs_market_pct": 11.57,
+      "setup_state": "TREND_ONLY",
+      "swing_quality_rank_v1": 3,
+      "swing_quality_score_v1": 40.0,
+      "swing_score": 23.0,
+      "symbol": "\u725b\u6765USDT",
+      "volume_expansion_1h": 0.66
     }
   ],
   "scanner_version": "3.4-shadow",
