@@ -2,6 +2,9 @@ name: Publish latest scan
 
 on:
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths: [experimental_telegram.py, experimental_telegram_config.json]
   
 permissions:
   contents: write
@@ -64,11 +67,14 @@ jobs:
       - name: Measure V3.4 entry drift before Telegram
         run: python swing_entry_drift.py
 
-      - name: Send eligible V3.4 swing setups to Telegram
+      - name: Verify scanner and notification guards
+        run: python -m unittest discover -s tests -p "test_*.py"
+
+      - name: Send user-authorized experimental shorts to Telegram
         env:
           TELEGRAM_BOT_TOKEN: ${{ github.ref == 'refs/heads/main' && secrets.TELEGRAM_BOT_TOKEN || '' }}
           TELEGRAM_CHAT_ID: ${{ github.ref == 'refs/heads/main' && secrets.TELEGRAM_CHAT_ID || '' }}
-        run: python swing_telegram.py
+        run: python experimental_telegram.py
 
       - name: Log Dataset snapshot
         run: python dataset_logger.py
@@ -94,6 +100,7 @@ jobs:
           git config user.name "scan-bot"
           git config user.email "scan-bot@users.noreply.github.com"
 
+          [ -f experimental_telegram_state.json ] && git add experimental_telegram_state.json
           git add latest_scan.json
           [ -f scanner_state.json ] && git add scanner_state.json
           [ -f signal_events.jsonl ] && git add signal_events.jsonl
