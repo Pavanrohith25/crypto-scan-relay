@@ -22,14 +22,42 @@
   },
   "historical_gate_enabled": false,
   "historical_gate_fail_closed": true,
-  "last_blocked": [],
-  "last_entry_drift_checks": [],
+  "last_blocked": [
+    {
+      "bias": "SHORT",
+      "decision": "BLOCKED",
+      "reason": "historical gate disabled: no historically approved edge",
+      "stage": "historical_gate",
+      "symbol": "ASTERUSDT",
+      "timestamp_ms": 1791006618787,
+      "trigger_id": "ASTERUSDT-1791006617731"
+    }
+  ],
+  "last_entry_drift_checks": [
+    {
+      "alert_check_age_seconds": 0.07,
+      "bias": "SHORT",
+      "blocked": false,
+      "directional_drift_pct": 0.0986,
+      "drift_bucket": "0_to_0.5",
+      "live_price": 0.71,
+      "reason": "entry drift recorded for research; no empirical late-entry cutoff promoted yet",
+      "stop_pct": 6.0,
+      "symbol": "ASTERUSDT",
+      "target_pct": 5.0,
+      "timestamp_ms": 1791006617811,
+      "trigger_at_ms": 1791006617731,
+      "trigger_id": "ASTERUSDT-1791006617731",
+      "trigger_price": 0.7107
+    }
+  ],
   "processed_trigger_ids": [
     "AAVEUSDT-1790420485978",
     "AAVEUSDT-1790845239741",
     "ADAUSDT-1790946318834",
     "APTUSDT-1790361323278",
     "ASTERUSDT-1790769646664",
+    "ASTERUSDT-1791006617731",
     "BCHUSDT-1790607632774",
     "BTCUSDT-1790928067342",
     "DASHUSDT-1790337650265",
