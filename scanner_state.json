@@ -1,6 +1,6 @@
 {
-  "last_processed_at_ms": 1790992536958,
-  "last_processed_generated_at_ms": 1790992534381,
+  "last_processed_at_ms": 1790992838143,
+  "last_processed_generated_at_ms": 1790992835526,
   "minimum_candidate_score": 78.0,
   "pairs": {
     "1000000BOBUSDT": {
@@ -11,9 +11,9 @@
         "15m OI is not expanding"
       ],
       "last_bias": "SHORT",
-      "last_price": 0.01226,
+      "last_price": 0.0123,
       "last_score": 36.0,
-      "last_seen_at_ms": 1790992536958,
+      "last_seen_at_ms": 1790992838143,
       "qualifying_streak": 0,
       "required_score": 78.0
     },
@@ -76,12 +76,14 @@
           "low open interest"
         ]
       },
-      "gate_reasons": [],
+      "gate_reasons": [
+        "pair cooldown active after deterioration"
+      ],
       "last_bias": "LONG",
-      "last_price": 0.04503,
+      "last_price": 0.04504,
       "last_return_pct": -0.464191,
       "last_score": 49.0,
-      "last_seen_at_ms": 1790992536958,
+      "last_seen_at_ms": 1790992838143,
       "mae_pct": -1.127321,
       "mfe_pct": 0.265252,
       "previous_score": 49.0,
@@ -853,13 +855,13 @@
     },
     "ENJUSDT": {
       "gate_reasons": [
-        "score 46.0 below required 82.0",
+        "score 64.0 below required 82.0",
         "15m OI is not expanding"
       ],
       "last_bias": "LONG",
-      "last_price": 0.03418,
-      "last_score": 46.0,
-      "last_seen_at_ms": 1790992536958,
+      "last_price": 0.0343,
+      "last_score": 64.0,
+      "last_seen_at_ms": 1790992838143,
       "qualifying_streak": 0,
       "required_score": 82.0
     },
@@ -1067,14 +1069,14 @@
         ]
       },
       "gate_reasons": [
-        "score 67.0 below required 82.0",
+        "score 57.0 below required 82.0",
         "long spot confirmation weak (B/S 0.982, flow -1,769)"
       ],
       "last_bias": "LONG",
-      "last_price": 0.12927,
+      "last_price": 0.12859,
       "last_return_pct": 0.206897,
-      "last_score": 67.0,
-      "last_seen_at_ms": 1790992536958,
+      "last_score": 57.0,
+      "last_seen_at_ms": 1790992838143,
       "mae_pct": -0.045977,
       "mfe_pct": 0.206897,
       "previous_score": 72.0,
@@ -2116,13 +2118,13 @@
     },
     "SANDUSDT": {
       "gate_reasons": [
-        "score 47.0 below required 78.0",
+        "score 41.0 below required 78.0",
         "15m OI is not expanding"
       ],
       "last_bias": "LONG",
-      "last_price": 0.06504,
-      "last_score": 47.0,
-      "last_seen_at_ms": 1790992536958,
+      "last_price": 0.06506,
+      "last_score": 41.0,
+      "last_seen_at_ms": 1790992838143,
       "qualifying_streak": 0,
       "required_score": 78.0
     },
