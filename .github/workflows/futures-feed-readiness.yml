@@ -1,0 +1,41 @@
+name: Verify live futures feed for matched strategy
+on:
+  push:
+    branches: [main]
+    paths: [.github/workflows/futures-feed-readiness.yml]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify public futures candles without fallback
+        run: |
+          python - <<'PY'
+          import json,urllib.request,urllib.error,time
+          from pathlib import Path
+          report={'checked_at_ms':int(time.time()*1000),'endpoint':'https://fapi.binance.com/fapi/v1/klines','trading_enabled':False}
+          try:
+              request=urllib.request.Request(report['endpoint']+'?symbol=BTCUSDT&interval=1h&limit=3',headers={'User-Agent':'matched-scanner-readiness/1.0'})
+              with urllib.request.urlopen(request,timeout=20) as response:
+                  rows=json.load(response)
+              assert isinstance(rows,list) and len(rows)>=2
+              assert all(isinstance(r,list) and len(r)>=8 for r in rows)
+              report.update(status='PASS',candles=len(rows),latest_open_ms=rows[-1][0])
+          except urllib.error.HTTPError as e:
+              report.update(status='BLOCKED',http_status=e.code,reason=e.read(3000).decode('utf8',errors='replace'))
+          except Exception as e:
+              report.update(status='ERROR',reason=str(e))
+          Path('futures_feed_readiness.json').write_text(json.dumps(report,indent=2))
+          print('READINESS',json.dumps(report))
+          if report['status']!='PASS':raise SystemExit(1)
+          PY
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: futures-feed-readiness
+          path: futures_feed_readiness.json
+          retention-days: 30
