@@ -1,10 +1,10 @@
 {
-  "last_processed_at_ms": 1791009371647,
-  "last_processed_generated_at_ms": 1791009369098,
+  "last_processed_at_ms": 1791009620835,
+  "last_processed_generated_at_ms": 1791009618205,
   "pairs": {
     "1000000BOBUSDT": {
       "gate_reasons": [
-        "score 46.0 below required 78.0",
+        "score 51.0 below required 78.0",
         "candidate has blocker(s)",
         "missing spot confirmation",
         "missing spot volume"
@@ -13,8 +13,8 @@
       "last_decision": "WAIT",
       "last_price": 0.01217,
       "last_regime": "COUNTERTREND",
-      "last_score": 46.0,
-      "last_seen_at_ms": 1791009371647
+      "last_score": 51.0,
+      "last_seen_at_ms": 1791009620835
     },
     "1000RATSUSDT": {
       "gate_reasons": [
@@ -32,14 +32,15 @@
     },
     "2ZUSDT": {
       "gate_reasons": [
-        "deep countertrend: 24h structure/OI conflicts with the setup"
+        "deep countertrend: 24h structure/OI conflicts with the setup",
+        "score 79.0 below required 82.0"
       ],
       "last_bias": "LONG",
       "last_decision": "BLOCKED_DEEP_COUNTERTREND",
-      "last_price": 0.04493,
+      "last_price": 0.04495,
       "last_regime": "COUNTERTREND_DEEP",
-      "last_score": 85.0,
-      "last_seen_at_ms": 1791009371647
+      "last_score": 79.0,
+      "last_seen_at_ms": 1791009620835
     },
     "ACNUSDT": {
       "gate_reasons": [
@@ -672,17 +673,22 @@
       "last_seen_at_ms": 1790704912223
     },
     "ENJUSDT": {
-      "gate_reasons": [
-        "score 52.0 below required 82.0",
-        "long spot weak (B/S 0.953, flow -9,419)",
-        "15m OI not expanding"
-      ],
+      "anchor_price": 0.03497,
+      "anchor_regime": "COUNTERTREND",
+      "anchor_score": 85.0,
+      "armed": true,
+      "armed_at_ms": 1791009620835,
+      "evidence_count": 1,
+      "gate_reasons": [],
+      "high_priority": false,
       "last_bias": "LONG",
-      "last_decision": "WAIT",
-      "last_price": 0.03475,
-      "last_regime": "TREND_CONTINUATION",
-      "last_score": 52.0,
-      "last_seen_at_ms": 1791009371647
+      "last_decision": "ARMED",
+      "last_fingerprint": "0.03497|1.1|15710.9638|329067.4272|0.66|1.33|-0.23",
+      "last_price": 0.03497,
+      "last_regime": "COUNTERTREND",
+      "last_score": 85.0,
+      "last_seen_at_ms": 1791009620835,
+      "required_score": 82.0
     },
     "ESPORTSUSDT": {
       "gate_reasons": [
@@ -864,16 +870,15 @@
       "gate_reasons": [
         "deep countertrend: 24h structure/OI conflicts with the setup",
         "score 58.0 below required 82.0",
-        "long spot weak (B/S 0.979, flow -1,875)",
-        "15m OI not expanding"
+        "long spot weak (B/S 0.979, flow -1,875)"
       ],
       "last_bias": "LONG",
       "last_decision": "BLOCKED_DEEP_COUNTERTREND",
       "last_position_check_ms": 1790985921447,
-      "last_price": 0.12615,
+      "last_price": 0.12663,
       "last_regime": "COUNTERTREND_DEEP",
       "last_score": 58.0,
-      "last_seen_at_ms": 1791009371647,
+      "last_seen_at_ms": 1791009620835,
       "position_state": "EXIT_THESIS_BROKEN"
     },
     "GUSDT": {
@@ -1207,11 +1212,11 @@
       ],
       "last_bias": "LONG",
       "last_decision": "SHADOW_CONFIRMED",
-      "last_position_check_ms": 1791009371647,
-      "last_price": 0.10671,
+      "last_position_check_ms": 1791009620835,
+      "last_price": 0.10713,
       "last_regime": "TREND_CONTINUATION",
       "last_score": 68.0,
-      "last_seen_at_ms": 1791009371647,
+      "last_seen_at_ms": 1791009620835,
       "position_state": "HOLD_PROTECT"
     },
     "MDBUSDT": {
@@ -1694,11 +1699,11 @@
       ],
       "last_bias": "LONG",
       "last_decision": "SHADOW_CONFIRMED",
-      "last_position_check_ms": 1791009371647,
-      "last_price": 0.07755,
+      "last_position_check_ms": 1791009620835,
+      "last_price": 0.07849,
       "last_regime": "TREND_CONTINUATION",
-      "last_score": 31.0,
-      "last_seen_at_ms": 1791009371647,
+      "last_score": 52.0,
+      "last_seen_at_ms": 1791009620835,
       "position_state": "HOLD_PROTECT"
     },
     "SCRUSDT": {
