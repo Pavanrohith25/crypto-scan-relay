@@ -1,6 +1,6 @@
 {
-  "last_processed_at_ms": 1791060657435,
-  "last_processed_generated_at_ms": 1791060654803,
+  "last_processed_at_ms": 1791060960267,
+  "last_processed_generated_at_ms": 1791060957828,
   "minimum_candidate_score": 78.0,
   "pairs": {
     "1000000BOBUSDT": {
@@ -162,15 +162,15 @@
     },
     "AINUSDT": {
       "gate_reasons": [
-        "score 44.0 below required 78.0",
+        "score 34.0 below required 78.0",
         "candidate has blocker(s)",
         "missing Binance spot confirmation",
         "15m OI is not expanding"
       ],
       "last_bias": "SHORT",
       "last_price": 0.05114,
-      "last_score": 44.0,
-      "last_seen_at_ms": 1791060657435,
+      "last_score": 34.0,
+      "last_seen_at_ms": 1791060960267,
       "qualifying_streak": 0,
       "required_score": 78.0
     },
@@ -1148,14 +1148,15 @@
         ]
       },
       "gate_reasons": [
-        "score 67.0 below required 82.0",
+        "score 49.0 below required 82.0",
+        "long spot confirmation weak (B/S 0.903, flow -5,882)",
         "15m OI is not expanding"
       ],
       "last_bias": "LONG",
-      "last_price": 0.11144,
+      "last_price": 0.11134,
       "last_return_pct": 0.24535,
-      "last_score": 67.0,
-      "last_seen_at_ms": 1791060657435,
+      "last_score": 49.0,
+      "last_seen_at_ms": 1791060960267,
       "mae_pct": -0.126632,
       "mfe_pct": 1.598734,
       "previous_score": 64.0,
@@ -1794,15 +1795,15 @@
         "warnings": []
       },
       "gate_reasons": [
-        "score 67.0 below required 78.0",
+        "score 57.0 below required 78.0",
         "long spot confirmation weak (B/S 0.928, flow -15,174)",
         "15m OI is not expanding"
       ],
       "last_bias": "LONG",
-      "last_price": 0.0025555,
+      "last_price": 0.0025441,
       "last_return_pct": -0.655005,
-      "last_score": 67.0,
-      "last_seen_at_ms": 1791060657435,
+      "last_score": 57.0,
+      "last_seen_at_ms": 1791060960267,
       "mae_pct": -0.655005,
       "mfe_pct": 0.647299,
       "previous_score": 69.0,
@@ -1891,14 +1892,14 @@
     },
     "PUMPBTCUSDT": {
       "gate_reasons": [
-        "score 42.0 below required 78.0",
+        "score 47.0 below required 78.0",
         "candidate has blocker(s)",
         "missing Binance spot confirmation"
       ],
       "last_bias": "SHORT",
-      "last_price": 0.00846,
-      "last_score": 42.0,
-      "last_seen_at_ms": 1791060657435,
+      "last_price": 0.0085,
+      "last_score": 47.0,
+      "last_seen_at_ms": 1791060960267,
       "qualifying_streak": 0,
       "required_score": 78.0
     },
@@ -1961,10 +1962,10 @@
         "pair cooldown active after deterioration"
       ],
       "last_bias": "LONG",
-      "last_price": 262.11,
+      "last_price": 264.85,
       "last_return_pct": 0.03888,
       "last_score": 83.0,
-      "last_seen_at_ms": 1791060657435,
+      "last_seen_at_ms": 1791060960267,
       "mae_pct": 0.0,
       "mfe_pct": 0.439347,
       "previous_score": 69.0,
@@ -2187,14 +2188,14 @@
       "required_score": 78.0
     },
     "SANDUSDT": {
-      "active": true,
+      "active": false,
       "confirmed_at_ms": 1791060055006,
       "confirmed_bias": "LONG",
       "confirmed_generated_at_ms": 1791060052487,
       "confirmed_price": 0.07372,
       "confirmed_score": 90.0,
-      "cooldown_until_ms": 0,
-      "deteriorated_at_ms": 1791056147428,
+      "cooldown_until_ms": 1791063660267,
+      "deteriorated_at_ms": 1791060960267,
       "entry_snapshot": {
         "action": "LONG_CANDIDATE",
         "basis_pct": -0.5025,
@@ -2232,14 +2233,14 @@
       },
       "gate_reasons": [],
       "last_bias": "LONG",
-      "last_price": 0.07434,
-      "last_return_pct": 0.84102,
-      "last_score": 90.0,
-      "last_seen_at_ms": 1791060657435,
+      "last_price": 0.07431,
+      "last_return_pct": 0.800326,
+      "last_score": 72.0,
+      "last_seen_at_ms": 1791060960267,
       "mae_pct": 0.0,
       "mfe_pct": 0.84102,
-      "previous_score": 90.0,
-      "qualifying_streak": 1,
+      "previous_score": 72.0,
+      "qualifying_streak": 0,
       "required_score": 78.0
     },
     "SCRUSDT": {
