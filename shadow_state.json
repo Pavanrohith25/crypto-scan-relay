@@ -1,6 +1,6 @@
 {
-  "last_processed_at_ms": 1791148553334,
-  "last_processed_generated_at_ms": 1791148550783,
+  "last_processed_at_ms": 1791148846660,
+  "last_processed_generated_at_ms": 1791148844165,
   "pairs": {
     "1000000BOBUSDT": {
       "gate_reasons": [
@@ -12,10 +12,10 @@
       ],
       "last_bias": "SHORT",
       "last_decision": "WAIT",
-      "last_price": 0.0123,
+      "last_price": 0.01226,
       "last_regime": "TREND_CONTINUATION",
       "last_score": 28.0,
-      "last_seen_at_ms": 1791148553334
+      "last_seen_at_ms": 1791148846660
     },
     "1000RATSUSDT": {
       "gate_reasons": [
@@ -882,11 +882,11 @@
       ],
       "last_bias": "LONG",
       "last_decision": "SHADOW_CONFIRMED",
-      "last_position_check_ms": 1791148553334,
-      "last_price": 0.15474,
+      "last_position_check_ms": 1791148846660,
+      "last_price": 0.15541,
       "last_regime": "TREND_CONTINUATION",
-      "last_score": 29.0,
-      "last_seen_at_ms": 1791148553334,
+      "last_score": 24.0,
+      "last_seen_at_ms": 1791148846660,
       "position_state": "HOLD_STRONG"
     },
     "GUSDT": {
@@ -1404,35 +1404,42 @@
     },
     "ONEUSDT": {
       "active": false,
+      "anchor_price": 0.0023467,
+      "anchor_regime": "COUNTERTREND",
+      "anchor_score": 84.0,
+      "armed": true,
+      "armed_at_ms": 1791148846660,
       "closed_at_ms": 1791105055288,
       "confirmed_at_ms": 1791036370695,
       "confirmed_bias": "LONG",
       "confirmed_price": 0.0025052,
       "confirmed_regime": "TREND_CONTINUATION",
       "confirmed_score": 90.0,
-      "gate_reasons": [
-        "15m OI not expanding"
-      ],
+      "evidence_count": 1,
+      "gate_reasons": [],
+      "high_priority": false,
       "last_bias": "LONG",
-      "last_decision": "WAIT",
+      "last_decision": "ARMED",
+      "last_fingerprint": "0.0023467|1.128|10736.3095|178168.3767|0.66|-1.44|0.17",
       "last_position_check_ms": 1791105055288,
-      "last_price": 0.0023464,
+      "last_price": 0.0023467,
       "last_regime": "COUNTERTREND",
-      "last_score": 79.0,
-      "last_seen_at_ms": 1791148553334,
-      "position_state": "EXIT_THESIS_BROKEN"
+      "last_score": 84.0,
+      "last_seen_at_ms": 1791148846660,
+      "position_state": "EXIT_THESIS_BROKEN",
+      "required_score": 78.0
     },
     "ORCAUSDT": {
       "gate_reasons": [
-        "score 46.0 below required 82.0",
-        "long spot weak (B/S 0.571, flow -168,665)"
+        "score 56.0 below required 82.0",
+        "long spot weak (B/S 0.522, flow -137,223)"
       ],
       "last_bias": "LONG",
       "last_decision": "WAIT",
-      "last_price": 1.945,
+      "last_price": 1.962,
       "last_regime": "TREND_CONTINUATION",
-      "last_score": 46.0,
-      "last_seen_at_ms": 1791148553334
+      "last_score": 56.0,
+      "last_seen_at_ms": 1791148846660
     },
     "PAYPUSDT": {
       "gate_reasons": [
@@ -1523,17 +1530,17 @@
     "PUMPBTCUSDT": {
       "gate_reasons": [
         "deep countertrend: 24h structure/OI conflicts with the setup",
-        "score 52.0 below required 82.0",
+        "score 46.0 below required 82.0",
         "candidate has blocker(s)",
         "missing spot confirmation",
         "missing spot volume"
       ],
       "last_bias": "SHORT",
       "last_decision": "BLOCKED_DEEP_COUNTERTREND",
-      "last_price": 0.01099,
+      "last_price": 0.01092,
       "last_regime": "COUNTERTREND_DEEP",
-      "last_score": 52.0,
-      "last_seen_at_ms": 1791148553334
+      "last_score": 46.0,
+      "last_seen_at_ms": 1791148846660
     },
     "PUMPUSDT": {
       "gate_reasons": [
@@ -1560,11 +1567,11 @@
       ],
       "last_bias": "LONG",
       "last_decision": "SHADOW_CONFIRMED",
-      "last_position_check_ms": 1791148553334,
-      "last_price": 250.57,
+      "last_position_check_ms": 1791148846660,
+      "last_price": 251.31,
       "last_regime": "COUNTERTREND",
-      "last_score": 60.0,
-      "last_seen_at_ms": 1791148553334,
+      "last_score": 55.0,
+      "last_seen_at_ms": 1791148846660,
       "position_state": "REDUCE"
     },
     "QNTXUSDT": {
