@@ -1,6 +1,6 @@
 {
-  "last_processed_at_ms": 1791072676770,
-  "last_processed_generated_at_ms": 1791072674253,
+  "last_processed_at_ms": 1791072930488,
+  "last_processed_generated_at_ms": 1791072927098,
   "minimum_candidate_score": 78.0,
   "pairs": {
     "1000000BOBUSDT": {
@@ -161,14 +161,15 @@
     },
     "AINUSDT": {
       "gate_reasons": [
-        "score 47.0 below required 78.0",
+        "score 26.0 below required 78.0",
         "candidate has blocker(s)",
-        "missing Binance spot confirmation"
+        "missing Binance spot confirmation",
+        "15m OI is not expanding"
       ],
       "last_bias": "SHORT",
-      "last_price": 0.04327,
-      "last_score": 47.0,
-      "last_seen_at_ms": 1791072676770,
+      "last_price": 0.0432,
+      "last_score": 26.0,
+      "last_seen_at_ms": 1791072930488,
       "qualifying_streak": 0,
       "required_score": 78.0
     },
@@ -213,14 +214,14 @@
       "required_score": 78.0
     },
     "ARKUSDT": {
-      "active": true,
+      "active": false,
       "confirmed_at_ms": 1791072676770,
       "confirmed_bias": "LONG",
       "confirmed_generated_at_ms": 1791072674253,
       "confirmed_price": 0.2265,
       "confirmed_score": 85.0,
-      "cooldown_until_ms": 0,
-      "deteriorated_at_ms": 1790924723110,
+      "cooldown_until_ms": 1791075630488,
+      "deteriorated_at_ms": 1791072930488,
       "entry_snapshot": {
         "action": "LONG_CANDIDATE",
         "basis_pct": -2.6742,
@@ -260,14 +261,14 @@
       },
       "gate_reasons": [],
       "last_bias": "LONG",
-      "last_price": 0.2265,
-      "last_return_pct": -1.396396,
-      "last_score": 85.0,
-      "last_seen_at_ms": 1791072676770,
+      "last_price": 0.2283,
+      "last_return_pct": 0.794702,
+      "last_score": 73.0,
+      "last_seen_at_ms": 1791072930488,
       "mae_pct": 0.0,
-      "mfe_pct": 0.0,
-      "previous_score": 85.0,
-      "qualifying_streak": 2,
+      "mfe_pct": 0.794702,
+      "previous_score": 73.0,
+      "qualifying_streak": 0,
       "required_score": 82.0
     },
     "ARMUSDT": {
@@ -1146,10 +1147,10 @@
         "15m OI is not expanding"
       ],
       "last_bias": "LONG",
-      "last_price": 0.11256,
+      "last_price": 0.11251,
       "last_return_pct": 0.24535,
       "last_score": 49.0,
-      "last_seen_at_ms": 1791072676770,
+      "last_seen_at_ms": 1791072930488,
       "mae_pct": -0.126632,
       "mfe_pct": 1.598734,
       "previous_score": 64.0,
@@ -1791,10 +1792,10 @@
         "pair cooldown active after deterioration"
       ],
       "last_bias": "LONG",
-      "last_price": 0.0024487,
+      "last_price": 0.0024634,
       "last_return_pct": -1.872113,
       "last_score": 79.0,
-      "last_seen_at_ms": 1791072676770,
+      "last_seen_at_ms": 1791072930488,
       "mae_pct": -1.872113,
       "mfe_pct": 0.38901,
       "previous_score": 69.0,
@@ -1885,14 +1886,14 @@
     },
     "PUMPBTCUSDT": {
       "gate_reasons": [
-        "score 55.0 below required 78.0",
+        "score 61.0 below required 78.0",
         "candidate has blocker(s)",
         "missing Binance spot confirmation"
       ],
       "last_bias": "SHORT",
-      "last_price": 0.00837,
-      "last_score": 55.0,
-      "last_seen_at_ms": 1791072676770,
+      "last_price": 0.00847,
+      "last_score": 61.0,
+      "last_seen_at_ms": 1791072930488,
       "qualifying_streak": 0,
       "required_score": 78.0
     },
@@ -2228,10 +2229,10 @@
         "pair cooldown active after deterioration"
       ],
       "last_bias": "LONG",
-      "last_price": 0.07275,
+      "last_price": 0.07288,
       "last_return_pct": -0.686222,
       "last_score": 75.0,
-      "last_seen_at_ms": 1791072676770,
+      "last_seen_at_ms": 1791072930488,
       "mae_pct": -0.686222,
       "mfe_pct": 0.713132,
       "previous_score": 69.0,
