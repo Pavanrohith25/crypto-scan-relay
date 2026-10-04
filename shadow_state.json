@@ -1,22 +1,21 @@
 {
-  "last_processed_at_ms": 1791141950766,
-  "last_processed_generated_at_ms": 1791141948339,
+  "last_processed_at_ms": 1791142226072,
+  "last_processed_generated_at_ms": 1791142223553,
   "pairs": {
     "1000000BOBUSDT": {
       "gate_reasons": [
         "deep countertrend: 24h structure/OI conflicts with the setup",
-        "score 38.0 below required 78.0",
+        "score 43.0 below required 78.0",
         "candidate has blocker(s)",
         "missing spot confirmation",
-        "15m OI not expanding",
         "missing spot volume"
       ],
       "last_bias": "SHORT",
       "last_decision": "BLOCKED_DEEP_COUNTERTREND",
-      "last_price": 0.01109,
+      "last_price": 0.01111,
       "last_regime": "COUNTERTREND_DEEP",
-      "last_score": 38.0,
-      "last_seen_at_ms": 1791141950766
+      "last_score": 43.0,
+      "last_seen_at_ms": 1791142226072
     },
     "1000RATSUSDT": {
       "gate_reasons": [
@@ -1420,10 +1419,10 @@
       "last_bias": "LONG",
       "last_decision": "BLOCKED_DEEP_COUNTERTREND",
       "last_position_check_ms": 1791105055288,
-      "last_price": 0.0023598,
+      "last_price": 0.0023551,
       "last_regime": "COUNTERTREND_DEEP",
       "last_score": 67.0,
-      "last_seen_at_ms": 1791141950766,
+      "last_seen_at_ms": 1791142226072,
       "position_state": "EXIT_THESIS_BROKEN"
     },
     "ORCAUSDT": {
@@ -1432,10 +1431,10 @@
       ],
       "last_bias": "LONG",
       "last_decision": "WAIT",
-      "last_price": 1.991,
+      "last_price": 2.02,
       "last_regime": "TREND_CONTINUATION",
       "last_score": 48.0,
-      "last_seen_at_ms": 1791141950766
+      "last_seen_at_ms": 1791142226072
     },
     "PAYPUSDT": {
       "gate_reasons": [
@@ -1525,18 +1524,19 @@
     },
     "PUMPBTCUSDT": {
       "gate_reasons": [
-        "score 41.0 below required 82.0",
+        "deep countertrend: 24h structure/OI conflicts with the setup",
+        "score 51.0 below required 82.0",
         "candidate has blocker(s)",
         "missing spot confirmation",
         "15m OI not expanding",
         "missing spot volume"
       ],
       "last_bias": "SHORT",
-      "last_decision": "WAIT",
-      "last_price": 0.00967,
-      "last_regime": "COUNTERTREND",
-      "last_score": 41.0,
-      "last_seen_at_ms": 1791141950766
+      "last_decision": "BLOCKED_DEEP_COUNTERTREND",
+      "last_price": 0.0098,
+      "last_regime": "COUNTERTREND_DEEP",
+      "last_score": 51.0,
+      "last_seen_at_ms": 1791142226072
     },
     "PUMPUSDT": {
       "gate_reasons": [
@@ -1563,11 +1563,11 @@
       ],
       "last_bias": "LONG",
       "last_decision": "SHADOW_CONFIRMED",
-      "last_position_check_ms": 1791141950766,
-      "last_price": 255.81,
+      "last_position_check_ms": 1791142226072,
+      "last_price": 255.08,
       "last_regime": "COUNTERTREND",
       "last_score": 54.0,
-      "last_seen_at_ms": 1791141950766,
+      "last_seen_at_ms": 1791142226072,
       "position_state": "HOLD_PROTECT"
     },
     "QNTXUSDT": {
