@@ -1,20 +1,21 @@
 {
-  "last_processed_at_ms": 1791085263427,
-  "last_processed_generated_at_ms": 1791085260872,
+  "last_processed_at_ms": 1791085526150,
+  "last_processed_generated_at_ms": 1791085523528,
   "pairs": {
     "1000000BOBUSDT": {
       "gate_reasons": [
         "score 46.0 below required 78.0",
         "candidate has blocker(s)",
         "missing spot confirmation",
+        "15m OI not expanding",
         "missing spot volume"
       ],
       "last_bias": "SHORT",
       "last_decision": "WAIT",
-      "last_price": 0.01232,
+      "last_price": 0.01231,
       "last_regime": "COUNTERTREND",
       "last_score": 46.0,
-      "last_seen_at_ms": 1791085263427
+      "last_seen_at_ms": 1791085526150
     },
     "1000RATSUSDT": {
       "gate_reasons": [
@@ -120,7 +121,7 @@
     "AINUSDT": {
       "gate_reasons": [
         "deep countertrend: 24h structure/OI conflicts with the setup",
-        "score 24.0 below required 78.0",
+        "score 30.0 below required 78.0",
         "candidate has blocker(s)",
         "missing spot confirmation",
         "15m OI not expanding",
@@ -128,10 +129,10 @@
       ],
       "last_bias": "SHORT",
       "last_decision": "BLOCKED_DEEP_COUNTERTREND",
-      "last_price": 0.04746,
+      "last_price": 0.04712,
       "last_regime": "COUNTERTREND_DEEP",
-      "last_score": 24.0,
-      "last_seen_at_ms": 1791085263427
+      "last_score": 30.0,
+      "last_seen_at_ms": 1791085526150
     },
     "ALABUSDT": {
       "gate_reasons": [
@@ -878,17 +879,18 @@
       "confirmed_regime": "TREND_CONTINUATION",
       "confirmed_score": 82.0,
       "gate_reasons": [
-        "score 60.0 below required 82.0",
-        "long spot weak (B/S 0.732, flow -11,343)",
-        "spot volume 73,292 below required 100,000"
+        "deep countertrend: 24h structure/OI conflicts with the setup",
+        "score 54.0 below required 82.0",
+        "long spot weak (B/S 0.913, flow -2,797)",
+        "spot volume 61,779 below required 100,000"
       ],
       "last_bias": "LONG",
-      "last_decision": "WAIT",
+      "last_decision": "BLOCKED_DEEP_COUNTERTREND",
       "last_position_check_ms": 1790985921447,
-      "last_price": 0.11432,
-      "last_regime": "COUNTERTREND",
-      "last_score": 60.0,
-      "last_seen_at_ms": 1791085263427,
+      "last_price": 0.11414,
+      "last_regime": "COUNTERTREND_DEEP",
+      "last_score": 54.0,
+      "last_seen_at_ms": 1791085526150,
       "position_state": "EXIT_THESIS_BROKEN"
     },
     "GUSDT": {
@@ -1415,11 +1417,11 @@
       "gate_reasons": [],
       "last_bias": "LONG",
       "last_decision": "SHADOW_CONFIRMED",
-      "last_position_check_ms": 1791085263427,
-      "last_price": 0.0025003,
+      "last_position_check_ms": 1791085526150,
+      "last_price": 0.0024937,
       "last_regime": "TREND_CONTINUATION",
       "last_score": 84.0,
-      "last_seen_at_ms": 1791085263427,
+      "last_seen_at_ms": 1791085526150,
       "position_state": "HOLD_PROTECT"
     },
     "PAYPUSDT": {
@@ -1510,17 +1512,17 @@
     },
     "PUMPBTCUSDT": {
       "gate_reasons": [
-        "score 46.0 below required 78.0",
+        "score 51.0 below required 78.0",
         "candidate has blocker(s)",
         "missing spot confirmation",
         "missing spot volume"
       ],
       "last_bias": "SHORT",
       "last_decision": "WAIT",
-      "last_price": 0.00852,
+      "last_price": 0.00851,
       "last_regime": "COUNTERTREND",
-      "last_score": 46.0,
-      "last_seen_at_ms": 1791085263427
+      "last_score": 51.0,
+      "last_seen_at_ms": 1791085526150
     },
     "PUMPUSDT": {
       "gate_reasons": [
@@ -1704,11 +1706,11 @@
       ],
       "last_bias": "LONG",
       "last_decision": "SHADOW_CONFIRMED",
-      "last_position_check_ms": 1791085263427,
-      "last_price": 0.07584,
+      "last_position_check_ms": 1791085526150,
+      "last_price": 0.07574,
       "last_regime": "COUNTERTREND",
-      "last_score": 76.0,
-      "last_seen_at_ms": 1791085263427,
+      "last_score": 81.0,
+      "last_seen_at_ms": 1791085526150,
       "position_state": "HOLD_PROTECT"
     },
     "SCRUSDT": {
