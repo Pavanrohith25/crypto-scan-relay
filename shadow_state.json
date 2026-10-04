@@ -1,6 +1,6 @@
 {
-  "last_processed_at_ms": 1791103594677,
-  "last_processed_generated_at_ms": 1791103592194,
+  "last_processed_at_ms": 1791103817143,
+  "last_processed_generated_at_ms": 1791103814587,
   "pairs": {
     "1000000BOBUSDT": {
       "gate_reasons": [
@@ -12,10 +12,10 @@
       ],
       "last_bias": "SHORT",
       "last_decision": "WAIT",
-      "last_price": 0.01195,
+      "last_price": 0.01191,
       "last_regime": "COUNTERTREND",
       "last_score": 46.0,
-      "last_seen_at_ms": 1791103594677
+      "last_seen_at_ms": 1791103817143
     },
     "1000RATSUSDT": {
       "gate_reasons": [
@@ -128,10 +128,10 @@
       ],
       "last_bias": "SHORT",
       "last_decision": "BLOCKED_DEEP_COUNTERTREND",
-      "last_price": 0.05374,
+      "last_price": 0.05427,
       "last_regime": "COUNTERTREND_DEEP",
       "last_score": 51.0,
-      "last_seen_at_ms": 1791103594677
+      "last_seen_at_ms": 1791103817143
     },
     "ALABUSDT": {
       "gate_reasons": [
@@ -183,10 +183,10 @@
       ],
       "last_bias": "LONG",
       "last_decision": "WAIT",
-      "last_price": 0.2237,
+      "last_price": 0.2232,
       "last_regime": "COUNTERTREND",
       "last_score": 74.0,
-      "last_seen_at_ms": 1791103594677
+      "last_seen_at_ms": 1791103817143
     },
     "ARMUSDT": {
       "gate_reasons": [
@@ -870,24 +870,30 @@
     },
     "GTCUSDT": {
       "active": false,
+      "anchor_price": 0.11448,
+      "anchor_regime": "COUNTERTREND",
+      "anchor_score": 85.0,
+      "armed": true,
+      "armed_at_ms": 1791103817143,
       "closed_at_ms": 1790985921447,
       "confirmed_at_ms": 1790957472893,
       "confirmed_bias": "LONG",
       "confirmed_price": 0.1305,
       "confirmed_regime": "TREND_CONTINUATION",
       "confirmed_score": 82.0,
-      "gate_reasons": [
-        "score 74.0 below required 82.0",
-        "15m OI not expanding"
-      ],
+      "evidence_count": 1,
+      "gate_reasons": [],
+      "high_priority": false,
       "last_bias": "LONG",
-      "last_decision": "WAIT",
+      "last_decision": "ARMED",
+      "last_fingerprint": "0.11448|1.204|14481.6187|156345.9919|0.38|-0.87|-0.47",
       "last_position_check_ms": 1790985921447,
-      "last_price": 0.11396,
+      "last_price": 0.11448,
       "last_regime": "COUNTERTREND",
-      "last_score": 74.0,
-      "last_seen_at_ms": 1791103594677,
-      "position_state": "EXIT_THESIS_BROKEN"
+      "last_score": 85.0,
+      "last_seen_at_ms": 1791103817143,
+      "position_state": "EXIT_THESIS_BROKEN",
+      "required_score": 82.0
     },
     "GUSDT": {
       "gate_reasons": [
@@ -1413,11 +1419,11 @@
       "gate_reasons": [],
       "last_bias": "LONG",
       "last_decision": "SHADOW_CONFIRMED",
-      "last_position_check_ms": 1791103594677,
-      "last_price": 0.0023567,
+      "last_position_check_ms": 1791103817143,
+      "last_price": 0.0023578,
       "last_regime": "COUNTERTREND",
       "last_score": 67.0,
-      "last_seen_at_ms": 1791103594677,
+      "last_seen_at_ms": 1791103817143,
       "position_state": "REDUCE"
     },
     "PAYPUSDT": {
@@ -1516,10 +1522,10 @@
       ],
       "last_bias": "SHORT",
       "last_decision": "WAIT",
-      "last_price": 0.00888,
+      "last_price": 0.00894,
       "last_regime": "COUNTERTREND",
       "last_score": 50.0,
-      "last_seen_at_ms": 1791102972906
+      "last_seen_at_ms": 1791103817143
     },
     "PUMPUSDT": {
       "gate_reasons": [
