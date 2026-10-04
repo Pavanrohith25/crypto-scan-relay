@@ -1,6 +1,6 @@
 {
-  "last_processed_at_ms": 1791084932110,
-  "last_processed_generated_at_ms": 1791084929667,
+  "last_processed_at_ms": 1791085263371,
+  "last_processed_generated_at_ms": 1791085260872,
   "minimum_candidate_score": 78.0,
   "pairs": {
     "1000000BOBUSDT": {
@@ -12,7 +12,7 @@
       "last_bias": "SHORT",
       "last_price": 0.01232,
       "last_score": 46.0,
-      "last_seen_at_ms": 1791084932110,
+      "last_seen_at_ms": 1791085263371,
       "qualifying_streak": 0,
       "required_score": 78.0
     },
@@ -161,15 +161,15 @@
     },
     "AINUSDT": {
       "gate_reasons": [
-        "score 40.0 below required 78.0",
+        "score 24.0 below required 78.0",
         "candidate has blocker(s)",
         "missing Binance spot confirmation",
         "15m OI is not expanding"
       ],
       "last_bias": "SHORT",
-      "last_price": 0.04886,
-      "last_score": 40.0,
-      "last_seen_at_ms": 1791084932110,
+      "last_price": 0.04746,
+      "last_score": 24.0,
+      "last_seen_at_ms": 1791085263371,
       "qualifying_streak": 0,
       "required_score": 78.0
     },
@@ -1145,15 +1145,14 @@
         ]
       },
       "gate_reasons": [
-        "score 49.0 below required 82.0",
-        "long spot confirmation weak (B/S 0.732, flow -11,343)",
-        "15m OI is not expanding"
+        "score 60.0 below required 82.0",
+        "long spot confirmation weak (B/S 0.732, flow -11,343)"
       ],
       "last_bias": "LONG",
-      "last_price": 0.11369,
+      "last_price": 0.11432,
       "last_return_pct": -0.972545,
-      "last_score": 49.0,
-      "last_seen_at_ms": 1791084932110,
+      "last_score": 60.0,
+      "last_seen_at_ms": 1791085263371,
       "mae_pct": -0.972545,
       "mfe_pct": 0.0,
       "previous_score": 74.0,
@@ -1793,13 +1792,13 @@
       },
       "gate_reasons": [],
       "last_bias": "LONG",
-      "last_price": 0.0024942,
-      "last_return_pct": 1.94139,
-      "last_score": 80.0,
-      "last_seen_at_ms": 1791084932110,
+      "last_price": 0.0025003,
+      "last_return_pct": 2.190706,
+      "last_score": 84.0,
+      "last_seen_at_ms": 1791085263371,
       "mae_pct": 0.0,
-      "mfe_pct": 2.039482,
-      "previous_score": 80.0,
+      "mfe_pct": 2.190706,
+      "previous_score": 84.0,
       "qualifying_streak": 1,
       "required_score": 78.0,
       "tp2_hit_at_ms": 1791084344719
@@ -1886,14 +1885,14 @@
     },
     "PUMPBTCUSDT": {
       "gate_reasons": [
-        "score 57.0 below required 78.0",
+        "score 46.0 below required 78.0",
         "candidate has blocker(s)",
         "missing Binance spot confirmation"
       ],
       "last_bias": "SHORT",
-      "last_price": 0.00851,
-      "last_score": 57.0,
-      "last_seen_at_ms": 1791084932110,
+      "last_price": 0.00852,
+      "last_score": 46.0,
+      "last_seen_at_ms": 1791085263371,
       "qualifying_streak": 0,
       "required_score": 78.0
     },
@@ -2182,14 +2181,14 @@
       "required_score": 78.0
     },
     "SANDUSDT": {
-      "active": true,
+      "active": false,
       "confirmed_at_ms": 1791081641189,
       "confirmed_bias": "LONG",
       "confirmed_generated_at_ms": 1791081638664,
       "confirmed_price": 0.07276,
       "confirmed_score": 90.0,
-      "cooldown_until_ms": 0,
-      "deteriorated_at_ms": 1791072370408,
+      "cooldown_until_ms": 1791087963371,
+      "deteriorated_at_ms": 1791085263371,
       "entry_snapshot": {
         "action": "LONG_CANDIDATE",
         "basis_pct": -0.3131,
@@ -2227,14 +2226,14 @@
       },
       "gate_reasons": [],
       "last_bias": "LONG",
-      "last_price": 0.07549,
-      "last_return_pct": 3.752062,
-      "last_score": 87.0,
-      "last_seen_at_ms": 1791084932110,
+      "last_price": 0.07584,
+      "last_return_pct": 4.233095,
+      "last_score": 76.0,
+      "last_seen_at_ms": 1791085263371,
       "mae_pct": -0.082463,
       "mfe_pct": 4.315558,
-      "previous_score": 87.0,
-      "qualifying_streak": 1,
+      "previous_score": 76.0,
+      "qualifying_streak": 0,
       "required_score": 78.0,
       "tp2_hit_at_ms": 1791083724136,
       "tp3_hit_at_ms": 1791084054305,
