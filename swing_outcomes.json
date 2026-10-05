@@ -1,5 +1,5 @@
 {
-  "last_processed_at_ms": 1791194138480,
+  "last_processed_at_ms": 1791194440692,
   "objective": {
     "diagnostic_horizons_hours": [
       4,
@@ -9066,10 +9066,103 @@
     },
     "PENGUUSDT-1791180016162": {
       "bias": "LONG",
+      "evaluated_4h_at_ms": 1791194440692,
       "outcome_12h": null,
       "outcome_24h": null,
       "outcome_48h": null,
-      "outcome_4h": null,
+      "outcome_4h": {
+        "bars_used": 48,
+        "close_return_pct": 1.1214,
+        "first_5pct_bar_ms": null,
+        "horizon_hours": 4,
+        "mae_before_5pct_pct": null,
+        "mae_pct": 0.0,
+        "mfe_pct": 3.3436,
+        "objective": "+5pct",
+        "sampling_interval": "5m",
+        "sampling_note": "Uses 5m candles beginning with the first full bar at/after the trigger. If TP and SL are both touched inside the same 5m candle before either resolves, the stop-path result is AMBIGUOUS.",
+        "stop_grid": {
+          "stop_3_0pct": {
+            "ambiguous": false,
+            "first_stop_bar_ms": null,
+            "first_target_bar_ms": null,
+            "resolution_bar_ms": null,
+            "result": "OPEN",
+            "stop_first": false,
+            "stop_pct": 3.0,
+            "stop_reached": false,
+            "target_first": false,
+            "target_pct": 5.0,
+            "target_reached": false,
+            "time_to_stop_minutes": null,
+            "time_to_target_minutes": null
+          },
+          "stop_4_0pct": {
+            "ambiguous": false,
+            "first_stop_bar_ms": null,
+            "first_target_bar_ms": null,
+            "resolution_bar_ms": null,
+            "result": "OPEN",
+            "stop_first": false,
+            "stop_pct": 4.0,
+            "stop_reached": false,
+            "target_first": false,
+            "target_pct": 5.0,
+            "target_reached": false,
+            "time_to_stop_minutes": null,
+            "time_to_target_minutes": null
+          },
+          "stop_5_0pct": {
+            "ambiguous": false,
+            "first_stop_bar_ms": null,
+            "first_target_bar_ms": null,
+            "resolution_bar_ms": null,
+            "result": "OPEN",
+            "stop_first": false,
+            "stop_pct": 5.0,
+            "stop_reached": false,
+            "target_first": false,
+            "target_pct": 5.0,
+            "target_reached": false,
+            "time_to_stop_minutes": null,
+            "time_to_target_minutes": null
+          },
+          "stop_6_0pct": {
+            "ambiguous": false,
+            "first_stop_bar_ms": null,
+            "first_target_bar_ms": null,
+            "resolution_bar_ms": null,
+            "result": "OPEN",
+            "stop_first": false,
+            "stop_pct": 6.0,
+            "stop_reached": false,
+            "target_first": false,
+            "target_pct": 5.0,
+            "target_reached": false,
+            "time_to_stop_minutes": null,
+            "time_to_target_minutes": null
+          },
+          "stop_8_0pct": {
+            "ambiguous": false,
+            "first_stop_bar_ms": null,
+            "first_target_bar_ms": null,
+            "resolution_bar_ms": null,
+            "result": "OPEN",
+            "stop_first": false,
+            "stop_pct": 8.0,
+            "stop_reached": false,
+            "target_first": false,
+            "target_pct": 5.0,
+            "target_reached": false,
+            "time_to_stop_minutes": null,
+            "time_to_target_minutes": null
+          }
+        },
+        "target_5_reached": false,
+        "time_to_5pct_minutes": null,
+        "window_end_ms": 1791194416162,
+        "window_start_ms": 1791180300000
+      },
       "snapshot": {
         "bias": "LONG",
         "bounce_from_12h_low_pct": 4.539,
@@ -11935,6 +12028,39 @@
       "trigger_at_ms": 1790925962631,
       "trigger_id": "SUIUSDT-1790925962631",
       "trigger_price": 1.1848
+    },
+    "SUIUSDT-1791194434873": {
+      "bias": "LONG",
+      "outcome_12h": null,
+      "outcome_24h": null,
+      "outcome_48h": null,
+      "outcome_4h": null,
+      "snapshot": {
+        "bias": "LONG",
+        "bounce_from_12h_low_pct": 2.928,
+        "distance_from_1h_sma10_pct": 0.271,
+        "momentum_12h_pct": 2.911,
+        "momentum_24h_pct": 5.239,
+        "momentum_3h_pct": 0.049,
+        "price": 1.234,
+        "pullback_from_12h_high_pct": -1.501,
+        "quote_volume_24h": 108408734.69,
+        "reasons": [
+          "1h and 4h trend structure aligned",
+          "3h momentum supports long trend"
+        ],
+        "retest_reason": "long pullback reached trend area and buying resumed",
+        "setup_state": "CONTINUATION_TRIGGER",
+        "swing_score": 65.0,
+        "symbol": "SUIUSDT",
+        "volume_expansion_1h": 0.96,
+        "warnings": []
+      },
+      "swing_score": 65.0,
+      "symbol": "SUIUSDT",
+      "trigger_at_ms": 1791194434873,
+      "trigger_id": "SUIUSDT-1791194434873",
+      "trigger_price": 1.234
     },
     "TAOUSDT-1790752258059": {
       "bias": "SHORT",
