@@ -1,6 +1,6 @@
 {
-  "last_processed_at_ms": 1791162038134,
-  "last_processed_generated_at_ms": 1791162035668,
+  "last_processed_at_ms": 1791162345327,
+  "last_processed_generated_at_ms": 1791162342785,
   "pairs": {
     "1000000BOBUSDT": {
       "gate_reasons": [
@@ -12,10 +12,10 @@
       ],
       "last_bias": "SHORT",
       "last_decision": "WAIT",
-      "last_price": 0.01215,
+      "last_price": 0.01221,
       "last_regime": "COUNTERTREND",
       "last_score": 33.0,
-      "last_seen_at_ms": 1791162038134
+      "last_seen_at_ms": 1791162345327
     },
     "1000RATSUSDT": {
       "gate_reasons": [
@@ -756,17 +756,17 @@
     },
     "EWZUSDT": {
       "gate_reasons": [
-        "score 41.0 below required 78.0",
+        "score 46.0 below required 78.0",
         "candidate has blocker(s)",
         "missing spot confirmation",
         "missing spot volume"
       ],
       "last_bias": "SHORT",
       "last_decision": "WAIT",
-      "last_price": 41.65,
+      "last_price": 41.66,
       "last_regime": "COUNTERTREND",
-      "last_score": 41.0,
-      "last_seen_at_ms": 1791162038134
+      "last_score": 46.0,
+      "last_seen_at_ms": 1791162345327
     },
     "FETUSDT": {
       "gate_reasons": [
@@ -896,11 +896,11 @@
       ],
       "last_bias": "LONG",
       "last_decision": "SHADOW_CONFIRMED",
-      "last_position_check_ms": 1791162038134,
-      "last_price": 0.21189,
+      "last_position_check_ms": 1791162345327,
+      "last_price": 0.21378,
       "last_regime": "TREND_CONTINUATION",
-      "last_score": 13.0,
-      "last_seen_at_ms": 1791162038134,
+      "last_score": 26.0,
+      "last_seen_at_ms": 1791162345327,
       "position_state": "HOLD_STRONG"
     },
     "GUSDT": {
@@ -1429,17 +1429,19 @@
       "confirmed_price": 0.0025052,
       "confirmed_regime": "TREND_CONTINUATION",
       "confirmed_score": 90.0,
-      "evidence_count": 1,
-      "gate_reasons": [],
+      "evidence_count": 2,
+      "gate_reasons": [
+        "price follow-through -0.24565861922912768 below 0.75%"
+      ],
       "high_priority": false,
       "last_bias": "LONG",
-      "last_decision": "ARMED",
-      "last_fingerprint": "0.002361|1.113|5919.5788|111045.0404|0.33|0.38|1.38",
+      "last_decision": "ARMED_WAITING_TRIGGER",
+      "last_fingerprint": "0.0023552|1.113|5919.5788|111045.0404|-0.14|0.48|1.38",
       "last_position_check_ms": 1791105055288,
-      "last_price": 0.002361,
+      "last_price": 0.0023552,
       "last_regime": "COUNTERTREND",
-      "last_score": 84.0,
-      "last_seen_at_ms": 1791162038134,
+      "last_score": 79.0,
+      "last_seen_at_ms": 1791162345327,
       "position_state": "EXIT_THESIS_BROKEN",
       "required_score": 78.0
     },
@@ -1553,10 +1555,10 @@
       ],
       "last_bias": "SHORT",
       "last_decision": "BLOCKED_DEEP_COUNTERTREND",
-      "last_price": 0.01064,
+      "last_price": 0.01079,
       "last_regime": "COUNTERTREND_DEEP",
       "last_score": 29.0,
-      "last_seen_at_ms": 1791162038134
+      "last_seen_at_ms": 1791162345327
     },
     "PUMPUSDT": {
       "gate_reasons": [
@@ -1583,12 +1585,12 @@
       ],
       "last_bias": "LONG",
       "last_decision": "SHADOW_CONFIRMED",
-      "last_position_check_ms": 1791162038134,
-      "last_price": 251.35,
+      "last_position_check_ms": 1791162345327,
+      "last_price": 252.35,
       "last_regime": "COUNTERTREND",
-      "last_score": 54.0,
-      "last_seen_at_ms": 1791162038134,
-      "position_state": "REDUCE"
+      "last_score": 72.0,
+      "last_seen_at_ms": 1791162345327,
+      "position_state": "HOLD_PROTECT"
     },
     "QNTXUSDT": {
       "gate_reasons": [
