@@ -1,6 +1,6 @@
 {
-  "last_processed_at_ms": 1791191169904,
-  "last_processed_generated_at_ms": 1791191167339,
+  "last_processed_at_ms": 1791191442965,
+  "last_processed_generated_at_ms": 1791191440470,
   "pairs": {
     "1000000BOBUSDT": {
       "gate_reasons": [
@@ -120,6 +120,7 @@
     },
     "AINUSDT": {
       "gate_reasons": [
+        "deep countertrend: 24h structure/OI conflicts with the setup",
         "score 64.0 below required 78.0",
         "candidate has blocker(s)",
         "missing spot confirmation",
@@ -127,11 +128,11 @@
         "missing spot volume"
       ],
       "last_bias": "SHORT",
-      "last_decision": "WAIT",
-      "last_price": 0.0555,
-      "last_regime": "COUNTERTREND",
+      "last_decision": "BLOCKED_DEEP_COUNTERTREND",
+      "last_price": 0.05577,
+      "last_regime": "COUNTERTREND_DEEP",
       "last_score": 64.0,
-      "last_seen_at_ms": 1791191169904
+      "last_seen_at_ms": 1791191442965
     },
     "ALABUSDT": {
       "gate_reasons": [
@@ -375,17 +376,17 @@
     },
     "CARVUSDT": {
       "gate_reasons": [
-        "score 68.0 below required 82.0",
+        "score 62.0 below required 82.0",
         "candidate has blocker(s)",
         "missing spot confirmation",
         "missing spot volume"
       ],
       "last_bias": "LONG",
       "last_decision": "WAIT",
-      "last_price": 0.05312,
+      "last_price": 0.05297,
       "last_regime": "TREND_CONTINUATION",
-      "last_score": 68.0,
-      "last_seen_at_ms": 1791191169904
+      "last_score": 62.0,
+      "last_seen_at_ms": 1791191442965
     },
     "CATUSDT": {
       "gate_reasons": [
@@ -910,11 +911,11 @@
       ],
       "last_bias": "LONG",
       "last_decision": "SHADOW_CONFIRMED",
-      "last_position_check_ms": 1791191169904,
-      "last_price": 0.20621,
+      "last_position_check_ms": 1791191442965,
+      "last_price": 0.20811,
       "last_regime": "TREND_CONTINUATION",
       "last_score": 49.0,
-      "last_seen_at_ms": 1791191169904,
+      "last_seen_at_ms": 1791191442965,
       "position_state": "HOLD_PROTECT"
     },
     "GUSDT": {
@@ -1444,20 +1445,20 @@
       "confirmed_price": 0.0025052,
       "confirmed_regime": "TREND_CONTINUATION",
       "confirmed_score": 90.0,
-      "evidence_count": 4,
+      "evidence_count": 5,
       "gate_reasons": [
-        "price follow-through -0.08818712467978385 below 0.75%",
+        "price follow-through -0.008398773779016988 below 0.75%",
         "countertrend reclaim not strong enough"
       ],
       "high_priority": false,
       "last_bias": "LONG",
       "last_decision": "ARMED_WAITING_TRIGGER",
-      "last_fingerprint": "0.0023792|1.191|27390.0371|314283.3887|-0.19|0.09|3.18",
+      "last_fingerprint": "0.0023811|1.191|27390.0371|314283.3887|0.17|0.21|3.18",
       "last_position_check_ms": 1791105055288,
-      "last_price": 0.0023792,
+      "last_price": 0.0023811,
       "last_regime": "COUNTERTREND",
-      "last_score": 79.0,
-      "last_seen_at_ms": 1791191169904,
+      "last_score": 84.0,
+      "last_seen_at_ms": 1791191442965,
       "position_state": "EXIT_THESIS_BROKEN",
       "required_score": 78.0
     },
@@ -1468,10 +1469,10 @@
       ],
       "last_bias": "LONG",
       "last_decision": "WAIT",
-      "last_price": 1.987,
+      "last_price": 1.985,
       "last_regime": "COUNTERTREND",
       "last_score": 50.0,
-      "last_seen_at_ms": 1791191169904
+      "last_seen_at_ms": 1791191442965
     },
     "PAYPUSDT": {
       "gate_reasons": [
@@ -1596,16 +1597,16 @@
       "confirmed_regime": "TREND_CONTINUATION",
       "confirmed_score": 86.0,
       "gate_reasons": [
-        "score 54.0 below required 78.0",
+        "score 65.0 below required 78.0",
         "long spot weak (B/S 0.636, flow -307,878)"
       ],
       "last_bias": "LONG",
       "last_decision": "WAIT",
       "last_position_check_ms": 1791164438281,
-      "last_price": 251.92,
+      "last_price": 252.54,
       "last_regime": "COUNTERTREND",
-      "last_score": 54.0,
-      "last_seen_at_ms": 1791191169904,
+      "last_score": 65.0,
+      "last_seen_at_ms": 1791191442965,
       "position_state": "EXIT_THESIS_BROKEN"
     },
     "QNTXUSDT": {
