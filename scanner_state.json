@@ -1,18 +1,18 @@
 {
-  "last_processed_at_ms": 1791177956696,
-  "last_processed_generated_at_ms": 1791177954201,
+  "last_processed_at_ms": 1791178242845,
+  "last_processed_generated_at_ms": 1791178240322,
   "minimum_candidate_score": 78.0,
   "pairs": {
     "1000000BOBUSDT": {
       "gate_reasons": [
-        "score 44.0 below required 82.0",
+        "score 56.0 below required 82.0",
         "candidate has blocker(s)",
         "missing Binance spot confirmation"
       ],
       "last_bias": "SHORT",
-      "last_price": 0.01856,
-      "last_score": 44.0,
-      "last_seen_at_ms": 1791177956696,
+      "last_price": 0.02107,
+      "last_score": 56.0,
+      "last_seen_at_ms": 1791178242845,
       "qualifying_streak": 0,
       "required_score": 82.0
     },
@@ -453,9 +453,9 @@
         "missing Binance spot confirmation"
       ],
       "last_bias": "LONG",
-      "last_price": 0.0521,
+      "last_price": 0.05217,
       "last_score": 61.0,
-      "last_seen_at_ms": 1791177956696,
+      "last_seen_at_ms": 1791178242845,
       "qualifying_streak": 0,
       "required_score": 78.0
     },
@@ -1826,7 +1826,7 @@
       "last_price": 0.002339,
       "last_return_pct": -0.548213,
       "last_score": 54.0,
-      "last_seen_at_ms": 1791177956696,
+      "last_seen_at_ms": 1791178242845,
       "mae_pct": -0.73945,
       "mfe_pct": 0.0,
       "previous_score": 54.0,
@@ -1932,9 +1932,9 @@
         "missing Binance spot confirmation"
       ],
       "last_bias": "SHORT",
-      "last_price": 0.01735,
+      "last_price": 0.01708,
       "last_score": 56.0,
-      "last_seen_at_ms": 1791177956696,
+      "last_seen_at_ms": 1791178242845,
       "qualifying_streak": 0,
       "required_score": 82.0
     },
@@ -1993,16 +1993,19 @@
         "strength": "STRONG",
         "warnings": []
       },
-      "gate_reasons": [],
+      "gate_reasons": [
+        "score 76.0 below required 78.0",
+        "15m OI is not expanding"
+      ],
       "last_bias": "LONG",
-      "last_price": 252.76,
+      "last_price": 254.27,
       "last_return_pct": 0.024064,
-      "last_score": 79.0,
-      "last_seen_at_ms": 1791177956696,
+      "last_score": 76.0,
+      "last_seen_at_ms": 1791178242845,
       "mae_pct": -0.324858,
       "mfe_pct": 0.328868,
       "previous_score": 59.0,
-      "qualifying_streak": 1,
+      "qualifying_streak": 0,
       "required_score": 78.0
     },
     "QNTXUSDT": {
