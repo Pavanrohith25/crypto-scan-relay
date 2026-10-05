@@ -1,6 +1,6 @@
 {
-  "last_processed_at_ms": 1791216950778,
-  "last_processed_generated_at_ms": 1791216948346,
+  "last_processed_at_ms": 1791217266091,
+  "last_processed_generated_at_ms": 1791217263586,
   "minimum_candidate_score": 78.0,
   "pairs": {
     "1000000BOBUSDT": {
@@ -421,14 +421,15 @@
     },
     "BWETUSDT": {
       "gate_reasons": [
-        "score 43.0 below required 78.0",
+        "score 38.0 below required 78.0",
         "candidate has blocker(s)",
-        "missing Binance spot confirmation"
+        "missing Binance spot confirmation",
+        "15m OI is not expanding"
       ],
       "last_bias": "LONG",
-      "last_price": 886.54,
-      "last_score": 43.0,
-      "last_seen_at_ms": 1791216950778,
+      "last_price": 883.44,
+      "last_score": 38.0,
+      "last_seen_at_ms": 1791217266091,
       "qualifying_streak": 0,
       "required_score": 78.0
     },
@@ -453,9 +454,9 @@
         "15m OI is not expanding"
       ],
       "last_bias": "LONG",
-      "last_price": 0.05141,
+      "last_price": 0.05136,
       "last_score": 47.0,
-      "last_seen_at_ms": 1791216950778,
+      "last_seen_at_ms": 1791217266091,
       "qualifying_streak": 0,
       "required_score": 82.0
     },
@@ -1186,14 +1187,15 @@
         ]
       },
       "gate_reasons": [
-        "score 35.0 below required 78.0",
+        "score 39.0 below required 78.0",
+        "long spot confirmation weak (B/S 0.980, flow -11,395)",
         "15m OI is not expanding"
       ],
       "last_bias": "LONG",
-      "last_price": 0.21147,
+      "last_price": 0.20497,
       "last_return_pct": -1.83727,
-      "last_score": 35.0,
-      "last_seen_at_ms": 1791216950778,
+      "last_score": 39.0,
+      "last_seen_at_ms": 1791217266091,
       "mae_pct": -1.83727,
       "mfe_pct": 0.0,
       "previous_score": 74.0,
@@ -1779,14 +1781,14 @@
     },
     "OGNUSDT": {
       "gate_reasons": [
-        "score 42.0 below required 82.0",
+        "score 52.0 below required 82.0",
         "long spot confirmation weak (B/S 1.028, flow 10,362)",
         "15m OI is not expanding"
       ],
       "last_bias": "LONG",
-      "last_price": 0.02182,
-      "last_score": 42.0,
-      "last_seen_at_ms": 1791216950778,
+      "last_price": 0.02173,
+      "last_score": 52.0,
+      "last_seen_at_ms": 1791217266091,
       "qualifying_streak": 0,
       "required_score": 82.0
     },
@@ -2197,9 +2199,9 @@
         "long spot confirmation weak (B/S 0.884, flow -40,391)"
       ],
       "last_bias": "LONG",
-      "last_price": 0.002484,
+      "last_price": 0.002477,
       "last_score": 54.0,
-      "last_seen_at_ms": 1791216950778,
+      "last_seen_at_ms": 1791217266091,
       "qualifying_streak": 0,
       "required_score": 82.0
     },
