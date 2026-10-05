@@ -21,6 +21,8 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v4
         with:
+          # Queued runs must read the latest state, not the dispatch-time SHA.
+          ref: ${{ github.ref }}
           fetch-depth: 0
 
       - name: Fetch latest scanner data
