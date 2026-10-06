@@ -1,6 +1,6 @@
 {
-  "last_processed_at_ms": 1791265854851,
-  "last_processed_generated_at_ms": 1791265852368,
+  "last_processed_at_ms": 1791266156150,
+  "last_processed_generated_at_ms": 1791266153529,
   "pairs": {
     "1000000BOBUSDT": {
       "gate_reasons": [
@@ -348,18 +348,17 @@
     },
     "BWETUSDT": {
       "gate_reasons": [
-        "score 28.0 below required 78.0",
+        "score 43.0 below required 78.0",
         "candidate has blocker(s)",
         "missing spot confirmation",
-        "15m OI not expanding",
         "missing spot volume"
       ],
       "last_bias": "LONG",
       "last_decision": "WAIT",
-      "last_price": 884.68,
-      "last_regime": "TREND_CONTINUATION",
-      "last_score": 28.0,
-      "last_seen_at_ms": 1791265854851
+      "last_price": 884.2,
+      "last_regime": "COUNTERTREND",
+      "last_score": 43.0,
+      "last_seen_at_ms": 1791266156150
     },
     "BZUSDT": {
       "gate_reasons": [
@@ -377,17 +376,18 @@
     },
     "CARVUSDT": {
       "gate_reasons": [
-        "score 62.0 below required 82.0",
+        "score 57.0 below required 82.0",
         "candidate has blocker(s)",
         "missing spot confirmation",
+        "15m OI not expanding",
         "missing spot volume"
       ],
       "last_bias": "LONG",
       "last_decision": "WAIT",
-      "last_price": 0.05174,
+      "last_price": 0.05165,
       "last_regime": "COUNTERTREND",
-      "last_score": 62.0,
-      "last_seen_at_ms": 1791265854851
+      "last_score": 57.0,
+      "last_seen_at_ms": 1791266156150
     },
     "CATUSDT": {
       "gate_reasons": [
@@ -948,17 +948,17 @@
     },
     "HANMIUSDT": {
       "gate_reasons": [
-        "score 36.0 below required 78.0",
+        "score 47.0 below required 78.0",
         "candidate has blocker(s)",
         "missing spot confirmation",
         "missing spot volume"
       ],
       "last_bias": "LONG",
       "last_decision": "WAIT",
-      "last_price": 203.69,
+      "last_price": 204.15,
       "last_regime": "COUNTERTREND",
-      "last_score": 36.0,
-      "last_seen_at_ms": 1791265854851
+      "last_score": 47.0,
+      "last_seen_at_ms": 1791266156150
     },
     "HBARUSDT": {
       "gate_reasons": [
@@ -1191,10 +1191,10 @@
       ],
       "last_bias": "LONG",
       "last_decision": "WAIT",
-      "last_price": 171.4,
+      "last_price": 170.83,
       "last_regime": "TREND_CONTINUATION",
       "last_score": 36.0,
-      "last_seen_at_ms": 1791265854851
+      "last_seen_at_ms": 1791266156150
     },
     "LITUSDT": {
       "gate_reasons": [
@@ -1494,10 +1494,10 @@
       "last_bias": "LONG",
       "last_decision": "WAIT",
       "last_position_check_ms": 1791223858000,
-      "last_price": 0.0023284,
+      "last_price": 0.0023263,
       "last_regime": "COUNTERTREND",
       "last_score": 55.0,
-      "last_seen_at_ms": 1791265854851,
+      "last_seen_at_ms": 1791266156150,
       "position_state": "EXIT_THESIS_BROKEN"
     },
     "ORCAUSDT": {
@@ -2238,24 +2238,22 @@
       "last_seen_at_ms": 1790880029158
     },
     "VTHOUSDT": {
-      "anchor_price": 0.0007327,
-      "anchor_regime": "TREND_CONTINUATION",
-      "anchor_score": 85.0,
-      "armed": true,
-      "armed_at_ms": 1791265268430,
-      "evidence_count": 3,
+      "active": true,
+      "confirmed_at_ms": 1791266156150,
+      "confirmed_bias": "LONG",
+      "confirmed_price": 0.0007395,
+      "confirmed_regime": "TREND_CONTINUATION",
+      "confirmed_score": 85.0,
       "gate_reasons": [
         "price follow-through 0.15012965743141926 below 0.50%"
       ],
-      "high_priority": false,
       "last_bias": "LONG",
-      "last_decision": "ARMED_WAITING_TRIGGER",
-      "last_fingerprint": "0.0007338|1.098|6708.1839|142974.7659|0.94|0.02|-0.14",
-      "last_price": 0.0007338,
+      "last_decision": "SHADOW_CONFIRMED",
+      "last_price": 0.0007395,
       "last_regime": "TREND_CONTINUATION",
-      "last_score": 79.0,
-      "last_seen_at_ms": 1791265854851,
-      "required_score": 82.0
+      "last_score": 85.0,
+      "last_seen_at_ms": 1791266156150,
+      "position_state": "HOLD"
     },
     "WAXPUSDT": {
       "gate_reasons": [
