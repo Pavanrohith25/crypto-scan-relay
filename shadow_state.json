@@ -1,6 +1,6 @@
 {
-  "last_processed_at_ms": 1791318350282,
-  "last_processed_generated_at_ms": 1791318347797,
+  "last_processed_at_ms": 1791318636896,
+  "last_processed_generated_at_ms": 1791318634344,
   "pairs": {
     "1000000BOBUSDT": {
       "gate_reasons": [
@@ -188,7 +188,7 @@
       "last_price": 0.3309,
       "last_regime": "COUNTERTREND",
       "last_score": 49.0,
-      "last_seen_at_ms": 1791318350282
+      "last_seen_at_ms": 1791318636896
     },
     "ARKUSDT": {
       "gate_reasons": [
@@ -1350,14 +1350,15 @@
     "MINAUSDT": {
       "gate_reasons": [
         "deep countertrend: 24h structure/OI conflicts with the setup",
-        "score 53.0 below required 82.0"
+        "score 48.0 below required 82.0",
+        "15m OI not expanding"
       ],
       "last_bias": "LONG",
       "last_decision": "BLOCKED_DEEP_COUNTERTREND",
-      "last_price": 0.11382,
+      "last_price": 0.11488,
       "last_regime": "COUNTERTREND_DEEP",
-      "last_score": 53.0,
-      "last_seen_at_ms": 1791318350282
+      "last_score": 48.0,
+      "last_seen_at_ms": 1791318636896
     },
     "MOVEUSDT": {
       "gate_reasons": [
@@ -1510,14 +1511,15 @@
         "score 53.0 below required 82.0",
         "candidate has blocker(s)",
         "missing spot confirmation",
+        "15m OI not expanding",
         "missing spot volume"
       ],
       "last_bias": "SHORT",
       "last_decision": "WAIT",
-      "last_price": 38.78,
+      "last_price": 38.77,
       "last_regime": "COUNTERTREND",
       "last_score": 53.0,
-      "last_seen_at_ms": 1791318350282
+      "last_seen_at_ms": 1791318636896
     },
     "ONEUSDT": {
       "active": false,
@@ -1547,10 +1549,10 @@
       ],
       "last_bias": "LONG",
       "last_decision": "WAIT",
-      "last_price": 2.943,
+      "last_price": 2.939,
       "last_regime": "TREND_CONTINUATION",
       "last_score": 51.0,
-      "last_seen_at_ms": 1791318350282
+      "last_seen_at_ms": 1791318636896
     },
     "PAYPUSDT": {
       "gate_reasons": [
@@ -2224,17 +2226,17 @@
     },
     "TWSTUSDT": {
       "gate_reasons": [
-        "score 38.0 below required 78.0",
+        "score 49.0 below required 78.0",
         "candidate has blocker(s)",
         "missing spot confirmation",
         "missing spot volume"
       ],
       "last_bias": "SHORT",
       "last_decision": "WAIT",
-      "last_price": 168.01,
+      "last_price": 168.47,
       "last_regime": "TREND_CONTINUATION",
-      "last_score": 38.0,
-      "last_seen_at_ms": 1791317124603
+      "last_score": 49.0,
+      "last_seen_at_ms": 1791318636896
     },
     "UMAUSDT": {
       "active": true,
