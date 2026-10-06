@@ -1,6 +1,6 @@
 {
-  "last_processed_at_ms": 1791279954599,
-  "last_processed_generated_at_ms": 1791279952094,
+  "last_processed_at_ms": 1791280256116,
+  "last_processed_generated_at_ms": 1791280253696,
   "minimum_candidate_score": 78.0,
   "pairs": {
     "1000000BOBUSDT": {
@@ -215,12 +215,13 @@
     },
     "API3USDT": {
       "gate_reasons": [
-        "score 63.0 below required 78.0"
+        "score 52.0 below required 78.0",
+        "15m OI is not expanding"
       ],
       "last_bias": "LONG",
-      "last_price": 0.3731,
-      "last_score": 63.0,
-      "last_seen_at_ms": 1791279954599,
+      "last_price": 0.3692,
+      "last_score": 52.0,
+      "last_seen_at_ms": 1791280256116,
       "qualifying_streak": 0,
       "required_score": 78.0
     },
@@ -380,14 +381,14 @@
     },
     "BRUSDT": {
       "gate_reasons": [
-        "score 60.0 below required 78.0",
+        "score 52.0 below required 78.0",
         "candidate has blocker(s)",
         "missing Binance spot confirmation"
       ],
       "last_bias": "LONG",
-      "last_price": 0.58648,
-      "last_score": 60.0,
-      "last_seen_at_ms": 1791279954599,
+      "last_price": 0.62819,
+      "last_score": 52.0,
+      "last_seen_at_ms": 1791280256116,
       "qualifying_streak": 0,
       "required_score": 78.0
     },
@@ -1853,8 +1854,8 @@
       "last_bias": "LONG",
       "last_price": 0.022,
       "last_return_pct": -0.49864,
-      "last_score": 54.0,
-      "last_seen_at_ms": 1791279954599,
+      "last_score": 60.0,
+      "last_seen_at_ms": 1791280256116,
       "mae_pct": -0.49864,
       "mfe_pct": 0.453309,
       "previous_score": 54.0,
@@ -2903,10 +2904,10 @@
         "15m OI is not expanding"
       ],
       "last_bias": "LONG",
-      "last_price": 0.4497,
+      "last_price": 0.4493,
       "last_return_pct": 0.158228,
       "last_score": 39.0,
-      "last_seen_at_ms": 1791279954599,
+      "last_seen_at_ms": 1791280256116,
       "mae_pct": 0.0,
       "mfe_pct": 0.158228,
       "previous_score": 72.0,
@@ -2954,12 +2955,12 @@
     "VTHOUSDT": {
       "gate_reasons": [
         "score 54.0 below required 82.0",
-        "long spot confirmation weak (B/S 0.612, flow -61,242)"
+        "long spot confirmation weak (B/S 0.497, flow -59,127)"
       ],
       "last_bias": "LONG",
-      "last_price": 0.0007396,
+      "last_price": 0.0007397,
       "last_score": 54.0,
-      "last_seen_at_ms": 1791279954599,
+      "last_seen_at_ms": 1791280256116,
       "qualifying_streak": 0,
       "required_score": 82.0
     },
