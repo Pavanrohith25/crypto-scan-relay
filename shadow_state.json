@@ -1,6 +1,6 @@
 {
-  "last_processed_at_ms": 1791247243166,
-  "last_processed_generated_at_ms": 1791247240622,
+  "last_processed_at_ms": 1791247536025,
+  "last_processed_generated_at_ms": 1791247533499,
   "pairs": {
     "1000000BOBUSDT": {
       "gate_reasons": [
@@ -375,18 +375,17 @@
     },
     "CARVUSDT": {
       "gate_reasons": [
-        "score 57.0 below required 82.0",
+        "score 68.0 below required 82.0",
         "candidate has blocker(s)",
         "missing spot confirmation",
-        "15m OI not expanding",
         "missing spot volume"
       ],
       "last_bias": "LONG",
       "last_decision": "WAIT",
-      "last_price": 0.05001,
-      "last_regime": "COUNTERTREND",
-      "last_score": 57.0,
-      "last_seen_at_ms": 1791247243166
+      "last_price": 0.05054,
+      "last_regime": "TREND_CONTINUATION",
+      "last_score": 68.0,
+      "last_seen_at_ms": 1791247536025
     },
     "CATUSDT": {
       "gate_reasons": [
@@ -954,10 +953,10 @@
       ],
       "last_bias": "LONG",
       "last_decision": "WAIT",
-      "last_price": 203.35,
+      "last_price": 202.87,
       "last_regime": "TREND_CONTINUATION",
       "last_score": 41.0,
-      "last_seen_at_ms": 1791247243166
+      "last_seen_at_ms": 1791247536025
     },
     "HBARUSDT": {
       "gate_reasons": [
@@ -1472,19 +1471,15 @@
       "confirmed_regime": "TREND_CONTINUATION",
       "confirmed_score": 90.0,
       "gate_reasons": [
-        "deep countertrend: 24h structure/OI conflicts with the setup",
-        "score 62.0 below required 78.0",
-        "candidate has blocker(s)",
-        "missing spot confirmation",
-        "missing spot volume"
+        "deep countertrend: 24h structure/OI conflicts with the setup"
       ],
       "last_bias": "LONG",
       "last_decision": "BLOCKED_DEEP_COUNTERTREND",
       "last_position_check_ms": 1791223858000,
-      "last_price": 0.0022914,
+      "last_price": 0.0022925,
       "last_regime": "COUNTERTREND_DEEP",
-      "last_score": 62.0,
-      "last_seen_at_ms": 1791247243166,
+      "last_score": 84.0,
+      "last_seen_at_ms": 1791247536025,
       "position_state": "EXIT_THESIS_BROKEN"
     },
     "ORCAUSDT": {
@@ -1505,14 +1500,15 @@
         "score 38.0 below required 78.0",
         "candidate has blocker(s)",
         "missing spot confirmation",
+        "15m OI not expanding",
         "missing spot volume"
       ],
       "last_bias": "SHORT",
       "last_decision": "WAIT",
-      "last_price": 15.33,
+      "last_price": 15.31,
       "last_regime": "COUNTERTREND",
       "last_score": 38.0,
-      "last_seen_at_ms": 1791247243166
+      "last_seen_at_ms": 1791247536025
     },
     "PDDUSDT": {
       "gate_reasons": [
@@ -1818,17 +1814,17 @@
       "confirmed_score": 77.0,
       "gate_reasons": [
         "deep countertrend: 24h structure/OI conflicts with the setup",
-        "score 40.0 below required 78.0",
+        "score 45.0 below required 78.0",
         "long spot weak (B/S 0.843, flow -78,711)",
         "15m OI not expanding"
       ],
       "last_bias": "LONG",
       "last_decision": "BLOCKED_DEEP_COUNTERTREND",
       "last_position_check_ms": 1791236451081,
-      "last_price": 0.06853,
+      "last_price": 0.06779,
       "last_regime": "COUNTERTREND_DEEP",
-      "last_score": 40.0,
-      "last_seen_at_ms": 1791246973906,
+      "last_score": 45.0,
+      "last_seen_at_ms": 1791247536025,
       "position_state": "EXIT_THESIS_BROKEN"
     },
     "SCRUSDT": {
@@ -2213,15 +2209,14 @@
     },
     "VTHOUSDT": {
       "gate_reasons": [
-        "score 49.0 below required 82.0",
-        "15m OI not expanding"
+        "score 57.0 below required 82.0"
       ],
       "last_bias": "LONG",
       "last_decision": "WAIT",
-      "last_price": 0.0006583,
-      "last_regime": "COUNTERTREND",
-      "last_score": 49.0,
-      "last_seen_at_ms": 1790848826590
+      "last_price": 0.0007256,
+      "last_regime": "TREND_CONTINUATION",
+      "last_score": 57.0,
+      "last_seen_at_ms": 1791247536025
     },
     "WAXPUSDT": {
       "gate_reasons": [
