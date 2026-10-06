@@ -1,6 +1,6 @@
 {
-  "last_processed_at_ms": 1791252943986,
-  "last_processed_generated_at_ms": 1791252941396,
+  "last_processed_at_ms": 1791253221166,
+  "last_processed_generated_at_ms": 1791253218190,
   "minimum_candidate_score": 78.0,
   "pairs": {
     "1000000BOBUSDT": {
@@ -429,7 +429,7 @@
       "last_bias": "LONG",
       "last_price": 876.3,
       "last_score": 38.0,
-      "last_seen_at_ms": 1791252943986,
+      "last_seen_at_ms": 1791253221166,
       "qualifying_streak": 0,
       "required_score": 78.0
     },
@@ -448,14 +448,15 @@
     },
     "CARVUSDT": {
       "gate_reasons": [
-        "score 57.0 below required 82.0",
+        "score 47.0 below required 82.0",
         "candidate has blocker(s)",
-        "missing Binance spot confirmation"
+        "missing Binance spot confirmation",
+        "15m OI is not expanding"
       ],
       "last_bias": "LONG",
-      "last_price": 0.05154,
-      "last_score": 57.0,
-      "last_seen_at_ms": 1791252943986,
+      "last_price": 0.05172,
+      "last_score": 47.0,
+      "last_seen_at_ms": 1791253221166,
       "qualifying_streak": 0,
       "required_score": 82.0
     },
@@ -1434,14 +1435,14 @@
     },
     "LGELECTRONICSUSDT": {
       "gate_reasons": [
-        "score 47.0 below required 78.0",
+        "score 43.0 below required 78.0",
         "candidate has blocker(s)",
         "missing Binance spot confirmation"
       ],
       "last_bias": "LONG",
-      "last_price": 171.46,
-      "last_score": 47.0,
-      "last_seen_at_ms": 1791252943986,
+      "last_price": 171.35,
+      "last_score": 43.0,
+      "last_seen_at_ms": 1791253221166,
       "qualifying_streak": 0,
       "required_score": 78.0
     },
@@ -1910,10 +1911,10 @@
         "pair cooldown active after deterioration"
       ],
       "last_bias": "LONG",
-      "last_price": 0.0023012,
+      "last_price": 0.002308,
       "last_return_pct": -0.483386,
-      "last_score": 65.0,
-      "last_seen_at_ms": 1791252943986,
+      "last_score": 59.0,
+      "last_seen_at_ms": 1791253221166,
       "mae_pct": -0.483386,
       "mfe_pct": 0.857902,
       "previous_score": 67.0,
@@ -2866,12 +2867,13 @@
     },
     "VTHOUSDT": {
       "gate_reasons": [
-        "score 71.0 below required 82.0"
+        "score 66.0 below required 82.0",
+        "15m OI is not expanding"
       ],
       "last_bias": "LONG",
-      "last_price": 0.0007336,
-      "last_score": 71.0,
-      "last_seen_at_ms": 1791252943986,
+      "last_price": 0.0007339,
+      "last_score": 66.0,
+      "last_seen_at_ms": 1791253221166,
       "qualifying_streak": 0,
       "required_score": 82.0
     },
