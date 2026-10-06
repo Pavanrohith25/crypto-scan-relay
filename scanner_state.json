@@ -1,6 +1,6 @@
 {
-  "last_processed_at_ms": 1791321945166,
-  "last_processed_generated_at_ms": 1791321942614,
+  "last_processed_at_ms": 1791322250329,
+  "last_processed_generated_at_ms": 1791322247866,
   "minimum_candidate_score": 78.0,
   "pairs": {
     "1000000BOBUSDT": {
@@ -220,9 +220,9 @@
         "15m OI is not expanding"
       ],
       "last_bias": "LONG",
-      "last_price": 0.3334,
+      "last_price": 0.334,
       "last_score": 67.0,
-      "last_seen_at_ms": 1791321945166,
+      "last_seen_at_ms": 1791322250329,
       "qualifying_streak": 0,
       "required_score": 82.0
     },
@@ -1661,12 +1661,13 @@
     },
     "MINAUSDT": {
       "gate_reasons": [
-        "score 72.0 below required 82.0"
+        "score 41.0 below required 82.0",
+        "long spot confirmation weak (B/S 0.904, flow -63,342)"
       ],
       "last_bias": "LONG",
-      "last_price": 0.12232,
-      "last_score": 72.0,
-      "last_seen_at_ms": 1791321945166,
+      "last_price": 0.12251,
+      "last_score": 41.0,
+      "last_seen_at_ms": 1791322250329,
       "qualifying_streak": 0,
       "required_score": 82.0
     },
@@ -1824,10 +1825,10 @@
         "15m OI is not expanding"
       ],
       "last_bias": "LONG",
-      "last_price": 15.598,
+      "last_price": 15.608,
       "last_return_pct": -0.096253,
       "last_score": 52.0,
-      "last_seen_at_ms": 1791321945166,
+      "last_seen_at_ms": 1791322250329,
       "mae_pct": -0.224589,
       "mfe_pct": 0.0,
       "previous_score": 69.0,
@@ -1969,13 +1970,12 @@
     },
     "ORCAUSDT": {
       "gate_reasons": [
-        "score 27.0 below required 78.0",
-        "15m OI is not expanding"
+        "score 42.0 below required 78.0"
       ],
       "last_bias": "LONG",
-      "last_price": 3.004,
-      "last_score": 27.0,
-      "last_seen_at_ms": 1791321653826,
+      "last_price": 3.011,
+      "last_score": 42.0,
+      "last_seen_at_ms": 1791322250329,
       "qualifying_streak": 0,
       "required_score": 78.0
     },
@@ -3171,9 +3171,9 @@
         "missing Binance spot confirmation"
       ],
       "last_bias": "SHORT",
-      "last_price": 0.07994,
+      "last_price": 0.08017,
       "last_score": 57.0,
-      "last_seen_at_ms": 1791321945166,
+      "last_seen_at_ms": 1791322250329,
       "qualifying_streak": 0,
       "required_score": 78.0
     }
