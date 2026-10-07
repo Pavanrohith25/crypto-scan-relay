@@ -1,6 +1,6 @@
 {
-  "last_processed_at_ms": 1791384077318,
-  "last_processed_generated_at_ms": 1791384074795,
+  "last_processed_at_ms": 1791384387572,
+  "last_processed_generated_at_ms": 1791384385175,
   "pairs": {
     "1000000BOBUSDT": {
       "gate_reasons": [
@@ -309,10 +309,10 @@
       ],
       "last_bias": "LONG",
       "last_decision": "WAIT",
-      "last_price": 0.52647,
+      "last_price": 0.53253,
       "last_regime": "COUNTERTREND",
       "last_score": 73.0,
-      "last_seen_at_ms": 1791384077318
+      "last_seen_at_ms": 1791384387572
     },
     "BSPUSDT": {
       "gate_reasons": [
@@ -1348,15 +1348,15 @@
     "MINAUSDT": {
       "gate_reasons": [
         "deep countertrend: 24h structure/OI conflicts with the setup",
-        "score 69.0 below required 78.0",
+        "score 75.0 below required 78.0",
         "15m OI not expanding"
       ],
       "last_bias": "LONG",
       "last_decision": "BLOCKED_DEEP_COUNTERTREND",
-      "last_price": 0.0954,
+      "last_price": 0.09495,
       "last_regime": "COUNTERTREND_DEEP",
-      "last_score": 69.0,
-      "last_seen_at_ms": 1791384077318
+      "last_score": 75.0,
+      "last_seen_at_ms": 1791384387572
     },
     "MOVEUSDT": {
       "gate_reasons": [
@@ -1434,10 +1434,10 @@
       ],
       "last_bias": "SHORT",
       "last_decision": "WAIT",
-      "last_price": 3.234,
+      "last_price": 3.246,
       "last_regime": "COUNTERTREND",
       "last_score": 73.0,
-      "last_seen_at_ms": 1791384077318
+      "last_seen_at_ms": 1791384387572
     },
     "NEARUSDT": {
       "gate_reasons": [
@@ -1481,10 +1481,10 @@
       "last_bias": "LONG",
       "last_decision": "BLOCKED_DEEP_COUNTERTREND",
       "last_position_check_ms": 1791377461144,
-      "last_price": 14.678,
+      "last_price": 14.695,
       "last_regime": "COUNTERTREND_DEEP",
       "last_score": 46.0,
-      "last_seen_at_ms": 1791384077318,
+      "last_seen_at_ms": 1791384387572,
       "position_state": "EXIT_THESIS_BROKEN"
     },
     "OGNUSDT": {
@@ -1884,17 +1884,19 @@
       "confirmed_price": 0.06325,
       "confirmed_regime": "TREND_CONTINUATION",
       "confirmed_score": 77.0,
-      "evidence_count": 1,
-      "gate_reasons": [],
+      "evidence_count": 2,
+      "gate_reasons": [
+        "price follow-through 0.1772807854902414 below 0.50%"
+      ],
       "high_priority": false,
       "last_bias": "LONG",
-      "last_decision": "ARMED",
-      "last_fingerprint": "0.07333|1.183|96624.8438|1152306.2192|4.13|9.45|3.82",
+      "last_decision": "ARMED_WAITING_TRIGGER",
+      "last_fingerprint": "0.07346|1.183|96624.8438|1152306.2192|2.27|9.14|3.82",
       "last_position_check_ms": 1791236451081,
-      "last_price": 0.07333,
+      "last_price": 0.07346,
       "last_regime": "TREND_CONTINUATION",
-      "last_score": 83.0,
-      "last_seen_at_ms": 1791384077318,
+      "last_score": 77.0,
+      "last_seen_at_ms": 1791384387572,
       "position_state": "EXIT_THESIS_BROKEN",
       "required_score": 78.0
     },
