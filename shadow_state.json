@@ -1,6 +1,6 @@
 {
-  "last_processed_at_ms": 1791359437362,
-  "last_processed_generated_at_ms": 1791359434916,
+  "last_processed_at_ms": 1791359728776,
+  "last_processed_generated_at_ms": 1791359726230,
   "pairs": {
     "1000000BOBUSDT": {
       "gate_reasons": [
@@ -953,11 +953,11 @@
       ],
       "last_bias": "LONG",
       "last_decision": "SHADOW_CONFIRMED",
-      "last_position_check_ms": 1791359437362,
-      "last_price": 0.1997,
+      "last_position_check_ms": 1791359728776,
+      "last_price": 0.19934,
       "last_regime": "TREND_CONTINUATION",
-      "last_score": 45.0,
-      "last_seen_at_ms": 1791359437362,
+      "last_score": 33.0,
+      "last_seen_at_ms": 1791359728776,
       "position_state": "HOLD_PROTECT"
     },
     "GUSDT": {
@@ -1347,14 +1347,15 @@
     "MINAUSDT": {
       "gate_reasons": [
         "deep countertrend: 24h structure/OI conflicts with the setup",
+        "score 69.0 below required 78.0",
         "15m OI not expanding"
       ],
       "last_bias": "LONG",
       "last_decision": "BLOCKED_DEEP_COUNTERTREND",
-      "last_price": 0.10507,
+      "last_price": 0.10414,
       "last_regime": "COUNTERTREND_DEEP",
-      "last_score": 79.0,
-      "last_seen_at_ms": 1791359437362
+      "last_score": 69.0,
+      "last_seen_at_ms": 1791359728776
     },
     "MOVEUSDT": {
       "gate_reasons": [
@@ -1476,11 +1477,11 @@
       ],
       "last_bias": "LONG",
       "last_decision": "SHADOW_CONFIRMED",
-      "last_position_check_ms": 1791359437362,
-      "last_price": 16.908,
+      "last_position_check_ms": 1791359728776,
+      "last_price": 16.97,
       "last_regime": "TREND_CONTINUATION",
       "last_score": 71.0,
-      "last_seen_at_ms": 1791359437362,
+      "last_seen_at_ms": 1791359728776,
       "position_state": "HOLD_STRONG"
     },
     "OGNUSDT": {
@@ -1883,10 +1884,10 @@
       "last_bias": "LONG",
       "last_decision": "WAIT",
       "last_position_check_ms": 1791236451081,
-      "last_price": 0.0729,
+      "last_price": 0.07256,
       "last_regime": "TREND_CONTINUATION",
       "last_score": 63.0,
-      "last_seen_at_ms": 1791359437362,
+      "last_seen_at_ms": 1791359728776,
       "position_state": "EXIT_THESIS_BROKEN"
     },
     "SCRUSDT": {
@@ -2218,17 +2219,18 @@
     },
     "TWSTUSDT": {
       "gate_reasons": [
-        "score 43.0 below required 78.0",
+        "score 38.0 below required 78.0",
         "candidate has blocker(s)",
         "missing spot confirmation",
+        "15m OI not expanding",
         "missing spot volume"
       ],
       "last_bias": "SHORT",
       "last_decision": "WAIT",
-      "last_price": 167.19,
+      "last_price": 166.89,
       "last_regime": "COUNTERTREND",
-      "last_score": 43.0,
-      "last_seen_at_ms": 1791359437362
+      "last_score": 38.0,
+      "last_seen_at_ms": 1791359728776
     },
     "UMAUSDT": {
       "active": true,
