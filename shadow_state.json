@@ -1,6 +1,6 @@
 {
-  "last_processed_at_ms": 1791344137295,
-  "last_processed_generated_at_ms": 1791344134509,
+  "last_processed_at_ms": 1791344460134,
+  "last_processed_generated_at_ms": 1791344457691,
   "pairs": {
     "1000000BOBUSDT": {
       "gate_reasons": [
@@ -182,16 +182,19 @@
       "anchor_score": 85.0,
       "armed": true,
       "armed_at_ms": 1791344137295,
-      "evidence_count": 1,
-      "gate_reasons": [],
+      "evidence_count": 2,
+      "gate_reasons": [
+        "price follow-through 0.3022061045632851 below 0.75%",
+        "countertrend reclaim not strong enough"
+      ],
       "high_priority": false,
       "last_bias": "LONG",
-      "last_decision": "ARMED",
-      "last_fingerprint": "0.3309|1.261|49290.6586|427506.766|0.36|3.56|2.33",
-      "last_price": 0.3309,
+      "last_decision": "ARMED_WAITING_TRIGGER",
+      "last_fingerprint": "0.3319|1.261|49290.6586|427506.766|0.57|3.5|2.33",
+      "last_price": 0.3319,
       "last_regime": "COUNTERTREND",
       "last_score": 85.0,
-      "last_seen_at_ms": 1791344137295,
+      "last_seen_at_ms": 1791344460134,
       "required_score": 82.0
     },
     "ARKUSDT": {
@@ -263,17 +266,17 @@
     },
     "BNCUSDT": {
       "gate_reasons": [
-        "score 55.0 below required 78.0",
+        "score 49.0 below required 78.0",
         "candidate has blocker(s)",
         "missing spot confirmation",
         "missing spot volume"
       ],
       "last_bias": "LONG",
       "last_decision": "WAIT",
-      "last_price": 5.724,
+      "last_price": 5.726,
       "last_regime": "COUNTERTREND",
-      "last_score": 55.0,
-      "last_seen_at_ms": 1791344137295
+      "last_score": 49.0,
+      "last_seen_at_ms": 1791344460134
     },
     "BOTUSDT": {
       "gate_reasons": [
@@ -364,18 +367,17 @@
     },
     "BWETUSDT": {
       "gate_reasons": [
-        "score 38.0 below required 78.0",
+        "score 49.0 below required 78.0",
         "candidate has blocker(s)",
         "missing spot confirmation",
-        "15m OI not expanding",
         "missing spot volume"
       ],
       "last_bias": "LONG",
       "last_decision": "WAIT",
-      "last_price": 940.83,
+      "last_price": 942.96,
       "last_regime": "COUNTERTREND",
-      "last_score": 38.0,
-      "last_seen_at_ms": 1791344137295
+      "last_score": 49.0,
+      "last_seen_at_ms": 1791344460134
     },
     "BZUSDT": {
       "gate_reasons": [
@@ -1482,11 +1484,11 @@
       ],
       "last_bias": "LONG",
       "last_decision": "SHADOW_CONFIRMED",
-      "last_position_check_ms": 1791344137295,
-      "last_price": 16.545,
+      "last_position_check_ms": 1791344460134,
+      "last_price": 16.385,
       "last_regime": "TREND_CONTINUATION",
       "last_score": 58.0,
-      "last_seen_at_ms": 1791344137295,
+      "last_seen_at_ms": 1791344460134,
       "position_state": "HOLD_PROTECT"
     },
     "OGNUSDT": {
@@ -1882,16 +1884,16 @@
       "confirmed_regime": "TREND_CONTINUATION",
       "confirmed_score": 77.0,
       "gate_reasons": [
-        "score 65.0 below required 78.0",
+        "score 60.0 below required 78.0",
         "15m OI not expanding"
       ],
       "last_bias": "LONG",
       "last_decision": "WAIT",
       "last_position_check_ms": 1791236451081,
-      "last_price": 0.06864,
+      "last_price": 0.06793,
       "last_regime": "TREND_CONTINUATION",
-      "last_score": 65.0,
-      "last_seen_at_ms": 1791344137295,
+      "last_score": 60.0,
+      "last_seen_at_ms": 1791344460134,
       "position_state": "EXIT_THESIS_BROKEN"
     },
     "SCRUSDT": {
@@ -2223,17 +2225,17 @@
     },
     "TWSTUSDT": {
       "gate_reasons": [
-        "score 49.0 below required 78.0",
+        "score 43.0 below required 78.0",
         "candidate has blocker(s)",
         "missing spot confirmation",
         "missing spot volume"
       ],
       "last_bias": "SHORT",
       "last_decision": "WAIT",
-      "last_price": 169.2,
+      "last_price": 168.84,
       "last_regime": "TREND_CONTINUATION",
-      "last_score": 49.0,
-      "last_seen_at_ms": 1791344137295
+      "last_score": 43.0,
+      "last_seen_at_ms": 1791344460134
     },
     "UMAUSDT": {
       "active": true,
