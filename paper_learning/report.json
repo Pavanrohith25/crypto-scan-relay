@@ -1,0 +1,47 @@
+{
+  "as_of_ms": 1791382577248,
+  "limitations": [
+    "Spot proxy; shorts are hypothetical, not futures execution.",
+    "Scores are uncalibrated; first 30 resolved trades per side are warmup.",
+    "Costs are assumptions, not observed funding or borrow costs.",
+    "MAE/MFE include full exit candle; intrabar ordering is unknown.",
+    "Correlated trades, incomplete crypto universe, no portfolio/leverage simulation.",
+    "No live strategy promotion or Telegram integration."
+  ],
+  "mode": "PAPER_ONLY",
+  "panels": {
+    "LONG": {
+      "data_errors": 0,
+      "entries": 0,
+      "fixed_half_brier_baseline": null,
+      "mean_net_pct": null,
+      "model_updates": 0,
+      "open_or_pending": 0,
+      "prequential_brier": null,
+      "resolved": 0,
+      "scored_resolved": 0,
+      "selected_entries": 0,
+      "selected_mean_stressed_pct": null,
+      "selected_resolved": 0,
+      "wins": 0
+    },
+    "SHORT": {
+      "data_errors": 0,
+      "entries": 0,
+      "fixed_half_brier_baseline": null,
+      "mean_net_pct": null,
+      "model_updates": 0,
+      "open_or_pending": 0,
+      "prequential_brier": null,
+      "resolved": 0,
+      "scored_resolved": 0,
+      "selected_entries": 0,
+      "selected_mean_stressed_pct": null,
+      "selected_resolved": 0,
+      "wins": 0
+    }
+  },
+  "promotion": "BLOCKED",
+  "started_ms": 1791382577243,
+  "version": "spot-paper-online-v1"
+}
