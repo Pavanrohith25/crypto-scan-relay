@@ -1,6 +1,6 @@
 {
-  "last_processed_at_ms": 1791468684567,
-  "last_processed_generated_at_ms": 1791468682124,
+  "last_processed_at_ms": 1791468964525,
+  "last_processed_generated_at_ms": 1791468962059,
   "minimum_candidate_score": 78.0,
   "pairs": {
     "1000000BOBUSDT": {
@@ -491,9 +491,9 @@
         "missing Binance spot confirmation"
       ],
       "last_bias": "LONG",
-      "last_price": 1016.65,
+      "last_price": 1020.61,
       "last_score": 49.0,
-      "last_seen_at_ms": 1791468684567,
+      "last_seen_at_ms": 1791468964525,
       "qualifying_streak": 0,
       "required_score": 78.0
     },
@@ -1045,12 +1045,15 @@
       "sl2_hit_at_ms": 1791003325650
     },
     "ERAUSDT": {
-      "gate_reasons": [],
+      "gate_reasons": [
+        "score 74.0 below required 82.0",
+        "15m OI is not expanding"
+      ],
       "last_bias": "LONG",
-      "last_price": 0.06942,
-      "last_score": 85.0,
-      "last_seen_at_ms": 1791468684567,
-      "qualifying_streak": 1,
+      "last_price": 0.06854,
+      "last_score": 74.0,
+      "last_seen_at_ms": 1791468964525,
+      "qualifying_streak": 0,
       "required_score": 82.0
     },
     "ESPORTSUSDT": {
@@ -1851,10 +1854,10 @@
         "pair cooldown active after deterioration"
       ],
       "last_bias": "LONG",
-      "last_price": 0.083,
+      "last_price": 0.08236,
       "last_return_pct": -0.278215,
-      "last_score": 77.0,
-      "last_seen_at_ms": 1791468684567,
+      "last_score": 72.0,
+      "last_seen_at_ms": 1791468964525,
       "mae_pct": -0.278215,
       "mfe_pct": 1.899117,
       "previous_score": 44.0,
@@ -1932,9 +1935,9 @@
         "15m OI is not expanding"
       ],
       "last_bias": "SHORT",
-      "last_price": 3.315,
+      "last_price": 3.312,
       "last_score": 62.0,
-      "last_seen_at_ms": 1791468684567,
+      "last_seen_at_ms": 1791468964525,
       "qualifying_streak": 0,
       "required_score": 78.0
     },
@@ -2073,10 +2076,10 @@
         "long spot confirmation weak (B/S 1.033, flow 115,488)"
       ],
       "last_bias": "LONG",
-      "last_price": 0.04153,
+      "last_price": 0.04099,
       "last_return_pct": -0.49864,
       "last_score": 44.0,
-      "last_seen_at_ms": 1791468684567,
+      "last_seen_at_ms": 1791468964525,
       "mae_pct": -0.49864,
       "mfe_pct": 0.453309,
       "previous_score": 54.0,
