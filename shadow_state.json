@@ -1,6 +1,6 @@
 {
-  "last_processed_at_ms": 1791419742844,
-  "last_processed_generated_at_ms": 1791419740316,
+  "last_processed_at_ms": 1791420054573,
+  "last_processed_generated_at_ms": 1791420052050,
   "pairs": {
     "1000000BOBUSDT": {
       "gate_reasons": [
@@ -362,17 +362,17 @@
     },
     "BWETUSDT": {
       "gate_reasons": [
-        "score 38.0 below required 78.0",
+        "score 43.0 below required 78.0",
         "candidate has blocker(s)",
         "missing spot confirmation",
         "missing spot volume"
       ],
       "last_bias": "LONG",
       "last_decision": "WAIT",
-      "last_price": 960.32,
+      "last_price": 959.39,
       "last_regime": "TREND_CONTINUATION",
-      "last_score": 38.0,
-      "last_seen_at_ms": 1791419742844
+      "last_score": 43.0,
+      "last_seen_at_ms": 1791420054573
     },
     "BZUSDT": {
       "gate_reasons": [
@@ -959,11 +959,11 @@
       ],
       "last_bias": "LONG",
       "last_decision": "SHADOW_CONFIRMED",
-      "last_position_check_ms": 1791419742844,
-      "last_price": 0.1952,
+      "last_position_check_ms": 1791420054573,
+      "last_price": 0.19463,
       "last_regime": "TREND_CONTINUATION",
-      "last_score": 39.0,
-      "last_seen_at_ms": 1791419742844,
+      "last_score": 34.0,
+      "last_seen_at_ms": 1791420054573,
       "position_state": "HOLD_STRONG"
     },
     "GUSDT": {
@@ -1376,15 +1376,14 @@
     "MINAUSDT": {
       "gate_reasons": [
         "deep countertrend: 24h structure/OI conflicts with the setup",
-        "score 69.0 below required 78.0",
         "15m OI not expanding"
       ],
       "last_bias": "LONG",
       "last_decision": "BLOCKED_DEEP_COUNTERTREND",
-      "last_price": 0.09093,
+      "last_price": 0.09154,
       "last_regime": "COUNTERTREND_DEEP",
-      "last_score": 69.0,
-      "last_seen_at_ms": 1791419742844
+      "last_score": 79.0,
+      "last_seen_at_ms": 1791420054573
     },
     "MOVEUSDT": {
       "gate_reasons": [
@@ -1455,18 +1454,17 @@
     },
     "NATGASUSDT": {
       "gate_reasons": [
-        "score 58.0 below required 78.0",
+        "score 67.0 below required 78.0",
         "candidate has blocker(s)",
         "missing spot confirmation",
-        "15m OI not expanding",
         "missing spot volume"
       ],
       "last_bias": "SHORT",
       "last_decision": "WAIT",
-      "last_price": 3.329,
+      "last_price": 3.337,
       "last_regime": "COUNTERTREND",
-      "last_score": 58.0,
-      "last_seen_at_ms": 1791416478860
+      "last_score": 67.0,
+      "last_seen_at_ms": 1791420054573
     },
     "NEARUSDT": {
       "gate_reasons": [
@@ -1495,32 +1493,23 @@
     },
     "NMRUSDT": {
       "active": false,
-      "anchor_price": 14.98,
-      "anchor_regime": "COUNTERTREND",
-      "anchor_score": 80.0,
-      "armed": true,
-      "armed_at_ms": 1791417966019,
       "closed_at_ms": 1791377461144,
       "confirmed_at_ms": 1791326454507,
       "confirmed_bias": "LONG",
       "confirmed_price": 15.905,
       "confirmed_regime": "TREND_CONTINUATION",
       "confirmed_score": 80.0,
-      "evidence_count": 7,
       "gate_reasons": [
         "countertrend reclaim not strong enough"
       ],
-      "high_priority": false,
       "last_bias": "LONG",
-      "last_decision": "ARMED_WAITING_TRIGGER",
-      "last_fingerprint": "15.184|1.516|104627.144|509828.7142|-0.22|3.09|2.47",
+      "last_decision": "EXPIRED",
       "last_position_check_ms": 1791377461144,
-      "last_price": 15.184,
+      "last_price": 15.226,
       "last_regime": "COUNTERTREND",
-      "last_score": 75.0,
-      "last_seen_at_ms": 1791419742844,
-      "position_state": "EXIT_THESIS_BROKEN",
-      "required_score": 78.0
+      "last_score": 80.0,
+      "last_seen_at_ms": 1791420054573,
+      "position_state": "EXIT_THESIS_BROKEN"
     },
     "OGNUSDT": {
       "active": true,
@@ -1599,7 +1588,7 @@
       "last_price": 13.11,
       "last_regime": "COUNTERTREND",
       "last_score": 38.0,
-      "last_seen_at_ms": 1791419742844
+      "last_seen_at_ms": 1791420054573
     },
     "PAYPUSDT": {
       "gate_reasons": [
