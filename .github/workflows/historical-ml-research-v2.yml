@@ -1,0 +1,88 @@
+name: Futures ML Research v2 - 60pct holdout gate
+
+on:
+  push:
+    branches: [research/model-v2-60pct]
+    paths:
+      - historical_futures_backfill_v2.py
+      - historical_futures_dataset_v2.py
+      - train_swing_model_v2.py
+      - .github/workflows/historical-ml-research-v2.yml
+  workflow_dispatch:
+    inputs:
+      history_days:
+        description: Historical days
+        default: "365"
+        type: string
+      universe_size:
+        description: Archived futures contracts to sample
+        default: "200"
+        type: string
+
+permissions:
+  contents: read
+
+concurrency:
+  group: futures-ml-research-v2
+  cancel-in-progress: false
+
+jobs:
+  research:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    env:
+      OMP_NUM_THREADS: "2"
+      OPENBLAS_NUM_THREADS: "2"
+      ML_HISTORY_DAYS: ${{ inputs.history_days || '365' }}
+      ML_UNIVERSE_SIZE: ${{ inputs.universe_size || '200' }}
+      ML_RAW_DIR: _futures_raw_v2
+      ML_ARTIFACT_DIR: _ml_artifact_v2
+      ML_TOP_N: "30"
+      ML_SAMPLE_MINUTES: "15"
+      ML_MIN_24H_QUOTE_VOLUME: "10000000"
+      ML_ROUND_TRIP_COST_PCT: "0.12"
+      ML_FUNDING_RESERVE_PCT: "0.06"
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install pinned research dependencies
+        run: python -m pip install numpy==2.2.6 pandas==2.3.3 scikit-learn==1.8.0 lightgbm==4.6.0
+      - name: Test labels, leakage, portfolio and rejection gates
+        run: |
+          python -m compileall -q historical_futures_backfill_v2.py historical_futures_dataset_v2.py train_swing_model_v2.py
+          python -m unittest discover -s research_tests -v
+          python -m unittest discover -s tests -v
+      - name: Backfill 365 days of 200 archived USD-M futures contracts
+        run: python -u historical_futures_backfill_v2.py
+      - name: Build historical entry features and clean path labels
+        run: python -u historical_futures_dataset_v2.py
+      - name: Calibrate three models, select on validation, evaluate one holdout
+        run: python -u train_swing_model_v2.py
+      - name: Write research summary
+        if: always()
+        run: |
+          python - <<'PY'
+          import json, os
+          from pathlib import Path
+          p = Path('_ml_artifact_v2/swing_model_v2_report.json')
+          with open(os.environ['GITHUB_STEP_SUMMARY'], 'a') as f:
+              if not p.exists():
+                  f.write('Research has no completed model report. See job logs and coverage manifest.\n')
+              else:
+                  r = json.loads(p.read_text())
+                  f.write('Research only; live alerts are disabled.\n\n')
+                  f.write('```json\n' + json.dumps({k: r.get(k) for k in ['selected_model', 'promotable_to_live_shadow', 'test', 'rejection_reason']}, indent=2) + '\n```\n')
+          PY
+      - name: Preserve model, dataset, metrics, trade ledger and coverage evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: futures-ml-research-v2-${{ github.run_id }}
+          path: |
+            _ml_artifact_v2/
+            _futures_raw_v2/manifest.json
+          retention-days: 30
+          if-no-files-found: warn
+          compression-level: 0
