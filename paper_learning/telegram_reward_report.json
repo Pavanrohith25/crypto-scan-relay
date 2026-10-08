@@ -1,0 +1,28 @@
+{
+  "as_of_ms": 1791491377413,
+  "enabled_after_ms": 1791491254604,
+  "evaluated_forecasts_after_warmup": 0,
+  "excluded": 0,
+  "forward_squared_error": null,
+  "limitations": [
+    "Paper spot paths and assumed costs, not actual fills or user exits.",
+    "R sums are not portfolio returns; trades may overlap and correlate.",
+    "No causal proof of why a trade lost; model learns feature/outcome associations.",
+    "Shadow learner does not change live alert rules."
+  ],
+  "losses": 0,
+  "mean_reward_r": null,
+  "model_updates": {
+    "LONG": 0,
+    "SHORT": 0
+  },
+  "pending": 0,
+  "promotion": "BLOCKED",
+  "scored_outcomes": 0,
+  "sent_calls": 0,
+  "total_reward_r": 0,
+  "total_stressed_reward_r": 0,
+  "version": "telegram-reward-v1",
+  "wins": 0,
+  "zero_reward_baseline_squared_error": null
+}
