@@ -1,6 +1,6 @@
 {
-  "last_processed_at_ms": 1791474068629,
-  "last_processed_generated_at_ms": 1791474066101,
+  "last_processed_at_ms": 1791474337018,
+  "last_processed_generated_at_ms": 1791474334510,
   "minimum_candidate_score": 78.0,
   "pairs": {
     "1000000BOBUSDT": {
@@ -486,14 +486,14 @@
     },
     "BWETUSDT": {
       "gate_reasons": [
-        "score 49.0 below required 78.0",
+        "score 43.0 below required 78.0",
         "candidate has blocker(s)",
         "missing Binance spot confirmation"
       ],
       "last_bias": "LONG",
-      "last_price": 1010.38,
-      "last_score": 49.0,
-      "last_seen_at_ms": 1791474068629,
+      "last_price": 1011.0,
+      "last_score": 43.0,
+      "last_seen_at_ms": 1791474337018,
       "qualifying_streak": 0,
       "required_score": 78.0
     },
@@ -825,9 +825,9 @@
         "15m OI is not expanding"
       ],
       "last_bias": "LONG",
-      "last_price": 0.03346,
+      "last_price": 0.03242,
       "last_score": 22.0,
-      "last_seen_at_ms": 1791474068629,
+      "last_seen_at_ms": 1791474337018,
       "qualifying_streak": 0,
       "required_score": 82.0
     },
@@ -1854,12 +1854,14 @@
         "strength": "VERY_STRONG",
         "warnings": []
       },
-      "gate_reasons": [],
+      "gate_reasons": [
+        "pair cooldown active after deterioration"
+      ],
       "last_bias": "LONG",
-      "last_price": 0.07999,
+      "last_price": 0.08007,
       "last_return_pct": -3.288599,
       "last_score": 70.0,
-      "last_seen_at_ms": 1791474068629,
+      "last_seen_at_ms": 1791474337018,
       "mae_pct": -3.288599,
       "mfe_pct": 0.459437,
       "previous_score": 70.0,
@@ -1939,9 +1941,9 @@
         "missing Binance spot confirmation"
       ],
       "last_bias": "SHORT",
-      "last_price": 3.266,
+      "last_price": 3.263,
       "last_score": 67.0,
-      "last_seen_at_ms": 1791474068629,
+      "last_seen_at_ms": 1791474337018,
       "qualifying_streak": 0,
       "required_score": 78.0
     },
@@ -2810,9 +2812,9 @@
         "15m OI is not expanding"
       ],
       "last_bias": "LONG",
-      "last_price": 0.004875,
+      "last_price": 0.004901,
       "last_score": 58.0,
-      "last_seen_at_ms": 1791474068629,
+      "last_seen_at_ms": 1791474337018,
       "qualifying_streak": 0,
       "required_score": 82.0
     },
