@@ -1,6 +1,6 @@
 {
-  "last_processed_at_ms": 1791490405995,
-  "last_processed_generated_at_ms": 1791490403523,
+  "last_processed_at_ms": 1791490526008,
+  "last_processed_generated_at_ms": 1791490523554,
   "minimum_candidate_score": 78.0,
   "pairs": {
     "1000000BOBUSDT": {
@@ -486,14 +486,15 @@
     },
     "BWETUSDT": {
       "gate_reasons": [
-        "score 43.0 below required 78.0",
+        "score 38.0 below required 78.0",
         "candidate has blocker(s)",
-        "missing Binance spot confirmation"
+        "missing Binance spot confirmation",
+        "15m OI is not expanding"
       ],
       "last_bias": "LONG",
-      "last_price": 1002.5,
-      "last_score": 43.0,
-      "last_seen_at_ms": 1791490405995,
+      "last_price": 1003.24,
+      "last_score": 38.0,
+      "last_seen_at_ms": 1791490526008,
       "qualifying_streak": 0,
       "required_score": 78.0
     },
@@ -505,9 +506,9 @@
         "15m OI is not expanding"
       ],
       "last_bias": "LONG",
-      "last_price": 102.05,
+      "last_price": 102.19,
       "last_score": 54.0,
-      "last_seen_at_ms": 1791490405995,
+      "last_seen_at_ms": 1791490526008,
       "qualifying_streak": 0,
       "required_score": 78.0
     },
@@ -864,15 +865,16 @@
       },
       "gate_reasons": [],
       "last_bias": "LONG",
-      "last_price": 0.03497,
-      "last_return_pct": -0.199772,
-      "last_score": 85.0,
-      "last_seen_at_ms": 1791490405995,
-      "mae_pct": -0.199772,
+      "last_price": 0.03466,
+      "last_return_pct": -1.084475,
+      "last_score": 79.0,
+      "last_seen_at_ms": 1791490526008,
+      "mae_pct": -1.084475,
       "mfe_pct": 0.0,
-      "previous_score": 85.0,
+      "previous_score": 79.0,
       "qualifying_streak": 2,
-      "required_score": 82.0
+      "required_score": 82.0,
+      "sl1_hit_at_ms": 1791490526008
     },
     "CTUSDT": {
       "gate_reasons": [
@@ -1897,19 +1899,16 @@
         "strength": "VERY_STRONG",
         "warnings": []
       },
-      "gate_reasons": [
-        "score 75.0 below required 78.0",
-        "15m OI is not expanding"
-      ],
+      "gate_reasons": [],
       "last_bias": "LONG",
-      "last_price": 0.07738,
+      "last_price": 0.07767,
       "last_return_pct": 3.035081,
-      "last_score": 75.0,
-      "last_seen_at_ms": 1791490405995,
+      "last_score": 80.0,
+      "last_seen_at_ms": 1791490526008,
       "mae_pct": -0.670083,
       "mfe_pct": 3.113914,
       "previous_score": 69.0,
-      "qualifying_streak": 0,
+      "qualifying_streak": 1,
       "required_score": 78.0,
       "tp2_hit_at_ms": 1791486679937,
       "tp3_hit_at_ms": 1791486679937
@@ -1987,7 +1986,7 @@
       "last_bias": "SHORT",
       "last_price": 3.274,
       "last_score": 62.0,
-      "last_seen_at_ms": 1791490405995,
+      "last_seen_at_ms": 1791490526008,
       "qualifying_streak": 0,
       "required_score": 78.0
     },
@@ -2901,10 +2900,10 @@
         "15m OI is not expanding"
       ],
       "last_bias": "LONG",
-      "last_price": 0.004888,
+      "last_price": 0.004902,
       "last_return_pct": 0.733906,
       "last_score": 59.0,
-      "last_seen_at_ms": 1791490405995,
+      "last_seen_at_ms": 1791490526008,
       "mae_pct": 0.0,
       "mfe_pct": 1.782344,
       "previous_score": 69.0,
