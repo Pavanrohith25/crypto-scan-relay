@@ -1,6 +1,6 @@
 {
-  "last_processed_at_ms": 1791487539606,
-  "last_processed_generated_at_ms": 1791487537183,
+  "last_processed_at_ms": 1791487858887,
+  "last_processed_generated_at_ms": 1791487856422,
   "minimum_candidate_score": 78.0,
   "pairs": {
     "1000000BOBUSDT": {
@@ -867,10 +867,10 @@
         "score 67.0 below required 82.0"
       ],
       "last_bias": "LONG",
-      "last_price": 0.03665,
+      "last_price": 0.03679,
       "last_return_pct": -0.114811,
       "last_score": 67.0,
-      "last_seen_at_ms": 1791487539606,
+      "last_seen_at_ms": 1791487858887,
       "mae_pct": -0.114811,
       "mfe_pct": 3.989667,
       "previous_score": 71.0,
@@ -1906,10 +1906,10 @@
         "pair cooldown active after deterioration"
       ],
       "last_bias": "LONG",
-      "last_price": 0.07719,
+      "last_price": 0.07716,
       "last_return_pct": 3.035081,
       "last_score": 59.0,
-      "last_seen_at_ms": 1791487539606,
+      "last_seen_at_ms": 1791487858887,
       "mae_pct": -0.670083,
       "mfe_pct": 3.113914,
       "previous_score": 69.0,
@@ -1989,9 +1989,9 @@
         "15m OI is not expanding"
       ],
       "last_bias": "SHORT",
-      "last_price": 3.268,
+      "last_price": 3.265,
       "last_score": 62.0,
-      "last_seen_at_ms": 1791487539606,
+      "last_seen_at_ms": 1791487858887,
       "qualifying_streak": 0,
       "required_score": 78.0
     },
@@ -2900,16 +2900,19 @@
           "low open interest"
         ]
       },
-      "gate_reasons": [],
+      "gate_reasons": [
+        "score 74.0 below required 82.0",
+        "15m OI is not expanding"
+      ],
       "last_bias": "LONG",
-      "last_price": 0.005075,
+      "last_price": 0.005017,
       "last_return_pct": 0.733906,
-      "last_score": 85.0,
-      "last_seen_at_ms": 1791487539606,
+      "last_score": 74.0,
+      "last_seen_at_ms": 1791487858887,
       "mae_pct": 0.0,
       "mfe_pct": 1.782344,
       "previous_score": 69.0,
-      "qualifying_streak": 1,
+      "qualifying_streak": 0,
       "required_score": 82.0
     },
     "SNXXUSDT": {
@@ -3508,14 +3511,14 @@
     },
     "ZHONGJIUSDT": {
       "gate_reasons": [
-        "score 44.0 below required 82.0",
+        "score 45.0 below required 82.0",
         "candidate has blocker(s)",
         "missing Binance spot confirmation"
       ],
       "last_bias": "LONG",
-      "last_price": 118.67,
-      "last_score": 44.0,
-      "last_seen_at_ms": 1791487539606,
+      "last_price": 118.3,
+      "last_score": 45.0,
+      "last_seen_at_ms": 1791487858887,
       "qualifying_streak": 0,
       "required_score": 82.0
     },
