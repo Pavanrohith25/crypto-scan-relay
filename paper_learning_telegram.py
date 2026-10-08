@@ -8,6 +8,7 @@ from pathlib import Path
 from urllib.parse import urlencode
 from urllib.request import urlopen
 from swing_telegram import send_telegram, trade_levels, fmt_price
+from telegram_rewards import reward_snapshot
 
 STATE = Path('paper_learning/telegram.json')
 
@@ -68,13 +69,28 @@ def main():
                 '5% target / 6% stop; no guaranteed win rate or automated trades. '
                 'Earlier WLD, ENA and BTC observations will not be resent. This is an activation notice, not a trade.')
         state['activated']=True;save(state)
+    state.setdefault('reward_predictions', {})
+    reward_config=json.loads(Path('telegram_reward_config.json').read_text())
+    reward_path=Path('paper_learning/telegram_reward_report.json')
+    reward_report=json.loads(reward_path.read_text()) if reward_path.exists() else {}
+    if reward_config['enabled'] and not state.get('reward_activation_sent'):
+        deliver('Telegram reward tracking enabled for new calls from now. 1R = the planned 6% price risk. A 5% target earns +0.83R gross; a stop loses -1R gross, with costs deducted and gap losses retained. Open calls stay pending. Learning runs in shadow mode; no claimed improvement or automatic rule changes.')
+        state['reward_activation_sent']=True;save(state)
     now=int(time.time()*1000)
     for tid,t in sorted(learning['trades'].items(),key=lambda item:item[1]['predicted_ms']):
         if tid in state['sent']:
             if t['status'] in ('TARGET','STOP','AMBIGUOUS_LOSS') and tid not in state['outcomes']:
+                reward_note=''
+                if state['sent'][tid]>=reward_config['enabled_after_ms']:
+                    if t['resolved_bar_ms'] < state['sent'][tid]:
+                        reward_note='Reward excluded: exit candle overlaps or precedes alert delivery.\n'
+                    else:
+                        reward_note=(f"Reward: {t['net_return_pct']/t['stop_pct']:+.3f}R after modeled costs\n"
+                                     f"Ledger total: {reward_report.get('total_reward_r',0):+.3f}R (paper observations, not account return)\n")
                 deliver(f"PAPER OUTCOME — {t['side']} {t['symbol']}\nID: {tid}\n"
                         f"Result: {t['status']}\nModeled net return: {t['net_return_pct']:.2f}%\n"
                         f"Holding time: {t['holding_hours']:.2f} hours\n"
+                        f"{reward_note}"
                         "Spot simulation with assumed costs, not your actual futures P&L. "
                         "Ambiguous same-candle target/stop hits count as losses.")
                 state['outcomes'].append(tid);save(state)
@@ -91,7 +107,10 @@ def main():
                 raise RuntimeError('Spot quote unavailable: '+type(exc).__name__) from None
             ok,reason=eligible(t,config,int(time.time()*1000),price)
             if ok:
-                deliver(message(t,price));state['sent'][tid]=now
+                prediction=reward_snapshot(t['side'],t['features'])
+                deliver(message(t,price))
+                state['sent'][tid]=int(time.time()*1000)
+                state['reward_predictions'][tid]=prediction
         if not ok:state['skipped'][tid]=reason
         save(state)
     print('Paper Telegram completed; total setups sent:',len(state['sent']))

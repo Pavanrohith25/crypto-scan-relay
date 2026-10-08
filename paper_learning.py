@@ -154,7 +154,7 @@ def report(state, now):
                 'Costs are assumptions, not observed funding or borrow costs.',
                 'MAE/MFE include full exit candle; intrabar ordering is unknown.',
                 'Correlated trades, incomplete crypto universe, no portfolio/leverage simulation.',
-                'No live strategy promotion or Telegram integration.']}
+                'No live model promotion or automated orders; experimental Telegram observations are separate.']}
 
 
 def main():
