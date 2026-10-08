@@ -1,7 +1,7 @@
 # Prospective paper learning v1
 
 This is an adaptive **spot-proxy research system**, not the R9 futures strategy,
-not a validated trading model, and not connected to Telegram or orders.
+not a validated trading model, and never connected to orders. User-authorized experimental Telegram observation alerts were added October 8, 2026.
 
 The existing five-minute workflow runs `paper_learning.py`. The first successful
 run establishes a real collection boundary; older signals are never backfilled.
@@ -45,3 +45,7 @@ risk panel, and explicit review before connecting alerts. No R9 reserved dates
 or failed development results are repurposed as fresh evidence.
 
 Run tests: `python -m unittest discover -s tests -p 'test_*.py'`.
+
+## Experimental Telegram observation channel
+
+New paper observations after activation may be notified once their spot entry is known. Only open entries at most ten minutes old and within 0.5% of a freshly fetched spot quote are sent. This is not model promotion. Old observations are excluded; previously notified observations receive outcome updates. No daily global cap; the journal retains its per-symbol cooldown. Notification failures are visible workflow warnings and do not discard learning state. Delivery IDs are committed with scanner state; a process or commit failure after Telegram accepts a message can cause a duplicate on retry. No exactly-once delivery claim. The older experimental Telegram strategy remains disabled.

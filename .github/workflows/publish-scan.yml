@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
   push:
     branches: [main]
-    paths: [experimental_telegram.py, experimental_telegram_config.json]
+    paths: [experimental_telegram.py, experimental_telegram_config.json, paper_learning_telegram.py, paper_learning_telegram_config.json]
   
 permissions:
   contents: write
@@ -93,6 +93,15 @@ jobs:
       - name: Update prospective paper learning
         timeout-minutes: 4
         run: python paper_learning.py
+
+      - name: Notify user of new paper-learning observations
+        if: github.ref == 'refs/heads/main'
+        continue-on-error: true
+        timeout-minutes: 3
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: python paper_learning_telegram.py
 
       - name: Audit 5pct objective integrity
         run: python data_audit_v2.py
