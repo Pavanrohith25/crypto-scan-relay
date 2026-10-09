@@ -1,6 +1,6 @@
 {
-  "last_processed_at_ms": 1791531060733,
-  "last_processed_generated_at_ms": 1791531058235,
+  "last_processed_at_ms": 1791531367077,
+  "last_processed_generated_at_ms": 1791531364439,
   "pairs": {
     "1000000BOBUSDT": {
       "gate_reasons": [
@@ -363,18 +363,17 @@
     },
     "BWETUSDT": {
       "gate_reasons": [
-        "score 38.0 below required 78.0",
+        "score 49.0 below required 78.0",
         "candidate has blocker(s)",
         "missing spot confirmation",
-        "15m OI not expanding",
         "missing spot volume"
       ],
       "last_bias": "LONG",
       "last_decision": "WAIT",
-      "last_price": 1026.01,
+      "last_price": 1022.0,
       "last_regime": "TREND_CONTINUATION",
-      "last_score": 38.0,
-      "last_seen_at_ms": 1791531060733
+      "last_score": 49.0,
+      "last_seen_at_ms": 1791531367077
     },
     "BZUSDT": {
       "gate_reasons": [
@@ -632,11 +631,11 @@
       "gate_reasons": [],
       "last_bias": "LONG",
       "last_decision": "SHADOW_CONFIRMED",
-      "last_position_check_ms": 1791531060733,
-      "last_price": 0.03506,
+      "last_position_check_ms": 1791531367077,
+      "last_price": 0.03535,
       "last_regime": "TREND_CONTINUATION",
-      "last_score": 52.0,
-      "last_seen_at_ms": 1791531060733,
+      "last_score": 62.0,
+      "last_seen_at_ms": 1791531367077,
       "position_state": "HOLD_PROTECT"
     },
     "CTUSDT": {
@@ -957,10 +956,10 @@
       ],
       "last_bias": "SHORT",
       "last_decision": "WAIT",
-      "last_price": 1.193,
+      "last_price": 1.192,
       "last_regime": "COUNTERTREND",
       "last_score": 38.0,
-      "last_seen_at_ms": 1791531060733
+      "last_seen_at_ms": 1791531367077
     },
     "GRASSUSDT": {
       "gate_reasons": [
@@ -1414,14 +1413,15 @@
     },
     "MINAUSDT": {
       "gate_reasons": [
-        "deep countertrend: 24h structure/OI conflicts with the setup"
+        "deep countertrend: 24h structure/OI conflicts with the setup",
+        "15m OI not expanding"
       ],
       "last_bias": "LONG",
       "last_decision": "BLOCKED_DEEP_COUNTERTREND",
-      "last_price": 0.07852,
+      "last_price": 0.07786,
       "last_regime": "COUNTERTREND_DEEP",
-      "last_score": 84.0,
-      "last_seen_at_ms": 1791531060733
+      "last_score": 79.0,
+      "last_seen_at_ms": 1791531367077
     },
     "MOVEUSDT": {
       "gate_reasons": [
@@ -2024,10 +2024,10 @@
       ],
       "last_bias": "SHORT",
       "last_decision": "WAIT",
-      "last_price": 40.16,
+      "last_price": 40.17,
       "last_regime": "TREND_CONTINUATION",
       "last_score": 38.0,
-      "last_seen_at_ms": 1791531060733
+      "last_seen_at_ms": 1791531367077
     },
     "SIRENUSDT": {
       "gate_reasons": [
@@ -2083,11 +2083,11 @@
       "gate_reasons": [],
       "last_bias": "LONG",
       "last_decision": "SHADOW_CONFIRMED",
-      "last_position_check_ms": 1791531060733,
-      "last_price": 0.005031,
+      "last_position_check_ms": 1791531367077,
+      "last_price": 0.004982,
       "last_regime": "TREND_CONTINUATION",
-      "last_score": 44.0,
-      "last_seen_at_ms": 1791531060733,
+      "last_score": 39.0,
+      "last_seen_at_ms": 1791531367077,
       "position_state": "HOLD_PROTECT"
     },
     "SNXXUSDT": {
