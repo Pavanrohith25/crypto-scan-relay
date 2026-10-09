@@ -1,6 +1,6 @@
 {
-  "last_processed_at_ms": 1791563488215,
-  "last_processed_generated_at_ms": 1791563485365,
+  "last_processed_at_ms": 1791563746389,
+  "last_processed_generated_at_ms": 1791563743709,
   "pairs": {
     "1000000BOBUSDT": {
       "gate_reasons": [
@@ -178,16 +178,22 @@
       "last_seen_at_ms": 1790901316286
     },
     "API3USDT": {
-      "gate_reasons": [
-        "score 74.0 below required 82.0",
-        "15m OI not expanding"
-      ],
+      "anchor_price": 0.3266,
+      "anchor_regime": "TREND_CONTINUATION",
+      "anchor_score": 85.0,
+      "armed": true,
+      "armed_at_ms": 1791563746389,
+      "evidence_count": 1,
+      "gate_reasons": [],
+      "high_priority": false,
       "last_bias": "LONG",
-      "last_decision": "WAIT",
-      "last_price": 0.3251,
+      "last_decision": "ARMED",
+      "last_fingerprint": "0.3266|1.12|29746.0592|525990.3192|0.62|-2.24|1.27",
+      "last_price": 0.3266,
       "last_regime": "TREND_CONTINUATION",
-      "last_score": 74.0,
-      "last_seen_at_ms": 1791563488215
+      "last_score": 85.0,
+      "last_seen_at_ms": 1791563746389,
+      "required_score": 82.0
     },
     "ARKUSDT": {
       "gate_reasons": [
@@ -362,7 +368,7 @@
     },
     "BWETUSDT": {
       "gate_reasons": [
-        "score 26.0 below required 78.0",
+        "score 21.0 below required 78.0",
         "candidate has blocker(s)",
         "missing spot confirmation",
         "15m OI not expanding",
@@ -370,10 +376,10 @@
       ],
       "last_bias": "LONG",
       "last_decision": "WAIT",
-      "last_price": 976.43,
+      "last_price": 980.16,
       "last_regime": "COUNTERTREND",
-      "last_score": 26.0,
-      "last_seen_at_ms": 1791562853101
+      "last_score": 21.0,
+      "last_seen_at_ms": 1791563746389
     },
     "BZUSDT": {
       "gate_reasons": [
@@ -631,11 +637,11 @@
       "gate_reasons": [],
       "last_bias": "LONG",
       "last_decision": "SHADOW_CONFIRMED",
-      "last_position_check_ms": 1791563488215,
-      "last_price": 0.03342,
+      "last_position_check_ms": 1791563746389,
+      "last_price": 0.03356,
       "last_regime": "COUNTERTREND",
       "last_score": 44.0,
-      "last_seen_at_ms": 1791563488215,
+      "last_seen_at_ms": 1791563746389,
       "position_state": "REDUCE"
     },
     "CTUSDT": {
@@ -1191,16 +1197,15 @@
     },
     "KAIAUSDT": {
       "gate_reasons": [
-        "score 35.0 below required 78.0",
-        "long spot weak (B/S 0.814, flow -99,678)",
-        "15m OI not expanding"
+        "score 40.0 below required 78.0",
+        "long spot weak (B/S 0.814, flow -99,678)"
       ],
       "last_bias": "LONG",
       "last_decision": "WAIT",
-      "last_price": 0.05112,
+      "last_price": 0.05114,
       "last_regime": "COUNTERTREND",
-      "last_score": 35.0,
-      "last_seen_at_ms": 1791563488215
+      "last_score": 40.0,
+      "last_seen_at_ms": 1791563746389
     },
     "KGENUSDT": {
       "gate_reasons": [
@@ -1516,15 +1521,14 @@
         "score 62.0 below required 78.0",
         "candidate has blocker(s)",
         "missing spot confirmation",
-        "15m OI not expanding",
         "missing spot volume"
       ],
       "last_bias": "SHORT",
       "last_decision": "WAIT",
-      "last_price": 3.403,
+      "last_price": 3.407,
       "last_regime": "COUNTERTREND",
       "last_score": 62.0,
-      "last_seen_at_ms": 1791563488215
+      "last_seen_at_ms": 1791563746389
     },
     "NEARUSDT": {
       "gate_reasons": [
@@ -1917,16 +1921,17 @@
     "RLCUSDT": {
       "gate_reasons": [
         "deep countertrend: 24h structure/OI conflicts with the setup",
-        "score 33.0 below required 78.0",
+        "score 22.0 below required 78.0",
         "candidate has blocker(s)",
-        "long spot weak (B/S 0.846, flow -205,808)"
+        "long spot weak (B/S 0.846, flow -205,808)",
+        "15m OI not expanding"
       ],
       "last_bias": "LONG",
       "last_decision": "BLOCKED_DEEP_COUNTERTREND",
-      "last_price": 0.8679,
+      "last_price": 0.8656,
       "last_regime": "COUNTERTREND_DEEP",
-      "last_score": 33.0,
-      "last_seen_at_ms": 1791563488215
+      "last_score": 22.0,
+      "last_seen_at_ms": 1791563746389
     },
     "RUMUSDT": {
       "gate_reasons": [
