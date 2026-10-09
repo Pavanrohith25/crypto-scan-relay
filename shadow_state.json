@@ -1,6 +1,6 @@
 {
-  "last_processed_at_ms": 1791574854680,
-  "last_processed_generated_at_ms": 1791574852088,
+  "last_processed_at_ms": 1791575179511,
+  "last_processed_generated_at_ms": 1791575176964,
   "pairs": {
     "1000000BOBUSDT": {
       "gate_reasons": [
@@ -380,14 +380,15 @@
         "score 64.0 below required 78.0",
         "candidate has blocker(s)",
         "missing spot confirmation",
+        "15m OI not expanding",
         "missing spot volume"
       ],
       "last_bias": "LONG",
       "last_decision": "BLOCKED_DEEP_COUNTERTREND",
-      "last_price": 102.35,
+      "last_price": 102.28,
       "last_regime": "COUNTERTREND_DEEP",
       "last_score": 64.0,
-      "last_seen_at_ms": 1791574854680
+      "last_seen_at_ms": 1791575179511
     },
     "CAPUSDT": {
       "gate_reasons": [
@@ -630,11 +631,11 @@
       "gate_reasons": [],
       "last_bias": "LONG",
       "last_decision": "SHADOW_CONFIRMED",
-      "last_position_check_ms": 1791574854680,
-      "last_price": 0.03371,
+      "last_position_check_ms": 1791575179511,
+      "last_price": 0.03352,
       "last_regime": "COUNTERTREND",
       "last_score": 57.0,
-      "last_seen_at_ms": 1791574854680,
+      "last_seen_at_ms": 1791575179511,
       "position_state": "HOLD_PROTECT"
     },
     "CTUSDT": {
@@ -1194,16 +1195,18 @@
       "anchor_score": 80.0,
       "armed": true,
       "armed_at_ms": 1791574854680,
-      "evidence_count": 1,
-      "gate_reasons": [],
+      "evidence_count": 2,
+      "gate_reasons": [
+        "price follow-through -0.45180722891565717 below 0.50%"
+      ],
       "high_priority": false,
       "last_bias": "LONG",
-      "last_decision": "ARMED",
-      "last_fingerprint": "0.05312|1.12|59544.4153|1053493.0369|0.58|-1.51|-0.92",
-      "last_price": 0.05312,
+      "last_decision": "ARMED_WAITING_TRIGGER",
+      "last_fingerprint": "0.05288|1.12|59544.4153|1053493.0369|1.18|-1.81|-0.92",
+      "last_price": 0.05288,
       "last_regime": "TREND_CONTINUATION",
-      "last_score": 80.0,
-      "last_seen_at_ms": 1791574854680,
+      "last_score": 74.0,
+      "last_seen_at_ms": 1791575179511,
       "required_score": 78.0
     },
     "KGENUSDT": {
@@ -1434,16 +1437,19 @@
       "anchor_score": 86.0,
       "armed": true,
       "armed_at_ms": 1791574854680,
-      "evidence_count": 1,
-      "gate_reasons": [],
+      "evidence_count": 2,
+      "gate_reasons": [
+        "price follow-through -0.07618080243777525 below 0.75%",
+        "countertrend reclaim not strong enough"
+      ],
       "high_priority": false,
       "last_bias": "LONG",
-      "last_decision": "ARMED",
-      "last_fingerprint": "0.07876|1.116|7805.14|141885.914|0.66|1.5|0.13",
-      "last_price": 0.07876,
+      "last_decision": "ARMED_WAITING_TRIGGER",
+      "last_fingerprint": "0.0787|1.116|7805.14|141885.914|0.43|0.86|0.13",
+      "last_price": 0.0787,
       "last_regime": "COUNTERTREND",
-      "last_score": 86.0,
-      "last_seen_at_ms": 1791574854680,
+      "last_score": 80.0,
+      "last_seen_at_ms": 1791575179511,
       "required_score": 78.0
     },
     "MOVEUSDT": {
@@ -1515,17 +1521,17 @@
     },
     "NATGASUSDT": {
       "gate_reasons": [
-        "score 67.0 below required 78.0",
+        "score 62.0 below required 78.0",
         "candidate has blocker(s)",
         "missing spot confirmation",
         "missing spot volume"
       ],
       "last_bias": "SHORT",
       "last_decision": "WAIT",
-      "last_price": 3.386,
+      "last_price": 3.385,
       "last_regime": "COUNTERTREND",
-      "last_score": 67.0,
-      "last_seen_at_ms": 1791574854680
+      "last_score": 62.0,
+      "last_seen_at_ms": 1791575179511
     },
     "NEARUSDT": {
       "gate_reasons": [
@@ -1921,10 +1927,10 @@
       ],
       "last_bias": "LONG",
       "last_decision": "WAIT",
-      "last_price": 0.9816,
+      "last_price": 1.0236,
       "last_regime": "COUNTERTREND",
       "last_score": 69.0,
-      "last_seen_at_ms": 1791574854680
+      "last_seen_at_ms": 1791575179511
     },
     "RUMUSDT": {
       "gate_reasons": [
