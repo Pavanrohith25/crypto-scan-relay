@@ -1,6 +1,6 @@
 {
-  "last_processed_at_ms": 1791523829795,
-  "last_processed_generated_at_ms": 1791523827372,
+  "last_processed_at_ms": 1791524139217,
+  "last_processed_generated_at_ms": 1791524136775,
   "minimum_candidate_score": 78.0,
   "pairs": {
     "1000000BOBUSDT": {
@@ -493,9 +493,9 @@
         "missing Binance spot confirmation"
       ],
       "last_bias": "LONG",
-      "last_price": 1018.5,
+      "last_price": 1018.42,
       "last_score": 43.0,
-      "last_seen_at_ms": 1791523829795,
+      "last_seen_at_ms": 1791524139217,
       "qualifying_streak": 0,
       "required_score": 78.0
     },
@@ -869,10 +869,10 @@
         "long spot confirmation weak (B/S 0.785, flow -37,287)"
       ],
       "last_bias": "LONG",
-      "last_price": 0.03634,
+      "last_price": 0.03641,
       "last_return_pct": -2.425799,
       "last_score": 60.0,
-      "last_seen_at_ms": 1791523829795,
+      "last_seen_at_ms": 1791524139217,
       "mae_pct": -2.425799,
       "mfe_pct": 0.0,
       "previous_score": 59.0,
@@ -1862,64 +1862,60 @@
       "required_score": 82.0
     },
     "MINAUSDT": {
-      "active": false,
-      "confirmed_at_ms": 1791519032042,
+      "active": true,
+      "confirmed_at_ms": 1791524139217,
       "confirmed_bias": "LONG",
-      "confirmed_generated_at_ms": 1791519029503,
-      "confirmed_price": 0.0784,
+      "confirmed_generated_at_ms": 1791524136775,
+      "confirmed_price": 0.077,
       "confirmed_score": 90.0,
-      "cooldown_until_ms": 1791523835411,
+      "cooldown_until_ms": 0,
       "deteriorated_at_ms": 1791521135411,
       "entry_snapshot": {
         "action": "LONG_CANDIDATE",
-        "basis_pct": -0.311,
+        "basis_pct": -0.4263,
         "bias": "LONG",
-        "binance_funding_minus_median_pct": -0.099449,
+        "binance_funding_minus_median_pct": -0.091719,
         "blockers": [],
-        "cross_exchange_median_funding_pct": -0.2733,
-        "current_price": 0.0784,
-        "funding_rate_pct": -0.372749,
-        "futures_volume_change_24h_pct": -26.36,
+        "cross_exchange_median_funding_pct": -0.2249,
+        "current_price": 0.077,
+        "funding_rate_pct": -0.316619,
+        "futures_volume_change_24h_pct": -26.22,
         "invalidation": "Do not take/keep the long thesis if 15m OI turns materially negative while Binance spot 1h net flow is negative and buy/sell ratio stays below 0.95.",
-        "oi_change_15m_pct": 1.23,
-        "oi_change_1h_pct": 1.35,
-        "oi_change_24h_pct": -4.09,
-        "oi_change_4h_pct": 3.37,
-        "oi_change_5m_pct": 0.89,
-        "open_interest_usd": 9389426.91216,
+        "oi_change_15m_pct": 0.86,
+        "oi_change_1h_pct": 0.72,
+        "oi_change_24h_pct": -3.5,
+        "oi_change_4h_pct": -1.82,
+        "oi_change_5m_pct": 0.48,
+        "open_interest_usd": 9470360.79034,
         "pair": "MINAUSDT",
-        "price_change_1h_spot_pct": -1.14,
-        "price_change_24h_futures_pct": -15.22,
-        "price_change_4h_spot_pct": 1.69,
+        "price_change_1h_spot_pct": -3.17,
+        "price_change_24h_futures_pct": -15.14,
+        "price_change_4h_spot_pct": -5.21,
         "reasons": [
-          "extreme Binance funding -0.3727%",
+          "extreme Binance funding -0.3166%",
           "negative funding is broad across exchanges",
-          "fresh OI expansion: 5m +0.89%, 15m +1.23%",
-          "spot buyers lead: B/S 1.29, net 44,838 USD",
-          "perp trades below index: basis -0.311%"
+          "fresh OI expansion: 5m +0.48%, 15m +0.86%",
+          "spot buyers lead: B/S 1.22, net 37,740 USD",
+          "perp trades below index: basis -0.426%"
         ],
         "score": 90.0,
-        "spot_buy_sell_ratio_1h": 1.285,
-        "spot_net_flow_1h_usd": 44838.0466,
-        "spot_volume_1h_usd": 359172.7632,
+        "spot_buy_sell_ratio_1h": 1.217,
+        "spot_net_flow_1h_usd": 37739.5909,
+        "spot_volume_1h_usd": 385349.8779,
         "strength": "VERY_STRONG",
         "warnings": []
       },
-      "gate_reasons": [
-        "pair cooldown active after deterioration"
-      ],
+      "gate_reasons": [],
       "last_bias": "LONG",
-      "last_price": 0.07641,
+      "last_price": 0.077,
       "last_return_pct": -1.658163,
-      "last_score": 84.0,
-      "last_seen_at_ms": 1791523829795,
-      "mae_pct": -1.658163,
-      "mfe_pct": 0.267857,
-      "previous_score": 69.0,
-      "qualifying_streak": 0,
-      "required_score": 78.0,
-      "sl15_hit_at_ms": 1791520870830,
-      "sl1_hit_at_ms": 1791520870830
+      "last_score": 90.0,
+      "last_seen_at_ms": 1791524139217,
+      "mae_pct": 0.0,
+      "mfe_pct": 0.0,
+      "previous_score": 90.0,
+      "qualifying_streak": 1,
+      "required_score": 78.0
     },
     "MOVEUSDT": {
       "gate_reasons": [
@@ -1986,14 +1982,14 @@
     },
     "NATGASUSDT": {
       "gate_reasons": [
-        "score 62.0 below required 78.0",
+        "score 67.0 below required 78.0",
         "candidate has blocker(s)",
         "missing Binance spot confirmation"
       ],
       "last_bias": "SHORT",
-      "last_price": 3.284,
-      "last_score": 62.0,
-      "last_seen_at_ms": 1791523829795,
+      "last_price": 3.287,
+      "last_score": 67.0,
+      "last_seen_at_ms": 1791524139217,
       "qualifying_streak": 0,
       "required_score": 78.0
     },
@@ -2787,16 +2783,18 @@
         "strength": "STRONG",
         "warnings": []
       },
-      "gate_reasons": [],
+      "gate_reasons": [
+        "15m OI is not expanding"
+      ],
       "last_bias": "LONG",
-      "last_price": 0.07131,
+      "last_price": 0.07162,
       "last_return_pct": -0.923852,
-      "last_score": 84.0,
-      "last_seen_at_ms": 1791523829795,
+      "last_score": 79.0,
+      "last_seen_at_ms": 1791524139217,
       "mae_pct": -0.923852,
       "mfe_pct": 0.363942,
       "previous_score": 65.0,
-      "qualifying_streak": 1,
+      "qualifying_streak": 0,
       "required_score": 78.0
     },
     "SCRUSDT": {
@@ -2914,15 +2912,14 @@
         ]
       },
       "gate_reasons": [
-        "score 49.0 below required 82.0",
-        "long spot confirmation weak (B/S 0.737, flow -68,524)",
-        "15m OI is not expanding"
+        "score 60.0 below required 82.0",
+        "long spot confirmation weak (B/S 0.737, flow -68,524)"
       ],
       "last_bias": "LONG",
-      "last_price": 0.005052,
+      "last_price": 0.005117,
       "last_return_pct": -2.474187,
-      "last_score": 49.0,
-      "last_seen_at_ms": 1791523829795,
+      "last_score": 60.0,
+      "last_seen_at_ms": 1791524139217,
       "mae_pct": -2.474187,
       "mfe_pct": 0.0,
       "previous_score": 64.0,
