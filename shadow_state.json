@@ -1,6 +1,6 @@
 {
-  "last_processed_at_ms": 1791541873165,
-  "last_processed_generated_at_ms": 1791541870706,
+  "last_processed_at_ms": 1791542127528,
+  "last_processed_generated_at_ms": 1791542125155,
   "pairs": {
     "1000000BOBUSDT": {
       "gate_reasons": [
@@ -631,11 +631,11 @@
       "gate_reasons": [],
       "last_bias": "LONG",
       "last_decision": "SHADOW_CONFIRMED",
-      "last_position_check_ms": 1791541873165,
-      "last_price": 0.03412,
+      "last_position_check_ms": 1791542127528,
+      "last_price": 0.03402,
       "last_regime": "TREND_CONTINUATION",
-      "last_score": 60.0,
-      "last_seen_at_ms": 1791541873165,
+      "last_score": 49.0,
+      "last_seen_at_ms": 1791542127528,
       "position_state": "HOLD_PROTECT"
     },
     "CTUSDT": {
@@ -1191,14 +1191,14 @@
     },
     "KAIAUSDT": {
       "gate_reasons": [
-        "score 30.0 below required 78.0"
+        "score 36.0 below required 78.0"
       ],
       "last_bias": "LONG",
       "last_decision": "WAIT",
-      "last_price": 0.05829,
+      "last_price": 0.05843,
       "last_regime": "TREND_CONTINUATION",
-      "last_score": 30.0,
-      "last_seen_at_ms": 1791541873165
+      "last_score": 36.0,
+      "last_seen_at_ms": 1791542127528
     },
     "KGENUSDT": {
       "gate_reasons": [
@@ -1424,14 +1424,16 @@
     },
     "MINAUSDT": {
       "gate_reasons": [
-        "deep countertrend: 24h structure/OI conflicts with the setup"
+        "score 44.0 below required 78.0",
+        "long spot weak (B/S 0.772, flow -45,937)",
+        "15m OI not expanding"
       ],
       "last_bias": "LONG",
-      "last_decision": "BLOCKED_DEEP_COUNTERTREND",
-      "last_price": 0.07719,
-      "last_regime": "COUNTERTREND_DEEP",
-      "last_score": 84.0,
-      "last_seen_at_ms": 1791539173794
+      "last_decision": "WAIT",
+      "last_price": 0.07893,
+      "last_regime": "COUNTERTREND",
+      "last_score": 44.0,
+      "last_seen_at_ms": 1791542127528
     },
     "MOVEUSDT": {
       "gate_reasons": [
@@ -1502,7 +1504,7 @@
     },
     "NATGASUSDT": {
       "gate_reasons": [
-        "score 67.0 below required 78.0",
+        "score 62.0 below required 78.0",
         "candidate has blocker(s)",
         "missing spot confirmation",
         "missing spot volume"
@@ -1511,8 +1513,8 @@
       "last_decision": "WAIT",
       "last_price": 3.279,
       "last_regime": "COUNTERTREND",
-      "last_score": 67.0,
-      "last_seen_at_ms": 1791541873165
+      "last_score": 62.0,
+      "last_seen_at_ms": 1791542127528
     },
     "NEARUSDT": {
       "gate_reasons": [
@@ -2093,11 +2095,11 @@
       "gate_reasons": [],
       "last_bias": "LONG",
       "last_decision": "SHADOW_CONFIRMED",
-      "last_position_check_ms": 1791541873165,
-      "last_price": 0.004978,
+      "last_position_check_ms": 1791542127528,
+      "last_price": 0.004933,
       "last_regime": "COUNTERTREND",
-      "last_score": 60.0,
-      "last_seen_at_ms": 1791541873165,
+      "last_score": 54.0,
+      "last_seen_at_ms": 1791542127528,
       "position_state": "REDUCE"
     },
     "SNXXUSDT": {
