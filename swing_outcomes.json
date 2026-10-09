@@ -1,5 +1,5 @@
 {
-  "last_processed_at_ms": 1791575749304,
+  "last_processed_at_ms": 1791576082834,
   "objective": {
     "diagnostic_horizons_hours": [
       4,
@@ -28633,6 +28633,7 @@
     "ZROUSDT-1791489660540": {
       "bias": "SHORT",
       "evaluated_12h_at_ms": 1791533172415,
+      "evaluated_24h_at_ms": 1791576082834,
       "evaluated_4h_at_ms": 1791504076129,
       "outcome_12h": {
         "bars_used": 144,
@@ -28727,7 +28728,99 @@
         "window_end_ms": 1791532860540,
         "window_start_ms": 1791489900000
       },
-      "outcome_24h": null,
+      "outcome_24h": {
+        "bars_used": 288,
+        "close_return_pct": 4.6254,
+        "first_5pct_bar_ms": 1791575700000,
+        "horizon_hours": 24,
+        "mae_before_5pct_pct": -10.5078,
+        "mae_pct": -10.5078,
+        "mfe_pct": 5.1785,
+        "objective": "+5pct",
+        "sampling_interval": "5m",
+        "sampling_note": "Uses 5m candles beginning with the first full bar at/after the trigger. If TP and SL are both touched inside the same 5m candle before either resolves, the stop-path result is AMBIGUOUS.",
+        "stop_grid": {
+          "stop_3_0pct": {
+            "ambiguous": false,
+            "first_stop_bar_ms": 1791513600000,
+            "first_target_bar_ms": 1791575700000,
+            "resolution_bar_ms": 1791513600000,
+            "result": "STOP_FIRST",
+            "stop_first": true,
+            "stop_pct": 3.0,
+            "stop_reached": true,
+            "target_first": false,
+            "target_pct": 5.0,
+            "target_reached": true,
+            "time_to_stop_minutes": 398.99,
+            "time_to_target_minutes": 1433.99
+          },
+          "stop_4_0pct": {
+            "ambiguous": false,
+            "first_stop_bar_ms": 1791514200000,
+            "first_target_bar_ms": 1791575700000,
+            "resolution_bar_ms": 1791514200000,
+            "result": "STOP_FIRST",
+            "stop_first": true,
+            "stop_pct": 4.0,
+            "stop_reached": true,
+            "target_first": false,
+            "target_pct": 5.0,
+            "target_reached": true,
+            "time_to_stop_minutes": 408.99,
+            "time_to_target_minutes": 1433.99
+          },
+          "stop_5_0pct": {
+            "ambiguous": false,
+            "first_stop_bar_ms": 1791523500000,
+            "first_target_bar_ms": 1791575700000,
+            "resolution_bar_ms": 1791523500000,
+            "result": "STOP_FIRST",
+            "stop_first": true,
+            "stop_pct": 5.0,
+            "stop_reached": true,
+            "target_first": false,
+            "target_pct": 5.0,
+            "target_reached": true,
+            "time_to_stop_minutes": 563.99,
+            "time_to_target_minutes": 1433.99
+          },
+          "stop_6_0pct": {
+            "ambiguous": false,
+            "first_stop_bar_ms": 1791524100000,
+            "first_target_bar_ms": 1791575700000,
+            "resolution_bar_ms": 1791524100000,
+            "result": "STOP_FIRST",
+            "stop_first": true,
+            "stop_pct": 6.0,
+            "stop_reached": true,
+            "target_first": false,
+            "target_pct": 5.0,
+            "target_reached": true,
+            "time_to_stop_minutes": 573.99,
+            "time_to_target_minutes": 1433.99
+          },
+          "stop_8_0pct": {
+            "ambiguous": false,
+            "first_stop_bar_ms": 1791530400000,
+            "first_target_bar_ms": 1791575700000,
+            "resolution_bar_ms": 1791530400000,
+            "result": "STOP_FIRST",
+            "stop_first": true,
+            "stop_pct": 8.0,
+            "stop_reached": true,
+            "target_first": false,
+            "target_pct": 5.0,
+            "target_reached": true,
+            "time_to_stop_minutes": 678.99,
+            "time_to_target_minutes": 1433.99
+          }
+        },
+        "target_5_reached": true,
+        "time_to_5pct_minutes": 1433.99,
+        "window_end_ms": 1791576060540,
+        "window_start_ms": 1791489900000
+      },
       "outcome_48h": null,
       "outcome_4h": {
         "bars_used": 48,
