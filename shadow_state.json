@@ -1,6 +1,6 @@
 {
-  "last_processed_at_ms": 1791579350769,
-  "last_processed_generated_at_ms": 1791579348276,
+  "last_processed_at_ms": 1791579654770,
+  "last_processed_generated_at_ms": 1791579652239,
   "pairs": {
     "1000000BOBUSDT": {
       "gate_reasons": [
@@ -380,14 +380,15 @@
         "score 64.0 below required 78.0",
         "candidate has blocker(s)",
         "missing spot confirmation",
+        "15m OI not expanding",
         "missing spot volume"
       ],
       "last_bias": "LONG",
       "last_decision": "BLOCKED_DEEP_COUNTERTREND",
-      "last_price": 102.27,
+      "last_price": 102.35,
       "last_regime": "COUNTERTREND_DEEP",
       "last_score": 64.0,
-      "last_seen_at_ms": 1791579350769
+      "last_seen_at_ms": 1791579654770
     },
     "CAPUSDT": {
       "gate_reasons": [
@@ -630,11 +631,11 @@
       "gate_reasons": [],
       "last_bias": "LONG",
       "last_decision": "SHADOW_CONFIRMED",
-      "last_position_check_ms": 1791579350769,
-      "last_price": 0.0339,
+      "last_position_check_ms": 1791579654770,
+      "last_price": 0.03395,
       "last_regime": "COUNTERTREND",
-      "last_score": 67.0,
-      "last_seen_at_ms": 1791579350769,
+      "last_score": 72.0,
+      "last_seen_at_ms": 1791579654770,
       "position_state": "REDUCE"
     },
     "CTUSDT": {
@@ -1200,11 +1201,11 @@
       ],
       "last_bias": "LONG",
       "last_decision": "SHADOW_CONFIRMED",
-      "last_position_check_ms": 1791579350769,
-      "last_price": 0.05395,
+      "last_position_check_ms": 1791579654770,
+      "last_price": 0.05434,
       "last_regime": "TREND_CONTINUATION",
-      "last_score": 40.0,
-      "last_seen_at_ms": 1791579350769,
+      "last_score": 50.0,
+      "last_seen_at_ms": 1791579654770,
       "position_state": "HOLD_PROTECT"
     },
     "KGENUSDT": {
@@ -1432,15 +1433,14 @@
     "MINAUSDT": {
       "gate_reasons": [
         "score 63.0 below required 78.0",
-        "long spot weak (B/S 1.010, flow 969)",
-        "15m OI not expanding"
+        "long spot weak (B/S 1.010, flow 969)"
       ],
       "last_bias": "LONG",
       "last_decision": "WAIT",
-      "last_price": 0.07839,
+      "last_price": 0.07831,
       "last_regime": "TREND_CONTINUATION",
       "last_score": 63.0,
-      "last_seen_at_ms": 1791579350769
+      "last_seen_at_ms": 1791579654770
     },
     "MOVEUSDT": {
       "gate_reasons": [
@@ -1511,7 +1511,7 @@
     },
     "NATGASUSDT": {
       "gate_reasons": [
-        "score 62.0 below required 78.0",
+        "score 64.0 below required 78.0",
         "candidate has blocker(s)",
         "missing spot confirmation",
         "15m OI not expanding",
@@ -1521,8 +1521,8 @@
       "last_decision": "WAIT",
       "last_price": 3.406,
       "last_regime": "COUNTERTREND",
-      "last_score": 62.0,
-      "last_seen_at_ms": 1791579350769
+      "last_score": 64.0,
+      "last_seen_at_ms": 1791579654770
     },
     "NEARUSDT": {
       "gate_reasons": [
