@@ -1,6 +1,6 @@
 {
-  "last_processed_at_ms": 1791514883538,
-  "last_processed_generated_at_ms": 1791514880838,
+  "last_processed_at_ms": 1791515174102,
+  "last_processed_generated_at_ms": 1791515171629,
   "pairs": {
     "1000000BOBUSDT": {
       "gate_reasons": [
@@ -369,10 +369,10 @@
       ],
       "last_bias": "LONG",
       "last_decision": "WAIT",
-      "last_price": 1012.5,
+      "last_price": 1014.5,
       "last_regime": "COUNTERTREND",
       "last_score": 43.0,
-      "last_seen_at_ms": 1791514883538
+      "last_seen_at_ms": 1791515174102
     },
     "BZUSDT": {
       "gate_reasons": [
@@ -630,11 +630,11 @@
       "gate_reasons": [],
       "last_bias": "LONG",
       "last_decision": "SHADOW_CONFIRMED",
-      "last_position_check_ms": 1791514883538,
-      "last_price": 0.03461,
+      "last_position_check_ms": 1791515174102,
+      "last_price": 0.03446,
       "last_regime": "TREND_CONTINUATION",
-      "last_score": 79.0,
-      "last_seen_at_ms": 1791514883538,
+      "last_score": 74.0,
+      "last_seen_at_ms": 1791515174102,
       "position_state": "HOLD"
     },
     "CTUSDT": {
@@ -763,17 +763,18 @@
     },
     "ERAUSDT": {
       "gate_reasons": [
-        "score 58.0 below required 82.0",
+        "score 53.0 below required 82.0",
         "candidate has blocker(s)",
         "missing spot confirmation",
+        "15m OI not expanding",
         "missing spot volume"
       ],
       "last_bias": "LONG",
       "last_decision": "WAIT",
-      "last_price": 0.06226,
+      "last_price": 0.06246,
       "last_regime": "TREND_CONTINUATION",
-      "last_score": 58.0,
-      "last_seen_at_ms": 1791514883538
+      "last_score": 53.0,
+      "last_seen_at_ms": 1791515174102
     },
     "ESPORTSUSDT": {
       "gate_reasons": [
@@ -1413,15 +1414,15 @@
       "gate_reasons": [
         "deep countertrend: 24h structure/OI conflicts with the setup",
         "score 54.0 below required 78.0",
-        "long spot weak (B/S 0.769, flow -83,236)",
+        "long spot weak (B/S 0.848, flow -26,968)",
         "15m OI not expanding"
       ],
       "last_bias": "LONG",
       "last_decision": "BLOCKED_DEEP_COUNTERTREND",
-      "last_price": 0.07876,
+      "last_price": 0.07856,
       "last_regime": "COUNTERTREND_DEEP",
       "last_score": 54.0,
-      "last_seen_at_ms": 1791514883538
+      "last_seen_at_ms": 1791515174102
     },
     "MOVEUSDT": {
       "gate_reasons": [
@@ -2083,12 +2084,12 @@
       "gate_reasons": [],
       "last_bias": "LONG",
       "last_decision": "SHADOW_CONFIRMED",
-      "last_position_check_ms": 1791514883538,
-      "last_price": 0.004978,
-      "last_regime": "COUNTERTREND",
-      "last_score": 54.0,
-      "last_seen_at_ms": 1791514883538,
-      "position_state": "REDUCE"
+      "last_position_check_ms": 1791515174102,
+      "last_price": 0.005056,
+      "last_regime": "TREND_CONTINUATION",
+      "last_score": 60.0,
+      "last_seen_at_ms": 1791515174102,
+      "position_state": "HOLD_PROTECT"
     },
     "SNXXUSDT": {
       "gate_reasons": [
