@@ -1,6 +1,6 @@
 {
-  "last_processed_at_ms": 1791630957373,
-  "last_processed_generated_at_ms": 1791630954984,
+  "last_processed_at_ms": 1791631246166,
+  "last_processed_generated_at_ms": 1791631243783,
   "minimum_candidate_score": 78.0,
   "pairs": {
     "1000000BOBUSDT": {
@@ -352,14 +352,15 @@
     },
     "ARPAUSDT": {
       "gate_reasons": [
-        "score 51.0 below required 82.0",
+        "score 30.0 below required 82.0",
         "candidate has blocker(s)",
-        "long spot confirmation weak (B/S 0.739, flow -122,326)"
+        "long spot confirmation weak (B/S 0.739, flow -122,326)",
+        "15m OI is not expanding"
       ],
       "last_bias": "LONG",
-      "last_price": 0.012311,
-      "last_score": 51.0,
-      "last_seen_at_ms": 1791630957373,
+      "last_price": 0.012153,
+      "last_score": 30.0,
+      "last_seen_at_ms": 1791631246166,
       "qualifying_streak": 0,
       "required_score": 82.0
     },
@@ -1113,9 +1114,9 @@
         "score 54.0 below required 82.0"
       ],
       "last_bias": "LONG",
-      "last_price": 0.08236,
+      "last_price": 0.08164,
       "last_score": 54.0,
-      "last_seen_at_ms": 1791630957373,
+      "last_seen_at_ms": 1791631246166,
       "qualifying_streak": 0,
       "required_score": 82.0
     },
@@ -1561,66 +1562,59 @@
       "required_score": 82.0
     },
     "KAIAUSDT": {
-      "active": false,
-      "confirmed_at_ms": 1791619560104,
+      "active": true,
+      "confirmed_at_ms": 1791631246166,
       "confirmed_bias": "LONG",
-      "confirmed_generated_at_ms": 1791619557672,
-      "confirmed_price": 0.05601,
-      "confirmed_score": 78.0,
-      "cooldown_until_ms": 1791623487716,
+      "confirmed_generated_at_ms": 1791631243783,
+      "confirmed_price": 0.05556,
+      "confirmed_score": 80.0,
+      "cooldown_until_ms": 0,
       "deteriorated_at_ms": 1791620787716,
       "entry_snapshot": {
         "action": "LONG_CANDIDATE",
-        "basis_pct": -3.7825,
+        "basis_pct": -1.3006,
         "bias": "LONG",
         "binance_funding_minus_median_pct": 0.0,
         "blockers": [],
-        "cross_exchange_median_funding_pct": -0.351497,
-        "current_price": 0.05601,
-        "funding_rate_pct": -0.351497,
-        "futures_volume_change_24h_pct": 20468.85,
+        "cross_exchange_median_funding_pct": -0.19407,
+        "current_price": 0.05556,
+        "funding_rate_pct": -0.19407,
+        "futures_volume_change_24h_pct": 109.69,
         "invalidation": "Do not take/keep the long thesis if 15m OI turns materially negative while Binance spot 1h net flow is negative and buy/sell ratio stays below 0.95.",
-        "oi_change_15m_pct": 3.03,
-        "oi_change_1h_pct": -1.26,
-        "oi_change_24h_pct": 505.91,
-        "oi_change_4h_pct": 1.8,
-        "oi_change_5m_pct": 1.16,
-        "open_interest_usd": 13723902.528,
+        "oi_change_15m_pct": 0.49,
+        "oi_change_1h_pct": 0.73,
+        "oi_change_24h_pct": -5.7,
+        "oi_change_4h_pct": -6.23,
+        "oi_change_5m_pct": -0.11,
+        "open_interest_usd": 13133021.62205,
         "pair": "KAIAUSDT",
-        "price_change_1h_spot_pct": -2.5,
-        "price_change_24h_futures_pct": 48.33,
-        "price_change_4h_spot_pct": 2.46,
+        "price_change_1h_spot_pct": 1.44,
+        "price_change_24h_futures_pct": -3.19,
+        "price_change_4h_spot_pct": -3.26,
         "reasons": [
-          "extreme Binance funding -0.3515%",
+          "very stretched Binance funding -0.1941%",
           "negative funding is broad across exchanges",
-          "fresh OI expansion: 5m +1.16%, 15m +3.03%",
-          "spot buyers lead: B/S 1.40, net 208,035 USD",
-          "perp trades below index: basis -3.783%",
-          "1h long liquidations dominate \u00e2\u0080\u0094 possible capitulation"
+          "spot buyers lead: B/S 1.12, net 19,878 USD",
+          "perp trades below index: basis -1.301%"
         ],
-        "score": 78.0,
-        "spot_buy_sell_ratio_1h": 1.402,
-        "spot_net_flow_1h_usd": 208035.0787,
-        "spot_volume_1h_usd": 1241976.5921,
+        "score": 80.0,
+        "spot_buy_sell_ratio_1h": 1.122,
+        "spot_net_flow_1h_usd": 19877.5752,
+        "spot_volume_1h_usd": 344719.5326,
         "strength": "STRONG",
-        "warnings": [
-          "24h move is extremely stretched: +48.33%"
-        ]
+        "warnings": []
       },
       "gate_reasons": [],
       "last_bias": "LONG",
-      "last_price": 0.05572,
+      "last_price": 0.05556,
       "last_return_pct": 1.963935,
-      "last_score": 83.0,
-      "last_seen_at_ms": 1791630957373,
+      "last_score": 80.0,
+      "last_seen_at_ms": 1791631246166,
       "mae_pct": 0.0,
-      "mfe_pct": 4.302803,
-      "previous_score": 59.0,
-      "qualifying_streak": 1,
-      "required_score": 78.0,
-      "tp2_hit_at_ms": 1791619873132,
-      "tp3_hit_at_ms": 1791619873132,
-      "tp4_hit_at_ms": 1791619873132
+      "mfe_pct": 0.0,
+      "previous_score": 80.0,
+      "qualifying_streak": 2,
+      "required_score": 78.0
     },
     "KGENUSDT": {
       "gate_reasons": [
@@ -1801,14 +1795,12 @@
     },
     "MAGICUSDT": {
       "gate_reasons": [
-        "score 34.0 below required 78.0",
-        "long spot confirmation weak (B/S 0.968, flow -41,712)",
-        "15m OI is not expanding"
+        "score 57.0 below required 78.0"
       ],
       "last_bias": "LONG",
-      "last_price": 0.11264,
-      "last_score": 34.0,
-      "last_seen_at_ms": 1791630957373,
+      "last_price": 0.1127,
+      "last_score": 57.0,
+      "last_seen_at_ms": 1791631246166,
       "qualifying_streak": 0,
       "required_score": 78.0
     },
@@ -2006,10 +1998,10 @@
         "15m OI is not expanding"
       ],
       "last_bias": "LONG",
-      "last_price": 0.08733,
+      "last_price": 0.08746,
       "last_return_pct": 0.926462,
       "last_score": 79.0,
-      "last_seen_at_ms": 1791630957373,
+      "last_seen_at_ms": 1791631246166,
       "mae_pct": 0.0,
       "mfe_pct": 2.431963,
       "previous_score": 69.0,
@@ -2724,13 +2716,13 @@
         "warnings": []
       },
       "gate_reasons": [
-        "score 71.0 below required 78.0"
+        "score 65.0 below required 78.0"
       ],
       "last_bias": "LONG",
-      "last_price": 0.9556,
+      "last_price": 0.9536,
       "last_return_pct": -0.16782,
-      "last_score": 71.0,
-      "last_seen_at_ms": 1791630957373,
+      "last_score": 65.0,
+      "last_seen_at_ms": 1791631246166,
       "mae_pct": -0.16782,
       "mfe_pct": 0.104888,
       "previous_score": 67.0,
