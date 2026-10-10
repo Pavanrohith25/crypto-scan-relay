@@ -1,6 +1,6 @@
 {
-  "last_processed_at_ms": 1791633332872,
-  "last_processed_generated_at_ms": 1791633330258,
+  "last_processed_at_ms": 1791633675777,
+  "last_processed_generated_at_ms": 1791633673422,
   "minimum_candidate_score": 78.0,
   "pairs": {
     "1000000BOBUSDT": {
@@ -352,13 +352,13 @@
     },
     "ARPAUSDT": {
       "gate_reasons": [
-        "score 50.0 below required 82.0",
+        "score 44.0 below required 82.0",
         "long spot confirmation weak (B/S 0.573, flow -147,735)"
       ],
       "last_bias": "LONG",
-      "last_price": 0.012246,
-      "last_score": 50.0,
-      "last_seen_at_ms": 1791632750499,
+      "last_price": 0.01215,
+      "last_score": 44.0,
+      "last_seen_at_ms": 1791633675777,
       "qualifying_streak": 0,
       "required_score": 82.0
     },
@@ -1109,12 +1109,13 @@
     },
     "ERAUSDT": {
       "gate_reasons": [
-        "score 53.0 below required 82.0"
+        "score 42.0 below required 82.0",
+        "15m OI is not expanding"
       ],
       "last_bias": "LONG",
-      "last_price": 0.08157,
-      "last_score": 53.0,
-      "last_seen_at_ms": 1791633332872,
+      "last_price": 0.07997,
+      "last_score": 42.0,
+      "last_seen_at_ms": 1791633675777,
       "qualifying_streak": 0,
       "required_score": 82.0
     },
@@ -1602,12 +1603,14 @@
         "strength": "STRONG",
         "warnings": []
       },
-      "gate_reasons": [],
+      "gate_reasons": [
+        "pair cooldown active after deterioration"
+      ],
       "last_bias": "LONG",
-      "last_price": 0.05571,
+      "last_price": 0.05565,
       "last_return_pct": 0.269978,
-      "last_score": 68.0,
-      "last_seen_at_ms": 1791633332872,
+      "last_score": 63.0,
+      "last_seen_at_ms": 1791633675777,
       "mae_pct": -0.341973,
       "mfe_pct": 0.449964,
       "previous_score": 68.0,
@@ -2000,10 +2003,10 @@
         "15m OI is not expanding"
       ],
       "last_bias": "LONG",
-      "last_price": 0.0871,
+      "last_price": 0.08689,
       "last_return_pct": 0.926462,
       "last_score": 62.0,
-      "last_seen_at_ms": 1791633332872,
+      "last_seen_at_ms": 1791633675777,
       "mae_pct": 0.0,
       "mfe_pct": 2.431963,
       "previous_score": 69.0,
@@ -2717,12 +2720,14 @@
         "strength": "STRONG",
         "warnings": []
       },
-      "gate_reasons": [],
+      "gate_reasons": [
+        "pair cooldown active after deterioration"
+      ],
       "last_bias": "LONG",
-      "last_price": 0.9377,
+      "last_price": 0.9367,
       "last_return_pct": -0.803978,
       "last_score": 63.0,
-      "last_seen_at_ms": 1791633332872,
+      "last_seen_at_ms": 1791633675777,
       "mae_pct": -0.803978,
       "mfe_pct": 0.0,
       "previous_score": 63.0,
