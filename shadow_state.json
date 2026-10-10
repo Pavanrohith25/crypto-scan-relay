@@ -1,6 +1,6 @@
 {
-  "last_processed_at_ms": 1791659761336,
-  "last_processed_generated_at_ms": 1791659758773,
+  "last_processed_at_ms": 1791660074777,
+  "last_processed_generated_at_ms": 1791660072259,
   "pairs": {
     "1000000BOBUSDT": {
       "gate_reasons": [
@@ -217,14 +217,15 @@
     "ARPAUSDT": {
       "gate_reasons": [
         "score 58.0 below required 82.0",
-        "long spot weak (B/S 0.948, flow -4,814)"
+        "long spot weak (B/S 1.005, flow 398)",
+        "15m OI not expanding"
       ],
       "last_bias": "LONG",
       "last_decision": "WAIT",
-      "last_price": 0.011978,
+      "last_price": 0.011915,
       "last_regime": "COUNTERTREND",
       "last_score": 58.0,
-      "last_seen_at_ms": 1791659761336
+      "last_seen_at_ms": 1791660074777
     },
     "B2USDT": {
       "gate_reasons": [
@@ -800,10 +801,10 @@
       ],
       "last_bias": "LONG",
       "last_decision": "WAIT",
-      "last_price": 0.07912,
+      "last_price": 0.07823,
       "last_regime": "COUNTERTREND",
       "last_score": 49.0,
-      "last_seen_at_ms": 1791659761336
+      "last_seen_at_ms": 1791660074777
     },
     "ESPORTSUSDT": {
       "gate_reasons": [
@@ -1408,17 +1409,17 @@
       "confirmed_score": 81.0,
       "gate_reasons": [
         "deep countertrend: 24h structure/OI conflicts with the setup",
-        "score 54.0 below required 78.0",
+        "score 50.0 below required 78.0",
         "long spot weak (B/S 0.815, flow -40,245)",
         "15m OI not expanding"
       ],
       "last_bias": "LONG",
       "last_decision": "BLOCKED_DEEP_COUNTERTREND",
       "last_position_check_ms": 1790605251894,
-      "last_price": 0.10177,
+      "last_price": 0.1015,
       "last_regime": "COUNTERTREND_DEEP",
-      "last_score": 54.0,
-      "last_seen_at_ms": 1791659761336,
+      "last_score": 50.0,
+      "last_seen_at_ms": 1791660074777,
       "position_state": "EXIT_THESIS_BROKEN"
     },
     "MANAUSDT": {
@@ -1990,15 +1991,16 @@
     },
     "RLCUSDT": {
       "gate_reasons": [
-        "score 77.0 below required 78.0",
-        "long spot weak (B/S 1.021, flow 7,492)"
+        "score 72.0 below required 78.0",
+        "long spot weak (B/S 1.021, flow 7,492)",
+        "15m OI not expanding"
       ],
       "last_bias": "LONG",
       "last_decision": "WAIT",
-      "last_price": 0.9961,
+      "last_price": 0.9963,
       "last_regime": "TREND_CONTINUATION",
-      "last_score": 77.0,
-      "last_seen_at_ms": 1791659761336
+      "last_score": 72.0,
+      "last_seen_at_ms": 1791660074777
     },
     "RONINUSDT": {
       "gate_reasons": [
@@ -2101,16 +2103,15 @@
       "confirmed_score": 83.0,
       "gate_reasons": [
         "score 68.0 below required 78.0",
-        "long spot weak (B/S 1.041, flow 3,228)",
-        "15m OI not expanding"
+        "long spot weak (B/S 1.041, flow 3,228)"
       ],
       "last_bias": "LONG",
       "last_decision": "WAIT",
       "last_position_check_ms": 1791593740789,
-      "last_price": 0.06745,
+      "last_price": 0.06754,
       "last_regime": "COUNTERTREND",
       "last_score": 68.0,
-      "last_seen_at_ms": 1791659761336,
+      "last_seen_at_ms": 1791660074777,
       "position_state": "EXIT_THESIS_BROKEN"
     },
     "SCRUSDT": {
