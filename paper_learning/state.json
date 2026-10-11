@@ -13,22 +13,22 @@
       ]
     },
     "SHORT": {
-      "n": 2,
+      "n": 3,
       "weights": [
-        0.04941052183266583,
-        6.206474891159736e-06,
-        -0.005586468338761903,
-        -0.011784720171988693,
-        -0.0067316022479139235,
-        0.015572746096958788,
-        0.027639783981717396
+        0.0733297329329769,
+        -0.0013643646284229572,
+        -0.0061148063326838,
+        -0.009183321187762055,
+        -0.0076976051123951875,
+        0.02298693057224095,
+        0.03983721326966615
       ]
     }
   },
   "started_ms": 1791382577243,
   "trades": {
     "BTCUSDT-1791450054416": {
-      "checked_ms": 1791690661389,
+      "checked_ms": 1791690986165,
       "entry_ms": 1791450300000,
       "entry_price": 83013.8,
       "features": [
@@ -42,11 +42,11 @@
       ],
       "id": "BTCUSDT-1791450054416",
       "mae_pct": 0.6205956118139344,
-      "mark_return_pct": 0.11213798187770241,
+      "mark_return_pct": 0.18766759261713561,
       "mfe_pct": 3.156390865133274,
       "model_hash": "d00c3a24ef0fd037da9e46e3397b77adfe716660f6d7e76afb8984ea77092eae",
       "model_n": 0,
-      "next_bar_ms": 1791690600000,
+      "next_bar_ms": 1791690900000,
       "predicted_ms": 1791450062402,
       "score": null,
       "side": "SHORT",
@@ -134,7 +134,7 @@
       "target_pct": 5.0
     },
     "ONDOUSDT-1791644453967": {
-      "checked_ms": 1791690661389,
+      "checked_ms": 1791690986165,
       "entry_ms": 1791644700000,
       "entry_price": 0.4986,
       "features": [
@@ -148,11 +148,11 @@
       ],
       "id": "ONDOUSDT-1791644453967",
       "mae_pct": 2.9281989570798195,
-      "mark_return_pct": -2.5471319695146377,
+      "mark_return_pct": -2.727637384677095,
       "mfe_pct": 0.8223024468511975,
       "model_hash": "d00c3a24ef0fd037da9e46e3397b77adfe716660f6d7e76afb8984ea77092eae",
       "model_n": 0,
-      "next_bar_ms": 1791690600000,
+      "next_bar_ms": 1791690900000,
       "predicted_ms": 1791644457349,
       "score": null,
       "side": "LONG",
@@ -184,7 +184,7 @@
       "target_pct": 5.0
     },
     "SANDUSDT-1791595831062": {
-      "checked_ms": 1791690661389,
+      "checked_ms": 1791690986165,
       "entry_ms": 1791596100000,
       "entry_price": 0.06723,
       "features": [
@@ -196,14 +196,18 @@
         0.31,
         0.51
       ],
+      "holding_hours": 26.333333333333332,
       "id": "SANDUSDT-1791595831062",
+      "label_available_ms": 1791690986165,
       "mae_pct": 4.120184441469599,
-      "mark_return_pct": 4.759779860181457,
-      "mfe_pct": 4.968020229064396,
+      "mark_return_pct": 5.072140413505865,
+      "mfe_pct": 5.235757846199607,
       "model_hash": "25575fc0a93cac7e00ea1e9aa380fa663db4fcae01bb92432973042cc2be7ebd",
       "model_n": 2,
-      "next_bar_ms": 1791690600000,
+      "net_return_pct": 4.84,
+      "next_bar_ms": 1791690900000,
       "predicted_ms": 1791595833941,
+      "resolved_bar_ms": 1791690600000,
       "score": null,
       "side": "SHORT",
       "signal_ms": 1791595831062,
@@ -229,8 +233,9 @@
         "warnings": []
       },
       "source": "BINANCE_SPOT_PROXY",
-      "status": "OPEN",
+      "status": "TARGET",
       "stop_pct": 6.0,
+      "stressed_net_return_pct": 4.46,
       "symbol": "SANDUSDT",
       "target_pct": 5.0
     },
