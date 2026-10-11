@@ -1,6 +1,6 @@
 {
-  "last_processed_at_ms": 1791697572384,
-  "last_processed_generated_at_ms": 1791697569819,
+  "last_processed_at_ms": 1791697868928,
+  "last_processed_generated_at_ms": 1791697866392,
   "pairs": {
     "1000000BOBUSDT": {
       "gate_reasons": [
@@ -799,10 +799,10 @@
       ],
       "last_bias": "LONG",
       "last_decision": "WAIT",
-      "last_price": 0.08031,
+      "last_price": 0.0804,
       "last_regime": "TREND_CONTINUATION",
       "last_score": 52.0,
-      "last_seen_at_ms": 1791697572384
+      "last_seen_at_ms": 1791697868928
     },
     "ESPORTSUSDT": {
       "gate_reasons": [
@@ -1323,17 +1323,17 @@
     },
     "LAUSDT": {
       "gate_reasons": [
-        "score 39.0 below required 82.0",
+        "score 49.0 below required 82.0",
         "long spot weak (B/S 0.904, flow -4,921)",
         "15m OI not expanding",
         "spot volume 97,332 below required 100,000"
       ],
       "last_bias": "LONG",
       "last_decision": "WAIT",
-      "last_price": 0.06948,
+      "last_price": 0.06956,
       "last_regime": "TREND_CONTINUATION",
-      "last_score": 39.0,
-      "last_seen_at_ms": 1791697572384
+      "last_score": 49.0,
+      "last_seen_at_ms": 1791697868928
     },
     "LGELECTRONICSUSDT": {
       "gate_reasons": [
@@ -1423,15 +1423,16 @@
       "confirmed_score": 81.0,
       "gate_reasons": [
         "deep countertrend: 24h structure/OI conflicts with the setup",
-        "score 64.0 below required 78.0"
+        "score 28.0 below required 78.0",
+        "long spot weak (B/S 0.907, flow -43,684)"
       ],
       "last_bias": "LONG",
       "last_decision": "BLOCKED_DEEP_COUNTERTREND",
       "last_position_check_ms": 1790605251894,
-      "last_price": 0.10538,
+      "last_price": 0.11005,
       "last_regime": "COUNTERTREND_DEEP",
-      "last_score": 64.0,
-      "last_seen_at_ms": 1791697264582,
+      "last_score": 28.0,
+      "last_seen_at_ms": 1791697868928,
       "position_state": "EXIT_THESIS_BROKEN"
     },
     "MANAUSDT": {
@@ -1509,17 +1510,15 @@
       "confirmed_regime": "TREND_CONTINUATION",
       "confirmed_score": 90.0,
       "gate_reasons": [
-        "deep countertrend: 24h structure/OI conflicts with the setup",
-        "score 54.0 below required 78.0",
-        "long spot weak (B/S 0.836, flow -13,094)"
+        "deep countertrend: 24h structure/OI conflicts with the setup"
       ],
       "last_bias": "LONG",
       "last_decision": "BLOCKED_DEEP_COUNTERTREND",
       "last_position_check_ms": 1791694849981,
-      "last_price": 0.08679,
+      "last_price": 0.08694,
       "last_regime": "COUNTERTREND_DEEP",
-      "last_score": 54.0,
-      "last_seen_at_ms": 1791697572384,
+      "last_score": 79.0,
+      "last_seen_at_ms": 1791697868928,
       "position_state": "EXIT_THESIS_BROKEN"
     },
     "MOVEUSDT": {
@@ -2020,16 +2019,14 @@
     },
     "RLCUSDT": {
       "gate_reasons": [
-        "deep countertrend: 24h structure/OI conflicts with the setup",
-        "score 74.0 below required 78.0",
-        "long spot weak (B/S 0.999, flow -121)"
+        "score 76.0 below required 78.0"
       ],
       "last_bias": "LONG",
-      "last_decision": "BLOCKED_DEEP_COUNTERTREND",
-      "last_price": 0.9849,
-      "last_regime": "COUNTERTREND_DEEP",
-      "last_score": 74.0,
-      "last_seen_at_ms": 1791697572384
+      "last_decision": "WAIT",
+      "last_price": 1.0274,
+      "last_regime": "TREND_CONTINUATION",
+      "last_score": 76.0,
+      "last_seen_at_ms": 1791697868928
     },
     "RONINUSDT": {
       "gate_reasons": [
@@ -2654,16 +2651,16 @@
     },
     "WALUSDT": {
       "gate_reasons": [
-        "score 72.0 below required 82.0",
+        "score 78.0 below required 82.0",
         "long spot weak (B/S 1.021, flow 622)",
         "spot volume 61,281 below required 100,000"
       ],
       "last_bias": "LONG",
       "last_decision": "WAIT",
-      "last_price": 0.03726,
+      "last_price": 0.03761,
       "last_regime": "TREND_CONTINUATION",
-      "last_score": 72.0,
-      "last_seen_at_ms": 1791697572384
+      "last_score": 78.0,
+      "last_seen_at_ms": 1791697868928
     },
     "WAXPUSDT": {
       "gate_reasons": [
