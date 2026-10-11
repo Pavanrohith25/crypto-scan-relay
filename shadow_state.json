@@ -1,6 +1,6 @@
 {
-  "last_processed_at_ms": 1791712271805,
-  "last_processed_generated_at_ms": 1791712269272,
+  "last_processed_at_ms": 1791712546993,
+  "last_processed_generated_at_ms": 1791712544533,
   "pairs": {
     "1000000BOBUSDT": {
       "gate_reasons": [
@@ -799,10 +799,10 @@
       ],
       "last_bias": "LONG",
       "last_decision": "WAIT",
-      "last_price": 0.084,
+      "last_price": 0.08391,
       "last_regime": "TREND_CONTINUATION",
       "last_score": 73.0,
-      "last_seen_at_ms": 1791712271805
+      "last_seen_at_ms": 1791712546993
     },
     "ESPORTSUSDT": {
       "gate_reasons": [
@@ -1325,14 +1325,15 @@
       "gate_reasons": [
         "score 45.0 below required 82.0",
         "long spot weak (B/S 0.660, flow -8,527)",
+        "15m OI not expanding",
         "spot volume 41,589 below required 100,000"
       ],
       "last_bias": "LONG",
       "last_decision": "WAIT",
-      "last_price": 0.06877,
+      "last_price": 0.06881,
       "last_regime": "COUNTERTREND",
       "last_score": 45.0,
-      "last_seen_at_ms": 1791712271805
+      "last_seen_at_ms": 1791712546993
     },
     "LGELECTRONICSUSDT": {
       "gate_reasons": [
@@ -1427,10 +1428,10 @@
       "last_bias": "LONG",
       "last_decision": "WAIT",
       "last_position_check_ms": 1790605251894,
-      "last_price": 0.12816,
+      "last_price": 0.12897,
       "last_regime": "TREND_CONTINUATION",
       "last_score": 46.0,
-      "last_seen_at_ms": 1791712271805,
+      "last_seen_at_ms": 1791712546993,
       "position_state": "EXIT_THESIS_BROKEN"
     },
     "MANAUSDT": {
@@ -1501,23 +1502,30 @@
     },
     "MINAUSDT": {
       "active": false,
+      "anchor_price": 0.0861,
+      "anchor_regime": "COUNTERTREND",
+      "anchor_score": 79.0,
+      "armed": true,
+      "armed_at_ms": 1791712546993,
       "closed_at_ms": 1791694849981,
       "confirmed_at_ms": 1791601843711,
       "confirmed_bias": "LONG",
       "confirmed_price": 0.0835,
       "confirmed_regime": "TREND_CONTINUATION",
       "confirmed_score": 90.0,
-      "gate_reasons": [
-        "15m OI not expanding"
-      ],
+      "evidence_count": 1,
+      "gate_reasons": [],
+      "high_priority": false,
       "last_bias": "LONG",
-      "last_decision": "WAIT",
+      "last_decision": "ARMED",
+      "last_fingerprint": "0.0861|1.284|13867.8576|111603.935|0.01|1.08|0.47",
       "last_position_check_ms": 1791694849981,
-      "last_price": 0.08584,
+      "last_price": 0.0861,
       "last_regime": "COUNTERTREND",
       "last_score": 79.0,
-      "last_seen_at_ms": 1791712271805,
-      "position_state": "EXIT_THESIS_BROKEN"
+      "last_seen_at_ms": 1791712546993,
+      "position_state": "EXIT_THESIS_BROKEN",
+      "required_score": 78.0
     },
     "MOVEUSDT": {
       "gate_reasons": [
@@ -2027,12 +2035,12 @@
       ],
       "last_bias": "LONG",
       "last_decision": "SHADOW_CONFIRMED",
-      "last_position_check_ms": 1791712271805,
-      "last_price": 1.0229,
+      "last_position_check_ms": 1791712546993,
+      "last_price": 1.0249,
       "last_regime": "TREND_CONTINUATION",
-      "last_score": 62.0,
-      "last_seen_at_ms": 1791712271805,
-      "position_state": "HOLD_PROTECT"
+      "last_score": 72.0,
+      "last_seen_at_ms": 1791712546993,
+      "position_state": "HOLD"
     },
     "RONINUSDT": {
       "gate_reasons": [
@@ -2656,15 +2664,22 @@
       "position_state": "HOLD_PROTECT"
     },
     "WALUSDT": {
-      "gate_reasons": [
-        "score 74.0 below required 82.0"
-      ],
+      "anchor_price": 0.03817,
+      "anchor_regime": "TREND_CONTINUATION",
+      "anchor_score": 85.0,
+      "armed": true,
+      "armed_at_ms": 1791712546993,
+      "evidence_count": 1,
+      "gate_reasons": [],
+      "high_priority": false,
       "last_bias": "LONG",
-      "last_decision": "WAIT",
-      "last_price": 0.038,
+      "last_decision": "ARMED",
+      "last_fingerprint": "0.03817|1.17|9949.5196|126976.9868|1.18|2.33|0.29",
+      "last_price": 0.03817,
       "last_regime": "TREND_CONTINUATION",
-      "last_score": 74.0,
-      "last_seen_at_ms": 1791712271805
+      "last_score": 85.0,
+      "last_seen_at_ms": 1791712546993,
+      "required_score": 82.0
     },
     "WAXPUSDT": {
       "gate_reasons": [
