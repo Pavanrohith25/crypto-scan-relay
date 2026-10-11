@@ -1,6 +1,6 @@
 {
-  "last_processed_at_ms": 1791733566799,
-  "last_processed_generated_at_ms": 1791733564181,
+  "last_processed_at_ms": 1791733829944,
+  "last_processed_generated_at_ms": 1791733827358,
   "pairs": {
     "1000000BOBUSDT": {
       "gate_reasons": [
@@ -518,10 +518,10 @@
       ],
       "last_bias": "LONG",
       "last_decision": "WAIT",
-      "last_price": 0.0016091,
+      "last_price": 0.0015849,
       "last_regime": "TREND_CONTINUATION",
       "last_score": 22.0,
-      "last_seen_at_ms": 1791733566799
+      "last_seen_at_ms": 1791733829944
     },
     "CLANKERUSDT": {
       "gate_reasons": [
@@ -820,14 +820,15 @@
     "ERAUSDT": {
       "gate_reasons": [
         "deep countertrend: 24h structure/OI conflicts with the setup",
-        "score 75.0 below required 82.0"
+        "score 68.0 below required 82.0",
+        "long spot weak (B/S 1.037, flow 4,733)"
       ],
       "last_bias": "LONG",
       "last_decision": "BLOCKED_DEEP_COUNTERTREND",
-      "last_price": 0.07885,
+      "last_price": 0.07859,
       "last_regime": "COUNTERTREND_DEEP",
-      "last_score": 75.0,
-      "last_seen_at_ms": 1791733566799
+      "last_score": 68.0,
+      "last_seen_at_ms": 1791733829944
     },
     "ESPORTSUSDT": {
       "gate_reasons": [
@@ -859,14 +860,15 @@
     },
     "ETHUSDT": {
       "gate_reasons": [
-        "score 68.0 below required 78.0"
+        "score 43.0 below required 78.0",
+        "short spot weak (B/S 1.185, flow 3,552,908)"
       ],
       "last_bias": "SHORT",
       "last_decision": "WAIT",
-      "last_price": 2527.0,
+      "last_price": 2529.67,
       "last_regime": "COUNTERTREND",
-      "last_score": 68.0,
-      "last_seen_at_ms": 1791733566799
+      "last_score": 43.0,
+      "last_seen_at_ms": 1791733829944
     },
     "EVAAUSDT": {
       "gate_reasons": [
@@ -1536,20 +1538,20 @@
       "confirmed_price": 0.0835,
       "confirmed_regime": "TREND_CONTINUATION",
       "confirmed_score": 90.0,
-      "evidence_count": 3,
+      "evidence_count": 4,
       "gate_reasons": [
-        "price follow-through 0.283822138126788 below 0.75%",
+        "price follow-through 0.6031220435193996 below 0.75%",
         "countertrend reclaim not strong enough"
       ],
       "high_priority": false,
       "last_bias": "LONG",
       "last_decision": "ARMED_WAITING_TRIGGER",
-      "last_fingerprint": "0.0848|1.538|25091.858|118442.0096|0.44|-0.34|-0.12",
+      "last_fingerprint": "0.08507|1.538|25091.858|118442.0096|0.91|0.27|-0.12",
       "last_position_check_ms": 1791694849981,
-      "last_price": 0.0848,
+      "last_price": 0.08507,
       "last_regime": "COUNTERTREND",
-      "last_score": 86.0,
-      "last_seen_at_ms": 1791733566799,
+      "last_score": 80.0,
+      "last_seen_at_ms": 1791733829944,
       "position_state": "EXIT_THESIS_BROKEN",
       "required_score": 78.0
     },
@@ -1695,15 +1697,16 @@
       "confirmed_score": 85.0,
       "gate_reasons": [
         "deep countertrend: 24h structure/OI conflicts with the setup",
-        "score 58.0 below required 82.0"
+        "score 63.0 below required 82.0",
+        "long spot weak (B/S 0.922, flow -8,570)"
       ],
       "last_bias": "LONG",
       "last_decision": "BLOCKED_DEEP_COUNTERTREND",
       "last_position_check_ms": 1791720940517,
-      "last_price": 0.03244,
+      "last_price": 0.03239,
       "last_regime": "COUNTERTREND_DEEP",
-      "last_score": 58.0,
-      "last_seen_at_ms": 1791733566799,
+      "last_score": 63.0,
+      "last_seen_at_ms": 1791733829944,
       "position_state": "EXIT_THESIS_BROKEN"
     },
     "OKLOUSDT": {
@@ -2065,11 +2068,11 @@
       ],
       "last_bias": "LONG",
       "last_decision": "SHADOW_CONFIRMED",
-      "last_position_check_ms": 1791733566799,
-      "last_price": 1.0352,
-      "last_regime": "COUNTERTREND",
-      "last_score": 59.0,
-      "last_seen_at_ms": 1791733566799,
+      "last_position_check_ms": 1791733829944,
+      "last_price": 1.0437,
+      "last_regime": "TREND_CONTINUATION",
+      "last_score": 80.0,
+      "last_seen_at_ms": 1791733829944,
       "position_state": "HOLD_PROTECT"
     },
     "RONINUSDT": {
