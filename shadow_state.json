@@ -1,6 +1,6 @@
 {
-  "last_processed_at_ms": 1791682539692,
-  "last_processed_generated_at_ms": 1791682537276,
+  "last_processed_at_ms": 1791682837648,
+  "last_processed_generated_at_ms": 1791682835128,
   "pairs": {
     "1000000BOBUSDT": {
       "gate_reasons": [
@@ -794,15 +794,18 @@
     },
     "ERAUSDT": {
       "gate_reasons": [
-        "score 54.0 below required 82.0",
-        "long spot weak (B/S 0.723, flow -37,482)"
+        "score 57.0 below required 82.0",
+        "candidate has blocker(s)",
+        "missing spot confirmation",
+        "15m OI not expanding",
+        "missing spot volume"
       ],
       "last_bias": "LONG",
       "last_decision": "WAIT",
-      "last_price": 0.07544,
+      "last_price": 0.0756,
       "last_regime": "COUNTERTREND",
-      "last_score": 54.0,
-      "last_seen_at_ms": 1791682539692
+      "last_score": 57.0,
+      "last_seen_at_ms": 1791682837648
     },
     "ESPORTSUSDT": {
       "gate_reasons": [
@@ -1328,10 +1331,10 @@
       ],
       "last_bias": "LONG",
       "last_decision": "WAIT",
-      "last_price": 0.06896,
+      "last_price": 0.06863,
       "last_regime": "TREND_CONTINUATION",
       "last_score": 54.0,
-      "last_seen_at_ms": 1791682539692
+      "last_seen_at_ms": 1791682837648
     },
     "LGELECTRONICSUSDT": {
       "gate_reasons": [
@@ -1511,11 +1514,11 @@
       ],
       "last_bias": "LONG",
       "last_decision": "SHADOW_CONFIRMED",
-      "last_position_check_ms": 1791682539692,
-      "last_price": 0.08809,
+      "last_position_check_ms": 1791682837648,
+      "last_price": 0.08733,
       "last_regime": "TREND_CONTINUATION",
       "last_score": 59.0,
-      "last_seen_at_ms": 1791682539692,
+      "last_seen_at_ms": 1791682837648,
       "position_state": "HOLD_PROTECT"
     },
     "MOVEUSDT": {
@@ -2015,16 +2018,22 @@
       "last_seen_at_ms": 1790717716227
     },
     "RLCUSDT": {
-      "gate_reasons": [
-        "deep countertrend: 24h structure/OI conflicts with the setup",
-        "15m OI not expanding"
-      ],
+      "anchor_price": 0.9929,
+      "anchor_regime": "COUNTERTREND",
+      "anchor_score": 87.0,
+      "armed": true,
+      "armed_at_ms": 1791682837648,
+      "evidence_count": 1,
+      "gate_reasons": [],
+      "high_priority": false,
       "last_bias": "LONG",
-      "last_decision": "BLOCKED_DEEP_COUNTERTREND",
-      "last_price": 0.973,
-      "last_regime": "COUNTERTREND_DEEP",
-      "last_score": 79.0,
-      "last_seen_at_ms": 1791682539692
+      "last_decision": "ARMED",
+      "last_fingerprint": "0.9929|1.164|29445.2749|387859.0465|1.91|9.44|2.4",
+      "last_price": 0.9929,
+      "last_regime": "COUNTERTREND",
+      "last_score": 87.0,
+      "last_seen_at_ms": 1791682837648,
+      "required_score": 78.0
     },
     "RONINUSDT": {
       "gate_reasons": [
@@ -2130,15 +2139,16 @@
       "confirmed_score": 83.0,
       "gate_reasons": [
         "score 50.0 below required 78.0",
-        "long spot weak (B/S 0.657, flow -132,467)"
+        "long spot weak (B/S 0.657, flow -132,467)",
+        "15m OI not expanding"
       ],
       "last_bias": "LONG",
       "last_decision": "WAIT",
       "last_position_check_ms": 1791593740789,
-      "last_price": 0.06508,
+      "last_price": 0.06503,
       "last_regime": "COUNTERTREND",
       "last_score": 50.0,
-      "last_seen_at_ms": 1791682539692,
+      "last_seen_at_ms": 1791682837648,
       "position_state": "EXIT_THESIS_BROKEN"
     },
     "SCRUSDT": {
@@ -2649,15 +2659,15 @@
     },
     "WALUSDT": {
       "gate_reasons": [
-        "score 54.0 below required 82.0",
-        "long spot weak (B/S 0.818, flow -83,053)"
+        "score 49.0 below required 82.0",
+        "long spot weak (B/S 0.868, flow -43,626)"
       ],
       "last_bias": "LONG",
       "last_decision": "WAIT",
-      "last_price": 0.03715,
+      "last_price": 0.03718,
       "last_regime": "TREND_CONTINUATION",
-      "last_score": 54.0,
-      "last_seen_at_ms": 1791682539692
+      "last_score": 49.0,
+      "last_seen_at_ms": 1791682837648
     },
     "WAXPUSDT": {
       "gate_reasons": [
