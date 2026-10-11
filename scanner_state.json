@@ -1,6 +1,6 @@
 {
-  "last_processed_at_ms": 1791705358131,
-  "last_processed_generated_at_ms": 1791705355657,
+  "last_processed_at_ms": 1791705664677,
+  "last_processed_generated_at_ms": 1791705662002,
   "minimum_candidate_score": 78.0,
   "pairs": {
     "1000000BOBUSDT": {
@@ -352,14 +352,14 @@
     },
     "ARPAUSDT": {
       "gate_reasons": [
-        "score 58.0 below required 82.0",
-        "long spot confirmation weak (B/S 1.005, flow 398)",
+        "score 45.0 below required 82.0",
+        "long spot confirmation weak (B/S 0.802, flow -15,843)",
         "15m OI is not expanding"
       ],
       "last_bias": "LONG",
-      "last_price": 0.011915,
-      "last_score": 58.0,
-      "last_seen_at_ms": 1791660074712,
+      "last_price": 0.012191,
+      "last_score": 45.0,
+      "last_seen_at_ms": 1791705664677,
       "qualifying_streak": 0,
       "required_score": 82.0
     },
@@ -1167,14 +1167,14 @@
     },
     "ERAUSDT": {
       "gate_reasons": [
-        "score 54.0 below required 82.0",
+        "score 44.0 below required 82.0",
         "long spot confirmation weak (B/S 0.925, flow -21,024)",
         "15m OI is not expanding"
       ],
       "last_bias": "LONG",
-      "last_price": 0.08326,
-      "last_score": 54.0,
-      "last_seen_at_ms": 1791705358131,
+      "last_price": 0.08277,
+      "last_score": 44.0,
+      "last_seen_at_ms": 1791705664677,
       "qualifying_streak": 0,
       "required_score": 82.0
     },
@@ -1743,14 +1743,14 @@
     },
     "LAUSDT": {
       "gate_reasons": [
-        "score 62.0 below required 82.0",
+        "score 52.0 below required 82.0",
         "long spot confirmation weak (B/S 0.924, flow -3,105)",
         "15m OI is not expanding"
       ],
       "last_bias": "LONG",
-      "last_price": 0.06902,
-      "last_score": 62.0,
-      "last_seen_at_ms": 1791705358131,
+      "last_price": 0.06883,
+      "last_score": 52.0,
+      "last_seen_at_ms": 1791705664677,
       "qualifying_streak": 0,
       "required_score": 82.0
     },
@@ -2024,14 +2024,14 @@
       "required_score": 82.0
     },
     "MINAUSDT": {
-      "active": true,
+      "active": false,
       "confirmed_at_ms": 1791705086136,
       "confirmed_bias": "LONG",
       "confirmed_generated_at_ms": 1791705083768,
       "confirmed_price": 0.08696,
       "confirmed_score": 90.0,
-      "cooldown_until_ms": 0,
-      "deteriorated_at_ms": 1791699344531,
+      "cooldown_until_ms": 1791708364677,
+      "deteriorated_at_ms": 1791705664677,
       "entry_snapshot": {
         "action": "LONG_CANDIDATE",
         "basis_pct": -0.2552,
@@ -2069,14 +2069,14 @@
       },
       "gate_reasons": [],
       "last_bias": "LONG",
-      "last_price": 0.08738,
-      "last_return_pct": 0.482981,
-      "last_score": 90.0,
-      "last_seen_at_ms": 1791705358131,
-      "mae_pct": 0.0,
+      "last_price": 0.08685,
+      "last_return_pct": -0.126495,
+      "last_score": 62.0,
+      "last_seen_at_ms": 1791705664677,
+      "mae_pct": -0.126495,
       "mfe_pct": 0.482981,
-      "previous_score": 90.0,
-      "qualifying_streak": 1,
+      "previous_score": 62.0,
+      "qualifying_streak": 0,
       "required_score": 78.0
     },
     "MOVEUSDT": {
@@ -2803,10 +2803,10 @@
         "pair cooldown active after deterioration"
       ],
       "last_bias": "LONG",
-      "last_price": 1.0243,
+      "last_price": 1.0167,
       "last_return_pct": -0.208685,
-      "last_score": 86.0,
-      "last_seen_at_ms": 1791705358131,
+      "last_score": 80.0,
+      "last_seen_at_ms": 1791705664677,
       "mae_pct": -0.208685,
       "mfe_pct": 2.534036,
       "previous_score": 65.0,
@@ -3665,12 +3665,13 @@
     "WALUSDT": {
       "gate_reasons": [
         "score 49.0 below required 82.0",
-        "long spot confirmation weak (B/S 0.808, flow -7,550)"
+        "long spot confirmation weak (B/S 0.808, flow -7,550)",
+        "15m OI is not expanding"
       ],
       "last_bias": "LONG",
-      "last_price": 0.03829,
+      "last_price": 0.03826,
       "last_score": 49.0,
-      "last_seen_at_ms": 1791705358131,
+      "last_seen_at_ms": 1791705664677,
       "qualifying_streak": 0,
       "required_score": 82.0
     },
