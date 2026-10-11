@@ -1,6 +1,6 @@
 {
-  "last_processed_at_ms": 1791693649085,
-  "last_processed_generated_at_ms": 1791693646432,
+  "last_processed_at_ms": 1791693986614,
+  "last_processed_generated_at_ms": 1791693984025,
   "minimum_candidate_score": 78.0,
   "pairs": {
     "1000000BOBUSDT": {
@@ -1746,9 +1746,9 @@
         "long spot confirmation weak (B/S 0.684, flow -90,978)"
       ],
       "last_bias": "LONG",
-      "last_price": 0.06929,
+      "last_price": 0.06945,
       "last_score": 60.0,
-      "last_seen_at_ms": 1791693649085,
+      "last_seen_at_ms": 1791693986614,
       "qualifying_streak": 0,
       "required_score": 82.0
     },
@@ -1870,9 +1870,9 @@
         "long spot confirmation weak (B/S 0.929, flow -19,363)"
       ],
       "last_bias": "LONG",
-      "last_price": 0.10259,
+      "last_price": 0.1025,
       "last_score": 61.0,
-      "last_seen_at_ms": 1791693649085,
+      "last_seen_at_ms": 1791693986614,
       "qualifying_streak": 0,
       "required_score": 78.0
     },
@@ -2067,13 +2067,14 @@
         "warnings": []
       },
       "gate_reasons": [
-        "pair cooldown active after deterioration"
+        "score 77.0 below required 78.0",
+        "long spot confirmation weak (B/S 1.045, flow 5,824)"
       ],
       "last_bias": "LONG",
-      "last_price": 0.0863,
+      "last_price": 0.08635,
       "last_return_pct": -1.580575,
-      "last_score": 83.0,
-      "last_seen_at_ms": 1791693649085,
+      "last_score": 77.0,
+      "last_seen_at_ms": 1791693986614,
       "mae_pct": -1.580575,
       "mfe_pct": 0.0,
       "previous_score": 62.0,
@@ -2807,10 +2808,10 @@
         "long spot confirmation weak (B/S 0.960, flow -6,605)"
       ],
       "last_bias": "LONG",
-      "last_price": 0.9836,
+      "last_price": 0.9745,
       "last_return_pct": 3.129794,
       "last_score": 68.0,
-      "last_seen_at_ms": 1791693649085,
+      "last_seen_at_ms": 1791693986614,
       "mae_pct": -0.48072,
       "mfe_pct": 3.129794,
       "previous_score": 65.0,
@@ -3669,13 +3670,14 @@
     },
     "WALUSDT": {
       "gate_reasons": [
-        "score 72.0 below required 82.0",
-        "long spot confirmation weak (B/S 1.021, flow 1,166)"
+        "score 49.0 below required 82.0",
+        "long spot confirmation weak (B/S 0.789, flow -17,236)",
+        "15m OI is not expanding"
       ],
       "last_bias": "LONG",
-      "last_price": 0.0366,
-      "last_score": 72.0,
-      "last_seen_at_ms": 1791693649085,
+      "last_price": 0.03665,
+      "last_score": 49.0,
+      "last_seen_at_ms": 1791693986614,
       "qualifying_streak": 0,
       "required_score": 82.0
     },
