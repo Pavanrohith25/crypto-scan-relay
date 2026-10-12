@@ -1,6 +1,6 @@
 {
-  "last_processed_at_ms": 1791773791765,
-  "last_processed_generated_at_ms": 1791773789335,
+  "last_processed_at_ms": 1791774047419,
+  "last_processed_generated_at_ms": 1791774044867,
   "pairs": {
     "1000000BOBUSDT": {
       "gate_reasons": [
@@ -303,10 +303,10 @@
       ],
       "last_bias": "SHORT",
       "last_decision": "WAIT",
-      "last_price": 5.362,
+      "last_price": 5.363,
       "last_regime": "COUNTERTREND",
       "last_score": 44.0,
-      "last_seen_at_ms": 1791773791765
+      "last_seen_at_ms": 1791774047419
     },
     "BOTUSDT": {
       "gate_reasons": [
@@ -406,10 +406,10 @@
       ],
       "last_bias": "LONG",
       "last_decision": "WAIT",
-      "last_price": 1030.5,
+      "last_price": 1030.78,
       "last_regime": "COUNTERTREND",
       "last_score": 38.0,
-      "last_seen_at_ms": 1791773791765
+      "last_seen_at_ms": 1791774047419
     },
     "BZUSDT": {
       "gate_reasons": [
@@ -526,15 +526,15 @@
     },
     "CKBUSDT": {
       "gate_reasons": [
-        "score 39.0 below required 82.0",
+        "score 42.0 below required 82.0",
         "15m OI not expanding"
       ],
       "last_bias": "LONG",
       "last_decision": "WAIT",
-      "last_price": 0.001784,
+      "last_price": 0.0017871,
       "last_regime": "COUNTERTREND",
-      "last_score": 39.0,
-      "last_seen_at_ms": 1791773791765
+      "last_score": 42.0,
+      "last_seen_at_ms": 1791774047419
     },
     "CLANKERUSDT": {
       "gate_reasons": [
@@ -1047,10 +1047,10 @@
       ],
       "last_bias": "SHORT",
       "last_decision": "WAIT",
-      "last_price": 1.186,
+      "last_price": 1.189,
       "last_regime": "TREND_CONTINUATION",
       "last_score": 36.0,
-      "last_seen_at_ms": 1791773791765
+      "last_seen_at_ms": 1791774047419
     },
     "GRASSUSDT": {
       "gate_reasons": [
@@ -1391,16 +1391,18 @@
       "anchor_score": 85.0,
       "armed": true,
       "armed_at_ms": 1791773791765,
-      "evidence_count": 1,
-      "gate_reasons": [],
+      "evidence_count": 2,
+      "gate_reasons": [
+        "price follow-through -0.1608892789235039 below 0.50%"
+      ],
       "high_priority": false,
       "last_bias": "LONG",
-      "last_decision": "ARMED",
-      "last_fingerprint": "0.06837|2.346|41485.6895|103148.2139|3.06|4.1|1.48",
-      "last_price": 0.06837,
+      "last_decision": "ARMED_WAITING_TRIGGER",
+      "last_fingerprint": "0.06826|2.346|41485.6895|103148.2139|0.52|3.86|1.48",
+      "last_price": 0.06826,
       "last_regime": "TREND_CONTINUATION",
-      "last_score": 85.0,
-      "last_seen_at_ms": 1791773791765,
+      "last_score": 79.0,
+      "last_seen_at_ms": 1791774047419,
       "required_score": 82.0
     },
     "LGELECTRONICSUSDT": {
@@ -1585,10 +1587,10 @@
       "last_bias": "LONG",
       "last_decision": "BLOCKED_DEEP_COUNTERTREND",
       "last_position_check_ms": 1791766575426,
-      "last_price": 0.08162,
+      "last_price": 0.08138,
       "last_regime": "COUNTERTREND_DEEP",
       "last_score": 44.0,
-      "last_seen_at_ms": 1791773791765,
+      "last_seen_at_ms": 1791774047419,
       "position_state": "EXIT_THESIS_BROKEN"
     },
     "MOVEUSDT": {
