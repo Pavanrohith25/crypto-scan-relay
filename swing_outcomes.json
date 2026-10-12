@@ -1,5 +1,5 @@
 {
-  "last_processed_at_ms": 1791798958319,
+  "last_processed_at_ms": 1791799293978,
   "objective": {
     "diagnostic_horizons_hours": [
       4,
@@ -31095,6 +31095,7 @@
     "ZECUSDT-1791712855842": {
       "bias": "LONG",
       "evaluated_12h_at_ms": 1791756065966,
+      "evaluated_24h_at_ms": 1791799293978,
       "evaluated_4h_at_ms": 1791727283307,
       "outcome_12h": {
         "bars_used": 144,
@@ -31189,7 +31190,99 @@
         "window_end_ms": 1791756055842,
         "window_start_ms": 1791713100000
       },
-      "outcome_24h": null,
+      "outcome_24h": {
+        "bars_used": 288,
+        "close_return_pct": 5.8494,
+        "first_5pct_bar_ms": 1791740100000,
+        "horizon_hours": 24,
+        "mae_before_5pct_pct": -0.6686,
+        "mae_pct": -0.6686,
+        "mfe_pct": 9.2259,
+        "objective": "+5pct",
+        "sampling_interval": "5m",
+        "sampling_note": "Uses 5m candles beginning with the first full bar at/after the trigger. If TP and SL are both touched inside the same 5m candle before either resolves, the stop-path result is AMBIGUOUS.",
+        "stop_grid": {
+          "stop_3_0pct": {
+            "ambiguous": false,
+            "first_stop_bar_ms": null,
+            "first_target_bar_ms": 1791740100000,
+            "resolution_bar_ms": 1791740100000,
+            "result": "TARGET_FIRST",
+            "stop_first": false,
+            "stop_pct": 3.0,
+            "stop_reached": false,
+            "target_first": true,
+            "target_pct": 5.0,
+            "target_reached": true,
+            "time_to_stop_minutes": null,
+            "time_to_target_minutes": 454.07
+          },
+          "stop_4_0pct": {
+            "ambiguous": false,
+            "first_stop_bar_ms": null,
+            "first_target_bar_ms": 1791740100000,
+            "resolution_bar_ms": 1791740100000,
+            "result": "TARGET_FIRST",
+            "stop_first": false,
+            "stop_pct": 4.0,
+            "stop_reached": false,
+            "target_first": true,
+            "target_pct": 5.0,
+            "target_reached": true,
+            "time_to_stop_minutes": null,
+            "time_to_target_minutes": 454.07
+          },
+          "stop_5_0pct": {
+            "ambiguous": false,
+            "first_stop_bar_ms": null,
+            "first_target_bar_ms": 1791740100000,
+            "resolution_bar_ms": 1791740100000,
+            "result": "TARGET_FIRST",
+            "stop_first": false,
+            "stop_pct": 5.0,
+            "stop_reached": false,
+            "target_first": true,
+            "target_pct": 5.0,
+            "target_reached": true,
+            "time_to_stop_minutes": null,
+            "time_to_target_minutes": 454.07
+          },
+          "stop_6_0pct": {
+            "ambiguous": false,
+            "first_stop_bar_ms": null,
+            "first_target_bar_ms": 1791740100000,
+            "resolution_bar_ms": 1791740100000,
+            "result": "TARGET_FIRST",
+            "stop_first": false,
+            "stop_pct": 6.0,
+            "stop_reached": false,
+            "target_first": true,
+            "target_pct": 5.0,
+            "target_reached": true,
+            "time_to_stop_minutes": null,
+            "time_to_target_minutes": 454.07
+          },
+          "stop_8_0pct": {
+            "ambiguous": false,
+            "first_stop_bar_ms": null,
+            "first_target_bar_ms": 1791740100000,
+            "resolution_bar_ms": 1791740100000,
+            "result": "TARGET_FIRST",
+            "stop_first": false,
+            "stop_pct": 8.0,
+            "stop_reached": false,
+            "target_first": true,
+            "target_pct": 5.0,
+            "target_reached": true,
+            "time_to_stop_minutes": null,
+            "time_to_target_minutes": 454.07
+          }
+        },
+        "target_5_reached": true,
+        "time_to_5pct_minutes": 454.07,
+        "window_end_ms": 1791799255842,
+        "window_start_ms": 1791713100000
+      },
       "outcome_48h": null,
       "outcome_4h": {
         "bars_used": 48,
@@ -31311,6 +31404,38 @@
       "trigger_at_ms": 1791712855842,
       "trigger_id": "ZECUSDT-1791712855842",
       "trigger_price": 1235.33
+    },
+    "ZECUSDT-1791799286719": {
+      "bias": "LONG",
+      "outcome_12h": null,
+      "outcome_24h": null,
+      "outcome_48h": null,
+      "outcome_4h": null,
+      "snapshot": {
+        "bias": "LONG",
+        "bounce_from_12h_low_pct": 4.723,
+        "distance_from_1h_sma10_pct": 0.256,
+        "momentum_12h_pct": 4.358,
+        "momentum_24h_pct": 7.754,
+        "momentum_3h_pct": -1.575,
+        "price": 1309.26,
+        "pullback_from_12h_high_pct": -2.967,
+        "quote_volume_24h": 148719348.95,
+        "reasons": [
+          "1h and 4h trend structure aligned"
+        ],
+        "retest_reason": "long pullback reached trend area and buying resumed",
+        "setup_state": "CONTINUATION_TRIGGER",
+        "swing_score": 65.0,
+        "symbol": "ZECUSDT",
+        "volume_expansion_1h": 1.33,
+        "warnings": []
+      },
+      "swing_score": 65.0,
+      "symbol": "ZECUSDT",
+      "trigger_at_ms": 1791799286719,
+      "trigger_id": "ZECUSDT-1791799286719",
+      "trigger_price": 1309.26
     },
     "ZROUSDT-1790359215235": {
       "bias": "LONG",
