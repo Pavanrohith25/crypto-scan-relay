@@ -1,6 +1,6 @@
 {
-  "last_processed_at_ms": 1791822977215,
-  "last_processed_generated_at_ms": 1791822974713,
+  "last_processed_at_ms": 1791823276697,
+  "last_processed_generated_at_ms": 1791823274089,
   "minimum_candidate_score": 78.0,
   "pairs": {
     "1000000BOBUSDT": {
@@ -584,12 +584,13 @@
       "gate_reasons": [
         "score 60.0 below required 78.0",
         "candidate has blocker(s)",
-        "missing Binance spot confirmation"
+        "missing Binance spot confirmation",
+        "15m OI is not expanding"
       ],
       "last_bias": "LONG",
-      "last_price": 104.11,
+      "last_price": 104.04,
       "last_score": 60.0,
-      "last_seen_at_ms": 1791822977215,
+      "last_seen_at_ms": 1791823276697,
       "qualifying_streak": 0,
       "required_score": 78.0
     },
@@ -925,13 +926,12 @@
     },
     "CTKUSDT": {
       "gate_reasons": [
-        "score 54.0 below required 82.0",
-        "15m OI is not expanding"
+        "score 75.0 below required 82.0"
       ],
       "last_bias": "LONG",
-      "last_price": 0.1647,
-      "last_score": 54.0,
-      "last_seen_at_ms": 1791822977215,
+      "last_price": 0.1655,
+      "last_score": 75.0,
+      "last_seen_at_ms": 1791823276697,
       "qualifying_streak": 0,
       "required_score": 82.0
     },
@@ -1481,13 +1481,14 @@
         "warnings": []
       },
       "gate_reasons": [
-        "score 52.0 below required 78.0"
+        "score 47.0 below required 78.0",
+        "15m OI is not expanding"
       ],
       "last_bias": "LONG",
-      "last_price": 0.29693,
+      "last_price": 0.29366,
       "last_return_pct": -4.354946,
-      "last_score": 52.0,
-      "last_seen_at_ms": 1791822977215,
+      "last_score": 47.0,
+      "last_seen_at_ms": 1791823276697,
       "mae_pct": -4.354946,
       "mfe_pct": 0.0,
       "previous_score": 27.0,
@@ -2225,9 +2226,9 @@
         "15m OI is not expanding"
       ],
       "last_bias": "SHORT",
-      "last_price": 3.423,
+      "last_price": 3.419,
       "last_score": 62.0,
-      "last_seen_at_ms": 1791822977215,
+      "last_seen_at_ms": 1791823276697,
       "qualifying_streak": 0,
       "required_score": 78.0
     },
@@ -2903,13 +2904,13 @@
     },
     "RSRUSDT": {
       "gate_reasons": [
-        "score 68.0 below required 78.0",
+        "score 62.0 below required 78.0",
         "long spot confirmation weak (B/S 0.980, flow -11,491)"
       ],
       "last_bias": "LONG",
-      "last_price": 0.00232,
-      "last_score": 68.0,
-      "last_seen_at_ms": 1791822977215,
+      "last_price": 0.002322,
+      "last_score": 62.0,
+      "last_seen_at_ms": 1791823276697,
       "qualifying_streak": 0,
       "required_score": 78.0
     },
