@@ -28,7 +28,7 @@
   "started_ms": 1791382577243,
   "trades": {
     "BTCUSDT-1791450054416": {
-      "checked_ms": 1791906968604,
+      "checked_ms": 1791907266223,
       "entry_ms": 1791450300000,
       "entry_price": 83013.8,
       "features": [
@@ -42,11 +42,11 @@
       ],
       "id": "BTCUSDT-1791450054416",
       "mae_pct": 1.6120211338355839,
-      "mark_return_pct": -0.462670062086068,
+      "mark_return_pct": -0.5068675328680383,
       "mfe_pct": 3.156390865133274,
       "model_hash": "d00c3a24ef0fd037da9e46e3397b77adfe716660f6d7e76afb8984ea77092eae",
       "model_n": 0,
-      "next_bar_ms": 1791906900000,
+      "next_bar_ms": 1791907200000,
       "predicted_ms": 1791450062402,
       "score": null,
       "side": "SHORT",
@@ -190,7 +190,7 @@
       "target_pct": 5.0
     },
     "ETHUSDT-1791759693933": {
-      "checked_ms": 1791906968604,
+      "checked_ms": 1791907266223,
       "entry_ms": 1791759900000,
       "entry_price": 2537.63,
       "features": [
@@ -204,11 +204,11 @@
       ],
       "id": "ETHUSDT-1791759693933",
       "mae_pct": 5.065356257610443,
-      "mark_return_pct": -0.975713559502378,
+      "mark_return_pct": -0.8346370432253836,
       "mfe_pct": 1.6649393331573226,
       "model_hash": "d6117609146c1ef70f5a24df9ea77daa06b9041392d6622ca3b3fe9e4515399f",
       "model_n": 1,
-      "next_bar_ms": 1791906900000,
+      "next_bar_ms": 1791907200000,
       "predicted_ms": 1791759700484,
       "score": null,
       "side": "LONG",
@@ -346,6 +346,55 @@
       "status": "STOP",
       "stop_pct": 6.0,
       "stressed_net_return_pct": -6.52,
+      "symbol": "ONDOUSDT",
+      "target_pct": 5.0
+    },
+    "ONDOUSDT-1791907262111": {
+      "checked_ms": 0,
+      "entry_ms": 1791907500000,
+      "features": [
+        1.0,
+        -0.0491,
+        -0.14675,
+        -0.2153,
+        -0.1748,
+        0.37333333333333335,
+        0.71
+      ],
+      "id": "ONDOUSDT-1791907262111",
+      "mae_pct": 0.0,
+      "mfe_pct": 0.0,
+      "model_hash": "a943f49af8a1c08556e0606826d336ee1a93d4e5736061dd541a2ac15f0aa159",
+      "model_n": 4,
+      "next_bar_ms": 1791907500000,
+      "predicted_ms": 1791907267606,
+      "score": null,
+      "side": "SHORT",
+      "signal_ms": 1791907262111,
+      "snapshot": {
+        "bias": "SHORT",
+        "bounce_from_12h_low_pct": 1.348,
+        "distance_from_1h_sma10_pct": -0.874,
+        "momentum_12h_pct": -2.935,
+        "momentum_24h_pct": -6.459,
+        "momentum_3h_pct": -0.491,
+        "price": 0.4663,
+        "pullback_from_12h_high_pct": -4.603,
+        "quote_volume_24h": 30013822.09,
+        "reasons": [
+          "1h and 4h trend structure aligned",
+          "3h momentum supports short trend"
+        ],
+        "retest_reason": "short bounce reached trend area and selling resumed",
+        "setup_state": "CONTINUATION_TRIGGER",
+        "swing_score": 71.0,
+        "symbol": "ONDOUSDT",
+        "volume_expansion_1h": 1.12,
+        "warnings": []
+      },
+      "source": "BINANCE_SPOT_PROXY",
+      "status": "PENDING",
+      "stop_pct": 6.0,
       "symbol": "ONDOUSDT",
       "target_pct": 5.0
     },
