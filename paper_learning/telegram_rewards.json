@@ -13,15 +13,15 @@
       ]
     },
     "SHORT": {
-      "n": 1,
+      "n": 2,
       "weights": [
-        0.08810080027255879,
-        -0.005048175855617619,
-        -0.0019470276860235492,
-        0.009579493682969559,
-        -0.0035592723310113755,
-        0.027311248084493225,
-        0.04493140813900498
+        0.1446152426049327,
+        -0.018933020868274027,
+        -0.00938686341433688,
+        -0.0004777392155758606,
+        -0.0142512735790456,
+        0.04878265981466204,
+        0.08504995593167444
       ]
     }
   },
@@ -176,6 +176,57 @@
       "status": "STOP",
       "stressed_reward_r": -1.0866666666666667,
       "symbol": "ONDOUSDT"
+    },
+    "QNTUSDT-1791850248438": {
+      "definition": "paper net price return / planned stop percent; not account P&L",
+      "features": [
+        1.0,
+        -0.24569999999999997,
+        -0.13165,
+        -0.17793333333333333,
+        -0.18919999999999998,
+        0.37999999999999995,
+        0.71
+      ],
+      "forecast_at_delivery": {
+        "expected_r": 0.13084594040832095,
+        "model_hash": "66d9d02fe4005d41a9f9221994c2a53959da43475af262b076b78f4ccebdfc3a",
+        "model_n": 1,
+        "version": "telegram-reward-v1"
+      },
+      "holding_hours": 10.916666666666666,
+      "id": "QNTUSDT-1791850248438",
+      "mae_pct": 2.9735976531247266,
+      "mfe_pct": 10.618721664147923,
+      "net_return_pct": 4.86,
+      "recorded_ms": 1791889900846,
+      "reward_r": 0.81,
+      "sent_ms": 1791850877544,
+      "side": "SHORT",
+      "snapshot": {
+        "bias": "SHORT",
+        "bounce_from_12h_low_pct": 1.051,
+        "distance_from_1h_sma10_pct": -0.946,
+        "momentum_12h_pct": -2.633,
+        "momentum_24h_pct": -5.338,
+        "momentum_3h_pct": -2.457,
+        "price": 225.94,
+        "pullback_from_12h_high_pct": -3.134,
+        "quote_volume_24h": 20231297.0,
+        "reasons": [
+          "1h and 4h trend structure aligned",
+          "3h momentum supports short trend"
+        ],
+        "retest_reason": "short bounce reached trend area and selling resumed",
+        "setup_state": "CONTINUATION_TRIGGER",
+        "swing_score": 71.0,
+        "symbol": "QNTUSDT",
+        "volume_expansion_1h": 1.14,
+        "warnings": []
+      },
+      "status": "TARGET",
+      "stressed_reward_r": 0.7466666666666667,
+      "symbol": "QNTUSDT"
     },
     "SANDUSDT-1791595831062": {
       "definition": "paper net price return / planned stop percent; not account P&L",
