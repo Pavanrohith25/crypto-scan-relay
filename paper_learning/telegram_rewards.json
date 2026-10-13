@@ -1,15 +1,15 @@
 {
   "models": {
     "LONG": {
-      "n": 3,
+      "n": 4,
       "weights": [
-        0.041944514695172214,
-        0.016123766455917725,
-        -0.0025400025293892525,
-        -0.020354967160221792,
-        -0.0025178240716859507,
-        0.005668467122077185,
-        0.01815203893414573
+        -0.07185063503422533,
+        0.017293473415256024,
+        -0.0060786562751446935,
+        -0.03407186059416463,
+        -0.0060451015804310095,
+        -0.03340203874767529,
+        -0.03988617028816004
       ]
     },
     "SHORT": {
@@ -227,6 +227,56 @@
       "status": "TARGET",
       "stressed_reward_r": 0.7433333333333333,
       "symbol": "SANDUSDT"
+    },
+    "TRUMPUSDT-1791799577696": {
+      "definition": "paper net price return / planned stop percent; not account P&L",
+      "features": [
+        1.0,
+        -0.0103,
+        0.0311,
+        0.12056666666666667,
+        0.031,
+        0.3433333333333333,
+        0.51
+      ],
+      "forecast_at_delivery": {
+        "expected_r": 0.21949348609742744,
+        "model_hash": "ee5b3111cd9abf8d03fca91d62f9c92507505d6ef12aa645f2c4484c5a37a4f3",
+        "model_n": 2,
+        "version": "telegram-reward-v1"
+      },
+      "holding_hours": 14.0,
+      "id": "TRUMPUSDT-1791799577696",
+      "mae_pct": 7.223360655737709,
+      "mfe_pct": 0.3586065573770503,
+      "net_return_pct": -6.14,
+      "recorded_ms": 1791850264670,
+      "reward_r": -1.0233333333333332,
+      "sent_ms": 1791800200674,
+      "side": "LONG",
+      "snapshot": {
+        "bias": "LONG",
+        "bounce_from_12h_low_pct": 1.358,
+        "distance_from_1h_sma10_pct": 0.155,
+        "momentum_12h_pct": 0.622,
+        "momentum_24h_pct": 3.617,
+        "momentum_3h_pct": -0.103,
+        "price": 1.94,
+        "pullback_from_12h_high_pct": -0.818,
+        "quote_volume_24h": 10414386.23,
+        "reasons": [
+          "1h and 4h trend structure aligned"
+        ],
+        "retest_reason": "long pullback reached trend area and buying resumed",
+        "setup_state": "CONTINUATION_TRIGGER",
+        "swing_score": 51.0,
+        "symbol": "TRUMPUSDT",
+        "volume_expansion_1h": 1.03,
+        "warnings": []
+      },
+      "status": "STOP",
+      "stressed_reward_r": -1.0866666666666667,
+      "symbol": "TRUMPUSDT"
     }
   },
   "version": "telegram-reward-v1"
