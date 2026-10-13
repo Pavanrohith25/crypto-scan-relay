@@ -1,6 +1,6 @@
 {
-  "last_processed_at_ms": 1791934291702,
-  "last_processed_generated_at_ms": 1791934289266,
+  "last_processed_at_ms": 1791934562941,
+  "last_processed_generated_at_ms": 1791934560480,
   "pairs": {
     "1000000BOBUSDT": {
       "gate_reasons": [
@@ -45,17 +45,19 @@
     },
     "ACNUSDT": {
       "gate_reasons": [
-        "score 44.0 below required 78.0",
+        "deep countertrend: 24h structure/OI conflicts with the setup",
+        "score 34.0 below required 78.0",
         "candidate has blocker(s)",
         "missing spot confirmation",
+        "15m OI not expanding",
         "missing spot volume"
       ],
       "last_bias": "LONG",
-      "last_decision": "WAIT",
-      "last_price": 214.97,
-      "last_regime": "COUNTERTREND",
-      "last_score": 44.0,
-      "last_seen_at_ms": 1791889279750
+      "last_decision": "BLOCKED_DEEP_COUNTERTREND",
+      "last_price": 213.76,
+      "last_regime": "COUNTERTREND_DEEP",
+      "last_score": 34.0,
+      "last_seen_at_ms": 1791934562941
     },
     "ADBEUSDT": {
       "gate_reasons": [
@@ -192,17 +194,17 @@
     "ARCUSDT": {
       "gate_reasons": [
         "deep countertrend: 24h structure/OI conflicts with the setup",
-        "score 51.0 below required 78.0",
+        "score 45.0 below required 78.0",
         "candidate has blocker(s)",
         "missing spot confirmation",
         "missing spot volume"
       ],
       "last_bias": "LONG",
       "last_decision": "BLOCKED_DEEP_COUNTERTREND",
-      "last_price": 0.02933,
+      "last_price": 0.02928,
       "last_regime": "COUNTERTREND_DEEP",
-      "last_score": 51.0,
-      "last_seen_at_ms": 1791934291702
+      "last_score": 45.0,
+      "last_seen_at_ms": 1791934562941
     },
     "ARKUSDT": {
       "gate_reasons": [
@@ -263,18 +265,18 @@
       "anchor_score": 82.0,
       "armed": true,
       "armed_at_ms": 1791933678657,
-      "evidence_count": 3,
+      "evidence_count": 4,
       "gate_reasons": [
-        "price follow-through 0.2806552023268738 below 0.50%"
+        "price follow-through 0.3623003520947021 below 0.50%"
       ],
       "high_priority": false,
       "last_bias": "LONG",
       "last_decision": "ARMED_WAITING_TRIGGER",
-      "last_fingerprint": "0.19652|1.17|74912.1318|954218.8724|1.78|-1.96|-2.28",
-      "last_price": 0.19652,
+      "last_fingerprint": "0.19668|1.17|74912.1318|954218.8724|2.08|1.11|-2.28",
+      "last_price": 0.19668,
       "last_regime": "TREND_CONTINUATION",
-      "last_score": 88.0,
-      "last_seen_at_ms": 1791934291702,
+      "last_score": 82.0,
+      "last_seen_at_ms": 1791934562941,
       "required_score": 78.0
     },
     "BERAUSDT": {
@@ -307,16 +309,15 @@
     "BLURUSDT": {
       "gate_reasons": [
         "deep countertrend: 24h structure/OI conflicts with the setup",
-        "score 37.0 below required 82.0",
-        "long spot weak (B/S 0.927, flow -10,648)",
-        "15m OI not expanding"
+        "score 57.0 below required 82.0",
+        "long spot weak (B/S 0.927, flow -10,648)"
       ],
       "last_bias": "LONG",
       "last_decision": "BLOCKED_DEEP_COUNTERTREND",
-      "last_price": 0.01164,
+      "last_price": 0.01169,
       "last_regime": "COUNTERTREND_DEEP",
-      "last_score": 37.0,
-      "last_seen_at_ms": 1791934291702
+      "last_score": 57.0,
+      "last_seen_at_ms": 1791934562941
     },
     "BMNRUSDT": {
       "gate_reasons": [
@@ -739,10 +740,10 @@
       "last_bias": "LONG",
       "last_decision": "WAIT",
       "last_position_check_ms": 1791894358093,
-      "last_price": 0.1225,
+      "last_price": 0.1226,
       "last_regime": "COUNTERTREND",
       "last_score": 47.0,
-      "last_seen_at_ms": 1791934291702,
+      "last_seen_at_ms": 1791934562941,
       "position_state": "EXIT_THESIS_BROKEN"
     },
     "CTSIUSDT": {
@@ -1895,7 +1896,7 @@
     },
     "PAYPUSDT": {
       "gate_reasons": [
-        "score 41.0 below required 78.0",
+        "score 36.0 below required 78.0",
         "candidate has blocker(s)",
         "missing spot confirmation",
         "missing spot volume"
@@ -1904,8 +1905,8 @@
       "last_decision": "WAIT",
       "last_price": 15.44,
       "last_regime": "COUNTERTREND",
-      "last_score": 41.0,
-      "last_seen_at_ms": 1791934291702
+      "last_score": 36.0,
+      "last_seen_at_ms": 1791934562941
     },
     "PDDUSDT": {
       "gate_reasons": [
