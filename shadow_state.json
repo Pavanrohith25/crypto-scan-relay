@@ -1,6 +1,6 @@
 {
-  "last_processed_at_ms": 1791982596721,
-  "last_processed_generated_at_ms": 1791982594187,
+  "last_processed_at_ms": 1791982863316,
+  "last_processed_generated_at_ms": 1791982860846,
   "pairs": {
     "1000000BOBUSDT": {
       "gate_reasons": [
@@ -247,16 +247,16 @@
     },
     "AVAUSDT": {
       "gate_reasons": [
-        "score 37.0 below required 82.0",
+        "score 27.0 below required 82.0",
         "long spot weak (B/S 0.818, flow -22,753)",
         "15m OI not expanding"
       ],
       "last_bias": "LONG",
       "last_decision": "WAIT",
-      "last_price": 0.2554,
+      "last_price": 0.2497,
       "last_regime": "COUNTERTREND",
-      "last_score": 37.0,
-      "last_seen_at_ms": 1791982596721
+      "last_score": 27.0,
+      "last_seen_at_ms": 1791982863316
     },
     "AXLUSDT": {
       "gate_reasons": [
@@ -341,7 +341,7 @@
       "last_price": 0.0104,
       "last_regime": "COUNTERTREND_DEEP",
       "last_score": 64.0,
-      "last_seen_at_ms": 1791982596721
+      "last_seen_at_ms": 1791982863316
     },
     "BMNRUSDT": {
       "gate_reasons": [
@@ -472,10 +472,10 @@
       ],
       "last_bias": "SHORT",
       "last_decision": "BLOCKED_DEEP_COUNTERTREND",
-      "last_price": 1004.5,
+      "last_price": 1003.25,
       "last_regime": "COUNTERTREND_DEEP",
       "last_score": 36.0,
-      "last_seen_at_ms": 1791982596721
+      "last_seen_at_ms": 1791982863316
     },
     "BYDUSDT": {
       "gate_reasons": [
@@ -2718,14 +2718,15 @@
         "score 34.0 below required 78.0",
         "candidate has blocker(s)",
         "missing spot confirmation",
+        "15m OI not expanding",
         "missing spot volume"
       ],
       "last_bias": "SHORT",
       "last_decision": "WAIT",
-      "last_price": 42.29,
+      "last_price": 42.38,
       "last_regime": "COUNTERTREND",
       "last_score": 34.0,
-      "last_seen_at_ms": 1791982596721
+      "last_seen_at_ms": 1791982863316
     },
     "TEAMUSDT": {
       "gate_reasons": [
@@ -2945,14 +2946,15 @@
     },
     "WALUSDT": {
       "gate_reasons": [
-        "score 62.0 below required 78.0"
+        "score 62.0 below required 78.0",
+        "long spot weak (B/S 1.026, flow 27,397)"
       ],
       "last_bias": "LONG",
       "last_decision": "WAIT",
-      "last_price": 0.05284,
+      "last_price": 0.05235,
       "last_regime": "TREND_CONTINUATION",
       "last_score": 62.0,
-      "last_seen_at_ms": 1791982596721
+      "last_seen_at_ms": 1791982863316
     },
     "WAXPUSDT": {
       "gate_reasons": [
