@@ -1,6 +1,6 @@
 {
-  "last_processed_at_ms": 1791994240979,
-  "last_processed_generated_at_ms": 1791994236987,
+  "last_processed_at_ms": 1791994565524,
+  "last_processed_generated_at_ms": 1791994562081,
   "pairs": {
     "1000000BOBUSDT": {
       "gate_reasons": [
@@ -341,10 +341,10 @@
       ],
       "last_bias": "LONG",
       "last_decision": "BLOCKED_DEEP_COUNTERTREND",
-      "last_price": 0.01013,
+      "last_price": 0.01012,
       "last_regime": "COUNTERTREND_DEEP",
       "last_score": 49.0,
-      "last_seen_at_ms": 1791994240979
+      "last_seen_at_ms": 1791994565524
     },
     "BMNRUSDT": {
       "gate_reasons": [
@@ -737,23 +737,23 @@
     },
     "CSOPSAMSUNG2LUSDT": {
       "gate_reasons": [
-        "deep countertrend: 24h structure/OI conflicts with the setup",
-        "score 31.0 below required 78.0",
+        "score 22.0 below required 78.0",
         "candidate has blocker(s)",
         "missing spot confirmation",
+        "15m OI not expanding",
         "missing spot volume"
       ],
       "last_bias": "LONG",
-      "last_decision": "BLOCKED_DEEP_COUNTERTREND",
-      "last_price": 8.13,
-      "last_regime": "COUNTERTREND_DEEP",
-      "last_score": 31.0,
-      "last_seen_at_ms": 1791819965309
+      "last_decision": "WAIT",
+      "last_price": 7.06,
+      "last_regime": "COUNTERTREND",
+      "last_score": 22.0,
+      "last_seen_at_ms": 1791994565524
     },
     "CSOPSKHYNIX2LUSDT": {
       "gate_reasons": [
         "deep countertrend: 24h structure/OI conflicts with the setup",
-        "score 47.0 below required 82.0",
+        "score 37.0 below required 82.0",
         "candidate has blocker(s)",
         "missing spot confirmation",
         "15m OI not expanding",
@@ -761,10 +761,10 @@
       ],
       "last_bias": "LONG",
       "last_decision": "BLOCKED_DEEP_COUNTERTREND",
-      "last_price": 3.054,
+      "last_price": 3.023,
       "last_regime": "COUNTERTREND_DEEP",
-      "last_score": 47.0,
-      "last_seen_at_ms": 1791994240979
+      "last_score": 37.0,
+      "last_seen_at_ms": 1791994565524
     },
     "CTKUSDT": {
       "active": false,
@@ -2960,11 +2960,11 @@
       ],
       "last_bias": "LONG",
       "last_decision": "SHADOW_CONFIRMED",
-      "last_position_check_ms": 1791994240979,
-      "last_price": 0.05301,
+      "last_position_check_ms": 1791994565524,
+      "last_price": 0.05282,
       "last_regime": "TREND_CONTINUATION",
-      "last_score": 42.0,
-      "last_seen_at_ms": 1791994240979,
+      "last_score": 36.0,
+      "last_seen_at_ms": 1791994565524,
       "position_state": "HOLD_PROTECT"
     },
     "WAXPUSDT": {
@@ -3092,18 +3092,19 @@
     },
     "ZHONGJIUSDT": {
       "gate_reasons": [
-        "score 53.0 below required 82.0",
+        "deep countertrend: 24h structure/OI conflicts with the setup",
+        "score 59.0 below required 82.0",
         "candidate has blocker(s)",
         "missing spot confirmation",
         "15m OI not expanding",
         "missing spot volume"
       ],
       "last_bias": "LONG",
-      "last_decision": "WAIT",
-      "last_price": 104.46,
-      "last_regime": "COUNTERTREND",
-      "last_score": 53.0,
-      "last_seen_at_ms": 1791994240979
+      "last_decision": "BLOCKED_DEEP_COUNTERTREND",
+      "last_price": 103.72,
+      "last_regime": "COUNTERTREND_DEEP",
+      "last_score": 59.0,
+      "last_seen_at_ms": 1791994565524
     },
     "ZMUSDT": {
       "gate_reasons": [
