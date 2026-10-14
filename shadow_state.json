@@ -1,6 +1,6 @@
 {
-  "last_processed_at_ms": 1792002375060,
-  "last_processed_generated_at_ms": 1792002372665,
+  "last_processed_at_ms": 1792002693011,
+  "last_processed_generated_at_ms": 1792002690497,
   "pairs": {
     "1000000BOBUSDT": {
       "gate_reasons": [
@@ -258,15 +258,15 @@
     },
     "AXLUSDT": {
       "gate_reasons": [
-        "score 44.0 below required 82.0",
+        "score 56.0 below required 82.0",
         "long spot weak (B/S 0.809, flow -33,278)"
       ],
       "last_bias": "LONG",
       "last_decision": "WAIT",
-      "last_price": 0.06153,
+      "last_price": 0.06165,
       "last_regime": "TREND_CONTINUATION",
-      "last_score": 44.0,
-      "last_seen_at_ms": 1792002375060
+      "last_score": 56.0,
+      "last_seen_at_ms": 1792002693011
     },
     "B2USDT": {
       "gate_reasons": [
@@ -338,10 +338,10 @@
       ],
       "last_bias": "LONG",
       "last_decision": "BLOCKED_DEEP_COUNTERTREND",
-      "last_price": 0.01009,
+      "last_price": 0.0101,
       "last_regime": "COUNTERTREND_DEEP",
       "last_score": 49.0,
-      "last_seen_at_ms": 1792002375060
+      "last_seen_at_ms": 1792002693011
     },
     "BMNRUSDT": {
       "gate_reasons": [
@@ -693,17 +693,18 @@
     },
     "CRCLUSDT": {
       "gate_reasons": [
-        "score 58.0 below required 78.0",
+        "score 53.0 below required 78.0",
         "candidate has blocker(s)",
         "missing spot confirmation",
+        "15m OI not expanding",
         "missing spot volume"
       ],
       "last_bias": "SHORT",
       "last_decision": "WAIT",
-      "last_price": 78.67,
+      "last_price": 78.79,
       "last_regime": "TREND_CONTINUATION",
-      "last_score": 58.0,
-      "last_seen_at_ms": 1792002375060
+      "last_score": 53.0,
+      "last_seen_at_ms": 1792002693011
     },
     "CRMLUSDT": {
       "gate_reasons": [
@@ -2558,17 +2559,18 @@
     },
     "SOXLUSDT": {
       "gate_reasons": [
-        "score 50.0 below required 78.0",
+        "score 45.0 below required 78.0",
         "candidate has blocker(s)",
         "missing spot confirmation",
+        "15m OI not expanding",
         "missing spot volume"
       ],
       "last_bias": "SHORT",
       "last_decision": "WAIT",
-      "last_price": 111.17,
+      "last_price": 111.19,
       "last_regime": "TREND_CONTINUATION",
-      "last_score": 50.0,
-      "last_seen_at_ms": 1792002375060
+      "last_score": 45.0,
+      "last_seen_at_ms": 1792002693011
     },
     "SOXSUSDT": {
       "gate_reasons": [
@@ -2954,11 +2956,11 @@
       ],
       "last_bias": "LONG",
       "last_decision": "SHADOW_CONFIRMED",
-      "last_position_check_ms": 1792001155603,
-      "last_price": 0.06042,
+      "last_position_check_ms": 1792002693011,
+      "last_price": 0.05987,
       "last_regime": "TREND_CONTINUATION",
       "last_score": 47.0,
-      "last_seen_at_ms": 1792001155603,
+      "last_seen_at_ms": 1792002693011,
       "position_state": "HOLD_PROTECT"
     },
     "WAXPUSDT": {
