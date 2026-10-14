@@ -1,6 +1,6 @@
 {
-  "last_processed_at_ms": 1791938741411,
-  "last_processed_generated_at_ms": 1791938738935,
+  "last_processed_at_ms": 1791939077028,
+  "last_processed_generated_at_ms": 1791939074461,
   "minimum_candidate_score": 78.0,
   "pairs": {
     "1000000BOBUSDT": {
@@ -278,15 +278,15 @@
     },
     "ARCUSDT": {
       "gate_reasons": [
-        "score 40.0 below required 78.0",
+        "score 34.0 below required 78.0",
         "candidate has blocker(s)",
         "missing Binance spot confirmation",
         "15m OI is not expanding"
       ],
       "last_bias": "LONG",
-      "last_price": 0.02933,
-      "last_score": 40.0,
-      "last_seen_at_ms": 1791938741411,
+      "last_price": 0.02934,
+      "last_score": 34.0,
+      "last_seen_at_ms": 1791939077028,
       "qualifying_streak": 0,
       "required_score": 78.0
     },
@@ -436,16 +436,19 @@
           "24h move is heavily extended: +27.15%"
         ]
       },
-      "gate_reasons": [],
+      "gate_reasons": [
+        "score 58.0 below required 78.0",
+        "15m OI is not expanding"
+      ],
       "last_bias": "LONG",
-      "last_price": 0.20031,
+      "last_price": 0.19652,
       "last_return_pct": -0.585035,
-      "last_score": 79.0,
-      "last_seen_at_ms": 1791938741411,
+      "last_score": 58.0,
+      "last_seen_at_ms": 1791939077028,
       "mae_pct": -0.585035,
       "mfe_pct": 0.0,
       "previous_score": 71.0,
-      "qualifying_streak": 1,
+      "qualifying_streak": 0,
       "required_score": 78.0
     },
     "BERAUSDT": {
@@ -521,15 +524,15 @@
         ]
       },
       "gate_reasons": [
-        "score 49.0 below required 82.0",
-        "long spot confirmation weak (B/S 0.813, flow -22,356)",
+        "score 39.0 below required 82.0",
+        "long spot confirmation weak (B/S 0.756, flow -28,428)",
         "15m OI is not expanding"
       ],
       "last_bias": "LONG",
-      "last_price": 0.01149,
+      "last_price": 0.01138,
       "last_return_pct": 1.15894,
-      "last_score": 49.0,
-      "last_seen_at_ms": 1791938741411,
+      "last_score": 39.0,
+      "last_seen_at_ms": 1791939077028,
       "mae_pct": 0.0,
       "mfe_pct": 1.15894,
       "previous_score": 69.0,
@@ -1049,15 +1052,16 @@
         ]
       },
       "gate_reasons": [
-        "score 47.0 below required 78.0",
+        "score 42.0 below required 78.0",
         "candidate has blocker(s)",
-        "long spot confirmation weak (B/S 0.680, flow -4,296)"
+        "long spot confirmation weak (B/S 0.756, flow -5,127)",
+        "15m OI is not expanding"
       ],
       "last_bias": "LONG",
-      "last_price": 0.1252,
+      "last_price": 0.125,
       "last_return_pct": -0.705329,
-      "last_score": 47.0,
-      "last_seen_at_ms": 1791938741411,
+      "last_score": 42.0,
+      "last_seen_at_ms": 1791939077028,
       "mae_pct": -0.705329,
       "mfe_pct": 0.862069,
       "previous_score": 64.0,
@@ -2637,15 +2641,15 @@
     },
     "PAYPUSDT": {
       "gate_reasons": [
-        "score 30.0 below required 78.0",
+        "score 24.0 below required 78.0",
         "candidate has blocker(s)",
         "missing Binance spot confirmation",
         "15m OI is not expanding"
       ],
       "last_bias": "LONG",
-      "last_price": 15.47,
-      "last_score": 30.0,
-      "last_seen_at_ms": 1791938741411,
+      "last_price": 15.45,
+      "last_score": 24.0,
+      "last_seen_at_ms": 1791939077028,
       "qualifying_streak": 0,
       "required_score": 78.0
     },
@@ -3090,18 +3094,16 @@
         "strength": "VERY_STRONG",
         "warnings": []
       },
-      "gate_reasons": [
-        "score 75.0 below required 78.0"
-      ],
+      "gate_reasons": [],
       "last_bias": "LONG",
-      "last_price": 0.002078,
+      "last_price": 0.002069,
       "last_return_pct": 0.694766,
-      "last_score": 75.0,
-      "last_seen_at_ms": 1791938741411,
+      "last_score": 80.0,
+      "last_seen_at_ms": 1791939077028,
       "mae_pct": -0.324224,
       "mfe_pct": 0.694766,
       "previous_score": 73.0,
-      "qualifying_streak": 0,
+      "qualifying_streak": 1,
       "required_score": 78.0
     },
     "RUMUSDT": {
