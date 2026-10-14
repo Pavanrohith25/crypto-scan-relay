@@ -1,5 +1,5 @@
 {
-  "last_processed_at_ms": 1791993398167,
+  "last_processed_at_ms": 1791993671891,
   "objective": {
     "diagnostic_horizons_hours": [
       4,
@@ -19121,6 +19121,7 @@
     "ONDOUSDT-1791907262111": {
       "bias": "SHORT",
       "evaluated_12h_at_ms": 1791950483678,
+      "evaluated_24h_at_ms": 1791993671891,
       "evaluated_4h_at_ms": 1791921959398,
       "outcome_12h": {
         "bars_used": 144,
@@ -19215,7 +19216,99 @@
         "window_end_ms": 1791950462111,
         "window_start_ms": 1791907500000
       },
-      "outcome_24h": null,
+      "outcome_24h": {
+        "bars_used": 288,
+        "close_return_pct": 4.718,
+        "first_5pct_bar_ms": 1791993300000,
+        "horizon_hours": 24,
+        "mae_before_5pct_pct": -1.8872,
+        "mae_pct": -1.8872,
+        "mfe_pct": 5.3185,
+        "objective": "+5pct",
+        "sampling_interval": "5m",
+        "sampling_note": "Uses 5m candles beginning with the first full bar at/after the trigger. If TP and SL are both touched inside the same 5m candle before either resolves, the stop-path result is AMBIGUOUS.",
+        "stop_grid": {
+          "stop_3_0pct": {
+            "ambiguous": false,
+            "first_stop_bar_ms": null,
+            "first_target_bar_ms": 1791993300000,
+            "resolution_bar_ms": 1791993300000,
+            "result": "TARGET_FIRST",
+            "stop_first": false,
+            "stop_pct": 3.0,
+            "stop_reached": false,
+            "target_first": true,
+            "target_pct": 5.0,
+            "target_reached": true,
+            "time_to_stop_minutes": null,
+            "time_to_target_minutes": 1433.96
+          },
+          "stop_4_0pct": {
+            "ambiguous": false,
+            "first_stop_bar_ms": null,
+            "first_target_bar_ms": 1791993300000,
+            "resolution_bar_ms": 1791993300000,
+            "result": "TARGET_FIRST",
+            "stop_first": false,
+            "stop_pct": 4.0,
+            "stop_reached": false,
+            "target_first": true,
+            "target_pct": 5.0,
+            "target_reached": true,
+            "time_to_stop_minutes": null,
+            "time_to_target_minutes": 1433.96
+          },
+          "stop_5_0pct": {
+            "ambiguous": false,
+            "first_stop_bar_ms": null,
+            "first_target_bar_ms": 1791993300000,
+            "resolution_bar_ms": 1791993300000,
+            "result": "TARGET_FIRST",
+            "stop_first": false,
+            "stop_pct": 5.0,
+            "stop_reached": false,
+            "target_first": true,
+            "target_pct": 5.0,
+            "target_reached": true,
+            "time_to_stop_minutes": null,
+            "time_to_target_minutes": 1433.96
+          },
+          "stop_6_0pct": {
+            "ambiguous": false,
+            "first_stop_bar_ms": null,
+            "first_target_bar_ms": 1791993300000,
+            "resolution_bar_ms": 1791993300000,
+            "result": "TARGET_FIRST",
+            "stop_first": false,
+            "stop_pct": 6.0,
+            "stop_reached": false,
+            "target_first": true,
+            "target_pct": 5.0,
+            "target_reached": true,
+            "time_to_stop_minutes": null,
+            "time_to_target_minutes": 1433.96
+          },
+          "stop_8_0pct": {
+            "ambiguous": false,
+            "first_stop_bar_ms": null,
+            "first_target_bar_ms": 1791993300000,
+            "resolution_bar_ms": 1791993300000,
+            "result": "TARGET_FIRST",
+            "stop_first": false,
+            "stop_pct": 8.0,
+            "stop_reached": false,
+            "target_first": true,
+            "target_pct": 5.0,
+            "target_reached": true,
+            "time_to_stop_minutes": null,
+            "time_to_target_minutes": 1433.96
+          }
+        },
+        "target_5_reached": true,
+        "time_to_5pct_minutes": 1433.96,
+        "window_end_ms": 1791993662111,
+        "window_start_ms": 1791907500000
+      },
       "outcome_48h": null,
       "outcome_4h": {
         "bars_used": 48,
