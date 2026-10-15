@@ -1,6 +1,6 @@
 {
-  "last_processed_at_ms": 1792051882649,
-  "last_processed_generated_at_ms": 1792051880186,
+  "last_processed_at_ms": 1792052204904,
+  "last_processed_generated_at_ms": 1792052202433,
   "pairs": {
     "1000000BOBUSDT": {
       "gate_reasons": [
@@ -421,17 +421,17 @@
     },
     "BSPUSDT": {
       "gate_reasons": [
-        "score 52.0 below required 82.0",
+        "score 58.0 below required 82.0",
         "candidate has blocker(s)",
         "missing spot confirmation",
         "missing spot volume"
       ],
       "last_bias": "LONG",
       "last_decision": "WAIT",
-      "last_price": 52.41,
+      "last_price": 52.14,
       "last_regime": "TREND_CONTINUATION",
-      "last_score": 52.0,
-      "last_seen_at_ms": 1792051882649
+      "last_score": 58.0,
+      "last_seen_at_ms": 1792052204904
     },
     "BTCUSDT": {
       "gate_reasons": [
@@ -2242,16 +2242,17 @@
     },
     "RSRUSDT": {
       "gate_reasons": [
+        "deep countertrend: 24h structure/OI conflicts with the setup",
         "score 62.0 below required 78.0",
         "long spot weak (B/S 1.048, flow 9,375)",
         "15m OI not expanding"
       ],
       "last_bias": "LONG",
-      "last_decision": "WAIT",
-      "last_price": 0.001975,
-      "last_regime": "COUNTERTREND",
+      "last_decision": "BLOCKED_DEEP_COUNTERTREND",
+      "last_price": 0.001954,
+      "last_regime": "COUNTERTREND_DEEP",
       "last_score": 62.0,
-      "last_seen_at_ms": 1792051882649
+      "last_seen_at_ms": 1792052204904
     },
     "RUMUSDT": {
       "gate_reasons": [
@@ -2419,10 +2420,10 @@
       ],
       "last_bias": "LONG",
       "last_decision": "WAIT",
-      "last_price": 11.913,
+      "last_price": 11.933,
       "last_regime": "TREND_CONTINUATION",
       "last_score": 68.0,
-      "last_seen_at_ms": 1792051882649
+      "last_seen_at_ms": 1792052204904
     },
     "SKHYNIXUSDT": {
       "gate_reasons": [
@@ -2759,7 +2760,7 @@
     },
     "TMFUSDT": {
       "gate_reasons": [
-        "score 43.0 below required 82.0",
+        "score 37.0 below required 82.0",
         "candidate has blocker(s)",
         "missing spot confirmation",
         "15m OI not expanding",
@@ -2767,10 +2768,10 @@
       ],
       "last_bias": "LONG",
       "last_decision": "WAIT",
-      "last_price": 27.96,
+      "last_price": 28.0,
       "last_regime": "COUNTERTREND",
-      "last_score": 43.0,
-      "last_seen_at_ms": 1792051882649
+      "last_score": 37.0,
+      "last_seen_at_ms": 1792052204904
     },
     "TRXUSDT": {
       "gate_reasons": [
@@ -2958,11 +2959,11 @@
       ],
       "last_bias": "LONG",
       "last_decision": "SHADOW_CONFIRMED",
-      "last_position_check_ms": 1792051882649,
-      "last_price": 0.05402,
+      "last_position_check_ms": 1792052204904,
+      "last_price": 0.05414,
       "last_regime": "COUNTERTREND",
-      "last_score": 44.0,
-      "last_seen_at_ms": 1792051882649,
+      "last_score": 54.0,
+      "last_seen_at_ms": 1792052204904,
       "position_state": "REDUCE"
     },
     "WAXPUSDT": {
