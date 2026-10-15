@@ -1,6 +1,6 @@
 {
-  "last_processed_at_ms": 1792065670155,
-  "last_processed_generated_at_ms": 1792065667676,
+  "last_processed_at_ms": 1792065967648,
+  "last_processed_generated_at_ms": 1792065965080,
   "pairs": {
     "1000000BOBUSDT": {
       "gate_reasons": [
@@ -332,15 +332,16 @@
     },
     "BLURUSDT": {
       "gate_reasons": [
-        "score 45.0 below required 82.0",
-        "long spot weak (B/S 0.897, flow -60,861)"
+        "score 24.0 below required 82.0",
+        "long spot weak (B/S 0.897, flow -60,861)",
+        "15m OI not expanding"
       ],
       "last_bias": "LONG",
       "last_decision": "WAIT",
-      "last_price": 0.01207,
+      "last_price": 0.01193,
       "last_regime": "TREND_CONTINUATION",
-      "last_score": 45.0,
-      "last_seen_at_ms": 1792065670155
+      "last_score": 24.0,
+      "last_seen_at_ms": 1792065967648
     },
     "BMNRUSDT": {
       "gate_reasons": [
@@ -419,17 +420,18 @@
     },
     "BSPUSDT": {
       "gate_reasons": [
-        "score 52.0 below required 82.0",
+        "score 35.0 below required 82.0",
         "candidate has blocker(s)",
         "missing spot confirmation",
+        "15m OI not expanding",
         "missing spot volume"
       ],
       "last_bias": "LONG",
       "last_decision": "WAIT",
-      "last_price": 52.44,
+      "last_price": 52.71,
       "last_regime": "TREND_CONTINUATION",
-      "last_score": 52.0,
-      "last_seen_at_ms": 1792065670155
+      "last_score": 35.0,
+      "last_seen_at_ms": 1792065967648
     },
     "BTCUSDT": {
       "gate_reasons": [
@@ -469,10 +471,10 @@
       ],
       "last_bias": "LONG",
       "last_decision": "BLOCKED_DEEP_COUNTERTREND",
-      "last_price": 925.59,
+      "last_price": 924.9,
       "last_regime": "COUNTERTREND_DEEP",
       "last_score": 9.0,
-      "last_seen_at_ms": 1792065670155
+      "last_seen_at_ms": 1792065967648
     },
     "BYDUSDT": {
       "gate_reasons": [
@@ -1076,10 +1078,10 @@
       ],
       "last_bias": "LONG",
       "last_decision": "BLOCKED_DEEP_COUNTERTREND",
-      "last_price": 97.57,
+      "last_price": 97.73,
       "last_regime": "COUNTERTREND_DEEP",
       "last_score": 47.0,
-      "last_seen_at_ms": 1792065670155
+      "last_seen_at_ms": 1792065967648
     },
     "FLNCUSDT": {
       "gate_reasons": [
@@ -2245,10 +2247,10 @@
       ],
       "last_bias": "LONG",
       "last_decision": "BLOCKED_DEEP_COUNTERTREND",
-      "last_price": 0.001918,
+      "last_price": 0.001914,
       "last_regime": "COUNTERTREND_DEEP",
       "last_score": 79.0,
-      "last_seen_at_ms": 1792065670155
+      "last_seen_at_ms": 1792065967648
     },
     "RUMUSDT": {
       "gate_reasons": [
@@ -2866,17 +2868,19 @@
     },
     "USDBRLUSDT": {
       "gate_reasons": [
-        "score 52.0 below required 82.0",
+        "deep countertrend: 24h structure/OI conflicts with the setup",
+        "score 29.0 below required 78.0",
         "candidate has blocker(s)",
         "missing spot confirmation",
+        "15m OI not expanding",
         "missing spot volume"
       ],
-      "last_bias": "SHORT",
-      "last_decision": "WAIT",
-      "last_price": 5.0093,
-      "last_regime": "TREND_CONTINUATION",
-      "last_score": 52.0,
-      "last_seen_at_ms": 1791245725610
+      "last_bias": "LONG",
+      "last_decision": "BLOCKED_DEEP_COUNTERTREND",
+      "last_price": 5.0422,
+      "last_regime": "COUNTERTREND_DEEP",
+      "last_score": 29.0,
+      "last_seen_at_ms": 1792065967648
     },
     "USDEXUSDT": {
       "gate_reasons": [
