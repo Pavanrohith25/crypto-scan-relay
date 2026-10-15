@@ -1,6 +1,6 @@
 {
-  "last_processed_at_ms": 1792052498400,
-  "last_processed_generated_at_ms": 1792052495927,
+  "last_processed_at_ms": 1792052775969,
+  "last_processed_generated_at_ms": 1792052773560,
   "minimum_candidate_score": 78.0,
   "pairs": {
     "1000000BOBUSDT": {
@@ -641,9 +641,9 @@
         "missing Binance spot confirmation"
       ],
       "last_bias": "LONG",
-      "last_price": 52.59,
+      "last_price": 52.46,
       "last_score": 58.0,
-      "last_seen_at_ms": 1792052498400,
+      "last_seen_at_ms": 1792052775969,
       "qualifying_streak": 0,
       "required_score": 82.0
     },
@@ -3137,15 +3137,15 @@
         "warnings": []
       },
       "gate_reasons": [
-        "score 72.0 below required 78.0",
+        "score 62.0 below required 78.0",
         "long spot confirmation weak (B/S 1.048, flow 9,375)",
         "15m OI is not expanding"
       ],
       "last_bias": "LONG",
-      "last_price": 0.00197,
+      "last_price": 0.001977,
       "last_return_pct": 1.809955,
-      "last_score": 72.0,
-      "last_seen_at_ms": 1792052498400,
+      "last_score": 62.0,
+      "last_seen_at_ms": 1792052775969,
       "mae_pct": 0.0,
       "mfe_pct": 1.809955,
       "previous_score": 75.0,
@@ -3428,14 +3428,14 @@
     },
     "SKDDUSDT": {
       "gate_reasons": [
-        "score 68.0 below required 82.0",
+        "score 62.0 below required 82.0",
         "candidate has blocker(s)",
         "missing Binance spot confirmation"
       ],
       "last_bias": "LONG",
-      "last_price": 11.939,
-      "last_score": 68.0,
-      "last_seen_at_ms": 1792052498400,
+      "last_price": 11.915,
+      "last_score": 62.0,
+      "last_seen_at_ms": 1792052775969,
       "qualifying_streak": 0,
       "required_score": 82.0
     },
@@ -3856,9 +3856,9 @@
         "missing Binance spot confirmation"
       ],
       "last_bias": "LONG",
-      "last_price": 27.95,
+      "last_price": 28.0,
       "last_score": 48.0,
-      "last_seen_at_ms": 1792052498400,
+      "last_seen_at_ms": 1792052775969,
       "qualifying_streak": 0,
       "required_score": 82.0
     },
@@ -4112,13 +4112,16 @@
         ]
       },
       "gate_reasons": [
-        "pair cooldown active after deterioration"
+        "score 39.0 below required 78.0",
+        "candidate has blocker(s)",
+        "long spot confirmation weak (B/S 0.867, flow -133,201)",
+        "15m OI is not expanding"
       ],
       "last_bias": "LONG",
-      "last_price": 0.05487,
+      "last_price": 0.05406,
       "last_return_pct": -6.574871,
       "last_score": 39.0,
-      "last_seen_at_ms": 1792052498400,
+      "last_seen_at_ms": 1792052775969,
       "mae_pct": -6.574871,
       "mfe_pct": 0.137694,
       "previous_score": 59.0,
