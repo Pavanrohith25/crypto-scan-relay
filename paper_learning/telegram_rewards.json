@@ -13,15 +13,15 @@
       ]
     },
     "SHORT": {
-      "n": 3,
+      "n": 4,
       "weights": [
-        0.1940183070512531,
-        -0.021355899359974284,
-        -0.016635368964872506,
-        -0.011114148036022073,
-        -0.022884812614734622,
-        0.06721922523667502,
-        0.12011349988782755
+        0.2574901878111532,
+        -0.021955725838258198,
+        -0.016026753806201336,
+        -0.01111250537170281,
+        -0.027527571924975118,
+        0.08667400037577554,
+        0.14611921829716523
       ]
     }
   },
@@ -75,6 +75,57 @@
       },
       "status": "TARGET",
       "stressed_reward_r": 0.7483333333333334,
+      "symbol": "ENAUSDT"
+    },
+    "ENAUSDT-1791981057955": {
+      "definition": "paper net price return / planned stop percent; not account P&L",
+      "features": [
+        1.0,
+        -0.0095,
+        0.00955,
+        0.0,
+        -0.0732,
+        0.3066666666666667,
+        0.41
+      ],
+      "forecast_at_delivery": {
+        "expected_r": 0.1955791525920434,
+        "model_hash": "901f3c01f6d894c70c4cd07d93df8a888642f41d78031a5ffb402ce1ea7a385b",
+        "model_n": 2,
+        "version": "telegram-reward-v1"
+      },
+      "holding_hours": 13.666666666666666,
+      "id": "ENAUSDT-1791981057955",
+      "mae_pct": 0.7924715205547272,
+      "mfe_pct": 5.448241703813772,
+      "net_return_pct": 4.86,
+      "recorded_ms": 1792030558009,
+      "reward_r": 0.81,
+      "sent_ms": 1791981691559,
+      "side": "SHORT",
+      "snapshot": {
+        "bias": "SHORT",
+        "bounce_from_12h_low_pct": 0.768,
+        "distance_from_1h_sma10_pct": -0.366,
+        "momentum_12h_pct": 0.191,
+        "momentum_24h_pct": 0.0,
+        "momentum_3h_pct": -0.095,
+        "price": 0.2099,
+        "pullback_from_12h_high_pct": -2.145,
+        "quote_volume_24h": 30180714.52,
+        "reasons": [
+          "1h and 4h trend structure aligned",
+          "3h momentum supports short trend"
+        ],
+        "retest_reason": "short bounce reached trend area and selling resumed",
+        "setup_state": "CONTINUATION_TRIGGER",
+        "swing_score": 41.0,
+        "symbol": "ENAUSDT",
+        "volume_expansion_1h": 0.92,
+        "warnings": []
+      },
+      "status": "TARGET",
+      "stressed_reward_r": 0.7466666666666667,
       "symbol": "ENAUSDT"
     },
     "ONDOUSDT-1791644453967": {

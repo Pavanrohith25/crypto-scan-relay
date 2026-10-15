@@ -13,22 +13,22 @@
       ]
     },
     "SHORT": {
-      "n": 5,
+      "n": 6,
       "weights": [
-        0.11917057809075746,
-        -0.008180483845752286,
-        -0.012490523990939412,
-        -0.018183963686847368,
-        -0.01604403174479103,
-        0.04025297755032194,
-        0.07237948918359172
+        0.14159227524038093,
+        -0.008393090801934618,
+        -0.012275787307996812,
+        -0.018183076400272943,
+        -0.017684517107555964,
+        0.04712700053202009,
+        0.08156885325749863
       ]
     }
   },
   "started_ms": 1791382577243,
   "trades": {
     "BTCUSDT-1791450054416": {
-      "checked_ms": 1792030293397,
+      "checked_ms": 1792030555761,
       "entry_ms": 1791450300000,
       "entry_price": 83013.8,
       "features": [
@@ -42,11 +42,11 @@
       ],
       "id": "BTCUSDT-1791450054416",
       "mae_pct": 1.6120211338355839,
-      "mark_return_pct": 1.7078967593340044,
+      "mark_return_pct": 1.8741341801001843,
       "mfe_pct": 3.156390865133274,
       "model_hash": "d00c3a24ef0fd037da9e46e3397b77adfe716660f6d7e76afb8984ea77092eae",
       "model_n": 0,
-      "next_bar_ms": 1792030200000,
+      "next_bar_ms": 1792030500000,
       "predicted_ms": 1791450062402,
       "score": null,
       "side": "SHORT",
@@ -190,7 +190,7 @@
       "target_pct": 5.0
     },
     "ENAUSDT-1791981057955": {
-      "checked_ms": 1792030293397,
+      "checked_ms": 1792030555761,
       "entry_ms": 1791981300000,
       "entry_price": 0.2019,
       "features": [
@@ -202,14 +202,18 @@
         0.3066666666666667,
         0.41
       ],
+      "holding_hours": 13.666666666666666,
       "id": "ENAUSDT-1791981057955",
+      "label_available_ms": 1792030555761,
       "mae_pct": 0.7924715205547272,
-      "mark_return_pct": 4.9529470034670675,
-      "mfe_pct": 4.9529470034670675,
+      "mark_return_pct": 5.39871223377909,
+      "mfe_pct": 5.448241703813772,
       "model_hash": "a943f49af8a1c08556e0606826d336ee1a93d4e5736061dd541a2ac15f0aa159",
       "model_n": 4,
-      "next_bar_ms": 1792030200000,
+      "net_return_pct": 4.86,
+      "next_bar_ms": 1792030500000,
       "predicted_ms": 1791981062729,
+      "resolved_bar_ms": 1792030200000,
       "score": null,
       "side": "SHORT",
       "signal_ms": 1791981057955,
@@ -235,13 +239,14 @@
         "warnings": []
       },
       "source": "BINANCE_SPOT_PROXY",
-      "status": "OPEN",
+      "status": "TARGET",
       "stop_pct": 6.0,
+      "stressed_net_return_pct": 4.48,
       "symbol": "ENAUSDT",
       "target_pct": 5.0
     },
     "ETHUSDT-1791759693933": {
-      "checked_ms": 1792030293397,
+      "checked_ms": 1792030555761,
       "entry_ms": 1791759900000,
       "entry_price": 2537.63,
       "features": [
@@ -255,11 +260,11 @@
       ],
       "id": "ETHUSDT-1791759693933",
       "mae_pct": 5.278153237469607,
-      "mark_return_pct": -4.985360355922664,
+      "mark_return_pct": -5.147322501704343,
       "mfe_pct": 1.6649393331573226,
       "model_hash": "d6117609146c1ef70f5a24df9ea77daa06b9041392d6622ca3b3fe9e4515399f",
       "model_n": 1,
-      "next_bar_ms": 1792030200000,
+      "next_bar_ms": 1792030500000,
       "predicted_ms": 1791759700484,
       "score": null,
       "side": "LONG",
@@ -513,7 +518,7 @@
       "target_pct": 5.0
     },
     "QNTUSDT-1792003543306": {
-      "checked_ms": 1792030293397,
+      "checked_ms": 1792030555761,
       "entry_ms": 1792003800000,
       "entry_price": 205.35,
       "features": [
@@ -527,11 +532,11 @@
       ],
       "id": "QNTUSDT-1792003543306",
       "mae_pct": 1.904066228390544,
-      "mark_return_pct": 1.3294375456537555,
-      "mfe_pct": 2.118334550766976,
+      "mark_return_pct": 2.361821280740195,
+      "mfe_pct": 2.4738251765278663,
       "model_hash": "218a4dff00e43359a85e2fb6d6d2ce7dd6b800649171b35e48a72f302ddc047a",
       "model_n": 5,
-      "next_bar_ms": 1792030200000,
+      "next_bar_ms": 1792030500000,
       "predicted_ms": 1792003550003,
       "score": null,
       "side": "SHORT",
