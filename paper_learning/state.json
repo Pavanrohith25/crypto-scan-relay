@@ -28,7 +28,7 @@
   "started_ms": 1791382577243,
   "trades": {
     "BTCUSDT-1791450054416": {
-      "checked_ms": 1792054585624,
+      "checked_ms": 1792054891094,
       "entry_ms": 1791450300000,
       "entry_price": 83013.8,
       "features": [
@@ -42,11 +42,11 @@
       ],
       "id": "BTCUSDT-1791450054416",
       "mae_pct": 1.6120211338355839,
-      "mark_return_pct": 2.0307587413177064,
+      "mark_return_pct": 1.9677571680853156,
       "mfe_pct": 3.3578152066282896,
       "model_hash": "d00c3a24ef0fd037da9e46e3397b77adfe716660f6d7e76afb8984ea77092eae",
       "model_n": 0,
-      "next_bar_ms": 1792054500000,
+      "next_bar_ms": 1792054800000,
       "predicted_ms": 1791450062402,
       "score": null,
       "side": "SHORT",
@@ -300,6 +300,54 @@
       "symbol": "ETHUSDT",
       "target_pct": 5.0
     },
+    "ETHUSDT-1792054886002": {
+      "checked_ms": 0,
+      "entry_ms": 1792055100000,
+      "features": [
+        1.0,
+        0.1036,
+        -0.0885,
+        -0.17456666666666668,
+        -0.0838,
+        0.31,
+        0.55
+      ],
+      "id": "ETHUSDT-1792054886002",
+      "mae_pct": 0.0,
+      "mfe_pct": 0.0,
+      "model_hash": "8e1b832748f26efdcd9fcce2072716280c7a3dee468afccf23c74f887cad7ae0",
+      "model_n": 7,
+      "next_bar_ms": 1792055100000,
+      "predicted_ms": 1792054892267,
+      "score": null,
+      "side": "SHORT",
+      "signal_ms": 1792054886002,
+      "snapshot": {
+        "bias": "SHORT",
+        "bounce_from_12h_low_pct": 2.414,
+        "distance_from_1h_sma10_pct": -0.419,
+        "momentum_12h_pct": -1.77,
+        "momentum_24h_pct": -5.237,
+        "momentum_3h_pct": 1.036,
+        "price": 2373.95,
+        "pullback_from_12h_high_pct": -2.307,
+        "quote_volume_24h": 1198628147.83,
+        "reasons": [
+          "1h and 4h trend structure aligned"
+        ],
+        "retest_reason": "short bounce reached trend area and selling resumed",
+        "setup_state": "CONTINUATION_TRIGGER",
+        "swing_score": 55.0,
+        "symbol": "ETHUSDT",
+        "volume_expansion_1h": 0.93,
+        "warnings": []
+      },
+      "source": "BINANCE_SPOT_PROXY",
+      "status": "PENDING",
+      "stop_pct": 6.0,
+      "symbol": "ETHUSDT",
+      "target_pct": 5.0
+    },
     "ONDOUSDT-1791644453967": {
       "checked_ms": 1791761790376,
       "entry_ms": 1791644700000,
@@ -463,6 +511,54 @@
       "status": "TARGET",
       "stop_pct": 6.0,
       "stressed_net_return_pct": 4.47,
+      "symbol": "ONDOUSDT",
+      "target_pct": 5.0
+    },
+    "ONDOUSDT-1792054886002": {
+      "checked_ms": 0,
+      "entry_ms": 1792055100000,
+      "features": [
+        1.0,
+        0.15689999999999998,
+        -0.12589999999999998,
+        -0.22366666666666665,
+        -0.101,
+        0.4166666666666667,
+        0.61
+      ],
+      "id": "ONDOUSDT-1792054886002",
+      "mae_pct": 0.0,
+      "mfe_pct": 0.0,
+      "model_hash": "8e1b832748f26efdcd9fcce2072716280c7a3dee468afccf23c74f887cad7ae0",
+      "model_n": 7,
+      "next_bar_ms": 1792055100000,
+      "predicted_ms": 1792054892267,
+      "score": null,
+      "side": "SHORT",
+      "signal_ms": 1792054886002,
+      "snapshot": {
+        "bias": "SHORT",
+        "bounce_from_12h_low_pct": 2.724,
+        "distance_from_1h_sma10_pct": -0.505,
+        "momentum_12h_pct": -2.518,
+        "momentum_24h_pct": -6.71,
+        "momentum_3h_pct": 1.569,
+        "price": 0.4336,
+        "pullback_from_12h_high_pct": -3.387,
+        "quote_volume_24h": 23722045.75,
+        "reasons": [
+          "1h and 4h trend structure aligned"
+        ],
+        "retest_reason": "short bounce reached trend area and selling resumed",
+        "setup_state": "CONTINUATION_TRIGGER",
+        "swing_score": 61.0,
+        "symbol": "ONDOUSDT",
+        "volume_expansion_1h": 1.25,
+        "warnings": []
+      },
+      "source": "BINANCE_SPOT_PROXY",
+      "status": "PENDING",
+      "stop_pct": 6.0,
       "symbol": "ONDOUSDT",
       "target_pct": 5.0
     },
@@ -636,7 +732,7 @@
       "target_pct": 5.0
     },
     "SOLUSDT-1792033289602": {
-      "checked_ms": 1792054585624,
+      "checked_ms": 1792054891094,
       "entry_ms": 1792033500000,
       "entry_price": 102.29,
       "features": [
@@ -650,11 +746,11 @@
       ],
       "id": "SOLUSDT-1792033289602",
       "mae_pct": 1.9943298465147974,
-      "mark_return_pct": -0.9971649232574098,
+      "mark_return_pct": -1.0167171766545913,
       "mfe_pct": 0.8700752761755748,
       "model_hash": "8e1b832748f26efdcd9fcce2072716280c7a3dee468afccf23c74f887cad7ae0",
       "model_n": 7,
-      "next_bar_ms": 1792054500000,
+      "next_bar_ms": 1792054800000,
       "predicted_ms": 1792033294834,
       "score": null,
       "side": "SHORT",
