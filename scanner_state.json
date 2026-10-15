@@ -1,6 +1,6 @@
 {
-  "last_processed_at_ms": 1792081565343,
-  "last_processed_generated_at_ms": 1792081562724,
+  "last_processed_at_ms": 1792081911788,
+  "last_processed_generated_at_ms": 1792081909386,
   "minimum_candidate_score": 78.0,
   "pairs": {
     "1000000BOBUSDT": {
@@ -551,14 +551,15 @@
         ]
       },
       "gate_reasons": [
-        "score 59.0 below required 82.0",
-        "long spot confirmation weak (B/S 0.980, flow -4,532)"
+        "score 39.0 below required 82.0",
+        "long spot confirmation weak (B/S 0.798, flow -112,488)",
+        "15m OI is not expanding"
       ],
       "last_bias": "LONG",
-      "last_price": 0.01132,
+      "last_price": 0.01133,
       "last_return_pct": -0.589391,
-      "last_score": 59.0,
-      "last_seen_at_ms": 1792081565343,
+      "last_score": 39.0,
+      "last_seen_at_ms": 1792081911788,
       "mae_pct": -0.589391,
       "mfe_pct": 0.0,
       "previous_score": 74.0,
@@ -1020,15 +1021,15 @@
     },
     "CSOPSAMSUNG2LUSDT": {
       "gate_reasons": [
-        "score 46.0 below required 78.0",
+        "score 40.0 below required 78.0",
         "candidate has blocker(s)",
         "missing Binance spot confirmation",
         "15m OI is not expanding"
       ],
       "last_bias": "SHORT",
-      "last_price": 6.177,
-      "last_score": 46.0,
-      "last_seen_at_ms": 1792080656615,
+      "last_price": 6.153,
+      "last_score": 40.0,
+      "last_seen_at_ms": 1792081911788,
       "qualifying_streak": 0,
       "required_score": 78.0
     },
@@ -1587,13 +1588,12 @@
       "gate_reasons": [
         "score 38.0 below required 78.0",
         "candidate has blocker(s)",
-        "missing Binance spot confirmation",
-        "15m OI is not expanding"
+        "missing Binance spot confirmation"
       ],
       "last_bias": "SHORT",
       "last_price": 44.44,
       "last_score": 38.0,
-      "last_seen_at_ms": 1792081565343,
+      "last_seen_at_ms": 1792081911788,
       "qualifying_streak": 0,
       "required_score": 78.0
     },
@@ -3073,10 +3073,10 @@
         "15m OI is not expanding"
       ],
       "last_bias": "LONG",
-      "last_price": 0.9205,
+      "last_price": 0.9102,
       "last_return_pct": -1.12056,
       "last_score": 50.0,
-      "last_seen_at_ms": 1792081565343,
+      "last_seen_at_ms": 1792081911788,
       "mae_pct": -1.12056,
       "mfe_pct": 0.0,
       "previous_score": 69.0,
@@ -4307,14 +4307,15 @@
     },
     "ZHONGJIUSDT": {
       "gate_reasons": [
-        "score 53.0 below required 82.0",
+        "score 47.0 below required 82.0",
         "candidate has blocker(s)",
-        "missing Binance spot confirmation"
+        "missing Binance spot confirmation",
+        "15m OI is not expanding"
       ],
       "last_bias": "SHORT",
-      "last_price": 102.72,
-      "last_score": 53.0,
-      "last_seen_at_ms": 1792081565343,
+      "last_price": 102.54,
+      "last_score": 47.0,
+      "last_seen_at_ms": 1792081911788,
       "qualifying_streak": 0,
       "required_score": 82.0
     },
