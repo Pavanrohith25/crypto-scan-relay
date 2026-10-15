@@ -1,6 +1,6 @@
 {
-  "last_processed_at_ms": 1792105280664,
-  "last_processed_generated_at_ms": 1792105278232,
+  "last_processed_at_ms": 1792105607708,
+  "last_processed_generated_at_ms": 1792105605218,
   "pairs": {
     "1000000BOBUSDT": {
       "gate_reasons": [
@@ -84,10 +84,10 @@
       ],
       "last_bias": "SHORT",
       "last_decision": "WAIT",
-      "last_price": 8.54,
+      "last_price": 8.56,
       "last_regime": "COUNTERTREND",
       "last_score": 36.0,
-      "last_seen_at_ms": 1792105280664
+      "last_seen_at_ms": 1792105607708
     },
     "AGTUSDT": {
       "gate_reasons": [
@@ -179,14 +179,15 @@
     },
     "ANIMEUSDT": {
       "gate_reasons": [
-        "score 74.0 below persistence floor 76.0"
+        "score 64.0 below required 82.0",
+        "15m OI not expanding"
       ],
       "last_bias": "LONG",
-      "last_decision": "FALSE_START",
-      "last_price": 0.003315,
+      "last_decision": "WAIT",
+      "last_price": 0.003311,
       "last_regime": "TREND_CONTINUATION",
-      "last_score": 74.0,
-      "last_seen_at_ms": 1792105280664
+      "last_score": 64.0,
+      "last_seen_at_ms": 1792105607708
     },
     "API3USDT": {
       "gate_reasons": [
@@ -341,17 +342,16 @@
     },
     "BLURUSDT": {
       "gate_reasons": [
-        "score 45.0 below required 82.0",
-        "long spot weak (B/S 0.845, flow -4,604)",
-        "15m OI not expanding",
-        "spot volume 54,983 below required 100,000"
+        "score 35.0 below required 82.0",
+        "long spot weak (B/S 0.907, flow -7,156)",
+        "15m OI not expanding"
       ],
       "last_bias": "LONG",
       "last_decision": "WAIT",
-      "last_price": 0.01087,
+      "last_price": 0.01075,
       "last_regime": "COUNTERTREND",
-      "last_score": 45.0,
-      "last_seen_at_ms": 1792105280664
+      "last_score": 35.0,
+      "last_seen_at_ms": 1792105607708
     },
     "BMNRUSDT": {
       "gate_reasons": [
@@ -431,18 +431,17 @@
     },
     "BSPUSDT": {
       "gate_reasons": [
-        "score 57.0 below required 82.0",
+        "score 62.0 below required 82.0",
         "candidate has blocker(s)",
         "missing spot confirmation",
-        "15m OI not expanding",
         "missing spot volume"
       ],
       "last_bias": "SHORT",
       "last_decision": "WAIT",
-      "last_price": 56.34,
+      "last_price": 56.55,
       "last_regime": "COUNTERTREND",
-      "last_score": 57.0,
-      "last_seen_at_ms": 1792105280664
+      "last_score": 62.0,
+      "last_seen_at_ms": 1792105607708
     },
     "BTCUSDT": {
       "gate_reasons": [
@@ -1512,7 +1511,7 @@
       "last_price": 20.09,
       "last_regime": "TREND_CONTINUATION",
       "last_score": 46.0,
-      "last_seen_at_ms": 1792105280664
+      "last_seen_at_ms": 1792105607708
     },
     "LAUSDT": {
       "gate_reasons": [
