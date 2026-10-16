@@ -1,6 +1,6 @@
 {
-  "last_processed_at_ms": 1792165273361,
-  "last_processed_generated_at_ms": 1792165270915,
+  "last_processed_at_ms": 1792165537914,
+  "last_processed_generated_at_ms": 1792165535489,
   "minimum_candidate_score": 78.0,
   "pairs": {
     "1000000BOBUSDT": {
@@ -616,10 +616,10 @@
         "15m OI is not expanding"
       ],
       "last_bias": "LONG",
-      "last_price": 0.01063,
+      "last_price": 0.01061,
       "last_return_pct": -0.589391,
       "last_score": 74.0,
-      "last_seen_at_ms": 1792165273361,
+      "last_seen_at_ms": 1792165537914,
       "mae_pct": -0.589391,
       "mfe_pct": 0.0,
       "previous_score": 74.0,
@@ -714,9 +714,9 @@
         "score 52.0 below required 78.0"
       ],
       "last_bias": "SHORT",
-      "last_price": 81608.5,
+      "last_price": 81623.0,
       "last_score": 52.0,
-      "last_seen_at_ms": 1792165273361,
+      "last_seen_at_ms": 1792165537914,
       "qualifying_streak": 0,
       "required_score": 78.0
     },
@@ -3248,16 +3248,19 @@
         "strength": "STRONG",
         "warnings": []
       },
-      "gate_reasons": [],
+      "gate_reasons": [
+        "score 68.0 below required 78.0",
+        "long spot confirmation weak (B/S 0.970, flow -2,705)"
+      ],
       "last_bias": "LONG",
-      "last_price": 0.001948,
+      "last_price": 0.001952,
       "last_return_pct": -0.820092,
-      "last_score": 80.0,
-      "last_seen_at_ms": 1792165273361,
+      "last_score": 68.0,
+      "last_seen_at_ms": 1792165537914,
       "mae_pct": -0.820092,
       "mfe_pct": 0.0,
       "previous_score": 70.0,
-      "qualifying_streak": 1,
+      "qualifying_streak": 0,
       "required_score": 78.0
     },
     "RUMUSDT": {
@@ -3750,9 +3753,9 @@
         "15m OI is not expanding"
       ],
       "last_bias": "SHORT",
-      "last_price": 101.03,
+      "last_price": 100.91,
       "last_score": 45.0,
-      "last_seen_at_ms": 1792165273361,
+      "last_seen_at_ms": 1792165537914,
       "qualifying_streak": 0,
       "required_score": 78.0
     },
@@ -4266,14 +4269,14 @@
         "warnings": []
       },
       "gate_reasons": [
-        "score 58.0 below required 78.0",
+        "score 52.0 below required 78.0",
         "long spot confirmation weak (B/S 0.883, flow -18,126)"
       ],
       "last_bias": "LONG",
-      "last_price": 0.04565,
+      "last_price": 0.0457,
       "last_return_pct": 2.610209,
-      "last_score": 58.0,
-      "last_seen_at_ms": 1792165273361,
+      "last_score": 52.0,
+      "last_seen_at_ms": 1792165537914,
       "mae_pct": -0.07734,
       "mfe_pct": 2.610209,
       "previous_score": 72.0,
