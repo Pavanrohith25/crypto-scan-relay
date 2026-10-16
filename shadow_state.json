@@ -1,6 +1,6 @@
 {
-  "last_processed_at_ms": 1792158977985,
-  "last_processed_generated_at_ms": 1792158975376,
+  "last_processed_at_ms": 1792159281324,
+  "last_processed_generated_at_ms": 1792159278821,
   "pairs": {
     "1000000BOBUSDT": {
       "gate_reasons": [
@@ -350,7 +350,7 @@
       "last_price": 0.01073,
       "last_regime": "COUNTERTREND",
       "last_score": 54.0,
-      "last_seen_at_ms": 1792158977985
+      "last_seen_at_ms": 1792159281324
     },
     "BMNRUSDT": {
       "gate_reasons": [
@@ -756,17 +756,18 @@
     },
     "CSOPSKHYNIX2LUSDT": {
       "gate_reasons": [
-        "score 39.0 below required 82.0",
+        "score 43.0 below required 82.0",
         "candidate has blocker(s)",
         "missing spot confirmation",
+        "15m OI not expanding",
         "missing spot volume"
       ],
-      "last_bias": "SHORT",
+      "last_bias": "LONG",
       "last_decision": "WAIT",
-      "last_price": 2.452,
+      "last_price": 2.363,
       "last_regime": "COUNTERTREND",
-      "last_score": 39.0,
-      "last_seen_at_ms": 1792141896056
+      "last_score": 43.0,
+      "last_seen_at_ms": 1792159281324
     },
     "CTKUSDT": {
       "active": false,
@@ -2477,17 +2478,17 @@
     },
     "SIRENUSDT": {
       "gate_reasons": [
-        "score 56.0 below required 78.0",
+        "score 44.0 below required 78.0",
         "candidate has blocker(s)",
         "missing spot confirmation",
         "missing spot volume"
       ],
       "last_bias": "LONG",
       "last_decision": "WAIT",
-      "last_price": 0.02857,
+      "last_price": 0.02895,
       "last_regime": "COUNTERTREND",
-      "last_score": 56.0,
-      "last_seen_at_ms": 1792158977985
+      "last_score": 44.0,
+      "last_seen_at_ms": 1792159281324
     },
     "SKDDUSDT": {
       "gate_reasons": [
@@ -2514,10 +2515,10 @@
       ],
       "last_bias": "LONG",
       "last_decision": "WAIT",
-      "last_price": 935.64,
+      "last_price": 937.75,
       "last_regime": "COUNTERTREND",
       "last_score": 60.0,
-      "last_seen_at_ms": 1792158977985
+      "last_seen_at_ms": 1792159281324
     },
     "SKLUSDT": {
       "active": true,
@@ -2552,18 +2553,17 @@
     },
     "SNPSUSDT": {
       "gate_reasons": [
-        "score 24.0 below required 78.0",
+        "score 43.0 below required 78.0",
         "candidate has blocker(s)",
         "missing spot confirmation",
-        "15m OI not expanding",
         "missing spot volume"
       ],
       "last_bias": "LONG",
       "last_decision": "WAIT",
-      "last_price": 460.71,
+      "last_price": 456.84,
       "last_regime": "TREND_CONTINUATION",
-      "last_score": 24.0,
-      "last_seen_at_ms": 1792158977985
+      "last_score": 43.0,
+      "last_seen_at_ms": 1792159281324
     },
     "SNXXUSDT": {
       "gate_reasons": [
