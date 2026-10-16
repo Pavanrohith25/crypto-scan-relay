@@ -1,6 +1,6 @@
 {
-  "last_processed_at_ms": 1792115469382,
-  "last_processed_generated_at_ms": 1792115466882,
+  "last_processed_at_ms": 1792115758137,
+  "last_processed_generated_at_ms": 1792115755724,
   "pairs": {
     "1000000BOBUSDT": {
       "gate_reasons": [
@@ -84,10 +84,10 @@
       ],
       "last_bias": "SHORT",
       "last_decision": "WAIT",
-      "last_price": 8.78,
-      "last_regime": "COUNTERTREND",
+      "last_price": 8.76,
+      "last_regime": "TREND_CONTINUATION",
       "last_score": 36.0,
-      "last_seen_at_ms": 1792115469382
+      "last_seen_at_ms": 1792115758137
     },
     "AGTUSDT": {
       "gate_reasons": [
@@ -179,16 +179,15 @@
     },
     "ANIMEUSDT": {
       "gate_reasons": [
-        "score 49.0 below required 82.0",
-        "long spot weak (B/S 0.721, flow -27,270)",
-        "15m OI not expanding"
+        "score 54.0 below required 82.0",
+        "long spot weak (B/S 0.721, flow -27,270)"
       ],
       "last_bias": "LONG",
       "last_decision": "WAIT",
-      "last_price": 0.003176,
+      "last_price": 0.003163,
       "last_regime": "TREND_CONTINUATION",
-      "last_score": 49.0,
-      "last_seen_at_ms": 1792115469382
+      "last_score": 54.0,
+      "last_seen_at_ms": 1792115758137
     },
     "API3USDT": {
       "gate_reasons": [
@@ -353,7 +352,7 @@
       "last_price": 0.01058,
       "last_regime": "COUNTERTREND",
       "last_score": 45.0,
-      "last_seen_at_ms": 1792115469382
+      "last_seen_at_ms": 1792115758137
     },
     "BMNRUSDT": {
       "gate_reasons": [
@@ -441,10 +440,10 @@
       ],
       "last_bias": "SHORT",
       "last_decision": "WAIT",
-      "last_price": 56.76,
+      "last_price": 56.46,
       "last_regime": "COUNTERTREND",
       "last_score": 35.0,
-      "last_seen_at_ms": 1792115469382
+      "last_seen_at_ms": 1792115758137
     },
     "BTCUSDT": {
       "gate_reasons": [
@@ -2253,17 +2252,16 @@
     "RSRUSDT": {
       "gate_reasons": [
         "deep countertrend: 24h structure/OI conflicts with the setup",
-        "score 45.0 below required 82.0",
-        "long spot weak (B/S 0.743, flow -12,788)",
-        "15m OI not expanding",
-        "spot volume 86,667 below required 100,000"
+        "score 55.0 below required 78.0",
+        "long spot weak (B/S 0.870, flow -3,184)",
+        "spot volume 45,831 below required 50,000"
       ],
       "last_bias": "LONG",
       "last_decision": "BLOCKED_DEEP_COUNTERTREND",
-      "last_price": 0.001932,
+      "last_price": 0.001917,
       "last_regime": "COUNTERTREND_DEEP",
-      "last_score": 45.0,
-      "last_seen_at_ms": 1792094772027
+      "last_score": 55.0,
+      "last_seen_at_ms": 1792115758137
     },
     "RUMUSDT": {
       "gate_reasons": [
