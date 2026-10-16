@@ -1,6 +1,6 @@
 {
-  "last_processed_at_ms": 1792112182363,
-  "last_processed_generated_at_ms": 1792112179955,
+  "last_processed_at_ms": 1792112477053,
+  "last_processed_generated_at_ms": 1792112474609,
   "pairs": {
     "1000000BOBUSDT": {
       "gate_reasons": [
@@ -83,10 +83,10 @@
       ],
       "last_bias": "SHORT",
       "last_decision": "WAIT",
-      "last_price": 8.73,
-      "last_regime": "TREND_CONTINUATION",
+      "last_price": 8.75,
+      "last_regime": "COUNTERTREND",
       "last_score": 41.0,
-      "last_seen_at_ms": 1792112182363
+      "last_seen_at_ms": 1792112477053
     },
     "AGTUSDT": {
       "gate_reasons": [
@@ -178,16 +178,16 @@
     },
     "ANIMEUSDT": {
       "gate_reasons": [
-        "score 52.0 below required 82.0",
+        "score 62.0 below required 82.0",
         "long spot weak (B/S 0.992, flow -1,099)",
         "15m OI not expanding"
       ],
       "last_bias": "LONG",
       "last_decision": "WAIT",
-      "last_price": 0.003235,
+      "last_price": 0.003214,
       "last_regime": "TREND_CONTINUATION",
-      "last_score": 52.0,
-      "last_seen_at_ms": 1792112182363
+      "last_score": 62.0,
+      "last_seen_at_ms": 1792112477053
     },
     "API3USDT": {
       "gate_reasons": [
@@ -438,10 +438,10 @@
       ],
       "last_bias": "SHORT",
       "last_decision": "WAIT",
-      "last_price": 56.73,
+      "last_price": 56.81,
       "last_regime": "COUNTERTREND",
       "last_score": 62.0,
-      "last_seen_at_ms": 1792112182363
+      "last_seen_at_ms": 1792112477053
     },
     "BTCUSDT": {
       "gate_reasons": [
@@ -765,10 +765,10 @@
       ],
       "last_bias": "LONG",
       "last_decision": "WAIT",
-      "last_price": 2.56,
-      "last_regime": "COUNTERTREND",
+      "last_price": 2.584,
+      "last_regime": "TREND_CONTINUATION",
       "last_score": 56.0,
-      "last_seen_at_ms": 1792112182363
+      "last_seen_at_ms": 1792112477053
     },
     "CTKUSDT": {
       "active": false,
@@ -3124,18 +3124,17 @@
     },
     "ZMUSDT": {
       "gate_reasons": [
-        "deep countertrend: 24h structure/OI conflicts with the setup",
-        "score 34.0 below required 78.0",
+        "score 49.0 below required 78.0",
         "candidate has blocker(s)",
         "missing spot confirmation",
         "missing spot volume"
       ],
       "last_bias": "SHORT",
-      "last_decision": "BLOCKED_DEEP_COUNTERTREND",
-      "last_price": 97.42,
-      "last_regime": "COUNTERTREND_DEEP",
-      "last_score": 34.0,
-      "last_seen_at_ms": 1792112182363
+      "last_decision": "WAIT",
+      "last_price": 97.94,
+      "last_regime": "COUNTERTREND",
+      "last_score": 49.0,
+      "last_seen_at_ms": 1792112477053
     },
     "ZSUSDT": {
       "gate_reasons": [
