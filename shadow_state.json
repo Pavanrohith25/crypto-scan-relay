@@ -1,6 +1,6 @@
 {
-  "last_processed_at_ms": 1792117571136,
-  "last_processed_generated_at_ms": 1792117568590,
+  "last_processed_at_ms": 1792117865209,
+  "last_processed_generated_at_ms": 1792117862662,
   "pairs": {
     "1000000BOBUSDT": {
       "gate_reasons": [
@@ -83,10 +83,10 @@
       ],
       "last_bias": "SHORT",
       "last_decision": "WAIT",
-      "last_price": 8.78,
+      "last_price": 8.77,
       "last_regime": "COUNTERTREND",
       "last_score": 41.0,
-      "last_seen_at_ms": 1792117571136
+      "last_seen_at_ms": 1792117865209
     },
     "AGTUSDT": {
       "gate_reasons": [
@@ -183,10 +183,10 @@
       ],
       "last_bias": "LONG",
       "last_decision": "WAIT",
-      "last_price": 0.003174,
+      "last_price": 0.003165,
       "last_regime": "TREND_CONTINUATION",
       "last_score": 50.0,
-      "last_seen_at_ms": 1792117571136
+      "last_seen_at_ms": 1792117865209
     },
     "API3USDT": {
       "gate_reasons": [
@@ -348,10 +348,10 @@
       ],
       "last_bias": "LONG",
       "last_decision": "WAIT",
-      "last_price": 0.01055,
+      "last_price": 0.01053,
       "last_regime": "COUNTERTREND",
       "last_score": 45.0,
-      "last_seen_at_ms": 1792117571136
+      "last_seen_at_ms": 1792117865209
     },
     "BMNRUSDT": {
       "gate_reasons": [
@@ -439,10 +439,10 @@
       ],
       "last_bias": "SHORT",
       "last_decision": "WAIT",
-      "last_price": 55.96,
+      "last_price": 56.02,
       "last_regime": "COUNTERTREND",
       "last_score": 36.0,
-      "last_seen_at_ms": 1792117571136
+      "last_seen_at_ms": 1792117865209
     },
     "BTCUSDT": {
       "gate_reasons": [
@@ -2251,16 +2251,17 @@
     "RSRUSDT": {
       "gate_reasons": [
         "deep countertrend: 24h structure/OI conflicts with the setup",
-        "score 50.0 below required 78.0",
+        "score 45.0 below required 82.0",
         "long spot weak (B/S 0.778, flow -12,346)",
-        "15m OI not expanding"
+        "15m OI not expanding",
+        "spot volume 98,823 below required 100,000"
       ],
       "last_bias": "LONG",
       "last_decision": "BLOCKED_DEEP_COUNTERTREND",
-      "last_price": 0.001901,
+      "last_price": 0.001895,
       "last_regime": "COUNTERTREND_DEEP",
-      "last_score": 50.0,
-      "last_seen_at_ms": 1792117571136
+      "last_score": 45.0,
+      "last_seen_at_ms": 1792117865209
     },
     "RUMUSDT": {
       "gate_reasons": [
