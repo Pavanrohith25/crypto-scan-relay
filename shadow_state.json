@@ -1,6 +1,6 @@
 {
-  "last_processed_at_ms": 1792115205061,
-  "last_processed_generated_at_ms": 1792115202557,
+  "last_processed_at_ms": 1792115469382,
+  "last_processed_generated_at_ms": 1792115466882,
   "pairs": {
     "1000000BOBUSDT": {
       "gate_reasons": [
@@ -84,10 +84,10 @@
       ],
       "last_bias": "SHORT",
       "last_decision": "WAIT",
-      "last_price": 8.77,
-      "last_regime": "TREND_CONTINUATION",
+      "last_price": 8.78,
+      "last_regime": "COUNTERTREND",
       "last_score": 36.0,
-      "last_seen_at_ms": 1792115205061
+      "last_seen_at_ms": 1792115469382
     },
     "AGTUSDT": {
       "gate_reasons": [
@@ -179,16 +179,16 @@
     },
     "ANIMEUSDT": {
       "gate_reasons": [
-        "score 52.0 below required 82.0",
-        "long spot weak (B/S 0.946, flow -6,514)",
+        "score 49.0 below required 82.0",
+        "long spot weak (B/S 0.721, flow -27,270)",
         "15m OI not expanding"
       ],
       "last_bias": "LONG",
       "last_decision": "WAIT",
       "last_price": 0.003176,
       "last_regime": "TREND_CONTINUATION",
-      "last_score": 52.0,
-      "last_seen_at_ms": 1792115205061
+      "last_score": 49.0,
+      "last_seen_at_ms": 1792115469382
     },
     "API3USDT": {
       "gate_reasons": [
@@ -350,10 +350,10 @@
       ],
       "last_bias": "LONG",
       "last_decision": "WAIT",
-      "last_price": 0.01066,
+      "last_price": 0.01058,
       "last_regime": "COUNTERTREND",
       "last_score": 45.0,
-      "last_seen_at_ms": 1792115205061
+      "last_seen_at_ms": 1792115469382
     },
     "BMNRUSDT": {
       "gate_reasons": [
@@ -433,17 +433,18 @@
     },
     "BSPUSDT": {
       "gate_reasons": [
-        "score 62.0 below required 82.0",
+        "score 35.0 below required 82.0",
         "candidate has blocker(s)",
         "missing spot confirmation",
+        "15m OI not expanding",
         "missing spot volume"
       ],
       "last_bias": "SHORT",
       "last_decision": "WAIT",
-      "last_price": 57.0,
+      "last_price": 56.76,
       "last_regime": "COUNTERTREND",
-      "last_score": 62.0,
-      "last_seen_at_ms": 1792115205061
+      "last_score": 35.0,
+      "last_seen_at_ms": 1792115469382
     },
     "BTCUSDT": {
       "gate_reasons": [
@@ -760,17 +761,18 @@
     },
     "CSOPSKHYNIX2LUSDT": {
       "gate_reasons": [
-        "score 46.0 below required 82.0",
+        "score 41.0 below required 82.0",
         "candidate has blocker(s)",
         "missing spot confirmation",
+        "15m OI not expanding",
         "missing spot volume"
       ],
       "last_bias": "LONG",
       "last_decision": "WAIT",
-      "last_price": 2.571,
+      "last_price": 2.553,
       "last_regime": "COUNTERTREND",
-      "last_score": 46.0,
-      "last_seen_at_ms": 1792115205061
+      "last_score": 41.0,
+      "last_seen_at_ms": 1792115469382
     },
     "CTKUSDT": {
       "active": false,
