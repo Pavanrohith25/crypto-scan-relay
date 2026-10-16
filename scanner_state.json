@@ -1,6 +1,6 @@
 {
-  "last_processed_at_ms": 1792150289727,
-  "last_processed_generated_at_ms": 1792150287313,
+  "last_processed_at_ms": 1792150587927,
+  "last_processed_generated_at_ms": 1792150585117,
   "minimum_candidate_score": 78.0,
   "pairs": {
     "1000000BOBUSDT": {
@@ -541,13 +541,13 @@
     },
     "BERAUSDT": {
       "gate_reasons": [
-        "score 56.0 below required 82.0",
+        "score 50.0 below required 82.0",
         "long spot confirmation weak (B/S 0.811, flow -12,555)"
       ],
       "last_bias": "LONG",
-      "last_price": 0.207,
-      "last_score": 56.0,
-      "last_seen_at_ms": 1792150289727,
+      "last_price": 0.2064,
+      "last_score": 50.0,
+      "last_seen_at_ms": 1792150587927,
       "qualifying_streak": 0,
       "required_score": 82.0
     },
@@ -616,10 +616,10 @@
         "long spot confirmation weak (B/S 1.022, flow 5,573)"
       ],
       "last_bias": "LONG",
-      "last_price": 0.01095,
+      "last_price": 0.01091,
       "last_return_pct": -0.589391,
       "last_score": 72.0,
-      "last_seen_at_ms": 1792150289727,
+      "last_seen_at_ms": 1792150587927,
       "mae_pct": -0.589391,
       "mfe_pct": 0.0,
       "previous_score": 74.0,
@@ -723,15 +723,15 @@
     },
     "BTWUSDT": {
       "gate_reasons": [
-        "score 45.0 below required 78.0",
+        "score 49.0 below required 78.0",
         "candidate has blocker(s)",
         "missing Binance spot confirmation",
         "15m OI is not expanding"
       ],
       "last_bias": "LONG",
-      "last_price": 1.6574,
-      "last_score": 45.0,
-      "last_seen_at_ms": 1792150289727,
+      "last_price": 1.6343,
+      "last_score": 49.0,
+      "last_seen_at_ms": 1792150587927,
       "qualifying_streak": 0,
       "required_score": 78.0
     },
@@ -743,9 +743,9 @@
         "15m OI is not expanding"
       ],
       "last_bias": "LONG",
-      "last_price": 884.06,
+      "last_price": 883.44,
       "last_score": 36.0,
-      "last_seen_at_ms": 1792150289727,
+      "last_seen_at_ms": 1792150587927,
       "qualifying_streak": 0,
       "required_score": 78.0
     },
@@ -1512,13 +1512,14 @@
     },
     "ETHUSDT": {
       "gate_reasons": [
-        "score 41.0 below required 78.0",
-        "short spot confirmation weak (B/S 2.618, flow 14,013,548)"
+        "score 36.0 below required 78.0",
+        "short spot confirmation weak (B/S 2.372, flow 27,372,659)",
+        "15m OI is not expanding"
       ],
       "last_bias": "SHORT",
-      "last_price": 2486.54,
-      "last_score": 41.0,
-      "last_seen_at_ms": 1792149965234,
+      "last_price": 2480.23,
+      "last_score": 36.0,
+      "last_seen_at_ms": 1792150587927,
       "qualifying_streak": 0,
       "required_score": 78.0
     },
