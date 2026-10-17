@@ -1,6 +1,6 @@
 {
-  "last_processed_at_ms": 1792247810209,
-  "last_processed_generated_at_ms": 1792247807819,
+  "last_processed_at_ms": 1792248107094,
+  "last_processed_generated_at_ms": 1792248104611,
   "pairs": {
     "1000000BOBUSDT": {
       "gate_reasons": [
@@ -359,15 +359,15 @@
     "BLURUSDT": {
       "gate_reasons": [
         "deep countertrend: 24h structure/OI conflicts with the setup",
-        "score 75.0 below required 82.0",
+        "score 69.0 below required 82.0",
         "spot volume 34,072 below required 100,000"
       ],
       "last_bias": "LONG",
       "last_decision": "BLOCKED_DEEP_COUNTERTREND",
-      "last_price": 0.01022,
+      "last_price": 0.01017,
       "last_regime": "COUNTERTREND_DEEP",
-      "last_score": 75.0,
-      "last_seen_at_ms": 1792247810209
+      "last_score": 69.0,
+      "last_seen_at_ms": 1792248107094
     },
     "BMNRUSDT": {
       "gate_reasons": [
@@ -432,17 +432,17 @@
     },
     "BRUSDT": {
       "gate_reasons": [
-        "score 62.0 below required 78.0",
+        "score 73.0 below required 78.0",
         "candidate has blocker(s)",
         "missing spot confirmation",
         "missing spot volume"
       ],
       "last_bias": "LONG",
       "last_decision": "WAIT",
-      "last_price": 0.38654,
-      "last_regime": "COUNTERTREND",
-      "last_score": 62.0,
-      "last_seen_at_ms": 1792247810209
+      "last_price": 0.39249,
+      "last_regime": "TREND_CONTINUATION",
+      "last_score": 73.0,
+      "last_seen_at_ms": 1792248107094
     },
     "BSPUSDT": {
       "gate_reasons": [
@@ -997,16 +997,16 @@
     },
     "ERAUSDT": {
       "gate_reasons": [
-        "score 62.0 below required 82.0",
-        "long spot weak (B/S 1.005, flow 915)",
+        "score 57.0 below required 82.0",
+        "long spot weak (B/S 1.031, flow 4,277)",
         "15m OI not expanding"
       ],
       "last_bias": "LONG",
       "last_decision": "WAIT",
-      "last_price": 0.06495,
+      "last_price": 0.06408,
       "last_regime": "TREND_CONTINUATION",
-      "last_score": 62.0,
-      "last_seen_at_ms": 1792247810209
+      "last_score": 57.0,
+      "last_seen_at_ms": 1792248107094
     },
     "ESPORTSUSDT": {
       "gate_reasons": [
@@ -1256,30 +1256,24 @@
     },
     "GTCUSDT": {
       "active": false,
-      "anchor_price": 0.22757,
-      "anchor_regime": "COUNTERTREND",
-      "anchor_score": 85.0,
-      "armed": true,
-      "armed_at_ms": 1792247810209,
       "closed_at_ms": 1791438051112,
       "confirmed_at_ms": 1791111328763,
       "confirmed_bias": "LONG",
       "confirmed_price": 0.12672,
       "confirmed_regime": "TREND_CONTINUATION",
       "confirmed_score": 77.0,
-      "evidence_count": 1,
-      "gate_reasons": [],
-      "high_priority": false,
+      "gate_reasons": [
+        "score 74.0 below persistence floor 76.0",
+        "15m OI materially negative"
+      ],
       "last_bias": "LONG",
-      "last_decision": "ARMED",
-      "last_fingerprint": "0.22757|1.392|77244.6059|471454.5579|1.49|-0.93|2.54",
+      "last_decision": "FALSE_START",
       "last_position_check_ms": 1791438051112,
-      "last_price": 0.22757,
+      "last_price": 0.22664,
       "last_regime": "COUNTERTREND",
-      "last_score": 85.0,
-      "last_seen_at_ms": 1792247810209,
-      "position_state": "EXIT_THESIS_BROKEN",
-      "required_score": 82.0
+      "last_score": 74.0,
+      "last_seen_at_ms": 1792248107094,
+      "position_state": "EXIT_THESIS_BROKEN"
     },
     "GUSDT": {
       "gate_reasons": [
@@ -2372,14 +2366,15 @@
     },
     "RSRUSDT": {
       "gate_reasons": [
-        "15m OI materially negative"
+        "score 69.0 below required 78.0",
+        "15m OI not expanding"
       ],
       "last_bias": "LONG",
-      "last_decision": "FALSE_START",
-      "last_price": 0.001988,
+      "last_decision": "WAIT",
+      "last_price": 0.001984,
       "last_regime": "COUNTERTREND",
-      "last_score": 79.0,
-      "last_seen_at_ms": 1792247810209
+      "last_score": 69.0,
+      "last_seen_at_ms": 1792248107094
     },
     "RUMUSDT": {
       "gate_reasons": [
