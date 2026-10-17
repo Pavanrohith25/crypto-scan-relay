@@ -1,6 +1,6 @@
 {
-  "last_processed_at_ms": 1792260373925,
-  "last_processed_generated_at_ms": 1792260371508,
+  "last_processed_at_ms": 1792260691466,
+  "last_processed_generated_at_ms": 1792260689002,
   "pairs": {
     "1000000BOBUSDT": {
       "gate_reasons": [
@@ -359,16 +359,16 @@
     "BLURUSDT": {
       "gate_reasons": [
         "deep countertrend: 24h structure/OI conflicts with the setup",
-        "score 50.0 below required 82.0",
+        "score 44.0 below required 82.0",
         "long spot weak (B/S 0.679, flow -7,763)",
         "spot volume 40,534 below required 100,000"
       ],
       "last_bias": "LONG",
       "last_decision": "BLOCKED_DEEP_COUNTERTREND",
-      "last_price": 0.01015,
+      "last_price": 0.01016,
       "last_regime": "COUNTERTREND_DEEP",
-      "last_score": 50.0,
-      "last_seen_at_ms": 1792260373925
+      "last_score": 44.0,
+      "last_seen_at_ms": 1792260691466
     },
     "BMNRUSDT": {
       "gate_reasons": [
@@ -433,17 +433,17 @@
     },
     "BRUSDT": {
       "gate_reasons": [
-        "score 69.0 below required 78.0",
+        "score 63.0 below required 78.0",
         "candidate has blocker(s)",
         "missing spot confirmation",
         "missing spot volume"
       ],
       "last_bias": "LONG",
       "last_decision": "WAIT",
-      "last_price": 0.38883,
+      "last_price": 0.3886,
       "last_regime": "COUNTERTREND",
-      "last_score": 69.0,
-      "last_seen_at_ms": 1792260373925
+      "last_score": 63.0,
+      "last_seen_at_ms": 1792260691466
     },
     "BSPUSDT": {
       "gate_reasons": [
@@ -1002,10 +1002,10 @@
       ],
       "last_bias": "LONG",
       "last_decision": "WAIT",
-      "last_price": 0.06374,
+      "last_price": 0.06372,
       "last_regime": "COUNTERTREND",
       "last_score": 81.0,
-      "last_seen_at_ms": 1792260373925
+      "last_seen_at_ms": 1792260691466
     },
     "ESPORTSUSDT": {
       "gate_reasons": [
@@ -1255,33 +1255,24 @@
     },
     "GTCUSDT": {
       "active": false,
-      "anchor_price": 0.22356,
-      "anchor_regime": "COUNTERTREND",
-      "anchor_score": 85.0,
-      "armed": true,
-      "armed_at_ms": 1792258873305,
       "closed_at_ms": 1791438051112,
       "confirmed_at_ms": 1791111328763,
       "confirmed_bias": "LONG",
       "confirmed_price": 0.12672,
       "confirmed_regime": "TREND_CONTINUATION",
       "confirmed_score": 77.0,
-      "evidence_count": 6,
       "gate_reasons": [
         "price follow-through 0.45625335480408147 below 0.75%",
         "countertrend reclaim not strong enough"
       ],
-      "high_priority": false,
       "last_bias": "LONG",
-      "last_decision": "ARMED_WAITING_TRIGGER",
-      "last_fingerprint": "0.22458|1.85|48616.6903|163003.6633|0.36|0.89|0.44",
+      "last_decision": "EXPIRED",
       "last_position_check_ms": 1791438051112,
-      "last_price": 0.22458,
+      "last_price": 0.2256,
       "last_regime": "COUNTERTREND",
-      "last_score": 79.0,
-      "last_seen_at_ms": 1792260373925,
-      "position_state": "EXIT_THESIS_BROKEN",
-      "required_score": 82.0
+      "last_score": 85.0,
+      "last_seen_at_ms": 1792260691466,
+      "position_state": "EXIT_THESIS_BROKEN"
     },
     "GUSDT": {
       "gate_reasons": [
@@ -2478,12 +2469,12 @@
       ],
       "last_bias": "LONG",
       "last_decision": "SHADOW_CONFIRMED",
-      "last_position_check_ms": 1792260373925,
-      "last_price": 0.06288,
+      "last_position_check_ms": 1792260691466,
+      "last_price": 0.06262,
       "last_regime": "TREND_CONTINUATION",
-      "last_score": 72.0,
-      "last_seen_at_ms": 1792260373925,
-      "position_state": "HOLD_PROTECT"
+      "last_score": 90.0,
+      "last_seen_at_ms": 1792260691466,
+      "position_state": "HOLD_STRONG"
     },
     "SCRUSDT": {
       "gate_reasons": [
@@ -3291,10 +3282,10 @@
       ],
       "last_bias": "LONG",
       "last_decision": "WAIT",
-      "last_price": 30.18,
+      "last_price": 30.19,
       "last_regime": "TREND_CONTINUATION",
       "last_score": 5.0,
-      "last_seen_at_ms": 1792260373925
+      "last_seen_at_ms": 1792260691466
     },
     "ZECUSDT": {
       "gate_reasons": [
