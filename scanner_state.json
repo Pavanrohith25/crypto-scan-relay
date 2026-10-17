@@ -1,6 +1,6 @@
 {
-  "last_processed_at_ms": 1792251984674,
-  "last_processed_generated_at_ms": 1792251981983,
+  "last_processed_at_ms": 1792252262205,
+  "last_processed_generated_at_ms": 1792252259719,
   "minimum_candidate_score": 78.0,
   "pairs": {
     "1000000BOBUSDT": {
@@ -697,15 +697,15 @@
     },
     "BRUSDT": {
       "gate_reasons": [
-        "score 47.0 below required 78.0",
+        "score 57.0 below required 78.0",
         "candidate has blocker(s)",
         "missing Binance spot confirmation",
         "15m OI is not expanding"
       ],
       "last_bias": "LONG",
-      "last_price": 0.37114,
-      "last_score": 47.0,
-      "last_seen_at_ms": 1792251984674,
+      "last_price": 0.37312,
+      "last_score": 57.0,
+      "last_seen_at_ms": 1792252262205,
       "qualifying_streak": 0,
       "required_score": 78.0
     },
@@ -1498,13 +1498,13 @@
     "ERAUSDT": {
       "gate_reasons": [
         "score 45.0 below required 82.0",
-        "long spot confirmation weak (B/S 0.812, flow -30,954)",
+        "long spot confirmation weak (B/S 0.876, flow -19,681)",
         "15m OI is not expanding"
       ],
       "last_bias": "LONG",
-      "last_price": 0.06325,
+      "last_price": 0.06333,
       "last_score": 45.0,
-      "last_seen_at_ms": 1792251684216,
+      "last_seen_at_ms": 1792252262205,
       "qualifying_streak": 0,
       "required_score": 82.0
     },
@@ -1787,10 +1787,10 @@
         "15m OI is not expanding"
       ],
       "last_bias": "LONG",
-      "last_price": 0.22449,
+      "last_price": 0.2222,
       "last_return_pct": -5.083097,
       "last_score": 39.0,
-      "last_seen_at_ms": 1792251984674,
+      "last_seen_at_ms": 1792252262205,
       "mae_pct": -5.083097,
       "mfe_pct": 0.647017,
       "previous_score": 64.0,
@@ -3306,13 +3306,14 @@
       },
       "gate_reasons": [
         "score 50.0 below required 78.0",
-        "long spot confirmation weak (B/S 0.631, flow -19,978)"
+        "long spot confirmation weak (B/S 0.631, flow -19,978)",
+        "15m OI is not expanding"
       ],
       "last_bias": "LONG",
-      "last_price": 0.001966,
+      "last_price": 0.001965,
       "last_return_pct": -0.601202,
       "last_score": 50.0,
-      "last_seen_at_ms": 1792251984674,
+      "last_seen_at_ms": 1792252262205,
       "mae_pct": -0.601202,
       "mfe_pct": 0.400802,
       "previous_score": 69.0,
@@ -3527,12 +3528,14 @@
           "1h move is extended: +4.10%"
         ]
       },
-      "gate_reasons": [],
+      "gate_reasons": [
+        "pair cooldown active after deterioration"
+      ],
       "last_bias": "LONG",
-      "last_price": 0.06337,
+      "last_price": 0.06356,
       "last_return_pct": -3.310955,
       "last_score": 59.0,
-      "last_seen_at_ms": 1792251984674,
+      "last_seen_at_ms": 1792252262205,
       "mae_pct": -3.310955,
       "mfe_pct": 0.0,
       "previous_score": 59.0,
