@@ -1,6 +1,6 @@
 {
-  "last_processed_at_ms": 1792239677205,
-  "last_processed_generated_at_ms": 1792239674718,
+  "last_processed_at_ms": 1792239996799,
+  "last_processed_generated_at_ms": 1792239994206,
   "pairs": {
     "1000000BOBUSDT": {
       "gate_reasons": [
@@ -432,7 +432,7 @@
     },
     "BRUSDT": {
       "gate_reasons": [
-        "score 49.0 below required 78.0",
+        "score 54.0 below required 78.0",
         "candidate has blocker(s)",
         "missing spot confirmation",
         "15m OI not expanding",
@@ -440,10 +440,10 @@
       ],
       "last_bias": "LONG",
       "last_decision": "WAIT",
-      "last_price": 0.37554,
+      "last_price": 0.3843,
       "last_regime": "TREND_CONTINUATION",
-      "last_score": 49.0,
-      "last_seen_at_ms": 1792239677205
+      "last_score": 54.0,
+      "last_seen_at_ms": 1792239996799
     },
     "BSPUSDT": {
       "gate_reasons": [
@@ -998,15 +998,16 @@
     },
     "ERAUSDT": {
       "gate_reasons": [
-        "score 59.0 below required 82.0",
-        "long spot weak (B/S 1.010, flow 4,373)"
+        "score 44.0 below required 82.0",
+        "long spot weak (B/S 1.010, flow 4,373)",
+        "15m OI not expanding"
       ],
       "last_bias": "LONG",
       "last_decision": "WAIT",
-      "last_price": 0.06456,
+      "last_price": 0.06435,
       "last_regime": "TREND_CONTINUATION",
-      "last_score": 59.0,
-      "last_seen_at_ms": 1792239677205
+      "last_score": 44.0,
+      "last_seen_at_ms": 1792239996799
     },
     "ESPORTSUSDT": {
       "gate_reasons": [
@@ -1270,10 +1271,10 @@
       "last_bias": "LONG",
       "last_decision": "WAIT",
       "last_position_check_ms": 1791438051112,
-      "last_price": 0.23164,
+      "last_price": 0.22853,
       "last_regime": "COUNTERTREND",
       "last_score": 34.0,
-      "last_seen_at_ms": 1792238796981,
+      "last_seen_at_ms": 1792239996799,
       "position_state": "EXIT_THESIS_BROKEN"
     },
     "GUSDT": {
@@ -2161,15 +2162,16 @@
     },
     "PROMUSDT": {
       "gate_reasons": [
-        "score 56.0 below required 82.0",
-        "long spot weak (B/S 0.845, flow -74,512)"
+        "score 45.0 below required 82.0",
+        "long spot weak (B/S 0.845, flow -74,512)",
+        "15m OI not expanding"
       ],
       "last_bias": "LONG",
       "last_decision": "WAIT",
-      "last_price": 4.949,
+      "last_price": 4.937,
       "last_regime": "TREND_CONTINUATION",
-      "last_score": 56.0,
-      "last_seen_at_ms": 1792239677205
+      "last_score": 45.0,
+      "last_seen_at_ms": 1792239996799
     },
     "PUMPBTCUSDT": {
       "gate_reasons": [
@@ -2373,10 +2375,10 @@
       ],
       "last_bias": "LONG",
       "last_decision": "WAIT",
-      "last_price": 0.001997,
+      "last_price": 0.001995,
       "last_regime": "TREND_CONTINUATION",
       "last_score": 54.0,
-      "last_seen_at_ms": 1792239677205
+      "last_seen_at_ms": 1792239996799
     },
     "RUMUSDT": {
       "gate_reasons": [
@@ -2460,24 +2462,30 @@
     },
     "SANDUSDT": {
       "active": false,
+      "anchor_price": 0.06105,
+      "anchor_regime": "TREND_CONTINUATION",
+      "anchor_score": 80.0,
+      "armed": true,
+      "armed_at_ms": 1792239996799,
       "closed_at_ms": 1791593740789,
       "confirmed_at_ms": 1791384928347,
       "confirmed_bias": "LONG",
       "confirmed_price": 0.07373,
       "confirmed_regime": "TREND_CONTINUATION",
       "confirmed_score": 83.0,
-      "gate_reasons": [
-        "score 59.0 below required 78.0",
-        "15m OI not expanding"
-      ],
+      "evidence_count": 1,
+      "gate_reasons": [],
+      "high_priority": false,
       "last_bias": "LONG",
-      "last_decision": "WAIT",
+      "last_decision": "ARMED",
+      "last_fingerprint": "0.06105|1.084|68781.5877|1700809.0293|1.8|7.06|4.65",
       "last_position_check_ms": 1791593740789,
-      "last_price": 0.06081,
+      "last_price": 0.06105,
       "last_regime": "TREND_CONTINUATION",
-      "last_score": 59.0,
-      "last_seen_at_ms": 1792239677205,
-      "position_state": "EXIT_THESIS_BROKEN"
+      "last_score": 80.0,
+      "last_seen_at_ms": 1792239996799,
+      "position_state": "EXIT_THESIS_BROKEN",
+      "required_score": 78.0
     },
     "SCRUSDT": {
       "gate_reasons": [
