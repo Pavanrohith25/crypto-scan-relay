@@ -1,6 +1,6 @@
 {
-  "last_processed_at_ms": 1792221692052,
-  "last_processed_generated_at_ms": 1792221689684,
+  "last_processed_at_ms": 1792222001096,
+  "last_processed_generated_at_ms": 1792221998627,
   "pairs": {
     "1000000BOBUSDT": {
       "gate_reasons": [
@@ -114,10 +114,10 @@
       ],
       "last_bias": "SHORT",
       "last_decision": "BLOCKED_DEEP_COUNTERTREND",
-      "last_price": 0.067882,
+      "last_price": 0.067108,
       "last_regime": "COUNTERTREND_DEEP",
       "last_score": 22.0,
-      "last_seen_at_ms": 1792221692052
+      "last_seen_at_ms": 1792222001096
     },
     "AIAUSDT": {
       "gate_reasons": [
@@ -361,6 +361,7 @@
       "gate_reasons": [
         "score 49.0 below required 82.0",
         "long spot weak (B/S 0.729, flow -8,240)",
+        "15m OI not expanding",
         "spot volume 52,686 below required 100,000"
       ],
       "last_bias": "LONG",
@@ -368,7 +369,7 @@
       "last_price": 0.01027,
       "last_regime": "COUNTERTREND",
       "last_score": 49.0,
-      "last_seen_at_ms": 1792221692052
+      "last_seen_at_ms": 1792222001096
     },
     "BMNRUSDT": {
       "gate_reasons": [
@@ -987,16 +988,16 @@
     "EPICUSDT": {
       "gate_reasons": [
         "deep countertrend: 24h structure/OI conflicts with the setup",
-        "score 3.0 below required 82.0",
-        "candidate has blocker(s)",
-        "short spot weak (B/S 1.366, flow 316,390)"
+        "score 23.0 below required 82.0",
+        "short spot weak (B/S 1.067, flow 43,375)",
+        "15m OI not expanding"
       ],
       "last_bias": "SHORT",
       "last_decision": "BLOCKED_DEEP_COUNTERTREND",
-      "last_price": 0.2999,
+      "last_price": 0.289,
       "last_regime": "COUNTERTREND_DEEP",
-      "last_score": 3.0,
-      "last_seen_at_ms": 1792219307204
+      "last_score": 23.0,
+      "last_seen_at_ms": 1792222001096
     },
     "ERAUSDT": {
       "gate_reasons": [
@@ -1267,15 +1268,15 @@
       "confirmed_regime": "TREND_CONTINUATION",
       "confirmed_score": 77.0,
       "gate_reasons": [
-        "score 57.0 below required 82.0"
+        "score 36.0 below required 82.0"
       ],
       "last_bias": "LONG",
       "last_decision": "WAIT",
       "last_position_check_ms": 1791438051112,
-      "last_price": 0.25625,
+      "last_price": 0.24808,
       "last_regime": "TREND_CONTINUATION",
-      "last_score": 57.0,
-      "last_seen_at_ms": 1792221692052,
+      "last_score": 36.0,
+      "last_seen_at_ms": 1792222001096,
       "position_state": "EXIT_THESIS_BROKEN"
     },
     "GUSDT": {
@@ -2375,10 +2376,10 @@
       ],
       "last_bias": "LONG",
       "last_decision": "WAIT",
-      "last_price": 0.002041,
+      "last_price": 0.00203,
       "last_regime": "TREND_CONTINUATION",
       "last_score": 61.0,
-      "last_seen_at_ms": 1792221692052
+      "last_seen_at_ms": 1792222001096
     },
     "RUMUSDT": {
       "gate_reasons": [
