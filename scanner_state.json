@@ -1,6 +1,6 @@
 {
-  "last_processed_at_ms": 1792261590888,
-  "last_processed_generated_at_ms": 1792261588409,
+  "last_processed_at_ms": 1792261889384,
+  "last_processed_generated_at_ms": 1792261886905,
   "minimum_candidate_score": 78.0,
   "pairs": {
     "1000000BOBUSDT": {
@@ -147,14 +147,15 @@
     },
     "AGTUSDT": {
       "gate_reasons": [
-        "score 47.0 below required 78.0",
+        "score 32.0 below required 78.0",
         "candidate has blocker(s)",
-        "missing Binance spot confirmation"
+        "missing Binance spot confirmation",
+        "15m OI is not expanding"
       ],
       "last_bias": "SHORT",
-      "last_price": 0.0824,
-      "last_score": 47.0,
-      "last_seen_at_ms": 1792260105960,
+      "last_price": 0.080326,
+      "last_score": 32.0,
+      "last_seen_at_ms": 1792261889384,
       "qualifying_streak": 0,
       "required_score": 78.0
     },
@@ -697,14 +698,15 @@
     },
     "BRUSDT": {
       "gate_reasons": [
-        "score 63.0 below required 78.0",
+        "score 58.0 below required 78.0",
         "candidate has blocker(s)",
-        "missing Binance spot confirmation"
+        "missing Binance spot confirmation",
+        "15m OI is not expanding"
       ],
       "last_bias": "LONG",
-      "last_price": 0.38923,
-      "last_score": 63.0,
-      "last_seen_at_ms": 1792261590888,
+      "last_price": 0.39109,
+      "last_score": 58.0,
+      "last_seen_at_ms": 1792261889384,
       "qualifying_streak": 0,
       "required_score": 78.0
     },
@@ -1485,26 +1487,25 @@
     },
     "EPICUSDT": {
       "gate_reasons": [
-        "score 39.0 below required 82.0",
+        "score 49.0 below required 82.0",
         "short spot confirmation weak (B/S 0.997, flow -393)",
         "15m OI is not expanding"
       ],
       "last_bias": "SHORT",
-      "last_price": 0.2891,
-      "last_score": 39.0,
-      "last_seen_at_ms": 1792261590888,
+      "last_price": 0.2867,
+      "last_score": 49.0,
+      "last_seen_at_ms": 1792261889384,
       "qualifying_streak": 0,
       "required_score": 82.0
     },
     "ERAUSDT": {
       "gate_reasons": [
-        "score 70.0 below required 82.0",
-        "15m OI is not expanding"
+        "score 70.0 below required 82.0"
       ],
       "last_bias": "LONG",
-      "last_price": 0.06314,
+      "last_price": 0.06338,
       "last_score": 70.0,
-      "last_seen_at_ms": 1792261590888,
+      "last_seen_at_ms": 1792261889384,
       "qualifying_streak": 0,
       "required_score": 82.0
     },
@@ -1783,13 +1784,13 @@
       },
       "gate_reasons": [],
       "last_bias": "LONG",
-      "last_price": 0.22685,
-      "last_return_pct": 0.956831,
-      "last_score": 85.0,
-      "last_seen_at_ms": 1792261590888,
+      "last_price": 0.22773,
+      "last_return_pct": 1.348465,
+      "last_score": 79.0,
+      "last_seen_at_ms": 1792261889384,
       "mae_pct": -0.053405,
-      "mfe_pct": 1.272808,
-      "previous_score": 85.0,
+      "mfe_pct": 1.348465,
+      "previous_score": 79.0,
       "qualifying_streak": 2,
       "required_score": 82.0
     },
@@ -3476,14 +3477,14 @@
       "required_score": 78.0
     },
     "SANDUSDT": {
-      "active": true,
+      "active": false,
       "confirmed_at_ms": 1792256818045,
       "confirmed_bias": "LONG",
       "confirmed_generated_at_ms": 1792256815589,
       "confirmed_price": 0.06193,
       "confirmed_score": 96.0,
-      "cooldown_until_ms": 0,
-      "deteriorated_at_ms": 1792251984674,
+      "cooldown_until_ms": 1792264589384,
+      "deteriorated_at_ms": 1792261889384,
       "entry_snapshot": {
         "action": "LONG_CANDIDATE",
         "basis_pct": -0.5061,
@@ -3522,14 +3523,14 @@
       },
       "gate_reasons": [],
       "last_bias": "LONG",
-      "last_price": 0.0628,
-      "last_return_pct": 1.404812,
-      "last_score": 84.0,
-      "last_seen_at_ms": 1792261590888,
+      "last_price": 0.06227,
+      "last_return_pct": 0.549007,
+      "last_score": 69.0,
+      "last_seen_at_ms": 1792261889384,
       "mae_pct": -0.129178,
       "mfe_pct": 1.760052,
-      "previous_score": 84.0,
-      "qualifying_streak": 1,
+      "previous_score": 69.0,
+      "qualifying_streak": 0,
       "required_score": 78.0
     },
     "SCRUSDT": {
