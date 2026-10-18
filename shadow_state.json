@@ -1,6 +1,6 @@
 {
-  "last_processed_at_ms": 1792336266599,
-  "last_processed_generated_at_ms": 1792336264121,
+  "last_processed_at_ms": 1792336608764,
+  "last_processed_generated_at_ms": 1792336606199,
   "pairs": {
     "1000000BOBUSDT": {
       "gate_reasons": [
@@ -1021,11 +1021,11 @@
       "gate_reasons": [],
       "last_bias": "LONG",
       "last_decision": "SHADOW_CONFIRMED",
-      "last_position_check_ms": 1792336266599,
-      "last_price": 0.07028,
+      "last_position_check_ms": 1792336608764,
+      "last_price": 0.07002,
       "last_regime": "COUNTERTREND",
-      "last_score": 53.0,
-      "last_seen_at_ms": 1792336266599,
+      "last_score": 52.0,
+      "last_seen_at_ms": 1792336608764,
       "position_state": "REDUCE"
     },
     "ESPORTSUSDT": {
@@ -1284,11 +1284,11 @@
       "gate_reasons": [],
       "last_bias": "LONG",
       "last_decision": "SHADOW_CONFIRMED",
-      "last_position_check_ms": 1792336266599,
-      "last_price": 0.25268,
+      "last_position_check_ms": 1792336608764,
+      "last_price": 0.25201,
       "last_regime": "TREND_CONTINUATION",
       "last_score": 57.0,
-      "last_seen_at_ms": 1792336266599,
+      "last_seen_at_ms": 1792336608764,
       "position_state": "HOLD_STRONG"
     },
     "GUSDT": {
@@ -1594,17 +1594,18 @@
     },
     "KORUUSDT": {
       "gate_reasons": [
-        "score 63.0 below required 78.0",
+        "score 58.0 below required 78.0",
         "candidate has blocker(s)",
         "missing spot confirmation",
+        "15m OI not expanding",
         "missing spot volume"
       ],
       "last_bias": "LONG",
       "last_decision": "WAIT",
       "last_price": 10.27,
       "last_regime": "COUNTERTREND",
-      "last_score": 63.0,
-      "last_seen_at_ms": 1792336266599
+      "last_score": 58.0,
+      "last_seen_at_ms": 1792336608764
     },
     "KSMUSDT": {
       "gate_reasons": [
@@ -2520,12 +2521,12 @@
       ],
       "last_bias": "LONG",
       "last_decision": "SHADOW_CONFIRMED",
-      "last_position_check_ms": 1792335369275,
-      "last_price": 0.06025,
+      "last_position_check_ms": 1792336608764,
+      "last_price": 0.06068,
       "last_regime": "COUNTERTREND",
-      "last_score": 52.0,
-      "last_seen_at_ms": 1792335369275,
-      "position_state": "HOLD_PROTECT"
+      "last_score": 49.0,
+      "last_seen_at_ms": 1792336608764,
+      "position_state": "REDUCE"
     },
     "SCRUSDT": {
       "gate_reasons": [
@@ -2691,17 +2692,18 @@
     },
     "SNXXUSDT": {
       "gate_reasons": [
-        "score 51.0 below required 78.0",
+        "score 52.0 below required 78.0",
         "candidate has blocker(s)",
         "missing spot confirmation",
+        "15m OI not expanding",
         "missing spot volume"
       ],
       "last_bias": "LONG",
       "last_decision": "WAIT",
-      "last_price": 8.61,
+      "last_price": 8.58,
       "last_regime": "COUNTERTREND",
-      "last_score": 51.0,
-      "last_seen_at_ms": 1792336266599
+      "last_score": 52.0,
+      "last_seen_at_ms": 1792336608764
     },
     "SOFIUSDT": {
       "gate_reasons": [
