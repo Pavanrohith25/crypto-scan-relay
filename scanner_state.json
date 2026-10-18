@@ -1,6 +1,6 @@
 {
-  "last_processed_at_ms": 1792307774304,
-  "last_processed_generated_at_ms": 1792307771876,
+  "last_processed_at_ms": 1792308101440,
+  "last_processed_generated_at_ms": 1792308098850,
   "minimum_candidate_score": 78.0,
   "pairs": {
     "1000000BOBUSDT": {
@@ -638,14 +638,15 @@
         ]
       },
       "gate_reasons": [
-        "score 50.0 below required 82.0",
-        "long spot confirmation weak (B/S 0.679, flow -7,763)"
+        "score 39.0 below required 82.0",
+        "long spot confirmation weak (B/S 0.899, flow -2,009)",
+        "15m OI is not expanding"
       ],
       "last_bias": "LONG",
-      "last_price": 0.0102,
+      "last_price": 0.01004,
       "last_return_pct": -0.589391,
-      "last_score": 50.0,
-      "last_seen_at_ms": 1792260978903,
+      "last_score": 39.0,
+      "last_seen_at_ms": 1792308101440,
       "mae_pct": -0.589391,
       "mfe_pct": 0.0,
       "previous_score": 74.0,
@@ -1556,19 +1557,19 @@
         ]
       },
       "gate_reasons": [
-        "score 51.0 below required 82.0",
+        "score 53.0 below required 78.0",
         "long spot confirmation weak (B/S 0.995, flow -1,737)"
       ],
       "last_bias": "LONG",
-      "last_price": 0.07203,
+      "last_price": 0.07431,
       "last_return_pct": 1.427913,
-      "last_score": 51.0,
-      "last_seen_at_ms": 1792307774304,
+      "last_score": 53.0,
+      "last_seen_at_ms": 1792308101440,
       "mae_pct": 0.0,
       "mfe_pct": 1.427913,
       "previous_score": 47.0,
       "qualifying_streak": 0,
-      "required_score": 82.0
+      "required_score": 78.0
     },
     "ESPORTSUSDT": {
       "gate_reasons": [
@@ -1844,10 +1845,10 @@
         "pair cooldown active after deterioration"
       ],
       "last_bias": "LONG",
-      "last_price": 0.26468,
+      "last_price": 0.26384,
       "last_return_pct": -0.343977,
-      "last_score": 57.0,
-      "last_seen_at_ms": 1792307774304,
+      "last_score": 64.0,
+      "last_seen_at_ms": 1792308101440,
       "mae_pct": -0.343977,
       "mfe_pct": 0.0,
       "previous_score": 67.0,
@@ -3145,15 +3146,15 @@
     },
     "QUSDT": {
       "gate_reasons": [
-        "score 28.0 below required 78.0",
+        "score 23.0 below required 78.0",
         "candidate has blocker(s)",
         "missing Binance spot confirmation",
         "15m OI is not expanding"
       ],
       "last_bias": "LONG",
-      "last_price": 0.127618,
-      "last_score": 28.0,
-      "last_seen_at_ms": 1792307774304,
+      "last_price": 0.123549,
+      "last_score": 23.0,
+      "last_seen_at_ms": 1792308101440,
       "qualifying_streak": 0,
       "required_score": 78.0
     },
@@ -3386,20 +3387,20 @@
         "warnings": []
       },
       "gate_reasons": [
-        "score 35.0 below required 82.0",
+        "score 50.0 below required 78.0",
         "long spot confirmation weak (B/S 0.729, flow -5,865)",
         "15m OI is not expanding"
       ],
       "last_bias": "LONG",
-      "last_price": 0.001975,
+      "last_price": 0.001981,
       "last_return_pct": -1.090188,
-      "last_score": 35.0,
-      "last_seen_at_ms": 1792307774304,
+      "last_score": 50.0,
+      "last_seen_at_ms": 1792308101440,
       "mae_pct": -1.090188,
       "mfe_pct": 0.0,
       "previous_score": 65.0,
       "qualifying_streak": 0,
-      "required_score": 82.0,
+      "required_score": 78.0,
       "sl1_hit_at_ms": 1792301522246
     },
     "RUMUSDT": {
@@ -3610,15 +3611,16 @@
       },
       "gate_reasons": [],
       "last_bias": "LONG",
-      "last_price": 0.06458,
-      "last_return_pct": -0.16372,
-      "last_score": 90.0,
-      "last_seen_at_ms": 1792307774304,
-      "mae_pct": 0.0,
+      "last_price": 0.06388,
+      "last_return_pct": -1.083927,
+      "last_score": 79.0,
+      "last_seen_at_ms": 1792308101440,
+      "mae_pct": -1.083927,
       "mfe_pct": 0.0,
-      "previous_score": 90.0,
+      "previous_score": 79.0,
       "qualifying_streak": 1,
-      "required_score": 78.0
+      "required_score": 78.0,
+      "sl1_hit_at_ms": 1792308101440
     },
     "SCRUSDT": {
       "gate_reasons": [
