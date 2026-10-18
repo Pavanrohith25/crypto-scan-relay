@@ -1,6 +1,6 @@
 {
-  "last_processed_at_ms": 1792292512666,
-  "last_processed_generated_at_ms": 1792292510297,
+  "last_processed_at_ms": 1792292781137,
+  "last_processed_generated_at_ms": 1792292778571,
   "minimum_candidate_score": 78.0,
   "pairs": {
     "1000000BOBUSDT": {
@@ -147,14 +147,15 @@
     },
     "AGTUSDT": {
       "gate_reasons": [
-        "score 53.0 below required 78.0",
+        "score 28.0 below required 78.0",
         "candidate has blocker(s)",
-        "missing Binance spot confirmation"
+        "missing Binance spot confirmation",
+        "15m OI is not expanding"
       ],
       "last_bias": "SHORT",
-      "last_price": 0.074789,
-      "last_score": 53.0,
-      "last_seen_at_ms": 1792292512666,
+      "last_price": 0.074783,
+      "last_score": 28.0,
+      "last_seen_at_ms": 1792292781137,
       "qualifying_streak": 0,
       "required_score": 78.0
     },
@@ -1547,10 +1548,10 @@
         "15m OI is not expanding"
       ],
       "last_bias": "LONG",
-      "last_price": 0.06641,
+      "last_price": 0.06662,
       "last_return_pct": 1.427913,
       "last_score": 30.0,
-      "last_seen_at_ms": 1792292512666,
+      "last_seen_at_ms": 1792292781137,
       "mae_pct": 0.0,
       "mfe_pct": 1.427913,
       "previous_score": 47.0,
@@ -1831,13 +1832,13 @@
         ]
       },
       "gate_reasons": [
-        "score 48.0 below required 82.0"
+        "score 51.0 below required 82.0"
       ],
       "last_bias": "LONG",
-      "last_price": 0.25044,
+      "last_price": 0.2514,
       "last_return_pct": -0.835726,
-      "last_score": 48.0,
-      "last_seen_at_ms": 1792292512666,
+      "last_score": 51.0,
+      "last_seen_at_ms": 1792292781137,
       "mae_pct": -0.835726,
       "mfe_pct": 0.0,
       "previous_score": 74.0,
@@ -3362,15 +3363,15 @@
         "warnings": []
       },
       "gate_reasons": [
-        "score 50.0 below required 78.0",
-        "long spot confirmation weak (B/S 0.724, flow -25,267)",
+        "score 53.0 below required 78.0",
+        "long spot confirmation weak (B/S 0.941, flow -3,143)",
         "15m OI is not expanding"
       ],
       "last_bias": "LONG",
-      "last_price": 0.002038,
+      "last_price": 0.00203,
       "last_return_pct": -1.622912,
-      "last_score": 50.0,
-      "last_seen_at_ms": 1792292512666,
+      "last_score": 53.0,
+      "last_seen_at_ms": 1792292781137,
       "mae_pct": -1.622912,
       "mfe_pct": 0.71599,
       "previous_score": 65.0,
@@ -3584,12 +3585,14 @@
         "strength": "STRONG",
         "warnings": []
       },
-      "gate_reasons": [],
+      "gate_reasons": [
+        "pair cooldown active after deterioration"
+      ],
       "last_bias": "LONG",
-      "last_price": 0.06098,
+      "last_price": 0.06103,
       "last_return_pct": -0.16372,
-      "last_score": 46.0,
-      "last_seen_at_ms": 1792292512666,
+      "last_score": 41.0,
+      "last_seen_at_ms": 1792292781137,
       "mae_pct": -0.16372,
       "mfe_pct": 0.0,
       "previous_score": 46.0,
