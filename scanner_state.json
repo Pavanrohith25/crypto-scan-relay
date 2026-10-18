@@ -1,6 +1,6 @@
 {
-  "last_processed_at_ms": 1792338990643,
-  "last_processed_generated_at_ms": 1792338988067,
+  "last_processed_at_ms": 1792339301105,
+  "last_processed_generated_at_ms": 1792339298510,
   "minimum_candidate_score": 78.0,
   "pairs": {
     "1000000BOBUSDT": {
@@ -1552,14 +1552,14 @@
         "warnings": []
       },
       "gate_reasons": [
-        "score 54.0 below required 82.0",
+        "score 50.0 below required 82.0",
         "long spot confirmation weak (B/S 0.897, flow -22,116)"
       ],
       "last_bias": "LONG",
-      "last_price": 0.07005,
+      "last_price": 0.0696,
       "last_return_pct": -1.051213,
-      "last_score": 54.0,
-      "last_seen_at_ms": 1792338990643,
+      "last_score": 50.0,
+      "last_seen_at_ms": 1792339301105,
       "mae_pct": -1.051213,
       "mfe_pct": 0.0,
       "previous_score": 69.0,
@@ -2177,12 +2177,13 @@
       "gate_reasons": [
         "score 62.0 below required 78.0",
         "candidate has blocker(s)",
-        "missing Binance spot confirmation"
+        "missing Binance spot confirmation",
+        "15m OI is not expanding"
       ],
       "last_bias": "LONG",
-      "last_price": 10.21,
+      "last_price": 10.17,
       "last_score": 62.0,
-      "last_seen_at_ms": 1792338990643,
+      "last_seen_at_ms": 1792339301105,
       "qualifying_streak": 0,
       "required_score": 78.0
     },
@@ -3614,10 +3615,10 @@
         "15m OI is not expanding"
       ],
       "last_bias": "LONG",
-      "last_price": 0.05859,
+      "last_price": 0.05848,
       "last_return_pct": -1.079313,
       "last_score": 45.0,
-      "last_seen_at_ms": 1792338990643,
+      "last_seen_at_ms": 1792339301105,
       "mae_pct": -1.079313,
       "mfe_pct": 0.0,
       "previous_score": 75.0,
@@ -3891,14 +3892,15 @@
     },
     "SOXLUSDT": {
       "gate_reasons": [
-        "score 63.0 below required 78.0",
+        "score 58.0 below required 78.0",
         "candidate has blocker(s)",
-        "missing Binance spot confirmation"
+        "missing Binance spot confirmation",
+        "15m OI is not expanding"
       ],
       "last_bias": "LONG",
-      "last_price": 91.03,
-      "last_score": 63.0,
-      "last_seen_at_ms": 1792335710776,
+      "last_price": 90.23,
+      "last_score": 58.0,
+      "last_seen_at_ms": 1792339301105,
       "qualifying_streak": 0,
       "required_score": 78.0
     },
@@ -3910,9 +3912,9 @@
         "15m OI is not expanding"
       ],
       "last_bias": "SHORT",
-      "last_price": 51.42,
+      "last_price": 51.56,
       "last_score": 58.0,
-      "last_seen_at_ms": 1792338990643,
+      "last_seen_at_ms": 1792339301105,
       "qualifying_streak": 0,
       "required_score": 78.0
     },
