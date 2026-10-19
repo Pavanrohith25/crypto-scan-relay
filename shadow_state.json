@@ -1,6 +1,6 @@
 {
-  "last_processed_at_ms": 1792415804609,
-  "last_processed_generated_at_ms": 1792415802163,
+  "last_processed_at_ms": 1792416131294,
+  "last_processed_generated_at_ms": 1792416128620,
   "pairs": {
     "1000000BOBUSDT": {
       "gate_reasons": [
@@ -502,18 +502,17 @@
     },
     "BWETUSDT": {
       "gate_reasons": [
-        "score 14.0 below required 78.0",
+        "score 41.0 below required 78.0",
         "candidate has blocker(s)",
         "missing spot confirmation",
-        "15m OI not expanding",
         "missing spot volume"
       ],
       "last_bias": "SHORT",
       "last_decision": "WAIT",
-      "last_price": 859.57,
+      "last_price": 861.63,
       "last_regime": "COUNTERTREND",
-      "last_score": 14.0,
-      "last_seen_at_ms": 1792415804609
+      "last_score": 41.0,
+      "last_seen_at_ms": 1792416131294
     },
     "BYDUSDT": {
       "gate_reasons": [
@@ -851,7 +850,7 @@
     },
     "CTUSDT": {
       "gate_reasons": [
-        "score 47.0 below required 82.0",
+        "score 57.0 below required 82.0",
         "candidate has blocker(s)",
         "missing spot confirmation",
         "15m OI not expanding",
@@ -859,10 +858,10 @@
       ],
       "last_bias": "LONG",
       "last_decision": "WAIT",
-      "last_price": 0.32798,
+      "last_price": 0.32671,
       "last_regime": "COUNTERTREND",
-      "last_score": 47.0,
-      "last_seen_at_ms": 1792415804609
+      "last_score": 57.0,
+      "last_seen_at_ms": 1792416131294
     },
     "CVCUSDT": {
       "gate_reasons": [
@@ -1254,17 +1253,18 @@
     },
     "GPROUSDT": {
       "gate_reasons": [
-        "score 41.0 below required 78.0",
+        "score 14.0 below required 78.0",
         "candidate has blocker(s)",
         "missing spot confirmation",
+        "15m OI not expanding",
         "missing spot volume"
       ],
       "last_bias": "SHORT",
       "last_decision": "WAIT",
-      "last_price": 1.069,
+      "last_price": 1.067,
       "last_regime": "COUNTERTREND",
-      "last_score": 41.0,
-      "last_seen_at_ms": 1792415804609
+      "last_score": 14.0,
+      "last_seen_at_ms": 1792416131294
     },
     "GRASSUSDT": {
       "gate_reasons": [
@@ -1292,11 +1292,11 @@
       "gate_reasons": [],
       "last_bias": "LONG",
       "last_decision": "SHADOW_CONFIRMED",
-      "last_position_check_ms": 1792415804609,
-      "last_price": 0.30768,
+      "last_position_check_ms": 1792416131294,
+      "last_price": 0.31146,
       "last_regime": "TREND_CONTINUATION",
-      "last_score": 34.0,
-      "last_seen_at_ms": 1792415804609,
+      "last_score": 61.0,
+      "last_seen_at_ms": 1792416131294,
       "position_state": "HOLD_STRONG"
     },
     "GUSDT": {
@@ -2144,10 +2144,10 @@
       ],
       "last_bias": "SHORT",
       "last_decision": "WAIT",
-      "last_price": 15.83,
+      "last_price": 15.82,
       "last_regime": "COUNTERTREND",
       "last_score": 38.0,
-      "last_seen_at_ms": 1792415804609
+      "last_seen_at_ms": 1792416131294
     },
     "PDDUSDT": {
       "gate_reasons": [
@@ -2575,20 +2575,20 @@
       "confirmed_price": 0.06085,
       "confirmed_regime": "TREND_CONTINUATION",
       "confirmed_score": 84.0,
-      "evidence_count": 3,
+      "evidence_count": 4,
       "gate_reasons": [
-        "price follow-through -0.3677085074377362 below 0.75%",
+        "price follow-through 0.016714023065356187 below 0.75%",
         "countertrend reclaim not strong enough"
       ],
       "high_priority": true,
       "last_bias": "LONG",
       "last_decision": "ARMED_WAITING_TRIGGER",
-      "last_fingerprint": "0.05961|1.18|19437.631|235354.708|0.79|2.47|3.05",
+      "last_fingerprint": "0.05984|1.18|19437.631|235354.708|0.2|2.69|3.05",
       "last_position_check_ms": 1792387584253,
-      "last_price": 0.05961,
+      "last_price": 0.05984,
       "last_regime": "COUNTERTREND",
       "last_score": 84.0,
-      "last_seen_at_ms": 1792415804609,
+      "last_seen_at_ms": 1792416131294,
       "position_state": "EXIT_THESIS_BROKEN",
       "required_score": 78.0
     },
