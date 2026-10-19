@@ -30,6 +30,51 @@ class PaperLearningTests(unittest.TestCase):
         self.assertIsNone(t['score'])
         self.assertEqual(p.admit(self.state, [self.event], self.registry, 1_000_003), [])
 
+    def test_diagnostics_deduplicate_and_do_not_change_admission(self):
+        log = []
+        p.admit(self.state, [self.event], {}, 1_000_002, log)
+        self.assertEqual(log[-1]['reason'], 'IDENTITY_NOT_VERIFIED_CRYPTO')
+        p.admit(self.state, [self.event], {}, 1_000_003, log)
+        self.assertEqual(len(log), 1)
+        self.assertEqual(len(p.admit(self.state, [self.event], self.registry, 1_000_004, log)), 1)
+        self.assertEqual(log[-1]['reason'], 'ACCEPTED')
+        p.admit(self.state, [self.event], self.registry, 2_000_000, log)
+        self.assertEqual(len(log), 2)
+
+    def test_registry_expansion_never_replays_stale_signal(self):
+        log = []
+        p.admit(self.state, [self.event], {}, 1_000_002, log)
+        self.assertEqual(p.admit(self.state, [self.event], self.registry, 1_600_002, log), [])
+        self.assertEqual(log[-1]['reason'], 'STALE_AT_OBSERVATION')
+        self.assertEqual(self.state['trades'], {})
+
+    def test_open_position_and_cooldown_reasons(self):
+        t = self.trade()
+        event = copy.deepcopy(self.event)
+        event['timestamp_ms'] += 1
+        log = []
+        p.admit(self.state, [event], self.registry, 1_000_003, log)
+        self.assertEqual(log[-1]['reason'], 'POSITION_ALREADY_OPEN')
+        self.state['trades'][t['id']]['status'] = 'STOP'
+        p.admit(self.state, [event], self.registry, 1_000_004, log)
+        self.assertEqual(log[-1]['reason'], 'SYMBOL_COOLDOWN')
+
+    def test_diagnostic_reasons_and_persistence(self):
+        import json
+        for change, reason in [({'timestamp_ms': 999_999}, 'PRE_ACTIVATION'),
+                               ({'timestamp_ms': 2_000_000}, 'FUTURE_TIMESTAMP'),
+                               ({'bias': 'INVALID'}, 'INVALID_SIDE'),
+                               ({'snapshot': {}}, 'INVALID_FEATURES')]:
+            state = p.initial_state(1_000_000)
+            event = {**self.event, **change}
+            log = []
+            p.admit(state, [event], self.registry, 1_000_002, log)
+            self.assertEqual(log[-1]['reason'], reason)
+            restored = json.loads(json.dumps(state))
+            p.admit(restored, [event], self.registry, 1_000_003, log)
+            self.assertEqual(len(log), 1)
+            self.assertEqual(p.report(restored, 1_000_003)['admission_diagnostics']['latest_reason_counts'], {reason: 1})
+
     def test_closed_contiguous_bars_required(self):
         t = self.trade(); ts = t['entry_ms']
         self.assertFalse(p.advance(t, [self.bar(ts+ p.BAR, 110)], ts+3*p.BAR))

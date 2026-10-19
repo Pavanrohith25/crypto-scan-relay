@@ -42,25 +42,57 @@ def learn(model, x, label):
     model['n'] += 1
 
 
-def admit(state, events, registry, now):
+def admit(state, events, registry, now, diagnostics=None):
+    # Observations describe this evaluation, never reconstructed historical decisions.
+    decisions = state.setdefault('admission_decisions', {})
+    state.setdefault('admission_logging_started_ms', now)
+
+    def observe(tid, event, reason):
+        old = decisions.get(tid)
+        if old and old['reason'] == reason:
+            return
+        # Accepted triggers remain accepted even after their freshness window expires.
+        if old and old['reason'] == 'ACCEPTED':
+            return
+        record = {'id': tid, 'symbol': event.get('symbol'), 'side': event.get('bias'),
+                  'signal_ms': event.get('timestamp_ms', 0), 'observed_ms': now,
+                  'reason': reason}
+        decisions[tid] = record
+        if diagnostics is not None:
+            diagnostics.append(record)
+
     records = []
     for event in sorted(events, key=lambda e: e.get('timestamp_ms', 0)):
         if event.get('event') != 'SWING_CONTINUATION_TRIGGER':
             continue
         ts = event.get('timestamp_ms', 0)
         symbol, side = event.get('symbol'), event.get('bias')
-        if ts < state['started_ms'] or not 0 <= now-ts <= 600_000:
-            continue
-        if registry.get(symbol, {}).get('classification') != 'CRYPTO' or side not in state['models']:
-            continue
         tid = str(event.get('trigger_id') or f'{symbol}-{ts}')
         if tid in state['trades']:
+            observe(tid, event, 'ACCEPTED')
             continue
-        previous = [t for t in state['trades'].values() if t['symbol'] == symbol]
-        if any(t['status'] in ('PENDING', 'OPEN') or now-t['predicted_ms'] < 86_400_000 for t in previous):
-            continue
-        x = vector(event.get('snapshot') or {})
-        if x is None:
+        reason = None
+        if ts < state['started_ms']:
+            reason = 'PRE_ACTIVATION'
+        elif ts > now:
+            reason = 'FUTURE_TIMESTAMP'
+        elif now-ts > 600_000:
+            reason = 'STALE_AT_OBSERVATION'
+        elif registry.get(symbol, {}).get('classification') != 'CRYPTO':
+            reason = 'IDENTITY_NOT_VERIFIED_CRYPTO'
+        elif side not in state['models']:
+            reason = 'INVALID_SIDE'
+        else:
+            previous = [t for t in state['trades'].values() if t['symbol'] == symbol]
+            if any(t['status'] in ('PENDING', 'OPEN') for t in previous):
+                reason = 'POSITION_ALREADY_OPEN'
+            elif any(now-t['predicted_ms'] < 86_400_000 for t in previous):
+                reason = 'SYMBOL_COOLDOWN'
+        x = vector(event.get('snapshot') or {}) if reason is None else None
+        if reason is None and x is None:
+            reason = 'INVALID_FEATURES'
+        if reason:
+            observe(tid, event, reason)
             continue
         model = state['models'][side]
         trade = {'id': tid, 'symbol': symbol, 'side': side, 'features': x,
@@ -72,6 +104,7 @@ def admit(state, events, registry, now):
                  'target_pct': 5., 'stop_pct': 6., 'source': 'BINANCE_SPOT_PROXY'}
         state['trades'][tid] = trade
         records.append({'event': 'PREDICTION', **trade})
+        observe(tid, event, 'ACCEPTED')
     return records
 
 
@@ -147,7 +180,16 @@ def report(state, now):
             'selected_resolved': len(selected),
             'selected_mean_stressed_pct': sum(t['stressed_net_return_pct'] for t in selected)/len(selected) if selected else None,
             'data_errors': sum('data_error' in t for t in trades)}
-    return {'version': VERSION, 'as_of_ms': now, 'started_ms': state['started_ms'],
+    decisions = list(state.get('admission_decisions', {}).values())
+    reasons = {}
+    for decision in decisions:
+        reasons[decision['reason']] = reasons.get(decision['reason'], 0) + 1
+    return {'admission_diagnostics': {
+                'logging_started_ms': state.get('admission_logging_started_ms'),
+                'latest_reason_counts': reasons,
+                'recent_decisions': sorted(decisions, key=lambda d: d['observed_ms'], reverse=True)[:20],
+                'note': 'Reasons reflect observation time; old triggers are not historical rejection evidence.'},
+            'version': VERSION, 'as_of_ms': now, 'started_ms': state['started_ms'],
             'mode': 'PAPER_ONLY', 'promotion': 'BLOCKED', 'panels': panels,
             'limitations': ['Spot proxy; shorts are hypothetical, not futures execution.',
                 'Scores are uncalibrated; first 30 resolved trades per side are warmup.',
@@ -183,7 +225,11 @@ def main():
     events = [json.loads(line) for line in Path('swing_events.jsonl').read_text().splitlines() if line.strip()]
     # Use actual post-fetch time so the planned entry cannot precede prediction creation.
     now = int(time.time()*1000)
-    records.extend(admit(state, events, registry, now))
+    diagnostics = []
+    records.extend(admit(state, events, registry, now, diagnostics))
+    with (root/'admission_events.jsonl').open('a') as f:
+        for decision in diagnostics:
+            f.write(json.dumps(decision, sort_keys=True, allow_nan=False)+'\n')
     with (root/'journal.jsonl').open('a') as f:
         for record in records:
             f.write(json.dumps(record, sort_keys=True, allow_nan=False)+'\n')

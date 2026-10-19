@@ -57,3 +57,9 @@ Only successfully notified calls sent after `telegram_reward_config.json` activa
 The separate long/short online regression learns net R from the same six frozen entry features. Losses reduce predictions for similar feature combinations, wins increase them, with regularization and bounded updates. This is a shadow expected-return learner, not reinforcement learning, causal diagnosis, or a proven signal filter. Scores are frozen at delivery with a model hash and update count, and later evaluated against a zero-reward baseline after 30 outcomes per side. Telegram calls are not filtered or promoted by these scores. No automatic live promotion.
 
 `paper_learning/telegram_rewards.json` preserves one reward record per eligible resolved call and model state; `telegram_reward_report.json` reports pending/excluded counts, R totals, and forward forecast error. Git versions preserve history. R totals do not equal account returns. MAE/MFE and holding time are recorded for inspection, not arbitrary extra reward bonuses. All measurements remain spot-proxy paper results with assumed costs.
+
+## Admission diagnostics and coverage (2026-10-19)
+
+Added verified STRK, FET, LINK, HYPE and PEPE identities; MUB remains blocked pending identity evidence. This is a prospective coverage correction, not a new backtest or strategy improvement claim. Existing freshness, per-symbol cooldown, position, target and stop rules remain unchanged.
+
+`paper_learning/admission_events.jsonl` records first observations and reason changes per trigger. Repeated identical decisions are deduplicated in persisted state. `report.json` includes latest reason counts and recent decisions. Accepted IDs retain ACCEPTED; rejects can be reconsidered only under the existing admission rules. Old triggers first seen by diagnostics are labelled STALE_AT_OBSERVATION or PRE_ACTIVATION, not attributed a reconstructed historical rejection. The trade journal and Telegram delivery log remain separate.
