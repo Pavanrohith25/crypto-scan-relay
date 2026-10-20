@@ -1,6 +1,6 @@
 {
-  "last_processed_at_ms": 1792540265225,
-  "last_processed_generated_at_ms": 1792540261648,
+  "last_processed_at_ms": 1792540608428,
+  "last_processed_generated_at_ms": 1792540604916,
   "pairs": {
     "1000000BOBUSDT": {
       "gate_reasons": [
@@ -91,17 +91,18 @@
     },
     "AGPUUSDT": {
       "gate_reasons": [
-        "score 26.0 below required 78.0",
+        "score 32.0 below required 78.0",
         "candidate has blocker(s)",
         "missing spot confirmation",
+        "15m OI not expanding",
         "missing spot volume"
       ],
       "last_bias": "SHORT",
       "last_decision": "WAIT",
-      "last_price": 8.46,
+      "last_price": 8.47,
       "last_regime": "COUNTERTREND",
-      "last_score": 26.0,
-      "last_seen_at_ms": 1792540265225
+      "last_score": 32.0,
+      "last_seen_at_ms": 1792540608428
     },
     "AGTUSDT": {
       "gate_reasons": [
@@ -433,17 +434,17 @@
     },
     "BOTUSDT": {
       "gate_reasons": [
-        "score 47.0 below required 78.0",
+        "score 29.0 below required 78.0",
         "candidate has blocker(s)",
         "missing spot confirmation",
         "missing spot volume"
       ],
       "last_bias": "SHORT",
       "last_decision": "WAIT",
-      "last_price": 22.66,
+      "last_price": 22.65,
       "last_regime": "TREND_CONTINUATION",
-      "last_score": 47.0,
-      "last_seen_at_ms": 1792540265225
+      "last_score": 29.0,
+      "last_seen_at_ms": 1792540608428
     },
     "BRKBUSDT": {
       "gate_reasons": [
@@ -509,25 +510,24 @@
       ],
       "last_bias": "LONG",
       "last_decision": "WAIT",
-      "last_price": 2.0125,
+      "last_price": 2.029,
       "last_regime": "COUNTERTREND",
       "last_score": 71.0,
-      "last_seen_at_ms": 1792540265225
+      "last_seen_at_ms": 1792540608428
     },
     "BWETUSDT": {
       "gate_reasons": [
-        "score 36.0 below required 78.0",
+        "score 47.0 below required 78.0",
         "candidate has blocker(s)",
         "missing spot confirmation",
-        "15m OI not expanding",
         "missing spot volume"
       ],
       "last_bias": "SHORT",
       "last_decision": "WAIT",
-      "last_price": 789.78,
+      "last_price": 790.16,
       "last_regime": "COUNTERTREND",
-      "last_score": 36.0,
-      "last_seen_at_ms": 1792540265225
+      "last_score": 47.0,
+      "last_seen_at_ms": 1792540608428
     },
     "BYDUSDT": {
       "gate_reasons": [
@@ -1053,17 +1053,19 @@
       "confirmed_price": 0.06513,
       "confirmed_regime": "TREND_CONTINUATION",
       "confirmed_score": 85.0,
-      "evidence_count": 1,
-      "gate_reasons": [],
+      "evidence_count": 2,
+      "gate_reasons": [
+        "price follow-through -0.3638814016172609 below 0.50%"
+      ],
       "high_priority": false,
       "last_bias": "LONG",
-      "last_decision": "ARMED",
-      "last_fingerprint": "0.0742|1.1|8398.8773|176359.3215|1.27|1.75|-0.4",
+      "last_decision": "ARMED_WAITING_TRIGGER",
+      "last_fingerprint": "0.07393|1.1|8398.8773|176359.3215|1.32|1.71|-0.4",
       "last_position_check_ms": 1792396315227,
-      "last_price": 0.0742,
+      "last_price": 0.07393,
       "last_regime": "TREND_CONTINUATION",
-      "last_score": 85.0,
-      "last_seen_at_ms": 1792540265225,
+      "last_score": 79.0,
+      "last_seen_at_ms": 1792540608428,
       "position_state": "EXIT_THESIS_BROKEN",
       "required_score": 82.0
     },
@@ -1321,17 +1323,17 @@
       "confirmed_regime": "TREND_CONTINUATION",
       "confirmed_score": 85.0,
       "gate_reasons": [
-        "score 50.0 below required 78.0",
+        "score 40.0 below required 78.0",
         "long spot weak (B/S 0.880, flow -32,131)",
         "15m OI not expanding"
       ],
       "last_bias": "LONG",
       "last_decision": "WAIT",
       "last_position_check_ms": 1792505727608,
-      "last_price": 0.31793,
+      "last_price": 0.31932,
       "last_regime": "COUNTERTREND",
-      "last_score": 50.0,
-      "last_seen_at_ms": 1792540265225,
+      "last_score": 40.0,
+      "last_seen_at_ms": 1792540608428,
       "position_state": "EXIT_THESIS_BROKEN"
     },
     "GUSDT": {
