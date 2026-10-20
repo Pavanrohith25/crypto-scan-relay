@@ -1,6 +1,6 @@
 {
-  "last_processed_at_ms": 1792495573267,
-  "last_processed_generated_at_ms": 1792495570093,
+  "last_processed_at_ms": 1792495889733,
+  "last_processed_generated_at_ms": 1792495886183,
   "pairs": {
     "1000000BOBUSDT": {
       "gate_reasons": [
@@ -498,10 +498,10 @@
       ],
       "last_bias": "LONG",
       "last_decision": "BLOCKED_DEEP_COUNTERTREND",
-      "last_price": 1.7986,
+      "last_price": 1.7349,
       "last_regime": "COUNTERTREND_DEEP",
       "last_score": 49.0,
-      "last_seen_at_ms": 1792495573267
+      "last_seen_at_ms": 1792495889733
     },
     "BWETUSDT": {
       "gate_reasons": [
@@ -852,17 +852,17 @@
     "CTUSDT": {
       "gate_reasons": [
         "deep countertrend: 24h structure/OI conflicts with the setup",
-        "score 62.0 below required 82.0",
+        "score 57.0 below required 82.0",
         "candidate has blocker(s)",
         "missing spot confirmation",
         "missing spot volume"
       ],
       "last_bias": "LONG",
       "last_decision": "BLOCKED_DEEP_COUNTERTREND",
-      "last_price": 0.3062,
+      "last_price": 0.30629,
       "last_regime": "COUNTERTREND_DEEP",
-      "last_score": 62.0,
-      "last_seen_at_ms": 1792495573267
+      "last_score": 57.0,
+      "last_seen_at_ms": 1792495889733
     },
     "CVCUSDT": {
       "gate_reasons": [
@@ -1027,10 +1027,10 @@
       "last_bias": "LONG",
       "last_decision": "WAIT",
       "last_position_check_ms": 1792396315227,
-      "last_price": 0.07516,
+      "last_price": 0.07529,
       "last_regime": "TREND_CONTINUATION",
       "last_score": 52.0,
-      "last_seen_at_ms": 1792495573267,
+      "last_seen_at_ms": 1792495889733,
       "position_state": "EXIT_THESIS_BROKEN"
     },
     "ESPORTSUSDT": {
@@ -1287,11 +1287,11 @@
       "gate_reasons": [],
       "last_bias": "LONG",
       "last_decision": "SHADOW_CONFIRMED",
-      "last_position_check_ms": 1792495573267,
-      "last_price": 0.34666,
+      "last_position_check_ms": 1792495889733,
+      "last_price": 0.3457,
       "last_regime": "COUNTERTREND",
-      "last_score": 90.0,
-      "last_seen_at_ms": 1792495573267,
+      "last_score": 79.0,
+      "last_seen_at_ms": 1792495889733,
       "position_state": "HOLD_PROTECT"
     },
     "GUSDT": {
@@ -1520,17 +1520,17 @@
     "JCTUSDT": {
       "gate_reasons": [
         "deep countertrend: 24h structure/OI conflicts with the setup",
-        "score 41.0 below required 78.0",
+        "score 47.0 below required 78.0",
         "candidate has blocker(s)",
         "missing spot confirmation",
         "missing spot volume"
       ],
       "last_bias": "SHORT",
       "last_decision": "BLOCKED_DEEP_COUNTERTREND",
-      "last_price": 0.004041,
+      "last_price": 0.004089,
       "last_regime": "COUNTERTREND_DEEP",
-      "last_score": 41.0,
-      "last_seen_at_ms": 1792495573267
+      "last_score": 47.0,
+      "last_seen_at_ms": 1792495889733
     },
     "KAIAUSDT": {
       "active": false,
@@ -2573,24 +2573,30 @@
     },
     "SANDUSDT": {
       "active": false,
+      "anchor_price": 0.05698,
+      "anchor_regime": "COUNTERTREND",
+      "anchor_score": 80.0,
+      "armed": true,
+      "armed_at_ms": 1792495889733,
       "closed_at_ms": 1792462015652,
       "confirmed_at_ms": 1792441326726,
       "confirmed_bias": "LONG",
       "confirmed_price": 0.0591,
       "confirmed_regime": "TREND_CONTINUATION",
       "confirmed_score": 90.0,
-      "gate_reasons": [
-        "score 68.0 below required 78.0",
-        "long spot weak (B/S 0.950, flow -2,198)"
-      ],
+      "evidence_count": 1,
+      "gate_reasons": [],
+      "high_priority": false,
       "last_bias": "LONG",
-      "last_decision": "WAIT",
+      "last_decision": "ARMED",
+      "last_fingerprint": "0.05698|1.186|4924.2543|57863.1091|0.28|0.84|0.69",
       "last_position_check_ms": 1792462015652,
-      "last_price": 0.05694,
+      "last_price": 0.05698,
       "last_regime": "COUNTERTREND",
-      "last_score": 68.0,
-      "last_seen_at_ms": 1792495573267,
-      "position_state": "EXIT_THESIS_BROKEN"
+      "last_score": 80.0,
+      "last_seen_at_ms": 1792495889733,
+      "position_state": "EXIT_THESIS_BROKEN",
+      "required_score": 78.0
     },
     "SCRUSDT": {
       "gate_reasons": [
