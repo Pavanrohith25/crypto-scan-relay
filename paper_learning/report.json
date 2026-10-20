@@ -1,13 +1,21 @@
 {
   "admission_diagnostics": {
     "latest_reason_counts": {
-      "ACCEPTED": 17,
+      "ACCEPTED": 18,
       "PRE_ACTIVATION": 66,
       "STALE_AT_OBSERVATION": 31
     },
     "logging_started_ms": 1792454460377,
     "note": "Reasons reflect observation time; old triggers are not historical rejection evidence.",
     "recent_decisions": [
+      {
+        "id": "PEPEUSDT-1792479679865",
+        "observed_ms": 1792479685406,
+        "reason": "ACCEPTED",
+        "side": "LONG",
+        "signal_ms": 1792479679865,
+        "symbol": "PEPEUSDT"
+      },
       {
         "id": "AAVEUSDT-1790420485978",
         "observed_ms": 1792454460377,
@@ -159,18 +167,10 @@
         "side": "LONG",
         "signal_ms": 1791118860200,
         "symbol": "BNBUSDT"
-      },
-      {
-        "id": "BNBUSDT-1791169249053",
-        "observed_ms": 1792454460377,
-        "reason": "PRE_ACTIVATION",
-        "side": "LONG",
-        "signal_ms": 1791169249053,
-        "symbol": "BNBUSDT"
       }
     ]
   },
-  "as_of_ms": 1792479396512,
+  "as_of_ms": 1792479685406,
   "limitations": [
     "Spot proxy; shorts are hypothetical, not futures execution.",
     "Scores are uncalibrated; first 30 resolved trades per side are warmup.",
@@ -183,11 +183,11 @@
   "panels": {
     "LONG": {
       "data_errors": 0,
-      "entries": 5,
+      "entries": 6,
       "fixed_half_brier_baseline": null,
       "mean_net_pct": -1.7599999999999998,
       "model_updates": 5,
-      "open_or_pending": 0,
+      "open_or_pending": 1,
       "prequential_brier": null,
       "resolved": 5,
       "scored_resolved": 0,
