@@ -1,6 +1,6 @@
 {
-  "last_processed_at_ms": 1792470999312,
-  "last_processed_generated_at_ms": 1792470996050,
+  "last_processed_at_ms": 1792471322104,
+  "last_processed_generated_at_ms": 1792471318759,
   "minimum_candidate_score": 78.0,
   "pairs": {
     "1000000BOBUSDT": {
@@ -749,14 +749,15 @@
     },
     "BTWUSDT": {
       "gate_reasons": [
-        "score 67.0 below required 78.0",
+        "score 52.0 below required 78.0",
         "candidate has blocker(s)",
-        "missing Binance spot confirmation"
+        "missing Binance spot confirmation",
+        "15m OI is not expanding"
       ],
       "last_bias": "LONG",
-      "last_price": 1.871,
-      "last_score": 67.0,
-      "last_seen_at_ms": 1792470999312,
+      "last_price": 1.8426,
+      "last_score": 52.0,
+      "last_seen_at_ms": 1792471322104,
       "qualifying_streak": 0,
       "required_score": 78.0
     },
@@ -1263,9 +1264,9 @@
         "15m OI is not expanding"
       ],
       "last_bias": "LONG",
-      "last_price": 0.31658,
+      "last_price": 0.30947,
       "last_score": 42.0,
-      "last_seen_at_ms": 1792470999312,
+      "last_seen_at_ms": 1792471322104,
       "qualifying_streak": 0,
       "required_score": 82.0
     },
@@ -1499,14 +1500,13 @@
     },
     "EPICUSDT": {
       "gate_reasons": [
-        "score 42.0 below required 82.0",
-        "short spot confirmation weak (B/S 1.040, flow 2,193)",
-        "15m OI is not expanding"
+        "score 57.0 below required 82.0",
+        "short spot confirmation weak (B/S 1.040, flow 2,193)"
       ],
       "last_bias": "SHORT",
-      "last_price": 0.224,
-      "last_score": 42.0,
-      "last_seen_at_ms": 1792470999312,
+      "last_price": 0.2208,
+      "last_score": 57.0,
+      "last_seen_at_ms": 1792471322104,
       "qualifying_streak": 0,
       "required_score": 82.0
     },
@@ -3667,10 +3667,10 @@
         "15m OI is not expanding"
       ],
       "last_bias": "LONG",
-      "last_price": 0.05759,
+      "last_price": 0.05745,
       "last_return_pct": -0.710299,
       "last_score": 63.0,
-      "last_seen_at_ms": 1792470999312,
+      "last_seen_at_ms": 1792471322104,
       "mae_pct": -1.031625,
       "mfe_pct": 0.27059,
       "previous_score": 54.0,
@@ -4336,9 +4336,9 @@
         "15m OI is not expanding"
       ],
       "last_bias": "LONG",
-      "last_price": 77.87,
+      "last_price": 77.74,
       "last_score": 59.0,
-      "last_seen_at_ms": 1792470999312,
+      "last_seen_at_ms": 1792471322104,
       "qualifying_streak": 0,
       "required_score": 78.0
     },
