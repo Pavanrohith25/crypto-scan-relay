@@ -2,17 +2,16 @@
   "admission_diagnostics": {
     "latest_reason_counts": {
       "ACCEPTED": 18,
-      "POSITION_ALREADY_OPEN": 1,
       "PRE_ACTIVATION": 66,
-      "STALE_AT_OBSERVATION": 32
+      "STALE_AT_OBSERVATION": 33
     },
     "logging_started_ms": 1792454460377,
     "note": "Reasons reflect observation time; old triggers are not historical rejection evidence.",
     "recent_decisions": [
       {
         "id": "BTCUSDT-1792515673249",
-        "observed_ms": 1792515680124,
-        "reason": "POSITION_ALREADY_OPEN",
+        "observed_ms": 1792516325096,
+        "reason": "STALE_AT_OBSERVATION",
         "side": "LONG",
         "signal_ms": 1792515673249,
         "symbol": "BTCUSDT"
@@ -171,7 +170,7 @@
       }
     ]
   },
-  "as_of_ms": 1792515963728,
+  "as_of_ms": 1792516325096,
   "limitations": [
     "Spot proxy; shorts are hypothetical, not futures execution.",
     "Scores are uncalibrated; first 30 resolved trades per side are warmup.",
