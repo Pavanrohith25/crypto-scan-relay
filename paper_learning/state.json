@@ -932,15 +932,15 @@
   "admission_logging_started_ms": 1792454460377,
   "models": {
     "LONG": {
-      "n": 5,
+      "n": 6,
       "weights": [
-        -0.025739317775766775,
-        0.003829962372210689,
-        -0.0019417265871690828,
-        -0.007668967626538546,
-        -0.001135090895683294,
-        -0.010627319157196155,
-        -0.014176077599796472
+        -0.0008138628958301031,
+        0.0014668423665647706,
+        0.00018077064241342825,
+        -0.004394219496507557,
+        0.00030067069216545327,
+        0.0031652844364458404,
+        0.0035216870867167543
       ]
     },
     "SHORT": {
@@ -959,7 +959,7 @@
   "started_ms": 1791382577243,
   "trades": {
     "BTCUSDT-1791450054416": {
-      "checked_ms": 1792504878361,
+      "checked_ms": 1792505735176,
       "entry_ms": 1791450300000,
       "entry_price": 83013.8,
       "features": [
@@ -973,11 +973,11 @@
       ],
       "id": "BTCUSDT-1791450054416",
       "mae_pct": 1.6120211338355839,
-      "mark_return_pct": 1.0415135796698949,
+      "mark_return_pct": -0.26985874637710516,
       "mfe_pct": 3.8714045134664365,
       "model_hash": "d00c3a24ef0fd037da9e46e3397b77adfe716660f6d7e76afb8984ea77092eae",
       "model_n": 0,
-      "next_bar_ms": 1792504800000,
+      "next_bar_ms": 1792505700000,
       "predicted_ms": 1791450062402,
       "score": null,
       "side": "SHORT",
@@ -1290,7 +1290,7 @@
       "target_pct": 5.0
     },
     "ETHUSDT-1792054886002": {
-      "checked_ms": 1792504878361,
+      "checked_ms": 1792505735176,
       "entry_ms": 1792055100000,
       "entry_price": 2375.78,
       "features": [
@@ -1304,11 +1304,11 @@
       ],
       "id": "ETHUSDT-1792054886002",
       "mae_pct": 4.976049970956908,
-      "mark_return_pct": -1.5077153608499039,
+      "mark_return_pct": -3.883777117409859,
       "mfe_pct": 2.1702346176834753,
       "model_hash": "8e1b832748f26efdcd9fcce2072716280c7a3dee468afccf23c74f887cad7ae0",
       "model_n": 7,
-      "next_bar_ms": 1792504800000,
+      "next_bar_ms": 1792505700000,
       "predicted_ms": 1792054892267,
       "score": null,
       "side": "SHORT",
@@ -1561,7 +1561,7 @@
       "target_pct": 5.0
     },
     "PEPEUSDT-1792479679865": {
-      "checked_ms": 1792504878361,
+      "checked_ms": 1792505735176,
       "entry_ms": 1792479900000,
       "entry_price": 4.18e-06,
       "features": [
@@ -1573,14 +1573,18 @@
         0.5533333333333333,
         0.71
       ],
+      "holding_hours": 7.0,
       "id": "PEPEUSDT-1792479679865",
+      "label_available_ms": 1792505735176,
       "mae_pct": 0.7177033492822948,
-      "mark_return_pct": 4.066985645933019,
-      "mfe_pct": 4.306220095693769,
+      "mark_return_pct": 7.655502392344515,
+      "mfe_pct": 7.8947368421052655,
       "model_hash": "9f7c2fdd7cba7af39f16ae6cc0c6bf6b1ddd1f3230c769bd8aed3d4530b5b736",
       "model_n": 5,
-      "next_bar_ms": 1792504800000,
+      "net_return_pct": 4.87,
+      "next_bar_ms": 1792505100000,
       "predicted_ms": 1792479685406,
+      "resolved_bar_ms": 1792504800000,
       "score": null,
       "side": "LONG",
       "signal_ms": 1792479679865,
@@ -1606,8 +1610,9 @@
         "warnings": []
       },
       "source": "BINANCE_SPOT_PROXY",
-      "status": "OPEN",
+      "status": "TARGET",
       "stop_pct": 6.0,
+      "stressed_net_return_pct": 4.49,
       "symbol": "PEPEUSDT",
       "target_pct": 5.0
     },
@@ -1781,7 +1786,7 @@
       "target_pct": 5.0
     },
     "SOLUSDT-1792033289602": {
-      "checked_ms": 1792504878361,
+      "checked_ms": 1792505735176,
       "entry_ms": 1792033500000,
       "entry_price": 102.29,
       "features": [
@@ -1794,12 +1799,12 @@
         0.85
       ],
       "id": "SOLUSDT-1792033289602",
-      "mae_pct": 5.034705249780025,
-      "mark_return_pct": -2.883957376087576,
+      "mae_pct": 5.415974191025508,
+      "mark_return_pct": -5.386645810929691,
       "mfe_pct": 1.8183595659399754,
       "model_hash": "8e1b832748f26efdcd9fcce2072716280c7a3dee468afccf23c74f887cad7ae0",
       "model_n": 7,
-      "next_bar_ms": 1792504800000,
+      "next_bar_ms": 1792505700000,
       "predicted_ms": 1792033294834,
       "score": null,
       "side": "SHORT",
