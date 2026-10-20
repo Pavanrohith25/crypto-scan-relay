@@ -2,17 +2,16 @@
   "admission_diagnostics": {
     "latest_reason_counts": {
       "ACCEPTED": 18,
-      "POSITION_ALREADY_OPEN": 1,
       "PRE_ACTIVATION": 66,
-      "STALE_AT_OBSERVATION": 31
+      "STALE_AT_OBSERVATION": 32
     },
     "logging_started_ms": 1792454460377,
     "note": "Reasons reflect observation time; old triggers are not historical rejection evidence.",
     "recent_decisions": [
       {
         "id": "PEPEUSDT-1792501289471",
-        "observed_ms": 1792501297794,
-        "reason": "POSITION_ALREADY_OPEN",
+        "observed_ms": 1792501948397,
+        "reason": "STALE_AT_OBSERVATION",
         "side": "LONG",
         "signal_ms": 1792501289471,
         "symbol": "PEPEUSDT"
@@ -171,7 +170,7 @@
       }
     ]
   },
-  "as_of_ms": 1792501602251,
+  "as_of_ms": 1792501948397,
   "limitations": [
     "Spot proxy; shorts are hypothetical, not futures execution.",
     "Scores are uncalibrated; first 30 resolved trades per side are warmup.",
