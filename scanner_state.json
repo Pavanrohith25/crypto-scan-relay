@@ -1,6 +1,6 @@
 {
-  "last_processed_at_ms": 1792519338336,
-  "last_processed_generated_at_ms": 1792519334786,
+  "last_processed_at_ms": 1792519588496,
+  "last_processed_generated_at_ms": 1792519585009,
   "minimum_candidate_score": 78.0,
   "pairs": {
     "1000000BOBUSDT": {
@@ -718,10 +718,10 @@
         "score 81.0 below required 82.0"
       ],
       "last_bias": "LONG",
-      "last_price": 0.01995,
+      "last_price": 0.02025,
       "last_return_pct": 4.234367,
       "last_score": 81.0,
-      "last_seen_at_ms": 1792519338336,
+      "last_seen_at_ms": 1792519588496,
       "mae_pct": 0.0,
       "mfe_pct": 4.234367,
       "previous_score": 63.0,
@@ -813,14 +813,15 @@
     },
     "BTWUSDT": {
       "gate_reasons": [
-        "score 73.0 below required 78.0",
+        "score 57.0 below required 78.0",
         "candidate has blocker(s)",
-        "missing Binance spot confirmation"
+        "missing Binance spot confirmation",
+        "15m OI is not expanding"
       ],
       "last_bias": "LONG",
-      "last_price": 1.7199,
-      "last_score": 73.0,
-      "last_seen_at_ms": 1792519338336,
+      "last_price": 1.7108,
+      "last_score": 57.0,
+      "last_seen_at_ms": 1792519588496,
       "qualifying_streak": 0,
       "required_score": 78.0
     },
@@ -2012,14 +2013,14 @@
     },
     "ICNTUSDT": {
       "gate_reasons": [
-        "score 60.0 below required 82.0",
+        "score 54.0 below required 82.0",
         "candidate has blocker(s)",
         "missing Binance spot confirmation"
       ],
       "last_bias": "LONG",
-      "last_price": 0.1869,
-      "last_score": 60.0,
-      "last_seen_at_ms": 1792519338336,
+      "last_price": 0.1866,
+      "last_score": 54.0,
+      "last_seen_at_ms": 1792519588496,
       "qualifying_streak": 0,
       "required_score": 82.0
     },
@@ -2130,14 +2131,14 @@
     },
     "JCTUSDT": {
       "gate_reasons": [
-        "score 45.0 below required 78.0",
+        "score 46.0 below required 78.0",
         "candidate has blocker(s)",
         "missing Binance spot confirmation"
       ],
       "last_bias": "SHORT",
-      "last_price": 0.004679,
-      "last_score": 45.0,
-      "last_seen_at_ms": 1792519338336,
+      "last_price": 0.004701,
+      "last_score": 46.0,
+      "last_seen_at_ms": 1792519588496,
       "qualifying_streak": 0,
       "required_score": 78.0
     },
@@ -4008,13 +4009,13 @@
     },
     "SOPHUSDT": {
       "gate_reasons": [
-        "score 50.0 below required 82.0",
+        "score 56.0 below required 82.0",
         "long spot confirmation weak (B/S 0.811, flow -20,678)"
       ],
       "last_bias": "LONG",
-      "last_price": 0.001814,
-      "last_score": 50.0,
-      "last_seen_at_ms": 1792519338336,
+      "last_price": 0.00186,
+      "last_score": 56.0,
+      "last_seen_at_ms": 1792519588496,
       "qualifying_streak": 0,
       "required_score": 82.0
     },
@@ -4739,12 +4740,14 @@
     },
     "ZECUSDT": {
       "gate_reasons": [
-        "score 72.0 below required 78.0"
+        "score 54.0 below required 78.0",
+        "short spot confirmation weak (B/S 0.951, flow -141,607)",
+        "15m OI is not expanding"
       ],
       "last_bias": "SHORT",
-      "last_price": 1358.88,
-      "last_score": 72.0,
-      "last_seen_at_ms": 1790875238199,
+      "last_price": 1214.47,
+      "last_score": 54.0,
+      "last_seen_at_ms": 1792519588496,
       "qualifying_streak": 0,
       "required_score": 78.0
     },
