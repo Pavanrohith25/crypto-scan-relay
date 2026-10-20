@@ -1,4 +1,5 @@
 """Prospective spot-proxy learning only. No orders, alerts, or promotion."""
+from concurrent.futures import ThreadPoolExecutor
 import hashlib
 import json
 import math
@@ -212,16 +213,23 @@ def main():
     # Update only from closed outcomes observed before admitting today's predictions.
     pending = sorted((t for t in state['trades'].values() if t['status'] in ('PENDING', 'OPEN')),
                      key=lambda t: (t['checked_ms'], t['entry_ms'], t['id']))
-    for trade in pending[:12]:
+    def update_trade(trade):
         if trade['next_bar_ms'] + BAR > now:
-            continue
+            return False
         trade['checked_ms'] = now
         try:
-            if advance(trade, fetch_bars(trade['symbol'], trade['next_bar_ms'], now), now):
-                learn(state['models'][trade['side']], trade['features'], int(trade['status']=='TARGET'))
-                records.append({'event': 'OUTCOME', **trade})
+            return advance(trade, fetch_bars(trade['symbol'], trade['next_bar_ms'], now), now)
         except Exception as exc:
             trade['data_error'] = type(exc).__name__ + ': ' + str(exc)[:120]
+            return False
+
+    # All open observations get a turn; bounded I/O concurrency replaces the
+    # twelve-trade cap, which could delay new entries beyond Telegram freshness.
+    with ThreadPoolExecutor(max_workers=5) as pool:
+        for trade, resolved in zip(pending, pool.map(update_trade, pending)):
+            if resolved:
+                learn(state['models'][trade['side']], trade['features'], int(trade['status']=='TARGET'))
+                records.append({'event': 'OUTCOME', **trade})
     events = [json.loads(line) for line in Path('swing_events.jsonl').read_text().splitlines() if line.strip()]
     # Use actual post-fetch time so the planned entry cannot precede prediction creation.
     now = int(time.time()*1000)

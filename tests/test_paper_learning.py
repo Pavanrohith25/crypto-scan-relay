@@ -75,6 +75,35 @@ class PaperLearningTests(unittest.TestCase):
             self.assertEqual(len(log), 1)
             self.assertEqual(p.report(restored, 1_000_003)['admission_diagnostics']['latest_reason_counts'], {reason: 1})
 
+    def test_main_updates_more_than_twelve_observations(self):
+        import json, os, tempfile
+        from pathlib import Path
+        from unittest.mock import patch
+        state = p.initial_state(1_000_000)
+        events = [{**self.event, 'symbol': f'TEST{i}USDT'} for i in range(20)]
+        registry = {e['symbol']: {'classification': 'CRYPTO'} for e in events}
+        p.admit(state, events, registry, 1_000_002)
+        previous_cwd = os.getcwd()
+        with tempfile.TemporaryDirectory() as folder:
+            try:
+                os.chdir(folder)
+                Path('paper_learning').mkdir()
+                Path('paper_learning/state.json').write_text(json.dumps(state))
+                Path('paper_learning_identity.json').write_text(json.dumps({'contracts': registry}))
+                Path('swing_events.jsonl').write_text('')
+                def bars(symbol, start, now):
+                    if symbol == 'TEST0USDT':
+                        raise RuntimeError('unavailable')
+                    return [[start, 100, 101, 99, 100]]
+                with patch.object(p, 'fetch_bars', side_effect=bars) as fetch, patch.object(p.time, 'time', return_value=2000), patch('builtins.print'):
+                    p.main()
+                updated = json.loads(Path('paper_learning/state.json').read_text())
+                self.assertEqual(fetch.call_count, 20)
+                self.assertEqual(sum(t['status']=='OPEN' for t in updated['trades'].values()), 19)
+                self.assertEqual(sum('data_error' in t for t in updated['trades'].values()), 1)
+            finally:
+                os.chdir(previous_cwd)
+
     def test_closed_contiguous_bars_required(self):
         t = self.trade(); ts = t['entry_ms']
         self.assertFalse(p.advance(t, [self.bar(ts+ p.BAR, 110)], ts+3*p.BAR))

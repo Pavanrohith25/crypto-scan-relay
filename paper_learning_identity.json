@@ -1,18 +1,24 @@
 {
-  "version": "r9-identity-v2",
-  "reviewed_at_utc": "2026-10-19",
-  "policy": "Explicit identity evidence only; original frozen universe retained; unknowns blocked; no current trading-status filter. A restricted verified subset, not a complete crypto universe.",
+  "version": "spot-identity-v3",
+  "reviewed_at_utc": "2026-10-20",
+  "policy": "Exact Binance/USDT market identity matches from CoinGecko exchange tickers, pages 1-8 reviewed. Stocks, ETFs and stablecoins excluded. Runtime requires active Binance spot listing and existing liquidity/history rules. Unmapped assets remain blocked; this snapshot is not an exhaustive or automatic new-listing guarantee.",
   "contracts": {
     "BTCUSDT": {
       "classification": "CRYPTO",
+      "coin_id": "bitcoin",
+      "reviewed_at_utc": "2026-10-20",
       "sources": [
-        "https://www.binance.com/en-BH/support/faq/detail/e735efef90a042b28e8864feb3ed58a2"
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/bitcoin"
       ]
     },
     "ETHUSDT": {
       "classification": "CRYPTO",
+      "coin_id": "ethereum",
+      "reviewed_at_utc": "2026-10-20",
       "sources": [
-        "https://www.binance.com/en-BH/support/faq/detail/e735efef90a042b28e8864feb3ed58a2"
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/ethereum"
       ]
     },
     "AERGOUSDT": {
@@ -23,8 +29,11 @@
     },
     "CHRUSDT": {
       "classification": "CRYPTO",
+      "coin_id": "chromaway",
+      "reviewed_at_utc": "2026-10-20",
       "sources": [
-        "https://www.binance.com/en-BH/support/faq/detail/e735efef90a042b28e8864feb3ed58a2"
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/chromaway"
       ]
     },
     "XPDUSDT": {
@@ -43,8 +52,11 @@
     },
     "CVXUSDT": {
       "classification": "CRYPTO",
+      "coin_id": "convex-finance",
+      "reviewed_at_utc": "2026-10-20",
       "sources": [
-        "https://www.binance.com/en-BH/support/faq/detail/e735efef90a042b28e8864feb3ed58a2"
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/convex-finance"
       ]
     },
     "GRASSUSDT": {
@@ -55,14 +67,20 @@
     },
     "TRUMPUSDT": {
       "classification": "CRYPTO",
+      "coin_id": "official-trump",
+      "reviewed_at_utc": "2026-10-20",
       "sources": [
-        "https://www.binance.com/en-BH/support/faq/detail/e735efef90a042b28e8864feb3ed58a2"
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/official-trump"
       ]
     },
     "BERAUSDT": {
       "classification": "CRYPTO",
+      "coin_id": "berachain-bera",
+      "reviewed_at_utc": "2026-10-20",
       "sources": [
-        "https://www.binance.com/en-BH/support/faq/detail/e735efef90a042b28e8864feb3ed58a2"
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/berachain-bera"
       ]
     },
     "XEMUSDT": {
@@ -73,8 +91,11 @@
     },
     "GRTUSDT": {
       "classification": "CRYPTO",
+      "coin_id": "the-graph",
+      "reviewed_at_utc": "2026-10-20",
       "sources": [
-        "https://www.binance.com/en-BH/support/faq/detail/e735efef90a042b28e8864feb3ed58a2"
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/the-graph"
       ]
     },
     "MSFTUSDT": {
@@ -85,8 +106,11 @@
     },
     "LDOUSDT": {
       "classification": "CRYPTO",
+      "coin_id": "lido-dao",
+      "reviewed_at_utc": "2026-10-20",
       "sources": [
-        "https://www.binance.com/en-BH/support/faq/detail/e735efef90a042b28e8864feb3ed58a2"
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/lido-dao"
       ]
     },
     "EPTUSDT": {
@@ -105,14 +129,20 @@
     },
     "GUNUSDT": {
       "classification": "CRYPTO",
+      "coin_id": "gunz",
+      "reviewed_at_utc": "2026-10-20",
       "sources": [
-        "https://www.binance.com/en-BH/support/faq/detail/e735efef90a042b28e8864feb3ed58a2"
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/gunz"
       ]
     },
     "API3USDT": {
       "classification": "CRYPTO",
+      "coin_id": "api3",
+      "reviewed_at_utc": "2026-10-20",
       "sources": [
-        "https://www.binance.com/en-BH/support/faq/detail/e735efef90a042b28e8864feb3ed58a2"
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/api3"
       ]
     },
     "SPXUSDT": {
@@ -129,14 +159,20 @@
     },
     "FLOWUSDT": {
       "classification": "CRYPTO",
+      "coin_id": "flow",
+      "reviewed_at_utc": "2026-10-20",
       "sources": [
-        "https://www.binance.com/en-BH/support/faq/detail/e735efef90a042b28e8864feb3ed58a2"
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/flow"
       ]
     },
     "MORPHOUSDT": {
       "classification": "CRYPTO",
+      "coin_id": "morpho",
+      "reviewed_at_utc": "2026-10-20",
       "sources": [
-        "https://www.binance.com/en-BH/support/faq/detail/e735efef90a042b28e8864feb3ed58a2"
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/morpho"
       ]
     },
     "EWYUSDT": {
@@ -145,14 +181,20 @@
     },
     "DOGSUSDT": {
       "classification": "CRYPTO",
+      "coin_id": "dogs-2",
+      "reviewed_at_utc": "2026-10-20",
       "sources": [
-        "https://www.binance.com/en-BH/support/faq/detail/e735efef90a042b28e8864feb3ed58a2"
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/dogs-2"
       ]
     },
     "1INCHUSDT": {
       "classification": "CRYPTO",
+      "coin_id": "1inch",
+      "reviewed_at_utc": "2026-10-20",
       "sources": [
-        "https://www.binance.com/en-BH/support/faq/detail/e735efef90a042b28e8864feb3ed58a2"
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/1inch"
       ]
     },
     "STEEMUSDT": {
@@ -169,8 +211,11 @@
     },
     "WLDUSDT": {
       "classification": "CRYPTO",
+      "coin_id": "worldcoin-wld",
+      "reviewed_at_utc": "2026-10-20",
       "sources": [
-        "https://www.binance.com/en-BH/support/faq/detail/e735efef90a042b28e8864feb3ed58a2"
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/worldcoin-wld"
       ]
     },
     "LYNUSDT": {
@@ -179,8 +224,11 @@
     },
     "SENTUSDT": {
       "classification": "CRYPTO",
+      "coin_id": "sentient",
+      "reviewed_at_utc": "2026-10-20",
       "sources": [
-        "https://www.binance.com/en-BH/support/faq/detail/e735efef90a042b28e8864feb3ed58a2"
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/sentient"
       ]
     },
     "TSMUSDT": {
@@ -189,8 +237,11 @@
     },
     "LTCUSDT": {
       "classification": "CRYPTO",
+      "coin_id": "litecoin",
+      "reviewed_at_utc": "2026-10-20",
       "sources": [
-        "https://www.binance.com/en-BH/support/faq/detail/e735efef90a042b28e8864feb3ed58a2"
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/litecoin"
       ]
     },
     "OMGUSDT": {
@@ -205,8 +256,11 @@
     },
     "HEMIUSDT": {
       "classification": "CRYPTO",
+      "coin_id": "hemi",
+      "reviewed_at_utc": "2026-10-20",
       "sources": [
-        "https://www.binance.com/en-BH/support/faq/detail/e735efef90a042b28e8864feb3ed58a2"
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/hemi"
       ]
     },
     "JELLYJELLYUSDT": {
@@ -215,8 +269,11 @@
     },
     "ETHFIUSDT": {
       "classification": "CRYPTO",
+      "coin_id": "ether-fi",
+      "reviewed_at_utc": "2026-10-20",
       "sources": [
-        "https://www.binance.com/en-BH/support/faq/detail/e735efef90a042b28e8864feb3ed58a2"
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/ether-fi"
       ]
     },
     "AMBUSDT": {
@@ -224,13 +281,21 @@
       "sources": []
     },
     "GENIUSUSDT": {
-      "classification": "UNVERIFIED",
-      "sources": []
+      "classification": "CRYPTO",
+      "coin_id": "genius-3",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/genius-3"
+      ]
     },
     "MUBARAKUSDT": {
       "classification": "CRYPTO",
+      "coin_id": "mubarak",
+      "reviewed_at_utc": "2026-10-20",
       "sources": [
-        "https://www.binance.com/en-BH/support/faq/detail/e735efef90a042b28e8864feb3ed58a2"
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/mubarak"
       ]
     },
     "CHILLGUYUSDT": {
@@ -255,20 +320,29 @@
     },
     "BEAMXUSDT": {
       "classification": "CRYPTO",
+      "coin_id": "beam-2",
+      "reviewed_at_utc": "2026-10-20",
       "sources": [
-        "https://www.binance.com/en-BH/support/faq/detail/e735efef90a042b28e8864feb3ed58a2"
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/beam-2"
       ]
     },
     "ILVUSDT": {
       "classification": "CRYPTO",
+      "coin_id": "illuvium",
+      "reviewed_at_utc": "2026-10-20",
       "sources": [
-        "https://www.binance.com/en-BH/support/faq/detail/e735efef90a042b28e8864feb3ed58a2"
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/illuvium"
       ]
     },
     "CYBERUSDT": {
       "classification": "CRYPTO",
+      "coin_id": "cyberconnect",
+      "reviewed_at_utc": "2026-10-20",
       "sources": [
-        "https://www.binance.com/en-BH/support/faq/detail/e735efef90a042b28e8864feb3ed58a2"
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/cyberconnect"
       ]
     },
     "ALLUSDT": {
@@ -277,20 +351,29 @@
     },
     "CHZUSDT": {
       "classification": "CRYPTO",
+      "coin_id": "chiliz",
+      "reviewed_at_utc": "2026-10-20",
       "sources": [
-        "https://www.binance.com/en-BH/support/faq/detail/e735efef90a042b28e8864feb3ed58a2"
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/chiliz"
       ]
     },
     "TWTUSDT": {
       "classification": "CRYPTO",
+      "coin_id": "trust-wallet-token",
+      "reviewed_at_utc": "2026-10-20",
       "sources": [
-        "https://www.binance.com/en-BH/support/faq/detail/e735efef90a042b28e8864feb3ed58a2"
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/trust-wallet-token"
       ]
     },
     "CFGUSDT": {
       "classification": "CRYPTO",
+      "coin_id": "centrifuge-2",
+      "reviewed_at_utc": "2026-10-20",
       "sources": [
-        "https://www.binance.com/en-BH/support/faq/detail/e735efef90a042b28e8864feb3ed58a2"
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/centrifuge-2"
       ]
     },
     "TAUSDT": {
@@ -299,8 +382,11 @@
     },
     "MIRAUSDT": {
       "classification": "CRYPTO",
+      "coin_id": "mira-3",
+      "reviewed_at_utc": "2026-10-20",
       "sources": [
-        "https://www.binance.com/en-BH/support/faq/detail/e735efef90a042b28e8864feb3ed58a2"
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/mira-3"
       ]
     },
     "DOLOUSDT": {
@@ -311,8 +397,11 @@
     },
     "QUICKUSDT": {
       "classification": "CRYPTO",
+      "coin_id": "quickswap",
+      "reviewed_at_utc": "2026-10-20",
       "sources": [
-        "https://www.binance.com/en-BH/support/faq/detail/e735efef90a042b28e8864feb3ed58a2"
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/quickswap"
       ]
     },
     "INTCUSDT": {
@@ -327,14 +416,20 @@
     },
     "LISTAUSDT": {
       "classification": "CRYPTO",
+      "coin_id": "lista",
+      "reviewed_at_utc": "2026-10-20",
       "sources": [
-        "https://www.binance.com/en-BH/support/faq/detail/e735efef90a042b28e8864feb3ed58a2"
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/lista"
       ]
     },
     "RLCUSDT": {
       "classification": "CRYPTO",
+      "coin_id": "iexec-rlc",
+      "reviewed_at_utc": "2026-10-20",
       "sources": [
-        "https://www.binance.com/en-BH/support/faq/detail/e735efef90a042b28e8864feb3ed58a2"
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/iexec-rlc"
       ]
     },
     "XAUUSDT": {
@@ -343,8 +438,11 @@
     },
     "DEXEUSDT": {
       "classification": "CRYPTO",
+      "coin_id": "dexe",
+      "reviewed_at_utc": "2026-10-20",
       "sources": [
-        "https://www.binance.com/en-BH/support/faq/detail/e735efef90a042b28e8864feb3ed58a2"
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/dexe"
       ]
     },
     "FOLKSUSDT": {
@@ -353,8 +451,11 @@
     },
     "SANDUSDT": {
       "classification": "CRYPTO",
+      "coin_id": "the-sandbox",
+      "reviewed_at_utc": "2026-10-20",
       "sources": [
-        "https://www.binance.com/en-BH/support/faq/detail/e735efef90a042b28e8864feb3ed58a2"
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/the-sandbox"
       ]
     },
     "1000XECUSDT": {
@@ -379,8 +480,11 @@
     },
     "DYMUSDT": {
       "classification": "CRYPTO",
+      "coin_id": "dymension",
+      "reviewed_at_utc": "2026-10-20",
       "sources": [
-        "https://www.binance.com/en-BH/support/faq/detail/e735efef90a042b28e8864feb3ed58a2"
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/dymension"
       ]
     },
     "B2USDT": {
@@ -389,8 +493,11 @@
     },
     "SOLUSDT": {
       "classification": "CRYPTO",
+      "coin_id": "solana",
+      "reviewed_at_utc": "2026-10-20",
       "sources": [
-        "https://www.binance.com/en-BH/support/faq/detail/e735efef90a042b28e8864feb3ed58a2"
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/solana"
       ]
     },
     "FLUIDUSDT": {
@@ -399,8 +506,11 @@
     },
     "1000CATUSDT": {
       "classification": "CRYPTO",
+      "coin_id": "1000cat",
+      "reviewed_at_utc": "2026-10-20",
       "sources": [
-        "https://www.binance.com/ru-KZ/support/announcement/detail/1ea76d73db1d48129600faca5df4f9ea"
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/1000cat"
       ]
     },
     "SWARMSUSDT": {
@@ -415,20 +525,29 @@
     },
     "MAGICUSDT": {
       "classification": "CRYPTO",
+      "coin_id": "magic",
+      "reviewed_at_utc": "2026-10-20",
       "sources": [
-        "https://www.binance.com/en-BH/support/faq/detail/e735efef90a042b28e8864feb3ed58a2"
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/magic"
       ]
     },
     "OGNUSDT": {
       "classification": "CRYPTO",
+      "coin_id": "origin-protocol",
+      "reviewed_at_utc": "2026-10-20",
       "sources": [
-        "https://www.binance.com/en-BH/support/faq/detail/e735efef90a042b28e8864feb3ed58a2"
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/origin-protocol"
       ]
     },
     "SXTUSDT": {
       "classification": "CRYPTO",
+      "coin_id": "space-and-time",
+      "reviewed_at_utc": "2026-10-20",
       "sources": [
-        "https://www.binance.com/en-BH/support/faq/detail/e735efef90a042b28e8864feb3ed58a2"
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/space-and-time"
       ]
     },
     "UAIUSDT": {
@@ -437,32 +556,47 @@
     },
     "ONDOUSDT": {
       "classification": "CRYPTO",
+      "coin_id": "ondo-finance",
+      "reviewed_at_utc": "2026-10-20",
       "sources": [
-        "https://www.binance.com/en-BH/support/faq/detail/e735efef90a042b28e8864feb3ed58a2"
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/ondo-finance"
       ]
     },
     "LAYERUSDT": {
       "classification": "CRYPTO",
+      "coin_id": "solayer",
+      "reviewed_at_utc": "2026-10-20",
       "sources": [
-        "https://www.binance.com/en-BH/support/faq/detail/e735efef90a042b28e8864feb3ed58a2"
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/solayer"
       ]
     },
     "SNXUSDT": {
       "classification": "CRYPTO",
+      "coin_id": "havven",
+      "reviewed_at_utc": "2026-10-20",
       "sources": [
-        "https://www.binance.com/en-BH/support/faq/detail/e735efef90a042b28e8864feb3ed58a2"
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/havven"
       ]
     },
     "MASKUSDT": {
       "classification": "CRYPTO",
+      "coin_id": "mask-network",
+      "reviewed_at_utc": "2026-10-20",
       "sources": [
-        "https://www.binance.com/en-BH/support/faq/detail/e735efef90a042b28e8864feb3ed58a2"
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/mask-network"
       ]
     },
     "FRAXUSDT": {
       "classification": "CRYPTO",
+      "coin_id": "frax-share",
+      "reviewed_at_utc": "2026-10-20",
       "sources": [
-        "https://www.binance.com/en-BH/support/faq/detail/e735efef90a042b28e8864feb3ed58a2"
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/frax-share"
       ]
     },
     "HIPPOUSDT": {
@@ -477,20 +611,29 @@
     },
     "REDUSDT": {
       "classification": "CRYPTO",
+      "coin_id": "redstone-oracles",
+      "reviewed_at_utc": "2026-10-20",
       "sources": [
-        "https://www.binance.com/en-BH/support/faq/detail/e735efef90a042b28e8864feb3ed58a2"
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/redstone-oracles"
       ]
     },
     "ACTUSDT": {
       "classification": "CRYPTO",
+      "coin_id": "act-i-the-ai-prophecy",
+      "reviewed_at_utc": "2026-10-20",
       "sources": [
-        "https://www.binance.com/en-BH/support/faq/detail/e735efef90a042b28e8864feb3ed58a2"
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/act-i-the-ai-prophecy"
       ]
     },
     "GPSUSDT": {
       "classification": "CRYPTO",
+      "coin_id": "goplus-security",
+      "reviewed_at_utc": "2026-10-20",
       "sources": [
-        "https://www.binance.com/en-BH/support/faq/detail/e735efef90a042b28e8864feb3ed58a2"
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/goplus-security"
       ]
     },
     "BIRBUSDT": {
@@ -503,8 +646,11 @@
     },
     "SCUSDT": {
       "classification": "CRYPTO",
+      "coin_id": "siacoin",
+      "reviewed_at_utc": "2026-10-20",
       "sources": [
-        "https://www.binance.com/en-BH/support/faq/detail/e735efef90a042b28e8864feb3ed58a2"
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/siacoin"
       ]
     },
     "POPCATUSDT": {
@@ -515,14 +661,20 @@
     },
     "SPELLUSDT": {
       "classification": "CRYPTO",
+      "coin_id": "spell-token",
+      "reviewed_at_utc": "2026-10-20",
       "sources": [
-        "https://www.binance.com/en-BH/support/faq/detail/e735efef90a042b28e8864feb3ed58a2"
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/spell-token"
       ]
     },
     "PHAUSDT": {
       "classification": "CRYPTO",
+      "coin_id": "pha",
+      "reviewed_at_utc": "2026-10-20",
       "sources": [
-        "https://www.binance.com/en-BH/support/faq/detail/e735efef90a042b28e8864feb3ed58a2"
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/pha"
       ]
     },
     "1000FLOKIUSDT": {
@@ -533,14 +685,20 @@
     },
     "PIXELUSDT": {
       "classification": "CRYPTO",
+      "coin_id": "pixels",
+      "reviewed_at_utc": "2026-10-20",
       "sources": [
-        "https://www.binance.com/en-BH/support/faq/detail/e735efef90a042b28e8864feb3ed58a2"
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/pixels"
       ]
     },
     "TNSRUSDT": {
       "classification": "CRYPTO",
+      "coin_id": "tensor",
+      "reviewed_at_utc": "2026-10-20",
       "sources": [
-        "https://www.binance.com/en-BH/support/faq/detail/e735efef90a042b28e8864feb3ed58a2"
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/tensor"
       ]
     },
     "MTLUSDT": {
@@ -551,14 +709,20 @@
     },
     "CTSIUSDT": {
       "classification": "CRYPTO",
+      "coin_id": "cartesi",
+      "reviewed_at_utc": "2026-10-20",
       "sources": [
-        "https://www.binance.com/en-BH/support/faq/detail/e735efef90a042b28e8864feb3ed58a2"
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/cartesi"
       ]
     },
     "BNBUSDT": {
       "classification": "CRYPTO",
+      "coin_id": "binancecoin",
+      "reviewed_at_utc": "2026-10-20",
       "sources": [
-        "https://www.binance.com/en-BH/support/faq/detail/e735efef90a042b28e8864feb3ed58a2"
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/binancecoin"
       ]
     },
     "IRUSDT": {
@@ -567,8 +731,11 @@
     },
     "TUTUSDT": {
       "classification": "CRYPTO",
+      "coin_id": "tutorial",
+      "reviewed_at_utc": "2026-10-20",
       "sources": [
-        "https://www.binance.com/en-BH/support/faq/detail/e735efef90a042b28e8864feb3ed58a2"
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/tutorial"
       ]
     },
     "PORT3USDT": {
@@ -583,8 +750,11 @@
     },
     "ARBUSDT": {
       "classification": "CRYPTO",
+      "coin_id": "arbitrum",
+      "reviewed_at_utc": "2026-10-20",
       "sources": [
-        "https://www.binance.com/en-BH/support/faq/detail/e735efef90a042b28e8864feb3ed58a2"
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/arbitrum"
       ]
     },
     "XNYUSDT": {
@@ -599,8 +769,11 @@
     },
     "SCRUSDT": {
       "classification": "CRYPTO",
+      "coin_id": "scroll",
+      "reviewed_at_utc": "2026-10-20",
       "sources": [
-        "https://www.binance.com/en-BH/support/faq/detail/e735efef90a042b28e8864feb3ed58a2"
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/scroll"
       ]
     },
     "ATHUSDT": {
@@ -609,8 +782,11 @@
     },
     "DASHUSDT": {
       "classification": "CRYPTO",
+      "coin_id": "dash",
+      "reviewed_at_utc": "2026-10-20",
       "sources": [
-        "https://www.binance.com/en-BH/support/faq/detail/e735efef90a042b28e8864feb3ed58a2"
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/dash"
       ]
     },
     "BLESSUSDT": {
@@ -655,18 +831,29 @@
     },
     "WUSDT": {
       "classification": "CRYPTO",
+      "coin_id": "wormhole",
+      "reviewed_at_utc": "2026-10-20",
       "sources": [
-        "https://www.binance.com/en-BH/support/faq/detail/e735efef90a042b28e8864feb3ed58a2"
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/wormhole"
       ]
     },
     "CHIPUSDT": {
-      "classification": "UNVERIFIED",
-      "sources": []
+      "classification": "CRYPTO",
+      "coin_id": "chip-2",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/chip-2"
+      ]
     },
     "ENAUSDT": {
       "classification": "CRYPTO",
+      "coin_id": "ethena",
+      "reviewed_at_utc": "2026-10-20",
       "sources": [
-        "https://www.binance.com/en-BH/support/faq/detail/e735efef90a042b28e8864feb3ed58a2"
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/ethena"
       ]
     },
     "CLANKERUSDT": {
@@ -675,8 +862,11 @@
     },
     "AEROUSDT": {
       "classification": "CRYPTO",
+      "coin_id": "aerodrome-finance",
+      "reviewed_at_utc": "2026-10-20",
       "sources": [
-        "https://www.binance.com/ru-KZ/support/announcement/detail/1ea76d73db1d48129600faca5df4f9ea"
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/aerodrome-finance"
       ]
     },
     "LITUSDT": {
@@ -701,14 +891,20 @@
     },
     "FTTUSDT": {
       "classification": "CRYPTO",
+      "coin_id": "ftx-token",
+      "reviewed_at_utc": "2026-10-20",
       "sources": [
-        "https://www.binance.com/en-BH/support/faq/detail/e735efef90a042b28e8864feb3ed58a2"
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/ftx-token"
       ]
     },
     "ONGUSDT": {
       "classification": "CRYPTO",
+      "coin_id": "ong",
+      "reviewed_at_utc": "2026-10-20",
       "sources": [
-        "https://www.binance.com/en-BH/support/faq/detail/e735efef90a042b28e8864feb3ed58a2"
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/ong"
       ]
     },
     "BOBUSDT": {
@@ -735,8 +931,11 @@
     },
     "MANTRAUSDT": {
       "classification": "CRYPTO",
+      "coin_id": "mantra",
+      "reviewed_at_utc": "2026-10-20",
       "sources": [
-        "https://www.binance.com/en-BH/support/faq/detail/e735efef90a042b28e8864feb3ed58a2"
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/mantra"
       ]
     },
     "AIOTUSDT": {
@@ -751,8 +950,11 @@
     },
     "ALGOUSDT": {
       "classification": "CRYPTO",
+      "coin_id": "algorand",
+      "reviewed_at_utc": "2026-10-20",
       "sources": [
-        "https://www.binance.com/en-BH/support/faq/detail/e735efef90a042b28e8864feb3ed58a2"
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/algorand"
       ]
     },
     "WOOUSDT": {
@@ -775,8 +977,11 @@
     },
     "VANAUSDT": {
       "classification": "CRYPTO",
+      "coin_id": "vana",
+      "reviewed_at_utc": "2026-10-20",
       "sources": [
-        "https://www.binance.com/en-BH/support/faq/detail/e735efef90a042b28e8864feb3ed58a2"
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/vana"
       ]
     },
     "AIAUSDT": {
@@ -785,8 +990,11 @@
     },
     "IOUSDT": {
       "classification": "CRYPTO",
+      "coin_id": "io",
+      "reviewed_at_utc": "2026-10-20",
       "sources": [
-        "https://www.binance.com/en-BH/support/faq/detail/e735efef90a042b28e8864feb3ed58a2"
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/io"
       ]
     },
     "CRCLUSDT": {
@@ -799,14 +1007,20 @@
     },
     "ZENUSDT": {
       "classification": "CRYPTO",
+      "coin_id": "zencash",
+      "reviewed_at_utc": "2026-10-20",
       "sources": [
-        "https://www.binance.com/en-BH/support/faq/detail/e735efef90a042b28e8864feb3ed58a2"
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/zencash"
       ]
     },
     "KAVAUSDT": {
       "classification": "CRYPTO",
+      "coin_id": "kava",
+      "reviewed_at_utc": "2026-10-20",
       "sources": [
-        "https://www.binance.com/en-BH/support/faq/detail/e735efef90a042b28e8864feb3ed58a2"
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/kava"
       ]
     },
     "CARVUSDT": {
@@ -815,14 +1029,20 @@
     },
     "BROCCOLI714USDT": {
       "classification": "CRYPTO",
+      "coin_id": "czs-dog",
+      "reviewed_at_utc": "2026-10-20",
       "sources": [
-        "https://www.binance.com/en-BH/support/faq/detail/e735efef90a042b28e8864feb3ed58a2"
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/czs-dog"
       ]
     },
     "ROSEUSDT": {
       "classification": "CRYPTO",
+      "coin_id": "oasis-network",
+      "reviewed_at_utc": "2026-10-20",
       "sources": [
-        "https://www.binance.com/en-BH/support/faq/detail/e735efef90a042b28e8864feb3ed58a2"
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/oasis-network"
       ]
     },
     "FUSDT": {
@@ -837,8 +1057,11 @@
     },
     "CUSDT": {
       "classification": "CRYPTO",
+      "coin_id": "chainbase",
+      "reviewed_at_utc": "2026-10-20",
       "sources": [
-        "https://www.binance.com/en-BH/support/faq/detail/e735efef90a042b28e8864feb3ed58a2"
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/chainbase"
       ]
     },
     "1000BONKUSDT": {
@@ -849,8 +1072,11 @@
     },
     "AXSUSDT": {
       "classification": "CRYPTO",
+      "coin_id": "axie-infinity",
+      "reviewed_at_utc": "2026-10-20",
       "sources": [
-        "https://www.binance.com/en-BH/support/faq/detail/e735efef90a042b28e8864feb3ed58a2"
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/axie-infinity"
       ]
     },
     "SIGNUSDT": {
@@ -861,32 +1087,47 @@
     },
     "ENJUSDT": {
       "classification": "CRYPTO",
+      "coin_id": "enjincoin",
+      "reviewed_at_utc": "2026-10-20",
       "sources": [
-        "https://www.binance.com/en-BH/support/faq/detail/e735efef90a042b28e8864feb3ed58a2"
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/enjincoin"
       ]
     },
     "THEUSDT": {
       "classification": "CRYPTO",
+      "coin_id": "thena",
+      "reviewed_at_utc": "2026-10-20",
       "sources": [
-        "https://www.binance.com/en-BH/support/faq/detail/e735efef90a042b28e8864feb3ed58a2"
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/thena"
       ]
     },
     "KATUSDT": {
       "classification": "CRYPTO",
+      "coin_id": "katana-network-token",
+      "reviewed_at_utc": "2026-10-20",
       "sources": [
-        "https://www.binance.com/en-BH/support/faq/detail/e735efef90a042b28e8864feb3ed58a2"
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/katana-network-token"
       ]
     },
     "SUSHIUSDT": {
       "classification": "CRYPTO",
+      "coin_id": "sushi",
+      "reviewed_at_utc": "2026-10-20",
       "sources": [
-        "https://www.binance.com/en-BH/support/faq/detail/e735efef90a042b28e8864feb3ed58a2"
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/sushi"
       ]
     },
     "QNTUSDT": {
       "classification": "CRYPTO",
+      "coin_id": "quant-network",
+      "reviewed_at_utc": "2026-10-20",
       "sources": [
-        "https://www.binance.com/en-BH/support/faq/detail/e735efef90a042b28e8864feb3ed58a2"
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/quant-network"
       ]
     },
     "BZUSDT": {
@@ -895,8 +1136,11 @@
     },
     "USUALUSDT": {
       "classification": "CRYPTO",
+      "coin_id": "usual",
+      "reviewed_at_utc": "2026-10-20",
       "sources": [
-        "https://www.binance.com/en-BH/support/faq/detail/e735efef90a042b28e8864feb3ed58a2"
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/usual"
       ]
     },
     "AGIXUSDT": {
@@ -905,8 +1149,11 @@
     },
     "AVNTUSDT": {
       "classification": "CRYPTO",
+      "coin_id": "avantis",
+      "reviewed_at_utc": "2026-10-20",
       "sources": [
-        "https://www.binance.com/en-BH/support/faq/detail/e735efef90a042b28e8864feb3ed58a2"
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/avantis"
       ]
     },
     "JCTUSDT": {
@@ -931,8 +1178,11 @@
     },
     "COMPUSDT": {
       "classification": "CRYPTO",
+      "coin_id": "compound-governance-token",
+      "reviewed_at_utc": "2026-10-20",
       "sources": [
-        "https://www.binance.com/en-BH/support/faq/detail/e735efef90a042b28e8864feb3ed58a2"
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/compound-governance-token"
       ]
     },
     "XVSUSDT": {
@@ -949,8 +1199,11 @@
     },
     "NMRUSDT": {
       "classification": "CRYPTO",
+      "coin_id": "numeraire",
+      "reviewed_at_utc": "2026-10-20",
       "sources": [
-        "https://www.binance.com/en-BH/support/faq/detail/e735efef90a042b28e8864feb3ed58a2"
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/numeraire"
       ]
     },
     "MOVEUSDT": {
@@ -967,8 +1220,11 @@
     },
     "GMTUSDT": {
       "classification": "CRYPTO",
+      "coin_id": "stepn",
+      "reviewed_at_utc": "2026-10-20",
       "sources": [
-        "https://www.binance.com/en-BH/support/faq/detail/e735efef90a042b28e8864feb3ed58a2"
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/stepn"
       ]
     },
     "LINAUSDT": {
@@ -991,8 +1247,11 @@
     },
     "YFIUSDT": {
       "classification": "CRYPTO",
+      "coin_id": "yearn-finance",
+      "reviewed_at_utc": "2026-10-20",
       "sources": [
-        "https://www.binance.com/en-BH/support/faq/detail/e735efef90a042b28e8864feb3ed58a2"
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/yearn-finance"
       ]
     },
     "NULSUSDT": {
@@ -1013,8 +1272,11 @@
     },
     "BABYUSDT": {
       "classification": "CRYPTO",
+      "coin_id": "babylon",
+      "reviewed_at_utc": "2026-10-20",
       "sources": [
-        "https://www.binance.com/en-BH/support/faq/detail/e735efef90a042b28e8864feb3ed58a2"
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/babylon"
       ]
     },
     "OCEANUSDT": {
@@ -1023,50 +1285,3126 @@
     },
     "ALTUSDT": {
       "classification": "CRYPTO",
+      "coin_id": "altlayer",
+      "reviewed_at_utc": "2026-10-20",
       "sources": [
-        "https://www.binance.com/en-BH/support/faq/detail/e735efef90a042b28e8864feb3ed58a2"
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/altlayer"
       ]
     },
     "ARKMUSDT": {
       "classification": "CRYPTO",
+      "coin_id": "arkham",
+      "reviewed_at_utc": "2026-10-20",
       "sources": [
-        "https://www.binance.com/en-BH/support/faq/detail/e735efef90a042b28e8864feb3ed58a2"
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/arkham"
       ]
     },
     "STRKUSDT": {
       "classification": "CRYPTO",
+      "coin_id": "starknet",
+      "reviewed_at_utc": "2026-10-20",
       "sources": [
-        "https://www.binance.com/en/support/announcement/detail/cb15311b17c440d0b0cf077a9b9979a3"
-      ],
-      "reviewed_at_utc": "2026-10-19"
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/starknet"
+      ]
     },
     "FETUSDT": {
       "classification": "CRYPTO",
+      "coin_id": "fetch-ai",
+      "reviewed_at_utc": "2026-10-20",
       "sources": [
-        "https://www.binance.com/en/support/announcement/detail/3dc0eae584cd4accb34cb914dacf670d"
-      ],
-      "reviewed_at_utc": "2026-10-19"
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/fetch-ai"
+      ]
     },
     "LINKUSDT": {
       "classification": "CRYPTO",
+      "coin_id": "chainlink",
+      "reviewed_at_utc": "2026-10-20",
       "sources": [
-        "https://www.binance.com/en-IN/how-to-buy/chainlink"
-      ],
-      "reviewed_at_utc": "2026-10-19"
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/chainlink"
+      ]
     },
     "HYPEUSDT": {
       "classification": "CRYPTO",
+      "coin_id": "hyperliquid",
+      "reviewed_at_utc": "2026-10-20",
       "sources": [
-        "https://www.binance.com/uz-UZ/support/announcement/detail/d49de208bb6d4a26b02677d7c3d89b5d"
-      ],
-      "reviewed_at_utc": "2026-10-19"
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/hyperliquid"
+      ]
     },
     "PEPEUSDT": {
       "classification": "CRYPTO",
+      "coin_id": "pepe",
+      "reviewed_at_utc": "2026-10-20",
       "sources": [
-        "https://www.binance.com/si-LK/support/announcement/detail/f68a3bc6eb014ed9bacf1d6c71dc1134"
-      ],
-      "reviewed_at_utc": "2026-10-19"
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/pepe"
+      ]
+    },
+    "USDCUSDT": {
+      "classification": "EXCLUDED_STABLECOIN",
+      "coin_id": "usd-coin",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/usd-coin"
+      ]
+    },
+    "ZECUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "zcash",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/zcash"
+      ]
+    },
+    "USD1USDT": {
+      "classification": "EXCLUDED_STABLECOIN",
+      "coin_id": "usd1-wlfi",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/usd1-wlfi"
+      ]
+    },
+    "NEARUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "near",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/near"
+      ]
+    },
+    "XRPUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "ripple",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/ripple"
+      ]
+    },
+    "SUIUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "sui",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/sui"
+      ]
+    },
+    "SNDKBUSDT": {
+      "classification": "NON_CRYPTO",
+      "coin_id": "sandisk-bstocks-tokenized-stock",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/sandisk-bstocks-tokenized-stock"
+      ]
+    },
+    "PUMPUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "pump-fun",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/pump-fun"
+      ]
+    },
+    "UNIUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "uniswap",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/uniswap"
+      ]
+    },
+    "SPCXBUSDT": {
+      "classification": "NON_CRYPTO",
+      "coin_id": "spacex-bstocks-tokenized-stock",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/spacex-bstocks-tokenized-stock"
+      ]
+    },
+    "DOGEUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "dogecoin",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/dogecoin"
+      ]
+    },
+    "SOXLBUSDT": {
+      "classification": "NON_CRYPTO",
+      "coin_id": "semicon-bull-3x-etf-bstocks-tokenized-stock",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/semicon-bull-3x-etf-bstocks-tokenized-stock"
+      ]
+    },
+    "TRXUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "tron",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/tron"
+      ]
+    },
+    "GTCUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "gitcoin",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/gitcoin"
+      ]
+    },
+    "RLUSDUSDT": {
+      "classification": "EXCLUDED_STABLECOIN",
+      "coin_id": "ripple-usd",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/ripple-usd"
+      ]
+    },
+    "UUSDT": {
+      "classification": "EXCLUDED_STABLECOIN",
+      "coin_id": "united-stables",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/united-stables"
+      ]
+    },
+    "INJUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "injective-protocol",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/injective-protocol"
+      ]
+    },
+    "MUBUSDT": {
+      "classification": "NON_CRYPTO",
+      "coin_id": "micron-technology-bstock",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/micron-technology-bstock"
+      ]
+    },
+    "TAOUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "bittensor",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/bittensor"
+      ]
+    },
+    "XAUTUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "tether-gold",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/tether-gold"
+      ]
+    },
+    "AVAXUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "avalanche-2",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/avalanche-2"
+      ]
+    },
+    "AAVEUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "aave",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/aave"
+      ]
+    },
+    "MSTRBUSDT": {
+      "classification": "NON_CRYPTO",
+      "coin_id": "strategy-tokenized-bstocks",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/strategy-tokenized-bstocks"
+      ]
+    },
+    "CRCLBUSDT": {
+      "classification": "NON_CRYPTO",
+      "coin_id": "circle-internet-group-bstock",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/circle-internet-group-bstock"
+      ]
+    },
+    "TSLABUSDT": {
+      "classification": "NON_CRYPTO",
+      "coin_id": "tesla-bstocks-tokenized-stock",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/tesla-bstocks-tokenized-stock"
+      ]
+    },
+    "HBARUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "hedera-hashgraph",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/hedera-hashgraph"
+      ]
+    },
+    "DOTUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "polkadot",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/polkadot"
+      ]
+    },
+    "TIAUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "celestia",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/celestia"
+      ]
+    },
+    "FILUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "filecoin",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/filecoin"
+      ]
+    },
+    "ADAUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "cardano",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/cardano"
+      ]
+    },
+    "FDUSDUSDT": {
+      "classification": "EXCLUDED_STABLECOIN",
+      "coin_id": "first-digital-usd",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/first-digital-usd"
+      ]
+    },
+    "PAXGUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "pax-gold",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/pax-gold"
+      ]
+    },
+    "INTCBUSDT": {
+      "classification": "NON_CRYPTO",
+      "coin_id": "intel-tokenized-bstocks",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/intel-tokenized-bstocks"
+      ]
+    },
+    "ZROUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "layerzero",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/layerzero"
+      ]
+    },
+    "AVAUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "concierge-io",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/concierge-io"
+      ]
+    },
+    "TQQQBUSDT": {
+      "classification": "NON_CRYPTO",
+      "coin_id": "proshares-ultrapro-qqq-bstocks-tokenized-stock",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/proshares-ultrapro-qqq-bstocks-tokenized-stock"
+      ]
+    },
+    "SKHYBUSDT": {
+      "classification": "NON_CRYPTO",
+      "coin_id": "sk-hynix-bstocks-tokenized-stock",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/sk-hynix-bstocks-tokenized-stock"
+      ]
+    },
+    "XLMUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "stellar",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/stellar"
+      ]
+    },
+    "KORUBUSDT": {
+      "classification": "NON_CRYPTO",
+      "coin_id": "south-korea-bull-3x-etf-bstocks-tokenized-stock",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/south-korea-bull-3x-etf-bstocks-tokenized-stock"
+      ]
+    },
+    "NILUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "nillion",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/nillion"
+      ]
+    },
+    "APTUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "aptos",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/aptos"
+      ]
+    },
+    "AMPUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "amp-token",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/amp-token"
+      ]
+    },
+    "NVDABUSDT": {
+      "classification": "NON_CRYPTO",
+      "coin_id": "nvidia-bstocks",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/nvidia-bstocks"
+      ]
+    },
+    "WLFIUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "world-liberty-financial",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/world-liberty-financial"
+      ]
+    },
+    "OSMOUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "osmosis",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/osmosis"
+      ]
+    },
+    "BCHUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "bitcoin-cash",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/bitcoin-cash"
+      ]
+    },
+    "QQQBUSDT": {
+      "classification": "NON_CRYPTO",
+      "coin_id": "invesco-qqq-trust-bstocks-tokenized-stock",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/invesco-qqq-trust-bstocks-tokenized-stock"
+      ]
+    },
+    "ASTERUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "aster-2",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/aster-2"
+      ]
+    },
+    "MARSCOINUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "marscoin-4",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/marscoin-4"
+      ]
+    },
+    "SUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "sonic-3",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/sonic-3"
+      ]
+    },
+    "CRVUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "curve-dao-token",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/curve-dao-token"
+      ]
+    },
+    "BATUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "basic-attention-token",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/basic-attention-token"
+      ]
+    },
+    "NBISBUSDT": {
+      "classification": "NON_CRYPTO",
+      "coin_id": "nebius-bstocks-tokenized-stock",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/nebius-bstocks-tokenized-stock"
+      ]
+    },
+    "PENGUUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "pudgy-penguins",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/pudgy-penguins"
+      ]
+    },
+    "ERAUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "caldera",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/caldera"
+      ]
+    },
+    "SEIUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "sei-network",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/sei-network"
+      ]
+    },
+    "SNXXBUSDT": {
+      "classification": "NON_CRYPTO",
+      "coin_id": "tradr-2x-long-sndk-etf-bstocks-tokenized-stock",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/tradr-2x-long-sndk-etf-bstocks-tokenized-stock"
+      ]
+    },
+    "XPLUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "plasma",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/plasma"
+      ]
+    },
+    "GRAMUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "the-open-network",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/the-open-network"
+      ]
+    },
+    "OPUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "optimism",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/optimism"
+      ]
+    },
+    "EPICUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "epic-chain",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/epic-chain"
+      ]
+    },
+    "PYTHUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "pyth-network",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/pyth-network"
+      ]
+    },
+    "LSKUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "lisk",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/lisk"
+      ]
+    },
+    "JSTUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "just",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/just"
+      ]
+    },
+    "RAYUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "raydium",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/raydium"
+      ]
+    },
+    "ICPUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "internet-computer",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/internet-computer"
+      ]
+    },
+    "SOXSBUSDT": {
+      "classification": "NON_CRYPTO",
+      "coin_id": "direxion-semiconductor-bear-3x-etf-bstocks-tokenized-stock",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/direxion-semiconductor-bear-3x-etf-bstocks-tokenized-stock"
+      ]
+    },
+    "EIGENUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "eigenlayer",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/eigenlayer"
+      ]
+    },
+    "RWUSDUSDT": {
+      "classification": "EXCLUDED_STABLECOIN",
+      "coin_id": "rwusd",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/rwusd"
+      ]
+    },
+    "LITEBUSDT": {
+      "classification": "NON_CRYPTO",
+      "coin_id": "lumentum-holdings-bstocks-tokenized-stock",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/lumentum-holdings-bstocks-tokenized-stock"
+      ]
+    },
+    "ATOMUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "cosmos",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/cosmos"
+      ]
+    },
+    "XUSDUSDT": {
+      "classification": "EXCLUDED_STABLECOIN",
+      "coin_id": "straitsx-xusd",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/straitsx-xusd"
+      ]
+    },
+    "AMDBUSDT": {
+      "classification": "NON_CRYPTO",
+      "coin_id": "advanced-micro-devices-bstocks-tokenized-stock",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/advanced-micro-devices-bstocks-tokenized-stock"
+      ]
+    },
+    "OPENUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "openledger-2",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/openledger-2"
+      ]
+    },
+    "ZAMAUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "zama",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/zama"
+      ]
+    },
+    "POLUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "polygon-ecosystem-token",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/polygon-ecosystem-token"
+      ]
+    },
+    "\u725b\u6765USDT": {
+      "classification": "CRYPTO",
+      "coin_id": "niu-lai",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/niu-lai"
+      ]
+    },
+    "STXUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "blockstack",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/blockstack"
+      ]
+    },
+    "RENDERUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "render-token",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/render-token"
+      ]
+    },
+    "AUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "vaulta",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/vaulta"
+      ]
+    },
+    "AAOIBUSDT": {
+      "classification": "NON_CRYPTO",
+      "coin_id": "applied-optoelectronics-bstocks-tokenized-stock",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/applied-optoelectronics-bstocks-tokenized-stock"
+      ]
+    },
+    "SHIBUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "shiba-inu",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/shiba-inu"
+      ]
+    },
+    "GOOGLBUSDT": {
+      "classification": "NON_CRYPTO",
+      "coin_id": "alphabet-bstocks-tokenized-stock",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/alphabet-bstocks-tokenized-stock"
+      ]
+    },
+    "BNCBUSDT": {
+      "classification": "NON_CRYPTO",
+      "coin_id": "cea-industries-bstocks-tokenized-stock",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/cea-industries-bstocks-tokenized-stock"
+      ]
+    },
+    "WBTCUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "wrapped-bitcoin",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/wrapped-bitcoin"
+      ]
+    },
+    "ARUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "arweave",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/arweave"
+      ]
+    },
+    "SOLVUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "solv-protocol",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/solv-protocol"
+      ]
+    },
+    "PENDLEUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "pendle",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/pendle"
+      ]
+    },
+    "ENSOUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "enso",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/enso"
+      ]
+    },
+    "ETCUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "ethereum-classic",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/ethereum-classic"
+      ]
+    },
+    "FFUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "falcon-finance-ff",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/falcon-finance-ff"
+      ]
+    },
+    "CAKEUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "pancakeswap-token",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/pancakeswap-token"
+      ]
+    },
+    "RUNEUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "thorchain",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/thorchain"
+      ]
+    },
+    "ZKUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "zksync",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/zksync"
+      ]
+    },
+    "NIGHTUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "midnight-3",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/midnight-3"
+      ]
+    },
+    "OPGUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "opengradient",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/opengradient"
+      ]
+    },
+    "PROMUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "prometeus",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/prometeus"
+      ]
+    },
+    "DUSKUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "dusk-network",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/dusk-network"
+      ]
+    },
+    "PLUMEUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "plume",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/plume"
+      ]
+    },
+    "BFUSDUSDT": {
+      "classification": "EXCLUDED_STABLECOIN",
+      "coin_id": "bfusd",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/bfusd"
+      ]
+    },
+    "METUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "meteora",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/meteora"
+      ]
+    },
+    "JUPUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "jupiter-exchange-solana",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/jupiter-exchange-solana"
+      ]
+    },
+    "VIRTUALUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "virtual-protocol",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/virtual-protocol"
+      ]
+    },
+    "NXPCUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "nexpace",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/nexpace"
+      ]
+    },
+    "WALUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "walrus-2",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/walrus-2"
+      ]
+    },
+    "GALAUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "gala",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/gala"
+      ]
+    },
+    "SYRUPUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "syrup",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/syrup"
+      ]
+    },
+    "PLTRBUSDT": {
+      "classification": "NON_CRYPTO",
+      "coin_id": "palantir-technologies-bstocks-tokenized-stock",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/palantir-technologies-bstocks-tokenized-stock"
+      ]
+    },
+    "AXLUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "axelar",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/axelar"
+      ]
+    },
+    "DRAMBUSDT": {
+      "classification": "NON_CRYPTO",
+      "coin_id": "roundhill-memory-etf-bstocks-tokenized-stock",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/roundhill-memory-etf-bstocks-tokenized-stock"
+      ]
+    },
+    "KAIAUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "kaia",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/kaia"
+      ]
+    },
+    "USDEUSDT": {
+      "classification": "EXCLUDED_STABLECOIN",
+      "coin_id": "ethena-usde",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/ethena-usde"
+      ]
+    },
+    "MEGAUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "megaeth",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/megaeth"
+      ]
+    },
+    "EWYBUSDT": {
+      "classification": "NON_CRYPTO",
+      "coin_id": "ishares-msci-south-korea-etf-bstocks-tokenized-stock",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/ishares-msci-south-korea-etf-bstocks-tokenized-stock"
+      ]
+    },
+    "LUMIAUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "lumia",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/lumia"
+      ]
+    },
+    "METABUSDT": {
+      "classification": "NON_CRYPTO",
+      "coin_id": "meta-platforms-bstocks-tokenized-stock",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/meta-platforms-bstocks-tokenized-stock"
+      ]
+    },
+    "JTOUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "jito-governance-token",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/jito-governance-token"
+      ]
+    },
+    "TSMBUSDT": {
+      "classification": "NON_CRYPTO",
+      "coin_id": "tsmc-bstocks-tokenized-stock",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/tsmc-bstocks-tokenized-stock"
+      ]
+    },
+    "ORCLBUSDT": {
+      "classification": "NON_CRYPTO",
+      "coin_id": "oracle-bstocks-tokenized-stock",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/oracle-bstocks-tokenized-stock"
+      ]
+    },
+    "AMZNBUSDT": {
+      "classification": "NON_CRYPTO",
+      "coin_id": "amazon-bstocks-tokenized-stock",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/amazon-bstocks-tokenized-stock"
+      ]
+    },
+    "CBRSBUSDT": {
+      "classification": "NON_CRYPTO",
+      "coin_id": "cerebras-bstocks-tokenized-stock",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/cerebras-bstocks-tokenized-stock"
+      ]
+    },
+    "KITEUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "kite-2",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/kite-2"
+      ]
+    },
+    "MRVLBUSDT": {
+      "classification": "NON_CRYPTO",
+      "coin_id": "marvell-technology-bstocks-tokenized-stock",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/marvell-technology-bstocks-tokenized-stock"
+      ]
+    },
+    "BONKUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "bonk",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/bonk"
+      ]
+    },
+    "CFXUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "conflux-token",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/conflux-token"
+      ]
+    },
+    "GIGGLEUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "giggle-fund",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/giggle-fund"
+      ]
+    },
+    "\u5e01\u5b89\u4eba\u751fUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "bianrensheng",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/bianrensheng"
+      ]
+    },
+    "ACEUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "endurance",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/endurance"
+      ]
+    },
+    "AXTIBUSDT": {
+      "classification": "NON_CRYPTO",
+      "coin_id": "axt-bstocks-tokenized-stock",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/axt-bstocks-tokenized-stock"
+      ]
+    },
+    "SKYUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "sky",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/sky"
+      ]
+    },
+    "AVGOBUSDT": {
+      "classification": "NON_CRYPTO",
+      "coin_id": "broadcom-bstocks-tokenized-stock",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/broadcom-bstocks-tokenized-stock"
+      ]
+    },
+    "BMTUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "bubblemaps",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/bubblemaps"
+      ]
+    },
+    "INITUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "initia",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/initia"
+      ]
+    },
+    "ZILUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "zilliqa",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/zilliqa"
+      ]
+    },
+    "MINAUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "mina-protocol",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/mina-protocol"
+      ]
+    },
+    "WIFUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "dogwifcoin",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/dogwifcoin"
+      ]
+    },
+    "SUPERUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "superfarm",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/superfarm"
+      ]
+    },
+    "EDUUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "edu-coin",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/edu-coin"
+      ]
+    },
+    "ORCAUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "orca",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/orca"
+      ]
+    },
+    "HUMAUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "huma-finance",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/huma-finance"
+      ]
+    },
+    "RSRUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "reserve-rights-token",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/reserve-rights-token"
+      ]
+    },
+    "TSTUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "test-3",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/test-3"
+      ]
+    },
+    "MOVRUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "moonriver",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/moonriver"
+      ]
+    },
+    "BOMEUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "book-of-meme",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/book-of-meme"
+      ]
+    },
+    "METISUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "metis-token",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/metis-token"
+      ]
+    },
+    "BLURUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "blur",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/blur"
+      ]
+    },
+    "SPYBUSDT": {
+      "classification": "NON_CRYPTO",
+      "coin_id": "spy-bstocks-tokenized-stock",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/spy-bstocks-tokenized-stock"
+      ]
+    },
+    "SAGAUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "saga-2",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/saga-2"
+      ]
+    },
+    "SKLUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "skale",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/skale"
+      ]
+    },
+    "JASMYUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "jasmycoin",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/jasmycoin"
+      ]
+    },
+    "ONTUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "ontology",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/ontology"
+      ]
+    },
+    "ORDIUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "ordinals",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/ordinals"
+      ]
+    },
+    "INTWBUSDT": {
+      "classification": "NON_CRYPTO",
+      "coin_id": "graniteshares-2x-long-intc-etf-bstocks-tokenized-stock",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/graniteshares-2x-long-intc-etf-bstocks-tokenized-stock"
+      ]
+    },
+    "CRWVBUSDT": {
+      "classification": "NON_CRYPTO",
+      "coin_id": "coreweave-bstocks-tokenized-stock",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/coreweave-bstocks-tokenized-stock"
+      ]
+    },
+    "FLOKIUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "floki",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/floki"
+      ]
+    },
+    "COINBUSDT": {
+      "classification": "NON_CRYPTO",
+      "coin_id": "coinbase-bstocks-tokenized-stock",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/coinbase-bstocks-tokenized-stock"
+      ]
+    },
+    "WDCBUSDT": {
+      "classification": "NON_CRYPTO",
+      "coin_id": "western-digital-bstocks-tokenized-stock",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/western-digital-bstocks-tokenized-stock"
+      ]
+    },
+    "NEIROUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "neiro-3",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/neiro-3"
+      ]
+    },
+    "CKBUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "nervos-network",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/nervos-network"
+      ]
+    },
+    "HEIUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "heima",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/heima"
+      ]
+    },
+    "BIOUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "bio-protocol",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/bio-protocol"
+      ]
+    },
+    "RADUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "radicle",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/radicle"
+      ]
+    },
+    "APEUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "apecoin",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/apecoin"
+      ]
+    },
+    "SLPUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "smooth-love-potion",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/smooth-love-potion"
+      ]
+    },
+    "SYNUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "synapse-2",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/synapse-2"
+      ]
+    },
+    "VELODROMEUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "velodrome-finance",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/velodrome-finance"
+      ]
+    },
+    "VETUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "vechain",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/vechain"
+      ]
+    },
+    "GLMRUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "moonbeam",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/moonbeam"
+      ]
+    },
+    "BEBUSDT": {
+      "classification": "NON_CRYPTO",
+      "coin_id": "bloom-energy-bstocks-tokenized-stock",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/bloom-energy-bstocks-tokenized-stock"
+      ]
+    },
+    "LUNCUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "terra-luna",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/terra-luna"
+      ]
+    },
+    "OPNUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "opinion",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/opinion"
+      ]
+    },
+    "PARTIUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "particle-network",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/particle-network"
+      ]
+    },
+    "KERNELUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "kernel-2",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/kernel-2"
+      ]
+    },
+    "KAITOUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "kaito",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/kaito"
+      ]
+    },
+    "BMNRBUSDT": {
+      "classification": "NON_CRYPTO",
+      "coin_id": "bitmine-immersion-technologies-bstocks-tokenized-stock",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/bitmine-immersion-technologies-bstocks-tokenized-stock"
+      ]
+    },
+    "AAPLBUSDT": {
+      "classification": "NON_CRYPTO",
+      "coin_id": "apple-bstocks-tokenized-stock",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/apple-bstocks-tokenized-stock"
+      ]
+    },
+    "GNSUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "gains-network",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/gains-network"
+      ]
+    },
+    "REZUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "renzo",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/renzo"
+      ]
+    },
+    "DODOUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "dodo",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/dodo"
+      ]
+    },
+    "DYDXUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "dydx-chain",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/dydx-chain"
+      ]
+    },
+    "RVNUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "ravencoin",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/ravencoin"
+      ]
+    },
+    "KMNOUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "kamino",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/kamino"
+      ]
+    },
+    "COTIUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "coti",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/coti"
+      ]
+    },
+    "QKCUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "quark-chain",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/quark-chain"
+      ]
+    },
+    "IRENBUSDT": {
+      "classification": "NON_CRYPTO",
+      "coin_id": "iren-limited-bstocks-tokenized-stock",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/iren-limited-bstocks-tokenized-stock"
+      ]
+    },
+    "IOTAUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "iota",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/iota"
+      ]
+    },
+    "ACMUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "ac-milan-fan-token",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/ac-milan-fan-token"
+      ]
+    },
+    "BANKUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "lorenzo-protocol",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/lorenzo-protocol"
+      ]
+    },
+    "LUNAUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "terra-luna-2",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/terra-luna-2"
+      ]
+    },
+    "SPKUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "spark-2",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/spark-2"
+      ]
+    },
+    "ONEUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "harmony",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/harmony"
+      ]
+    },
+    "ATUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "apro",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/apro"
+      ]
+    },
+    "FORMUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "four",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/four"
+      ]
+    },
+    "MITOUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "mitosis",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/mitosis"
+      ]
+    },
+    "0GUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "zero-gravity",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/zero-gravity"
+      ]
+    },
+    "AUDIOUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "audius",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/audius"
+      ]
+    },
+    "MRNABUSDT": {
+      "classification": "NON_CRYPTO",
+      "coin_id": "moderna-bstocks-tokenized-stock",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/moderna-bstocks-tokenized-stock"
+      ]
+    },
+    "2ZUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "doublezero",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/doublezero"
+      ]
+    },
+    "STRAXUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "stratis",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/stratis"
+      ]
+    },
+    "ZBTUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "zerobase",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/zerobase"
+      ]
+    },
+    "LINEAUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "linea",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/linea"
+      ]
+    },
+    "MANTAUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "manta-network",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/manta-network"
+      ]
+    },
+    "SOPHUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "sophon",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/sophon"
+      ]
+    },
+    "RKLBBUSDT": {
+      "classification": "NON_CRYPTO",
+      "coin_id": "rocket-lab-bstocks-tokenized-stock",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/rocket-lab-bstocks-tokenized-stock"
+      ]
+    },
+    "ENSUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "ethereum-name-service",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/ethereum-name-service"
+      ]
+    },
+    "FOGOUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "fogo",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/fogo"
+      ]
+    },
+    "PNUTUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "peanut-the-squirrel",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/peanut-the-squirrel"
+      ]
+    },
+    "ESPUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "espresso",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/espresso"
+      ]
+    },
+    "REUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "re",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/re"
+      ]
+    },
+    "MVLLBUSDT": {
+      "classification": "NON_CRYPTO",
+      "coin_id": "graniteshares-2x-long-mrvl-etf-bstocks-tokenized-stock",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/graniteshares-2x-long-mrvl-etf-bstocks-tokenized-stock"
+      ]
+    },
+    "TRBUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "tellor",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/tellor"
+      ]
+    },
+    "PROVEUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "succinct",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/succinct"
+      ]
+    },
+    "XTZUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "tezos",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/tezos"
+      ]
+    },
+    "IOTXUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "iotex",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/iotex"
+      ]
+    },
+    "AMATBUSDT": {
+      "classification": "NON_CRYPTO",
+      "coin_id": "applied-materials-bstocks-tokenized-stock",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/applied-materials-bstocks-tokenized-stock"
+      ]
+    },
+    "LPTUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "livepeer",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/livepeer"
+      ]
+    },
+    "MUUBUSDT": {
+      "classification": "NON_CRYPTO",
+      "coin_id": "direxion-mu-bull-2x-etf-bstocks-tokenized-stock",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/direxion-mu-bull-2x-etf-bstocks-tokenized-stock"
+      ]
+    },
+    "COHRBUSDT": {
+      "classification": "NON_CRYPTO",
+      "coin_id": "coherent-bstocks-tokenized-stock",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/coherent-bstocks-tokenized-stock"
+      ]
+    },
+    "SHAZBUSDT": {
+      "classification": "NON_CRYPTO",
+      "coin_id": "sharonai-bstocks-tokenized-stock",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/sharonai-bstocks-tokenized-stock"
+      ]
+    },
+    "BELUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "bella-protocol",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/bella-protocol"
+      ]
+    },
+    "MSFTBUSDT": {
+      "classification": "NON_CRYPTO",
+      "coin_id": "microsoft-bstocks-tokenized-stock",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/microsoft-bstocks-tokenized-stock"
+      ]
+    },
+    "STOUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "stakestone",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/stakestone"
+      ]
+    },
+    "ALLOUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "allora",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/allora"
+      ]
+    },
+    "HOMEUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "home",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/home"
+      ]
+    },
+    "PEOPLEUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "constitutiondao",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/constitutiondao"
+      ]
+    },
+    "ADXUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "adex",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/adex"
+      ]
+    },
+    "LQTYUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "liquity",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/liquity"
+      ]
+    },
+    "CETUSUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "cetus-protocol",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/cetus-protocol"
+      ]
+    },
+    "AUCTIONUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "auction",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/auction"
+      ]
+    },
+    "SAHARAUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "sahara-ai",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/sahara-ai"
+      ]
+    },
+    "ASTSBUSDT": {
+      "classification": "NON_CRYPTO",
+      "coin_id": "ast-spacemobile-bstocks-tokenized-stock",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/ast-spacemobile-bstocks-tokenized-stock"
+      ]
+    },
+    "LAUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "lagrange",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/lagrange"
+      ]
+    },
+    "ALABBUSDT": {
+      "classification": "NON_CRYPTO",
+      "coin_id": "astera-labs-bstocks-tokenized-stock",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/astera-labs-bstocks-tokenized-stock"
+      ]
+    },
+    "BICOUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "biconomy",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/biconomy"
+      ]
+    },
+    "1000CHEEMSUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "1000chems",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/1000chems"
+      ]
+    },
+    "BBUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "bouncebit",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/bouncebit"
+      ]
+    },
+    "IMXUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "immutable-x",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/immutable-x"
+      ]
+    },
+    "EURIUSDT": {
+      "classification": "EXCLUDED_STABLECOIN",
+      "coin_id": "eurite",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/eurite"
+      ]
+    },
+    "JUVUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "juventus-fan-token",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/juventus-fan-token"
+      ]
+    },
+    "C98USDT": {
+      "classification": "CRYPTO",
+      "coin_id": "coin98",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/coin98"
+      ]
+    },
+    "CITYUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "manchester-city-fan-token",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/manchester-city-fan-token"
+      ]
+    },
+    "IDUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "space-id",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/space-id"
+      ]
+    },
+    "NEXOUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "nexo",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/nexo"
+      ]
+    },
+    "EGLDUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "elrond-erd-2",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/elrond-erd-2"
+      ]
+    },
+    "WBETHUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "wrapped-beacon-eth",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/wrapped-beacon-eth"
+      ]
+    },
+    "ARKUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "ark",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/ark"
+      ]
+    },
+    "THETAUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "theta-token",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/theta-token"
+      ]
+    },
+    "USDSUSDT": {
+      "classification": "EXCLUDED_STABLECOIN",
+      "coin_id": "usds",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/usds"
+      ]
+    },
+    "MMTUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "momentum-3",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/momentum-3"
+      ]
+    },
+    "USTCUSDT": {
+      "classification": "EXCLUDED_STABLECOIN",
+      "coin_id": "terrausd",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/terrausd"
+      ]
+    },
+    "MANAUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "decentraland",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/decentraland"
+      ]
+    },
+    "CELOUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "celo",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/celo"
+      ]
+    },
+    "DELLBUSDT": {
+      "classification": "NON_CRYPTO",
+      "coin_id": "dell-bstocks-tokenized-stock",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/dell-bstocks-tokenized-stock"
+      ]
+    },
+    "SECZBUSDT": {
+      "classification": "NON_CRYPTO",
+      "coin_id": "securitize-bstocks-tokenized-stock",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/securitize-bstocks-tokenized-stock"
+      ]
+    },
+    "TURBOUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "turbo",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/turbo"
+      ]
+    },
+    "ARMBUSDT": {
+      "classification": "NON_CRYPTO",
+      "coin_id": "arm-bstocks-tokenized-stock",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/arm-bstocks-tokenized-stock"
+      ]
+    },
+    "WINUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "wink",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/wink"
+      ]
+    },
+    "HOODBUSDT": {
+      "classification": "NON_CRYPTO",
+      "coin_id": "robinhood-bstocks-tokenized-stock",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/robinhood-bstocks-tokenized-stock"
+      ]
+    },
+    "SAPIENUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "sapien-2",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/sapien-2"
+      ]
+    },
+    "AIGENSYNUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "gensyn",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/gensyn"
+      ]
+    },
+    "PORTALUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "portal-2",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/portal-2"
+      ]
+    },
+    "MEMEUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "memecoin-2",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/memecoin-2"
+      ]
+    },
+    "ZRXUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "0x",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/0x"
+      ]
+    },
+    "WCTUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "connect-token-wct",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/connect-token-wct"
+      ]
+    },
+    "LAZIOUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "lazio-fan-token",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/lazio-fan-token"
+      ]
+    },
+    "QIUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "benqi",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/benqi"
+      ]
+    },
+    "NOMUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "nomina",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/nomina"
+      ]
+    },
+    "XNOUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "nano",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/nano"
+      ]
+    },
+    "NEOUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "neo",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/neo"
+      ]
+    },
+    "NOTUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "notcoin",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/notcoin"
+      ]
+    },
+    "CVCUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "civic",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/civic"
+      ]
+    },
+    "AWEUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "stp-network",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/stp-network"
+      ]
+    },
+    "AIUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "sleepless-ai",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/sleepless-ai"
+      ]
+    },
+    "GLWBUSDT": {
+      "classification": "NON_CRYPTO",
+      "coin_id": "corning-bstocks-tokenized-stock",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/corning-bstocks-tokenized-stock"
+      ]
+    },
+    "GMXUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "gmx",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/gmx"
+      ]
+    },
+    "EULUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "euler",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/euler"
+      ]
+    },
+    "ROBOUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "robo-token-2",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/robo-token-2"
+      ]
+    },
+    "VTHOUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "vethor-token",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/vethor-token"
+      ]
+    },
+    "SHELLUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "myshell",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/myshell"
+      ]
+    },
+    "ATMUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "atletico-madrid",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/atletico-madrid"
+      ]
+    },
+    "ALICEUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "my-neighbor-alice",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/my-neighbor-alice"
+      ]
+    },
+    "OGUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "og-fan-token",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/og-fan-token"
+      ]
+    },
+    "XAIUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "xai-blockchain",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/xai-blockchain"
+      ]
+    },
+    "TREEUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "treehouse",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/treehouse"
+      ]
+    },
+    "FIDAUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "bonfida",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/bonfida"
+      ]
+    },
+    "BREVUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "brevis",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/brevis"
+      ]
+    },
+    "CGPTUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "chaingpt",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/chaingpt"
+      ]
+    },
+    "GUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "g-token",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/g-token"
+      ]
+    },
+    "REQUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "request-network",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/request-network"
+      ]
+    },
+    "BABABUSDT": {
+      "classification": "NON_CRYPTO",
+      "coin_id": "alibaba-bstocks-tokenized-stock",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/alibaba-bstocks-tokenized-stock"
+      ]
+    },
+    "ANIMEUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "anime",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/anime"
+      ]
+    },
+    "EDENUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "openeden",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/openeden"
+      ]
+    },
+    "QCOMBUSDT": {
+      "classification": "NON_CRYPTO",
+      "coin_id": "qualcomm-bstocks-tokenized-stock",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/qualcomm-bstocks-tokenized-stock"
+      ]
+    },
+    "1000SATSUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "1000sats-ordinals",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/1000sats-ordinals"
+      ]
+    },
+    "PSGUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "paris-saint-germain-fan-token",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/paris-saint-germain-fan-token"
+      ]
+    },
+    "DIAUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "dia-data",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/dia-data"
+      ]
+    },
+    "CYPHBUSDT": {
+      "classification": "NON_CRYPTO",
+      "coin_id": "cypherpunk-technologies-bstocks-tokenized-stock",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/cypherpunk-technologies-bstocks-tokenized-stock"
+      ]
+    },
+    "ZKCUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "boundless",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/boundless"
+      ]
+    },
+    "AGPUBUSDT": {
+      "classification": "NON_CRYPTO",
+      "coin_id": "axe-compute-bstocks-tokenized-stock",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/axe-compute-bstocks-tokenized-stock"
+      ]
+    },
+    "SUNUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "sun-token",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/sun-token"
+      ]
+    },
+    "RONINUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "ronin",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/ronin"
+      ]
+    },
+    "BNSOLUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "binance-staked-sol",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/binance-staked-sol"
+      ]
+    },
+    "SQQQBUSDT": {
+      "classification": "NON_CRYPTO",
+      "coin_id": "proshares-ultrapro-short-qqq-bstocks-tokenized-stock",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/proshares-ultrapro-short-qqq-bstocks-tokenized-stock"
+      ]
+    },
+    "NEWTUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "newton-protocol",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/newton-protocol"
+      ]
+    },
+    "SMCIBUSDT": {
+      "classification": "NON_CRYPTO",
+      "coin_id": "super-micro-computer-bstocks-tokenized-stock",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/super-micro-computer-bstocks-tokenized-stock"
+      ]
+    },
+    "MBLUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "moviebloc",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/moviebloc"
+      ]
+    },
+    "BARUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "fc-barcelona-fan-token",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/fc-barcelona-fan-token"
+      ]
+    },
+    "YBUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "yield-basis",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/yield-basis"
+      ]
+    },
+    "RAREUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "superrare",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/superrare"
+      ]
+    },
+    "SSVUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "ssv-network",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/ssv-network"
+      ]
+    },
+    "YGGUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "yield-guild-games",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/yield-guild-games"
+      ]
+    },
+    "BTTCUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "bittorrent",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/bittorrent"
+      ]
+    },
+    "TKOUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "tokocrypto",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/tokocrypto"
+      ]
+    },
+    "FLUXUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "zelcash",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/zelcash"
+      ]
+    },
+    "HMSTRUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "hamster-kombat",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/hamster-kombat"
+      ]
+    },
+    "HYPERUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "hyperlane",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/hyperlane"
+      ]
+    },
+    "AIXBTUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "aixbt",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/aixbt"
+      ]
+    },
+    "COWUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "cow-protocol",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/cow-protocol"
+      ]
+    },
+    "KSMUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "kusama",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/kusama"
+      ]
+    },
+    "CRDOBUSDT": {
+      "classification": "NON_CRYPTO",
+      "coin_id": "credo-technology-bstocks-tokenized-stock",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/credo-technology-bstocks-tokenized-stock"
+      ]
+    },
+    "SOMIUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "somnia",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/somnia"
+      ]
+    },
+    "ZKPUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "zkpass",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/zkpass"
+      ]
+    },
+    "SMHBUSDT": {
+      "classification": "NON_CRYPTO",
+      "coin_id": "vaneck-semiconductor-etf-bstocks-tokenized-stock",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/vaneck-semiconductor-etf-bstocks-tokenized-stock"
+      ]
+    },
+    "PORTOUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "fc-porto",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/fc-porto"
+      ]
+    },
+    "RIFUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "rif-token",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/rif-token"
+      ]
+    },
+    "ACHUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "alchemy-pay",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/alchemy-pay"
+      ]
+    },
+    "ASMLBUSDT": {
+      "classification": "NON_CRYPTO",
+      "coin_id": "asml-bstocks-tokenized-stock",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/asml-bstocks-tokenized-stock"
+      ]
+    },
+    "HOLOUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "holoworld",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/holoworld"
+      ]
+    },
+    "ASRUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "as-roma-fan-token",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/as-roma-fan-token"
+      ]
+    },
+    "DGBUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "digibyte",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/digibyte"
+      ]
+    },
+    "BARDUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "lombard-protocol",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/lombard-protocol"
+      ]
+    },
+    "DCRUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "decred",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/decred"
+      ]
+    },
+    "ANKRUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "ankr",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/ankr"
+      ]
+    },
+    "TLMUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "alien-worlds",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/alien-worlds"
+      ]
+    },
+    "CTKUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "certik",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/certik"
+      ]
+    },
+    "KNCUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "kyber-network-crystal",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/kyber-network-crystal"
+      ]
+    },
+    "NOKBUSDT": {
+      "classification": "NON_CRYPTO",
+      "coin_id": "nokia-bstocks-tokenized-stock",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/nokia-bstocks-tokenized-stock"
+      ]
+    },
+    "MEUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "magic-eden",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/magic-eden"
+      ]
+    },
+    "XVGUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "verge",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/verge"
+      ]
+    },
+    "UMAUSDT": {
+      "classification": "CRYPTO",
+      "coin_id": "uma",
+      "reviewed_at_utc": "2026-10-20",
+      "sources": [
+        "https://api.coingecko.com/api/v3/exchanges/binance/tickers",
+        "https://www.coingecko.com/en/coins/uma"
+      ]
     }
   }
 }

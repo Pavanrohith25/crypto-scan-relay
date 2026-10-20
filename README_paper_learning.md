@@ -63,3 +63,11 @@ The separate long/short online regression learns net R from the same six frozen 
 Added verified STRK, FET, LINK, HYPE and PEPE identities; MUB remains blocked pending identity evidence. This is a prospective coverage correction, not a new backtest or strategy improvement claim. Existing freshness, per-symbol cooldown, position, target and stop rules remain unchanged.
 
 `paper_learning/admission_events.jsonl` records first observations and reason changes per trigger. Repeated identical decisions are deduplicated in persisted state. `report.json` includes latest reason counts and recent decisions. Accepted IDs retain ACCEPTED; rejects can be reconsidered only under the existing admission rules. Old triggers first seen by diagnostics are labelled STALE_AT_OBSERVATION or PRE_ACTIVATION, not attributed a reconstructed historical rejection. The trade journal and Telegram delivery log remain separate.
+
+## Full eligible spot coverage (2026-10-20)
+
+The swing service now checks every verified active Binance USDT spot pair above the unchanged $10M daily volume floor, rather than the first 20 by activity. It returns all directional candidates instead of eight. Entry/target/stop/cooldown/freshness rules remain unchanged. The relay evaluates all pending observations using five concurrent candle requests rather than updating only twelve observations per run.
+
+Identity snapshot expanded from 135 to 399 crypto classifications, cross-checking exact Binance/USDT markets against CoinGecko identities. The snapshot includes older verified assets; actual active/liquid coverage is smaller and fluctuates. Stock/ETF tokens (including MUB = Micron), stablecoins and unmapped identities are blocked. CoinGecko pages 1-8 were reviewed; page 9 was rate-limited. This is broad coverage, not a claim of complete or automatic new-listing coverage. New identities require another reviewed snapshot. Both repositories carry the same identity snapshot.
+
+This universe expansion changes the sample of future calls. Earlier win rates are not validation of the expanded universe. There is no personal ledger and no new fear-based blocking rule.
