@@ -2,17 +2,16 @@
   "admission_diagnostics": {
     "latest_reason_counts": {
       "ACCEPTED": 23,
-      "POSITION_ALREADY_OPEN": 1,
       "PRE_ACTIVATION": 66,
-      "STALE_AT_OBSERVATION": 33
+      "STALE_AT_OBSERVATION": 34
     },
     "logging_started_ms": 1792454460377,
     "note": "Reasons reflect observation time; old triggers are not historical rejection evidence.",
     "recent_decisions": [
       {
         "id": "HYPEUSDT-1792605706139",
-        "observed_ms": 1792605716290,
-        "reason": "POSITION_ALREADY_OPEN",
+        "observed_ms": 1792606625710,
+        "reason": "STALE_AT_OBSERVATION",
         "side": "LONG",
         "signal_ms": 1792605706139,
         "symbol": "HYPEUSDT"
@@ -171,7 +170,7 @@
       }
     ]
   },
-  "as_of_ms": 1792606297362,
+  "as_of_ms": 1792606625710,
   "limitations": [
     "Spot proxy; shorts are hypothetical, not futures execution.",
     "Scores are uncalibrated; first 30 resolved trades per side are warmup.",
