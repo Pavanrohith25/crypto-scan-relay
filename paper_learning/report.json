@@ -2,12 +2,21 @@
   "admission_diagnostics": {
     "latest_reason_counts": {
       "ACCEPTED": 26,
+      "POSITION_ALREADY_OPEN": 1,
       "PRE_ACTIVATION": 66,
       "STALE_AT_OBSERVATION": 34
     },
     "logging_started_ms": 1792454460377,
     "note": "Reasons reflect observation time; old triggers are not historical rejection evidence.",
     "recent_decisions": [
+      {
+        "id": "LINKUSDT-1792620101273",
+        "observed_ms": 1792620110948,
+        "reason": "POSITION_ALREADY_OPEN",
+        "side": "LONG",
+        "signal_ms": 1792620101273,
+        "symbol": "LINKUSDT"
+      },
       {
         "id": "FETUSDT-1792616548720",
         "observed_ms": 1792616559172,
@@ -159,18 +168,10 @@
         "side": "LONG",
         "signal_ms": 1791298880779,
         "symbol": "ADAUSDT"
-      },
-      {
-        "id": "APTUSDT-1790361323278",
-        "observed_ms": 1792454460377,
-        "reason": "PRE_ACTIVATION",
-        "side": "LONG",
-        "signal_ms": 1790361323278,
-        "symbol": "APTUSDT"
       }
     ]
   },
-  "as_of_ms": 1792619831185,
+  "as_of_ms": 1792620110948,
   "limitations": [
     "Spot proxy; shorts are hypothetical, not futures execution.",
     "Scores are uncalibrated; first 30 resolved trades per side are warmup.",
