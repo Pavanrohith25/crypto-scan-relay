@@ -1,13 +1,21 @@
 {
   "admission_diagnostics": {
     "latest_reason_counts": {
-      "ACCEPTED": 20,
+      "ACCEPTED": 21,
       "PRE_ACTIVATION": 66,
       "STALE_AT_OBSERVATION": 33
     },
     "logging_started_ms": 1792454460377,
     "note": "Reasons reflect observation time; old triggers are not historical rejection evidence.",
     "recent_decisions": [
+      {
+        "id": "BCHUSDT-1792575020619",
+        "observed_ms": 1792575029292,
+        "reason": "ACCEPTED",
+        "side": "LONG",
+        "signal_ms": 1792575020619,
+        "symbol": "BCHUSDT"
+      },
       {
         "id": "HYPEUSDT-1792544533332",
         "observed_ms": 1792544544548,
@@ -159,18 +167,10 @@
         "side": "LONG",
         "signal_ms": 1791309686233,
         "symbol": "AVAXUSDT"
-      },
-      {
-        "id": "AVAXUSDT-1791759693933",
-        "observed_ms": 1792454460377,
-        "reason": "STALE_AT_OBSERVATION",
-        "side": "LONG",
-        "signal_ms": 1791759693933,
-        "symbol": "AVAXUSDT"
       }
     ]
   },
-  "as_of_ms": 1792566705028,
+  "as_of_ms": 1792575029292,
   "limitations": [
     "Spot proxy; shorts are hypothetical, not futures execution.",
     "Scores are uncalibrated; first 30 resolved trades per side are warmup.",
@@ -183,11 +183,11 @@
   "panels": {
     "LONG": {
       "data_errors": 0,
-      "entries": 8,
+      "entries": 9,
       "fixed_half_brier_baseline": null,
       "mean_net_pct": -0.6549999999999998,
       "model_updates": 6,
-      "open_or_pending": 2,
+      "open_or_pending": 3,
       "prequential_brier": null,
       "resolved": 6,
       "scored_resolved": 0,
