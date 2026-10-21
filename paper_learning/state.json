@@ -40,6 +40,14 @@
       "signal_ms": 1792067482021,
       "symbol": "AAVEUSDT"
     },
+    "AAVEUSDT-1792580506276": {
+      "id": "AAVEUSDT-1792580506276",
+      "observed_ms": 1792580516144,
+      "reason": "ACCEPTED",
+      "side": "LONG",
+      "signal_ms": 1792580506276,
+      "symbol": "AAVEUSDT"
+    },
     "ADAUSDT-1790946318834": {
       "id": "ADAUSDT-1790946318834",
       "observed_ms": 1792454460377,
@@ -640,6 +648,14 @@
       "signal_ms": 1792003543306,
       "symbol": "QNTUSDT"
     },
+    "QNTUSDT-1792580506276": {
+      "id": "QNTUSDT-1792580506276",
+      "observed_ms": 1792580516144,
+      "reason": "ACCEPTED",
+      "side": "LONG",
+      "signal_ms": 1792580506276,
+      "symbol": "QNTUSDT"
+    },
     "SANDUSDT-1791595831062": {
       "id": "SANDUSDT-1791595831062",
       "observed_ms": 1792454460377,
@@ -990,8 +1006,56 @@
   },
   "started_ms": 1791382577243,
   "trades": {
+    "AAVEUSDT-1792580506276": {
+      "checked_ms": 0,
+      "entry_ms": 1792580700000,
+      "features": [
+        1.0,
+        -0.0632,
+        0.0060999999999999995,
+        0.17593333333333333,
+        0.023,
+        0.37000000000000005,
+        0.61
+      ],
+      "id": "AAVEUSDT-1792580506276",
+      "mae_pct": 0.0,
+      "mfe_pct": 0.0,
+      "model_hash": "afb0327d96ce29ca0f66aabe9cb1fd1b479cd81c8bd2a2c54d0c50caa98da9a2",
+      "model_n": 6,
+      "next_bar_ms": 1792580700000,
+      "predicted_ms": 1792580516144,
+      "score": null,
+      "side": "LONG",
+      "signal_ms": 1792580506276,
+      "snapshot": {
+        "bias": "LONG",
+        "bounce_from_12h_low_pct": 1.269,
+        "distance_from_1h_sma10_pct": 0.115,
+        "momentum_12h_pct": 0.122,
+        "momentum_24h_pct": 5.278,
+        "momentum_3h_pct": -0.632,
+        "price": 155.6,
+        "pullback_from_12h_high_pct": -1.768,
+        "quote_volume_24h": 16873141.73,
+        "reasons": [
+          "1h and 4h trend structure aligned"
+        ],
+        "retest_reason": "long pullback reached trend area and buying resumed",
+        "setup_state": "CONTINUATION_TRIGGER",
+        "swing_score": 61.0,
+        "symbol": "AAVEUSDT",
+        "volume_expansion_1h": 1.11,
+        "warnings": []
+      },
+      "source": "BINANCE_SPOT_PROXY",
+      "status": "PENDING",
+      "stop_pct": 6.0,
+      "symbol": "AAVEUSDT",
+      "target_pct": 5.0
+    },
     "BCHUSDT-1792575020619": {
-      "checked_ms": 1792580225102,
+      "checked_ms": 1792580514989,
       "entry_ms": 1792575300000,
       "entry_price": 287.9,
       "features": [
@@ -1005,11 +1069,11 @@
       ],
       "id": "BCHUSDT-1792575020619",
       "mae_pct": 0.9030913511635874,
-      "mark_return_pct": -0.13893713094823568,
+      "mark_return_pct": -0.06946856547411784,
       "mfe_pct": 0.10420284821119896,
       "model_hash": "afb0327d96ce29ca0f66aabe9cb1fd1b479cd81c8bd2a2c54d0c50caa98da9a2",
       "model_n": 6,
-      "next_bar_ms": 1792580100000,
+      "next_bar_ms": 1792580400000,
       "predicted_ms": 1792575029292,
       "score": null,
       "side": "LONG",
@@ -1043,7 +1107,7 @@
       "target_pct": 5.0
     },
     "BTCUSDT-1791450054416": {
-      "checked_ms": 1792580225102,
+      "checked_ms": 1792580514989,
       "entry_ms": 1791450300000,
       "entry_price": 83013.8,
       "features": [
@@ -1057,11 +1121,11 @@
       ],
       "id": "BTCUSDT-1791450054416",
       "mae_pct": 1.6120211338355839,
-      "mark_return_pct": -0.46939183605618773,
+      "mark_return_pct": -0.4652359005370199,
       "mfe_pct": 3.8714045134664365,
       "model_hash": "d00c3a24ef0fd037da9e46e3397b77adfe716660f6d7e76afb8984ea77092eae",
       "model_n": 0,
-      "next_bar_ms": 1792580100000,
+      "next_bar_ms": 1792580400000,
       "predicted_ms": 1791450062402,
       "score": null,
       "side": "SHORT",
@@ -1374,7 +1438,7 @@
       "target_pct": 5.0
     },
     "ETHUSDT-1792054886002": {
-      "checked_ms": 1792580225102,
+      "checked_ms": 1792580514989,
       "entry_ms": 1792055100000,
       "entry_price": 2375.78,
       "features": [
@@ -1388,11 +1452,11 @@
       ],
       "id": "ETHUSDT-1792054886002",
       "mae_pct": 4.976049970956908,
-      "mark_return_pct": -3.404776536547982,
+      "mark_return_pct": -3.4355032873414126,
       "mfe_pct": 2.1702346176834753,
       "model_hash": "8e1b832748f26efdcd9fcce2072716280c7a3dee468afccf23c74f887cad7ae0",
       "model_n": 7,
-      "next_bar_ms": 1792580100000,
+      "next_bar_ms": 1792580400000,
       "predicted_ms": 1792054892267,
       "score": null,
       "side": "SHORT",
@@ -1424,7 +1488,7 @@
       "target_pct": 5.0
     },
     "HYPEUSDT-1792544533332": {
-      "checked_ms": 1792580225102,
+      "checked_ms": 1792580514989,
       "entry_ms": 1792544700000,
       "entry_price": 81.02,
       "features": [
@@ -1438,11 +1502,11 @@
       ],
       "id": "HYPEUSDT-1792544533332",
       "mae_pct": 0.5307331523080605,
-      "mark_return_pct": 0.2962231547766203,
+      "mark_return_pct": 0.32090841767464795,
       "mfe_pct": 1.6909405085164142,
       "model_hash": "afb0327d96ce29ca0f66aabe9cb1fd1b479cd81c8bd2a2c54d0c50caa98da9a2",
       "model_n": 6,
-      "next_bar_ms": 1792580100000,
+      "next_bar_ms": 1792580400000,
       "predicted_ms": 1792544544548,
       "score": null,
       "side": "LONG",
@@ -1475,7 +1539,7 @@
       "target_pct": 5.0
     },
     "LINKUSDT-1792544533332": {
-      "checked_ms": 1792580225102,
+      "checked_ms": 1792580514989,
       "entry_ms": 1792544700000,
       "entry_price": 12.374,
       "features": [
@@ -1489,11 +1553,11 @@
       ],
       "id": "LINKUSDT-1792544533332",
       "mae_pct": 0.864716340714411,
-      "mark_return_pct": -0.2666882172296825,
+      "mark_return_pct": -0.2505252949733361,
       "mfe_pct": 0.6869241958946004,
       "model_hash": "afb0327d96ce29ca0f66aabe9cb1fd1b479cd81c8bd2a2c54d0c50caa98da9a2",
       "model_n": 6,
-      "next_bar_ms": 1792580100000,
+      "next_bar_ms": 1792580400000,
       "predicted_ms": 1792544544548,
       "score": null,
       "side": "LONG",
@@ -1915,6 +1979,54 @@
       "symbol": "QNTUSDT",
       "target_pct": 5.0
     },
+    "QNTUSDT-1792580506276": {
+      "checked_ms": 0,
+      "entry_ms": 1792580700000,
+      "features": [
+        1.0,
+        -0.036,
+        0.1004,
+        0.13826666666666665,
+        0.10800000000000001,
+        0.3066666666666667,
+        0.51
+      ],
+      "id": "QNTUSDT-1792580506276",
+      "mae_pct": 0.0,
+      "mfe_pct": 0.0,
+      "model_hash": "afb0327d96ce29ca0f66aabe9cb1fd1b479cd81c8bd2a2c54d0c50caa98da9a2",
+      "model_n": 6,
+      "next_bar_ms": 1792580700000,
+      "predicted_ms": 1792580516144,
+      "score": null,
+      "side": "LONG",
+      "signal_ms": 1792580506276,
+      "snapshot": {
+        "bias": "LONG",
+        "bounce_from_12h_low_pct": 2.533,
+        "distance_from_1h_sma10_pct": 0.54,
+        "momentum_12h_pct": 2.008,
+        "momentum_24h_pct": 4.148,
+        "momentum_3h_pct": -0.36,
+        "price": 199.13,
+        "pullback_from_12h_high_pct": -1.318,
+        "quote_volume_24h": 12639234.98,
+        "reasons": [
+          "1h and 4h trend structure aligned"
+        ],
+        "retest_reason": "long pullback reached trend area and buying resumed",
+        "setup_state": "CONTINUATION_TRIGGER",
+        "swing_score": 51.0,
+        "symbol": "QNTUSDT",
+        "volume_expansion_1h": 0.92,
+        "warnings": []
+      },
+      "source": "BINANCE_SPOT_PROXY",
+      "status": "PENDING",
+      "stop_pct": 6.0,
+      "symbol": "QNTUSDT",
+      "target_pct": 5.0
+    },
     "SANDUSDT-1791595831062": {
       "checked_ms": 1791690986165,
       "entry_ms": 1791596100000,
@@ -1972,7 +2084,7 @@
       "target_pct": 5.0
     },
     "SOLUSDT-1792033289602": {
-      "checked_ms": 1792580225102,
+      "checked_ms": 1792580514989,
       "entry_ms": 1792033500000,
       "entry_price": 102.29,
       "features": [
@@ -1986,11 +2098,11 @@
       ],
       "id": "SOLUSDT-1792033289602",
       "mae_pct": 5.826571512366785,
-      "mark_return_pct": -4.184182227001654,
+      "mark_return_pct": -4.242838987193265,
       "mfe_pct": 1.8183595659399754,
       "model_hash": "8e1b832748f26efdcd9fcce2072716280c7a3dee468afccf23c74f887cad7ae0",
       "model_n": 7,
-      "next_bar_ms": 1792580100000,
+      "next_bar_ms": 1792580400000,
       "predicted_ms": 1792033294834,
       "score": null,
       "side": "SHORT",

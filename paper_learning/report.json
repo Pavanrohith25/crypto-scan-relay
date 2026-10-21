@@ -1,13 +1,29 @@
 {
   "admission_diagnostics": {
     "latest_reason_counts": {
-      "ACCEPTED": 21,
+      "ACCEPTED": 23,
       "PRE_ACTIVATION": 66,
       "STALE_AT_OBSERVATION": 33
     },
     "logging_started_ms": 1792454460377,
     "note": "Reasons reflect observation time; old triggers are not historical rejection evidence.",
     "recent_decisions": [
+      {
+        "id": "AAVEUSDT-1792580506276",
+        "observed_ms": 1792580516144,
+        "reason": "ACCEPTED",
+        "side": "LONG",
+        "signal_ms": 1792580506276,
+        "symbol": "AAVEUSDT"
+      },
+      {
+        "id": "QNTUSDT-1792580506276",
+        "observed_ms": 1792580516144,
+        "reason": "ACCEPTED",
+        "side": "LONG",
+        "signal_ms": 1792580506276,
+        "symbol": "QNTUSDT"
+      },
       {
         "id": "BCHUSDT-1792575020619",
         "observed_ms": 1792575029292,
@@ -151,26 +167,10 @@
         "side": "SHORT",
         "signal_ms": 1791006617731,
         "symbol": "ASTERUSDT"
-      },
-      {
-        "id": "ATOMUSDT-1791558074910",
-        "observed_ms": 1792454460377,
-        "reason": "STALE_AT_OBSERVATION",
-        "side": "LONG",
-        "signal_ms": 1791558074910,
-        "symbol": "ATOMUSDT"
-      },
-      {
-        "id": "AVAXUSDT-1791309686233",
-        "observed_ms": 1792454460377,
-        "reason": "PRE_ACTIVATION",
-        "side": "LONG",
-        "signal_ms": 1791309686233,
-        "symbol": "AVAXUSDT"
       }
     ]
   },
-  "as_of_ms": 1792580226020,
+  "as_of_ms": 1792580516144,
   "limitations": [
     "Spot proxy; shorts are hypothetical, not futures execution.",
     "Scores are uncalibrated; first 30 resolved trades per side are warmup.",
@@ -183,11 +183,11 @@
   "panels": {
     "LONG": {
       "data_errors": 0,
-      "entries": 9,
+      "entries": 11,
       "fixed_half_brier_baseline": null,
       "mean_net_pct": -0.6549999999999998,
       "model_updates": 6,
-      "open_or_pending": 3,
+      "open_or_pending": 5,
       "prequential_brier": null,
       "resolved": 6,
       "scored_resolved": 0,
