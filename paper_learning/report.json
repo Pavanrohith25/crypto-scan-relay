@@ -1,13 +1,29 @@
 {
   "admission_diagnostics": {
     "latest_reason_counts": {
-      "ACCEPTED": 23,
+      "ACCEPTED": 25,
       "PRE_ACTIVATION": 66,
       "STALE_AT_OBSERVATION": 34
     },
     "logging_started_ms": 1792454460377,
     "note": "Reasons reflect observation time; old triggers are not historical rejection evidence.",
     "recent_decisions": [
+      {
+        "id": "SOLUSDT-1792612905108",
+        "observed_ms": 1792612914699,
+        "reason": "ACCEPTED",
+        "side": "LONG",
+        "signal_ms": 1792612905108,
+        "symbol": "SOLUSDT"
+      },
+      {
+        "id": "HBARUSDT-1792612905108",
+        "observed_ms": 1792612914699,
+        "reason": "ACCEPTED",
+        "side": "LONG",
+        "signal_ms": 1792612905108,
+        "symbol": "HBARUSDT"
+      },
       {
         "id": "HYPEUSDT-1792605706139",
         "observed_ms": 1792606625710,
@@ -151,26 +167,10 @@
         "side": "LONG",
         "signal_ms": 1791200437510,
         "symbol": "ARBUSDT"
-      },
-      {
-        "id": "ARBUSDT-1791209446682",
-        "observed_ms": 1792454460377,
-        "reason": "PRE_ACTIVATION",
-        "side": "LONG",
-        "signal_ms": 1791209446682,
-        "symbol": "ARBUSDT"
-      },
-      {
-        "id": "ASTERUSDT-1790769646664",
-        "observed_ms": 1792454460377,
-        "reason": "PRE_ACTIVATION",
-        "side": "LONG",
-        "signal_ms": 1790769646664,
-        "symbol": "ASTERUSDT"
       }
     ]
   },
-  "as_of_ms": 1792612649246,
+  "as_of_ms": 1792612914699,
   "limitations": [
     "Spot proxy; shorts are hypothetical, not futures execution.",
     "Scores are uncalibrated; first 30 resolved trades per side are warmup.",
@@ -183,11 +183,11 @@
   "panels": {
     "LONG": {
       "data_errors": 0,
-      "entries": 11,
+      "entries": 13,
       "fixed_half_brier_baseline": null,
       "mean_net_pct": 0.13428571428571448,
       "model_updates": 7,
-      "open_or_pending": 4,
+      "open_or_pending": 6,
       "prequential_brier": null,
       "resolved": 7,
       "scored_resolved": 0,
