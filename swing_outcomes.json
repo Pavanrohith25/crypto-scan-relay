@@ -1,5 +1,5 @@
 {
-  "last_processed_at_ms": 1792544265206,
+  "last_processed_at_ms": 1792544542748,
   "objective": {
     "diagnostic_horizons_hours": [
       4,
@@ -18780,6 +18780,39 @@
       "trigger_id": "HYPEUSDT-1792279299183",
       "trigger_price": 78.17
     },
+    "HYPEUSDT-1792544533332": {
+      "bias": "LONG",
+      "outcome_12h": null,
+      "outcome_24h": null,
+      "outcome_48h": null,
+      "outcome_4h": null,
+      "snapshot": {
+        "bias": "LONG",
+        "bounce_from_12h_low_pct": 3.773,
+        "distance_from_1h_sma10_pct": 0.796,
+        "momentum_12h_pct": 3.363,
+        "momentum_24h_pct": 1.463,
+        "momentum_3h_pct": -0.099,
+        "price": 81.13,
+        "pullback_from_12h_high_pct": -0.88,
+        "quote_volume_24h": 42145430.22,
+        "reasons": [
+          "1h and 4h trend structure aligned",
+          "1h spot volume expansion 1.88x"
+        ],
+        "retest_reason": "long pullback reached trend area and buying resumed",
+        "setup_state": "CONTINUATION_TRIGGER",
+        "swing_score": 71.0,
+        "symbol": "HYPEUSDT",
+        "volume_expansion_1h": 1.88,
+        "warnings": []
+      },
+      "swing_score": 71.0,
+      "symbol": "HYPEUSDT",
+      "trigger_at_ms": 1792544533332,
+      "trigger_id": "HYPEUSDT-1792544533332",
+      "trigger_price": 81.13
+    },
     "ICPUSDT-1790786430034": {
       "bias": "LONG",
       "evaluated_12h_at_ms": 1790829646259,
@@ -20400,6 +20433,39 @@
       "trigger_at_ms": 1792274472613,
       "trigger_id": "LINKUSDT-1792274472613",
       "trigger_price": 11.895
+    },
+    "LINKUSDT-1792544533332": {
+      "bias": "LONG",
+      "outcome_12h": null,
+      "outcome_24h": null,
+      "outcome_48h": null,
+      "outcome_4h": null,
+      "snapshot": {
+        "bias": "LONG",
+        "bounce_from_12h_low_pct": 3.834,
+        "distance_from_1h_sma10_pct": 0.838,
+        "momentum_12h_pct": 3.296,
+        "momentum_24h_pct": 2.255,
+        "momentum_3h_pct": 0.634,
+        "price": 12.378,
+        "pullback_from_12h_high_pct": -0.778,
+        "quote_volume_24h": 17538684.66,
+        "reasons": [
+          "1h and 4h trend structure aligned",
+          "3h momentum supports long trend"
+        ],
+        "retest_reason": "long pullback reached trend area and buying resumed",
+        "setup_state": "CONTINUATION_TRIGGER",
+        "swing_score": 61.0,
+        "symbol": "LINKUSDT",
+        "volume_expansion_1h": 0.95,
+        "warnings": []
+      },
+      "swing_score": 61.0,
+      "symbol": "LINKUSDT",
+      "trigger_at_ms": 1792544533332,
+      "trigger_id": "LINKUSDT-1792544533332",
+      "trigger_price": 12.378
     },
     "LTCUSDT-1791140417527": {
       "bias": "LONG",
@@ -27093,8 +27159,101 @@
     },
     "PEPEUSDT-1792501289471": {
       "bias": "LONG",
+      "evaluated_12h_at_ms": 1792544542748,
       "evaluated_4h_at_ms": 1792515962514,
-      "outcome_12h": null,
+      "outcome_12h": {
+        "bars_used": 144,
+        "close_return_pct": 7.601,
+        "first_5pct_bar_ms": 1792504800000,
+        "horizon_hours": 12,
+        "mae_before_5pct_pct": -0.7126,
+        "mae_pct": -0.7126,
+        "mfe_pct": 10.9264,
+        "objective": "+5pct",
+        "sampling_interval": "5m",
+        "sampling_note": "Uses 5m candles beginning with the first full bar at/after the trigger. If TP and SL are both touched inside the same 5m candle before either resolves, the stop-path result is AMBIGUOUS.",
+        "stop_grid": {
+          "stop_3_0pct": {
+            "ambiguous": false,
+            "first_stop_bar_ms": null,
+            "first_target_bar_ms": 1792504800000,
+            "resolution_bar_ms": 1792504800000,
+            "result": "TARGET_FIRST",
+            "stop_first": false,
+            "stop_pct": 3.0,
+            "stop_reached": false,
+            "target_first": true,
+            "target_pct": 5.0,
+            "target_reached": true,
+            "time_to_stop_minutes": null,
+            "time_to_target_minutes": 58.51
+          },
+          "stop_4_0pct": {
+            "ambiguous": false,
+            "first_stop_bar_ms": null,
+            "first_target_bar_ms": 1792504800000,
+            "resolution_bar_ms": 1792504800000,
+            "result": "TARGET_FIRST",
+            "stop_first": false,
+            "stop_pct": 4.0,
+            "stop_reached": false,
+            "target_first": true,
+            "target_pct": 5.0,
+            "target_reached": true,
+            "time_to_stop_minutes": null,
+            "time_to_target_minutes": 58.51
+          },
+          "stop_5_0pct": {
+            "ambiguous": false,
+            "first_stop_bar_ms": null,
+            "first_target_bar_ms": 1792504800000,
+            "resolution_bar_ms": 1792504800000,
+            "result": "TARGET_FIRST",
+            "stop_first": false,
+            "stop_pct": 5.0,
+            "stop_reached": false,
+            "target_first": true,
+            "target_pct": 5.0,
+            "target_reached": true,
+            "time_to_stop_minutes": null,
+            "time_to_target_minutes": 58.51
+          },
+          "stop_6_0pct": {
+            "ambiguous": false,
+            "first_stop_bar_ms": null,
+            "first_target_bar_ms": 1792504800000,
+            "resolution_bar_ms": 1792504800000,
+            "result": "TARGET_FIRST",
+            "stop_first": false,
+            "stop_pct": 6.0,
+            "stop_reached": false,
+            "target_first": true,
+            "target_pct": 5.0,
+            "target_reached": true,
+            "time_to_stop_minutes": null,
+            "time_to_target_minutes": 58.51
+          },
+          "stop_8_0pct": {
+            "ambiguous": false,
+            "first_stop_bar_ms": null,
+            "first_target_bar_ms": 1792504800000,
+            "resolution_bar_ms": 1792504800000,
+            "result": "TARGET_FIRST",
+            "stop_first": false,
+            "stop_pct": 8.0,
+            "stop_reached": false,
+            "target_first": true,
+            "target_pct": 5.0,
+            "target_reached": true,
+            "time_to_stop_minutes": null,
+            "time_to_target_minutes": 58.51
+          }
+        },
+        "target_5_reached": true,
+        "time_to_5pct_minutes": 58.51,
+        "window_end_ms": 1792544489471,
+        "window_start_ms": 1792501500000
+      },
       "outcome_24h": null,
       "outcome_48h": null,
       "outcome_4h": {

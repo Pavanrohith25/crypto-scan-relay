@@ -1,13 +1,29 @@
 {
   "admission_diagnostics": {
     "latest_reason_counts": {
-      "ACCEPTED": 18,
+      "ACCEPTED": 20,
       "PRE_ACTIVATION": 66,
       "STALE_AT_OBSERVATION": 33
     },
     "logging_started_ms": 1792454460377,
     "note": "Reasons reflect observation time; old triggers are not historical rejection evidence.",
     "recent_decisions": [
+      {
+        "id": "HYPEUSDT-1792544533332",
+        "observed_ms": 1792544544548,
+        "reason": "ACCEPTED",
+        "side": "LONG",
+        "signal_ms": 1792544533332,
+        "symbol": "HYPEUSDT"
+      },
+      {
+        "id": "LINKUSDT-1792544533332",
+        "observed_ms": 1792544544548,
+        "reason": "ACCEPTED",
+        "side": "LONG",
+        "signal_ms": 1792544533332,
+        "symbol": "LINKUSDT"
+      },
       {
         "id": "BTCUSDT-1792515673249",
         "observed_ms": 1792516325096,
@@ -151,26 +167,10 @@
         "side": "LONG",
         "signal_ms": 1791759693933,
         "symbol": "AVAXUSDT"
-      },
-      {
-        "id": "AVAXUSDT-1791770482064",
-        "observed_ms": 1792454460377,
-        "reason": "STALE_AT_OBSERVATION",
-        "side": "LONG",
-        "signal_ms": 1791770482064,
-        "symbol": "AVAXUSDT"
-      },
-      {
-        "id": "BCHUSDT-1790607632774",
-        "observed_ms": 1792454460377,
-        "reason": "PRE_ACTIVATION",
-        "side": "SHORT",
-        "signal_ms": 1790607632774,
-        "symbol": "BCHUSDT"
       }
     ]
   },
-  "as_of_ms": 1792544265951,
+  "as_of_ms": 1792544544548,
   "limitations": [
     "Spot proxy; shorts are hypothetical, not futures execution.",
     "Scores are uncalibrated; first 30 resolved trades per side are warmup.",
@@ -183,11 +183,11 @@
   "panels": {
     "LONG": {
       "data_errors": 0,
-      "entries": 6,
+      "entries": 8,
       "fixed_half_brier_baseline": null,
       "mean_net_pct": -0.6549999999999998,
       "model_updates": 6,
-      "open_or_pending": 0,
+      "open_or_pending": 2,
       "prequential_brier": null,
       "resolved": 6,
       "scored_resolved": 0,

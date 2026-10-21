@@ -376,6 +376,14 @@
       "signal_ms": 1792279299183,
       "symbol": "HYPEUSDT"
     },
+    "HYPEUSDT-1792544533332": {
+      "id": "HYPEUSDT-1792544533332",
+      "observed_ms": 1792544544548,
+      "reason": "ACCEPTED",
+      "side": "LONG",
+      "signal_ms": 1792544533332,
+      "symbol": "HYPEUSDT"
+    },
     "ICPUSDT-1790786430034": {
       "id": "ICPUSDT-1790786430034",
       "observed_ms": 1792454460377,
@@ -406,6 +414,14 @@
       "reason": "STALE_AT_OBSERVATION",
       "side": "SHORT",
       "signal_ms": 1792274472613,
+      "symbol": "LINKUSDT"
+    },
+    "LINKUSDT-1792544533332": {
+      "id": "LINKUSDT-1792544533332",
+      "observed_ms": 1792544544548,
+      "reason": "ACCEPTED",
+      "side": "LONG",
+      "signal_ms": 1792544533332,
       "symbol": "LINKUSDT"
     },
     "LTCUSDT-1791140417527": {
@@ -967,7 +983,7 @@
   "started_ms": 1791382577243,
   "trades": {
     "BTCUSDT-1791450054416": {
-      "checked_ms": 1792544265331,
+      "checked_ms": 1792544543712,
       "entry_ms": 1791450300000,
       "entry_price": 83013.8,
       "features": [
@@ -981,11 +997,11 @@
       ],
       "id": "BTCUSDT-1791450054416",
       "mae_pct": 1.6120211338355839,
-      "mark_return_pct": -0.15444420084369526,
+      "mark_return_pct": -0.019322088616591238,
       "mfe_pct": 3.8714045134664365,
       "model_hash": "d00c3a24ef0fd037da9e46e3397b77adfe716660f6d7e76afb8984ea77092eae",
       "model_n": 0,
-      "next_bar_ms": 1792544100000,
+      "next_bar_ms": 1792544400000,
       "predicted_ms": 1791450062402,
       "score": null,
       "side": "SHORT",
@@ -1298,7 +1314,7 @@
       "target_pct": 5.0
     },
     "ETHUSDT-1792054886002": {
-      "checked_ms": 1792544265331,
+      "checked_ms": 1792544543712,
       "entry_ms": 1792055100000,
       "entry_price": 2375.78,
       "features": [
@@ -1312,11 +1328,11 @@
       ],
       "id": "ETHUSDT-1792054886002",
       "mae_pct": 4.976049970956908,
-      "mark_return_pct": -3.447709804779908,
+      "mark_return_pct": -3.247354553030979,
       "mfe_pct": 2.1702346176834753,
       "model_hash": "8e1b832748f26efdcd9fcce2072716280c7a3dee468afccf23c74f887cad7ae0",
       "model_n": 7,
-      "next_bar_ms": 1792544100000,
+      "next_bar_ms": 1792544400000,
       "predicted_ms": 1792054892267,
       "score": null,
       "side": "SHORT",
@@ -1345,6 +1361,104 @@
       "status": "OPEN",
       "stop_pct": 6.0,
       "symbol": "ETHUSDT",
+      "target_pct": 5.0
+    },
+    "HYPEUSDT-1792544533332": {
+      "checked_ms": 0,
+      "entry_ms": 1792544700000,
+      "features": [
+        1.0,
+        -0.0099,
+        0.16815,
+        0.048766666666666666,
+        0.1592,
+        0.6266666666666666,
+        0.71
+      ],
+      "id": "HYPEUSDT-1792544533332",
+      "mae_pct": 0.0,
+      "mfe_pct": 0.0,
+      "model_hash": "afb0327d96ce29ca0f66aabe9cb1fd1b479cd81c8bd2a2c54d0c50caa98da9a2",
+      "model_n": 6,
+      "next_bar_ms": 1792544700000,
+      "predicted_ms": 1792544544548,
+      "score": null,
+      "side": "LONG",
+      "signal_ms": 1792544533332,
+      "snapshot": {
+        "bias": "LONG",
+        "bounce_from_12h_low_pct": 3.773,
+        "distance_from_1h_sma10_pct": 0.796,
+        "momentum_12h_pct": 3.363,
+        "momentum_24h_pct": 1.463,
+        "momentum_3h_pct": -0.099,
+        "price": 81.13,
+        "pullback_from_12h_high_pct": -0.88,
+        "quote_volume_24h": 42145430.22,
+        "reasons": [
+          "1h and 4h trend structure aligned",
+          "1h spot volume expansion 1.88x"
+        ],
+        "retest_reason": "long pullback reached trend area and buying resumed",
+        "setup_state": "CONTINUATION_TRIGGER",
+        "swing_score": 71.0,
+        "symbol": "HYPEUSDT",
+        "volume_expansion_1h": 1.88,
+        "warnings": []
+      },
+      "source": "BINANCE_SPOT_PROXY",
+      "status": "PENDING",
+      "stop_pct": 6.0,
+      "symbol": "HYPEUSDT",
+      "target_pct": 5.0
+    },
+    "LINKUSDT-1792544533332": {
+      "checked_ms": 0,
+      "entry_ms": 1792544700000,
+      "features": [
+        1.0,
+        0.0634,
+        0.1648,
+        0.07516666666666666,
+        0.1676,
+        0.31666666666666665,
+        0.61
+      ],
+      "id": "LINKUSDT-1792544533332",
+      "mae_pct": 0.0,
+      "mfe_pct": 0.0,
+      "model_hash": "afb0327d96ce29ca0f66aabe9cb1fd1b479cd81c8bd2a2c54d0c50caa98da9a2",
+      "model_n": 6,
+      "next_bar_ms": 1792544700000,
+      "predicted_ms": 1792544544548,
+      "score": null,
+      "side": "LONG",
+      "signal_ms": 1792544533332,
+      "snapshot": {
+        "bias": "LONG",
+        "bounce_from_12h_low_pct": 3.834,
+        "distance_from_1h_sma10_pct": 0.838,
+        "momentum_12h_pct": 3.296,
+        "momentum_24h_pct": 2.255,
+        "momentum_3h_pct": 0.634,
+        "price": 12.378,
+        "pullback_from_12h_high_pct": -0.778,
+        "quote_volume_24h": 17538684.66,
+        "reasons": [
+          "1h and 4h trend structure aligned",
+          "3h momentum supports long trend"
+        ],
+        "retest_reason": "long pullback reached trend area and buying resumed",
+        "setup_state": "CONTINUATION_TRIGGER",
+        "swing_score": 61.0,
+        "symbol": "LINKUSDT",
+        "volume_expansion_1h": 0.95,
+        "warnings": []
+      },
+      "source": "BINANCE_SPOT_PROXY",
+      "status": "PENDING",
+      "stop_pct": 6.0,
+      "symbol": "LINKUSDT",
       "target_pct": 5.0
     },
     "ONDOUSDT-1791644453967": {
@@ -1794,7 +1908,7 @@
       "target_pct": 5.0
     },
     "SOLUSDT-1792033289602": {
-      "checked_ms": 1792544265331,
+      "checked_ms": 1792544543712,
       "entry_ms": 1792033500000,
       "entry_price": 102.29,
       "features": [
@@ -1808,11 +1922,11 @@
       ],
       "id": "SOLUSDT-1792033289602",
       "mae_pct": 5.826571512366785,
-      "mark_return_pct": -4.438361521165302,
+      "mark_return_pct": -4.242838987193265,
       "mfe_pct": 1.8183595659399754,
       "model_hash": "8e1b832748f26efdcd9fcce2072716280c7a3dee468afccf23c74f887cad7ae0",
       "model_n": 7,
-      "next_bar_ms": 1792544100000,
+      "next_bar_ms": 1792544400000,
       "predicted_ms": 1792033294834,
       "score": null,
       "side": "SHORT",
