@@ -13,15 +13,15 @@
       ]
     },
     "SHORT": {
-      "n": 8,
+      "n": 9,
       "weights": [
-        -0.028927162569798145,
-        -0.024789340843106068,
-        0.028576350203332386,
-        0.06794354844640063,
-        -0.0037201560790756562,
-        -0.0362563317897234,
-        -0.03624576359589879
+        -0.12566268061472124,
+        -0.0348075624794079,
+        0.03713331890943749,
+        0.08482053857327973,
+        0.004386817291367319,
+        -0.0662391092329199,
+        -0.08944506689526423
       ]
     }
   },
@@ -229,6 +229,56 @@
       },
       "status": "STOP",
       "stressed_reward_r": -1.0999999999999999,
+      "symbol": "ETHUSDT"
+    },
+    "ETHUSDT-1792054886002": {
+      "definition": "paper net price return / planned stop percent; not account P&L",
+      "features": [
+        1.0,
+        0.1036,
+        -0.0885,
+        -0.17456666666666668,
+        -0.0838,
+        0.31,
+        0.55
+      ],
+      "forecast_at_delivery": {
+        "expected_r": 0.41843951248051636,
+        "model_hash": "99cdad1d86eb6fb44c7a13fc1cb20f3d93a4e6179b8912e4da92731b4289e2bf",
+        "model_n": 5,
+        "version": "telegram-reward-v1"
+      },
+      "holding_hours": 151.58333333333334,
+      "id": "ETHUSDT-1792054886002",
+      "mae_pct": 6.349072725589067,
+      "mfe_pct": 2.1702346176834753,
+      "net_return_pct": -6.3100000000000005,
+      "recorded_ms": 1792600870425,
+      "reward_r": -1.0516666666666667,
+      "sent_ms": 1792055514176,
+      "side": "SHORT",
+      "snapshot": {
+        "bias": "SHORT",
+        "bounce_from_12h_low_pct": 2.414,
+        "distance_from_1h_sma10_pct": -0.419,
+        "momentum_12h_pct": -1.77,
+        "momentum_24h_pct": -5.237,
+        "momentum_3h_pct": 1.036,
+        "price": 2373.95,
+        "pullback_from_12h_high_pct": -2.307,
+        "quote_volume_24h": 1198628147.83,
+        "reasons": [
+          "1h and 4h trend structure aligned"
+        ],
+        "retest_reason": "short bounce reached trend area and selling resumed",
+        "setup_state": "CONTINUATION_TRIGGER",
+        "swing_score": 55.0,
+        "symbol": "ETHUSDT",
+        "volume_expansion_1h": 0.93,
+        "warnings": []
+      },
+      "status": "STOP",
+      "stressed_reward_r": -1.115,
       "symbol": "ETHUSDT"
     },
     "ONDOUSDT-1791644453967": {
