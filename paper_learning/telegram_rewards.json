@@ -1,15 +1,15 @@
 {
   "models": {
     "LONG": {
-      "n": 6,
+      "n": 7,
       "weights": [
-        -0.08211282832496675,
-        0.010101749743812975,
-        -0.005156437209257461,
-        -0.02564860438822416,
-        -0.003405147395381734,
-        -0.01715306081736461,
-        -0.03168486287875051
+        0.013881178739482927,
+        0.006644493736486101,
+        0.00448211235619751,
+        -0.012372096192421533,
+        0.0069627014733074895,
+        0.012287600427886836,
+        0.017276696983023553
       ]
     },
     "SHORT": {
@@ -630,6 +630,56 @@
         "swing_score": 71.0,
         "symbol": "QNTUSDT",
         "volume_expansion_1h": 1.55,
+        "warnings": []
+      },
+      "status": "TARGET",
+      "stressed_reward_r": 0.7483333333333334,
+      "symbol": "QNTUSDT"
+    },
+    "QNTUSDT-1792580506276": {
+      "definition": "paper net price return / planned stop percent; not account P&L",
+      "features": [
+        1.0,
+        -0.036,
+        0.1004,
+        0.13826666666666665,
+        0.10800000000000001,
+        0.3066666666666667,
+        0.51
+      ],
+      "forecast_at_delivery": {
+        "expected_r": -0.10832785261582106,
+        "model_hash": "10e66231e03255072dbf214c40fd6ad8e2b1bbe90076d747697b7af4906526e1",
+        "model_n": 6,
+        "version": "telegram-reward-v1"
+      },
+      "holding_hours": 7.416666666666667,
+      "id": "QNTUSDT-1792580506276",
+      "mae_pct": 3.8918864908073503,
+      "mfe_pct": 5.115907274180653,
+      "net_return_pct": 4.87,
+      "recorded_ms": 1792607538066,
+      "reward_r": 0.8116666666666666,
+      "sent_ms": 1792581144362,
+      "side": "LONG",
+      "snapshot": {
+        "bias": "LONG",
+        "bounce_from_12h_low_pct": 2.533,
+        "distance_from_1h_sma10_pct": 0.54,
+        "momentum_12h_pct": 2.008,
+        "momentum_24h_pct": 4.148,
+        "momentum_3h_pct": -0.36,
+        "price": 199.13,
+        "pullback_from_12h_high_pct": -1.318,
+        "quote_volume_24h": 12639234.98,
+        "reasons": [
+          "1h and 4h trend structure aligned"
+        ],
+        "retest_reason": "long pullback reached trend area and buying resumed",
+        "setup_state": "CONTINUATION_TRIGGER",
+        "swing_score": 51.0,
+        "symbol": "QNTUSDT",
+        "volume_expansion_1h": 0.92,
         "warnings": []
       },
       "status": "TARGET",
