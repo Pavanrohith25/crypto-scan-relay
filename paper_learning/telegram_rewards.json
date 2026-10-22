@@ -1,15 +1,15 @@
 {
   "models": {
     "LONG": {
-      "n": 9,
+      "n": 10,
       "weights": [
-        -0.1795244692387295,
-        0.019823548934427823,
-        -0.003954743346817445,
-        -0.02572366772122912,
-        -0.006249084360505284,
-        -0.055570435584425606,
-        -0.08955498928618723
+        -0.25078002857364634,
+        0.0243240521569592,
+        -0.0043888340651911046,
+        -0.03825619997278779,
+        -0.007887064394619512,
+        -0.08192700851476223,
+        -0.13300801376207982
       ]
     },
     "SHORT": {
@@ -26,6 +26,56 @@
     }
   },
   "records": {
+    "AAVEUSDT-1792580506276": {
+      "definition": "paper net price return / planned stop percent; not account P&L",
+      "features": [
+        1.0,
+        -0.0632,
+        0.0060999999999999995,
+        0.17593333333333333,
+        0.023,
+        0.37000000000000005,
+        0.61
+      ],
+      "forecast_at_delivery": {
+        "expected_r": -0.11304787488967694,
+        "model_hash": "10e66231e03255072dbf214c40fd6ad8e2b1bbe90076d747697b7af4906526e1",
+        "model_n": 6,
+        "version": "telegram-reward-v1"
+      },
+      "holding_hours": 25.833333333333332,
+      "id": "AAVEUSDT-1792580506276",
+      "mae_pct": 6.034979819335007,
+      "mfe_pct": 2.857325901723362,
+      "net_return_pct": -6.16,
+      "recorded_ms": 1792673861609,
+      "reward_r": -1.0266666666666666,
+      "sent_ms": 1792581143240,
+      "side": "LONG",
+      "snapshot": {
+        "bias": "LONG",
+        "bounce_from_12h_low_pct": 1.269,
+        "distance_from_1h_sma10_pct": 0.115,
+        "momentum_12h_pct": 0.122,
+        "momentum_24h_pct": 5.278,
+        "momentum_3h_pct": -0.632,
+        "price": 155.6,
+        "pullback_from_12h_high_pct": -1.768,
+        "quote_volume_24h": 16873141.73,
+        "reasons": [
+          "1h and 4h trend structure aligned"
+        ],
+        "retest_reason": "long pullback reached trend area and buying resumed",
+        "setup_state": "CONTINUATION_TRIGGER",
+        "swing_score": 61.0,
+        "symbol": "AAVEUSDT",
+        "volume_expansion_1h": 1.11,
+        "warnings": []
+      },
+      "status": "STOP",
+      "stressed_reward_r": -1.09,
+      "symbol": "AAVEUSDT"
+    },
     "ENAUSDT-1791720341840": {
       "definition": "paper net price return / planned stop percent; not account P&L",
       "features": [
