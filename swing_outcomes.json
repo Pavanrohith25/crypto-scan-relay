@@ -1,5 +1,5 @@
 {
-  "last_processed_at_ms": 1792706497249,
+  "last_processed_at_ms": 1792706856982,
   "objective": {
     "diagnostic_horizons_hours": [
       4,
@@ -22990,6 +22990,7 @@
     "LINKUSDT-1792620101273": {
       "bias": "LONG",
       "evaluated_12h_at_ms": 1792663316299,
+      "evaluated_24h_at_ms": 1792706856982,
       "evaluated_4h_at_ms": 1792634522374,
       "outcome_12h": {
         "bars_used": 144,
@@ -23084,7 +23085,99 @@
         "window_end_ms": 1792663301273,
         "window_start_ms": 1792620300000
       },
-      "outcome_24h": null,
+      "outcome_24h": {
+        "bars_used": 288,
+        "close_return_pct": -5.4951,
+        "first_5pct_bar_ms": null,
+        "horizon_hours": 24,
+        "mae_before_5pct_pct": null,
+        "mae_pct": -7.1429,
+        "mfe_pct": 0.0,
+        "objective": "+5pct",
+        "sampling_interval": "5m",
+        "sampling_note": "Uses 5m candles beginning with the first full bar at/after the trigger. If TP and SL are both touched inside the same 5m candle before either resolves, the stop-path result is AMBIGUOUS.",
+        "stop_grid": {
+          "stop_3_0pct": {
+            "ambiguous": false,
+            "first_stop_bar_ms": 1792635600000,
+            "first_target_bar_ms": null,
+            "resolution_bar_ms": 1792635600000,
+            "result": "STOP_FIRST",
+            "stop_first": true,
+            "stop_pct": 3.0,
+            "stop_reached": true,
+            "target_first": false,
+            "target_pct": 5.0,
+            "target_reached": false,
+            "time_to_stop_minutes": 258.31,
+            "time_to_target_minutes": null
+          },
+          "stop_4_0pct": {
+            "ambiguous": false,
+            "first_stop_bar_ms": 1792648500000,
+            "first_target_bar_ms": null,
+            "resolution_bar_ms": 1792648500000,
+            "result": "STOP_FIRST",
+            "stop_first": true,
+            "stop_pct": 4.0,
+            "stop_reached": true,
+            "target_first": false,
+            "target_pct": 5.0,
+            "target_reached": false,
+            "time_to_stop_minutes": 473.31,
+            "time_to_target_minutes": null
+          },
+          "stop_5_0pct": {
+            "ambiguous": false,
+            "first_stop_bar_ms": 1792657800000,
+            "first_target_bar_ms": null,
+            "resolution_bar_ms": 1792657800000,
+            "result": "STOP_FIRST",
+            "stop_first": true,
+            "stop_pct": 5.0,
+            "stop_reached": true,
+            "target_first": false,
+            "target_pct": 5.0,
+            "target_reached": false,
+            "time_to_stop_minutes": 628.31,
+            "time_to_target_minutes": null
+          },
+          "stop_6_0pct": {
+            "ambiguous": false,
+            "first_stop_bar_ms": 1792687500000,
+            "first_target_bar_ms": null,
+            "resolution_bar_ms": 1792687500000,
+            "result": "STOP_FIRST",
+            "stop_first": true,
+            "stop_pct": 6.0,
+            "stop_reached": true,
+            "target_first": false,
+            "target_pct": 5.0,
+            "target_reached": false,
+            "time_to_stop_minutes": 1123.31,
+            "time_to_target_minutes": null
+          },
+          "stop_8_0pct": {
+            "ambiguous": false,
+            "first_stop_bar_ms": null,
+            "first_target_bar_ms": null,
+            "resolution_bar_ms": null,
+            "result": "OPEN",
+            "stop_first": false,
+            "stop_pct": 8.0,
+            "stop_reached": false,
+            "target_first": false,
+            "target_pct": 5.0,
+            "target_reached": false,
+            "time_to_stop_minutes": null,
+            "time_to_target_minutes": null
+          }
+        },
+        "target_5_reached": false,
+        "time_to_5pct_minutes": null,
+        "window_end_ms": 1792706501273,
+        "window_start_ms": 1792620300000
+      },
       "outcome_48h": null,
       "outcome_4h": {
         "bars_used": 48,
