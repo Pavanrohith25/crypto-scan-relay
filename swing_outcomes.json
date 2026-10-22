@@ -1,5 +1,5 @@
 {
-  "last_processed_at_ms": 1792652244452,
+  "last_processed_at_ms": 1792652560575,
   "objective": {
     "diagnostic_horizons_hours": [
       4,
@@ -23455,6 +23455,38 @@
       "trigger_id": "MINAUSDT-1791694850024",
       "trigger_price": 0.087
     },
+    "MITOUSDT-1792652545503": {
+      "bias": "SHORT",
+      "outcome_12h": null,
+      "outcome_24h": null,
+      "outcome_48h": null,
+      "outcome_4h": null,
+      "snapshot": {
+        "bias": "SHORT",
+        "bounce_from_12h_low_pct": 3.222,
+        "distance_from_1h_sma10_pct": -0.561,
+        "momentum_12h_pct": -2.36,
+        "momentum_24h_pct": -27.021,
+        "momentum_3h_pct": 1.846,
+        "price": 0.00993,
+        "pullback_from_12h_high_pct": -5.429,
+        "quote_volume_24h": 10008591.57,
+        "reasons": [
+          "1h and 4h trend structure aligned"
+        ],
+        "retest_reason": "short bounce reached trend area and selling resumed",
+        "setup_state": "CONTINUATION_TRIGGER",
+        "swing_score": 51.0,
+        "symbol": "MITOUSDT",
+        "volume_expansion_1h": 0.91,
+        "warnings": []
+      },
+      "swing_score": 51.0,
+      "symbol": "MITOUSDT",
+      "trigger_at_ms": 1792652545503,
+      "trigger_id": "MITOUSDT-1792652545503",
+      "trigger_price": 0.00993
+    },
     "MUBUSDT-1792072884531": {
       "bias": "SHORT",
       "evaluated_12h_at_ms": 1792116398489,
@@ -28717,6 +28749,7 @@
       "bias": "LONG",
       "evaluated_12h_at_ms": 1792522894428,
       "evaluated_24h_at_ms": 1792566126356,
+      "evaluated_48h_at_ms": 1792652560575,
       "evaluated_4h_at_ms": 1792494125456,
       "outcome_12h": {
         "bars_used": 144,
@@ -28904,7 +28937,99 @@
         "window_end_ms": 1792566079865,
         "window_start_ms": 1792479900000
       },
-      "outcome_48h": null,
+      "outcome_48h": {
+        "bars_used": 576,
+        "close_return_pct": 7.6555,
+        "first_5pct_bar_ms": 1792504800000,
+        "horizon_hours": 48,
+        "mae_before_5pct_pct": -0.7177,
+        "mae_pct": -0.7177,
+        "mfe_pct": 14.5933,
+        "objective": "+5pct",
+        "sampling_interval": "5m",
+        "sampling_note": "Uses 5m candles beginning with the first full bar at/after the trigger. If TP and SL are both touched inside the same 5m candle before either resolves, the stop-path result is AMBIGUOUS.",
+        "stop_grid": {
+          "stop_3_0pct": {
+            "ambiguous": false,
+            "first_stop_bar_ms": null,
+            "first_target_bar_ms": 1792504800000,
+            "resolution_bar_ms": 1792504800000,
+            "result": "TARGET_FIRST",
+            "stop_first": false,
+            "stop_pct": 3.0,
+            "stop_reached": false,
+            "target_first": true,
+            "target_pct": 5.0,
+            "target_reached": true,
+            "time_to_stop_minutes": null,
+            "time_to_target_minutes": 418.67
+          },
+          "stop_4_0pct": {
+            "ambiguous": false,
+            "first_stop_bar_ms": null,
+            "first_target_bar_ms": 1792504800000,
+            "resolution_bar_ms": 1792504800000,
+            "result": "TARGET_FIRST",
+            "stop_first": false,
+            "stop_pct": 4.0,
+            "stop_reached": false,
+            "target_first": true,
+            "target_pct": 5.0,
+            "target_reached": true,
+            "time_to_stop_minutes": null,
+            "time_to_target_minutes": 418.67
+          },
+          "stop_5_0pct": {
+            "ambiguous": false,
+            "first_stop_bar_ms": null,
+            "first_target_bar_ms": 1792504800000,
+            "resolution_bar_ms": 1792504800000,
+            "result": "TARGET_FIRST",
+            "stop_first": false,
+            "stop_pct": 5.0,
+            "stop_reached": false,
+            "target_first": true,
+            "target_pct": 5.0,
+            "target_reached": true,
+            "time_to_stop_minutes": null,
+            "time_to_target_minutes": 418.67
+          },
+          "stop_6_0pct": {
+            "ambiguous": false,
+            "first_stop_bar_ms": null,
+            "first_target_bar_ms": 1792504800000,
+            "resolution_bar_ms": 1792504800000,
+            "result": "TARGET_FIRST",
+            "stop_first": false,
+            "stop_pct": 6.0,
+            "stop_reached": false,
+            "target_first": true,
+            "target_pct": 5.0,
+            "target_reached": true,
+            "time_to_stop_minutes": null,
+            "time_to_target_minutes": 418.67
+          },
+          "stop_8_0pct": {
+            "ambiguous": false,
+            "first_stop_bar_ms": null,
+            "first_target_bar_ms": 1792504800000,
+            "resolution_bar_ms": 1792504800000,
+            "result": "TARGET_FIRST",
+            "stop_first": false,
+            "stop_pct": 8.0,
+            "stop_reached": false,
+            "target_first": true,
+            "target_pct": 5.0,
+            "target_reached": true,
+            "time_to_stop_minutes": null,
+            "time_to_target_minutes": 418.67
+          }
+        },
+        "target_5_reached": true,
+        "time_to_5pct_minutes": 418.67,
+        "window_end_ms": 1792652479865,
+        "window_start_ms": 1792479900000
+      },
       "outcome_4h": {
         "bars_used": 48,
         "close_return_pct": 0.7177,

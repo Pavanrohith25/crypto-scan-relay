@@ -1,13 +1,21 @@
 {
   "admission_diagnostics": {
     "latest_reason_counts": {
-      "ACCEPTED": 26,
+      "ACCEPTED": 27,
       "PRE_ACTIVATION": 66,
       "STALE_AT_OBSERVATION": 35
     },
     "logging_started_ms": 1792454460377,
     "note": "Reasons reflect observation time; old triggers are not historical rejection evidence.",
     "recent_decisions": [
+      {
+        "id": "MITOUSDT-1792652545503",
+        "observed_ms": 1792652563360,
+        "reason": "ACCEPTED",
+        "side": "SHORT",
+        "signal_ms": 1792652545503,
+        "symbol": "MITOUSDT"
+      },
       {
         "id": "LINKUSDT-1792620101273",
         "observed_ms": 1792620720760,
@@ -159,18 +167,10 @@
         "side": "LONG",
         "signal_ms": 1790946318834,
         "symbol": "ADAUSDT"
-      },
-      {
-        "id": "ADAUSDT-1791298880779",
-        "observed_ms": 1792454460377,
-        "reason": "PRE_ACTIVATION",
-        "side": "LONG",
-        "signal_ms": 1791298880779,
-        "symbol": "ADAUSDT"
       }
     ]
   },
-  "as_of_ms": 1792652246039,
+  "as_of_ms": 1792652563360,
   "limitations": [
     "Spot proxy; shorts are hypothetical, not futures execution.",
     "Scores are uncalibrated; first 30 resolved trades per side are warmup.",
@@ -198,11 +198,11 @@
     },
     "SHORT": {
       "data_errors": 0,
-      "entries": 12,
+      "entries": 13,
       "fixed_half_brier_baseline": null,
       "mean_net_pct": 0.8281818181818181,
       "model_updates": 11,
-      "open_or_pending": 1,
+      "open_or_pending": 2,
       "prequential_brier": null,
       "resolved": 11,
       "scored_resolved": 0,
