@@ -1,13 +1,21 @@
 {
   "admission_diagnostics": {
     "latest_reason_counts": {
-      "ACCEPTED": 27,
+      "ACCEPTED": 28,
       "PRE_ACTIVATION": 66,
       "STALE_AT_OBSERVATION": 35
     },
     "logging_started_ms": 1792454460377,
     "note": "Reasons reflect observation time; old triggers are not historical rejection evidence.",
     "recent_decisions": [
+      {
+        "id": "TIAUSDT-1792670551060",
+        "observed_ms": 1792670564109,
+        "reason": "ACCEPTED",
+        "side": "SHORT",
+        "signal_ms": 1792670551060,
+        "symbol": "TIAUSDT"
+      },
       {
         "id": "MITOUSDT-1792652545503",
         "observed_ms": 1792652563360,
@@ -159,18 +167,10 @@
         "side": "SHORT",
         "signal_ms": 1792067482021,
         "symbol": "AAVEUSDT"
-      },
-      {
-        "id": "ADAUSDT-1790946318834",
-        "observed_ms": 1792454460377,
-        "reason": "PRE_ACTIVATION",
-        "side": "LONG",
-        "signal_ms": 1790946318834,
-        "symbol": "ADAUSDT"
       }
     ]
   },
-  "as_of_ms": 1792670252145,
+  "as_of_ms": 1792670564109,
   "limitations": [
     "Spot proxy; shorts are hypothetical, not futures execution.",
     "Scores are uncalibrated; first 30 resolved trades per side are warmup.",
@@ -198,11 +198,11 @@
     },
     "SHORT": {
       "data_errors": 0,
-      "entries": 13,
+      "entries": 14,
       "fixed_half_brier_baseline": null,
       "mean_net_pct": 0.2483333333333333,
       "model_updates": 12,
-      "open_or_pending": 1,
+      "open_or_pending": 2,
       "prequential_brier": null,
       "resolved": 12,
       "scored_resolved": 0,
