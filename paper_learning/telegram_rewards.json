@@ -1,15 +1,15 @@
 {
   "models": {
     "LONG": {
-      "n": 7,
+      "n": 8,
       "weights": [
-        0.013881178739482927,
-        0.006644493736486101,
-        0.00448211235619751,
-        -0.012372096192421533,
-        0.0069627014733074895,
-        0.012287600427886836,
-        0.017276696983023553
+        -0.09754437464773887,
+        0.015546431930943178,
+        0.0013782607411289716,
+        -0.01829071317887064,
+        -0.0011500884779187459,
+        -0.02114184741903417,
+        -0.03955284054646713
       ]
     },
     "SHORT": {
@@ -280,6 +280,56 @@
       "status": "STOP",
       "stressed_reward_r": -1.115,
       "symbol": "ETHUSDT"
+    },
+    "FETUSDT-1792616548720": {
+      "definition": "paper net price return / planned stop percent; not account P&L",
+      "features": [
+        1.0,
+        -0.0799,
+        0.027850000000000003,
+        0.05313333333333334,
+        0.0728,
+        0.3,
+        0.51
+      ],
+      "forecast_at_delivery": {
+        "expected_r": 0.02582202006499864,
+        "model_hash": "a5a251a8bee5d2f4bb4066b6a76571a20d4d029fcc1f4f49d7f9e2028a77e8de",
+        "model_n": 7,
+        "version": "telegram-reward-v1"
+      },
+      "holding_hours": 11.083333333333334,
+      "id": "FETUSDT-1792616548720",
+      "mae_pct": 6.448362720403022,
+      "mfe_pct": 0.8564231738035222,
+      "net_return_pct": -6.14,
+      "recorded_ms": 1792656694405,
+      "reward_r": -1.0233333333333332,
+      "sent_ms": 1792617115912,
+      "side": "LONG",
+      "snapshot": {
+        "bias": "LONG",
+        "bounce_from_12h_low_pct": 2.848,
+        "distance_from_1h_sma10_pct": 0.364,
+        "momentum_12h_pct": 0.557,
+        "momentum_24h_pct": 1.594,
+        "momentum_3h_pct": -0.799,
+        "price": 0.1986,
+        "pullback_from_12h_high_pct": -1.829,
+        "quote_volume_24h": 13671768.93,
+        "reasons": [
+          "1h and 4h trend structure aligned"
+        ],
+        "retest_reason": "long pullback reached trend area and buying resumed",
+        "setup_state": "CONTINUATION_TRIGGER",
+        "swing_score": 51.0,
+        "symbol": "FETUSDT",
+        "volume_expansion_1h": 0.9,
+        "warnings": []
+      },
+      "status": "STOP",
+      "stressed_reward_r": -1.0866666666666667,
+      "symbol": "FETUSDT"
     },
     "ONDOUSDT-1791644453967": {
       "definition": "paper net price return / planned stop percent; not account P&L",
