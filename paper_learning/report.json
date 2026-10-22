@@ -2,12 +2,21 @@
   "admission_diagnostics": {
     "latest_reason_counts": {
       "ACCEPTED": 28,
+      "POSITION_ALREADY_OPEN": 1,
       "PRE_ACTIVATION": 66,
       "STALE_AT_OBSERVATION": 35
     },
     "logging_started_ms": 1792454460377,
     "note": "Reasons reflect observation time; old triggers are not historical rejection evidence.",
     "recent_decisions": [
+      {
+        "id": "TIAUSDT-1792681338432",
+        "observed_ms": 1792681348004,
+        "reason": "POSITION_ALREADY_OPEN",
+        "side": "SHORT",
+        "signal_ms": 1792681338432,
+        "symbol": "TIAUSDT"
+      },
       {
         "id": "TIAUSDT-1792670551060",
         "observed_ms": 1792670564109,
@@ -159,18 +168,10 @@
         "side": "SHORT",
         "signal_ms": 1791395736372,
         "symbol": "AAVEUSDT"
-      },
-      {
-        "id": "AAVEUSDT-1792067482021",
-        "observed_ms": 1792454460377,
-        "reason": "STALE_AT_OBSERVATION",
-        "side": "SHORT",
-        "signal_ms": 1792067482021,
-        "symbol": "AAVEUSDT"
       }
     ]
   },
-  "as_of_ms": 1792681014104,
+  "as_of_ms": 1792681348004,
   "limitations": [
     "Spot proxy; shorts are hypothetical, not futures execution.",
     "Scores are uncalibrated; first 30 resolved trades per side are warmup.",
