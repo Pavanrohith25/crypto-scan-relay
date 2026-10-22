@@ -1,6 +1,6 @@
 {
-  "last_processed_at_ms": 1792705894749,
-  "last_processed_generated_at_ms": 1792705890610,
+  "last_processed_at_ms": 1792706256851,
+  "last_processed_generated_at_ms": 1792706253114,
   "minimum_candidate_score": 78.0,
   "pairs": {
     "1000000BOBUSDT": {
@@ -215,13 +215,14 @@
     },
     "ALTUSDT": {
       "gate_reasons": [
-        "score 49.0 below required 78.0",
-        "long spot confirmation weak (B/S 0.559, flow -39,339)"
+        "score 44.0 below required 78.0",
+        "long spot confirmation weak (B/S 0.559, flow -39,339)",
+        "15m OI is not expanding"
       ],
       "last_bias": "LONG",
-      "last_price": 0.008076,
-      "last_score": 49.0,
-      "last_seen_at_ms": 1792705894749,
+      "last_price": 0.008071,
+      "last_score": 44.0,
+      "last_seen_at_ms": 1792706256851,
       "qualifying_streak": 0,
       "required_score": 78.0
     },
@@ -739,13 +740,14 @@
         ]
       },
       "gate_reasons": [
-        "score 70.0 below required 82.0"
+        "score 54.0 below required 82.0",
+        "15m OI is not expanding"
       ],
       "last_bias": "LONG",
-      "last_price": 0.02656,
+      "last_price": 0.02613,
       "last_return_pct": 4.62585,
-      "last_score": 70.0,
-      "last_seen_at_ms": 1792705326776,
+      "last_score": 54.0,
+      "last_seen_at_ms": 1792706256851,
       "mae_pct": 0.0,
       "mfe_pct": 5.396825,
       "previous_score": 66.0,
@@ -777,9 +779,9 @@
         "15m OI is not expanding"
       ],
       "last_bias": "LONG",
-      "last_price": 21.98,
+      "last_price": 22.02,
       "last_score": 36.0,
-      "last_seen_at_ms": 1792705894749,
+      "last_seen_at_ms": 1792706256851,
       "qualifying_streak": 0,
       "required_score": 78.0
     },
@@ -850,15 +852,14 @@
     },
     "BTWUSDT": {
       "gate_reasons": [
-        "score 59.0 below required 78.0",
+        "score 70.0 below required 78.0",
         "candidate has blocker(s)",
-        "missing Binance spot confirmation",
-        "15m OI is not expanding"
+        "missing Binance spot confirmation"
       ],
       "last_bias": "LONG",
-      "last_price": 1.4368,
-      "last_score": 59.0,
-      "last_seen_at_ms": 1792705894749,
+      "last_price": 1.6052,
+      "last_score": 70.0,
+      "last_seen_at_ms": 1792706256851,
       "qualifying_streak": 0,
       "required_score": 78.0
     },
@@ -2800,9 +2801,9 @@
         "15m OI is not expanding"
       ],
       "last_bias": "SHORT",
-      "last_price": 38.63,
+      "last_price": 38.6,
       "last_score": 38.0,
-      "last_seen_at_ms": 1792705894749,
+      "last_seen_at_ms": 1792706256851,
       "qualifying_streak": 0,
       "required_score": 78.0
     },
