@@ -1,13 +1,21 @@
 {
   "admission_diagnostics": {
     "latest_reason_counts": {
-      "ACCEPTED": 29,
+      "ACCEPTED": 30,
       "PRE_ACTIVATION": 66,
       "STALE_AT_OBSERVATION": 36
     },
     "logging_started_ms": 1792454460377,
     "note": "Reasons reflect observation time; old triggers are not historical rejection evidence.",
     "recent_decisions": [
+      {
+        "id": "PUMPUSDT-1792771326595",
+        "observed_ms": 1792771337119,
+        "reason": "ACCEPTED",
+        "side": "SHORT",
+        "signal_ms": 1792771326595,
+        "symbol": "PUMPUSDT"
+      },
       {
         "id": "AVAXUSDT-1792688519885",
         "observed_ms": 1792688533855,
@@ -159,18 +167,10 @@
         "side": "LONG",
         "signal_ms": 1790845239741,
         "symbol": "AAVEUSDT"
-      },
-      {
-        "id": "AAVEUSDT-1791373821779",
-        "observed_ms": 1792454460377,
-        "reason": "PRE_ACTIVATION",
-        "side": "SHORT",
-        "signal_ms": 1791373821779,
-        "symbol": "AAVEUSDT"
       }
     ]
   },
-  "as_of_ms": 1792771053873,
+  "as_of_ms": 1792771337119,
   "limitations": [
     "Spot proxy; shorts are hypothetical, not futures execution.",
     "Scores are uncalibrated; first 30 resolved trades per side are warmup.",
@@ -198,11 +198,11 @@
     },
     "SHORT": {
       "data_errors": 0,
-      "entries": 15,
+      "entries": 16,
       "fixed_half_brier_baseline": null,
       "mean_net_pct": 0.6023076923076922,
       "model_updates": 13,
-      "open_or_pending": 2,
+      "open_or_pending": 3,
       "prequential_brier": null,
       "resolved": 13,
       "scored_resolved": 0,
