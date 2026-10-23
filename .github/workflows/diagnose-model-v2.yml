@@ -1,0 +1,31 @@
+name: Diagnose model v2 development results
+on:
+  push:
+    branches: [research/model-v2-60pct]
+    paths: [diagnose_model_v2.py, .github/workflows/diagnose-model-v2.yml]
+  workflow_dispatch:
+permissions:
+  contents: read
+  actions: read
+jobs:
+  diagnose:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install pandas==2.3.3
+      - uses: actions/download-artifact@v4
+        with:
+          name: futures-ml-research-v2-36743301853
+          run-id: 36743301853
+          github-token: ${{ github.token }}
+          path: _prior_research
+      - run: python diagnose_model_v2.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: model-v2-diagnosis
+          path: _diagnosis/
+          retention-days: 30

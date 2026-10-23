@@ -1,0 +1,181 @@
+{
+  "run_id": 37317239073,
+  "artifact_id": 11348795826,
+  "recorded_at_utc": "2026-10-05",
+  "verdict": "DO_NOT_PROMOTE: verified-crypto short-only later-period hit rate 38.46%, negative modeled net returns. No fresh validation run.",
+  "strategy": "V3.4 candle proxy; short-only; TP5/SL6; no forced deadline",
+  "identity_sha256": "c0e16e778e1dd6b9969aa68e75a19c9ba5e112d0bc990279e2348dada6aaa972",
+  "telegram_enabled": false,
+  "fresh_holdout_evaluations": 0,
+  "universe_counts": {
+    "CRYPTO": 130,
+    "NON_CRYPTO": 3,
+    "UNVERIFIED": 58
+  },
+  "limitations": [
+    "Verified subset only; unknown identity exclusions can introduce coverage bias",
+    "Asset identity evidence reviewed retrospectively; not a complete historical security master",
+    "All evaluated dates are development/previously observed; no fresh validation claim",
+    "1h futures live data and exact live parity remain unavailable/unverified",
+    "Modeled funding/fees, no leverage or liquidation simulation"
+  ],
+  "development": {
+    "short_only_original_universe": {
+      "trades": 140,
+      "wins": 89,
+      "resolved": 139,
+      "unresolved": 1,
+      "target_fraction_all": 0.6357142857142857,
+      "eventual_success_bounds": [
+        0.6357142857142857,
+        0.6428571428571429
+      ],
+      "resolved_win_rate": 0.6402877697841727,
+      "wilson_all_descriptive": [
+        0.5533622129235948,
+        0.7108172734002504
+      ],
+      "resolved_avg_net_pct": 0.87431654676259,
+      "resolved_profit_factor": 1.39401504344443,
+      "all_positions_mtm_avg_net_pct": 0.8759983232729713,
+      "resolved_avg_net_stress_pct": 0.49431654676259007,
+      "median_hold_hours": 17,
+      "p95_hold_hours": 136,
+      "mean_stop_pct": 6,
+      "ambiguous_losses": 0
+    },
+    "short_only_verified_crypto": {
+      "trades": 137,
+      "wins": 89,
+      "resolved": 136,
+      "unresolved": 1,
+      "target_fraction_all": 0.6496350364963503,
+      "eventual_success_bounds": [
+        0.6496350364963503,
+        0.656934306569343
+      ],
+      "resolved_win_rate": 0.6544117647058824,
+      "wilson_all_descriptive": [
+        0.5666553080888594,
+        0.7244518647918803
+      ],
+      "resolved_avg_net_pct": 1.0306617647058824,
+      "resolved_profit_factor": 1.483511555708865,
+      "all_positions_mtm_avg_net_pct": 1.0312391624687298,
+      "resolved_avg_net_stress_pct": 0.6506617647058826,
+      "median_hold_hours": 20,
+      "p95_hold_hours": 124.19999999999999,
+      "mean_stop_pct": 6,
+      "ambiguous_losses": 0
+    },
+    "original_mixed_portfolio": {
+      "trades": 247,
+      "wins": 140,
+      "resolved": 245,
+      "unresolved": 2,
+      "target_fraction_all": 0.5668016194331984,
+      "eventual_success_bounds": [
+        0.5668016194331984,
+        0.5748987854251012
+      ],
+      "resolved_win_rate": 0.5714285714285714,
+      "wilson_all_descriptive": [
+        0.5044481802967467,
+        0.6271089457939816
+      ],
+      "resolved_avg_net_pct": 0.11518367346938779,
+      "resolved_profit_factor": 1.043556776613314,
+      "all_positions_mtm_avg_net_pct": 0.10878802611821226,
+      "resolved_avg_net_stress_pct": -0.26481632653061216,
+      "median_hold_hours": 21,
+      "p95_hold_hours": 136,
+      "mean_stop_pct": 6,
+      "ambiguous_losses": 0
+    },
+    "original_short_subgroup": {
+      "trades": 140,
+      "wins": 89,
+      "resolved": 139,
+      "unresolved": 1,
+      "target_fraction_all": 0.6357142857142857,
+      "eventual_success_bounds": [
+        0.6357142857142857,
+        0.6428571428571429
+      ],
+      "resolved_win_rate": 0.6402877697841727,
+      "wilson_all_descriptive": [
+        0.5533622129235948,
+        0.7108172734002504
+      ],
+      "resolved_avg_net_pct": 0.87431654676259,
+      "resolved_profit_factor": 1.39401504344443,
+      "all_positions_mtm_avg_net_pct": 0.8759983232729713,
+      "resolved_avg_net_stress_pct": 0.49431654676259007,
+      "median_hold_hours": 17,
+      "p95_hold_hours": 136,
+      "mean_stop_pct": 6,
+      "ambiguous_losses": 0
+    },
+    "candidate_counts": {
+      "all": 2508,
+      "short": 1513,
+      "verified_crypto": 1277
+    }
+  },
+  "previously_seen_period": {
+    "short_only_original_universe": {
+      "trades": 12,
+      "wins": 5,
+      "resolved": 11,
+      "unresolved": 1,
+      "target_fraction_all": 0.4166666666666667,
+      "eventual_success_bounds": [
+        0.4166666666666667,
+        0.5
+      ],
+      "resolved_win_rate": 0.45454545454545453,
+      "wilson_all_descriptive": [
+        0.19325746190524656,
+        0.6804926643446272
+      ],
+      "resolved_avg_net_pct": -1.3,
+      "resolved_profit_factor": 0.6152811407048694,
+      "all_positions_mtm_avg_net_pct": -1.0975170019498737,
+      "resolved_avg_net_stress_pct": -1.6799999999999997,
+      "median_hold_hours": 61.5,
+      "p95_hold_hours": 500.3499999999998,
+      "mean_stop_pct": 6,
+      "ambiguous_losses": 0
+    },
+    "short_only_verified_crypto": {
+      "trades": 26,
+      "wins": 10,
+      "resolved": 25,
+      "unresolved": 1,
+      "target_fraction_all": 0.38461538461538464,
+      "eventual_success_bounds": [
+        0.38461538461538464,
+        0.4230769230769231
+      ],
+      "resolved_win_rate": 0.4,
+      "wilson_all_descriptive": [
+        0.22428359511834428,
+        0.5746547996057992
+      ],
+      "resolved_avg_net_pct": -1.7812000000000001,
+      "resolved_profit_factor": 0.5192702148332076,
+      "all_positions_mtm_avg_net_pct": -1.782423994698268,
+      "resolved_avg_net_stress_pct": -2.1612,
+      "median_hold_hours": 36,
+      "p95_hold_hours": 115.5,
+      "mean_stop_pct": 6,
+      "ambiguous_losses": 0
+    },
+    "candidate_counts": {
+      "all": 519,
+      "short": 236,
+      "verified_crypto": 167
+    }
+  },
+  "fresh_validation_status": "NOT_RUN: no substantial untouched period identified; prospective specification is committed separately"
+}
