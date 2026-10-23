@@ -1,6 +1,6 @@
 {
-  "last_processed_at_ms": 1792798059651,
-  "last_processed_generated_at_ms": 1792798056066,
+  "last_processed_at_ms": 1792798352143,
+  "last_processed_generated_at_ms": 1792798348678,
   "pairs": {
     "1000000BOBUSDT": {
       "gate_reasons": [
@@ -178,14 +178,15 @@
     "ALTUSDT": {
       "gate_reasons": [
         "deep countertrend: 24h structure/OI conflicts with the setup",
+        "score 72.0 below required 78.0",
         "long spot weak (B/S 1.000, flow -7)"
       ],
       "last_bias": "LONG",
       "last_decision": "BLOCKED_DEEP_COUNTERTREND",
-      "last_price": 0.007046,
+      "last_price": 0.007041,
       "last_regime": "COUNTERTREND_DEEP",
-      "last_score": 78.0,
-      "last_seen_at_ms": 1792798059651
+      "last_score": 72.0,
+      "last_seen_at_ms": 1792798352143
     },
     "AMCUSDT": {
       "gate_reasons": [
@@ -259,15 +260,16 @@
     },
     "ARKUSDT": {
       "gate_reasons": [
-        "score 54.0 below required 82.0",
-        "long spot weak (B/S 0.745, flow -25,414)"
+        "score 49.0 below required 82.0",
+        "long spot weak (B/S 0.756, flow -26,362)",
+        "15m OI not expanding"
       ],
       "last_bias": "LONG",
       "last_decision": "WAIT",
-      "last_price": 0.2159,
+      "last_price": 0.2141,
       "last_regime": "TREND_CONTINUATION",
-      "last_score": 54.0,
-      "last_seen_at_ms": 1792798059651
+      "last_score": 49.0,
+      "last_seen_at_ms": 1792798352143
     },
     "ARMUSDT": {
       "gate_reasons": [
@@ -376,10 +378,10 @@
       ],
       "last_bias": "LONG",
       "last_decision": "WAIT",
-      "last_price": 0.07776,
+      "last_price": 0.07664,
       "last_regime": "TREND_CONTINUATION",
       "last_score": 30.0,
-      "last_seen_at_ms": 1792798059651
+      "last_seen_at_ms": 1792798352143
     },
     "BLESSUSDT": {
       "gate_reasons": [
@@ -554,10 +556,10 @@
       ],
       "last_bias": "LONG",
       "last_decision": "BLOCKED_DEEP_COUNTERTREND",
-      "last_price": 1.7211,
+      "last_price": 1.7131,
       "last_regime": "COUNTERTREND_DEEP",
       "last_score": 67.0,
-      "last_seen_at_ms": 1792798059651
+      "last_seen_at_ms": 1792798352143
     },
     "BWETUSDT": {
       "gate_reasons": [
@@ -3146,7 +3148,7 @@
       "last_price": 38.62,
       "last_regime": "COUNTERTREND",
       "last_score": 33.0,
-      "last_seen_at_ms": 1792798059651
+      "last_seen_at_ms": 1792798352143
     },
     "TEAMUSDT": {
       "gate_reasons": [
