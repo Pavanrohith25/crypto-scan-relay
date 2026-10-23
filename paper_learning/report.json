@@ -1,13 +1,30 @@
 {
   "admission_diagnostics": {
     "latest_reason_counts": {
-      "ACCEPTED": 30,
+      "ACCEPTED": 31,
+      "POSITION_ALREADY_OPEN": 1,
       "PRE_ACTIVATION": 66,
       "STALE_AT_OBSERVATION": 36
     },
     "logging_started_ms": 1792454460377,
     "note": "Reasons reflect observation time; old triggers are not historical rejection evidence.",
     "recent_decisions": [
+      {
+        "id": "ARBUSDT-1792774914025",
+        "observed_ms": 1792774928077,
+        "reason": "ACCEPTED",
+        "side": "SHORT",
+        "signal_ms": 1792774914025,
+        "symbol": "ARBUSDT"
+      },
+      {
+        "id": "AVAXUSDT-1792774914025",
+        "observed_ms": 1792774928077,
+        "reason": "POSITION_ALREADY_OPEN",
+        "side": "SHORT",
+        "signal_ms": 1792774914025,
+        "symbol": "AVAXUSDT"
+      },
       {
         "id": "PUMPUSDT-1792771326595",
         "observed_ms": 1792771337119,
@@ -151,26 +168,10 @@
         "side": "LONG",
         "signal_ms": 1792479679865,
         "symbol": "PEPEUSDT"
-      },
-      {
-        "id": "AAVEUSDT-1790420485978",
-        "observed_ms": 1792454460377,
-        "reason": "PRE_ACTIVATION",
-        "side": "LONG",
-        "signal_ms": 1790420485978,
-        "symbol": "AAVEUSDT"
-      },
-      {
-        "id": "AAVEUSDT-1790845239741",
-        "observed_ms": 1792454460377,
-        "reason": "PRE_ACTIVATION",
-        "side": "LONG",
-        "signal_ms": 1790845239741,
-        "symbol": "AAVEUSDT"
       }
     ]
   },
-  "as_of_ms": 1792774636287,
+  "as_of_ms": 1792774928077,
   "limitations": [
     "Spot proxy; shorts are hypothetical, not futures execution.",
     "Scores are uncalibrated; first 30 resolved trades per side are warmup.",
@@ -198,11 +199,11 @@
     },
     "SHORT": {
       "data_errors": 0,
-      "entries": 16,
+      "entries": 17,
       "fixed_half_brier_baseline": null,
       "mean_net_pct": 0.6023076923076922,
       "model_updates": 13,
-      "open_or_pending": 3,
+      "open_or_pending": 4,
       "prequential_brier": null,
       "resolved": 13,
       "scored_resolved": 0,
