@@ -2,13 +2,20 @@
   "admission_diagnostics": {
     "latest_reason_counts": {
       "ACCEPTED": 31,
-      "POSITION_ALREADY_OPEN": 1,
       "PRE_ACTIVATION": 66,
-      "STALE_AT_OBSERVATION": 36
+      "STALE_AT_OBSERVATION": 37
     },
     "logging_started_ms": 1792454460377,
     "note": "Reasons reflect observation time; old triggers are not historical rejection evidence.",
     "recent_decisions": [
+      {
+        "id": "AVAXUSDT-1792774914025",
+        "observed_ms": 1792775554498,
+        "reason": "STALE_AT_OBSERVATION",
+        "side": "SHORT",
+        "signal_ms": 1792774914025,
+        "symbol": "AVAXUSDT"
+      },
       {
         "id": "ARBUSDT-1792774914025",
         "observed_ms": 1792774928077,
@@ -16,14 +23,6 @@
         "side": "SHORT",
         "signal_ms": 1792774914025,
         "symbol": "ARBUSDT"
-      },
-      {
-        "id": "AVAXUSDT-1792774914025",
-        "observed_ms": 1792774928077,
-        "reason": "POSITION_ALREADY_OPEN",
-        "side": "SHORT",
-        "signal_ms": 1792774914025,
-        "symbol": "AVAXUSDT"
       },
       {
         "id": "PUMPUSDT-1792771326595",
@@ -171,7 +170,7 @@
       }
     ]
   },
-  "as_of_ms": 1792775253056,
+  "as_of_ms": 1792775554498,
   "limitations": [
     "Spot proxy; shorts are hypothetical, not futures execution.",
     "Scores are uncalibrated; first 30 resolved trades per side are warmup.",
