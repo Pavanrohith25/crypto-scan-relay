@@ -2,17 +2,16 @@
   "admission_diagnostics": {
     "latest_reason_counts": {
       "ACCEPTED": 33,
-      "POSITION_ALREADY_OPEN": 1,
       "PRE_ACTIVATION": 66,
-      "STALE_AT_OBSERVATION": 37
+      "STALE_AT_OBSERVATION": 38
     },
     "logging_started_ms": 1792454460377,
     "note": "Reasons reflect observation time; old triggers are not historical rejection evidence.",
     "recent_decisions": [
       {
         "id": "ARBUSDT-1792792950997",
-        "observed_ms": 1792792962459,
-        "reason": "POSITION_ALREADY_OPEN",
+        "observed_ms": 1792793560407,
+        "reason": "STALE_AT_OBSERVATION",
         "side": "SHORT",
         "signal_ms": 1792792950997,
         "symbol": "ARBUSDT"
@@ -171,7 +170,7 @@
       }
     ]
   },
-  "as_of_ms": 1792793262873,
+  "as_of_ms": 1792793560407,
   "limitations": [
     "Spot proxy; shorts are hypothetical, not futures execution.",
     "Scores are uncalibrated; first 30 resolved trades per side are warmup.",
