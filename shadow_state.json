@@ -1,6 +1,6 @@
 {
-  "last_processed_at_ms": 1792779735909,
-  "last_processed_generated_at_ms": 1792779732446,
+  "last_processed_at_ms": 1792780006986,
+  "last_processed_generated_at_ms": 1792780003714,
   "pairs": {
     "1000000BOBUSDT": {
       "gate_reasons": [
@@ -178,14 +178,15 @@
     },
     "ALTUSDT": {
       "gate_reasons": [
-        "deep countertrend: 24h structure/OI conflicts with the setup"
+        "deep countertrend: 24h structure/OI conflicts with the setup",
+        "15m OI not expanding"
       ],
       "last_bias": "LONG",
       "last_decision": "BLOCKED_DEEP_COUNTERTREND",
-      "last_price": 0.007304,
+      "last_price": 0.007232,
       "last_regime": "COUNTERTREND_DEEP",
-      "last_score": 90.0,
-      "last_seen_at_ms": 1792779735909
+      "last_score": 79.0,
+      "last_seen_at_ms": 1792780006986
     },
     "AMCUSDT": {
       "gate_reasons": [
@@ -259,15 +260,16 @@
     },
     "ARKUSDT": {
       "gate_reasons": [
-        "score 54.0 below required 82.0",
-        "long spot weak (B/S 0.848, flow -38,011)"
+        "score 67.0 below required 82.0",
+        "long spot weak (B/S 1.022, flow 8,799)",
+        "15m OI not expanding"
       ],
       "last_bias": "LONG",
       "last_decision": "WAIT",
-      "last_price": 0.2194,
-      "last_regime": "COUNTERTREND",
-      "last_score": 54.0,
-      "last_seen_at_ms": 1792779735909
+      "last_price": 0.2192,
+      "last_regime": "TREND_CONTINUATION",
+      "last_score": 67.0,
+      "last_seen_at_ms": 1792780006986
     },
     "ARMUSDT": {
       "gate_reasons": [
@@ -368,17 +370,17 @@
     },
     "BIRBUSDT": {
       "gate_reasons": [
-        "score 56.0 below required 82.0",
+        "score 50.0 below required 82.0",
         "candidate has blocker(s)",
         "missing spot confirmation",
         "missing spot volume"
       ],
       "last_bias": "LONG",
       "last_decision": "WAIT",
-      "last_price": 0.08602,
+      "last_price": 0.08599,
       "last_regime": "TREND_CONTINUATION",
-      "last_score": 56.0,
-      "last_seen_at_ms": 1792779735909
+      "last_score": 50.0,
+      "last_seen_at_ms": 1792780006986
     },
     "BLESSUSDT": {
       "gate_reasons": [
@@ -545,6 +547,7 @@
     },
     "BTWUSDT": {
       "gate_reasons": [
+        "deep countertrend: 24h structure/OI conflicts with the setup",
         "score 47.0 below required 78.0",
         "candidate has blocker(s)",
         "missing spot confirmation",
@@ -552,11 +555,11 @@
         "missing spot volume"
       ],
       "last_bias": "LONG",
-      "last_decision": "WAIT",
-      "last_price": 1.6765,
-      "last_regime": "COUNTERTREND",
+      "last_decision": "BLOCKED_DEEP_COUNTERTREND",
+      "last_price": 1.6172,
+      "last_regime": "COUNTERTREND_DEEP",
       "last_score": 47.0,
-      "last_seen_at_ms": 1792779735909
+      "last_seen_at_ms": 1792780006986
     },
     "BWETUSDT": {
       "gate_reasons": [
@@ -568,10 +571,10 @@
       ],
       "last_bias": "SHORT",
       "last_decision": "WAIT",
-      "last_price": 902.35,
+      "last_price": 904.52,
       "last_regime": "COUNTERTREND",
       "last_score": 36.0,
-      "last_seen_at_ms": 1792779735909
+      "last_seen_at_ms": 1792780006986
     },
     "BYDUSDT": {
       "gate_reasons": [
@@ -1583,17 +1586,17 @@
     "IRYSUSDT": {
       "gate_reasons": [
         "deep countertrend: 24h structure/OI conflicts with the setup",
-        "score 43.0 below required 78.0",
+        "score 44.0 below required 78.0",
         "candidate has blocker(s)",
         "missing spot confirmation",
         "missing spot volume"
       ],
       "last_bias": "SHORT",
       "last_decision": "BLOCKED_DEEP_COUNTERTREND",
-      "last_price": 0.12819,
+      "last_price": 0.12922,
       "last_regime": "COUNTERTREND_DEEP",
-      "last_score": 43.0,
-      "last_seen_at_ms": 1792779735909
+      "last_score": 44.0,
+      "last_seen_at_ms": 1792780006986
     },
     "JASMYUSDT": {
       "gate_reasons": [
