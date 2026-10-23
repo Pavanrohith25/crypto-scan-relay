@@ -1,6 +1,6 @@
 {
-  "last_processed_at_ms": 1792799222914,
-  "last_processed_generated_at_ms": 1792799219486,
+  "last_processed_at_ms": 1792799565963,
+  "last_processed_generated_at_ms": 1792799562535,
   "minimum_candidate_score": 78.0,
   "pairs": {
     "1000000BOBUSDT": {
@@ -260,10 +260,10 @@
         "long spot confirmation weak (B/S 1.000, flow -7)"
       ],
       "last_bias": "LONG",
-      "last_price": 0.007157,
+      "last_price": 0.007223,
       "last_return_pct": 1.59003,
       "last_score": 78.0,
-      "last_seen_at_ms": 1792799222914,
+      "last_seen_at_ms": 1792799565963,
       "mae_pct": 0.0,
       "mfe_pct": 3.566824,
       "previous_score": 69.0,
@@ -486,15 +486,14 @@
         ]
       },
       "gate_reasons": [
-        "score 49.0 below required 82.0",
-        "long spot confirmation weak (B/S 0.756, flow -26,362)",
-        "15m OI is not expanding"
+        "score 60.0 below required 82.0",
+        "long spot confirmation weak (B/S 0.756, flow -26,362)"
       ],
       "last_bias": "LONG",
-      "last_price": 0.214,
+      "last_price": 0.2141,
       "last_return_pct": 1.346801,
-      "last_score": 49.0,
-      "last_seen_at_ms": 1792799222914,
+      "last_score": 60.0,
+      "last_seen_at_ms": 1792799565963,
       "mae_pct": 0.0,
       "mfe_pct": 2.549303,
       "previous_score": 48.0,
@@ -640,14 +639,14 @@
     },
     "BIRBUSDT": {
       "gate_reasons": [
-        "score 50.0 below required 82.0",
+        "score 52.0 below required 82.0",
         "candidate has blocker(s)",
         "missing Binance spot confirmation"
       ],
       "last_bias": "LONG",
-      "last_price": 0.07695,
-      "last_score": 50.0,
-      "last_seen_at_ms": 1792799222914,
+      "last_price": 0.07599,
+      "last_score": 52.0,
+      "last_seen_at_ms": 1792799565963,
       "qualifying_streak": 0,
       "required_score": 82.0
     },
@@ -899,14 +898,15 @@
     },
     "BTWUSDT": {
       "gate_reasons": [
-        "score 67.0 below required 78.0",
+        "score 62.0 below required 78.0",
         "candidate has blocker(s)",
-        "missing Binance spot confirmation"
+        "missing Binance spot confirmation",
+        "15m OI is not expanding"
       ],
       "last_bias": "LONG",
-      "last_price": 1.7116,
-      "last_score": 67.0,
-      "last_seen_at_ms": 1792799222914,
+      "last_price": 1.7152,
+      "last_score": 62.0,
+      "last_seen_at_ms": 1792799565963,
       "qualifying_streak": 0,
       "required_score": 78.0
     },
@@ -1900,9 +1900,9 @@
         "15m OI is not expanding"
       ],
       "last_bias": "LONG",
-      "last_price": 6.875,
+      "last_price": 6.901,
       "last_score": 30.0,
-      "last_seen_at_ms": 1792799222914,
+      "last_seen_at_ms": 1792799565963,
       "qualifying_streak": 0,
       "required_score": 78.0
     },
@@ -4417,7 +4417,7 @@
       "last_bias": "SHORT",
       "last_price": 38.72,
       "last_score": 33.0,
-      "last_seen_at_ms": 1792799222914,
+      "last_seen_at_ms": 1792799565963,
       "qualifying_streak": 0,
       "required_score": 78.0
     },
