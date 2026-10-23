@@ -1,15 +1,15 @@
 {
   "models": {
     "LONG": {
-      "n": 11,
+      "n": 12,
       "weights": [
-        -0.3134622655189371,
-        0.02034651952356519,
-        -0.014718239025411285,
-        -0.042962343404853366,
-        -0.018391479303524354,
-        -0.10176466639678748,
-        -0.17122515557392837
+        -0.3638988365761789,
+        0.02038901562826298,
+        -0.018208876080987126,
+        -0.04645820594749734,
+        -0.02426976502585355,
+        -0.12074795288299589,
+        -0.20398454880231248
       ]
     },
     "SHORT": {
@@ -1040,6 +1040,56 @@
       },
       "status": "STOP",
       "stressed_reward_r": -1.1166666666666667,
+      "symbol": "SOLUSDT"
+    },
+    "SOLUSDT-1792612905108": {
+      "definition": "paper net price return / planned stop percent; not account P&L",
+      "features": [
+        1.0,
+        -0.0009,
+        0.06925,
+        0.06943333333333333,
+        0.1166,
+        0.37666666666666665,
+        0.65
+      ],
+      "forecast_at_delivery": {
+        "expected_r": 0.029996582622083302,
+        "model_hash": "a5a251a8bee5d2f4bb4066b6a76571a20d4d029fcc1f4f49d7f9e2028a77e8de",
+        "model_n": 7,
+        "version": "telegram-reward-v1"
+      },
+      "holding_hours": 50.916666666666664,
+      "id": "SOLUSDT-1792612905108",
+      "mae_pct": 6.075154648693559,
+      "mfe_pct": 0.1938879143200012,
+      "net_return_pct": -6.19,
+      "recorded_ms": 1792796508711,
+      "reward_r": -1.0316666666666667,
+      "sent_ms": 1792613559049,
+      "side": "LONG",
+      "snapshot": {
+        "bias": "LONG",
+        "bounce_from_12h_low_pct": 2.179,
+        "distance_from_1h_sma10_pct": 0.583,
+        "momentum_12h_pct": 1.385,
+        "momentum_24h_pct": 2.083,
+        "momentum_3h_pct": -0.009,
+        "price": 108.31,
+        "pullback_from_12h_high_pct": -0.815,
+        "quote_volume_24h": 201229008.3,
+        "reasons": [
+          "1h and 4h trend structure aligned"
+        ],
+        "retest_reason": "long pullback reached trend area and buying resumed",
+        "setup_state": "CONTINUATION_TRIGGER",
+        "swing_score": 65.0,
+        "symbol": "SOLUSDT",
+        "volume_expansion_1h": 1.13,
+        "warnings": []
+      },
+      "status": "STOP",
+      "stressed_reward_r": -1.095,
       "symbol": "SOLUSDT"
     },
     "TIAUSDT-1792670551060": {
