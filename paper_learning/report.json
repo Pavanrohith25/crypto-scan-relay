@@ -1,13 +1,30 @@
 {
   "admission_diagnostics": {
     "latest_reason_counts": {
-      "ACCEPTED": 32,
+      "ACCEPTED": 33,
+      "POSITION_ALREADY_OPEN": 1,
       "PRE_ACTIVATION": 66,
       "STALE_AT_OBSERVATION": 37
     },
     "logging_started_ms": 1792454460377,
     "note": "Reasons reflect observation time; old triggers are not historical rejection evidence.",
     "recent_decisions": [
+      {
+        "id": "ARBUSDT-1792792950997",
+        "observed_ms": 1792792962459,
+        "reason": "POSITION_ALREADY_OPEN",
+        "side": "SHORT",
+        "signal_ms": 1792792950997,
+        "symbol": "ARBUSDT"
+      },
+      {
+        "id": "TAOUSDT-1792792950997",
+        "observed_ms": 1792792962459,
+        "reason": "ACCEPTED",
+        "side": "SHORT",
+        "signal_ms": 1792792950997,
+        "symbol": "TAOUSDT"
+      },
       {
         "id": "LTCUSDT-1792782114269",
         "observed_ms": 1792782124128,
@@ -151,26 +168,10 @@
         "side": "LONG",
         "signal_ms": 1792544533332,
         "symbol": "LINKUSDT"
-      },
-      {
-        "id": "BTCUSDT-1792515673249",
-        "observed_ms": 1792516325096,
-        "reason": "STALE_AT_OBSERVATION",
-        "side": "LONG",
-        "signal_ms": 1792515673249,
-        "symbol": "BTCUSDT"
-      },
-      {
-        "id": "PEPEUSDT-1792501289471",
-        "observed_ms": 1792501948397,
-        "reason": "STALE_AT_OBSERVATION",
-        "side": "LONG",
-        "signal_ms": 1792501289471,
-        "symbol": "PEPEUSDT"
       }
     ]
   },
-  "as_of_ms": 1792792659362,
+  "as_of_ms": 1792792962459,
   "limitations": [
     "Spot proxy; shorts are hypothetical, not futures execution.",
     "Scores are uncalibrated; first 30 resolved trades per side are warmup.",
@@ -198,11 +199,11 @@
     },
     "SHORT": {
       "data_errors": 0,
-      "entries": 18,
+      "entries": 19,
       "fixed_half_brier_baseline": null,
       "mean_net_pct": 0.6023076923076922,
       "model_updates": 13,
-      "open_or_pending": 5,
+      "open_or_pending": 6,
       "prequential_brier": null,
       "resolved": 13,
       "scored_resolved": 0,
