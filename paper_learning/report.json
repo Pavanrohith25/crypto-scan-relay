@@ -10,20 +10,20 @@
     "note": "Reasons reflect observation time; old triggers are not historical rejection evidence.",
     "recent_decisions": [
       {
-        "id": "XRPUSDT-1792850560424",
-        "observed_ms": 1792850573460,
-        "reason": "ACCEPTED",
-        "side": "SHORT",
-        "signal_ms": 1792850560424,
-        "symbol": "XRPUSDT"
-      },
-      {
         "id": "TAOUSDT-1792850560424",
         "observed_ms": 1792850573460,
         "reason": "POSITION_ALREADY_OPEN",
         "side": "SHORT",
         "signal_ms": 1792850560424,
         "symbol": "TAOUSDT"
+      },
+      {
+        "id": "XRPUSDT-1792850560424",
+        "observed_ms": 1792850573460,
+        "reason": "ACCEPTED",
+        "side": "SHORT",
+        "signal_ms": 1792850560424,
+        "symbol": "XRPUSDT"
       },
       {
         "id": "AVAXUSDT-1792843322502",
@@ -171,7 +171,7 @@
       }
     ]
   },
-  "as_of_ms": 1792850573460,
+  "as_of_ms": 1792850852272,
   "limitations": [
     "Spot proxy; shorts are hypothetical, not futures execution.",
     "Scores are uncalibrated; first 30 resolved trades per side are warmup.",
