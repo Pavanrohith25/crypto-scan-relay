@@ -1,6 +1,6 @@
 {
-  "last_processed_at_ms": 1792814544140,
-  "last_processed_generated_at_ms": 1792814540802,
+  "last_processed_at_ms": 1792814842349,
+  "last_processed_generated_at_ms": 1792814839020,
   "pairs": {
     "1000000BOBUSDT": {
       "gate_reasons": [
@@ -177,14 +177,15 @@
     },
     "ALTUSDT": {
       "gate_reasons": [
+        "score 72.0 below required 78.0",
         "long spot weak (B/S 1.014, flow 937)"
       ],
       "last_bias": "LONG",
       "last_decision": "WAIT",
-      "last_price": 0.007243,
+      "last_price": 0.007306,
       "last_regime": "COUNTERTREND",
-      "last_score": 78.0,
-      "last_seen_at_ms": 1792814544140
+      "last_score": 72.0,
+      "last_seen_at_ms": 1792814842349
     },
     "AMCUSDT": {
       "gate_reasons": [
@@ -263,10 +264,10 @@
       ],
       "last_bias": "LONG",
       "last_decision": "WAIT",
-      "last_price": 0.1998,
+      "last_price": 0.202,
       "last_regime": "TREND_CONTINUATION",
       "last_score": 60.0,
-      "last_seen_at_ms": 1792814544140
+      "last_seen_at_ms": 1792814842349
     },
     "ARMUSDT": {
       "gate_reasons": [
@@ -374,10 +375,10 @@
       ],
       "last_bias": "LONG",
       "last_decision": "WAIT",
-      "last_price": 0.18154,
+      "last_price": 0.18314,
       "last_regime": "TREND_CONTINUATION",
       "last_score": 46.0,
-      "last_seen_at_ms": 1792814544140
+      "last_seen_at_ms": 1792814842349
     },
     "BLESSUSDT": {
       "gate_reasons": [
@@ -548,14 +549,15 @@
         "score 62.0 below required 78.0",
         "candidate has blocker(s)",
         "missing spot confirmation",
+        "15m OI not expanding",
         "missing spot volume"
       ],
       "last_bias": "LONG",
       "last_decision": "BLOCKED_DEEP_COUNTERTREND",
-      "last_price": 1.714,
+      "last_price": 1.7086,
       "last_regime": "COUNTERTREND_DEEP",
       "last_score": 62.0,
-      "last_seen_at_ms": 1792814544140
+      "last_seen_at_ms": 1792814842349
     },
     "BWETUSDT": {
       "gate_reasons": [
@@ -1367,10 +1369,10 @@
       "last_bias": "LONG",
       "last_decision": "BLOCKED_DEEP_COUNTERTREND",
       "last_position_check_ms": 1792762907939,
-      "last_price": 0.26327,
+      "last_price": 0.26339,
       "last_regime": "COUNTERTREND_DEEP",
       "last_score": 44.0,
-      "last_seen_at_ms": 1792814544140,
+      "last_seen_at_ms": 1792814842349,
       "position_state": "EXIT_THESIS_BROKEN"
     },
     "GUSDT": {
