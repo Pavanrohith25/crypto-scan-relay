@@ -13,15 +13,15 @@
       ]
     },
     "SHORT": {
-      "n": 11,
+      "n": 13,
       "weights": [
-        0.027615657970142517,
-        -0.03641232227152971,
-        0.013428100685442427,
-        0.0597906825301707,
-        -0.009965205701804317,
-        0.00840182541422578,
-        0.016272404509083085
+        0.15864094987085836,
+        -0.03649678156224499,
+        0.005040194369087356,
+        0.058639250588898184,
+        -0.01890584396286377,
+        0.06136022490311149,
+        0.0954318763430785
       ]
     }
   },
@@ -585,6 +585,57 @@
       "stressed_reward_r": -1.0983333333333334,
       "symbol": "LINKUSDT"
     },
+    "LTCUSDT-1792782114269": {
+      "definition": "paper net price return / planned stop percent; not account P&L",
+      "features": [
+        1.0,
+        0.054700000000000006,
+        -0.08199999999999999,
+        -0.027133333333333332,
+        -0.0048000000000000004,
+        0.51,
+        0.71
+      ],
+      "forecast_at_delivery": {
+        "expected_r": -0.07694238076310289,
+        "model_hash": "18f0c8a788faded9fd5976080eba5250facc9eace0ae2c19781e3561e84990e9",
+        "model_n": 10,
+        "version": "telegram-reward-v1"
+      },
+      "holding_hours": 19.25,
+      "id": "LTCUSDT-1792782114269",
+      "mae_pct": 0.03408897221748308,
+      "mfe_pct": 5.743991818646677,
+      "net_return_pct": 4.85,
+      "recorded_ms": 1792851782629,
+      "reward_r": 0.8083333333333332,
+      "sent_ms": 1792782730389,
+      "side": "SHORT",
+      "snapshot": {
+        "bias": "SHORT",
+        "bounce_from_12h_low_pct": 1.537,
+        "distance_from_1h_sma10_pct": -0.024,
+        "momentum_12h_pct": -1.64,
+        "momentum_24h_pct": -0.814,
+        "momentum_3h_pct": 0.547,
+        "price": 58.79,
+        "pullback_from_12h_high_pct": -1.64,
+        "quote_volume_24h": 12212359.97,
+        "reasons": [
+          "1h and 4h trend structure aligned",
+          "1h spot volume expansion 1.53x"
+        ],
+        "retest_reason": "short bounce reached trend area and selling resumed",
+        "setup_state": "CONTINUATION_TRIGGER",
+        "swing_score": 71.0,
+        "symbol": "LTCUSDT",
+        "volume_expansion_1h": 1.53,
+        "warnings": []
+      },
+      "status": "TARGET",
+      "stressed_reward_r": 0.745,
+      "symbol": "LTCUSDT"
+    },
     "ONDOUSDT-1791644453967": {
       "definition": "paper net price return / planned stop percent; not account P&L",
       "features": [
@@ -1142,6 +1193,57 @@
       "status": "STOP",
       "stressed_reward_r": -1.095,
       "symbol": "SOLUSDT"
+    },
+    "TAOUSDT-1792792950997": {
+      "definition": "paper net price return / planned stop percent; not account P&L",
+      "features": [
+        1.0,
+        -0.0501,
+        -0.04795,
+        0.0078000000000000005,
+        -0.1248,
+        0.31,
+        0.51
+      ],
+      "forecast_at_delivery": {
+        "expected_r": -0.05824190419756876,
+        "model_hash": "18f0c8a788faded9fd5976080eba5250facc9eace0ae2c19781e3561e84990e9",
+        "model_n": 10,
+        "version": "telegram-reward-v1"
+      },
+      "holding_hours": 16.25,
+      "id": "TAOUSDT-1792792950997",
+      "mae_pct": 0.0,
+      "mfe_pct": 5.596294866846785,
+      "net_return_pct": 4.85,
+      "recorded_ms": 1792851782629,
+      "reward_r": 0.8083333333333332,
+      "sent_ms": 1792793561626,
+      "side": "SHORT",
+      "snapshot": {
+        "bias": "SHORT",
+        "bounce_from_12h_low_pct": 0.938,
+        "distance_from_1h_sma10_pct": -0.624,
+        "momentum_12h_pct": -0.959,
+        "momentum_24h_pct": 0.234,
+        "momentum_3h_pct": -0.501,
+        "price": 258.2,
+        "pullback_from_12h_high_pct": -1.563,
+        "quote_volume_24h": 12673845.27,
+        "reasons": [
+          "1h and 4h trend structure aligned",
+          "3h momentum supports short trend"
+        ],
+        "retest_reason": "short bounce reached trend area and selling resumed",
+        "setup_state": "CONTINUATION_TRIGGER",
+        "swing_score": 51.0,
+        "symbol": "TAOUSDT",
+        "volume_expansion_1h": 0.93,
+        "warnings": []
+      },
+      "status": "TARGET",
+      "stressed_reward_r": 0.745,
+      "symbol": "TAOUSDT"
     },
     "TIAUSDT-1792670551060": {
       "definition": "paper net price return / planned stop percent; not account P&L",
