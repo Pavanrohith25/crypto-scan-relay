@@ -2,17 +2,16 @@
   "admission_diagnostics": {
     "latest_reason_counts": {
       "ACCEPTED": 38,
-      "POSITION_ALREADY_OPEN": 1,
       "PRE_ACTIVATION": 66,
-      "STALE_AT_OBSERVATION": 40
+      "STALE_AT_OBSERVATION": 41
     },
     "logging_started_ms": 1792454460377,
     "note": "Reasons reflect observation time; old triggers are not historical rejection evidence.",
     "recent_decisions": [
       {
         "id": "TAOUSDT-1792850560424",
-        "observed_ms": 1792850573460,
-        "reason": "POSITION_ALREADY_OPEN",
+        "observed_ms": 1792851176965,
+        "reason": "STALE_AT_OBSERVATION",
         "side": "SHORT",
         "signal_ms": 1792850560424,
         "symbol": "TAOUSDT"
@@ -171,7 +170,7 @@
       }
     ]
   },
-  "as_of_ms": 1792850852272,
+  "as_of_ms": 1792851176965,
   "limitations": [
     "Spot proxy; shorts are hypothetical, not futures execution.",
     "Scores are uncalibrated; first 30 resolved trades per side are warmup.",
