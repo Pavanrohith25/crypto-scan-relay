@@ -1,13 +1,38 @@
 {
   "admission_diagnostics": {
     "latest_reason_counts": {
-      "ACCEPTED": 33,
+      "ACCEPTED": 35,
+      "POSITION_ALREADY_OPEN": 1,
       "PRE_ACTIVATION": 66,
       "STALE_AT_OBSERVATION": 38
     },
     "logging_started_ms": 1792454460377,
     "note": "Reasons reflect observation time; old triggers are not historical rejection evidence.",
     "recent_decisions": [
+      {
+        "id": "ETHUSDT-1792803732402",
+        "observed_ms": 1792803745637,
+        "reason": "ACCEPTED",
+        "side": "SHORT",
+        "signal_ms": 1792803732402,
+        "symbol": "ETHUSDT"
+      },
+      {
+        "id": "HBARUSDT-1792803732402",
+        "observed_ms": 1792803745637,
+        "reason": "ACCEPTED",
+        "side": "SHORT",
+        "signal_ms": 1792803732402,
+        "symbol": "HBARUSDT"
+      },
+      {
+        "id": "AVAXUSDT-1792803732402",
+        "observed_ms": 1792803745637,
+        "reason": "POSITION_ALREADY_OPEN",
+        "side": "SHORT",
+        "signal_ms": 1792803732402,
+        "symbol": "AVAXUSDT"
+      },
       {
         "id": "ARBUSDT-1792792950997",
         "observed_ms": 1792793560407,
@@ -143,34 +168,10 @@
         "side": "LONG",
         "signal_ms": 1792580506276,
         "symbol": "QNTUSDT"
-      },
-      {
-        "id": "BCHUSDT-1792575020619",
-        "observed_ms": 1792575029292,
-        "reason": "ACCEPTED",
-        "side": "LONG",
-        "signal_ms": 1792575020619,
-        "symbol": "BCHUSDT"
-      },
-      {
-        "id": "HYPEUSDT-1792544533332",
-        "observed_ms": 1792544544548,
-        "reason": "ACCEPTED",
-        "side": "LONG",
-        "signal_ms": 1792544533332,
-        "symbol": "HYPEUSDT"
-      },
-      {
-        "id": "LINKUSDT-1792544533332",
-        "observed_ms": 1792544544548,
-        "reason": "ACCEPTED",
-        "side": "LONG",
-        "signal_ms": 1792544533332,
-        "symbol": "LINKUSDT"
       }
     ]
   },
-  "as_of_ms": 1792803444910,
+  "as_of_ms": 1792803745637,
   "limitations": [
     "Spot proxy; shorts are hypothetical, not futures execution.",
     "Scores are uncalibrated; first 30 resolved trades per side are warmup.",
@@ -198,11 +199,11 @@
     },
     "SHORT": {
       "data_errors": 0,
-      "entries": 19,
+      "entries": 21,
       "fixed_half_brier_baseline": null,
       "mean_net_pct": 1.1713333333333333,
       "model_updates": 15,
-      "open_or_pending": 4,
+      "open_or_pending": 6,
       "prequential_brier": null,
       "resolved": 15,
       "scored_resolved": 0,
