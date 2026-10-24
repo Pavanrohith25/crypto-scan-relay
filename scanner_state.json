@@ -1,6 +1,6 @@
 {
-  "last_processed_at_ms": 1792828651908,
-  "last_processed_generated_at_ms": 1792828648598,
+  "last_processed_at_ms": 1792828893454,
+  "last_processed_generated_at_ms": 1792828890019,
   "minimum_candidate_score": 78.0,
   "pairs": {
     "1000000BOBUSDT": {
@@ -255,12 +255,14 @@
         "strength": "STRONG",
         "warnings": []
       },
-      "gate_reasons": [],
+      "gate_reasons": [
+        "pair cooldown active after deterioration"
+      ],
       "last_bias": "LONG",
-      "last_price": 0.007097,
+      "last_price": 0.007063,
       "last_return_pct": -1.457928,
       "last_score": 52.0,
-      "last_seen_at_ms": 1792828651908,
+      "last_seen_at_ms": 1792828893454,
       "mae_pct": -1.457928,
       "mfe_pct": 0.0,
       "previous_score": 52.0,
@@ -486,10 +488,10 @@
         "long spot confirmation weak (B/S 1.017, flow 738)"
       ],
       "last_bias": "LONG",
-      "last_price": 0.2119,
+      "last_price": 0.2055,
       "last_return_pct": 0.192771,
       "last_score": 73.0,
-      "last_seen_at_ms": 1792828651908,
+      "last_seen_at_ms": 1792828893454,
       "mae_pct": 0.0,
       "mfe_pct": 0.192771,
       "previous_score": 50.0,
@@ -634,14 +636,14 @@
     },
     "BIRBUSDT": {
       "gate_reasons": [
-        "score 52.0 below required 78.0",
+        "score 46.0 below required 78.0",
         "candidate has blocker(s)",
         "missing Binance spot confirmation"
       ],
       "last_bias": "LONG",
-      "last_price": 0.20362,
-      "last_score": 52.0,
-      "last_seen_at_ms": 1792828651908,
+      "last_price": 0.18365,
+      "last_score": 46.0,
+      "last_seen_at_ms": 1792828893454,
       "qualifying_streak": 0,
       "required_score": 78.0
     },
@@ -895,12 +897,13 @@
       "gate_reasons": [
         "score 62.0 below required 78.0",
         "candidate has blocker(s)",
-        "missing Binance spot confirmation"
+        "missing Binance spot confirmation",
+        "15m OI is not expanding"
       ],
       "last_bias": "LONG",
-      "last_price": 1.7294,
+      "last_price": 1.7209,
       "last_score": 62.0,
-      "last_seen_at_ms": 1792828651908,
+      "last_seen_at_ms": 1792828893454,
       "qualifying_streak": 0,
       "required_score": 78.0
     },
@@ -4207,12 +4210,13 @@
     },
     "SOPHUSDT": {
       "gate_reasons": [
-        "score 74.0 below required 82.0"
+        "score 74.0 below required 82.0",
+        "15m OI is not expanding"
       ],
       "last_bias": "LONG",
-      "last_price": 0.001563,
+      "last_price": 0.001562,
       "last_score": 74.0,
-      "last_seen_at_ms": 1792828651908,
+      "last_seen_at_ms": 1792828893454,
       "qualifying_streak": 0,
       "required_score": 82.0
     },
