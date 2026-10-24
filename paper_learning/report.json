@@ -1,13 +1,21 @@
 {
   "admission_diagnostics": {
     "latest_reason_counts": {
-      "ACCEPTED": 35,
+      "ACCEPTED": 36,
       "PRE_ACTIVATION": 66,
       "STALE_AT_OBSERVATION": 39
     },
     "logging_started_ms": 1792454460377,
     "note": "Reasons reflect observation time; old triggers are not historical rejection evidence.",
     "recent_decisions": [
+      {
+        "id": "ZECUSDT-1792832524367",
+        "observed_ms": 1792832536699,
+        "reason": "ACCEPTED",
+        "side": "SHORT",
+        "signal_ms": 1792832524367,
+        "symbol": "ZECUSDT"
+      },
       {
         "id": "AVAXUSDT-1792803732402",
         "observed_ms": 1792804647399,
@@ -159,18 +167,10 @@
         "side": "LONG",
         "signal_ms": 1792580506276,
         "symbol": "AAVEUSDT"
-      },
-      {
-        "id": "QNTUSDT-1792580506276",
-        "observed_ms": 1792580516144,
-        "reason": "ACCEPTED",
-        "side": "LONG",
-        "signal_ms": 1792580506276,
-        "symbol": "QNTUSDT"
       }
     ]
   },
-  "as_of_ms": 1792832262524,
+  "as_of_ms": 1792832536699,
   "limitations": [
     "Spot proxy; shorts are hypothetical, not futures execution.",
     "Scores are uncalibrated; first 30 resolved trades per side are warmup.",
@@ -198,11 +198,11 @@
     },
     "SHORT": {
       "data_errors": 0,
-      "entries": 21,
+      "entries": 22,
       "fixed_half_brier_baseline": null,
       "mean_net_pct": 1.1713333333333333,
       "model_updates": 15,
-      "open_or_pending": 6,
+      "open_or_pending": 7,
       "prequential_brier": null,
       "resolved": 15,
       "scored_resolved": 0,
