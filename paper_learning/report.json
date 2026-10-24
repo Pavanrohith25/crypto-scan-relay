@@ -1,13 +1,30 @@
 {
   "admission_diagnostics": {
     "latest_reason_counts": {
-      "ACCEPTED": 36,
+      "ACCEPTED": 37,
+      "POSITION_ALREADY_OPEN": 1,
       "PRE_ACTIVATION": 66,
       "STALE_AT_OBSERVATION": 39
     },
     "logging_started_ms": 1792454460377,
     "note": "Reasons reflect observation time; old triggers are not historical rejection evidence.",
     "recent_decisions": [
+      {
+        "id": "AVAXUSDT-1792843322502",
+        "observed_ms": 1792843334621,
+        "reason": "POSITION_ALREADY_OPEN",
+        "side": "SHORT",
+        "signal_ms": 1792843322502,
+        "symbol": "AVAXUSDT"
+      },
+      {
+        "id": "ADAUSDT-1792843322502",
+        "observed_ms": 1792843334621,
+        "reason": "ACCEPTED",
+        "side": "SHORT",
+        "signal_ms": 1792843322502,
+        "symbol": "ADAUSDT"
+      },
       {
         "id": "ZECUSDT-1792832524367",
         "observed_ms": 1792832536699,
@@ -151,26 +168,10 @@
         "side": "LONG",
         "signal_ms": 1792612905108,
         "symbol": "SOLUSDT"
-      },
-      {
-        "id": "HYPEUSDT-1792605706139",
-        "observed_ms": 1792606625710,
-        "reason": "STALE_AT_OBSERVATION",
-        "side": "LONG",
-        "signal_ms": 1792605706139,
-        "symbol": "HYPEUSDT"
-      },
-      {
-        "id": "AAVEUSDT-1792580506276",
-        "observed_ms": 1792580516144,
-        "reason": "ACCEPTED",
-        "side": "LONG",
-        "signal_ms": 1792580506276,
-        "symbol": "AAVEUSDT"
       }
     ]
   },
-  "as_of_ms": 1792843003420,
+  "as_of_ms": 1792843334621,
   "limitations": [
     "Spot proxy; shorts are hypothetical, not futures execution.",
     "Scores are uncalibrated; first 30 resolved trades per side are warmup.",
@@ -198,11 +199,11 @@
     },
     "SHORT": {
       "data_errors": 0,
-      "entries": 22,
+      "entries": 23,
       "fixed_half_brier_baseline": null,
       "mean_net_pct": 1.1713333333333333,
       "model_updates": 15,
-      "open_or_pending": 7,
+      "open_or_pending": 8,
       "prequential_brier": null,
       "resolved": 15,
       "scored_resolved": 0,
