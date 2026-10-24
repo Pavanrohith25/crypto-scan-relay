@@ -10,20 +10,20 @@
     "note": "Reasons reflect observation time; old triggers are not historical rejection evidence.",
     "recent_decisions": [
       {
-        "id": "LTCUSDT-1792854170893",
-        "observed_ms": 1792854187844,
-        "reason": "SYMBOL_COOLDOWN",
-        "side": "SHORT",
-        "signal_ms": 1792854170893,
-        "symbol": "LTCUSDT"
-      },
-      {
         "id": "HYPEUSDT-1792854170893",
         "observed_ms": 1792854187844,
         "reason": "ACCEPTED",
         "side": "SHORT",
         "signal_ms": 1792854170893,
         "symbol": "HYPEUSDT"
+      },
+      {
+        "id": "LTCUSDT-1792854170893",
+        "observed_ms": 1792854187844,
+        "reason": "SYMBOL_COOLDOWN",
+        "side": "SHORT",
+        "signal_ms": 1792854170893,
+        "symbol": "LTCUSDT"
       },
       {
         "id": "TAOUSDT-1792850560424",
@@ -171,7 +171,7 @@
       }
     ]
   },
-  "as_of_ms": 1792854187844,
+  "as_of_ms": 1792854441896,
   "limitations": [
     "Spot proxy; shorts are hypothetical, not futures execution.",
     "Scores are uncalibrated; first 30 resolved trades per side are warmup.",
