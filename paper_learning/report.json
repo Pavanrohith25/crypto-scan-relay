@@ -1,13 +1,30 @@
 {
   "admission_diagnostics": {
     "latest_reason_counts": {
-      "ACCEPTED": 37,
+      "ACCEPTED": 38,
+      "POSITION_ALREADY_OPEN": 1,
       "PRE_ACTIVATION": 66,
       "STALE_AT_OBSERVATION": 40
     },
     "logging_started_ms": 1792454460377,
     "note": "Reasons reflect observation time; old triggers are not historical rejection evidence.",
     "recent_decisions": [
+      {
+        "id": "XRPUSDT-1792850560424",
+        "observed_ms": 1792850573460,
+        "reason": "ACCEPTED",
+        "side": "SHORT",
+        "signal_ms": 1792850560424,
+        "symbol": "XRPUSDT"
+      },
+      {
+        "id": "TAOUSDT-1792850560424",
+        "observed_ms": 1792850573460,
+        "reason": "POSITION_ALREADY_OPEN",
+        "side": "SHORT",
+        "signal_ms": 1792850560424,
+        "symbol": "TAOUSDT"
+      },
       {
         "id": "AVAXUSDT-1792843322502",
         "observed_ms": 1792843929492,
@@ -151,26 +168,10 @@
         "side": "LONG",
         "signal_ms": 1792616548720,
         "symbol": "FETUSDT"
-      },
-      {
-        "id": "HBARUSDT-1792612905108",
-        "observed_ms": 1792612914699,
-        "reason": "ACCEPTED",
-        "side": "LONG",
-        "signal_ms": 1792612905108,
-        "symbol": "HBARUSDT"
-      },
-      {
-        "id": "SOLUSDT-1792612905108",
-        "observed_ms": 1792612914699,
-        "reason": "ACCEPTED",
-        "side": "LONG",
-        "signal_ms": 1792612905108,
-        "symbol": "SOLUSDT"
       }
     ]
   },
-  "as_of_ms": 1792850186617,
+  "as_of_ms": 1792850573460,
   "limitations": [
     "Spot proxy; shorts are hypothetical, not futures execution.",
     "Scores are uncalibrated; first 30 resolved trades per side are warmup.",
@@ -198,11 +199,11 @@
     },
     "SHORT": {
       "data_errors": 0,
-      "entries": 23,
+      "entries": 24,
       "fixed_half_brier_baseline": null,
       "mean_net_pct": 1.1713333333333333,
       "model_updates": 15,
-      "open_or_pending": 8,
+      "open_or_pending": 9,
       "prequential_brier": null,
       "resolved": 15,
       "scored_resolved": 0,
