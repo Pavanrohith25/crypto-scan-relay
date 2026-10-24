@@ -1,14 +1,29 @@
 {
   "admission_diagnostics": {
     "latest_reason_counts": {
-      "ACCEPTED": 39,
+      "ACCEPTED": 40,
       "PRE_ACTIVATION": 66,
-      "STALE_AT_OBSERVATION": 41,
-      "SYMBOL_COOLDOWN": 1
+      "STALE_AT_OBSERVATION": 42
     },
     "logging_started_ms": 1792454460377,
     "note": "Reasons reflect observation time; old triggers are not historical rejection evidence.",
     "recent_decisions": [
+      {
+        "id": "LTCUSDT-1792854170893",
+        "observed_ms": 1792855061542,
+        "reason": "STALE_AT_OBSERVATION",
+        "side": "SHORT",
+        "signal_ms": 1792854170893,
+        "symbol": "LTCUSDT"
+      },
+      {
+        "id": "XLMUSDT-1792855044047",
+        "observed_ms": 1792855061542,
+        "reason": "ACCEPTED",
+        "side": "SHORT",
+        "signal_ms": 1792855044047,
+        "symbol": "XLMUSDT"
+      },
       {
         "id": "HYPEUSDT-1792854170893",
         "observed_ms": 1792854187844,
@@ -16,14 +31,6 @@
         "side": "SHORT",
         "signal_ms": 1792854170893,
         "symbol": "HYPEUSDT"
-      },
-      {
-        "id": "LTCUSDT-1792854170893",
-        "observed_ms": 1792854187844,
-        "reason": "SYMBOL_COOLDOWN",
-        "side": "SHORT",
-        "signal_ms": 1792854170893,
-        "symbol": "LTCUSDT"
       },
       {
         "id": "TAOUSDT-1792850560424",
@@ -160,18 +167,10 @@
         "side": "SHORT",
         "signal_ms": 1792670551060,
         "symbol": "TIAUSDT"
-      },
-      {
-        "id": "MITOUSDT-1792652545503",
-        "observed_ms": 1792652563360,
-        "reason": "ACCEPTED",
-        "side": "SHORT",
-        "signal_ms": 1792652545503,
-        "symbol": "MITOUSDT"
       }
     ]
   },
-  "as_of_ms": 1792854764965,
+  "as_of_ms": 1792855061542,
   "limitations": [
     "Spot proxy; shorts are hypothetical, not futures execution.",
     "Scores are uncalibrated; first 30 resolved trades per side are warmup.",
@@ -199,11 +198,11 @@
     },
     "SHORT": {
       "data_errors": 0,
-      "entries": 25,
+      "entries": 26,
       "fixed_half_brier_baseline": null,
       "mean_net_pct": 1.6041176470588234,
       "model_updates": 17,
-      "open_or_pending": 8,
+      "open_or_pending": 9,
       "prequential_brier": null,
       "resolved": 17,
       "scored_resolved": 0,
