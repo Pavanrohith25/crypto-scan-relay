@@ -1188,15 +1188,15 @@
   "admission_logging_started_ms": 1792454460377,
   "models": {
     "LONG": {
-      "n": 13,
+      "n": 14,
       "weights": [
-        -0.11599102009309746,
-        0.004077860761557984,
-        -0.008788572951008114,
-        -0.013016430190261868,
-        -0.010850610463549225,
-        -0.044983867004666916,
-        -0.06977641993645708
+        -0.1371550060327402,
+        0.001925291585060481,
+        -0.010618844355088294,
+        -0.016404172097823078,
+        -0.014033163579086603,
+        -0.0564103035489524,
+        -0.08691596654084993
       ]
     },
     "SHORT": {
@@ -1270,7 +1270,7 @@
       "target_pct": 5.0
     },
     "ADAUSDT-1792843322502": {
-      "checked_ms": 1792855059914,
+      "checked_ms": 1792855298094,
       "entry_ms": 1792843500000,
       "entry_price": 0.2084,
       "features": [
@@ -1284,11 +1284,11 @@
       ],
       "id": "ADAUSDT-1792843322502",
       "mae_pct": 0.38387715930900956,
-      "mark_return_pct": 2.6391554702495212,
-      "mfe_pct": 2.831094049904026,
+      "mark_return_pct": 3.646833013435702,
+      "mfe_pct": 3.74280230326296,
       "model_hash": "b402b252c6d56e80e37a5692fc128e084ac55c60e4373d1eb4c0a99c1f85b5db",
       "model_n": 15,
-      "next_bar_ms": 1792854900000,
+      "next_bar_ms": 1792855200000,
       "predicted_ms": 1792843334621,
       "score": null,
       "side": "SHORT",
@@ -1377,7 +1377,7 @@
       "target_pct": 5.0
     },
     "AVAXUSDT-1792688519885": {
-      "checked_ms": 1792855059914,
+      "checked_ms": 1792855298094,
       "entry_ms": 1792688700000,
       "entry_price": 9.11,
       "features": [
@@ -1391,11 +1391,11 @@
       ],
       "id": "AVAXUSDT-1792688519885",
       "mae_pct": 2.6344676180021898,
-      "mark_return_pct": 3.97365532381998,
-      "mfe_pct": 4.731064763995596,
+      "mark_return_pct": 4.64324917672887,
+      "mfe_pct": 4.774972557628965,
       "model_hash": "5b33470e3a2c06aefa347afa67a146fbeb4b0b7fd8cee67b5dc42d07000360b7",
       "model_n": 12,
-      "next_bar_ms": 1792854900000,
+      "next_bar_ms": 1792855200000,
       "predicted_ms": 1792688533855,
       "score": null,
       "side": "SHORT",
@@ -1428,7 +1428,7 @@
       "target_pct": 5.0
     },
     "BCHUSDT-1792575020619": {
-      "checked_ms": 1792855059914,
+      "checked_ms": 1792855298094,
       "entry_ms": 1792575300000,
       "entry_price": 287.9,
       "features": [
@@ -1440,14 +1440,18 @@
         0.54,
         0.81
       ],
+      "holding_hours": 77.75,
       "id": "BCHUSDT-1792575020619",
-      "mae_pct": 5.939562348037497,
-      "mark_return_pct": -5.696422368878073,
+      "label_available_ms": 1792855298094,
+      "mae_pct": 6.703716568252849,
+      "mark_return_pct": -6.634248002778731,
       "mfe_pct": 0.7988885029524218,
       "model_hash": "afb0327d96ce29ca0f66aabe9cb1fd1b479cd81c8bd2a2c54d0c50caa98da9a2",
       "model_n": 6,
-      "next_bar_ms": 1792854900000,
+      "net_return_pct": -6.22,
+      "next_bar_ms": 1792855200000,
       "predicted_ms": 1792575029292,
+      "resolved_bar_ms": 1792854900000,
       "score": null,
       "side": "LONG",
       "signal_ms": 1792575020619,
@@ -1474,13 +1478,14 @@
         "warnings": []
       },
       "source": "BINANCE_SPOT_PROXY",
-      "status": "OPEN",
+      "status": "STOP",
       "stop_pct": 6.0,
+      "stressed_net_return_pct": -6.6,
       "symbol": "BCHUSDT",
       "target_pct": 5.0
     },
     "BTCUSDT-1791450054416": {
-      "checked_ms": 1792855059914,
+      "checked_ms": 1792855298094,
       "entry_ms": 1791450300000,
       "entry_price": 83013.8,
       "features": [
@@ -1494,11 +1499,11 @@
       ],
       "id": "BTCUSDT-1791450054416",
       "mae_pct": 2.2697431029539583,
-      "mark_return_pct": 3.9719058758905135,
-      "mfe_pct": 4.163861912115818,
+      "mark_return_pct": 4.498203913084331,
+      "mfe_pct": 4.533944958549063,
       "model_hash": "d00c3a24ef0fd037da9e46e3397b77adfe716660f6d7e76afb8984ea77092eae",
       "model_n": 0,
-      "next_bar_ms": 1792854900000,
+      "next_bar_ms": 1792855200000,
       "predicted_ms": 1791450062402,
       "score": null,
       "side": "SHORT",
@@ -1866,7 +1871,7 @@
       "target_pct": 5.0
     },
     "ETHUSDT-1792803732402": {
-      "checked_ms": 1792855059914,
+      "checked_ms": 1792855298094,
       "entry_ms": 1792803900000,
       "entry_price": 2376.14,
       "features": [
@@ -1880,11 +1885,11 @@
       ],
       "id": "ETHUSDT-1792803732402",
       "mae_pct": 0.5933993788244774,
-      "mark_return_pct": 2.6812393209154406,
-      "mfe_pct": 2.9451126617118573,
+      "mark_return_pct": 3.9004435765569334,
+      "mfe_pct": 3.9425286388849123,
       "model_hash": "b402b252c6d56e80e37a5692fc128e084ac55c60e4373d1eb4c0a99c1f85b5db",
       "model_n": 15,
-      "next_bar_ms": 1792854900000,
+      "next_bar_ms": 1792855200000,
       "predicted_ms": 1792803745637,
       "score": null,
       "side": "SHORT",
@@ -2028,7 +2033,7 @@
       "target_pct": 5.0
     },
     "HBARUSDT-1792803732402": {
-      "checked_ms": 1792855059914,
+      "checked_ms": 1792855298094,
       "entry_ms": 1792803900000,
       "entry_price": 0.07738,
       "features": [
@@ -2042,11 +2047,11 @@
       ],
       "id": "HBARUSDT-1792803732402",
       "mae_pct": 1.305246833807172,
-      "mark_return_pct": 2.2227965882656964,
-      "mfe_pct": 2.4166451279400536,
+      "mark_return_pct": 3.101576634789349,
+      "mfe_pct": 3.179116050659092,
       "model_hash": "b402b252c6d56e80e37a5692fc128e084ac55c60e4373d1eb4c0a99c1f85b5db",
       "model_n": 15,
-      "next_bar_ms": 1792854900000,
+      "next_bar_ms": 1792855200000,
       "predicted_ms": 1792803745637,
       "score": null,
       "side": "SHORT",
@@ -2136,7 +2141,7 @@
       "target_pct": 5.0
     },
     "HYPEUSDT-1792854170893": {
-      "checked_ms": 1792855059914,
+      "checked_ms": 1792855298094,
       "entry_ms": 1792854300000,
       "entry_price": 75.18,
       "features": [
@@ -2150,11 +2155,11 @@
       ],
       "id": "HYPEUSDT-1792854170893",
       "mae_pct": 0.1995211492417992,
-      "mark_return_pct": 0.42564511838255603,
-      "mfe_pct": 0.6517690875232907,
+      "mark_return_pct": 0.7980845969672856,
+      "mfe_pct": 0.8246874168661988,
       "model_hash": "f78a261c18f4e18607de2b01cf905cb485c2f140292860790299d3e12b8b120f",
       "model_n": 17,
-      "next_bar_ms": 1792854900000,
+      "next_bar_ms": 1792855200000,
       "predicted_ms": 1792854187844,
       "score": null,
       "side": "SHORT",
@@ -3296,7 +3301,7 @@
       "target_pct": 5.0
     },
     "XRPUSDT-1792850560424": {
-      "checked_ms": 1792855059914,
+      "checked_ms": 1792855298094,
       "entry_ms": 1792850700000,
       "entry_price": 1.2855,
       "features": [
@@ -3310,11 +3315,11 @@
       ],
       "id": "XRPUSDT-1792850560424",
       "mae_pct": 0.06223259432127648,
-      "mark_return_pct": 1.5791520809023685,
-      "mfe_pct": 1.7191754181252406,
+      "mark_return_pct": 2.115908206923389,
+      "mfe_pct": 2.1781408012446546,
       "model_hash": "b402b252c6d56e80e37a5692fc128e084ac55c60e4373d1eb4c0a99c1f85b5db",
       "model_n": 15,
-      "next_bar_ms": 1792854900000,
+      "next_bar_ms": 1792855200000,
       "predicted_ms": 1792850573460,
       "score": null,
       "side": "SHORT",
@@ -3346,7 +3351,7 @@
       "target_pct": 5.0
     },
     "ZECUSDT-1792832524367": {
-      "checked_ms": 1792855059914,
+      "checked_ms": 1792855298094,
       "entry_ms": 1792832700000,
       "entry_price": 1154.41,
       "features": [
@@ -3360,11 +3365,11 @@
       ],
       "id": "ZECUSDT-1792832524367",
       "mae_pct": 0.9606638889129382,
-      "mark_return_pct": 2.01748079105345,
-      "mfe_pct": 2.663698339411469,
+      "mark_return_pct": 2.9400299720203416,
+      "mfe_pct": 3.106348697603112,
       "model_hash": "b402b252c6d56e80e37a5692fc128e084ac55c60e4373d1eb4c0a99c1f85b5db",
       "model_n": 15,
-      "next_bar_ms": 1792854900000,
+      "next_bar_ms": 1792855200000,
       "predicted_ms": 1792832536699,
       "score": null,
       "side": "SHORT",

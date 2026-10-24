@@ -1,15 +1,15 @@
 {
   "models": {
     "LONG": {
-      "n": 13,
+      "n": 14,
       "weights": [
-        -0.39604165848991085,
-        0.02070433969387876,
-        -0.02361111072018664,
-        -0.04801911939774237,
-        -0.02938346235866416,
-        -0.1408736735352927,
-        -0.2267770402688784
+        -0.42188537738977805,
+        0.018073111931099842,
+        -0.025843260685338126,
+        -0.05214992290545628,
+        -0.033266211435770264,
+        -0.15480940332054594,
+        -0.24767845249363316
       ]
     },
     "SHORT": {
@@ -127,6 +127,58 @@
       "status": "TARGET",
       "stressed_reward_r": 0.7483333333333334,
       "symbol": "ARBUSDT"
+    },
+    "BCHUSDT-1792575020619": {
+      "definition": "paper net price return / planned stop percent; not account P&L",
+      "features": [
+        1.0,
+        0.10169999999999998,
+        0.0865,
+        0.1601,
+        0.1504,
+        0.54,
+        0.81
+      ],
+      "forecast_at_delivery": {
+        "expected_r": -0.12107737969860664,
+        "model_hash": "10e66231e03255072dbf214c40fd6ad8e2b1bbe90076d747697b7af4906526e1",
+        "model_n": 6,
+        "version": "telegram-reward-v1"
+      },
+      "holding_hours": 77.75,
+      "id": "BCHUSDT-1792575020619",
+      "mae_pct": 6.703716568252849,
+      "mfe_pct": 0.7988885029524218,
+      "net_return_pct": -6.22,
+      "recorded_ms": 1792855299225,
+      "reward_r": -1.0366666666666666,
+      "sent_ms": 1792575719673,
+      "side": "LONG",
+      "snapshot": {
+        "bias": "LONG",
+        "bounce_from_12h_low_pct": 2.527,
+        "distance_from_1h_sma10_pct": 0.752,
+        "momentum_12h_pct": 1.73,
+        "momentum_24h_pct": 4.803,
+        "momentum_3h_pct": 1.017,
+        "price": 288.1,
+        "pullback_from_12h_high_pct": -0.894,
+        "quote_volume_24h": 10747879.59,
+        "reasons": [
+          "1h and 4h trend structure aligned",
+          "3h momentum supports long trend",
+          "1h spot volume expansion 1.62x"
+        ],
+        "retest_reason": "long pullback reached trend area and buying resumed",
+        "setup_state": "CONTINUATION_TRIGGER",
+        "swing_score": 81.0,
+        "symbol": "BCHUSDT",
+        "volume_expansion_1h": 1.62,
+        "warnings": []
+      },
+      "status": "STOP",
+      "stressed_reward_r": -1.0999999999999999,
+      "symbol": "BCHUSDT"
     },
     "ENAUSDT-1791720341840": {
       "definition": "paper net price return / planned stop percent; not account P&L",
