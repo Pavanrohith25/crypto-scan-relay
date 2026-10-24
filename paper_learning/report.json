@@ -10,6 +10,14 @@
     "note": "Reasons reflect observation time; old triggers are not historical rejection evidence.",
     "recent_decisions": [
       {
+        "id": "AVAXUSDT-1792803732402",
+        "observed_ms": 1792803745637,
+        "reason": "POSITION_ALREADY_OPEN",
+        "side": "SHORT",
+        "signal_ms": 1792803732402,
+        "symbol": "AVAXUSDT"
+      },
+      {
         "id": "ETHUSDT-1792803732402",
         "observed_ms": 1792803745637,
         "reason": "ACCEPTED",
@@ -24,14 +32,6 @@
         "side": "SHORT",
         "signal_ms": 1792803732402,
         "symbol": "HBARUSDT"
-      },
-      {
-        "id": "AVAXUSDT-1792803732402",
-        "observed_ms": 1792803745637,
-        "reason": "POSITION_ALREADY_OPEN",
-        "side": "SHORT",
-        "signal_ms": 1792803732402,
-        "symbol": "AVAXUSDT"
       },
       {
         "id": "ARBUSDT-1792792950997",
@@ -171,7 +171,7 @@
       }
     ]
   },
-  "as_of_ms": 1792803745637,
+  "as_of_ms": 1792804027311,
   "limitations": [
     "Spot proxy; shorts are hypothetical, not futures execution.",
     "Scores are uncalibrated; first 30 resolved trades per side are warmup.",
