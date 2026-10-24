@@ -2,13 +2,20 @@
   "admission_diagnostics": {
     "latest_reason_counts": {
       "ACCEPTED": 37,
-      "POSITION_ALREADY_OPEN": 1,
       "PRE_ACTIVATION": 66,
-      "STALE_AT_OBSERVATION": 39
+      "STALE_AT_OBSERVATION": 40
     },
     "logging_started_ms": 1792454460377,
     "note": "Reasons reflect observation time; old triggers are not historical rejection evidence.",
     "recent_decisions": [
+      {
+        "id": "AVAXUSDT-1792843322502",
+        "observed_ms": 1792843929492,
+        "reason": "STALE_AT_OBSERVATION",
+        "side": "SHORT",
+        "signal_ms": 1792843322502,
+        "symbol": "AVAXUSDT"
+      },
       {
         "id": "ADAUSDT-1792843322502",
         "observed_ms": 1792843334621,
@@ -16,14 +23,6 @@
         "side": "SHORT",
         "signal_ms": 1792843322502,
         "symbol": "ADAUSDT"
-      },
-      {
-        "id": "AVAXUSDT-1792843322502",
-        "observed_ms": 1792843334621,
-        "reason": "POSITION_ALREADY_OPEN",
-        "side": "SHORT",
-        "signal_ms": 1792843322502,
-        "symbol": "AVAXUSDT"
       },
       {
         "id": "ZECUSDT-1792832524367",
@@ -171,7 +170,7 @@
       }
     ]
   },
-  "as_of_ms": 1792843585988,
+  "as_of_ms": 1792843929492,
   "limitations": [
     "Spot proxy; shorts are hypothetical, not futures execution.",
     "Scores are uncalibrated; first 30 resolved trades per side are warmup.",
