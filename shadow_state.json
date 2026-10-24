@@ -1,6 +1,6 @@
 {
-  "last_processed_at_ms": 1792839429514,
-  "last_processed_generated_at_ms": 1792839425979,
+  "last_processed_at_ms": 1792839733754,
+  "last_processed_generated_at_ms": 1792839730316,
   "pairs": {
     "1000000BOBUSDT": {
       "gate_reasons": [
@@ -380,10 +380,10 @@
       ],
       "last_bias": "LONG",
       "last_decision": "WAIT",
-      "last_price": 0.11051,
+      "last_price": 0.11394,
       "last_regime": "COUNTERTREND",
       "last_score": 35.0,
-      "last_seen_at_ms": 1792839429514
+      "last_seen_at_ms": 1792839733754
     },
     "BLESSUSDT": {
       "gate_reasons": [
@@ -552,17 +552,18 @@
     "BTWUSDT": {
       "gate_reasons": [
         "deep countertrend: 24h structure/OI conflicts with the setup",
-        "score 67.0 below required 78.0",
+        "score 62.0 below required 78.0",
         "candidate has blocker(s)",
         "missing spot confirmation",
+        "15m OI not expanding",
         "missing spot volume"
       ],
       "last_bias": "LONG",
       "last_decision": "BLOCKED_DEEP_COUNTERTREND",
-      "last_price": 1.7004,
+      "last_price": 1.698,
       "last_regime": "COUNTERTREND_DEEP",
-      "last_score": 67.0,
-      "last_seen_at_ms": 1792839429514
+      "last_score": 62.0,
+      "last_seen_at_ms": 1792839733754
     },
     "BWETUSDT": {
       "gate_reasons": [
@@ -1542,10 +1543,10 @@
       ],
       "last_bias": "LONG",
       "last_decision": "WAIT",
-      "last_price": 0.03346,
+      "last_price": 0.0333,
       "last_regime": "COUNTERTREND",
       "last_score": 48.0,
-      "last_seen_at_ms": 1792839429514
+      "last_seen_at_ms": 1792839733754
     },
     "INXUSDT": {
       "gate_reasons": [
@@ -2265,10 +2266,10 @@
       ],
       "last_bias": "LONG",
       "last_decision": "WAIT",
-      "last_price": 0.08066,
+      "last_price": 0.07732,
       "last_regime": "TREND_CONTINUATION",
       "last_score": 34.0,
-      "last_seen_at_ms": 1792839429514
+      "last_seen_at_ms": 1792839733754
     },
     "PATHUSDT": {
       "gate_reasons": [
@@ -3225,15 +3226,16 @@
     },
     "TREEUSDT": {
       "gate_reasons": [
-        "score 19.0 below required 82.0",
-        "long spot weak (B/S 0.958, flow -72,082)"
+        "score 27.0 below required 82.0",
+        "long spot weak (B/S 1.007, flow 17,494)",
+        "15m OI not expanding"
       ],
       "last_bias": "LONG",
       "last_decision": "WAIT",
-      "last_price": 0.0688,
+      "last_price": 0.05535,
       "last_regime": "TREND_CONTINUATION",
-      "last_score": 19.0,
-      "last_seen_at_ms": 1792839115366
+      "last_score": 27.0,
+      "last_seen_at_ms": 1792839733754
     },
     "TRXUSDT": {
       "gate_reasons": [
