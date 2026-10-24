@@ -1,13 +1,21 @@
 {
   "admission_diagnostics": {
     "latest_reason_counts": {
-      "ACCEPTED": 40,
+      "ACCEPTED": 41,
       "PRE_ACTIVATION": 66,
       "STALE_AT_OBSERVATION": 42
     },
     "logging_started_ms": 1792454460377,
     "note": "Reasons reflect observation time; old triggers are not historical rejection evidence.",
     "recent_decisions": [
+      {
+        "id": "ONDOUSDT-1792855956515",
+        "observed_ms": 1792855967960,
+        "reason": "ACCEPTED",
+        "side": "SHORT",
+        "signal_ms": 1792855956515,
+        "symbol": "ONDOUSDT"
+      },
       {
         "id": "LTCUSDT-1792854170893",
         "observed_ms": 1792855061542,
@@ -159,18 +167,10 @@
         "side": "SHORT",
         "signal_ms": 1792681338432,
         "symbol": "TIAUSDT"
-      },
-      {
-        "id": "TIAUSDT-1792670551060",
-        "observed_ms": 1792670564109,
-        "reason": "ACCEPTED",
-        "side": "SHORT",
-        "signal_ms": 1792670551060,
-        "symbol": "TIAUSDT"
       }
     ]
   },
-  "as_of_ms": 1792855588865,
+  "as_of_ms": 1792855967960,
   "limitations": [
     "Spot proxy; shorts are hypothetical, not futures execution.",
     "Scores are uncalibrated; first 30 resolved trades per side are warmup.",
@@ -198,11 +198,11 @@
     },
     "SHORT": {
       "data_errors": 0,
-      "entries": 26,
+      "entries": 27,
       "fixed_half_brier_baseline": null,
       "mean_net_pct": 1.6041176470588234,
       "model_updates": 17,
-      "open_or_pending": 9,
+      "open_or_pending": 10,
       "prequential_brier": null,
       "resolved": 17,
       "scored_resolved": 0,
