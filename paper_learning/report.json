@@ -1,13 +1,30 @@
 {
   "admission_diagnostics": {
     "latest_reason_counts": {
-      "ACCEPTED": 38,
+      "ACCEPTED": 39,
       "PRE_ACTIVATION": 66,
-      "STALE_AT_OBSERVATION": 41
+      "STALE_AT_OBSERVATION": 41,
+      "SYMBOL_COOLDOWN": 1
     },
     "logging_started_ms": 1792454460377,
     "note": "Reasons reflect observation time; old triggers are not historical rejection evidence.",
     "recent_decisions": [
+      {
+        "id": "LTCUSDT-1792854170893",
+        "observed_ms": 1792854187844,
+        "reason": "SYMBOL_COOLDOWN",
+        "side": "SHORT",
+        "signal_ms": 1792854170893,
+        "symbol": "LTCUSDT"
+      },
+      {
+        "id": "HYPEUSDT-1792854170893",
+        "observed_ms": 1792854187844,
+        "reason": "ACCEPTED",
+        "side": "SHORT",
+        "signal_ms": 1792854170893,
+        "symbol": "HYPEUSDT"
+      },
       {
         "id": "TAOUSDT-1792850560424",
         "observed_ms": 1792851176965,
@@ -151,26 +168,10 @@
         "side": "SHORT",
         "signal_ms": 1792652545503,
         "symbol": "MITOUSDT"
-      },
-      {
-        "id": "LINKUSDT-1792620101273",
-        "observed_ms": 1792620720760,
-        "reason": "STALE_AT_OBSERVATION",
-        "side": "LONG",
-        "signal_ms": 1792620101273,
-        "symbol": "LINKUSDT"
-      },
-      {
-        "id": "FETUSDT-1792616548720",
-        "observed_ms": 1792616559172,
-        "reason": "ACCEPTED",
-        "side": "LONG",
-        "signal_ms": 1792616548720,
-        "symbol": "FETUSDT"
       }
     ]
   },
-  "as_of_ms": 1792853875232,
+  "as_of_ms": 1792854187844,
   "limitations": [
     "Spot proxy; shorts are hypothetical, not futures execution.",
     "Scores are uncalibrated; first 30 resolved trades per side are warmup.",
@@ -198,11 +199,11 @@
     },
     "SHORT": {
       "data_errors": 0,
-      "entries": 24,
+      "entries": 25,
       "fixed_half_brier_baseline": null,
       "mean_net_pct": 1.6041176470588234,
       "model_updates": 17,
-      "open_or_pending": 7,
+      "open_or_pending": 8,
       "prequential_brier": null,
       "resolved": 17,
       "scored_resolved": 0,
